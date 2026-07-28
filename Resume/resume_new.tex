@@ -1,0 +1,182 @@
+%-------------------------
+% Resume - Md Tanzeel Adam Khan
+% ML/AI Research & Engineering
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Tight margins for single page
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------%
+\begin{center}
+    \textbf{\Huge \scshape Md Tanzeel Adam Khan} \\ \vspace{4pt}
+    \small
+    \faIcon{phone-alt} \href{tel:9608516786}{+91 9608516786} $|$
+    \faIcon{envelope} \href{mailto:tanzeel\_2411ai67@iitp.ac.in}{tanzeel\_2411ai67@iitp.ac.in} $|$
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/tanzeel-khan-a4ab76bb/}{LinkedIn} $|$
+    \faIcon{github} \href{https://github.com/tanzeelkhan}{GitHub}
+\end{center}
+\vspace{-6pt}
+\begin{center}
+\small{M.Tech (AI) from IIT Patna with research in LLM reasoning and search algorithms. 9 months building production AI systems at Mercedes-Benz R\&D India (AMG SSV team). Skilled in multi-agent architectures, model fine-tuning (LoRA/PEFT), and retrieval-augmented generation.}
+\end{center}
+\vspace{-8pt}
+
+%-----------EDUCATION-----------%
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {Indian Institute of Technology Patna}{2024 -- 2026}
+    {Master of Technology in Artificial Intelligence (CGPA: 8.75/10)}{Patna, India}
+    \resumeSubheading
+    {Haldia Institute of Technology}{2020 -- 2024}
+    {Bachelor of Technology in CSE -- AI \& ML (CGPA: 8.9/10)}{Haldia, India}
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATION-----------%
+\section{Publication}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{When Should Language Models Search? A Topology-Aware Analysis} $|$ \textit{Submitted to ACL}}{}
+    \resumeItemListStart
+        \resumeItem{Co-Author $|$ Proposed A* search that explores multiple reasoning paths an LLM can take, with formally proven admissible heuristic ($h(s) \leq h^*(s)$). Evaluated across \textbf{8 benchmarks $\times$ 3 scales (0.5B--14B) $\times$ 4 methods} = 96 configurations, 500 instances each.}
+        \resumeItem{Designed a zero-cost Topology Router (no LLM inference needed) using 14 structural features; \textbf{closes 40\% of the gap} between the best single method and a perfect oracle. \textbf{95\% routing accuracy} on CodeContests. Key feature predicts method success at $R^2 = 0.94$.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------%
+\section{Research Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Indian Institute of Technology Patna}{Jul 2024 -- Jun 2026}
+    {M.Tech Thesis $|$ Advisor: Prof. Asif Ekbal $|$ LLM Reasoning \& Search}{Patna, India}
+    \resumeItemListStart
+
+    \resumeItem{Implemented A* search with true branching ($K{=}3$ parallel LLM calls), self-consistency voting, entity-coverage heuristic, and repetitive output filtering. Designed 4-bucket evaluation framework (both-correct / CoT-only / A*-only / both-wrong) with \textbf{95\% Wilson confidence intervals}. Ran \textbf{48,000+} paired evaluations with McNemar significance tests.}
+
+    \resumeItem{Trained \textbf{LoRA adapters (rank-16, PEFT)} on Qwen-0.5B and LLaMA-3.1-8B to distill successful A* traces into linear CoT rationales. Built end-to-end pipeline: rationale rewriting, quality filtering, and SFT with HuggingFace Trainer. Achieved \textbf{33\% rescue rate} on CoT failures with \textbf{50\% preservation} of correct answers.}
+
+    \resumeItem{Engineered a routing pipeline predicting best reasoning strategy from problem structure alone: 13 features, multi-classifier optimization (XGBoost, 5-fold CV, 100 seeds). Discovered Fluency-Correctness Asymmetry: \textbf{38\%} of fluent traces are incorrect — explaining why probability-based routers fail.}
+
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------%
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Mercedes-Benz Research \& Development India (MBRDI)}{Nov 2025 -- Aug 2026}
+    {AI Engineer Intern $|$ AMG System Software Validation Team}{Bengaluru, India}
+    \resumeItemListStart
+
+    \resumeItem{\textbf{iFAST (Intelligent Failure Analysis through Signal Tracing):} Architected an autonomous AI agent with 14 custom tools via MCP protocol, integrating \textbf{Gemini 2.5 Pro, GPT-5, and Claude} backends via AWS Bedrock. Performs probabilistic root-cause analysis fusing evidence from 8 independent sources using calibrated Bayesian scoring (Log-Likelihood Ratios). Achieved \textbf{54.8\% time savings} and \textbf{97\% accuracy} across 67K+ signals and 1,128 modules. Adopted by 2+ engineering teams.}
+
+    \resumeItem{Built source-code dependency graph engine extracting 1.6M+ inter-module relationships via pattern-based static analysis across 3 repos. Signal-level verification eliminates \textbf{75\% of false positives}. Replaced manual export (35\% incomplete) with live git-based pipeline.}
+
+    \resumeItem{\textbf{RAG Chatbot + KPI Dashboard:} Deployed hybrid BM25+ANN retrieval with cross-encoder reranking and LangGraph orchestration across 3 enterprise data sources (issue trackers + wiki). \textbf{77\% answer rate}, \textbf{5.5$\times$ latency reduction} (22s $\to$ 4s) via semantic caching and async parallelism.}
+
+    \resumeItem{\textbf{ASPICE SPOT Check (SWE.6):} Architected A2A system (JSON-RPC 2.0) for automated process quality assessment across \textbf{60+ evaluation dimensions} with mandatory source-citation, hierarchical scoring, and multimodal ingestion (7 formats).}
+
+    \resumeItemListEnd
+
+    \vspace{1pt}
+    \resumeSubheading
+    {Moshi Moshi}{Jun 2025 -- Aug 2025}
+    {AI Engineer Intern}{Bengaluru, India}
+    \resumeItemListStart
+    \resumeItem{Built automated lead generation pipeline (Selenium + open-source LLMs + SMTP cold emails), automating \textbf{$\sim$50\%} of sales workflow. Developed \textbf{Inspira} -- GenAI tool for designers; \textbf{35\%} faster ideation, \textbf{25\%} faster handoff.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------%
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+    \textbf{ML/DL:} PyTorch, HuggingFace Transformers, LoRA/QLoRA/PEFT, XGBoost, scikit-learn, Bayesian Inference \\
+    \textbf{LLM Systems:} LangGraph, LangChain, RAG, MCP Protocol, A2A/ReAct Agents, Tool-Use, vLLM, Ollama \\
+    \textbf{Retrieval:} BM25, ANN, Cross-Encoders, Reciprocal Rank Fusion, ChromaDB, LanceDB, Sentence-Transformers \\
+    \textbf{Cloud \& Infra:} AWS (Bedrock), Docker, Git, CI/CD, FastAPI, Streamlit, PySide6/Qt, API Design \\
+    \textbf{Engineering:} Python, asyncio, SQL, NumPy, Pandas, SciPy, NetworkX, Distributed Systems, Event-Driven
+}}
+\end{itemize}
+
+%-----------ADDITIONAL-----------%
+\section{Additional}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+    \textbf{Leadership:} Designed \& conducted ``AI IN LOOP'' workshop for MBRDI RD IDA team -- upskilling 30+ engineers on LLM agents, RAG systems, and prompt engineering \\
+    \textbf{Teaching:} Teaching Assistant -- Deep Learning \& AI courses, IIT Patna
+}}
+\end{itemize}
+
+\end{document}

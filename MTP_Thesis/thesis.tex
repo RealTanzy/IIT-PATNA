@@ -1,0 +1,104 @@
+\documentclass{CSEThesis}
+% Standard packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{subfigure}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{tabularx}
+\usepackage{natbib}
+\usepackage{dsfont}
+\usepackage{placeins}
+\usepackage{float}
+
+% Fix spacing and float placement
+\onehalfspacing
+\setlength{\parskip}{0.3em}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.7}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{5}
+
+\newtcolorbox{examplebox}[1][]{
+  colback=gray!5,
+  colframe=gray!50,
+  fonttitle=\bfseries,
+  breakable,
+  #1
+}
+
+%===== Thesis metadata
+\btptitle = {Topology-Aware Routing Between Chain-of-Thought and Search-Based Reasoning in Large Language Models}
+\name = {Md Tanzeel Adam Khan}
+\rollno = {2411AI67}
+\email = {tanzeel\_2411ai67@iitp.ac.in}
+\guide = {Dr. Asif Ekbal}
+
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}%
+\vfill
+\begin{center}
+\textit{This page is intentionally left blank.}
+\end{center}
+\vfill
+\thispagestyle{empty}%
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+\begin{document}
+
+\include{title}
+\cleardoublepage
+\include{certificate}
+\cleardoublepage
+\include{acknowledgement}
+\cleardoublepage
+\include{abstract}
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\cleardoublepage
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\cleardoublepage
+\pagenumbering{arabic}
+\def\headrulehook{\color{black}}
+
+%========== Chapters
+\include{chapter1}
+\cleardoublepage
+\include{chapter2}
+\cleardoublepage
+\include{chapter3}
+\cleardoublepage
+\include{chapter4}
+\cleardoublepage
+\include{chapter5}
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}
