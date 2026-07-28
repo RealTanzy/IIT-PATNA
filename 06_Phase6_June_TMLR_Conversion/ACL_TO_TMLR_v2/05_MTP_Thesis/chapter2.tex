@@ -1,0 +1,107 @@
+\chapter{Literature Review}
+
+This chapter reviews the research landscape surrounding reasoning in large language models, covering chain-of-thought prompting, structured reasoning methods, search-augmented approaches, inference-time compute scaling, and routing strategies.
+
+\section{Chain-of-Thought Prompting}
+
+Chain-of-thought (CoT) prompting~\citep{wei2022chain} marked a significant advance in eliciting reasoning from LLMs. By providing demonstrations that include intermediate reasoning steps, CoT enables models to decompose complex problems into manageable sub-steps. The key insight is that generating explicit intermediate computations---rather than jumping directly to the answer---improves accuracy on arithmetic, commonsense, and symbolic reasoning tasks.
+
+However, CoT has a fundamental architectural limitation: it generates a single linear trace $s_1 \rightarrow s_2 \rightarrow \cdots \rightarrow s_T$, where each step conditions on all preceding steps. This means:
+\begin{itemize}
+\item Early errors propagate irrecoverably through the trace
+\item The model cannot compare alternative hypotheses
+\item There is no mechanism for backtracking or revision
+\end{itemize}
+
+Recent work by \cite{meincke2025cot} demonstrates that CoT is not uniformly beneficial---on some task types it can actually degrade performance relative to direct answering. This motivates our investigation of \emph{when} CoT suffices and when search is needed.
+
+\section{Self-Consistency and Sampling Methods}
+
+Self-consistency~\citep{wang2022self} addresses CoT's single-trace limitation by generating multiple independent reasoning paths and selecting the most common answer via majority voting. While this introduces diversity, it does so without guidance---all traces are generated independently with no mechanism for prioritizing promising directions or pruning dead ends.
+
+The key limitation is that self-consistency treats all sampled paths equally. It cannot allocate more computation to harder sub-problems or leverage partial progress from one trace to improve another.
+
+\section{Tree-Based and Graph-Based Reasoning}
+
+Tree-of-Thoughts (ToT)~\citep{yao2024tree} extends CoT by organizing reasoning into a tree structure where the model generates multiple candidate ``thoughts'' at each step and uses an evaluator to decide which branches to pursue. Graph-of-Thoughts~\citep{besta2024graph} further generalizes this to arbitrary graph structures, allowing combination and refinement of intermediate reasoning states.
+
+These methods demonstrate that structured exploration can improve over linear CoT. However, they entangle the \emph{search structure} with the \emph{evaluator design}---the quality of exploration depends heavily on how well the model can evaluate partial traces, which is itself a challenging problem.
+
+\section{Search-Augmented Reasoning}
+
+\subsection{MCTS-Based Approaches}
+
+Monte Carlo Tree Search (MCTS) has been adapted for LLM reasoning by several groups. RAP~\citep{hao2023reasoning} repurposes the LLM as both a world model and a reasoning agent, using MCTS for strategic exploration. LATS~\citep{zhou2024lats} unifies reasoning, acting, and planning through language agent tree search. MCTSr~\citep{zhang2024mctsrmath} applies MCTS with self-refinement to achieve strong results on mathematical olympiad problems. rStar-Math~\citep{guan2025rstar} demonstrates that small LLMs can master math reasoning through self-evolved deep thinking via MCTS.
+
+\subsection{Beam Search Methods}
+
+Self-evaluation guided beam search~\citep{xie2024self} uses the model's own confidence estimates to guide exploration, maintaining a beam of promising partial traces. \cite{wang-etal-2025-dont} identify that tree search methods suffer from dual pitfalls: \emph{over-exploration} (redundant states with semantically equivalent content) and \emph{under-exploration} (premature switching between trajectories due to high-variance scoring).
+
+\subsection{A* Search}
+
+A* search~\citep{hart1968formal} is a classical graph search algorithm that uses a priority queue ordered by $f(n) = g(n) + h(n)$, where $g(n)$ is the path cost and $h(n)$ is a heuristic estimate of remaining cost. When the heuristic is admissible (never overestimates), A* is guaranteed to find an optimal path.
+
+In our work, we adapt A* for reasoning trace search, where nodes are partial reasoning states and the heuristic estimates remaining reasoning effort. The key advantage of A* over ToT or MCTS is that it cleanly separates the search algorithm from the heuristic, making it easier to isolate when the \emph{act of branching itself} is responsible for gains.
+
+\section{Inference-Time Compute Scaling}
+
+\cite{snell2024scaling} demonstrate that scaling test-time compute can be more effective than scaling model parameters for many tasks. Their work shows that allocating more inference-time computation (through search, verification, or self-refinement) yields diminishing but real returns. However, they leave open the question of \emph{which problems} benefit from additional compute---precisely the question our topology framework addresses.
+
+Self-Refine~\citep{madaan2023selfrefine} proposes iterative refinement with self-feedback, where the model generates an output, critiques it, and refines based on the critique. While adaptive in the number of refinement rounds, it does not provide pre-generation prediction of when refinement will help.
+
+DeepSeek-R1~\citep{deepseekr1} incentivizes reasoning capability through reinforcement learning, producing models that allocate variable numbers of ``thinking tokens'' to different problems. This represents an implicit form of adaptive compute allocation, but without explicit pre-generation routing.
+
+\section{Over-Exploration and Search Failures}
+
+Not all search is beneficial. The overthinking survey~\citep{sui2025overthinking} documents how excessive reasoning can degrade performance. FETCH~\citep{wang2025fetch} proposes memory-efficient exploration to mitigate over-exploration. CoT-Valve~\citep{ma2025cotvalve} introduces length-compressible chain-of-thought to control reasoning depth.
+
+Our work contributes to this line by showing that over-exploration is not merely an efficiency problem but a \emph{correctness} problem: 91.1\% of A* failures on instances that CoT solves correctly arise from overthinking, where search continues beyond sufficient evidence and accumulates distractors.
+
+\section{Routing and Critic Methods}
+
+\subsection{Semantic Entropy}
+
+Semantic entropy~\citep{kossen2024semanticentropyprobesrobust} estimates model uncertainty by computing the entropy of semantic clusters among multiple generated answers. High entropy indicates the model is uncertain, suggesting that additional computation (e.g., search) may help. We use semantic entropy as one of our routing baselines.
+
+\subsection{LLM-as-Judge}
+
+LLM-as-judge methods~\citep{zheng2023judging} use a (typically larger or different) language model to evaluate the quality of generated outputs. In our context, the judge compares CoT and A* traces and selects the better one. The key limitation, which we demonstrate empirically, is that judges can be misled by fluency.
+
+\subsection{Process Supervision}
+
+Process reward models~\citep{lightman2023let} provide step-level supervision, scoring each reasoning step rather than only the final answer. While powerful, they require expensive step-level annotations and assume that trace quality is assessable from content alone.
+
+\subsection{Mixture-of-Experts Routing}
+
+Mixture-of-experts~\citep{shazeer2017outrageouslylargeneuralnetworks} routes between neural modules based on input features. Our work applies a similar principle but at a higher level of abstraction: routing between entire \emph{reasoning algorithms} (CoT vs. A*) rather than between neural sub-networks.
+
+\section{Code Generation Benchmarks}
+
+HumanEval~\citep{chen2021humaneval} provides 164 function-level programming tasks with detailed docstrings and test cases. MBPP~\citep{austin2021mbpp} contains 974 short programming tasks with one-sentence specifications. CodeContests~\citep{li2022codecontests} collects competitive programming problems requiring algorithmic solutions.
+
+These benchmarks allow us to test whether the topology-dependent pattern observed in QA and math reasoning transfers to a fundamentally different domain---code generation---where the ``reasoning'' is the process of translating a specification into an implementation.
+
+\section{Summary and Gaps in Literature}
+
+Table~\ref{tab:lit_comparison} summarizes the positioning of our work relative to prior methods.
+
+\begin{table}[ht]
+\centering
+\small
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Method} & \textbf{Structure} & \textbf{Frontier} & \textbf{Heuristic} & \textbf{Pre-route} & \textbf{Limitation} \\
+\midrule
+CoT & linear & \texttimes & \texttimes & \texttimes & premature commit \\
+SC & multi-linear & \texttimes & \texttimes & \texttimes & unguided sampling \\
+ToT & tree/BFS & \checkmark & evaluator & \texttimes & evaluator entangled \\
+MCTS & tree+rollout & \checkmark & value fn & \texttimes & many design choices \\
+Self-Refine & iterative & \texttimes & self-critic & \texttimes & no pre-prediction \\
+\textbf{A* (ours)} & \textbf{priority} & \checkmark & \checkmark & \checkmark & higher compute \\
+\bottomrule
+\end{tabular}
+\caption{Comparison of reasoning strategies. Our A*-based approach is the only method that combines an explicit search frontier, a principled heuristic, and pre-generation routing prediction.}
+\label{tab:lit_comparison}
+\end{table}
+
+The key gap our work addresses: prior methods either (a) demonstrate that search helps on average without identifying \emph{when}, or (b) rely on post-hoc trace evaluation to select among outputs. We show that problem structure alone---computable before any generation---predicts which reasoning strategy to use, and that this pre-generation prediction outperforms post-hoc evaluation due to a systematic fluency-correctness asymmetry.

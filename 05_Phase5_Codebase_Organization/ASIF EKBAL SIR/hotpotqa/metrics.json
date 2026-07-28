@@ -1,0 +1,23 @@
+{
+  "dataset": "hotpotqa",
+  "baseline_astar": {
+    "accuracy": 78.0,
+    "correct": 78,
+    "total": 100
+  },
+  "baseline_cot": {
+    "accuracy": 53.0,
+    "correct": 53,
+    "total": 100
+  },
+  "previous": {
+    "accuracy": 39.0,
+    "correct": 39,
+    "total": 100
+  },
+  "new": {
+    "accuracy": 26.0,
+    "correct": 26,
+    "total": 100
+  }
+}

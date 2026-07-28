@@ -1,0 +1,16 @@
+{
+  "paired_jsonl": "THE RAG APPROACH/logicqa_651_pair/data/cot_astar_runs/logicqa_paired_all.jsonl",
+  "split": "all",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "faiss_metric": "inner_product_on_l2_normalized_vectors",
+  "dimension": 384,
+  "kb_size": 556,
+  "cot_size": 297,
+  "astar_size": 259,
+  "filtered_rows": 650,
+  "all_rows": 650,
+  "kb_jsonl": "Logicsqa RAg/artifacts/logicqa_reasoning_kb.jsonl",
+  "kb_cot_jsonl": "Logicsqa RAg/artifacts/logicqa_reasoning_kb_cot.jsonl",
+  "kb_astar_jsonl": "Logicsqa RAg/artifacts/logicqa_reasoning_kb_astar.jsonl",
+  "faiss_index": "Logicsqa RAg/artifacts/logicqa_questions.faiss"
+}

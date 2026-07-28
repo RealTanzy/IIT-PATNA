@@ -1,0 +1,2447 @@
+[
+  {
+    "task_id": "HumanEval/0",
+    "method": "tot",
+    "code": "from typing import List\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    if len(numbers) < 2:\n        return False\n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i + 1] - numbers[i] < threshold:\n            return True\n    return False",
+    "correct": true,
+    "time": 6.096818447113037,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use sorting and linear traversal: Sort the list of numbers first, then traverse it to check if any two consecutive elements have a difference less than the threshold. This method ensures an efficient O(n log n) time complexity due to sorting, followed by a single pass through the sorted array (O(n)). Handle edge cases such as empty or one-element lists immediately before sorting.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/1",
+    "method": "tot",
+    "code": "from typing import *\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    result = []\n    current_group = ''\n    stack = 0\n\n    for char in paren_string.replace(' ', ''):\n        if char == '(':\n            stack += 1\n        elif char == ')':\n            stack -= 1\n        \n        current_group += char\n\n        if stack == 0 and current_group:  # Only add to result when a complete group is found\n            result.append(current_group)\n            current_group = ''  # Reset for the next group\n    \n    return result",
+    "correct": true,
+    "time": 6.78812050819397,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a stack-based approach to track the balance of parentheses and isolate groups. Incrementally build strings, using the stack to monitor opening parentheses; when the stack is empty (indicating a group is balanced), add it to your result list. Handle edge cases such as single brackets or nested but separate groups correctly by ensuring proper separation based on stack status.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/2",
+    "method": "tot",
+    "code": "def truncate_number(number: float) -> float:\n    if number == int(number):\n        return 0.0\n    return number % 1",
+    "correct": true,
+    "time": 4.647988796234131,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use the modulus operator (%) with 1 to get the decimal part of the number directly. Handle the case where the input is an integer by ensuring it returns 0. Implement by validating the function works for both typical and edge cases including integers and very small decimals.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/3",
+    "method": "tot",
+    "code": "from typing import List\n\ndef below_zero(operations: List[int]) -> bool:\n    balance = 0\n    for operation in operations:\n        balance += operation\n        if balance < 0:\n            return True\n    return False",
+    "correct": true,
+    "time": 4.958012342453003,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use an accumulator variable to track the account balance as you iterate through each operation in the list. Return `True` immediately if at any point the balance falls below zero; otherwise, return `False` after checking all operations. Handle edge cases such as an empty operations list by returning `False`.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/4",
+    "method": "tot",
+    "code": "from typing import List\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    if not numbers:\n        return 0.0\n    x_mean = sum(numbers) / len(numbers)\n    mad = sum(abs(x - x_mean) for x in numbers) / len(numbers)\n    return mad",
+    "correct": true,
+    "time": 6.360148191452026,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To calculate the Mean Absolute Deviation (MAD), first compute the mean of the input list. Then, for each number in the list, find the absolute difference from the mean and sum these differences. Finally, divide this sum by the number of elements to get the MAD. Handle edge cases such as an empty list or a single-element list by returning 0 or the element itself respectively, since MAD is not defined or always zero for these scenarios.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/5",
+    "method": "tot",
+    "code": "def intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    return [num for pair in zip(numbers, ([delimeter] * len(numbers)) + [delimeter]) for num in pair][:-1] if numbers else []",
+    "correct": false,
+    "time": 4.790744781494141,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a list comprehension to iterate through the `numbers` and insert the `delimeter` between each element, ensuring no extra delimiters at the start or end. Handle an empty list by directly returning it since no operations are needed.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/6",
+    "method": "tot",
+    "code": "def parse_nested_parens(paren_string: str) -> List[int]:\n    def max_depth(group):\n        depth = 0\n        max_d = 0\n        for char in group:\n            if char == '(':\n                depth += 1\n                max_d = max(max_d, depth)\n            elif char == ')':\n                depth -= 1\n            if depth < 0:\n                raise ValueError(\"Unmatched parentheses\")\n        return max_d if depth == 0 else None\n\n    groups = paren_string.split()\n    depths = []\n    for group in groups:\n        try:\n            depth = max_depth(group)\n            if depth is not None:\n                depths.append(depth)\n        except ValueError as e:\n            print(f\"Error: {e}\")\n    return depths",
+    "correct": false,
+    "time": 7.781373739242554,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a stack-based approach to track the current level of nesting as you iterate through each character in the input string, updating the maximum depth for each group. Handle spaces and ensure that every opening parenthesis has a corresponding closing one; if not, throw an error or handle malformed input appropriately.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/7",
+    "method": "tot",
+    "code": "from typing import List\n\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]",
+    "correct": true,
+    "time": 4.410117864608765,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use list comprehension with the `in` operator to filter strings that contain the substring. Handle edge cases such as an empty input list and a very short substring by ensuring the search is case-sensitive and the substring existence is strictly within each string.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/8",
+    "method": "tot",
+    "code": "from typing import List, Tuple\n\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n    if not numbers:\n        return (0, 1)\n    total_sum = sum(numbers)\n    from functools import reduce\n    product = reduce(lambda x, y: x*y, numbers, 1)\n    return (total_sum, product)",
+    "correct": true,
+    "time": 5.5605316162109375,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use Python's built-in functions `sum()` for calculating the sum of the list and a loop/reduce function for calculating the product, initializing the product to 1. Handle the edge case of an empty list by directly returning (0, 1) as per problem definition.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/9",
+    "method": "tot",
+    "code": "from typing import List\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    if not numbers:\n        return []\n    max_so_far = numbers[0]\n    result = [max_so_far]\n    for num in numbers[1:]:\n        if num > max_so_far:\n            max_so_far = num\n        result.append(max_so_far)\n    return result",
+    "correct": true,
+    "time": 5.652937889099121,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a simple iteration with a variable to keep track of the current maximum value found as you go through the list, updating both the tracker and the output list accordingly. Handle edge cases such as an empty input list by returning an empty list. Implement this strategy by initializing an empty list for the result and iterating through the input list while maintaining the rolling max value in a variable.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/10",
+    "method": "tot",
+    "code": "def make_palindrome(string: str) -> str:\n    \"\"\" Find the shortest palindrome that begins with a supplied string.\n    Algorithm idea is simple:\n    - Find the longest postfix of supplied string that is a palindrome.\n    - Append to the end of the string reverse of a string prefix that comes before the palindromic suffix.\n    \"\"\"\n    if not string or string == string[::-1]:\n        return string\n    for i in range(len(string)):\n        if string[i:] == string[i:][::-1]:\n            prefix = string[:i]\n            return string + prefix[::-1]",
+    "correct": true,
+    "time": 7.625138521194458,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, identify the longest palindromic suffix of the input string and prepend its reverse prefix to form the shortest possible palindrome. Use a nested loop to find the palindromic segment efficiently; special attention should be given to single character strings as edge cases. Prepend the necessary characters only once this segment is identified accurately.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/11",
+    "method": "tot",
+    "code": "from typing import List\n\ndef string_xor(a: str, b: str) -> str:\n    result = ''\n    for digit_a, digit_b in zip(a, b):\n        xor_result = '1' if int(digit_a) ^ int(digit_b) else '0'\n        result += xor_result\n    return result",
+    "correct": true,
+    "time": 5.599994659423828,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the XOR operation between two binary strings, iterate through both strings simultaneously using zip, perform bitwise XOR (^) on each pair of characters, convert the result back to '0' or '1', and concatenate these results into a new string. Handle edge cases such as mismatched lengths by padding shorter strings with leading zeros if necessary, though in this problem it's not explicitly required but good practice for generalization.",
+    "eval_scores": [
+      8,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/12",
+    "method": "tot",
+    "code": "from typing import List, Optional\n\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    \n    max_length = 0\n    longest_string = \"\"\n    \n    for string in strings:\n        if len(string) > max_length:\n            max_length = len(string)\n            longest_string = string\n            \n    return longest_string",
+    "correct": true,
+    "time": 5.738696336746216,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a simple linear scan through the list while keeping track of the longest string found and its index, updating these as necessary. If multiple strings have the same maximum length, return the first one encountered; if the list is empty, return None. This approach ensures O(n) time complexity where n is the number of strings.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/13",
+    "method": "tot",
+    "code": "def greatest_common_divisor(a: int, b: int) -> int:\n    while b != 0:\n        a, b = b, a % b\n    return abs(a)",
+    "correct": true,
+    "time": 5.152773141860962,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the Euclidean algorithm to iteratively find the GCD, which reduces the problem of finding the GCD of two numbers to a series of simpler problems until the remainder is zero. Handle the edge case where one or both inputs are zero by returning the non-zero number as the GCD or 0 if both are zero.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/14",
+    "method": "tot",
+    "code": "from typing import List\n\ndef all_prefixes(string: str) -> List[str]:\n    if not string:\n        return []\n    prefixes = []\n    for i in range(1, len(string) + 1):\n        prefixes.append(string[:i])\n    return prefixes",
+    "correct": true,
+    "time": 4.706016302108765,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iteratively build and append prefixes of increasing length to a list, starting from the first character up to the full string. Handle edge cases like an empty input string by returning an empty list immediately.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/15",
+    "method": "tot",
+    "code": "def string_sequence(n: int) -> str:\n    if n == 0:\n        return '0'\n    else:\n        return ' '.join([str(i) for i in range(n + 1)])",
+    "correct": true,
+    "time": 4.458051919937134,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a list comprehension to generate a list of strings from '0' to str(n), then join them with spaces. Handle the edge case where n is 0 by directly returning '0'. This approach ensures clarity and conciseness in implementation.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/16",
+    "method": "tot",
+    "code": "def count_distinct_characters(string: str) -> int:\n    unique_chars = set()\n    for char in string.lower():\n        unique_chars.add(char)\n    return len(unique_chars)",
+    "correct": true,
+    "time": 4.877045631408691,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a set to track unique characters, converting all characters to lowercase (or uppercase) to ensure case insensitivity. Iterate through the string, adding each character to the set after normalization, and return the size of the set as the count of distinct characters. Handle edge cases such as empty strings by returning 0.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/17",
+    "method": "tot",
+    "code": "def parse_music(music_string: str) -> List[int]:\n    from typing import List\n\n    # Define a dictionary to map notes to their durations.\n    note_durations = {'o': 4, 'o|': 2, '.|': 1}\n\n    # Remove any leading/trailing whitespace and split the string into individual notes.\n    notes = [note.strip() for note in music_string.split()]\n\n    # Convert each note symbol to its corresponding beat count using the dictionary.\n    beats = [note_durations[note] for note in notes]\n\n    return beats",
+    "correct": false,
+    "time": 7.718505859375,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a dictionary to map the note symbols ('o', 'o|', '.|') to their respective beat durations, then iterate through the input string, splitting it into individual notes and using the dictionary to convert each note symbol into its corresponding beat count. Handle spaces and potential irregular spacing in the input by trimming whitespace around note symbols during parsing.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/18",
+    "method": "tot",
+    "code": "def how_many_times(string: str, substring: str) -> int:\n    if not string or not substring:\n        return 0\n    \n    count = 0\n    for i in range(len(string) - len(substring) + 1):\n        if string[i:i+len(substring)] == substring:\n            count += 1\n            \n    return count",
+    "correct": true,
+    "time": 5.312584161758423,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the sliding window technique to check for occurrences of the substring within the string, including overlapping ones. Keep a count each time the substring is found and return the total count after examining all possible positions in the string. Handle edge cases such as an empty string or substring by returning 0 immediately.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/19",
+    "method": "tot",
+    "code": "from typing import List\n\ndef sort_numbers(numbers: str) -> str:\n    number_map = {'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4,\n                  'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9}\n    sorted_numbers = sorted(numbers.split(), key=lambda x: number_map[x])\n    return ' '.join(sorted_numbers)",
+    "correct": true,
+    "time": 7.27408504486084,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a dictionary to map the string representations of numbers to their integer values, sort these integers, and then map them back to their string form to construct the sorted output. Edge cases include handling an empty input string and ensuring case consistency if inputs are case-insensitive; assume here they are lowercase as per examples.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/20",
+    "method": "tot",
+    "code": "from typing import List, Tuple\n\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    numbers.sort()\n    closest_pair = (numbers[0], numbers[1])\n    min_diff = abs(closest_pair[1] - closest_pair[0])\n\n    for i in range(2, len(numbers)):\n        diff = numbers[i] - numbers[i-1]\n        if diff < min_diff:\n            min_diff = diff\n            closest_pair = (numbers[i-1], numbers[i])\n    \n    return closest_pair",
+    "correct": true,
+    "time": 6.371488332748413,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, sort the list of numbers and then iterate through it to find the pair with the smallest difference. Use a tuple to keep track of these two closest elements as you go. Handle the case where there are duplicates by ensuring that the returned values have no duplicates unless they are exactly the same number in the input.",
+    "eval_scores": [
+      7,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/21",
+    "method": "tot",
+    "code": "from typing import List\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    if len(numbers) < 2:\n        raise ValueError(\"List must contain at least two elements.\")\n    \n    min_val = min(numbers)\n    max_val = max(numbers)\n    \n    if min_val == max_val:\n        raise ValueError(\"All numbers in the list are identical, cannot rescale.\")\n    \n    range_val = max_val - min_val\n    return [(x - min_val) / range_val for x in numbers]",
+    "correct": true,
+    "time": 6.508063077926636,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a linear transformation formula to scale the numbers, where each number is transformed by subtracting the minimum value and then dividing by the range (max - min) of the list. Handle edge cases like lists with less than two elements or lists with all numbers being identical (which would cause division by zero). Implement by first calculating the min and max values, then applying the transformation to each element in a new list.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/22",
+    "method": "tot",
+    "code": "from typing import List, Any\n\ndef filter_integers(values: List[Any]) -> List[int]:\n    return [value for value in values if isinstance(value, int)]",
+    "correct": true,
+    "time": 4.457882642745972,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, iterate through the list and use Python's `isinstance` function to check if an element is an integer, collecting only those elements in a new list. Edge cases include handling mixed data types and ensuring non-integer types are excluded without errors or warnings.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/23",
+    "method": "tot",
+    "code": "def strlen(string: str) -> int:\n    count = 0\n    for char in string:\n        count += 1\n    return count",
+    "correct": true,
+    "time": 4.407121658325195,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a simple iterative approach to count characters in the string, incrementing a counter for each character until the end of the string is reached. Edge cases include an empty string, which should return a length of 0; and strings with non-standard characters or very long strings, ensuring the function handles all characters uniformly and does not hit any Python runtime limits.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/24",
+    "method": "tot",
+    "code": "def largest_divisor(n: int) -> int:\n    if n < 2:\n        return None\n    for i in range(n - 1, 0, -1):\n        if n % i == 0:\n            return i",
+    "correct": true,
+    "time": 5.601385593414307,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, iterate from n-1 down to 1, checking if the current number divides n evenly. Return the first such divisor found. Handle the edge case where n is less than 2 by returning None or a specific message indicating no valid output.",
+    "eval_scores": [
+      7,
+      6,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/25",
+    "method": "tot",
+    "code": "from typing import List\n\ndef factorize(n: int) -> List[int]:\n    i = 2\n    factors = []\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n            factors.append(i)\n    if n > 1:\n        factors.append(n)\n    return factors",
+    "correct": true,
+    "time": 6.474698305130005,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To factorize the integer `n`, implement a function that iterates through potential divisors starting from 2, dividing `n` by each divisor as many times as possible before moving on to the next. Use a list to collect all prime factors in the order of their appearance. Handle edge cases such as when `n` is less than 2 and optimize for large numbers by checking divisibility up to the square root of `n`.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/26",
+    "method": "tot",
+    "code": "from typing import List\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    count = {}\n    result = []\n    for number in numbers:\n        if number not in count:\n            count[number] = 0\n            result.append(number)\n        count[number] += 1\n    return [num for num in result if count[num] == 1]",
+    "correct": true,
+    "time": 5.856448173522949,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a dictionary to count occurrences of each number while maintaining the order using an additional list for unique numbers. Iterate through the input list, incrementing counts in the dictionary and adding numbers that haven't been seen before to the result list; skip duplicates by checking their count. Handle edge cases where the list is empty or contains only unique elements by directly returning the input if applicable.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/27",
+    "method": "tot",
+    "code": "def flip_case(string: str) -> str:\n    result = \"\"\n    for char in string:\n        if char.islower():\n            result += char.upper()\n        elif char.isupper():\n            result += char.lower()\n        else:\n            result += char\n    return result",
+    "correct": true,
+    "time": 4.888091325759888,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iterate through each character in the string, and for each character, check if it is lowercase or uppercase using Python's `str.islower()` and `str.upper()`/`str.lower()` methods. Convert the case accordingly and construct the new string with the modified characters. Handle edge cases such as empty strings or strings without any alphabetic characters by directly returning them since no change is needed.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/28",
+    "method": "tot",
+    "code": "def concatenate(strings: List[str]) -> str:\n    return ''.join(strings) if strings else ''",
+    "correct": false,
+    "time": 3.558997869491577,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the built-in `join` method for strings to concatenate all elements in the list efficiently. Handle the edge case of an empty list by directly returning an empty string without iterating through the list, ensuring optimal performance and simplicity.",
+    "eval_scores": [
+      9,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/29",
+    "method": "tot",
+    "code": "from typing import List\n\ndef filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    return [s for s in strings if isinstance(s, str) and s.startswith(prefix)]",
+    "correct": true,
+    "time": 4.0370869636535645,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use list comprehension combined with the `startswith` string method for filtering strings that begin with the specified prefix. Ensure empty lists and non-string prefixes are handled gracefully without errors.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/30",
+    "method": "tot",
+    "code": "def get_positive(l: list):\n    return [num for num in l if num > 0]",
+    "correct": true,
+    "time": 4.83437967300415,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use list comprehension to filter out positive numbers from the given list. Ensure that zero is not included as a positive number. Handle edge cases such as empty lists and lists containing only non-positive numbers by returning an empty list in these scenarios.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/31",
+    "method": "tot",
+    "code": "def is_prime(n):\n    \"\"\"Return true if a given number is prime, and false otherwise.\"\"\"\n    if n <= 1:\n        return False\n    elif n == 2:\n        return True\n    elif n % 2 == 0:\n        return False\n    for i in range(3, int(n**0.5) + 1, 2):\n        if n % i == 0:\n            return False\n    return True",
+    "correct": true,
+    "time": 6.3933000564575195,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To determine if a number is prime, implement an efficient trial division algorithm that checks divisibility from 2 up to the square root of n. Handle edge cases for numbers less than or equal to 1 and even numbers greater than 2 separately to optimize performance.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/32",
+    "method": "tot",
+    "code": "import math\n\ndef poly(xs: list, x: float):\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\ndef find_zero(xs: list):\n    if len(xs) % 2 != 0:\n        raise ValueError(\"The number of coefficients must be even.\")\n    \n    # Ensure the polynomial is non-zero and has real roots\n    a = -10.0\n    b = 10.0\n    fa = poly(xs, a)\n    fb = poly(xs, b)\n\n    if fa * fb > 0:\n        raise ValueError(\"The function must change sign over the interval.\")\n\n    while (b - a) / 2.0 > 1e-6: # precision threshold\n        c = (a + b) / 2.0\n        fc = poly(xs, c)\n        \n        if fc == 0:\n            return c\n        elif fa * fc < 0:\n            b = c\n        else:\n            a = c\n            \n    return (a + b) / 2.0",
+    "correct": false,
+    "time": 10.7104012966156,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, employ the bisection method due to its reliability for finding roots of continuous functions within a given interval, especially with polynomials. Ensure the function changes sign over the interval by evaluating at boundaries or choosing them based on polynomial behavior and guarantee that the input list length is even as specified, handling edge cases such as polynomials without real roots or those requiring specific initial intervals for convergence.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/33",
+    "method": "tot",
+    "code": "def sort_third(l: list):\n    if not l:\n        return []\n    divisible_by_three = [l[i] for i in range(len(l)) if i % 3 == 0]\n    sorted_divisible_by_three = sorted(divisible_by_three)\n    result = l[:]\n    j = 0\n    for i in range(0, len(result), 3):\n        if j < len(sorted_divisible_by_three):\n            result[i] = sorted_divisible_by_three[j]\n            j += 1\n    return result",
+    "correct": true,
+    "time": 6.573931694030762,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, separate and sort the elements at indices divisible by three, then reconstruct the list while keeping other elements unchanged. Use a temporary list for sorting and iterate through the original list to place sorted elements back in their respective positions. Handle edge cases such as empty lists or lists with fewer than three elements separately to ensure correctness.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/34",
+    "method": "tot",
+    "code": "def unique(l: list):\n    \"\"\"Return sorted unique elements in a list\n    >>> unique([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [0, 2, 3, 5, 9, 123]\n    \"\"\"\n    return sorted(set(l))",
+    "correct": true,
+    "time": 5.254749298095703,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a set to eliminate duplicates and then convert the set back into a list which will be sorted automatically when converted due to the nature of Python's set implementation. Ensure to handle an empty list by directly returning it as it is already unique and sorted.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/35",
+    "method": "tot",
+    "code": "def max_element(l: list):\n    if not l:\n        raise ValueError(\"List is empty, cannot determine maximum element.\")\n    return max(l)",
+    "correct": true,
+    "time": 4.910911560058594,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the built-in `max()` function for simplicity and efficiency, but if implementing manually, employ a linear scan while iterating through the list to track the highest value encountered. Handle an empty list by raising a ValueError or returning a specific message to indicate there's no maximum element.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/36",
+    "method": "tot",
+    "code": "def fizz_buzz(n: int) -> int:\n    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+    "correct": true,
+    "time": 5.966464996337891,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iterate through numbers less than `n`, checking if each number is divisible by 11 or 13. For those that are, convert the number to a string and count occurrences of '7'. Sum these counts to get the final result. Edge cases include small values of `n` where no such numbers exist and handling the inclusion of n itself (though it should not be included as per the problem statement).",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/37",
+    "method": "tot",
+    "code": "def sort_even(l: list):\n    even = []\n    odd = []\n    for i in range(len(l)):\n        if i % 2 == 0:\n            even.append(l[i])\n        else:\n            odd.append(l[i])\n    even.sort()\n    result = []\n    e_index = 0\n    o_index = 0\n    for i in range(len(l)):\n        if i % 2 == 0:\n            result.append(even[e_index])\n            e_index += 1\n        else:\n            result.append(odd[o_index])\n            o_index += 1\n    return result",
+    "correct": true,
+    "time": 7.445075035095215,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use two lists to separately collect even and odd indexed elements, sort the list of even-indexed elements, then recombine them by alternating from the sorted evens and keeping odds in their original order. Handle edge cases such as empty or single-element lists gracefully, returning them unchanged since sorting is unnecessary.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/38",
+    "method": "tot",
+    "code": "def decode_cyclic(s: str):\n    # split string to groups. Each of length 3.\n    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    # reverse cycle elements in each group. Unless group has fewer elements than 3.\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+    "correct": false,
+    "time": 6.769378662109375,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To decode the cyclically encoded string, reverse the encoding process by first splitting the string back into groups of 1, 2, or 3 characters and then reversing the cycle for each group. Ensure to correctly handle edge cases where group lengths are less than three without altering them. Join all groups back together in their original order to reconstruct the initial string.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/39",
+    "method": "tot",
+    "code": "def prime_fib(n: int):\n    if n <= 0:\n        raise ValueError(\"Input must be a positive integer\")\n\n    def is_prime(num):\n        if num < 2:\n            return False\n        for i in range(2, int(num ** 0.5) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    fib_primes = []\n    a, b = 0, 1\n    while len(fib_primes) < n:\n        a, b = b, a + b\n        if is_prime(a):\n            fib_primes.append(a)\n    return fib_primes[-1]",
+    "correct": true,
+    "time": 7.897544860839844,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use dynamic programming to generate Fibonacci numbers up to a reasonable limit and sieve for primality using the Sieve of Eratosthenes or trial division for smaller values. Keep track of which Fibonacci numbers are prime in a list and return the n-th element once found, handling edge cases like negative input by raising an exception.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/40",
+    "method": "tot",
+    "code": "def triples_sum_to_zero(l: list):\n    if len(l) < 3:\n        return False\n\n    num_set = set()\n    for i in range(len(l)):\n        for j in range(i+1, len(l)):\n            target = -(l[i] + l[j])\n            if target in num_set:\n                return True\n            num_set.add(l[j])\n\n    return False",
+    "correct": true,
+    "time": 7.207183599472046,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a nested loop and hash table approach: for each pair of elements, store the negative sum in a hash set; if the third number is found in the set, return True. Handle edge cases such as lists with fewer than three elements by returning False immediately. This strategy ensures O(n^2) time complexity while efficiently checking for the existence of the required triplet.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/41",
+    "method": "tot",
+    "code": "def car_race_collision(n: int) -> int:\n    if n <= 0:\n        return 0\n    else:\n        return n ** 2",
+    "correct": true,
+    "time": 5.469836711883545,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a simple mathematical approach rather than complex data structures since each car moving left to right will inevitably collide with each car moving right to left. Thus, the total number of collisions is simply n squared, where n is the number of cars in either direction. Ensure that the function handles non-positive inputs by returning 0 or an appropriate error message.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/42",
+    "method": "tot",
+    "code": "def incr_list(l: list):\n    \"\"\"Return list with elements incremented by 1.\n    >>> incr_list([1, 2, 3])\n    [2, 3, 4]\n    >>> incr_list([5, 3, 5, 2, 3, 3, 9, 0, 123])\n    [6, 4, 6, 3, 4, 4, 10, 1, 124]\n    \"\"\"\n    return [x + 1 for x in l]",
+    "correct": true,
+    "time": 4.648237705230713,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use list comprehension for an efficient and concise solution, incrementing each element by 1. Handle the edge case where the input list might be empty to return an equally empty result list.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/43",
+    "method": "tot",
+    "code": "def pairs_sum_to_zero(l):\n    seen = set()\n    for number in l:\n        if -number in seen:\n            return True\n        seen.add(number)\n    return False",
+    "correct": true,
+    "time": 4.992388963699341,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a set to keep track of the numbers seen so far and check for each number if its negation is in the set. This approach allows O(n) time complexity. Edge cases include handling single-element lists and checking for zero, which trivially pairs with itself to sum to zero.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/44",
+    "method": "tot",
+    "code": "def change_base(x: int, base: int) -> str:\n    if x == 0:\n        return \"0\"\n    digits = []\n    while x:\n        digits.append(str(x % base))\n        x //= base\n    return ''.join(digits[::-1])",
+    "correct": true,
+    "time": 6.0731260776519775,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To convert an integer `x` to a different base, repeatedly divide the number by the new base and store the remainders until the quotient becomes zero. Collect the remainders in reverse order to form the resulting string representation of the number in the new base. Edge cases include handling bases less than 2 and numbers equal to or less than zero according to problem constraints, can be ignored as per given conditions.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/45",
+    "method": "tot",
+    "code": "def triangle_area(a, h):\n    if a < 0 or h < 0:\n        return 0\n    else:\n        return 0.5 * a * h",
+    "correct": true,
+    "time": 4.819247007369995,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the triangle area calculation, implement a straightforward function using the formula (0.5 * base * height), where 'a' represents the base and 'h' is the height of the triangle. Ensure the function returns 0 if either input parameter is negative to handle invalid edge cases.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/46",
+    "method": "tot",
+    "code": "def fib4(n: int) -> int:\n    if n == 0 or n == 1 or n == 3:\n        return 0\n    elif n == 2:\n        return 2\n\n    a, b, c, d = 0, 0, 2, 0\n    for _ in range(4, n + 1):\n        a, b, c, d = b, c, d, a + b + c + d\n    return d",
+    "correct": true,
+    "time": 6.719137668609619,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use dynamic programming with an array to store the last four Fibonacci numbers and iteratively update it up to n. Handle edge cases for n < 4 separately since they don't follow the usual recursive formula. Initialize your base case values in the array and then loop from 4 to n, updating the array at each step based on the given recurrence relation.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/47",
+    "method": "tot",
+    "code": "def median(l: list):\n    def partition(left, right, pivot_index):\n        pivot = l[pivot_index]\n        l[pivot_index], l[right] = l[right], l[pivot_index]\n        store_index = left\n        for i in range(left, right):\n            if l[i] < pivot:\n                l[store_index], l[i] = l[i], l[store_index]\n                store_index += 1\n        l[right], l[store_index] = l[store_index], l[right]\n        return store_index\n\n    def select(left, right, k_smallest):\n        if left == right:\n            return l[left]\n\n        pivot_index = partition(left, right, (left + right) // 2)\n        if k_smallest == pivot_index:\n             return l[k_smallest]\n        elif k_smallest < pivot_index:\n            return select(left, pivot_index - 1, k_smallest)\n        else:\n            return select(pivot_index + 1, right, k_smallest)\n\n    n = len(l)\n    if n % 2 == 1:\n        return select(0, n - 1, n // 2)\n    else:\n        return 0.5 * (select(0, n - 1, n // 2 - 1) + select(0, n - 1, n // 2))",
+    "correct": true,
+    "time": 9.492450475692749,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the quickselect algorithm to find the median, which is efficient with an average time complexity of O(n). Handle edge cases such as empty lists and lists with even numbers of elements by returning the average of the two middle elements. Implement the partition function from the quicksort algorithm to select the pivot and reorder the list segments around this pivot until the median element(s) are found.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/48",
+    "method": "tot",
+    "code": "import re\n\ndef is_palindrome(text: str) -> bool:\n    # Preprocess the string to lower case and remove non-alphanumeric characters\n    cleaned_text = re.sub(r'[^a-zA-Z0-9]', '', text.lower())\n    \n    left, right = 0, len(cleaned_text) - 1\n    \n    while left < right:\n        if cleaned_text[left] != cleaned_text[right]:\n            return False\n        left += 1\n        right -= 1\n        \n    return True",
+    "correct": true,
+    "time": 6.17551851272583,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use two-pointer technique to compare characters from the start and end of the string, moving towards the center. Edge cases include empty strings and strings with all repeating characters; also ensure non-alphanumeric characters or case sensitivity do not affect the result by preprocessing the input text.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/49",
+    "method": "tot",
+    "code": "def modp(n: int, p: int) -> int:\n    if n == 0:\n        return 1\n    result = 1\n    base = 2 % p\n    while n > 0:\n        if n % 2 == 1:\n            result = (result * base) % p\n        n //= 2\n        base = (base * base) % p\n    return result",
+    "correct": true,
+    "time": 5.868850469589233,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the exponentiation by squaring method for efficient computation of large powers modulo p to prevent numerical overflow and ensure speed. Handle edge cases such as when n is 0, returning 1 since any number to the power of 0 is 1, and ensure p is a positive integer to avoid errors in modulo operation.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/50",
+    "method": "tot",
+    "code": "def decode_shift(s: str):\n    \"\"\"\n    takes as input string encoded with encode_shift function. Returns decoded string.\n    \"\"\"\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+    "correct": false,
+    "time": 5.488341569900513,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To decode the string, utilize the same shift logic as `encode_shift` but in reverse by subtracting 5 instead of adding it. Ensure handling of lowercase letters and wrap around the alphabet using modulo operation. Return the decoded string constructed from characters shifted back to their original positions.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/51",
+    "method": "tot",
+    "code": "def remove_vowels(text):\n    vowels = 'aeiouAEIOU'\n    return ''.join([char for char in text if char not in vowels])",
+    "correct": true,
+    "time": 4.50252890586853,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a list comprehension with string filtering to iterate through each character in the input text, excluding vowels (both lowercase and uppercase) by checking if they are not in the predefined set of vowels. Handle edge cases such as empty strings or strings containing only vowels by directly returning the filtered result without additional checks.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/52",
+    "method": "tot",
+    "code": "def below_threshold(l: list, t: int):\n    for num in l:\n        if num >= t:\n            return False\n    return True",
+    "correct": true,
+    "time": 4.438803672790527,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a simple iteration over the list while comparing each element against the threshold value. Return False immediately if any number is found that meets or exceeds the threshold; otherwise, return True after checking all elements. Edge cases include an empty list and a list with just one item exceeding the threshold.",
+    "eval_scores": [
+      7,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/53",
+    "method": "tot",
+    "code": "def add(x: int, y: int) -> int:\n    \"\"\"Add two numbers x and y\n    >>> add(2, 3)\n    5\n    >>> add(5, 7)\n    12\n    \"\"\"\n    return x + y",
+    "correct": true,
+    "time": 4.971023321151733,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the basic arithmetic operation of addition for this function, as no complex algorithms or data structures are needed for summing two integers. Ensure the function handles only integer inputs and does not attempt to add non-integer types like strings or floats.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/54",
+    "method": "tot",
+    "code": "def same_chars(s0: str, s1: str):\n    if len(set(s0)) != len(set(s1)):\n        return False\n\n    for char in set(s0):\n        if s0.count(char) != s1.count(char):\n            return False\n\n    return True",
+    "correct": false,
+    "time": 5.324017524719238,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use hash sets (or dictionaries) to count the occurrences of each character in both strings, then compare these counts to determine if they contain the same characters. Edge cases include empty strings and strings with special characters or numbers; ensure the solution is case-sensitive as per typical string comparison standards.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/55",
+    "method": "tot",
+    "code": "def fib(n: int) -> int:\n    memo = {0: 0, 1: 1}\n    \n    def helper(n):\n        if n not in memo:\n            memo[n] = helper(n - 1) + helper(n - 2)\n        return memo[n]\n    \n    return helper(n)",
+    "correct": true,
+    "time": 4.769564628601074,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use dynamic programming with memoization to efficiently compute the n-th Fibonacci number, storing previously computed values in a dictionary to avoid redundant calculations. Handle edge cases for n=0 and n=1 explicitly since these define the base cases of the Fibonacci sequence.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/56",
+    "method": "tot",
+    "code": "def correct_bracketing(brackets: str) -> bool:\n    stack = []\n    for bracket in brackets:\n        if bracket == \"<\":\n            stack.append(bracket)\n        elif bracket == \">\":\n            if not stack or stack[-1] != \"<\":\n                return False\n            stack.pop()\n    return len(stack) == 0",
+    "correct": true,
+    "time": 5.687594175338745,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a stack-based approach to track opening brackets and ensure each one is properly closed in the correct order. Handle edge cases like empty strings, more closing than opening brackets, and unmatched sequences by checking the stack's state after processing all characters.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/57",
+    "method": "tot",
+    "code": "def monotonic(l: list):\n    increasing = decreasing = True\n    \n    for i in range(1, len(l)):\n        if l[i] > l[i-1]:\n            decreasing = False\n        elif l[i] < l[i-1]:\n            increasing = False\n            \n    return increasing or decreasing",
+    "correct": true,
+    "time": 5.991098880767822,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use two boolean variables to track if the list is increasing and decreasing, iterating through the list once to compare each element with its predecessor. Edge cases include lists of length 0 or 1, which are trivially monotonic, and lists where elements are all equal. Implement by initializing both booleans as True, updating based on comparison during iteration, and returning if either condition holds throughout.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/58",
+    "method": "tot",
+    "code": "def common(l1: list, l2: list):\n    if not l1 or not l2:\n        return []\n    return sorted(set(l1) & set(l2))",
+    "correct": true,
+    "time": 4.456281661987305,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use set intersection to find common elements between the two lists, which inherently handles uniqueness and leverages O(1) average-time complexity for lookups. After obtaining the common elements, sort them before returning; consider handling empty list inputs gracefully by returning an empty list immediately.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/59",
+    "method": "tot",
+    "code": "def largest_prime_factor(n: int) -> int:\n    i = 2\n    while i * i <= n:\n        if n % i == 0:\n            last_prime = i\n            while n % i == 0:\n                n //= i\n        i += 1\n    if n > 1:\n        last_prime = n\n    return last_prime",
+    "correct": true,
+    "time": 7.445522785186768,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use trial division to find prime factors, dividing `n` by each integer starting from 2, and moving to the next only if it divides `n`. Keep track of the largest divisor encountered that also divides `n`; this will be the largest prime factor. Ensure to handle cases where `n` might be a square or when approaching the square root of `n`, as no larger factors need checking beyond that point.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/60",
+    "method": "tot",
+    "code": "def sum_to_n(n: int) -> int:\n    if n < 1:\n        return 0\n    return n * (n + 1) // 2",
+    "correct": true,
+    "time": 4.7303688526153564,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the mathematical formula for the sum of the first n natural numbers, which is `n * (n + 1) // 2`, to efficiently calculate the result. Ensure that the function handles positive integers and consider edge cases like n = 0 or negative values though they are not required by the problem statement.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/61",
+    "method": "tot",
+    "code": "def correct_bracketing(brackets: str) -> bool:\n    stack = []\n    for char in brackets:\n        if char == '(':\n            stack.append(char)\n        elif char == ')':\n            if not stack:\n                return False\n            stack.pop()\n    return len(stack) == 0",
+    "correct": true,
+    "time": 5.309584617614746,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a stack-based algorithm to track opening brackets, pushing them when encountered and popping when a matching closing bracket is found. Ensure the stack is empty at the end to confirm all brackets are correctly paired; also handle edge cases like an uneven number of brackets or a closing bracket before any opening one.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/62",
+    "method": "tot",
+    "code": "def derivative(xs: list):\n    \"\"\" xs represent coefficients of a polynomial.\n    xs[0] + xs[1] * x + xs[2] * x^2 + ....\n     Return derivative of this polynomial in the same form.\n    \"\"\"\n    return [i * coefficient for i, coefficient in enumerate(xs) if i > 0]",
+    "correct": true,
+    "time": 5.673070192337036,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use the power rule of differentiation for polynomials: multiply each coefficient by its exponent (index) and remove the constant term. Edge cases include handling empty lists or single-element lists appropriately. Implement by iterating over the list from the second element to the end, calculating new coefficients and constructing a new list with these values.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/63",
+    "method": "tot",
+    "code": "def fibfib(n: int):\n    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 1\n\n    dp = [0] * (n+1)\n    dp[0], dp[1], dp[2] = 0, 0, 1\n\n    for i in range(3, n+1):\n        dp[i] = dp[i-1] + dp[i-2] + dp[i-3]\n\n    return dp[n]",
+    "correct": true,
+    "time": 6.5775370597839355,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use dynamic programming with memoization to store previously computed values for efficiency, avoiding redundant calculations. Handle base cases fibfib(0), fibfib(1), and fibfib(2) directly; for other values, iteratively build up the solution using a dictionary or list to cache results from smaller subproblems.",
+    "eval_scores": [
+      8,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/64",
+    "method": "tot",
+    "code": "def vowels_count(s):\n    vowels = set('aeiou')\n    count = 0\n    for i in range(len(s)):\n        if s[i].lower() in vowels:\n            count += 1\n    # Check if 'y' is at the end and treat it as a vowel\n    if s and s[-1].lower() == 'y':\n        count += 1\n    return count",
+    "correct": true,
+    "time": 6.429308891296387,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, iterate through the string while maintaining a count of vowels. Use a set for quick lookup of vowels ('a', 'e', 'i', 'o', 'u') and consider 'y' only if it's at the end of the word. Edge cases include empty strings and words composed entirely of non-vowels, ensuring these return a vowel count of zero as expected.",
+    "eval_scores": [
+      7,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/65",
+    "method": "tot",
+    "code": "def circular_shift(x, shift):\n    num_str = str(x)\n    n = len(num_str)\n    \n    if shift == 0:\n        return num_str\n    \n    if shift >= n:\n        return num_str[::-1]\n    \n    shift %= n\n    return num_str[-shift:] + num_str[:-shift]",
+    "correct": false,
+    "time": 5.527626276016235,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use string manipulation to simulate the circular shift by slicing and concatenating parts of the number represented as a string. Handle edge cases where `shift` is greater than the length of `x` or when `shift` is zero, returning either the reversed string or the original number respectively.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/66",
+    "method": "tot",
+    "code": "def digitSum(s):\n    total = 0\n    for char in s:\n        if char.isupper():\n            total += ord(char)\n    return total",
+    "correct": true,
+    "time": 4.823986768722534,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iterate through each character in the string, check if it is an uppercase letter using ASCII value or `isupper()` method, and sum up their respective ASCII values. Edge cases include handling empty strings and strings containing no uppercase letters, which should return 0 as per the problem statement.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/67",
+    "method": "tot",
+    "code": "import re\n\ndef fruit_distribution(s,n):\n    match = re.findall(r'\\d+', s)\n    apples, oranges = int(match[0]), int(match[1])\n    return n - apples - oranges",
+    "correct": true,
+    "time": 4.921393871307373,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, extract the numbers of apples and oranges from the string using regular expressions, then subtract these values from the total number of fruits provided. Ensure handling of strings with zero fruit counts by checking for empty matches. Return the calculated number of mangoes as an integer.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/68",
+    "method": "tot",
+    "code": "def pluck(arr):\n    smallest_even = (float('inf'), -1)\n    for index, value in enumerate(arr):\n        if value % 2 == 0 and (value < smallest_even[0] or (value == smallest_even[0] and index < smallest_even[1])):\n            smallest_even = (value, index)\n    return [smallest_even[0], smallest_even[1]] if smallest_even[0] != float('inf') else []",
+    "correct": true,
+    "time": 6.705718994140625,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, iterate through the array while maintaining track of the smallest even value and its index using a tuple variable initialized with a large number. Update this tracking when a smaller or equally small but earlier occurring even number is encountered. Return the result in the specified format or an empty list if no suitable node is found. Ensure proper handling for edge cases such as empty arrays and absence of even numbers.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/69",
+    "method": "tot",
+    "code": "def search(lst):\n    from collections import Counter\n    \n    freq = Counter(lst)\n    result = -1\n    \n    for num in freq:\n        if freq[num] >= num:\n            result = max(result, num)\n    \n    return result",
+    "correct": true,
+    "time": 4.937761068344116,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a hash map to count the frequency of each integer in the list. Iterate through the hash map to find the greatest integer where its frequency is at least its value, handling cases where no such integer exists by returning -1. Ensure to check edge cases like single-element lists and all-elements-being-different.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/70",
+    "method": "tot",
+    "code": "def strange_sort_list(lst):\n    sorted_lst = sorted(lst)\n    result = []\n    left, right = 0, len(sorted_lst) - 1\n    while left <= right:\n        if left == right:\n            result.append(sorted_lst[left])\n            break\n        result.append(sorted_lst[left])\n        result.append(sorted_lst[right])\n        left += 1\n        right -= 1\n    return result",
+    "correct": true,
+    "time": 6.359841346740723,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a sorting algorithm to initially sort the list, then use two pointers to alternately pick the smallest and largest remaining elements. Edge cases include handling an empty list and lists with duplicate values. Implement by first sorting the input list, then iterating while appending from both ends of the sorted list to form the strange order.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/71",
+    "method": "tot",
+    "code": "def triangle_area(a, b, c):\n    if a + b > c and a + c > b and b + c > a:\n        s = (a + b + c) / 2\n        area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n        return round(area, 2)\n    else:\n        return -1",
+    "correct": true,
+    "time": 6.94499397277832,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, implement Heron's formula to calculate the area of a triangle if it is valid; otherwise, return -1. First, check if a+b>c, a+c>b, and b+c>a to ensure the sides form a valid triangle. Then use Heron's formula (area = sqrt(s*(s-a)*(s-b)*(s-c)) where s=(a+b+c)/2) to compute the area. Finally, round the result to 2 decimal points using Python\u2019s `round` function.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/72",
+    "method": "tot",
+    "code": "def will_it_fly(q, w):\n    if not q:\n        return False\n    left = 0\n    right = len(q) - 1\n    while left < right:\n        if q[left] != q[right]:\n            return False\n        left += 1\n        right -= 1\n    return sum(q) <= w",
+    "correct": true,
+    "time": 6.128890514373779,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a two-pointer technique to check if the list is palindromic and sum its elements to compare with w. Edge cases include single-element lists and empty lists which are trivially balanced but need weight validation. Implement by first validating balance, then checking total weight against w.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/73",
+    "method": "tot",
+    "code": "def smallest_change(arr):\n    changes = 0\n    left = 0\n    right = len(arr) - 1\n\n    while left < right:\n        if arr[left] != arr[right]:\n            changes += 1\n        left += 1\n        right -= 1\n\n    return changes",
+    "correct": true,
+    "time": 6.293226718902588,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a two-pointer technique to compare elements from the start and end of the array towards the center, counting mismatches that represent necessary changes. Edge cases include handling arrays of even and odd lengths differently for the middle element when it doesn't have a pair. Implement by iterating until the pointers meet in the middle, adjusting the count based on whether elements are equal or not.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/74",
+    "method": "tot",
+    "code": "def total_match(lst1, lst2):\n    char_count_lst1 = sum(len(word) for word in lst1)\n    char_count_lst2 = sum(len(word) for word in lst2)\n\n    if char_count_lst1 <= char_count_lst2:\n        return lst1\n    else:\n        return lst2",
+    "correct": true,
+    "time": 5.8225507736206055,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the sum of lengths of strings in each list as the comparison metric between the two lists. Iterate through both lists, calculate total character counts for each, and compare them; return the list with fewer characters or the first list if they are equal. Handle edge cases such as empty lists by directly returning them since their length is zero.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/75",
+    "method": "tot",
+    "code": "def is_multiply_prime(a):\n    if a <= 2:\n        return False\n\n    # Sieve of Eratosthenes to find all prime numbers less than 100\n    sieve = [True] * 100\n    for i in range(2, int(100**0.5) + 1):\n        if sieve[i]:\n            for j in range(i*i, 100, i):\n                sieve[j] = False\n\n    primes = [i for i in range(2, 100) if sieve[i]]\n\n    def find_prime_factors(n, count=0, start_index=0):\n        if n == 1 or count == 3:\n            return count == 3\n        for i in range(start_index, len(primes)):\n            prime = primes[i]\n            if prime > n:\n                break\n            if n % prime == 0:\n                if find_prime_factors(n // prime, count + 1, i):\n                    return True\n        return False\n\n    return find_prime_factors(a)",
+    "correct": false,
+    "time": 11.160826444625854,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, implement a sieve algorithm to precompute all prime numbers less than 100. Then, for the given number 'a', try dividing it by each of these primes up to three times to check if it can be decomposed into exactly three prime factors. Edge cases include handling when 'a' is less than or equal to 2 (return False) and when 'a' itself might not exceed 100 but could still be the product of primes under this constraint.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/76",
+    "method": "tot",
+    "code": "import math\n\ndef is_simple_power(x, n):\n    if n == 1:\n        return x == 1\n    log_result = math.log(x, n)\n    return math.isclose(log_result, round(log_result))",
+    "correct": true,
+    "time": 5.650310754776001,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use logarithms to check if the log base n of x is an integer. Use math.isclose for floating-point comparison due to precision issues. Edge cases include handling when x or n is 1 and ensuring n is not zero to avoid division by zero errors.",
+    "eval_scores": [
+      7,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/77",
+    "method": "tot",
+    "code": "def iscube(a):\n    '''\n    Write a function that takes an integer a and returns True \n    if this ingeger is a cube of some integer number.\n    Note: you may assume the input is always valid.\n    Examples:\n    iscube(1) ==> True\n    iscube(2) ==> False\n    iscube(-1) ==> True\n    iscube(64) ==> True\n    iscube(0) ==> True\n    iscube(180) ==> False\n    '''\n    import math\n    \n    if a == 0:\n        return True\n    cube_root = round(a ** (1. / 3.))\n    return cube_root ** 3 == a or (-cube_root) ** 3 == a",
+    "correct": false,
+    "time": 6.773159027099609,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To determine if an integer is a cube of some other integer, compute the cube root of the given number and round it to the nearest integer. If raising this rounded integer to the power of three equals the original number, then it is a cube. Edge cases include handling negative numbers and zero. Implement the solution by importing the math module for cube root calculation and rounding functions.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/78",
+    "method": "tot",
+    "code": "def hex_key(num):\n    prime_hex_digits = {'2', '3', '5', '7', 'B', 'D'}\n    return sum(1 for digit in num if digit in prime_hex_digits)",
+    "correct": true,
+    "time": 6.088151931762695,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a set containing the hexadecimal prime digits ('2', '3', '5', '7', 'B', 'D') for quick lookup. Iterate through each character in the input string, counting how many characters are found in the set of primes. Handle edge cases by considering both empty strings and valid but non-prime inputs.",
+    "eval_scores": [
+      7,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/79",
+    "method": "tot",
+    "code": "def decimal_to_binary(decimal):\n    if decimal == 0:\n        return \"db0db\"\n    elif decimal < 0:\n        raise ValueError(\"Negative numbers cannot be converted to binary in this format.\")\n    else:\n        binary_str = bin(decimal)[2:]  # Convert to binary and remove the '0b' prefix\n        return f\"db{binary_str}db\"",
+    "correct": true,
+    "time": 6.130016326904297,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To convert a decimal number to binary, use the built-in function `bin()` to get the binary representation as a string, then remove the '0b' prefix. Append 'db' at the start and end of the result. Edge cases include handling the input 0 (which should return \"db0db\") and ensuring non-negative inputs are processed correctly since negative numbers are not valid for this conversion format.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/80",
+    "method": "tot",
+    "code": "def is_happy(s):\n    if len(s) < 3:\n        return False\n    for i in range(len(s) - 2):\n        if s[i] == s[i+1] or s[i] == s[i+2] or s[i+1] == s[i+2]:\n            return False\n    return True",
+    "correct": true,
+    "time": 5.919424295425415,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a sliding window of size 3 to check every set of consecutive characters in the string for uniqueness and ensure the total length is at least 3. Edge cases include strings shorter than 3 characters and those with repeating patterns like 'aa' or 'xyy'. Iterate through the string from index 0 to 2 (if possible) checking each triplet's distinctiveness manually.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/81",
+    "method": "tot",
+    "code": "def numerical_letter_grade(grades):\n    return ['A+' if g == 4.0 else 'A' if g > 3.7 else 'A-' if g > 3.3 else 'B+' if g > 3.0 else 'B' if g > 2.7 else 'B-' if g > 2.3 else 'C+' if g > 2.0 else 'C' if g > 1.7 else 'C-' if g > 1.3 else 'D+' if g > 1.0 else 'D' if g > 0.7 else 'D-' if g > 0.0 else 'E' for g in grades]",
+    "correct": true,
+    "time": 7.883098840713501,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a list comprehension with conditional checks to map each GPA in the input list to its corresponding letter grade based on the provided grading scale. Edge cases include handling GPAs exactly at breakpoints and ensuring no grade is missed by explicitly checking conditions from highest to lowest GPA range, including the boundary condition of 0.0 for an 'E' grade.",
+    "eval_scores": [
+      8,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/82",
+    "method": "tot",
+    "code": "def prime_length(string):\n    def is_prime(n):\n        if n <= 1:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n\n    length = len(string)\n    return is_prime(length)",
+    "correct": true,
+    "time": 7.736019849777222,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a helper function to check if a number is prime. Iterate through numbers up to the square root of the length of the string and return False if any divisor exists, otherwise return True for the main condition. Edge cases include checking an empty string or strings with lengths 1 and 2 which are not considered prime. Implement `prime_length` by first calculating the length of the input string and then applying the prime check function on this length.",
+    "eval_scores": [
+      8,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/83",
+    "method": "tot",
+    "code": "def starts_one_ends(n):\n    if n == 1:\n        return 10\n    \n    # Initialize base cases for 2-digit numbers.\n    count_start_with_1 = 1\n    count_end_with_1 = 1\n    total_count = 9  # For two-digit numbers, only 10 and 21 to 91 qualify.\n\n    for _ in range(3, n + 1):\n        new_count_start_with_1 = (count_end_with_1 * 1) % (10**9 + 7)\n        new_count_end_with_1 = (total_count * 1 + count_end_with_1 * 1) % (10**9 + 7)\n        \n        total_count = ((total_count * 9) % (10**9 + 7) + count_start_with_1 + count_end_with_1 - (count_start_with_1 == count_end_with_1)) % (10**9 + 7)\n\n        count_start_with_1, count_end_with_1 = new_count_start_with_1, new_count_end_with_1\n    \n    return total_count",
+    "correct": false,
+    "time": 9.581065654754639,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use dynamic programming to keep track of counts ending and starting with 1 separately for each digit length up to n. Handle the base case where n=1 specially since all 1-digit numbers qualify. For larger n, iterate updating counts based on previous lengths, ensuring not to double-count numbers that both start and end with 1.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/84",
+    "method": "tot",
+    "code": "def solve(N):\n    if N == 0:\n        return \"0\"\n    digit_sum = sum(int(digit) for digit in str(N))\n    binary_representation = bin(digit_sum)[2:]\n    return binary_representation",
+    "correct": true,
+    "time": 5.259439945220947,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, convert the integer N to a string to easily iterate over each digit, sum these digits, then convert the sum to its binary representation as a string. Edge cases include handling N = 0 and ensuring leading zeros in binary are removed. Implement by first initializing a sum variable, iterating through each character in the string version of N, converting it back to an integer, adding to the sum, and finally using bin() function on the sum, slicing to remove the '0b' prefix.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/85",
+    "method": "tot",
+    "code": "def add(lst):\n    if not lst:\n        return 0\n    total = 0\n    for i in range(1, len(lst), 2):\n        if lst[i] % 2 == 0:\n            total += lst[i]\n    return total",
+    "correct": true,
+    "time": 5.246016979217529,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iterate through the list, checking indices for oddness and values for evenness; sum these\u7b26\u5408\u6761\u4ef6\u7684\u5143\u7d20\u3002\u5b9e\u73b0\u65f6\uff0c\u6ce8\u610f\u5217\u8868\u4e0d\u80fd\u4e3a\u7a7a\uff0c\u5e76\u4e14\u9700\u8981\u4ece\u7d22\u5f150\u5f00\u59cb\u6b63\u786e\u5904\u7406\u5947\u5076\u6027\u3002",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/86",
+    "method": "tot",
+    "code": "def anti_shuffle(s):\n    def sort_word(word):\n        return ''.join(sorted(word))\n    \n    result = ' '.join([sort_word(w) if w.isalpha() else w for w in s.split()])\n    return result",
+    "correct": false,
+    "time": 6.694677114486694,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use the sorting algorithm to sort each word's characters individually while maintaining their original order in the sentence. Use string splitting and joining methods to handle words and spaces appropriately. Edge cases include single-character strings, empty strings, and strings with special characters interspersed within words or as separate entities.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/87",
+    "method": "tot",
+    "code": "def get_row(lst, x):\n    coordinates = []\n    for row_idx, row in enumerate(lst):\n        for col_idx, value in enumerate(row):\n            if value == x:\n                coordinates.append((row_idx, col_idx))\n    # Sort by row ascending and then by column descending within the same rows\n    sorted_coordinates = sorted(coordinates, key=lambda coord: (coord[0], -coord[1]))\n    return sorted_coordinates",
+    "correct": true,
+    "time": 6.568102121353149,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use nested loops to iterate through the list `lst` and find occurrences of integer `x`, storing their coordinates in a list. After collecting all coordinates, sort this list first by row numbers in ascending order. For rows with the same number, further sort these tuples by column numbers in descending order before returning the sorted list. Handle edge cases such as empty lists or no occurrences of `x` by directly returning an empty result.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/88",
+    "method": "tot",
+    "code": "def sort_array(array):\n    if not array:\n        return []\n    sorted_array = sorted(array)\n    first, last = sorted_array[0], sorted_array[-1]\n    if (first + last) % 2 == 0:\n        sorted_array.reverse()\n    return sorted_array",
+    "correct": true,
+    "time": 5.682775259017944,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a sorting algorithm (e.g., quicksort) to sort the array and then decide the order based on the sum of the first and last elements. If their sum is odd, return the sorted array; if even, reverse it before returning. Handle the edge case of an empty or single-element array by directly returning its copy as sorting isn't necessary in these cases.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/89",
+    "method": "tot",
+    "code": "def encrypt(s):\n    result = \"\"\n    for char in s:\n        ascii_offset = 65 if char.isupper() else 97\n        if char.isalpha():\n            rotated_char = chr((ord(char) - ascii_offset + 4) % 26 + ascii_offset)\n            result += rotated_char\n        else:\n            result += char\n    return result",
+    "correct": true,
+    "time": 6.34310245513916,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the Caesar cipher concept with a rotation of 4 positions down for each letter in the input string, since two multiplied by two equals four. Handle edge cases such as non-alphabet characters and maintain case sensitivity during encryption. Implement this by iterating through each character, checking if it's an alphabet letter, calculating its new position while preserving case, and constructing the encrypted output string accordingly.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/90",
+    "method": "tot",
+    "code": "def next_smallest(lst):\n    if not lst:\n        return None\n    \n    unique_elements = sorted(set(lst))\n    \n    if len(unique_elements) < 2:\n        return None\n    \n    return unique_elements[1]",
+    "correct": true,
+    "time": 5.2174108028411865,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use sorting or a min heap to find the second smallest element efficiently. If using sorting, remove duplicates and check if at least two distinct elements exist; for a min heap, extract the minimum twice, skipping duplicates. Handle edge cases like empty lists or lists with fewer than two unique numbers by returning None.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/91",
+    "method": "tot",
+    "code": "def is_bored(S):\n    boredoms = 0\n    sentence_started_with_i = False\n    for char in S:\n        if char == ' ':\n            continue\n        elif char == 'I':\n            sentence_started_with_i = True\n        elif char in '.?!':\n            if sentence_started_with_i:\n                boredoms += 1\n            sentence_started_with_i = False\n    return boredoms",
+    "correct": false,
+    "time": 7.002278804779053,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a state-based approach where you track whether the current sentence starts with \"I\" as you iterate through each character of the string. Use a counter for boredoms and update it when a sentence delimiter is encountered after identifying a boredom sentence. Handle edge cases like multiple delimiters in succession or leading/trailing spaces by ensuring proper sentence parsing around delimiters.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/92",
+    "method": "tot",
+    "code": "def any_int(x, y, z):\n    if isinstance(x, int) and isinstance(y, int) and isinstance(z, int):\n        return x == y + z or y == x + z or z == x + y\n    else:\n        return False",
+    "correct": true,
+    "time": 5.391759157180786,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use simple conditional logic to check if any number is the sum of the other two and ensure all inputs are integers using the `isinstance` function. Edge cases include handling non-integer values and ensuring the comparison works for both positive and negative numbers. Implement by first validating types, then checking the sum condition in three possible ways (x == y + z, etc.).",
+    "eval_scores": [
+      7,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/93",
+    "method": "tot",
+    "code": "def encode(message):\n    vowels = {'a': 'c', 'e': 'g', 'i': 'k', 'o': 'q', 'u': 'w',\n              'A': 'C', 'E': 'G', 'I': 'K', 'O': 'Q', 'U': 'W'}\n    \n    encoded_message = ''\n    for char in message:\n        if char.lower() in vowels:\n            new_char = vowels[char]\n        else:\n            new_char = char\n        # Swap case\n        if char.islower():\n            new_char = new_char.upper()\n        else:\n            new_char = new_char.lower()\n        encoded_message += new_char\n    \n    return encoded_message",
+    "correct": true,
+    "time": 7.895010709762573,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a dictionary for vowel replacements and iterate through each character of the message, applying case swapping and vowel replacement as needed. Edge cases include handling both uppercase and lowercase letters appropriately and correctly mapping vowels to their shifted counterparts while wrapping around 'z' or 'Z'. Implement by first creating the vowel shift map, then processing each character in the input string conditionally based on its type (vowel/consonant) and case.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/94",
+    "method": "tot",
+    "code": "def skjkasdkd(lst):\n    def is_prime(n):\n        if n <= 1:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n\n    max_prime = -float('inf')\n    for num in lst:\n        if is_prime(num):\n            max_prime = max(max_prime, num)\n\n    if max_prime <= 1:\n        return 0\n\n    digit_sum = sum(int(digit) for digit in str(max_prime))\n    return digit_sum",
+    "correct": true,
+    "time": 7.070611238479614,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, implement a prime-checking function and iterate through the list to find the largest prime number. Sum its digits by converting the number to a string and iterating over each character, converting it back to an integer for summation. Handle edge cases such as empty lists or lists without primes by initializing the maximum prime with zero or negative infinity accordingly.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/95",
+    "method": "tot",
+    "code": "def check_dict_case(dict):\n    if not dict:\n        return False\n    lower_keys = {k for k in dict.keys() if isinstance(k, str) and k.islower()}\n    upper_keys = {k for k in dict.keys() if isinstance(k, str) and k.isupper()}\n    return len(lower_keys) == len(dict) or len(upper_keys) == len(dict)",
+    "correct": true,
+    "time": 5.713619232177734,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use set comprehension and string methods to check if all keys are either lowercase or uppercase, handling the empty dictionary case by returning False immediately. Edge cases include dictionaries with mixed-case keys or non-string keys which should return False according to the problem specification.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/96",
+    "method": "tot",
+    "code": "def count_up_to(n):\n    def is_prime(num):\n        if num < 2:\n            return False\n        for i in range(2, int(num ** 0.5) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    return [num for num in range(n) if is_prime(num)]",
+    "correct": true,
+    "time": 6.6311705112457275,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, implement a helper function to check if a number is prime and iterate through all numbers less than n, using the helper function to filter out primes. Use list comprehension or a loop to build the result list efficiently, handling edge cases like n=0 or 1 by directly returning an empty list.",
+    "eval_scores": [
+      7,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/97",
+    "method": "tot",
+    "code": "def multiply(a, b):\n    return abs(a % 10) * abs(b % 10)",
+    "correct": true,
+    "time": 4.30330228805542,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, extract the unit digit of each number by modulo 10 and then multiply these digits together. Consider handling negative numbers correctly by ensuring their unit digit is calculated properly (negative numbers' unit digit should be considered positive for multiplication purposes). Use simple arithmetic operations to implement the solution efficiently.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/98",
+    "method": "tot",
+    "code": "def count_upper(s):\n    vowels = {'A', 'E', 'I', 'O', 'U'}\n    count = 0\n    for i in range(0, len(s), 2):\n        if s[i] in vowels:\n            count += 1\n    return count",
+    "correct": true,
+    "time": 6.214674949645996,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a simple iterative algorithm that checks each character at even indices in the string to determine if it is an uppercase vowel ('A', 'E', 'I', 'O', 'U'). Increment a counter for each match. Edge cases include empty strings and single-character strings, which should return 0 by definition.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/99",
+    "method": "tot",
+    "code": "import math\n\ndef closest_integer(value):\n    num = float(value)\n    if num > 0:\n        return int(num + 0.5) if not is_halfway_between_integers(num - int(num)) else int(math.ceil(num))\n    else:\n        return int(num - 0.5) if not is_halfway_between_integers(abs(num - abs(int(num)))) else int(math.floor(num))\n\ndef is_halfway_between_integers(decimal_part):\n    return decimal_part == 0.5 or decimal_part == -0.5",
+    "correct": true,
+    "time": 6.7789623737335205,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, convert the input string to a floating-point number and use Python's `round()` function with careful handling of equidistant cases. Implement a helper function to check if the value is exactly halfway between two integers using decimal arithmetic for precision, then adjust rounding accordingly based on sign. This ensures rounding away from zero as specified.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/100",
+    "method": "tot",
+    "code": "def make_a_pile(n):\n    if n == 1:\n        return [1]\n    stones = [n]\n    for i in range(1, n):\n        next_stone_count = stones[-1] + 2\n        stones.append(next_stone_count)\n    return stones",
+    "correct": true,
+    "time": 5.3410444259643555,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a list comprehension to generate the pile levels based on whether n is odd or even, iterating and incrementing by 2 for each subsequent level. Handle edge case where n is 1 separately to return [1]. Implement by determining initial parity of n and adjusting increments accordingly in the loop.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/101",
+    "method": "tot",
+    "code": "import re\n\ndef words_string(s):\n    if not s:\n        return []\n    # Using regex to split on commas or spaces while ignoring empty strings\n    words = re.split(r'[,\\s]+', s)\n    # Removing any None values that might result from multiple delimiters\n    return [word for word in words if word]",
+    "correct": true,
+    "time": 6.19982385635376,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the `re` module to split the string by both commas and spaces as delimiters, accounting for potential multiple consecutive delimiters. Handle edge cases like an empty string input or a string without any delimiters by ensuring the regex pattern is robust enough to cover these scenarios. Implement the function by importing necessary modules at the beginning and testing it with various inputs to ensure correctness.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/102",
+    "method": "tot",
+    "code": "def choose_num(x, y):\n    if x > y:\n        return -1\n    max_val = max(x, y)\n    for num in range(max_val, x-1, -1):\n        if num % 2 == 0:\n            return num\n    return -1",
+    "correct": true,
+    "time": 6.5119194984436035,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, identify the maximum of x and y, then decrement from that number until you find an even number within the range [x, y], returning it if found. If no such number exists in the range, return -1. Handle edge cases where x > y by immediately returning -1.\n\nThis approach uses a simple iterative algorithm with conditional checks to ensure efficiency and correctness across all inputs.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/103",
+    "method": "tot",
+    "code": "def rounded_avg(n, m):\n    if n > m:\n        return -1\n    avg = round((n + m) / 2)\n    binary_representation = bin(avg)[2:]\n    return f\"0b{binary_representation}\"",
+    "correct": true,
+    "time": 5.8451032638549805,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the arithmetic mean formula to calculate the average of numbers from n to m, round it to the nearest integer, and then convert that number to its binary representation. Implement a check at the beginning of the function to return -1 if n is greater than m. Ensure proper handling for cases where n equals m directly.",
+    "eval_scores": [
+      7,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/104",
+    "method": "tot",
+    "code": "def unique_digits(x):\n    def has_only_odd_digits(n):\n        return all(int(digit) % 2 != 0 for digit in str(n))\n    \n    result = [num for num in x if has_only_odd_digits(num)]\n    return sorted(result)",
+    "correct": true,
+    "time": 5.51447319984436,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, filter the list using a helper function that checks if all digits of an integer are odd, then sort and return the filtered results. Edge cases include handling empty lists and integers with no odd digits. Implement by first defining the helper function to check digit parity, iterating through the input list, applying this function to each element, sorting the resulting subset, and returning it.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/105",
+    "method": "tot",
+    "code": "def by_length(arr):\n    digit_names = [\"One\", \"Two\", \"Three\", \"Four\", \"Five\", \"Six\", \"Seven\", \"Eight\", \"Nine\"]\n    filtered_arr = [num for num in arr if 1 <= num <= 9]\n    sorted_arr = sorted(filtered_arr)\n    reversed_arr = sorted_arr[::-1]\n    return [digit_names[num-1] for num in reversed_arr]",
+    "correct": true,
+    "time": 6.7683305740356445,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a filtering step to exclude numbers outside the 1-9 range, sort the remaining numbers in ascending order and then reverse the sorted list. Map each number from 1 to 9 to its corresponding word using a predefined dictionary or list. Handle edge cases like an empty array by checking the length of the filtered result before proceeding with sorting and mapping.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/106",
+    "method": "tot",
+    "code": "def f(n):\n    def factorial(x):\n        result = 1\n        for i in range(2, x + 1):\n            result *= i\n        return result\n\n    def arithmetic_sum(x):\n        return (x * (x + 1)) // 2\n\n    if n == 0:\n        return []\n\n    result_list = [None] * n\n    for i in range(n):\n        if i % 2 == 0:\n            result_list[i] = factorial(i + 1)\n        else:\n            result_list[i] = arithmetic_sum(i + 1)\n\n    return result_list",
+    "correct": false,
+    "time": 7.561324596405029,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use dynamic programming to build the list iteratively, storing intermediate results for efficiency. Handle edge cases like n = 0 with an empty list and ensure correct computation of factorials for even indices and sums for odd indices starting from 1. Implement two helper functions for factorial and sum calculation to keep the main function clear.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/107",
+    "method": "tot",
+    "code": "def even_odd_palindrome(n):\n    def is_palindrome(num):\n        return str(num) == str(num)[::-1]\n\n    even_count = 0\n    odd_count = 0\n\n    for i in range(1, n + 1):\n        if is_palindrome(i):\n            if i % 2 == 0:\n                even_count += 1\n            else:\n                odd_count += 1\n\n    return (even_count, odd_count)",
+    "correct": true,
+    "time": 7.011742115020752,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, iterate through numbers from 1 to n, checking if each number is a palindrome by comparing it with its reverse. Increment counters for even and odd palindromes accordingly. Use string conversion to easily reverse numbers and check for palindrome property. Handle edge cases like single-digit numbers which are all palindromes.",
+    "eval_scores": [
+      7,
+      7,
+      6
+    ]
+  },
+  {
+    "task_id": "HumanEval/108",
+    "method": "tot",
+    "code": "def count_nums(arr):\n    def signed_digit_sum(n):\n        if n == 0:\n            return 0\n        elif n < 0:\n            first, rest = str(n)[1], str(n)[2:]\n            return int(first) * -1 + int(rest.replace('-', ''))\n        else:\n            return sum(int(digit) for digit in str(n))\n\n    return sum(1 for num in arr if signed_digit_sum(num) > 0)",
+    "correct": false,
+    "time": 6.665351390838623,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use an iteration-based approach to go through each number in the array, calculate the sum of its signed digits, and count how many numbers have a positive digit sum. Handle negative numbers by including their first digit as negative. Edge cases include empty arrays and single-element arrays with both positive and negative values.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/109",
+    "method": "tot",
+    "code": "def move_one_ball(arr):\n    if not arr:\n        return True\n\n    rotation_point = -1\n    for i in range(len(arr)):\n        if arr[i] > arr[(i + 1) % len(arr)]:\n            if rotation_point != -1:  # More than one rotation point found.\n                return False\n            rotation_point = i\n    \n    # Check if the array is already sorted or can be made sorted by a single right shift.\n    return rotation_point == -1 or (rotation_point + 1) % len(arr) == 0 or arr[rotation_point] <= arr[(rotation_point + 2) % len(arr)]",
+    "correct": false,
+    "time": 8.213935375213623,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, identify the rotation point in the array where if we split and concatenate, the result is sorted. Use a single pass through the array to find if there's at most one place where the next element is smaller than the current (indicating a rotation), and ensure no other such points exist. Return True if found, else False. Handle an empty array by returning True directly.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/110",
+    "method": "tot",
+    "code": "def exchange(lst1, lst2):\n    odd_count = sum(1 for num in lst1 if num % 2 != 0)\n    even_count = sum(1 for num in lst2 if num % 2 == 0)\n    \n    return \"YES\" if even_count >= odd_count else \"NO\"",
+    "correct": true,
+    "time": 6.557380437850952,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, count the odd numbers in lst1 and ensure there are enough even numbers in lst2 to swap with them. Use a two-pass approach: first pass to identify the necessity of swaps, second pass to confirm feasibility based on available evens in lst2. Handle edge cases like empty lists or when lst2 lacks sufficient evens for all odds in lst1.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/111",
+    "method": "tot",
+    "code": "def histogram(test):\n    if not test:\n        return {}\n    \n    letter_counts = {}\n    max_count = 0\n    \n    # Count occurrences of each letter\n    for char in test.split():\n        letter_counts[char] = letter_counts.get(char, 0) + 1\n        max_count = max(max_count, letter_counts[char])\n    \n    # Filter letters that have the maximum count\n    result = {letter: count for letter, count in letter_counts.items() if count == max_count}\n    \n    return result",
+    "correct": true,
+    "time": 6.313520908355713,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a dictionary to count occurrences of each letter in the input string. Iterate through the string, updating counts and then iterate through the dictionary entries to find letters with the maximum occurrence count. Handle edge cases such as an empty string by returning an empty dictionary directly. Ensure the function captures all letters that tie for the highest frequency.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/112",
+    "method": "tot",
+    "code": "def reverse_delete(s,c):\n    to_remove = set(c)\n    result_string = ''.join([ch for ch in s if ch not in to_remove])\n    is_palindrome = result_string == result_string[::-1]\n    return (result_string, is_palindrome)",
+    "correct": true,
+    "time": 5.390662908554077,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a set for string `c` to efficiently remove matching characters from `s`. After removal, check if the resulting string is a palindrome by comparing it with its reverse. Return a tuple of the filtered string and the palindrome check result. Handle edge cases where `s` or `c` might be empty strings.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/113",
+    "method": "tot",
+    "code": "def odd_count(lst):\n    result = []\n    for s in lst:\n        odd_digits = sum(1 for digit in s if int(digit) % 2 != 0)\n        output_string = f\"the number of odd elements {odd_digits}n the str{odd_digits}ng {odd_digits} of the {odd_digits}nput.\"\n        result.append(output_string)\n    return result",
+    "correct": true,
+    "time": 6.6701905727386475,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use string manipulation and iteration through the list of strings. For each string, count how many odd digits it contains, then construct the output string by replacing specific placeholders with this count. Handle edge cases such as empty lists or strings containing no odd numbers explicitly in the implementation to ensure robustness.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/114",
+    "method": "tot",
+    "code": "def minSubArraySum(nums):\n    if not nums:\n        return 0\n    \n    current_min = float('inf')\n    overall_min = float('inf')\n    \n    for num in nums:\n        if current_min > 0:\n            current_min = num\n        else:\n            current_min += num\n        \n        if overall_min > current_min:\n            overall_min = current_min\n            \n    return overall_min",
+    "correct": true,
+    "time": 5.955937623977661,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the Kadane's Algorithm variant for minimum subarray sum, which involves iterating through the array while keeping track of the current sum and updating the minimum sum found so far. Handle edge cases such as when all numbers are positive by ensuring the initial value for minimum is set to a very high number to be correctly updated during iteration.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/115",
+    "method": "tot",
+    "code": "def max_fill(grid, capacity):\n    import math\n    if not grid or not grid[0]:\n        return 0\n\n    total_operations = 0\n    for row in grid:\n        water_units = sum(row)\n        operations_for_row = math.ceil(water_units / capacity)\n        total_operations += operations_for_row\n\n    return total_operations",
+    "correct": true,
+    "time": 6.324951887130737,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use the cumulative sum of water units in each well row and then divide by the bucket capacity to determine how many times you need to lower the bucket for that row. Sum these values across all rows to get the total number of bucket lowers needed. Edge cases include empty wells or buckets with a capacity larger than the total amount of water, which should return zero operations.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/116",
+    "method": "tot",
+    "code": "def sort_array(arr):\n    return sorted(arr, key=lambda x: (bin(abs(x)).count('1'), abs(x)))",
+    "correct": false,
+    "time": 5.700916290283203,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a combination of Python's `sorted` function with a custom sorting key that first counts the number of ones in the binary representation using `bin(n).count('1')`, and then uses the decimal value as a secondary sort criterion. Handle edge cases for negative numbers by converting them to their absolute values before counting binary ones, but maintain original signs in the final sorted output.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/117",
+    "method": "tot",
+    "code": "def select_words(s, n):\n    vowels = \"aeiouAEIOU\"\n    def count_consonants(word):\n        return sum(1 for char in word if char.isalpha() and char not in vowels)\n    \n    return [word for word in s.split() if count_consonants(word) == n]",
+    "correct": true,
+    "time": 5.963005065917969,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a helper function to count consonants in each word and filter words based on the target consonant count, `n`. Edge cases include handling an empty string and ensuring the function works for strings where no words meet the criteria. Use list comprehension for efficient filtering and maintain order by processing the text directly as a sequence of words.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/118",
+    "method": "tot",
+    "code": "def get_closest_vowel(word):\n    vowels = set('aeiouAEIOU')\n    consonants = set([c for c in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' if c not in vowels])\n    \n    for i in range(len(word) - 2, 0, -1):  # Start from second last character and move left\n        if word[i] in vowels and word[i-1] in consonants and word[i+1] in consonants:\n            return word[i]\n    return \"\"",
+    "correct": true,
+    "time": 7.404836893081665,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, iterate over the word from right to left looking for the first occurrence of a vowel that is sandwiched between two consonants. Use a set for vowels and another for consonants for quick lookups. Edge cases include words ending or beginning directly with vowels or being too short to have a qualifying vowel.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/119",
+    "method": "tot",
+    "code": "def match_parens(lst):\n    def balance(s):\n        count = 0\n        for char in s:\n            if char == '(':\n                count += 1\n            else:\n                count -= 1\n            if count < 0:\n                return False\n        return count == 0\n\n    a, b = lst[0], lst[1]\n    if not a or not b:  # Handle edge cases where one string is empty.\n        return 'Yes' if balance(a + b) else 'No'\n    \n    return 'Yes' if balance(a + b) or balance(b + a) else 'No'",
+    "correct": true,
+    "time": 8.165260791778564,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a counter system to track the balance of parentheses: increment for '(', decrement for ')'. Iterate through possible concatenations of the two strings. If at any point the counter goes negative or the final value is not zero, return 'No'. Return 'Yes' if both checks pass. Handle edge cases where one string might be empty separately by checking initial and final balances directly.",
+    "eval_scores": [
+      7,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/120",
+    "method": "tot",
+    "code": "import heapq\n\ndef maximum(arr, k):\n    if k == 0:\n        return []\n    \n    min_heap = arr[:k]\n    heapq.heapify(min_heap)\n    \n    for num in arr[k:]:\n        if num > min_heap[0]:\n            heapq.heappop(min_heap)\n            heapq.heappush(min_heap, num)\n    \n    return sorted(min_heap)",
+    "correct": true,
+    "time": 6.740020275115967,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a min heap to keep track of the k largest elements encountered in the array efficiently. As you iterate through the array, maintain a heap of size k and return its sorted contents once iteration is complete. Handle edge case where k is 0 by returning an empty list immediately.",
+    "eval_scores": [
+      7,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/121",
+    "method": "tot",
+    "code": "def solution(lst):\n    total_sum = 0\n    for i in range(0, len(lst), 2):  # Iterate through even indices only.\n        if lst[i] % 2 != 0:  # Check if the element at index i is odd.\n            total_sum += lst[i]\n    return total_sum",
+    "correct": true,
+    "time": 5.922842502593994,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iterate through the list, checking only even positions (indices 0, 2, 4, ...), and sum the values if they are odd. Edge cases include handling lists with fewer elements than expected for an \"even position\" or lists where all elements at even indices are even. Implement by initializing a sum variable to zero outside the loop and conditionally adding to it within the loop based on the criteria.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/122",
+    "method": "tot",
+    "code": "def add_elements(arr, k):\n    total_sum = 0\n    for i in range(k):\n        if arr[i] >= -99 and arr[i] <= 99:\n            total_sum += arr[i]\n    return total_sum",
+    "correct": true,
+    "time": 5.409344911575317,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iterate through the first k elements of the array, checking each element if it has at most two digits. If true, add it to a running sum. Return the final sum after completing the iteration. Ensure to handle arrays with very small or large values appropriately within the constraint limits.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/123",
+    "method": "tot",
+    "code": "def get_odd_collatz(n):\n    if n == 1:\n        return [1]\n    \n    odd_numbers = []\n    while n != 1:\n        if n % 2 == 1:\n            odd_numbers.append(n)\n        n = n // 2 + (n & 1) * 3\n    odd_numbers.append(1)\n    \n    return sorted(set(odd_numbers))",
+    "correct": false,
+    "time": 6.844976902008057,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, implement the Collatz sequence generation for the given integer n, and filter out only the odd numbers from the generated sequence. Use a list to store these odd numbers and return a sorted version of it since filtering already ensures they will be in order due to the nature of the Collatz sequence. Handle edge cases such as when n is 1 directly.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/124",
+    "method": "tot",
+    "code": "import re\n\ndef valid_date(date):\n    if not date or len(date) != 10 or date[2] != '-' or date[5] != '-':\n        return False\n    \n    try:\n        month, day, year = map(int, date.split('-'))\n        \n        if month < 1 or month > 12:\n            return False\n        \n        if day < 1:\n            return False\n        \n        if month in [4, 6, 9, 11] and day > 30:\n            return False\n        elif (month == 2) and ((day > 29 and year % 4 != 0) or (day > 28 and not(year % 400 == 0 or (year % 4 == 0 and year % 100 != 0)))):\n            return False\n        elif day > 31:\n            return False\n        \n    except ValueError:\n        return False\n    \n    return True",
+    "correct": true,
+    "time": 9.628345012664795,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To validate the date, parse and split the input string by '-', check its length is exactly 10 characters with hyphens at positions 2 and 5. Use regular checks for month (between 1 and 12) and day ranges based on the month, considering leap years for February. Edge cases to handle include invalid formats, days out of range for specific months, and non-existent dates like February 30th.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/125",
+    "method": "tot",
+    "code": "def split_words(txt):\n    if txt:\n        words = txt.split()\n        if len(words) > 1:\n            return words\n        elif ',' in txt:\n            return txt.replace(\" \", \"\").split(',')\n        else:\n            return sum(1 for char in txt if 'a' <= char <= 'z' and ord(char.lower()) % 2 == 1)\n    return []",
+    "correct": false,
+    "time": 6.2923572063446045,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use string splitting and list comprehension for the primary logic. First, try splitting by whitespace; if unsuccessful, attempt splitting by commas; finally, count lower-case letters with odd ordinal values based on 'a' = 0 using a loop or list comprehension. Handle edge cases like empty strings or strings without separators or specific letters gracefully.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/126",
+    "method": "tot",
+    "code": "def is_sorted(lst):\n    if len(lst) < 2:\n        return True\n\n    prev = lst[0]\n    for i in range(1, len(lst)):\n        if prev >= lst[i]:\n            return False\n        if prev == lst[i] and (i+1 < len(lst) and lst[i] == lst[i+1]):\n            return False\n        prev = lst[i]\n\n    return True",
+    "correct": false,
+    "time": 6.263221025466919,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a single pass through the list with a variable to track the previous element, comparing each element to ensure it is greater than the last and checking for more than two consecutive identical elements. Edge cases include lists of length one or empty lists, which should be handled explicitly before the main loop.",
+    "eval_scores": [
+      7,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/127",
+    "method": "tot",
+    "code": "def is_prime(n):\n    if n <= 1:\n        return False\n    if n == 2 or n == 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    w = 2\n    while i * i <= n:\n        if n % i == 0:\n            return False\n        i += w\n        w = 6 - w\n    return True\n\ndef intersection(interval1, interval2):\n    start_max = max(interval1[0], interval2[0])\n    end_min = min(interval1[1], interval2[1])\n    \n    if start_max >= end_min:\n        return \"NO\"\n    \n    length = end_min - start_max\n    return \"YES\" if is_prime(length) else \"NO\"",
+    "correct": true,
+    "time": 8.670284509658813,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, determine the intersection of the two intervals by finding the maximum start point and minimum end point of the given intervals. Calculate the length of the intersection; if it's a prime number, return \"YES\", otherwise return \"NO\". Use a helper function to check for primality. Edge cases include intervals that do not intersect at all or have zero-length intersection.",
+    "eval_scores": [
+      8,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/128",
+    "method": "tot",
+    "code": "def prod_signs(arr):\n    if not arr:\n        return None\n\n    sum_magnitudes = 0\n    sign_product = 1\n\n    for num in arr:\n        if num == 0:\n            sign_product = 0\n        else:\n            sum_magnitudes += abs(num)\n            sign_product *= -1 if num < 0 else 1\n\n    return sum_magnitudes * sign_product",
+    "correct": true,
+    "time": 6.5870680809021,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a single pass through the array to calculate the sum of magnitudes and determine the product of signs simultaneously. Handle the edge case where the array contains zero(s), which will make the overall sign product zero unless there are no elements at all, in which case return None. Use conditional checks to manage these calculations efficiently during iteration.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/129",
+    "method": "tot",
+    "code": "def minPath(grid, k):\n    N = len(grid)\n    directions = [(0, 1), (1, 0), (-1, 0), (0, -1)]\n    \n    def dfs(x, y, length, path, memo):\n        if length == k:\n            return tuple(path[:])\n        \n        key = (x, y, length, tuple(path))\n        if key in memo:\n            return memo[key]\n        \n        min_path = None\n        for dx, dy in directions:\n            nx, ny = x + dx, y + dy\n            if 0 <= nx < N and 0 <= ny < N:\n                path.append(grid[nx][ny])\n                new_path = dfs(nx, ny, length + 1, path, memo)\n                if min_path is None or (new_path < min_path):\n                    min_path = new_path\n                path.pop()\n        \n        memo[key] = min_path if min_path else tuple(path[:])\n        return memo[key]\n    \n    overall_min_path = [float('inf')] * k\n    for i in range(N):\n        for j in range(N):\n            result = dfs(i, j, 1, [grid[i][j]], {})\n            if result < overall_min_path:\n                overall_min_path = result[:]\n                \n    return list(overall_min_path)",
+    "correct": false,
+    "time": 11.769574403762817,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use dynamic programming with memoization to explore all possible paths of length k starting from each cell, keeping track of the minimum path found so far. Edge cases include handling grid boundaries and initializing the DP table appropriately. Implement a recursive function that updates the current best path whenever a better one is found.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/130",
+    "method": "tot",
+    "code": "def tri(n):\n    if n < 0:\n        return []\n    elif n == 0:\n        return [1]\n    elif n == 1:\n        return [1, 3]\n    \n    tribonacci = [1] * (n+1)\n    tribonacci[1] = 3\n    \n    for i in range(2, n+1):\n        if i % 2 == 0:\n            tribonacci[i] = 1 + i // 2\n        else:\n            tribonacci[i] = tribonacci[i-1] + tribonacci[max(i-2, 0)] + tribonacci[min(i+1, n)]\n    \n    return tribonacci",
+    "correct": false,
+    "time": 7.529883146286011,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, utilize dynamic programming with an array to store previously computed Tribonacci numbers to avoid redundant calculations. Handle base cases for n=1 separately as specified and ensure correct computation for both odd and even values of n according to the given recurrence relation. Edge case includes handling input where n is 0 or less by returning an appropriate empty list or error message.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/131",
+    "method": "tot",
+    "code": "def digits(n):\n    product = 1\n    has_odd_digit = False\n    for digit in str(n):\n        if int(digit) % 2 != 0:\n            product *= int(digit)\n            has_odd_digit = True\n        else:\n            product = 0\n            break\n    return product if has_odd_digit else 0",
+    "correct": false,
+    "time": 6.878246545791626,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use iteration to traverse each digit of the integer, checking if it's odd; if so, multiply it with a running product. Initialize this product as 1 and maintain a separate flag or return value initialized at 0 for handling cases where only even digits are present. Return the accumulated product unless all digits were even, in which case return 0.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/132",
+    "method": "tot",
+    "code": "def is_nested(string):\n    stack = []\n    nested = False\n\n    for bracket in string:\n        if bracket == '[':\n            stack.append(bracket)\n        elif bracket == ']':\n            if not stack:\n                return False\n            stack.pop()\n            if len(stack) > 1 or (len(stack) == 1 and not nested):\n                nested = True\n\n    return nested and not stack",
+    "correct": false,
+    "time": 5.768489122390747,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a stack-based approach to track opening brackets and ensure they are properly closed in sequence, while checking for nesting. Edge cases include strings with unmatched brackets or those that only abut without nesting. Ensure the algorithm identifies at least one instance of true nesting among multiple valid but non-nested sequences.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/133",
+    "method": "tot",
+    "code": "import math\ndef sum_squares(lst):\n    return sum(math.ceil(x)**2 for x in lst)",
+    "correct": true,
+    "time": 4.7135021686553955,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use list comprehension with `math.ceil` for rounding each number up, then square and sum them using a generator expression within the `sum()` function. Handle negative numbers by ensuring ceiling still rounds towards larger values (away from zero). Implement by first importing `math`, then applying these transformations in sequence as described.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/134",
+    "method": "tot",
+    "code": "def check_if_last_char_is_a_letter(txt):\n    txt = txt.rstrip()  # Remove trailing whitespace\n    if not txt:\n        return False\n    last_char = txt[-1]\n    if last_char.isalpha():\n        if len(txt) == 1 or not txt[-2].isalpha():\n            return True\n    return False",
+    "correct": false,
+    "time": 5.875333786010742,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use string manipulation techniques to check the last character of `txt` and identify if it's an alphabetical letter that is not part of a word. Specifically, check if the last character is alphanumeric and ensure there's no preceding alphabet character; also handle edge cases like empty strings or multiple spaces at the end. Implement by first trimming trailing spaces, then verifying conditions on characters.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/135",
+    "method": "tot",
+    "code": "def can_arrange(arr):\n    if not arr or len(arr) <= 1:\n        return -1\n    for i in range(1, len(arr)):\n        if arr[i] < arr[i-1]:\n            return i\n    return -1",
+    "correct": false,
+    "time": 5.786942005157471,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a single pass through the array with an index variable to track the position of the last element that does not meet the condition. Compare each element with its predecessor, updating the index when the condition is violated. Return this index at the end or -1 if no violation was found. Handle edge cases like empty arrays and single-element arrays by immediately returning -1 after input validation.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/136",
+    "method": "tot",
+    "code": "def largest_smallest_integers(lst):\n    negatives = [num for num in lst if num < 0]\n    positives = [num for num in lst if num > 0]\n    \n    a = max(negatives, default=None)\n    b = min(positives, default=None)\n    \n    return (a, b)",
+    "correct": true,
+    "time": 5.7196643352508545,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use list comprehension and conditional checks to filter negative and positive integers separately from the input list. Then, find the largest in the negatives and smallest in the positives using Python's built-in functions `max`, `min` with appropriate default values (`None`). Handle edge cases where there are no elements or only non-positive/non-negative numbers by returning `None` for those categories as specified.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/137",
+    "method": "tot",
+    "code": "def compare_one(a, b):\n    float_a = float(str(a).replace(',', '.')) if isinstance(a, str) else a\n    float_b = float(str(b).replace(',', '.')) if isinstance(b, str) else b\n    \n    if float_a == float_b:\n        return None\n    elif float_a > float_b:\n        return a\n    else:\n        return b",
+    "correct": true,
+    "time": 6.393714666366577,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, convert all inputs to floats for comparison purposes, handling both '.' and ',' as decimal points in strings. After determining the larger value, return it in its original type unless they are equal, then return None. Ensure to accurately parse strings representing numbers and compare them with numeric types by converting them temporarily during comparison.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/138",
+    "method": "tot",
+    "code": "def is_equal_to_sum_even(n):\n    if n < 8 or n % 2 != 0:\n        return False\n    return n >= 8 and (n - 8) % 4 <= 0",
+    "correct": false,
+    "time": 6.2773683071136475,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use an iterative approach checking if the number can be expressed as 4 even numbers by leveraging the fact that any sum of four evens is at least 8 and increases in steps of 4. Edge cases include handling numbers less than 8 and ensuring the parity fits (only even sums are possible).",
+    "eval_scores": [
+      6,
+      7,
+      6
+    ]
+  },
+  {
+    "task_id": "HumanEval/139",
+    "method": "tot",
+    "code": "def special_factorial(n):\n    if n <= 0:\n        return \"Brazilian factorial is not defined for non-positive integers\"\n    result = 1\n    total_product = 1\n    for i in range(1, n + 1):\n        result *= i\n        total_product *= result\n    return total_product",
+    "correct": true,
+    "time": 7.378600597381592,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, implement an iterative function that calculates the factorial of each number from 1 up to n and multiplies these factorials together. Use a loop to compute each factorial sequentially, storing intermediate results to avoid recalculations. Handle edge case where n is 0 or negative by returning an appropriate error message or value since the Brazilian factorial is not defined for non-positive integers.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/140",
+    "method": "tot",
+    "code": "import re\n\ndef fix_spaces(text):\n    # Replace more than 2 consecutive spaces with '-'\n    text = re.sub(r' {3,}', '-', text)\n    # Replace single spaces with '_'\n    text = re.sub(r' ', '_', text)\n    return text",
+    "correct": true,
+    "time": 5.3296284675598145,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the `re` module for pattern matching and substitution in Python, which allows handling both single spaces and sequences of more than two consecutive spaces efficiently. Ensure to test with various space configurations including leading/trailing spaces and multiple segments of text separated by different numbers of spaces to cover all edge cases.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/141",
+    "method": "tot",
+    "code": "import re\n\ndef file_name_check(file_name):\n    pattern = r'^[a-zA-Z][^\\d.\\n]{0,}[a-zA-Z]{0,}\\d{0,3}\\.[txt|exe|dll]{3,4}$'\n    if re.match(pattern, file_name):\n        return 'Yes'\n    else:\n        return 'No'",
+    "correct": false,
+    "time": 6.5352702140808105,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use regular expressions to validate the file name against the specified criteria efficiently. Regular expressions can check the presence of a single dot, restrict the number of digits, ensure the file starts with an alphabetic character, and confirm that the extension is one of ['txt', 'exe', 'dll']. Edge cases include names starting or ending with '.', having more than three digits, or incorrect extensions. Implement by defining a regex pattern matching all criteria, then testing the given filename against this pattern.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/142",
+    "method": "tot",
+    "code": "def sum_squares(lst):\n    result = 0\n    for i in range(len(lst)):\n        if i % 3 == 0:\n            result += lst[i] ** 2\n        elif i % 4 == 0 and i % 3 != 0:\n            result += lst[i] ** 3\n        else:\n            result += lst[i]\n    return result",
+    "correct": true,
+    "time": 6.702325820922852,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iterate through the list, applying squares to elements at indices that are multiples of 3, cubes to elements at indices that are multiples of 4 but not 3, and maintaining other elements unchanged. Sum all processed elements and return the total. Handle edge cases such as an empty list by initializing the sum to zero before any iteration.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/143",
+    "method": "tot",
+    "code": "def words_in_sentence(sentence):\n    def is_prime(n, primes):\n        return n in primes\n\n    # Pre-calculate prime numbers up to 10 using Sieve of Eratosthenes\n    max_word_length = 10\n    sieve = [True] * (max_word_length + 1)\n    for x in range(2, int(max_word_length ** 0.5) + 1):\n        if sieve[x]:\n            for i in range(x*x, max_word_length + 1, x):\n                sieve[i] = False\n    primes = {x for x in range(2, max_word_length + 1) if sieve[x]}\n\n    # Split the sentence into words and filter by prime length\n    filtered_words = [word for word in sentence.split() if is_prime(len(word), primes)]\n\n    return ' '.join(filtered_words)",
+    "correct": true,
+    "time": 7.96562933921814,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the Sieve of Eratosthenes algorithm to pre-calculate prime numbers up to 10 (since the maximum word length is under 100/10) and iterate through each word in the sentence, checking if its length is a previously calculated prime number. Collect such words in a list and return them as a single string with spaces separating the words. Handle edge cases by ensuring the sentence isn't empty and that all characters are letters.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/144",
+    "method": "tot",
+    "code": "from fractions import Fraction\n\ndef simplify(x, n):\n    frac_x = Fraction(*map(int, x.split('/')))\n    frac_n = Fraction(*map(int, n.split('/')))\n    result = frac_x * frac_n\n    return result.denominator == 1",
+    "correct": true,
+    "time": 6.087985992431641,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use the fractions module in Python for arithmetic operations and comparison of fractions. Implement logic to parse the input strings into Fraction objects, multiply them, and check if the result is a whole number by verifying if the denominator equals 1 after simplification. Handle edge cases where numerators or denominators are large but still result in an integer when multiplied.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/145",
+    "method": "tot",
+    "code": "def order_by_points(nums):\n    def digit_sum(n):\n        return sum(int(d) for d in str(abs(n)))\n    \n    return sorted(nums, key=lambda x: (digit_sum(x), nums.index(x)))",
+    "correct": false,
+    "time": 5.113144874572754,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a custom sorting key that returns a tuple containing the sum of digits for each number and its original index (to maintain order in case of ties on digit sum). Use Python's `sorted()` function with this key. Handle edge cases like an empty list by directly returning it since no processing is needed.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/146",
+    "method": "tot",
+    "code": "def specialFilter(nums):\n    return len([num for num in nums if num > 10 and int(str(abs(num))[0]) % 2 != 0 and int(str(abs(num))[-1]) % 2 != 0])",
+    "correct": true,
+    "time": 6.133352994918823,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use list comprehension with conditional checks to filter numbers greater than 10 and having both first and last digits odd. Convert each number to a string to easily access the first and last digits, ensuring handling of negative numbers by ignoring the '-' sign for the first digit check. Edge cases include single-digit or two-digit numbers where both digits are considered simultaneously.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/147",
+    "method": "tot",
+    "code": "def get_max_triples(n):\n    mod_counts = [0] * 3\n    for i in range(1, n + 1):\n        value = i * i - i + 1\n        remainder = value % 3\n        mod_counts[remainder] += 1\n    \n    count = (mod_counts[0] * (mod_counts[0] - 1) * (mod_counts[0] - 2) // 6 +\n             mod_counts[0] * mod_counts[1] * mod_counts[2])\n    \n    for i in range(3):\n        count += mod_counts[i] * (mod_counts[(i + 1) % 3] * (mod_counts[(i + 1) % 3] - 1) // 2)\n    \n    return count",
+    "correct": false,
+    "time": 9.954529047012329,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use dynamic programming and modular arithmetic to count the occurrences of each possible remainder when elements of array \\(a\\) are divided by 3, since we only need to consider remainders for a triple's sum to be divisible by 3. After populating the counts, apply combinatorial logic to calculate how many valid triples can be formed from these counts, ensuring careful handling of edge cases where counts might lead to invalid combinations or division by zero scenarios.",
+    "eval_scores": [
+      7,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/148",
+    "method": "tot",
+    "code": "def bf(planet1, planet2):\n    order = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in order or planet2 not in order:\n        return ()\n    start_index = order.index(planet1)\n    end_index = order.index(planet2)\n    if start_index > end_index:\n        start_index, end_index = end_index, start_index\n    return tuple(order[start_index + 1:end_index])",
+    "correct": true,
+    "time": 7.104457139968872,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use an ordered list of planet names to determine the positions of `planet1` and `planet2`. Return a tuple with planets between them, inclusive, using slicing. Handle edge cases by verifying that both inputs are valid planet names before processing further.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/149",
+    "method": "tot",
+    "code": "def sorted_list_sum(lst):\n    lst = [word for word in lst if len(word) % 2 == 0]\n    return sorted(lst, key=lambda x: (len(x), x))",
+    "correct": true,
+    "time": 6.237025499343872,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, filter out strings with odd lengths using list comprehension, then sort the remaining strings first by length and then alphabetically in case of ties. Use Python's sorted function with a custom sorting key that is a tuple comprising string length and alphabetical order. Handle edge cases where all strings might be filtered out due to odd lengths or the input list being empty.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/150",
+    "method": "tot",
+    "code": "import math\n\ndef x_or_y(n, x, y):\n    if n < 2:\n        return y\n    \n    def is_prime(num):\n        if num == 2 or num == 3:\n            return True\n        if num < 2 or num % 2 == 0:\n            return False\n        for i in range(3, int(math.sqrt(num)) + 1, 2):\n            if num % i == 0:\n                return False\n        return True\n    \n    return x if is_prime(n) else y",
+    "correct": true,
+    "time": 6.842734336853027,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, implement a prime-checking function to determine if `n` is prime. If it returns true, return `x`; otherwise, return `y`. Handle the edge case where `n` is less than 2, which should not be considered prime. Use trial division up to the square root of `n` for efficiency in checking primality.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/151",
+    "method": "tot",
+    "code": "def double_the_difference(lst):\n    total_sum = 0\n    for num in lst:\n        if isinstance(num, int) and num > 0 and num % 2 != 0:\n            total_sum += num ** 2\n    return total_sum",
+    "correct": true,
+    "time": 5.61688494682312,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iterate through the list, checking each number to determine if it is an odd positive integer. If so, square the number and add it to a running total. Return the total sum at the end of the iteration. Handle edge cases such as negative numbers, non-integer values (though not applicable here since the input is restricted to integers), and empty lists by initializing the sum to 0 and ensuring no additions are made for invalid entries.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/152",
+    "method": "tot",
+    "code": "def compare(game, guess):\n    result = []\n    for g, gu in zip(game, guess):\n        difference = abs(g - gu)\n        result.append(difference)\n    return result",
+    "correct": true,
+    "time": 5.283570766448975,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, iterate through the game and guess arrays simultaneously, calculating the absolute difference between corresponding elements for each match result and guess. Store these differences in a new list which will be returned. Ensure handling of zero values correctly to denote exact matches.\n\nEdge cases to consider include empty input lists and negative scores or guesses, ensuring the solution handles all expected inputs robustly.",
+    "eval_scores": [
+      7,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/153",
+    "method": "tot",
+    "code": "def Strongest_Extension(class_name, extensions):\n    def strength(extension):\n        upper_count = sum(c.isupper() for c in extension)\n        lower_count = sum(c.islower() for c in extension)\n        return upper_count - lower_count\n\n    if not extensions:\n        return f\"{class_name}.{class_name}\"\n\n    strongest_extension = max(extensions, key=strength)\n    return f\"{class_name}.{strongest_extension}\"",
+    "correct": true,
+    "time": 7.065195322036743,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, use a list comprehension to calculate the strength of each extension based on uppercase and lowercase counts, then return the class name concatenated with the strongest extension. Handle edge cases by ensuring empty lists or no extensions return an appropriate format. Use Python's `max` function with a custom key for efficient selection of the strongest extension from the input list while maintaining order in case of ties.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/154",
+    "method": "tot",
+    "code": "def cycpattern_check(a, b):\n    if not a or not b:\n        return False\n    doubled_a = a * 2\n    return b in doubled_a and len(b) <= len(a)",
+    "correct": false,
+    "time": 6.726389408111572,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, concatenate the first word with itself and then check if the second word is a substring of this concatenated string. This approach covers all rotations of the second word within the doubled length of the first word efficiently. Edge cases to handle include when either word is empty or when they are identical.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/155",
+    "method": "tot",
+    "code": "def even_odd_count(num):\n    count_even = 0\n    count_odd = 0\n    for digit in str(abs(num)):\n        if int(digit) % 2 == 0:\n            count_even += 1\n        else:\n            count_odd += 1\n    return (count_even, count_odd)",
+    "correct": true,
+    "time": 6.186829566955566,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iterate through each digit of the number, classifying it as even or odd and counting accordingly. Convert the integer to a string for easy iteration through each digit; remember to handle negative numbers by ignoring the sign. Return a tuple with counts of even and odd digits.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/156",
+    "method": "tot",
+    "code": "def int_to_mini_roman(number):\n    roman_map = {1000: 'm', 900: 'cm', 500: 'd', 400: 'cd', 100: 'c', 90: 'xc',\n                 50: 'l', 40: 'xl', 10: 'x', 9: 'ix', 5: 'v', 4: 'iv', 1: 'i'}\n    roman_numeral = ''\n    for value, numeral in roman_map.items():\n        while number >= value:\n            roman_numeral += numeral\n            number -= value\n    return roman_numeral",
+    "correct": true,
+    "time": 8.324700117111206,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a mapping of integers to Roman numerals, iterating through the map from largest to smallest values to construct the result string. Handle edge cases for numbers like 4 (iv) and 900 (cm) by including special cases in the mapping. Implement by looping through the mapping and subtracting values from the number as you append corresponding symbols to the result.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/157",
+    "method": "tot",
+    "code": "def right_angle_triangle(a, b, c):\n    sides = sorted([a, b, c])\n    if sides[0] <= 0 or sides[1] <= 0 or sides[2] <= 0:\n        return False\n    if sides[0] + sides[1] <= sides[2]:\n        return False\n    return sides[0]**2 + sides[1]**2 == sides[2]**2",
+    "correct": true,
+    "time": 7.164403915405273,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To determine if the given sides form a right-angled triangle, apply the Pythagorean theorem: check if the square of one side is equal to the sum of squares of the other two sides. Sort the sides to ensure the longest side is compared correctly as the hypotenuse. Handle edge cases where inputs are not positive or do not form a valid triangle by adding checks for these conditions before applying the theorem.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/158",
+    "method": "tot",
+    "code": "def find_max(words):\n    max_unique = 0\n    selected_word = \"\"\n    for word in words:\n        unique_chars = len(set(word))\n        if unique_chars > max_unique or (unique_chars == max_unique and word < selected_word):\n            max_unique = unique_chars\n            selected_word = word\n    return selected_word",
+    "correct": true,
+    "time": 6.263672590255737,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, utilize a dictionary to track the count of unique characters for each word and identify the word with the highest number of unique characters. If there are ties, use lexicographical order to determine the result. Edge cases include lists with empty strings or no words at all, which should be handled by returning an appropriate default value based on problem constraints.",
+    "eval_scores": [
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/159",
+    "method": "tot",
+    "code": "def eat(number, need, remaining):\n    total_eaten = number + min(need, remaining)\n    remaining_carrots = max(0, remaining - need)\n    return [total_eaten, remaining_carrots]",
+    "correct": true,
+    "time": 5.702638387680054,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use basic arithmetic operations to calculate the total number of carrots eaten after meals and the remaining carrots in stock. Handle the case where the remaining carrots are less than the needed amount by setting the remaining carrot count to zero and adjusting the total eaten accordingly. Ensure that no negative numbers are returned for the remaining carrots.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "HumanEval/160",
+    "method": "tot",
+    "code": "def do_algebra(operator, operand):\n    if not isinstance(operator, list) or not isinstance(operand, list):\n        raise TypeError(\"Operator and Operand must be lists.\")\n    if len(operator) == 0 or len(operand) <= 1:\n        raise ValueError(\"Invalid length for operator or operand list.\")\n    \n    valid_operators = {'+', '-', '*', '//', '**'}\n    if any(op not in valid_operators for op in operator):\n        raise ValueError(\"Invalid operators provided.\")\n\n    expression = str(operand[0])\n    for i, op in enumerate(operator):\n        expression += f\" {op} {operand[i+1]}\"\n    \n    return eval(expression)",
+    "correct": true,
+    "time": 7.11619234085083,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this, utilize a loop to construct the algebraic expression string by iterating through both lists simultaneously and concatenating operators with operands. After constructing the string, safely evaluate it using Python's `eval` function while ensuring no invalid or dangerous expressions are evaluated. Handle edge cases such as empty operator/operand sequences or non-numeric inputs early in the function to avoid runtime errors.",
+    "eval_scores": [
+      5,
+      5,
+      6
+    ]
+  },
+  {
+    "task_id": "HumanEval/161",
+    "method": "tot",
+    "code": "def solve(s):\n    has_letters = False\n    result = \"\"\n    for char in s:\n        if char.isalpha():\n            has_letters = True\n            result += char.swapcase() if char.islower() else char.lower()\n        else:\n            result += char\n    return result[::-1] if not has_letters else result",
+    "correct": true,
+    "time": 6.095801115036011,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use a loop to iterate through each character in the string, checking if it's a letter using `str.isalpha()`. If it is, reverse its case; otherwise, leave it unchanged. After processing all characters, if no letters were found (`isalpha()` returned False for every character), reverse the entire string. Handle edge cases where the input string might be empty or contain only non-letter characters by directly reversing them without modification.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "HumanEval/162",
+    "method": "tot",
+    "code": "def string_to_md5(text):\n    if not text:\n        return None\n    md5_hash = hashlib.md5()\n    md5_hash.update(text.encode('utf-8'))\n    return md5_hash.hexdigest()",
+    "correct": false,
+    "time": 4.845227003097534,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "Use the hashlib library in Python to generate the MD5 hash of the given string. First, check if the input string is empty and return None if true; otherwise, compute the hash using `hashlib.md5()`, encode the text to bytes, update the hash object with these bytes, and finally return the hexadecimal representation of the hash.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  }
+]

@@ -1,0 +1,4014 @@
+{
+  "router": "semantic_entropy",
+  "dataset": "mbpp",
+  "model": "qwen-2.5-14b",
+  "results": [
+    {
+      "task_id": "MBPP/11",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/12",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/13",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/14",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/15",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/16",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/17",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/18",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/19",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/20",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/21",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/22",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/23",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/24",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/25",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/26",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/27",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/28",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/29",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/30",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/31",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/32",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/33",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/34",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/35",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/36",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/37",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/38",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/39",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/40",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/41",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/42",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/43",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/44",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/45",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/46",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/47",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/48",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/49",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/50",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/51",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/52",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/53",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/54",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/55",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/56",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/57",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/58",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/59",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/60",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/61",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/62",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/63",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/64",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/65",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/66",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/67",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/68",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/69",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/70",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/71",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/72",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/73",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/74",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/75",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/76",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/77",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/78",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/79",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/80",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/81",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/82",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/83",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/84",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/85",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/86",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/87",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/88",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/89",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/90",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/91",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/92",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/93",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/94",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/95",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/96",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/97",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/98",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/99",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/100",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/101",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/102",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/103",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/104",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/105",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/106",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/107",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/108",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/109",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/110",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/111",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/112",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/113",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/114",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/115",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/116",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/117",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/118",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/119",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/120",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/121",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/122",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/123",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/124",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/125",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/126",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/127",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/128",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/129",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/130",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/131",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/132",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/133",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/134",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/135",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/136",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/137",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/138",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/139",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/140",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/141",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/142",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/143",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/144",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/145",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/146",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/147",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/148",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/149",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/150",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/151",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/152",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/153",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/154",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/155",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/156",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/157",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/158",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/159",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/160",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/161",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/162",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/163",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/164",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/165",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/166",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/167",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/168",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/169",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/170",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/171",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/172",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/173",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/174",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/175",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/176",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/177",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/178",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/179",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/180",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/181",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/182",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/183",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/184",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/185",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/186",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/187",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/188",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/189",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/190",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/191",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/192",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/193",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/194",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/195",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/196",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/197",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/198",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/199",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/200",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/201",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/202",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/203",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/204",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/205",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/206",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/207",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/208",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/209",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/210",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/211",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/212",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/213",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/214",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/215",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/216",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/217",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/218",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/219",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/220",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/221",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/222",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/223",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/224",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/225",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/226",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/227",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/228",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/229",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/230",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/231",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/232",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/233",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/234",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/235",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/236",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/237",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/238",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/239",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/240",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/241",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/242",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/243",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/244",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/245",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/246",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/247",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/248",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/249",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/250",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/251",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/252",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/253",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/254",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/255",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/256",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/257",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/258",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/259",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/260",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/261",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/262",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/263",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/264",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/265",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/266",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/267",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/268",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/269",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/270",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/271",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/272",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/273",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/274",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/275",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/276",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/277",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/278",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/279",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/280",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/281",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/282",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/283",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/284",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/285",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/286",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/287",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/288",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/289",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/290",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/291",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/292",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/293",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/294",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/295",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/296",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/297",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/298",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/299",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/300",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/301",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/302",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/303",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/304",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/305",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/306",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/307",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/308",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/309",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/310",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/311",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/312",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/313",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/314",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/315",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/316",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/317",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/318",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/319",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/320",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/321",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/322",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/323",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/324",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/325",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/326",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/327",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/328",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/329",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/330",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/331",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/332",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/333",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/334",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/335",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/336",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/337",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/338",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/339",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/340",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/341",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/342",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/343",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/344",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/345",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/346",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/347",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/348",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/349",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/350",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/351",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/352",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/353",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/354",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/355",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/356",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/357",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/358",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/359",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/360",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/361",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/362",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/363",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/364",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/365",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/366",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/367",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/368",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/369",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/370",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/371",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/372",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/373",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/374",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/375",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/376",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/377",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/378",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/379",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/380",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/381",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/382",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/383",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/384",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/385",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/386",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/387",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/388",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/389",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/390",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/391",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/392",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/393",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/394",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/395",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/396",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/397",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/398",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/399",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/400",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/401",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/402",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/403",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/404",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/405",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/406",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/407",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/408",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/409",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/410",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/411",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/412",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/413",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/414",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/415",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/416",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/417",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/418",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/419",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/420",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/421",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/422",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/423",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/424",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/425",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/426",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/427",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/428",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/429",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/430",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/431",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/432",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/433",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/434",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/435",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/436",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/437",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/438",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/439",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/440",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/441",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/442",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/443",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/444",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/445",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/446",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/447",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/448",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/449",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/450",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/451",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/452",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/453",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/454",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/455",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/456",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/457",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/458",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/459",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/460",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/461",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/462",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/463",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/464",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/465",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/466",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/467",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/468",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/469",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/470",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/471",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/472",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/473",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/474",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/475",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/476",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/477",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/478",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/479",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/480",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/481",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/482",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/483",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/484",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/485",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/486",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/487",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/488",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/489",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/490",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/491",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/492",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/493",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/494",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/495",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/496",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/497",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/498",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/499",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 4
+    },
+    {
+      "task_id": "MBPP/500",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/501",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/502",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/503",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 3
+    },
+    {
+      "task_id": "MBPP/504",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/505",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/506",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 2
+    },
+    {
+      "task_id": "MBPP/507",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true,
+      "disagreement": 1
+    },
+    {
+      "task_id": "MBPP/508",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/509",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true,
+      "disagreement": 5
+    },
+    {
+      "task_id": "MBPP/510",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false,
+      "disagreement": 5
+    }
+  ],
+  "summary": {
+    "total": 500,
+    "router_accuracy": 45.4,
+    "cot_accuracy": 46.6,
+    "astar_accuracy": 45.0,
+    "oracle_accuracy": 53.0
+  }
+}

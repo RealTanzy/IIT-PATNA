@@ -1,0 +1,9 @@
+{
+  "paired_jsonl": "/home/dibyanayan/tanzeel/THE FINAL CALL/llama 3.1 8b/data/cot_astar_runs/logicqa_paired_all.jsonl",
+  "output_dir": "THE RAG APPROACH/outputs/logicqa_rag_smoke",
+  "kb_split": "train",
+  "retriever_requested": "auto",
+  "retriever_actual": "sbert",
+  "retriever_fallback_reason": "",
+  "build_kb_only": true
+}

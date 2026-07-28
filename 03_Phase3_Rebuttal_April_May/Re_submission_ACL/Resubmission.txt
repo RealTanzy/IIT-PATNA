@@ -1,0 +1,19 @@
+You need to work here in this folder Re_Submission_ACL
+
+ultrathink , think hard
+
+here what we have to now is as you have created the latest changed topic of the ACL Version now this time what you need to do, we have our another paper which is somewhat similar to this that you can say as an older version. WE submitted for the open review and we got the review and also we submitted the rebuttal as well. That you can check read this pdf "C:\Users\madamkh\Desktop\Research Work\tanzeel_server_backup\tanzeel server backup\Re_submission_ACL\Beyond Linear Reasoning_ Combining Chain-of-Thought with A_ Search for Robust Multi-Strategy Inference _ OpenReview.pdf"
+
+And you already also have the results from the new ACL, follow the checklist "C:\Users\madamkh\Desktop\Research Work\tanzeel_server_backup\tanzeel server backup\Re_submission_ACL\revision_checklist_Astar_CoT 2.pdf"
+
+And you need to basically based on the reviews prioritizing the checklist update the paper as we are going to resubmit the paper the same topic actually, so dont get confused with the new paper we made that is totally different work but this time i really want you to understand the requirement from the checklist provided.As the ultimate goal here is to resubmit the paper as what we have mentioned in the rebuttal and the checklist.
+
+One edge case there we have done some good changing in the TMLR paper we made last time if you think that we can use that in our resubmission just do that.We dont have to show that we will change the topic just the resubmission has to be done really well.
+
+Make sure that title doesn't get changed,
+
+\textcolor{red}{the thing in color} in the reframing use this
+
+Do it manually.
+
+First read the rebuttal review and response , then check the Revision Checklist for A* vs CoT Paper.

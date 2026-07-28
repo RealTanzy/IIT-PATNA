@@ -1,0 +1,270 @@
+ ---
+  Resume Summary: SPOT CHECK V2 (3rd project)
+
+  1. Project Title
+
+  ▎ AI-Powered ASPICE Process Compliance Assessment Engine (or: Multi-Agent LLM System for Automotive Software Quality
+  ▎ Auditing)
+
+  2. One-liner
+
+  ▎ Dual-LLM agent-to-agent system that automates ASPICE SWE.6 software qualification assessments by ingesting
+  ▎ heterogeneous engineering documents and producing evidence-grounded compliance evaluations with structured audit
+  ▎ trails.
+
+  3. Key Technical Details
+  - Architecture: Agent-to-Agent (A2A) pipeline with two specialized Claude Opus agents — an Ingestion Agent (extraction
+   + multimodal vision) and an Assessor Agent (domain-expert evaluation)
+  - RAG pipeline: ChromaDB vector store + sentence-transformers (all-MiniLM-L6-v2) embeddings for semantic retrieval of
+  evidence chunks against 16 ASPICE checkpoints with 50+ sub-points
+  - Semantic chunking: Section-aware hierarchical document splitter with paragraph merging, sliding-window overlap, and
+  table-to-text linearization
+  - Structured output: Pydantic v2 schema-enforced models for typed evaluation results, evidence provenance chains, and
+  scoring aggregation
+  - Anti-hallucination framework: Zero-hallucination system prompts + confidence scoring + mandatory evidence citation
+  at every evaluation step
+  - Multi-format ingestion: Adapter pattern supporting PDF (PyMuPDF), DOCX, Excel, HTML, CSV, images (Claude Vision),
+  and Confluence — source-agnostic processing
+  - Scoring engine: Hierarchical aggregation (sub-point → checkpoint → overall scorecard) with three-tier status
+  classification (Found/Partial/Missing → Yes/Partial/No)
+  - Plugin architecture: Decorator-based auto-discovery registry for checkpoint evaluators (@register(n) pattern)
+  - UI: Streamlit multi-page app with chat interface for follow-up question loops
+  - Stack: Python 3.11, Anthropic SDK, Streamlit, ChromaDB, sentence-transformers, Pydantic v2, structlog, async/await
+  throughout
+
+  4. Quantifiable Results
+  - Evaluates 16 checkpoints × 3-5 sub-points each (~60+ evaluation dimensions) per assessment session
+  - Processes documents up to 50,000 tokens per ingestion pass with multimodal support (text + images)
+  - Replaces a manual ASPICE assessment process that typically takes assessors 2-3 days per team → targets sub-hour
+  automated first-pass
+  - Handles 7 document formats through a unified adapter pipeline
+  - V2 replaces V1's brittle keyword-matching approach with LLM reasoning — addressing a known failure mode where V1
+  passed documents that later failed formal audits
+
+  5. Research Contribution
+  - No published paper (internal Mercedes-Benz tooling), but the approach is novel:
+    - Novel: Applying multi-agent LLM architectures to structured process compliance assessment (vs. typical free-form
+  Q&A or summarization)
+    - Novel: Confidence-calibrated, evidence-grounded evaluation with zero-hallucination guarantees in a safety-critical
+   automotive domain
+    - Novel: Decomposing subjective assessment standards (ASPICE PAM) into machine-evaluable sub-point rubrics with
+  hierarchical scoring
+
+  6. Your Role
+  - Sole architect and developer — designed the full system architecture (A2A agents, RAG pipeline, scoring engine,
+  plugin registry, domain models)
+  - Authored all prompt engineering (zero-hallucination directives, ASPICE domain system prompts, structured output
+  schemas)
+  - Implemented the complete ingestion pipeline, scoring engine, semantic chunker, and agent logic
+  - Made key design decisions: dual-agent separation (extraction vs. assessment), ChromaDB for local per-session vector
+  stores, decorator-based evaluator registry
+
+  7. ATS Keywords
+
+  ▎ Large Language Models (LLM), Multi-Agent Systems, Agent-to-Agent (A2A), RAG (Retrieval-Augmented Generation), Claude
+  ▎  API, Anthropic SDK, Vector Database, ChromaDB, Semantic Chunking, Sentence Transformers, Embeddings, Prompt
+  ▎ Engineering, Structured Output, Pydantic, Python, Async/Await, Streamlit, Multimodal AI, Computer Vision (document
+  ▎ OCR), NLP, Document Understanding, Domain-Specific AI, Automotive ASPICE, Quality Assurance Automation, Zero-Shot
+  ▎ Evaluation, Confidence Calibration
+
+  ---
+  Honest caveats for your awareness (don't put these on the resume, but know them):
+  - The project is ~40-50% complete on the glue layer — the core agents, scoring, and models are implemented but the
+  end-to-end orchestrator and vector store integration are still in progress.
+  - No published accuracy benchmarks yet (no ground-truth dataset of assessed documents to compare against).
+  - If asked in an interview "what was the accuracy improvement?", frame it as: "V1 used keyword matching which produced
+   false-positive compliance findings; V2 introduced LLM reasoning with mandatory evidence citation, eliminating the
+  class of false-positive failures that V1 exhibited.
+
+
+=========================================
+
+ Resume Entry — Structured for Handoff (2nd)
+
+  1. Project Title
+
+  Enterprise RAG Intelligence Platform for Automotive Validation (Mercedes-AMG)
+
+  2. One-liner Description
+
+  Production retrieval-augmented generation system with hybrid BM25+ANN retrieval,
+  cross-encoder reranking, and LangGraph orchestration, serving real-time Q&A over
+  Confluence wikis and dual Jira instances for Mercedes-AMG's system software validation
+  team.
+
+  3. Key Technical Details
+
+  - RAG Architecture: Hybrid retrieval combining dense ANN (cosine similarity) + sparse
+  BM25 full-text search, merged via Reciprocal Rank Fusion (RRF, k=60)
+  - Reranking: Two-stage retrieval — bi-encoder first-pass (all-MiniLM-L6-v2, 384-dim)
+  then cross-encoder second-pass (ms-marco-MiniLM-L-6-v2) for precision reranking
+  - Pipeline Orchestration: LangGraph state machine (DAG) with typed state, intent-based
+  routing (6 intents), and conditional node execution
+  - LLM Backends: Dual-backend architecture — Claude Opus 4 (via AWS Bedrock/MBRDI Nexus)
+   + Gemini 2.5 Pro (Google GenAI), hot-swappable
+  - Vector Store: LanceDB (local, in-process) with PyArrow schema enforcement, hybrid
+  FTS+ANN in a single query
+  - Caching: Three-tier — semantic cache (cosine threshold 0.92), LLM response disk cache
+   (diskcache, 500MB), and API response cache with per-intent TTL policies
+  - Data Ingestion: Confluence CQL + BFS page discovery, schema-aware chunking (table-row
+   extraction, CW/team metadata), SHA-256 dedup, 7-day rolling upsert
+  - Multimodal: Image ingestion from Confluence (base64 storage + LLM pre-descriptions),
+  user image uploads via vision API
+  - Live Data Routing: Jira query router with async parallel JQL execution
+  (asyncio.gather) across on-premise (SWF) and cloud (MCP) instances
+  - Inline File RAG: Session-scoped mini-RAG for uploaded documents
+  (PDF/DOCX/XLSX/HTML/CSV) — handles files up to 200MB with SVG text extraction
+  - Background Sync: Daemon-thread KB sync manager with delta-sync, thread-safe locking,
+  and live status reporting
+  - Context Compression: 4-step algorithm (deduplication at 80% overlap, aggregate
+  extraction, chunk limiting, sentence-boundary truncation) with per-intent token budgets
+  - Frontend: Streamlit with streaming token display, model pre-warming, quick-action
+  pre-computation, and persistent chat history
+
+  4. Quantifiable Results
+
+  - 77% answer rate on a 100-query evaluation benchmark spanning 4 source categories
+  (SWF, MCP, Confluence, Mixed) and 6 intent types
+  - 100% guardrail compliance — 10/10 out-of-domain queries correctly deflected (zero
+  leaks)
+  - 80% context hit rate on Confluence retrieval, 80% on SWF Jira retrieval
+  - Latency optimization: 22s → <4s (5.5x speedup) by fixing 5 identified bottlenecks
+  (model singleton caching, connection pooling, parallel async, context compression,
+  semantic caching)
+  - Scale: Indexes hundreds of Confluence pages + thousands of Jira tickets across 2
+  separate instances, with automated background delta-sync
+  - Streaming first-token latency: ~800ms (vs. 5-8s without streaming)
+
+  5. Research Contribution
+
+  - No published paper (internal enterprise tool)
+  - Novel (for the domain): hybrid BM25+ANN fusion with RRF for structured automotive
+  test report data; schema-aware table-row chunking that preserves column semantics for
+  relational QA over Confluence tables
+  - Applied research: systematic latency root-cause analysis methodology documented with
+  before/after measurements
+
+  6. Role (adjust as appropriate)
+
+  - Sole architect and developer of the full-stack RAG system (ingestion pipeline,
+  retrieval engine, LangGraph orchestration, LLM integration, caching layers, frontend)
+  - Designed and implemented the hybrid retrieval + cross-encoder reranking pipeline
+  - Built the 100-query evaluation framework and optimized system from 22s to <4s latency
+  - Integrated dual LLM backends (Claude Opus + Gemini 2.5 Pro) with streaming and
+  failover
+  - Deployed for production use by the Mercedes-AMG SYS-SW Validation team
+
+  7. ATS Keywords
+
+  RAG Retrieval-Augmented Generation LangGraph LangChain hybrid retrieval BM25 ANN vector
+   search Reciprocal Rank Fusion (RRF) cross-encoder reranking sentence-transformers
+  all-MiniLM-L6-v2 ms-marco-MiniLM LanceDB vector database embeddings cosine similarity
+  semantic search full-text search Claude API Gemini API AWS Bedrock LLM orchestration
+  multi-agent systems intent classification query expansion context compression semantic
+  caching streaming inference multimodal AI vision API Confluence API Jira API asyncio
+  Python Streamlit PyTorch SentenceTransformers NLP information retrieval document QA
+  enterprise AI production ML systems latency optimization evaluation benchmarking
+
+  ---
+  One note: for item 6 (your role), I wrote it as sole developer since the codebase
+  structure and authorship suggest a single-person build. Adjust the wording if there
+  were collaborators on specific components
+
+  =======================
+
+   I now have a comprehensive understanding of the project. Here's the structured
+  resume summary:
+
+  ---
+  FAST — Resume Bullet Points (project 1) Replace movetto with this.
+
+  1. Project Title
+  - FAST: Failure Analysis through Signal Tracing (also known as Movetto Data
+  Analyzer)
+
+  2. One-liner Description
+  - AI-augmented root-cause analysis platform for automotive ECU signal failures,
+  combining large-scale dependency graph traversal with an LLM-powered agentic
+  reasoning loop to automatically trace anomalous signals to their upstream root
+  causes in MF4 measurement data.
+
+  3. Key Technical Details
+  - AI Agent Architecture: LangGraph ReAct StateGraph with 14 custom tools,
+  MemorySaver checkpointing, gatekeeper pattern for write-tool safety, and
+  exponential-backoff retry logic
+  - Multi-LLM Backend: Supports Gemini 2.5 Pro (via corporate Nexus gateway with
+  google.genai SDK), GPT-5 (Azure-style endpoint), Anthropic Claude, OpenAI,
+  Ollama, LM Studio — all via a unified LangChain abstraction layer with real-time
+   token streaming
+  - RAG Engine: Hybrid dense (sentence-transformers all-MiniLM-L6-v2) + sparse
+  (BM25 Okapi + TF-IDF) retrieval with Reciprocal Rank Fusion, sentence-aware
+  chunking, and multi-format document ingestion (PDF, DOCX, Excel, CSV, HTML)
+  - Graph Algorithms: Full-depth BFS/DFS upstream ancestry resolution over
+  dependency graphs with 94,523 nodes; deterministic root-cause identification
+  with zero truncation
+  - Signal Processing: Cross-correlation-based time alignment (FFT-accelerated via
+   SciPy), normalized RMSE anomaly scoring, automated signal
+  resampling/interpolation up to 10 kHz
+  - Desktop Application: PySide6/Qt GUI with interactive pyqtgraph visualization,
+  real-time streaming agent terminal with CoT display, dark theme, and
+  multi-threaded MF4 parsing (asammdf + mdfreader hybrid)
+  - Sandboxed Code Execution: Secure Python sandbox exposing NumPy, Pandas,
+  Matplotlib, NetworkX, SciPy to the LLM agent with filesystem isolation and
+  command blacklisting
+
+  4. Quantifiable Results
+  - 100% accuracy on upstream dependency resolution (10/10 benchmark signals
+  across 3 ECU modules — PTCOOR, VEPM, TMPT)
+  - Processes dependency graphs with 94,523 signal nodes and 69,400 upstream
+  ancestors per query
+  - Handles MF4 files containing 50,000+ channels with on-demand lazy loading and
+  caching (500-entry LRU, ~5-20 MB RAM footprint)
+  - Zero false positives, zero upstream inflation after ambiguity-detection safety
+   fix
+  - Test execution: 10 full graph traversals in < 30 seconds
+  - Reduced irrelevant signal set from 50,000 → ~1,600 relevant upstream
+  dependencies per target (96.8% reduction)
+
+  5. Research Contribution
+  - Internal tool / engineering application (no external publication identified)
+  - Novel contribution: combining agentic LLM reasoning (ReAct loop with 14
+  domain-specific tools) with deterministic full-graph BFS traversal over
+  automotive signal dependency DAGs — a hybrid AI + formal-methods approach to
+  root-cause analysis
+
+  6. Your Specific Role (needs your input — I can only infer from code ownership)
+  - Designed and implemented the full AI agent system (LangGraph ReAct graph, 14
+  tools, sandbox, context builder, RAG engine)
+  - Built the NexusChatModel — custom LangChain-compatible wrapper for corporate
+  Gemini Nexus gateway with streaming, CoT extraction, history compression, and
+  retry logic
+  - Implemented the GPT-5 Nexus integration (first-of-kind at the organization)
+  - Developed the deterministic "100% accuracy" root-trace window with full-depth
+  BFS
+  - Built the signal synchronization engine (cross-correlation time alignment)
+  - Designed the hybrid RAG engine (dense + BM25 + RRF fusion)
+  - Owned the full-stack delivery: core algorithms, desktop UI (PySide6), AI
+  backend, testing, and deployment
+
+  7. ATS Keywords
+  LangGraph, LangChain, ReAct Agent, Multi-Agent Systems, Tool-Use LLM,
+  RAG (Retrieval-Augmented Generation), Hybrid Retrieval, BM25, TF-IDF,
+  Sentence-Transformers, Reciprocal Rank Fusion, Graph Algorithms, BFS/DFS,
+  Dependency Graph Traversal, Root Cause Analysis, Anomaly Detection,
+  Signal Processing, Cross-Correlation, FFT, Time-Series Analysis,
+  MF4/MDF (Automotive Measurement Data), asammdf, NumPy, SciPy, Pandas,
+  NetworkX, PySide6/Qt, PyTorch (in dist), scikit-learn, Matplotlib,
+  Python, OpenAI API, Anthropic API, Google GenAI SDK, Gemini 2.5 Pro,
+  GPT-5, LiteLLM, Streaming LLM, Chain-of-Thought Reasoning,
+  Sandboxed Code Execution, Desktop Application, Automotive Engineering,
+  ECU Diagnostics, ADAS, Powertrain Controls
+
+  ---
+  For item #6 (your specific role), you'll want to adjust based on what you
+  personally did vs. what was team effort. Let me know if you'd like me to refine
+  any section or tailor the language differently.
+
+
+
+  =========
+  remember things relatedd to AI and ML related has been totally done by me, i was the developer but also team came with the lgics and help with the codes sometimes. So this was overall AMG.EA team i was working with

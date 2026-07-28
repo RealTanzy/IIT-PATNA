@@ -1,0 +1,24 @@
+{
+  "dataset_jsonl": "Strategyqa RAg/data/eval/strategyqa_eval_200.jsonl",
+  "split": "all",
+  "start_index": 0,
+  "max_questions": 200,
+  "kb_jsonl": "/home/dibyanayan/tanzeel/Strategyqa RAg/artifacts/strategyqa_reasoning_kb.jsonl",
+  "index_meta": "/home/dibyanayan/tanzeel/Strategyqa RAg/artifacts/strategyqa_index_meta.json",
+  "faiss_index": "/home/dibyanayan/tanzeel/Strategyqa RAg/artifacts/strategyqa_questions.faiss",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 1,
+  "exclude_same_example": true,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "max_new_tokens": 140,
+  "output_dir": "Strategyqa RAg/outputs/strategyqa_llama31_rag_eval200",
+  "metrics": {
+    "total": 200,
+    "parsed": 195,
+    "correct": 142,
+    "accuracy": 0.71,
+    "parsed_rate": 0.975,
+    "elapsed_sec": 2084.1377153396606,
+    "avg_sec_per_question": 10.420688576698304
+  }
+}

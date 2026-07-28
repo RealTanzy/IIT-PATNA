@@ -1,0 +1,16 @@
+{
+  "astar_file": "/home/dibyanayan/tanzeel/hotpotqa/results_shot/qwen0.5b_42_hotpotqa_astar_results.json",
+  "cot_file": "/home/dibyanayan/tanzeel/COT Reasoning qwen/qwen_results/qwen0.5b_hotpotqa_cot_results.json",
+  "total_astar": 1319,
+  "total_cot": 500,
+  "total_overlap": 500,
+  "bucket_counts": {
+    "both_wrong": 367,
+    "cot_only": 28,
+    "astar_only": 91,
+    "both_correct": 14
+  },
+  "train_count": 400,
+  "dev_count": 100,
+  "output_jsonl": "/home/dibyanayan/tanzeel/Hotpotqa RAg/data/cot_astar_runs/hotpotqa_paired_all.jsonl"
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "task_id": "CC/0",
+    "method": "sc",
+    "code": "def length_of_lis(nums):\n    if not nums:\n        return 0\n\n    dp = [1] * len(nums)\n    for i in range(1, len(nums)):\n        for j in range(i):\n            if nums[i] > nums[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n    return max(dp)",
+    "correct": true,
+    "time": 8.860282182693481,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/1",
+    "method": "sc",
+    "code": "def find_median(arr1, arr2):\n    merged = sorted(arr1 + arr2)\n    length = len(merged)\n    if length % 2 == 0:\n        return (merged[length // 2 - 1] + merged[length // 2]) / 2\n    else:\n        return merged[length // 2]",
+    "correct": true,
+    "time": 11.266961574554443,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/2",
+    "method": "sc",
+    "code": "def longest_palindrome(s: str) -> str:\n    def expand_around_center(s: str, left: int, right: int) -> str:\n        while left >= 0 and right < len(s) and s[left] == s[right]:\n            left -= 1\n            right += 1\n        return s[left + 1:right]\n\n    longest = \"\"\n    for i in range(len(s)):\n        palindrome_odd = expand_around_center(s, i, i)\n        palindrome_even = expand_around_center(s, i, i + 1)\n        longest = max([longest, palindrome_odd, palindrome_even], key=len)\n    return longest",
+    "correct": true,
+    "time": 16.948453903198242,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/3",
+    "method": "sc",
+    "code": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.left = None\n        self.right = None\n\ndef traverse_tree(root):\n    \"\"\"\n    Traverse a binary tree and return the following information:\n    - Pre-order traversal: values in the order they are visited\n    - In-order traversal: values in ascending order\n    - Post-order traversal: values in the order they are visited before returning from a subtree\n    - Height of the tree\n    - Is the tree balanced (height difference between left and right subtrees is less than or equal to 1)\n    \"\"\"\n    def _traverse(node):\n        if node is None:\n            return [], [], [], 0, True\n\n        left_pre_order, left_in_order, left_post_order, left_height, left_balanced = _traverse(node.left)\n        right_pre_order, right_in_order, right_post_order, right_height, right_balanced = _traverse(node.right)\n\n        pre_order = [node.value] + left_pre_order + right_pre_order\n        in_order = left_in_order + [node.value] + right_in_order\n        post_order = left_post_order + right_post_order + [node.value]\n\n        height = max(left_height, right_height) + 1\n        balanced = abs(left_height - right_height) <= 1 and left_balanced and right_balanced\n\n        return pre_order, in_order, post_order, height, balanced\n\n    return _traverse(root)",
+    "correct": true,
+    "time": 28.82411026954651,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/4",
+    "method": "sc",
+    "code": "def solve_nqueens(n):\n    def is_safe(board, row, col):\n        for i in range(row):\n            if board[i] == col or \\\n                board[i] - i == col - row or \\\n                board[i] + i == col + row:\n                return False\n        return True\n\n    def place_queens(n, row, board):\n        if row == n:\n            return 1\n        count = 0\n        for col in range(n):\n            if is_safe(board, row, col):\n                board[row] = col\n                count += place_queens(n, row + 1, board)\n        return count\n\n    board = [-1]*n\n    return place_queens(n, 0, board)",
+    "correct": true,
+    "time": 17.530359745025635,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/5",
+    "method": "sc",
+    "code": "def length_of_longest_substring(s: str) -> int:\n    char_set = set()\n    left = 0\n    max_length = 0\n    \n    for right in range(len(s)):\n        while s[right] in char_set:\n            char_set.remove(s[left])\n            left += 1\n        char_set.add(s[right])\n        max_length = max(max_length, right - left + 1)\n    \n    return max_length",
+    "correct": true,
+    "time": 9.815068006515503,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/6",
+    "method": "sc",
+    "code": "def trap(height):\n    if not height:\n        return 0\n\n    left_max = [0] * len(height)\n    right_max = [0] * len(height)\n    left_max[0] = height[0]\n    right_max[-1] = height[-1]\n\n    for i in range(1, len(height)):\n        left_max[i] = max(left_max[i-1], height[i])\n    for i in range(len(height)-2, -1, -1):\n        right_max[i] = max(right_max[i+1], height[i])\n\n    water = 0\n    for i in range(len(height)):\n        water += max(0, min(left_max[i], right_max[i]) - height[i])\n\n    return water",
+    "correct": true,
+    "time": 16.548556804656982,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/7",
+    "method": "sc",
+    "code": "def combination_sum(candidates, target):\n    def backtrack(remain, comb, start):\n        if remain == 0:\n            result.append(list(comb))\n            return\n        elif remain < 0:\n            return\n        for i in range(start, len(candidates)):\n            comb.append(candidates[i])\n            backtrack(remain - candidates[i], comb, i)\n            comb.pop()\n            \n    result = []\n    backtrack(target, [], 0)\n    return result",
+    "correct": true,
+    "time": 10.733836889266968,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/8",
+    "method": "sc",
+    "code": "class TreeNode:\n    def __init__(self, x):\n        self.val = x\n        self.left = None\n        self.right = None\n\ndef serialize(root):\n    def dfs(node):\n        if node:\n            vals.append(str(node.val))\n            dfs(node.left)\n            dfs(node.right)\n        else:\n            vals.append('#')\n    vals = []\n    dfs(root)\n    return ' '.join(vals)",
+    "correct": true,
+    "time": 9.42625641822815,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/9",
+    "method": "sc",
+    "code": "def two_sum(nums, target):\n    num_dict = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_dict:\n            return [num_dict[complement], i]\n        num_dict[num] = i\n    return []",
+    "correct": true,
+    "time": 7.453709840774536,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "CC/10",
+    "method": "sc",
+    "code": "def length_of_lis(nums):\n    if not nums:\n        return 0\n    \n    dp = [1] * len(nums)\n    \n    for i in range(1, len(nums)):\n        for j in range(i):\n            if nums[i] > nums[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n    \n    return max(dp)",
+    "correct": true,
+    "time": 8.758328676223755,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/11",
+    "method": "sc",
+    "code": "def find_median(nums1, nums2):\n    merged = sorted(nums1 + nums2)\n    length = len(merged)\n    if length % 2 == 0:\n        return (merged[length // 2 - 1] + merged[length // 2]) / 2\n    else:\n        return merged[length // 2]",
+    "correct": true,
+    "time": 9.69516658782959,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/12",
+    "method": "sc",
+    "code": "def longest_palindrome(s: str) -> str:\n    def expand_around_center(s: str, left: int, right: int) -> str:\n        while left >= 0 and right < len(s) and s[left] == s[right]:\n            left -= 1\n            right += 1\n        return s[left + 1:right]\n\n    longest = \"\"\n    for i in range(len(s)):\n        # Odd length palindrome\n        odd_palindrome = expand_around_center(s, i, i)\n        if len(odd_palindrome) > len(longest):\n            longest = odd_palindrome\n\n        # Even length palindrome\n        even_palindrome = expand_around_center(s, i, i + 1)\n        if len(even_palindrome) > len(longest):\n            longest = even_palindrome\n\n    return longest",
+    "correct": true,
+    "time": 18.04876708984375,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/13",
+    "method": "sc",
+    "code": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.left = None\n        self.right = None\n\ndef traverse_tree(root, order='inorder'):\n    \"\"\"\n    Traverse a binary tree and analyze its nodes.\n\n    Args:\n    root (Node): The root node of the binary tree.\n    order (str, optional): The order of traversal. Defaults to 'inorder'. Can be 'preorder', 'inorder', or 'postorder'.\n\n    Returns:\n    list: A list of node values in the specified order.\n    \"\"\"\n    def inorder(node):\n        if node:\n            inorder(node.left)\n            result.append(node.value)\n            inorder(node.right)\n\n    def preorder(node):\n        if node:\n            result.append(node.value)\n            preorder(node.left)\n            preorder(node.right)\n\n    def postorder(node):\n        if node:\n            postorder(node.left)\n            postorder(node.right)\n            result.append(node.value)\n\n    result = []\n    if order == 'inorder':\n        inorder(root)\n    elif order == 'preorder':\n        preorder(root)\n    elif order == 'postorder':\n        postorder(root)\n    else:\n        raise ValueError(\"Invalid order. Must be 'inorder', 'preorder', or 'postorder'.\")\n\n    return result",
+    "correct": true,
+    "time": 29.437384843826294,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/14",
+    "method": "sc",
+    "code": "def solve_nqueens(n):\n    def is_valid(board, row, col):\n        for i in range(row):\n            if board[i] == col or \\\n                board[i] - i == col - row or \\\n                board[i] + i == col + row:\n                return False\n        return True\n\n    def solve_nqueens_helper(n, row, board):\n        if row == n:\n            return 1\n        else:\n            count = 0\n            for col in range(n):\n                if is_valid(board, row, col):\n                    board[row] = col\n                    count += solve_nqueens_helper(n, row + 1, board)\n            return count\n\n    board = [-1] * n\n    return solve_nqueens_helper(n, 0, board)",
+    "correct": true,
+    "time": 18.620319604873657,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/15",
+    "method": "sc",
+    "code": "def length_of_longest_substring(s: str) -> int:\n    \"\"\"\n    Returns the length of the longest substring without repeating characters.\n\n    Args:\n        s (str): The input string.\n\n    Returns:\n        int: The length of the longest substring without repeating characters.\n    \"\"\"\n    if not s:\n        return 0\n\n    left = 0\n    max_length = 0\n    char_set = set()\n\n    for right in range(len(s)):\n        while s[right] in char_set:\n            char_set.remove(s[left])\n            left += 1\n        char_set.add(s[right])\n        max_length = max(max_length, right - left + 1)\n\n    return max_length",
+    "correct": true,
+    "time": 12.003047704696655,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/16",
+    "method": "sc",
+    "code": "def trap(height):\n    if not height:\n        return 0\n\n    n = len(height)\n    left_max = [0] * n\n    right_max = [0] * n\n\n    left_max[0] = height[0]\n    for i in range(1, n):\n        left_max[i] = max(left_max[i - 1], height[i])\n\n    right_max[n - 1] = height[n - 1]\n    for i in range(n - 2, -1, -1):\n        right_max[i] = max(right_max[i + 1], height[i])\n\n    total_water = 0\n    for i in range(n):\n        total_water += max(0, min(left_max[i], right_max[i]) - height[i])\n\n    return total_water",
+    "correct": true,
+    "time": 16.400323629379272,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/17",
+    "method": "sc",
+    "code": "def combination_sum(candidates, target):\n    def backtrack(remain, comb, start):\n        if remain == 0:\n            result.append(list(comb))\n            return\n        elif remain < 0:\n            return\n        for i in range(start, len(candidates)):\n            comb.append(candidates[i])\n            backtrack(remain - candidates[i], comb, i)\n            comb.pop()\n\n    result = []\n    backtrack(target, [], 0)\n    return result",
+    "correct": true,
+    "time": 10.63713788986206,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/18",
+    "method": "sc",
+    "code": "class TreeNode:\n    def __init__(self, x):\n        self.val = x\n        self.left = None\n        self.right = None\n\ndef serialize(root):\n    def dfs(node):\n        if node:\n            values.append(str(node.val))\n            dfs(node.left)\n            dfs(node.right)\n        else:\n            values.append('#')\n\n    values = []\n    dfs(root)\n    return ' '.join(values)",
+    "correct": true,
+    "time": 11.17329216003418,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/19",
+    "method": "sc",
+    "code": "def two_sum(nums, target):\n    num_dict = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_dict:\n            return [num_dict[complement], i]\n        num_dict[num] = i\n    return []",
+    "correct": true,
+    "time": 8.394970893859863,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "CC/20",
+    "method": "sc",
+    "code": "def length_of_lis(nums):\n    if not nums:\n        return 0\n\n    dp = [1] * len(nums)\n    for i in range(1, len(nums)):\n        for j in range(i):\n            if nums[i] > nums[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n    return max(dp)",
+    "correct": true,
+    "time": 9.488763570785522,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/21",
+    "method": "sc",
+    "code": "def find_median(nums1, nums2):\n    merged = sorted(nums1 + nums2)\n    length = len(merged)\n    if length % 2 == 0:\n        return (merged[length // 2 - 1] + merged[length // 2]) / 2\n    else:\n        return merged[length // 2]",
+    "correct": true,
+    "time": 9.951756715774536,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/22",
+    "method": "sc",
+    "code": "def longest_palindrome(s: str) -> str:\n    def expand_around_center(s: str, left: int, right: int) -> str:\n        while left >= 0 and right < len(s) and s[left] == s[right]:\n            left -= 1\n            right += 1\n        return s[left + 1:right]\n\n    if not s:\n        return \"\"\n\n    longest = s[0]\n    for i in range(len(s)):\n        palindrome1 = expand_around_center(s, i, i)\n        palindrome2 = expand_around_center(s, i, i + 1)\n        longest = max([longest, palindrome1, palindrome2], key=len)\n\n    return longest",
+    "correct": true,
+    "time": 16.700581312179565,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/23",
+    "method": "sc",
+    "code": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.left = None\n        self.right = None\n\ndef traverse_tree(root, order='pre'):\n    \"\"\"\n    Traverse a binary tree and perform analysis.\n\n    Args:\n        root (Node): The root node of the binary tree.\n        order (str, optional): The order of traversal. Defaults to 'pre'.\n            'pre' for preorder traversal, 'in' for inorder traversal, 'post' for postorder traversal.\n\n    Returns:\n        list: A list of node values in the specified order.\n    \"\"\"\n    def preorder(node):\n        if node:\n            yield node.value\n            yield from preorder(node.left)\n            yield from preorder(node.right)\n\n    def inorder(node):\n        if node:\n            yield from inorder(node.left)\n            yield node.value\n            yield from inorder(node.right)\n\n    def postorder(node):\n        if node:\n            yield from postorder(node.left)\n            yield from postorder(node.right)\n            yield node.value\n\n    if order == 'pre':\n        return list(preorder(root))\n    elif order == 'in':\n        return list(inorder(root))\n    elif order == 'post':\n        return list(postorder(root))\n    else:\n        raise ValueError(\"Invalid order. Must be 'pre', 'in', or 'post'.\")",
+    "correct": true,
+    "time": 43.00760626792908,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/24",
+    "method": "sc",
+    "code": "def solve_nqueens(n):\n    def is_safe(board, row, col):\n        for i in range(row):\n            if board[i] == col or \\\n                board[i] - i == col - row or \\\n                board[i] + i == col + row:\n                return False\n        return True\n\n    def place_queens(n, row, board):\n        if row == n:\n            return 1\n        count = 0\n        for col in range(n):\n            if is_safe(board, row, col):\n                board[row] = col\n                count += place_queens(n, row + 1, board)\n        return count\n\n    board = [-1]*n\n    return place_queens(n, 0, board)",
+    "correct": true,
+    "time": 18.119324922561646,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/25",
+    "method": "sc",
+    "code": "def length_of_longest_substring(s: str) -> int:\n    char_set = set()\n    left = 0\n    max_length = 0\n\n    for right in range(len(s)):\n        while s[right] in char_set:\n            char_set.remove(s[left])\n            left += 1\n        char_set.add(s[right])\n        max_length = max(max_length, right - left + 1)\n\n    return max_length",
+    "correct": true,
+    "time": 10.743752479553223,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/26",
+    "method": "sc",
+    "code": "def trap(height):\n    if not height:\n        return 0\n\n    n = len(height)\n    left_max = [0] * n\n    right_max = [0] * n\n    water = 0\n\n    left_max[0] = height[0]\n    for i in range(1, n):\n        left_max[i] = max(left_max[i-1], height[i])\n\n    right_max[n-1] = height[n-1]\n    for i in range(n-2, -1, -1):\n        right_max[i] = max(right_max[i+1], height[i])\n\n    for i in range(n):\n        water += min(left_max[i], right_max[i]) - height[i]\n\n    return water",
+    "correct": true,
+    "time": 15.33919358253479,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "CC/27",
+    "method": "sc",
+    "code": "def combination_sum(candidates, target):\n    def backtrack(remain, comb, start):\n        if remain == 0:\n            result.append(list(comb))\n            return\n        elif remain < 0:\n            return\n        for i in range(start, len(candidates)):\n            comb.append(candidates[i])\n            backtrack(remain - candidates[i], comb, i)\n            comb.pop()\n\n    result = []\n    backtrack(target, [], 0)\n    return result",
+    "correct": true,
+    "time": 11.185070276260376,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/28",
+    "method": "sc",
+    "code": "class TreeNode:\n    def __init__(self, x):\n        self.val = x\n        self.left = None\n        self.right = None\n\ndef serialize(root):\n    def dfs(node):\n        if node:\n            values.append(str(node.val))\n            dfs(node.left)\n            dfs(node.right)\n        else:\n            values.append('#')\n\n    values = []\n    dfs(root)\n    return ' '.join(values)",
+    "correct": true,
+    "time": 10.400203227996826,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/29",
+    "method": "sc",
+    "code": "def two_sum(nums, target):\n    num_dict = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_dict:\n            return [num_dict[complement], i]\n        num_dict[num] = i\n    return None",
+    "correct": true,
+    "time": 6.595549821853638,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "CC/30",
+    "method": "sc",
+    "code": "def length_of_lis(nums):\n    if not nums:\n        return 0\n\n    dp = [1] * len(nums)\n    for i in range(1, len(nums)):\n        for j in range(i):\n            if nums[i] > nums[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n    return max(dp)",
+    "correct": true,
+    "time": 8.845031261444092,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "CC/31",
+    "method": "sc",
+    "code": "def find_median(nums1, nums2):\n    merged = sorted(nums1 + nums2)\n    length = len(merged)\n    if length % 2 == 0:\n        return (merged[length // 2 - 1] + merged[length // 2]) / 2\n    else:\n        return merged[length // 2]",
+    "correct": true,
+    "time": 9.754945993423462,
+    "samples": 5,
+    "pass_count": 5
+  }
+]

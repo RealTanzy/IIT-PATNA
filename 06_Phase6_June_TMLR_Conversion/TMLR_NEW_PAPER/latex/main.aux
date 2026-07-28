@@ -1,0 +1,146 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\citation{wei2023chainofthoughtpromptingelicitsreasoning}
+\citation{yao2023treethoughtsdeliberateproblem}
+\citation{zhang2024accessinggpt4levelmathematical}
+\citation{yao2023treethoughtsdeliberateproblem}
+\citation{sui2025stopoverthinkingsurveyefficient}
+\citation{yang2018hotpotqa}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\citation{geva2021did}
+\citation{liu2020logiqa}
+\citation{yao2023treethoughtsdeliberateproblem}
+\citation{zhou2024languageagenttreesearch}
+\citation{zhang2024accessinggpt4levelmathematical}
+\citation{guan2025rstarmathsmallllmsmaster}
+\citation{lightman2023letsverifystepstep}
+\citation{wang2023selfconsistencyimproveschainthought}
+\citation{ma2025cotvalvelengthcompressiblechainofthoughttuning}
+\citation{sui2025stopoverthinkingsurveyefficient}
+\citation{sui2025stopoverthinkingsurveyefficient}
+\citation{wei2023chainofthoughtpromptingelicitsreasoning}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background and Related Work}{2}{section.2}\protected@file@percent }
+\newlabel{sec:related}{{2}{2}{Background and Related Work}{section.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Tree search for LLM reasoning.}{2}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{When does chain-of-thought suffice?}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Adaptive strategy selection.}{2}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Model scale and reasoning.}{2}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{2}{section.3}\protected@file@percent }
+\newlabel{sec:method}{{3}{2}{Methodology}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}A* Search over Reasoning Traces}{2}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:astar}{{3.1}{2}{A* Search over Reasoning Traces}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Computing $h(n)$ in practice.}{3}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Worked example.}{3}{section*.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Step-by-step $f(n)$ computation for a bridge question.\relax }}{3}{table.caption.7}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:heuristic_example}{{1}{3}{Step-by-step $f(n)$ computation for a bridge question.\relax }{table.caption.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Admissibility.}{3}{section*.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Heuristic design by dataset.\relax }}{3}{table.caption.10}\protected@file@percent }
+\newlabel{tab:heuristic_design}{{2}{3}{Heuristic design by dataset.\relax }{table.caption.10}{}}
+\@writefile{toc}{\contentsline {paragraph}{Dataset-specific heuristic design.}{3}{table.caption.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Chain-of-Thought Baseline}{3}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:cot}{{3.2}{3}{Chain-of-Thought Baseline}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Models}{3}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:models}{{3.3}{3}{Models}{subsection.3.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Models used in this study.\relax }}{4}{table.caption.11}\protected@file@percent }
+\newlabel{tab:models}{{3}{4}{Models used in this study.\relax }{table.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Datasets and Evaluation}{4}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:datasets}{{3.4}{4}{Datasets and Evaluation}{subsection.3.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Dataset statistics. Q-type breakdown is for the matched evaluation set. Avg Q len = average question word count. WML = working memory load (estimated hop depth).\relax }}{4}{table.caption.12}\protected@file@percent }
+\newlabel{tab:datasets}{{4}{4}{Dataset statistics. Q-type breakdown is for the matched evaluation set. Avg Q len = average question word count. WML = working memory load (estimated hop depth).\relax }{table.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Experimental Setup}{4}{subsection.3.5}\protected@file@percent }
+\newlabel{sec:setup}{{3.5}{4}{Experimental Setup}{subsection.3.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{4}{section.4}\protected@file@percent }
+\newlabel{sec:results}{{4}{4}{Results}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Main Results: Cross-Scale Comparison}{4}{subsection.4.1}\protected@file@percent }
+\newlabel{sec:main_results}{{4.1}{4}{Main Results: Cross-Scale Comparison}{subsection.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Main results: CoT vs.\ A$^*$\xspace  accuracy (\%) on matched question sets. Gap = A$^*$\xspace  $-$CoT in pp. 95\% Wilson CIs in brackets. McNemar $p$-value in parentheses; \textbf  {bold} = $p<0.05$. NS = not significant ($p\geq 0.05$).\relax }}{4}{table.caption.13}\protected@file@percent }
+\newlabel{tab:main}{{5}{4}{Main results: CoT vs.\ \astar accuracy (\%) on matched question sets. Gap = \astar $-$CoT in pp. 95\% Wilson CIs in brackets. McNemar $p$-value in parentheses; \textbf {bold} = $p<0.05$. NS = not significant ($p\geq 0.05$).\relax }{table.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Small Model Amplification}{5}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:amplification}{{4.2}{5}{Small Model Amplification}{subsection.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A* advantage over CoT (pp) across model scales. HotpotQA shows large gain at 0.5B (working memory overflow), shrinks at 8B (model internalizes multi-hop), and rises again at 14B due to stronger critic scoring (see Section\nobreakspace  {}\ref  {sec:qtype}). StrategyQA shows diminishing advantage. LogicQA shows consistent null effect.\relax }}{5}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:scale_gap}{{1}{5}{A* advantage over CoT (pp) across model scales. HotpotQA shows large gain at 0.5B (working memory overflow), shrinks at 8B (model internalizes multi-hop), and rises again at 14B due to stronger critic scoring (see Section~\ref {sec:qtype}). StrategyQA shows diminishing advantage. LogicQA shows consistent null effect.\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Question-Type Breakdown}{5}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:qtype}{{4.3}{5}{Question-Type Breakdown}{subsection.4.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces HotpotQA results by question type with 95\% CIs and McNemar $p$-values. \textbf  {Bold} = $p<0.05$; NS = not significant.\relax }}{6}{table.caption.15}\protected@file@percent }
+\newlabel{tab:qtype}{{6}{6}{HotpotQA results by question type with 95\% CIs and McNemar $p$-values. \textbf {Bold} = $p<0.05$; NS = not significant.\relax }{table.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}A Working Memory Hypothesis}{6}{subsection.4.4}\protected@file@percent }
+\newlabel{sec:working_memory}{{4.4}{6}{A Working Memory Hypothesis}{subsection.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Qualitative Analysis}{6}{subsection.4.5}\protected@file@percent }
+\newlabel{sec:qualitative}{{4.5}{6}{Qualitative Analysis}{subsection.4.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Example 1 --- Bridge question: A$^*$\xspace  succeeds, CoT fails (premature commitment).}{7}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Example 2 --- A* overthinking: correct answer found early, then overwritten.}{7}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Example 3 --- Yes/No question: CoT succeeds, A$^*$\xspace  fails (format mismatch).}{7}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Analysis}{7}{section.5}\protected@file@percent }
+\newlabel{sec:analysis}{{5}{7}{Analysis}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Heuristic Quality Validation}{7}{subsection.5.1}\protected@file@percent }
+\newlabel{sec:heuristic_val}{{5.1}{7}{Heuristic Quality Validation}{subsection.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Phase 2 Heuristic Ablation}{8}{subsection.5.2}\protected@file@percent }
+\newlabel{sec:heuristic_ablation}{{5.2}{8}{Phase 2 Heuristic Ablation}{subsection.5.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Heuristic ablation on StrategyQA (Llama-3.1-8B, 500Q).\relax }}{8}{table.caption.19}\protected@file@percent }
+\newlabel{tab:ablation}{{7}{8}{Heuristic ablation on StrategyQA (Llama-3.1-8B, 500Q).\relax }{table.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Oracle Gap and Method Complementarity}{8}{subsection.5.3}\protected@file@percent }
+\newlabel{sec:oracle}{{5.3}{8}{Oracle Gap and Method Complementarity}{subsection.5.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Oracle gap and complementarity at Llama-3.1-8B and DeepSeek-14B. Complementarity = fraction of questions where the methods disagree (A*-only + CoT-only). Oracle = accuracy if the best method is always chosen.\relax }}{8}{table.caption.20}\protected@file@percent }
+\newlabel{tab:oracle}{{8}{8}{Oracle gap and complementarity at Llama-3.1-8B and DeepSeek-14B. Complementarity = fraction of questions where the methods disagree (A*-only + CoT-only). Oracle = accuracy if the best method is always chosen.\relax }{table.caption.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Question Complexity and A* Advantage}{9}{subsection.5.4}\protected@file@percent }
+\newlabel{sec:complexity}{{5.4}{9}{Question Complexity and A* Advantage}{subsection.5.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces A\* advantage by question length (8B HotpotQA, all questions, N=719). ``Short'' = $\leq $10 words; CoT consistently wins on short questions. A\* advantage grows with question length.\relax }}{9}{table.caption.21}\protected@file@percent }
+\newlabel{tab:qlen}{{9}{9}{A\* advantage by question length (8B HotpotQA, all questions, N=719). ``Short'' = $\leq $10 words; CoT consistently wins on short questions. A\* advantage grows with question length.\relax }{table.caption.21}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Dual-Trace Synthesis}{9}{subsection.5.5}\protected@file@percent }
+\newlabel{sec:synthesis}{{5.5}{9}{Dual-Trace Synthesis}{subsection.5.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{9}{section.6}\protected@file@percent }
+\newlabel{sec:discussion}{{6}{9}{Discussion}{section.6}{}}
+\@writefile{toc}{\contentsline {paragraph}{When to use tree search in practice.}{9}{section*.22}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Practical decision guide derived from our findings. Each row is backed by a statistically significant result ($p<0.05$).\relax }}{9}{table.caption.23}\protected@file@percent }
+\newlabel{tab:decision}{{10}{9}{Practical decision guide derived from our findings. Each row is backed by a statistically significant result ($p<0.05$).\relax }{table.caption.23}{}}
+\@writefile{toc}{\contentsline {paragraph}{Why aggregate numbers mislead.}{9}{section*.24}\protected@file@percent }
+\bibdata{custom,custom1}
+\@writefile{toc}{\contentsline {paragraph}{The non-monotonic scale curve.}{10}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Limitations and open questions.}{10}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{10}{section.7}\protected@file@percent }
+\newlabel{sec:conclusion}{{7}{10}{Conclusion}{section.7}{}}
+\newlabel{sec:limitations}{{7}{10}{Limitations}{section*.27}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Prompt Templates}{10}{appendix.A}\protected@file@percent }
+\newlabel{app:prompts}{{A}{10}{Prompt Templates}{appendix.A}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}HotpotQA CoT Prompt}{10}{subsection.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}HotpotQA A* Node Expansion Prompt}{11}{subsection.A.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}StrategyQA CoT Prompt}{11}{subsection.A.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.4}StrategyQA A* Node Expansion Prompt}{11}{subsection.A.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.5}LogicQA CoT Prompt}{11}{subsection.A.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.6}LogicQA A* Node Expansion Prompt}{12}{subsection.A.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Reproducibility Details}{12}{appendix.B}\protected@file@percent }
+\newlabel{app:repro}{{B}{12}{Reproducibility Details}{appendix.B}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Additional Results: Per-Dataset Raw Counts}{12}{appendix.C}\protected@file@percent }
+\newlabel{app:raw}{{C}{12}{Additional Results: Per-Dataset Raw Counts}{appendix.C}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}Qwen-0.5B}{12}{subsection.C.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {D}Failure Taxonomy with Examples}{12}{appendix.D}\protected@file@percent }
+\newlabel{app:failures}{{D}{12}{Failure Taxonomy with Examples}{appendix.D}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Experimental configuration.\relax }}{13}{table.caption.28}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Qwen-0.5B accuracy on matched question sets (N=500 for all datasets).\relax }}{13}{table.caption.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.1}Failure Mode Distribution}{13}{subsection.D.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.2}A* Failure Mode 1: Overthinking (26\%)}{13}{subsection.D.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.3}A* Failure Mode 2: Spurious Chaining (28\%)}{13}{subsection.D.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Failure mode distribution (bridge questions, Llama-3.1-8B HotpotQA, N=43 A* failures, N=50 CoT failures).\relax }}{14}{table.caption.30}\protected@file@percent }
+\newlabel{tab:failure_taxonomy}{{13}{14}{Failure mode distribution (bridge questions, Llama-3.1-8B HotpotQA, N=43 A* failures, N=50 CoT failures).\relax }{table.caption.30}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.4}A* Failure Mode 3: Format Mismatch on Yes/No (19\%)}{14}{subsection.D.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.5}CoT Failure Mode 1: Premature Commitment (36\%)}{14}{subsection.D.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.6}CoT Failure Mode 2: Over-Specificity (32\%)}{15}{subsection.D.6}\protected@file@percent }
+\gdef \@abspage@last{15}

@@ -1,0 +1,244 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\citation{wei2022chain}
+\HyPL@Entry{0<</S/D>>}
+\providecommand \oddpage@label [2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Comparison of reasoning trajectories on a StrategyQA example. CoT follows a plausible but misdirected chronological schema, while A* prioritizes the key biological fact—microplastic presence in shrimp—and reaches the correct conclusion with fewer, more relevant steps.\relax }}{2}{figure.caption.3}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:motivating_example}{{1}{2}{Comparison of reasoning trajectories on a StrategyQA example. CoT follows a plausible but misdirected chronological schema, while A* prioritizes the key biological fact—microplastic presence in shrimp—and reaches the correct conclusion with fewer, more relevant steps.\relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Why A* specifically?}{2}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Contributions.}{2}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Methodology}{3}{section.2}\protected@file@percent }
+\newlabel{sec:method}{{2}{3}{Methodology}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Notation and Problem Setup}{3}{subsection.2.1}\protected@file@percent }
+\newlabel{sec:notation}{{2.1}{3}{Notation and Problem Setup}{subsection.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Chain-of-Thought (CoT) Reasoning}{3}{subsection.2.2}\protected@file@percent }
+\newlabel{sec:cot}{{2.2}{3}{Chain-of-Thought (CoT) Reasoning}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}A* Search over Reasoning Traces}{3}{subsection.2.3}\protected@file@percent }
+\newlabel{sec:astar}{{2.3}{3}{A* Search over Reasoning Traces}{subsection.2.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{State space.}{3}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Successor generation.}{3}{section*.5}\protected@file@percent }
+\newlabel{eq:successor}{{1}{3}{Successor generation}{equation.2.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Goal condition.}{3}{section*.6}\protected@file@percent }
+\newlabel{eq:isgoal}{{2}{3}{Goal condition}{equation.2.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Path cost.}{3}{section*.7}\protected@file@percent }
+\newlabel{eq:gcost}{{3}{3}{Path cost}{equation.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Heuristic Design and Admissibility Guarantee}{4}{subsection.2.4}\protected@file@percent }
+\newlabel{sec:heuristic_design}{{2.4}{4}{Heuristic Design and Admissibility Guarantee}{subsection.2.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Assumption 1: Minimum-hop lower bound.}{4}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Assumption 2: Non-goal continuation.}{4}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Theorem 1: Conservative admissibility.}{4}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Proof.}{4}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Operational instantiation: a symbolic progress critic.}{4}{section*.12}\protected@file@percent }
+\citation{kossen2024semanticentropyprobesrobust}
+\citation{geva2021did}
+\citation{liu2020logiqa}
+\citation{yang2018hotpotqa}
+\citation{cobbe2021trainingverifierssolvemath}
+\citation{hendrycks2021measuringmathematicalproblemsolving}
+\citation{chen2021humaneval}
+\citation{austin2021mbpp}
+\citation{li2022codecontests}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Routing Strategies}{5}{subsection.2.5}\protected@file@percent }
+\newlabel{sec:routing}{{2.5}{5}{Routing Strategies}{subsection.2.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Output-based routers.}{5}{section*.13}\protected@file@percent }
+\newlabel{eq:critic}{{5}{5}{Output-based routers}{equation.2.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Pre-generation routers.}{5}{section*.14}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Reasoning Topology Features based Routing}{5}{subsection.2.6}\protected@file@percent }
+\newlabel{sec:topology_features}{{2.6}{5}{Reasoning Topology Features based Routing}{subsection.2.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{5}{section.3}\protected@file@percent }
+\newlabel{sec:results}{{3}{5}{Results}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Quantitative Analysis}{5}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:quantitative}{{3.1}{5}{Quantitative Analysis}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Main results.}{5}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Main results.}{5}{section*.17}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Consolidated results across reasoning, math, and code generation benchmarks. Scores denote accuracy (\%). SC denotes Self-Consistency and ToT denotes Tree-of-Thought. Within each dataset--model block, the best single-method score is bolded and the second-highest is underlined. On CodeContests at 0.5B, A* gives a +18.4\,pp gain over CoT, mirroring the search advantage for small models on HotpotQA.\relax }}{6}{table.caption.15}\protected@file@percent }
+\newlabel{tab:consolidated-main-results}{{1}{6}{Consolidated results across reasoning, math, and code generation benchmarks. Scores denote accuracy (\%). SC denotes Self-Consistency and ToT denotes Tree-of-Thought. Within each dataset--model block, the best single-method score is bolded and the second-highest is underlined. On CodeContests at 0.5B, A* gives a +18.4\,pp gain over CoT, mirroring the search advantage for small models on HotpotQA.\relax }{table.caption.15}{}}
+\@writefile{toc}{\contentsline {paragraph}{Router performance.}{6}{section*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Instance-level decomposition.}{6}{section*.20}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Instance-level complementarity decomposition. ``CoT only'' means CoT is correct and A* is wrong; ``A* only'' means the reverse.\relax }}{7}{table.caption.19}\protected@file@percent }
+\newlabel{tab:complementarity}{{2}{7}{Instance-level complementarity decomposition. ``CoT only'' means CoT is correct and A* is wrong; ``A* only'' means the reverse.\relax }{table.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Qualitative Analysis}{7}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:qualitative_conclusions}{{3.2}{7}{Qualitative Analysis}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{When A* helps.}{7}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why these gains arise.}{7}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{When CoT remains preferable.}{7}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Characteristic failure modes of A*.}{7}{section*.24}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Reasoning topology clusters. BC = branching coefficient. A* advantage grows monotonically with branching complexity.\relax }}{8}{table.caption.26}\protected@file@percent }
+\newlabel{tab:topology_clusters}{{3}{8}{Reasoning topology clusters. BC = branching coefficient. A* advantage grows monotonically with branching complexity.\relax }{table.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A* advantage (pp) vs.\ branching coefficient across topology clusters. Linear fit: $R^2=0.94$.\relax }}{8}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:topology_scatter}{{2}{8}{A* advantage (pp) vs.\ branching coefficient across topology clusters. Linear fit: $R^2=0.94$.\relax }{figure.caption.27}{}}
+\@writefile{toc}{\contentsline {paragraph}{Takeaway.}{8}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Explaining Complementarity Through Topology}{8}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:topology_clusters}{{3.3}{8}{Explaining Complementarity Through Topology}{subsection.3.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Prescriptive decision rule.}{8}{section*.28}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Topic modelling validates topology.}{8}{section*.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Topology-Aware Routing}{8}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:topology_routing}{{3.4}{8}{Topology-Aware Routing}{subsection.3.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Router comparison on LLaMA-3.1-8B. HE = HumanEval. Scores denote accuracy (\%), and Gap\% denotes oracle-gap recovery averaged across QA and math benchmarks. The topology router uses only pre-generation structural features and outperforms trace-based routers; on HumanEval it recovers 51.7\% of the oracle gap. All QA router improvements over CoT are statistically significant under McNemar's test ($p<0.005$). Trace-based routers were not applied to code benchmarks. LLM-as-Judge and LLM-as-Critic differ only in prompt design; prompts are provided in Appendix Figure\nobreakspace  {}\ref  {fig:judge_critic_prompts}.\relax }}{9}{table.caption.30}\protected@file@percent }
+\newlabel{tab:topology_router}{{4}{9}{Router comparison on LLaMA-3.1-8B. HE = HumanEval. Scores denote accuracy (\%), and Gap\% denotes oracle-gap recovery averaged across QA and math benchmarks. The topology router uses only pre-generation structural features and outperforms trace-based routers; on HumanEval it recovers 51.7\% of the oracle gap. All QA router improvements over CoT are statistically significant under McNemar's test ($p<0.005$). Trace-based routers were not applied to code benchmarks. LLM-as-Judge and LLM-as-Critic differ only in prompt design; prompts are provided in Appendix Figure~\ref {fig:judge_critic_prompts}.\relax }{table.caption.30}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Fluency-Correctness Asymmetry on disagreement cases. Trace fluency does not predict correctness.\relax }}{9}{table.caption.31}\protected@file@percent }
+\newlabel{tab:fluency_asymmetry}{{5}{9}{Fluency-Correctness Asymmetry on disagreement cases. Trace fluency does not predict correctness.\relax }{table.caption.31}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Sensitivity, Compute, and Failure Analysis}{9}{subsection.3.5}\protected@file@percent }
+\newlabel{sec:sensitivity}{{3.5}{9}{Sensitivity, Compute, and Failure Analysis}{subsection.3.5}{}}
+\citation{wei2022chain}
+\citation{wang2022self}
+\citation{yao2024tree}
+\citation{besta2024graph}
+\citation{meincke2025cot}
+\citation{hao2023reasoning}
+\citation{xie2024self}
+\citation{zhou2024lats}
+\citation{zhang2024mctsrmath}
+\citation{guan2025rstar}
+\citation{sui2025overthinking,wang2025fetch,ma2025cotvalve}
+\citation{kossen2024semanticentropyprobesrobust}
+\citation{zheng2023judging}
+\citation{lightman2023let}
+\citation{shazeer2017outrageouslylargeneuralnetworks}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Methodological comparison of reasoning strategies. Front.\ = explicit frontier; Heur.\ = heuristic guidance; Pre-rte = pre-generation routing studied. A* isolates the role of heuristic-guided search without entangling evaluator design or rollout policy.\relax }}{10}{table.caption.36}\protected@file@percent }
+\newlabel{tab:method_comparison}{{6}{10}{Methodological comparison of reasoning strategies. Front.\ = explicit frontier; Heur.\ = heuristic guidance; Pre-rte = pre-generation routing studied. A* isolates the role of heuristic-guided search without entangling evaluator design or rollout policy.\relax }{table.caption.36}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Related Work}{10}{section.4}\protected@file@percent }
+\newlabel{sec:related}{{4}{10}{Related Work}{section.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{CoT and structured reasoning.}{10}{section*.32}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Search-augmented reasoning.}{10}{section*.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Over-exploration and search failures.}{10}{section*.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Routing and critic limitations.}{10}{section*.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{10}{section.5}\protected@file@percent }
+\bibstyle{tmlr}
+\bibdata{custom}
+\bibcite{austin2021mbpp}{{1}{2021}{{Austin et~al.}}{{Austin, Odena, Nye, Bosma, Michalewski, Dohan, Jiang, Cai, Terry, Le, and Sutton}}}
+\bibcite{besta2024graph}{{2}{2024}{{Besta et~al.}}{{Besta, Blach, Kubicek, Gerstenberger, Podstawski, Gianinazzi, Gajda, Lehmann, Niewiadomski, Nyczyk, et~al.}}}
+\bibcite{chen2021humaneval}{{3}{2021}{{Chen et~al.}}{{Chen, Tworek, Jun, Yuan, Pinto, Kaplan, Edwards, Burda, Joseph, Brockman, et~al.}}}
+\bibcite{cobbe2021trainingverifierssolvemath}{{4}{2021}{{Cobbe et~al.}}{{Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser, Plappert, Tworek, Hilton, Nakano, Hesse, and Schulman}}}
+\bibcite{geva2021did}{{5}{2021}{{Geva et~al.}}{{Geva, Khashabi, Segal, Khot, Roth, and Berant}}}
+\bibcite{guan2025rstar}{{6}{2025}{{Guan et~al.}}{{Guan, Li, Chen, Shao, Gong, Wang, Sun, Zhai, Ai, and Li}}}
+\bibcite{hao2023reasoning}{{7}{2023}{{Hao et~al.}}{{Hao, Gu, Ma, Hong, Wang, Wang, and Hu}}}
+\bibcite{hendrycks2021measuringmathematicalproblemsolving}{{8}{2021}{{Hendrycks et~al.}}{{Hendrycks, Burns, Kadavath, Arora, Basart, Tang, Song, and Steinhardt}}}
+\bibcite{kossen2024semanticentropyprobesrobust}{{9}{2024}{{Kossen et~al.}}{{Kossen, Han, Razzak, Schut, Malik, and Gal}}}
+\newlabel{sec:limitations}{{5}{11}{Limitations}{section*.37}{}}
+\bibcite{lee1999learning}{{10}{1999}{{Lee \& Seung}}{{Lee and Seung}}}
+\bibcite{li2022codecontests}{{11}{2022}{{Li et~al.}}{{Li, Choi, Chung, Kushman, Schrittwieser, Leblond, Eccles, Keeling, Gimeno, Dal~Lago, et~al.}}}
+\bibcite{lightman2023let}{{12}{2023}{{Lightman et~al.}}{{Lightman, Kosaraju, Burda, Edwards, Baker, Lee, Leike, Schulman, Sutskever, and Cobbe}}}
+\bibcite{liu2020logiqa}{{13}{2020}{{Liu et~al.}}{{Liu, Cui, Liu, Huang, Wang, and Zhang}}}
+\bibcite{ma2025cotvalve}{{14}{2025}{{Ma et~al.}}{{Ma, Jiang, Gong, et~al.}}}
+\bibcite{meincke2025cot}{{15}{2025}{{Meincke et~al.}}{{Meincke, Razniewski, et~al.}}}
+\bibcite{shazeer2017outrageouslylargeneuralnetworks}{{16}{2017}{{Shazeer et~al.}}{{Shazeer, Mirhoseini, Maziarz, Davis, Le, Hinton, and Dean}}}
+\bibcite{sui2025overthinking}{{17}{2025}{{Sui et~al.}}{{Sui, Yu, Zhang, et~al.}}}
+\bibcite{wang2025fetch}{{18}{2025}{{Wang et~al.}}{{Wang, Yang, et~al.}}}
+\bibcite{wang2022self}{{19}{2023}{{Wang et~al.}}{{Wang, Wei, Schuurmans, Le, Chi, Narang, Chowdhery, and Zhou}}}
+\bibcite{wei2022chain}{{20}{2022}{{Wei et~al.}}{{Wei, Wang, Schuurmans, Bosma, Xia, Chi, Le, Zhou, et~al.}}}
+\bibcite{xie2024self}{{21}{2024}{{Xie et~al.}}{{Xie, Kawaguchi, Zhao, Xu, Kan, He, and Xie}}}
+\bibcite{yang2018hotpotqa}{{22}{2018}{{Yang et~al.}}{{Yang, Qi, Zhang, Bengio, Cohen, Salakhutdinov, and Manning}}}
+\bibcite{yao2024tree}{{23}{2024}{{Yao et~al.}}{{Yao, Yu, Zhao, Shafran, Griffiths, Cao, and Narasimhan}}}
+\bibcite{zhang2024mctsrmath}{{24}{2024}{{Zhang et~al.}}{{Zhang, Wu, Lei, et~al.}}}
+\bibcite{zheng2023judging}{{25}{2023}{{Zheng et~al.}}{{Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li, Li, Xing, et~al.}}}
+\bibcite{zhou2024lats}{{26}{2024}{{Zhou et~al.}}{{Zhou, Yan, Shlapentokh-Rothman, Wang, and Wang}}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Dataset-Agnostic Symbolic Progress Heuristic\relax }}{13}{algorithm.1}\protected@file@percent }
+\newlabel{alg:symbolic-progress-heuristic}{{1}{13}{Dataset-Agnostic Symbolic Progress Heuristic\relax }{algorithm.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}More on admissibility and generalizability of the heuristics}{13}{appendix.A}\protected@file@percent }
+\newlabel{more-on}{{A}{13}{More on admissibility and generalizability of the heuristics}{appendix.A}{}}
+\@writefile{toc}{\contentsline {paragraph}{Admissibility and consistency.}{13}{section*.39}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Human validation of heuristic progress.}{13}{section*.40}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Qualitative Examples}{14}{appendix.B}\protected@file@percent }
+\newlabel{app:qualitative_examples}{{B}{14}{Qualitative Examples}{appendix.B}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}Patterns of A* Success and CoT Failure}{14}{subsection.B.1}\protected@file@percent }
+\newlabel{app:astar_success}{{B.1}{14}{Patterns of A* Success and CoT Failure}{subsection.B.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Group 1: Non-linear evidence aggregation.}{14}{section*.41}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Group 2: Hypothesis elimination.}{14}{section*.42}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Group 3: Multi-hop question answering.}{15}{section*.43}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}Patterns of CoT Success and A* Failure}{15}{subsection.B.2}\protected@file@percent }
+\newlabel{app:cot_success}{{B.2}{15}{Patterns of CoT Success and A* Failure}{subsection.B.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Group 1: Direct factual reasoning.}{15}{section*.44}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Group 2: Fluent world knowledge and argumentation.}{15}{section*.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.3}A* Failure Modes on Simple Cases}{16}{subsection.B.3}\protected@file@percent }
+\newlabel{app:astar_failures}{{B.3}{16}{A* Failure Modes on Simple Cases}{subsection.B.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Failure mode 1: Overthinking simple questions.}{16}{section*.46}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Failure mode 2: Spurious correlations in search.}{16}{section*.47}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Failure mode 3: Step repetition.}{16}{section*.48}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.4}Human evaluation}{16}{subsection.B.4}\protected@file@percent }
+\newlabel{app:human_eval}{{B.4}{16}{Human evaluation}{subsection.B.4}{}}
+\newlabel{annot-crit}{{B.4}{16}{Human evaluation}{subsection.B.4}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Budgeted A* Search over Reasoning Traces\relax }}{17}{algorithm.2}\protected@file@percent }
+\newlabel{alg:astar}{{2}{17}{Budgeted A* Search over Reasoning Traces\relax }{algorithm.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Size of the disagreement pool used for human-style analysis. We consider only instances where CoT and A* produce different final predictions. In single-label QA, the \textit  {both-right} bucket is therefore expected to be empty, which is confirmed in both datasets.\relax }}{17}{table.caption.50}\protected@file@percent }
+\newlabel{tab:disagreement-pool}{{7}{17}{Size of the disagreement pool used for human-style analysis. We consider only instances where CoT and A* produce different final predictions. In single-label QA, the \textit {both-right} bucket is therefore expected to be empty, which is confirmed in both datasets.\relax }{table.caption.50}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces LLM-based routing prompts. The \emph  {judge} prompt is verdict-oriented: it compares two reasoning paths under faithfulness and logical soundness criteria and outputs only the winner. The \emph  {critic} prompt is diagnosis-oriented: it identifies flaws in each trace before selecting the better one in structured JSON form.\relax }}{18}{figure.caption.49}\protected@file@percent }
+\newlabel{fig:judge_critic_prompts}{{3}{18}{LLM-based routing prompts. The \emph {judge} prompt is verdict-oriented: it compares two reasoning paths under faithfulness and logical soundness criteria and outputs only the winner. The \emph {critic} prompt is diagnosis-oriented: it identifies flaws in each trace before selecting the better one in structured JSON form.\relax }{figure.caption.49}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Human-style annotation on 100 sampled disagreement cases per dataset. “Cov.” denotes reasoning coverage (1--3), and “Rel.” denotes relevance (1--3). Coverage measures whether the reasoning substantially reaches a correct conclusion; relevance measures the proportion of steps that stay on-topic and avoid unnecessary concepts.\relax }}{18}{table.caption.51}\protected@file@percent }
+\newlabel{tab:disagreement-human-eval}{{8}{18}{Human-style annotation on 100 sampled disagreement cases per dataset. “Cov.” denotes reasoning coverage (1--3), and “Rel.” denotes relevance (1--3). Coverage measures whether the reasoning substantially reaches a correct conclusion; relevance measures the proportion of steps that stay on-topic and avoid unnecessary concepts.\relax }{table.caption.51}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}FAQs}{18}{appendix.C}\protected@file@percent }
+\newlabel{app:faqs}{{C}{18}{FAQs}{appendix.C}{}}
+\@writefile{toc}{\contentsline {paragraph}{Q1. Why are gains on HotpotQA larger than StrategyQA?}{18}{section*.52}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Q2. Why include LogicQA where A* underperforms?}{18}{section*.53}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Q3. How reliable are self-reported confidence scores?}{18}{section*.54}\protected@file@percent }
+\citation{lee1999learning}
+\@writefile{toc}{\contentsline {paragraph}{Q4. How should readers interpret the admissibility result?}{19}{section*.55}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Q5. Would ensemble voting capture the same complementarity?}{19}{section*.56}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Q6. Is goal detection based on answer patterns brittle?}{19}{section*.57}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {D}Sensitivity Analysis}{19}{appendix.D}\protected@file@percent }
+\newlabel{app:sensitivity}{{D}{19}{Sensitivity Analysis}{appendix.D}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Budget sweep. Clear monotonic improvement $B$=5$\to $20 (+5.7\,pp), diminishing returns at $B$=30.\relax }}{19}{table.caption.58}\protected@file@percent }
+\newlabel{tab:sensitivity_budget}{{9}{19}{Budget sweep. Clear monotonic improvement $B$=5$\to $20 (+5.7\,pp), diminishing returns at $B$=30.\relax }{table.caption.58}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Branching factor sweep. $K$=1 (linear chain) degrades gracefully; $K$=4 achieves the highest accuracy.\relax }}{19}{table.caption.59}\protected@file@percent }
+\newlabel{tab:sensitivity_branch}{{10}{19}{Branching factor sweep. $K$=1 (linear chain) degrades gracefully; $K$=4 achieves the highest accuracy.\relax }{table.caption.59}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Compute Analysis}{19}{appendix.E}\protected@file@percent }
+\newlabel{app:compute}{{E}{19}{Compute Analysis}{appendix.E}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Compute--accuracy tradeoff. Token counts are measured from ablation experiments, not estimated.\relax }}{19}{table.caption.60}\protected@file@percent }
+\newlabel{tab:compute}{{11}{19}{Compute--accuracy tradeoff. Token counts are measured from ablation experiments, not estimated.\relax }{table.caption.60}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {F}Cross-Dataset Topic Modelling}{19}{appendix.F}\protected@file@percent }
+\newlabel{app:topics}{{F}{19}{Cross-Dataset Topic Modelling}{appendix.F}{}}
+\@writefile{toc}{\contentsline {paragraph}{Pipeline.}{19}{section*.61}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Per-topic A* vs.\ CoT accuracy (\%) on 14B Qwen-2.5. W = overall winner across datasets.\relax }}{20}{table.caption.63}\protected@file@percent }
+\newlabel{tab:topic_results}{{12}{20}{Per-topic A* vs.\ CoT accuracy (\%) on 14B Qwen-2.5. W = overall winner across datasets.\relax }{table.caption.63}{}}
+\@writefile{toc}{\contentsline {paragraph}{Validation.}{20}{section*.62}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Key finding.}{20}{section*.64}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Representative examples.}{20}{section*.65}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {G}Reproducibility Details}{20}{appendix.G}\protected@file@percent }
+\newlabel{app:reproducibility}{{G}{20}{Reproducibility Details}{appendix.G}{}}
+\@writefile{toc}{\contentsline {paragraph}{Models.}{20}{section*.66}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Datasets.}{20}{section*.67}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Hardware.}{20}{section*.68}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Seeds and variance.}{20}{section*.69}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Code.}{21}{section*.70}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {H}Proof}{21}{appendix.H}\protected@file@percent }
+\newlabel{full-proof}{{H}{21}{Proof}{appendix.H}{}}
+\@writefile{toc}{\contentsline {paragraph}{Interpretation.}{22}{section*.71}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {I}Discussion}{22}{appendix.I}\protected@file@percent }
+\newlabel{sec:discussion}{{I}{22}{Discussion}{appendix.I}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {J}Code Generation Analysis}{22}{appendix.J}\protected@file@percent }
+\newlabel{app:code_generation}{{J}{22}{Code Generation Analysis}{appendix.J}{}}
+\@writefile{toc}{\contentsline {paragraph}{Topology router on code.}{22}{section*.72}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Multi-return tasks: the code analogue of branching topology.}{23}{section*.73}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Multi-return tasks on HumanEval ($n$=11) across scales. A* achieves perfect accuracy only at 14B, where the base model is capable enough to generate meaningful alternative solutions.\relax }}{23}{table.caption.74}\protected@file@percent }
+\newlabel{tab:multi_return}{{13}{23}{Multi-return tasks on HumanEval ($n$=11) across scales. A* achieves perfect accuracy only at 14B, where the base model is capable enough to generate meaningful alternative solutions.\relax }{table.caption.74}{}}
+\@writefile{toc}{\contentsline {paragraph}{Category analysis (MBPP).}{23}{section*.75}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces MBPP A* advantage (pp over CoT) by problem category. A* helps on string and logic tasks (multi-condition checking), while CoT leads on list and math tasks (clear algorithmic transformations).\relax }}{23}{table.caption.76}\protected@file@percent }
+\newlabel{tab:code_categories}{{14}{23}{MBPP A* advantage (pp over CoT) by problem category. A* helps on string and logic tasks (multi-condition checking), while CoT leads on list and math tasks (clear algorithmic transformations).\relax }{table.caption.76}{}}
+\@writefile{toc}{\contentsline {paragraph}{CodeContests: search helps small models.}{23}{section*.77}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Compute.}{23}{section*.78}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Qualitative examples: A* success on code.}{23}{section*.79}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Qualitative examples: CoT success on code (A* overthinks).}{24}{section*.80}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Pattern.}{24}{section*.81}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {J.1}Additional HumanEval Examples}{24}{subsection.J.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {J.2}MBPP Examples (LLaMA-3.1-8B)}{25}{subsection.J.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {J.3}CodeContests Examples (Qwen-0.5B)}{26}{subsection.J.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Cross-dataset pattern.}{27}{section*.82}\protected@file@percent }
+\gdef \@abspage@last{27}

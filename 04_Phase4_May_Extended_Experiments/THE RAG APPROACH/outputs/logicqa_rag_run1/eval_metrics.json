@@ -1,0 +1,60 @@
+{
+  "n_eval": 100,
+  "accuracy": 6.0,
+  "answered_count": 14,
+  "answered_rate": 14.0,
+  "baseline_cot_accuracy": 39.0,
+  "baseline_astar_accuracy": 33.0,
+  "bucket_accuracy": {
+    "astar_only": {
+      "total": 13,
+      "correct": 3,
+      "accuracy": 23.076923076923077
+    },
+    "both_correct": {
+      "total": 20,
+      "correct": 3,
+      "accuracy": 15.0
+    },
+    "both_wrong": {
+      "total": 48,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "cot_only": {
+      "total": 19,
+      "correct": 0,
+      "accuracy": 0.0
+    }
+  },
+  "category_accuracy": {
+    "inference_selection": {
+      "total": 24,
+      "correct": 2,
+      "accuracy": 8.333333333333334
+    },
+    "logical_constraints": {
+      "total": 74,
+      "correct": 4,
+      "accuracy": 5.405405405405405
+    },
+    "other": {
+      "total": 2,
+      "correct": 0,
+      "accuracy": 0.0
+    }
+  },
+  "paired_jsonl": "/home/dibyanayan/tanzeel/THE FINAL CALL/llama 3.1 8b/data/cot_astar_runs/logicqa_paired_all.jsonl",
+  "output_dir": "THE RAG APPROACH/outputs/logicqa_rag_run1",
+  "kb_split": "train",
+  "eval_split": "all",
+  "top_k": 3,
+  "retriever_requested": "auto",
+  "retriever_actual": "sbert",
+  "retriever_fallback_reason": "",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "kb_size": 25,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "max_new_tokens": 120,
+  "max_eval": 0
+}

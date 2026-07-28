@@ -1,0 +1,23 @@
+{
+  "dataset": "strategyqa",
+  "baseline_astar": {
+    "accuracy": 79.0,
+    "correct": 79,
+    "total": 100
+  },
+  "baseline_cot": {
+    "accuracy": 73.0,
+    "correct": 73,
+    "total": 100
+  },
+  "previous": {
+    "accuracy": 48.0,
+    "correct": 48,
+    "total": 100
+  },
+  "new": {
+    "accuracy": 43.0,
+    "correct": 43,
+    "total": 100
+  }
+}

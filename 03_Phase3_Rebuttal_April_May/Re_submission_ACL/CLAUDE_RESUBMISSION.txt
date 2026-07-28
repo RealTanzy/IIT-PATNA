@@ -1,0 +1,945 @@
+
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ Plan: ACL ARR Resubmission — "Beyond Linear Reasoning" Paper Revision
+
+ Context
+
+ The paper "Beyond Linear Reasoning: Combining Chain-of-Thought with A* Search for Robust Multi-Strategy Inference" was submitted to ACL ARR March 2026 and received
+ reviews from 3 reviewers:
+ - Reviewer 9TPm: W1-W6 (routing gap, heuristic dataset-dependence, limited benchmarks/scale, ToT comparison, unablated design choices, compute cost)
+ - Reviewer Gftu (1.5 overall): W1 (models too rudimentary), W2 (handcrafted router), W3 (no compute-accuracy tradeoff), W4 (literature not comprehensive, no 2025
+ works)
+ - Reviewer tgwN (2.5 overall): W1 (DeepSeek judge unexplained), W2 (only one heuristic), W3 (only 0.5B/8B models), W4 (restricted to QA benchmarks)
+
+ A detailed rebuttal was submitted promising: topology router, fluency-correctness asymmetry, sensitivity analysis, compute table, 14B results, GSM8K/MATH results,
+ heuristic validation, and 2025 literature. All promises must now be delivered in the revised paper.
+
+ The professor's 9-page revision checklist provides detailed guidance on how to restructure the paper. The core principle is: reframe from "A is better than CoT" to
+ "A and CoT are complementary, and search helps when the problem topology rewards branching."**
+
+ Critical constraints:
+ - Title MUST NOT change (user explicit instruction overrides checklist suggestion)
+ - Use \textcolor{red}{new content} for all reframed/added content
+ - ACL format: 8-page main body + unlimited appendix
+ - Don't paste TMLR numbers without aligning splits
+ - Can incorporate TMLR improvements (topology framework, sensitivity analysis, etc.)
+ - "No room for any error" — must be meticulous
+
+ ---
+ File to Modify
+
+ c:\Users\madamkh\Desktop\Research Work\tanzeel_server_backup\tanzeel server backup\Re_submission_ACL\reasoning astar\latex\main.tex (1508 lines)
+
+ Reference Files
+
+ - TMLR paper: 19th_April\TMLR_Version\main.tex (has topology framework, topic modelling, sensitivity analysis already implemented)
+ - ACL Version: 19th_April\ACL_VERSION_FINAL\main.tex (ACL-formatted TMLR paper)
+ - Checklist PDF: Re_submission_ACL\revision_checklist_Astar_CoT 2.pdf
+ - OpenReview PDF: Re_submission_ACL\Beyond Linear Reasoning_...OpenReview.pdf
+
+ ---
+ Implementation Plan (Ordered by Priority)
+
+ Phase 1: Preamble & Package Setup
+
+ Add packages needed for revision markup:
+ \usepackage{xcolor}  % if not already loaded; may need \PassOptionsToPackage{dvipsnames}{xcolor}
+ \usepackage{xspace}
+ Add command: \newcommand{\pp}{\,pp\xspace}
+
+ ---
+ Phase 2: Global Framing Change (Checklist Item 0)
+
+ Title: Keep unchanged — "Beyond Linear Reasoning: Combining Chain-of-Thought with A* Search for Robust Multi-Strategy Inference"
+
+ Abstract (lines 53-55): Replace with topology-centered abstract per checklist. Wrap new content in \textcolor{red}{...}. Key additions:
+ - CoT/A* complementarity
+ - Reasoning Topology Framework (13 pre-generation structural features)
+ - Topology clusters: A* advantage increases with branching complexity
+ - Topology router outperforming output-based routers
+ - Fluency-Correctness Asymmetry
+ - New generalization, sensitivity, and compute experiments
+
+ Suggested skeleton from checklist:
+
+ ▎ Chain-of-thought prompting commits an LLM to a single linear reasoning path, while search-based methods explore multiple candidate traces. We study whether guided
+ ▎  A* search should replace or complement CoT. Across StrategyQA, LogicQA, HotpotQA, and additional math benchmarks, we find that neither method uniformly
+ ▎ dominates; instead, they solve partially different subsets of instances. We introduce a Reasoning Topology Framework using 13 pre-generation structural features
+ ▎ and show that A* gains increase with branching complexity rather than dataset identity. A topology-aware router that observes no generated traces outperforms
+ ▎ output-based routers such as semantic entropy and LLM-as-critic adjudication, recovering a larger fraction of the oracle gap. We further show that post-hoc
+ ▎ routing is limited by a Fluency-Correctness Asymmetry: in many disagreement cases, the more fluent trace is wrong. Sensitivity and token-cost analyses clarify
+ ▎ when the additional search budget is worthwhile. Overall, A* is not a universal replacement for CoT; it is a higher-cost, topology-sensitive reasoning strategy.
+
+ ---
+ Phase 3: Introduction Revision (Checklist Items 2.1-2.4)
+
+ 2.1 — Add motivation paragraph (after CoT limitation paragraph, ~line 65):
+ New paragraph about search not being free — can introduce over-exploration, redundant decomposition, spurious branches. The important question is "when does the
+ input contain useful branching structure?"
+
+ 2.2 — Replace research question (within the paragraph at ~line 65-66):
+ Replace the current "our focus is whether search and linear reasoning are complementary" with four explicit questions:
+ 1. Does guided search dominate linear CoT under a controlled comparison?
+ 2. If not, do the two methods succeed on complementary instances?
+ 3. Can this complementarity be explained by pre-generation structural properties of the input?
+ 4. Can those structural properties be used to route between CoT and A* before any reasoning trace is generated?
+
+ 2.3 — Add "Why A?" paragraph* (end of Introduction, before Contributions):
+ We use A* not because it is the universally best search algorithm for LLM reasoning, but because it exposes the minimal ingredients of guided search: a frontier of
+ partial reasoning states, an accumulated path cost, an estimated remaining cost, a branching budget, and a stopping rule. DFS/BFS isolate depth or breadth but lack
+ heuristic prioritization; ToT and beam-style methods introduce evaluator-based pruning but entangle decomposition prompts, local scoring, and breadth choices;
+ MCTS-style methods add rollout and value-estimation design choices. A* gives a compact diagnostic abstraction for asking when guided exploration is useful.
+
+ 2.4 — Rewrite Contributions (line 80-82):
+ Replace current 3 contributions with 4 topology-centered ones:
+ 1. Controlled comparison: compare CoT and guided A* across structurally diverse reasoning benchmarks and show that neither uniformly dominates.
+ 2. Complementarity: show that CoT and A* solve non-trivially different subsets of instances, making routing a real problem.
+ 3. Reasoning topology: introduce 13 pre-generation structural features and show that branching complexity predicts A* advantage better than dataset identity.
+ 4. Routing and diagnostics: show that topology-aware routing outperforms output-based routing, and analyze why trace-level adjudication fails through
+ Fluency-Correctness Asymmetry, overthinking failures, sensitivity, and compute-cost analyses.
+
+ ---
+ Phase 4: Methodology Revision (Checklist Items 4.1-4.3)
+
+ 4.1 — Fix heuristic/admissibility (lines 294-391):
+ - Make the critic-based heuristic h(n) = 1 - score(n) the MAIN experimental heuristic
+ - Add subsection "Approximate Conservative Guidance" with three sufficient cases: monotone calibrated scoring, conservative estimation, bounded overestimation
+ - Report empirical validation: 500 annotated states, critic mean 0.43, human 0.58, paired t-test p<0.001, overestimation rate 12.3%, ε_max = 0.14
+ - Move old depth/coverage theorem to Appendix B "Auxiliary Conservative Heuristic Construction"
+ - Do NOT claim critic-based heuristic has formal admissibility guarantee
+
+ 4.2 — Add "Reasoning Topology Features" subsection (after A* method, before routing):
+ Add the 13-feature table:
+
+ ┌───────────────────────┬────────┬───────────────────────────────────────────────┐
+ │        Feature        │ Symbol │                  Description                  │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Question length       │ q_len  │ token count of question                       │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Context length        │ c_len  │ token count of full context                   │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Context sentences     │ c_sent │ number of sentences                           │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Logical connectives   │ conn   │ count of if, then, therefore, because, unless │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Negation markers      │ neg    │ count of not, no, never, neither              │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Comparatives          │ cmp    │ count of more, less, better, worse, than      │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Question marks        │ q?     │ number of question marks                      │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Estimated hop count   │ hop    │ dependency/parser-based proxy                 │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Contextual density    │ con    │ entities per sentence                         │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Distractors           │ dest   │ number of candidate options                   │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Branching coefficient │ bc     │ c_sent × hop / q_len                          │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Reasoning depth       │ ℓ      │ maximum dependency depth                      │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Number of options     │ nopt   │ answer options available                      │
+ └───────────────────────┴────────┴───────────────────────────────────────────────┘
+
+ Add sentence: "These features are computed before any model generation and are used only to characterize the structural demands of the input."
+
+ 4.3 — Revise routing subsection (lines 418-436):
+ Split routers into two families:
+ - Output-based routers: Semantic Entropy, LLM-as-Judge, LLM-as-Critic
+ - Pre-generation routers: Random Forest (simple features), Topology Router (13 topology features)
+
+ Add framing sentence: "The topology router should be read not as a final deployed router, but as a diagnostic test of whether the CoT/A* boundary is predictable
+ from problem structure before reasoning begins."
+
+ Add DeepSeek explanation: "We use DeepSeek-R1-Distill-Qwen-14B because it is a strong open instruction-following model for reasoning-trace critique, is
+ architecturally distinct from the LLaMA-3.1-8B generation backbone, and can be run locally without closed API dependence."
+
+ ---
+ Phase 5: Results Section Overhaul (Checklist Items 5-6)
+
+ 5.2 — Add 14B-scale results (after main Table 1):
+ New table:
+
+ ┌────────────┬───────┬───────┬─────────────────────────────────┐
+ │  Dataset   │  CoT  │  A*   │         Interpretation          │
+ ├────────────┼───────┼───────┼─────────────────────────────────┤
+ │ StrategyQA │ 76.02 │ 75.56 │ search not uniformly better     │
+ ├────────────┼───────┼───────┼─────────────────────────────────┤
+ │ HotpotQA   │ 60.19 │ 83.33 │ search strongly helps multi-hop │
+ ├────────────┼───────┼───────┼─────────────────────────────────┤
+ │ LogicQA    │ 57.91 │ 58.12 │ roughly tied                    │
+ └────────────┴───────┴───────┴─────────────────────────────────┘
+
+ Text: "These results show that the pattern is not restricted to 0.5B/8B models. The sign of the A* gain still depends on the reasoning structure."
+
+ 5.3 — Add math-domain extension (after 14B table):
+
+ ┌─────────┬───────┬───────┐
+ │ Dataset │  CoT  │  A*   │
+ ├─────────┼───────┼───────┤
+ │ GSM8K   │ 85.04 │ 86.12 │
+ ├─────────┼───────┼───────┤
+ │ MATH    │ 78.00 │ 79.10 │
+ └─────────┴───────┴───────┘
+
+ Text: "A* gives modest gains on GSM8K and MATH, but the gains are smaller than in topology-heavy multi-hop QA. Coding and long-form reasoning remain future work."
+
+ 6.2 — Add "From aggregate inconsistency to complementarity" (after Table 1):
+ Text explaining that if one method dominated, oracle would add little. The presence of substantial CoT-only and A*-only cells shows complementary computations.
+
+ ---
+ Phase 6: NEW Section — Explaining Complementarity Through Topology (Checklist Item 7)
+
+ This is the central new section — place after the main results/complementarity table and before routing.
+
+ 7.1 — Reasoning Topology: Four Cluster Types:
+
+ ┌─────────┬────────────────┬──────┬──────┬──────┬───────┬──────────────────────┐
+ │ Cluster │    Profile     │  BC  │  A*  │ CoT  │ Both% │    Interpretation    │
+ ├─────────┼────────────────┼──────┼──────┼──────┼───────┼──────────────────────┤
+ │ C1      │ Linear, short  │ 1.28 │ 81.7 │ 82.1 │ 76.4  │ CoT sufficient       │
+ ├─────────┼────────────────┼──────┼──────┼──────┼───────┼──────────────────────┤
+ │ C2      │ Mid-branch     │ 4.24 │ 73.5 │ 66.2 │ 57.8  │ selection critical   │
+ ├─────────┼────────────────┼──────┼──────┼──────┼───────┼──────────────────────┤
+ │ C3      │ Complex, noisy │ 4.02 │ 52.3 │ 49.1 │ 38.6  │ both often fail      │
+ ├─────────┼────────────────┼──────┼──────┼──────┼───────┼──────────────────────┤
+ │ C4      │ Deep-branch    │ 6.49 │ 69.8 │ 58.4 │ 47.2  │ A* advantage largest │
+ └─────────┴────────────────┴──────┴──────┴──────┴───────┴──────────────────────┘
+
+ Text: "As branching complexity increases from C1 to C4, A* advantage increases from approximately −0.4 pp to +11.4 pp. The clusters are not dataset labels: each
+ contains instances from multiple benchmarks. This indicates that the CoT/A* boundary cuts across benchmark identity and is better explained by problem structure."
+
+ Add figure description: A* advantage vs branching coefficient, R² = 0.94.
+
+ 7.2 — Prescriptive decision rule:
+ - C1/linear: use CoT; search overhead unnecessary
+ - C2/mid-branch: route adaptively; this is where router quality matters most
+ - C3/complex noisy: neither reliable; retrieval or stronger models needed
+ - C4/deep-branch: use A*; search has clearest advantage
+
+ 7.3 — Topic modelling validates topology (brief summary):
+ A*-dominant topics (81.4% coverage): multi-hop chaining, premise scanning, temporal ordering, entity resolution
+ CoT-dominant topics (18.6%): single-step inference categories
+
+ ---
+ Phase 7: NEW Section — Topology-Aware Routing (Checklist Item 8)
+
+ 8.1 — Router table (replaces/extends current Table 2):
+
+ ┌──────────────────┬─────────────────┬────────────┬─────────┬───────────────┐
+ │      Router      │      Input      │ StrategyQA │ LogicQA │ Gap recovered │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ A* only          │ -               │ 74.80      │ 44.85   │ -             │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ CoT only         │ -               │ 64.52      │ 45.78   │ -             │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ Semantic Entropy │ traces/samples  │ 74.37      │ 47.47   │ 14.8%         │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ LLM-as-Critic    │ traces          │ 74.19      │ 47.16   │ 12.4%         │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ Random Forest    │ simple features │ 76.25      │ 48.20   │ 18.2%         │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ Topology Router  │ 13 features     │ 77.35      │ 49.01   │ 26.1%         │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ Oracle           │ -               │ 84.59      │ 59.29   │ 100%          │
+ └──────────────────┴─────────────────┴────────────┴─────────┴───────────────┘
+
+ Text: "The topology router observes no generated traces, yet outperforms output-based routers. This reverses the intuitive expectation that seeing full traces
+ should be more informative."
+
+ 8.2 — Fluency-Correctness Asymmetry:
+
+ ┌─────────────────────────┬───────────────┬───────┐
+ │         Metric          │      A*       │  CoT  │
+ ├─────────────────────────┼───────────────┼───────┤
+ │ Average fluency score   │ 0.725         │ 0.673 │
+ ├─────────────────────────┼───────────────┼───────┤
+ │ Cases where more fluent │ 62.0%         │ 38.0% │
+ ├─────────────────────────┼───────────────┼───────┤
+ │ More-fluent but wrong   │ 38.0% overall │       │
+ └─────────────────────────┴───────────────┴───────┘
+
+ Text: "Output-based routers are limited because trace fluency is not equivalent to trace correctness. In a substantial fraction of disagreement cases, CoT produces
+ the more fluent trace but the wrong answer."
+
+ ---
+ Phase 8: Sensitivity Analysis (Checklist Item 9)
+
+ 9.1 — Budget sweep (300-question HotpotQA sample, seed=42):
+
+ ┌─────┬──────┬──────┬──────┬──────┬──────┐
+ │  B  │  5   │  10  │  15  │  20  │  30  │
+ ├─────┼──────┼──────┼──────┼──────┼──────┤
+ │ Acc │ 73.0 │ 77.3 │ 78.0 │ 78.7 │ 76.0 │
+ └─────┴──────┴──────┴──────┴──────┴──────┘
+
+ 9.2 — Branching factor sweep:
+
+ ┌─────┬──────┬──────┬──────┬──────┐
+ │  K  │  1   │  2   │  3   │  4   │
+ ├─────┼──────┼──────┼──────┼──────┤
+ │ Acc │ 77.7 │ 78.3 │ 76.0 │ 80.3 │
+ └─────┴──────┴──────┴──────┴──────┘
+
+ Text: "Accuracy improves from B=5 to B=20, then drops at B=30, suggesting diminishing returns and over-exploration. The K=1 variant degrades gracefully and already
+ exceeds self-consistency."
+
+ ---
+ Phase 9: Compute-Accuracy Tradeoff (Checklist Item 10)
+
+ ┌───────────────┬──────────┬──────────┬──────────────────────┐
+ │    Method     │ Accuracy │ Tokens/q │        Notes         │
+ ├───────────────┼──────────┼──────────┼──────────────────────┤
+ │ CoT           │ 76.80    │ ~512     │ single call          │
+ ├───────────────┼──────────┼──────────┼──────────────────────┤
+ │ SC-5          │ 78.21    │ ~2,560   │ 5 CoT traces         │
+ ├───────────────┼──────────┼──────────┼──────────────────────┤
+ │ A*, K=1, B=30 │ 77.7     │ 3,372    │ linear/no branching  │
+ ├───────────────┼──────────┼──────────┼──────────────────────┤
+ │ A*, K=3, B=15 │ 78.0     │ 12,452   │ default              │
+ ├───────────────┼──────────┼──────────┼──────────────────────┤
+ │ A*, K=3, B=20 │ 78.7     │ 12,391   │ peak sample accuracy │
+ └───────────────┴──────────┴──────────┴──────────────────────┘
+
+ Important wording: "A* is substantially more expensive than CoT and SC. Its use is justified only when topology predicts that branching is useful. This motivates
+ topology-aware pre-routing as a compute-saving mechanism."
+
+ ---
+ Phase 10: Failure Analysis (Checklist Item 11)
+
+ Add failure taxonomy table:
+
+ ┌──────────────────────┬────────────┬────────────────────────────────────────────────────────────────────┐
+ │     Failure mode     │ Proportion │                            Description                             │
+ ├──────────────────────┼────────────┼────────────────────────────────────────────────────────────────────┤
+ │ Overthinking         │ 91.1%      │ search continues past correct evidence and accumulates distractors │
+ ├──────────────────────┼────────────┼────────────────────────────────────────────────────────────────────┤
+ │ Premature commitment │ 8.9%       │ search locks onto an early branch                                  │
+ └──────────────────────┴────────────┴────────────────────────────────────────────────────────────────────┘
+
+ Include 2-3 representative examples (Disney ice princess, Menthol/Thanksgiving, Albany GA vs NY) — these already exist in the appendix (lines 1306-1326), reference
+ them and add summary table in main paper.
+
+ Text: "CoT often fails by committing too early; A* often fails by continuing too long. Thus, the same branching mechanism that helps A* on multi-hop and
+ premise-scanning problems hurts it on linear problems."
+
+ ---
+ Phase 11: Related Work Expansion (Checklist Item 3)
+
+ Replace current Related Work (lines 867-884, ~5 short paragraphs) with 5 focused paragraphs:
+
+ 1. CoT and structured reasoning: CoT, Self-Consistency, ToT, GoT, CoT-decoding, CoT not universally beneficial (Meincke et al., 2025). Position: we're the
+ search-side complement.
+ 2. Search-augmented reasoning: MCTS, LATS, MCTSr, self-evaluation beam search, Coconut, rStar-Math (Guan et al., 2025). Our contribution: diagnoses when search
+ helps.
+ 3. Over-exploration and search failures: Fetch/redundant-state (Wang et al., 2025), overthinking survey (Sui et al., 2025), CoT-Valve (Ma et al., 2025). Prior work
+ treats over-exploration as efficiency issue; we treat it as both efficiency and correctness issue.
+ 4. Routing and adaptive computation: Semantic entropy, verifier-based routing, distinction from mixture-of-experts. Our router selects between inference-time
+ algorithms, not neural modules.
+ 5. LLM-as-judge and critic limitations: LLM-as-judge, process supervision, our Fluency-Correctness Asymmetry.
+
+ Add methodological comparison table (at end of Related Work):
+
+ ┌──────────────────┬───────────────────┬───────────┬───────────────────┬─────────────────────┬────────────────────────────────────┐
+ │      Method      │ Search structure  │ Frontier? │    Heuristic?     │  Pre-gen routing?   │          Main limitation           │
+ ├──────────────────┼───────────────────┼───────────┼───────────────────┼─────────────────────┼────────────────────────────────────┤
+ │ CoT              │ linear            │ no        │ no                │ no                  │ premature commitment               │
+ ├──────────────────┼───────────────────┼───────────┼───────────────────┼─────────────────────┼────────────────────────────────────┤
+ │ Self-Consistency │ multiple linear   │ no        │ no                │ no                  │ unguided sampling                  │
+ ├──────────────────┼───────────────────┼───────────┼───────────────────┼─────────────────────┼────────────────────────────────────┤
+ │ ToT              │ tree/BFS-style    │ yes       │ evaluator/pruning │ no                  │ breadth/evaluator entangled        │
+ ├──────────────────┼───────────────────┼───────────┼───────────────────┼─────────────────────┼────────────────────────────────────┤
+ │ MCTS/LATS        │ tree + rollout    │ yes       │ value/rollout     │ no                  │ many design choices                │
+ ├──────────────────┼───────────────────┼───────────┼───────────────────┼─────────────────────┼────────────────────────────────────┤
+ │ A* (ours)        │ priority frontier │ yes       │ yes               │ yes (in this paper) │ higher compute, topology-sensitive │
+ └──────────────────┴───────────────────┴───────────┴───────────────────┴─────────────────────┴────────────────────────────────────┘
+
+ ---
+ Phase 12: Discussion Rewrite (Checklist Item 14)
+
+ Rewrite around three takeaways:
+
+ Takeaway 1: Search is topology-sensitive. Search helps when the problem requires preserving alternatives, scanning premises, chaining facts, or resolving entity
+ paths. CoT is preferable when the answer follows from a compact linear inference.
+
+ Takeaway 2: Routing should happen before generation. Post-hoc trace inspection is limited because fluent traces can be wrong. The topology router success suggests
+ that adaptive inference should begin with problem-structure recognition.
+
+ Takeaway 3: Topology is necessary but not sufficient. The topology router recovers 26.1% of the oracle gap, leaving substantial residual error. Closing this gap
+ likely requires modeling problem-model compatibility.
+
+ ---
+ Phase 13: Limitations Rewrite (Checklist Item 15)
+
+ Replace current limitations with sharper ones:
+ - Search-policy dependence: results based on one budgeted A* implementation
+ - Hand-crafted topology features: 13 features are proxies, not latent causal topology
+ - Single-language setting: dependency/parser-based features may not transfer to non-English
+ - Judge/critic dependence: critic-based heuristic uses DeepSeek; topology router reduces but doesn't eliminate concerns
+ - Compute cost: A* is more expensive; token accounting measured on ablation samples
+ - Domain coverage: math is added, but coding and long-form reasoning remain future work
+ - No learned router: future work should learn topology embeddings or jointly train routing/search
+
+ ---
+ Phase 14: Conclusion Rewrite
+
+ Update to tell the same topology-sensitive story. Key points:
+ - CoT and A* are complementary; complementarity explained by reasoning topology
+ - Topology-aware routing outperforms trace-based routing
+ - A* is not a universal replacement; it's a topology-sensitive strategy
+ - Future: adaptive inference-time strategy selection, learned topology features, broader domains
+
+ ---
+ Phase 15: Appendix Reorganization (Checklist Item 16)
+
+ Target structure:
+ - Appendix A: Detailed qualitative examples (existing + overthinking examples)
+ - Appendix B: Auxiliary conservative heuristic proof (move old admissibility theorem here)
+ - Appendix C: Prompts (CoT prompt, A* step-generation prompt, DeepSeek critic prompt, LLM-as-judge prompt, topology feature extraction details)
+ - Appendix D: Sensitivity analysis (budget and branching sweeps — full tables)
+ - Appendix E: Compute analysis (token counts and node counts)
+ - Appendix F: Additional models/domains (14B results, GSM8K, MATH)
+ - Appendix G: Reproducibility details (dataset splits, seeds, model versions, Ollama/vLLM settings, hardware, code path)
+
+ ---
+ Phase 16: References Update
+
+ Add 2025 works cited in rebuttal:
+ - rStar-Math (Guan et al., 2025)
+ - Overthinking survey (Sui et al., 2025)
+ - Fetch/redundant-state (Wang et al., 2025)
+ - CoT-Valve (Ma et al., 2025)
+ - CoT not universally beneficial (Meincke et al., 2025)
+ - Coconut (if referenced)
+ - MCTSr (if referenced)
+ - LATS (if referenced)
+
+ ---
+ Consistency Checks (Checklist Item 17)
+
+ After all edits:
+ - Do NOT claim critic-based heuristic has same formal admissibility as depth-coverage
+ - Do NOT call A* "theoretically superior"; say it's a controlled diagnostic abstraction
+ - Do NOT mix dataset sizes between ARR and TMLR versions
+ - Do NOT call topology router fully scalable or learned
+ - Do NOT say router closes the oracle gap; say it recovers only part
+ - Do NOT overclaim math/coding generalization
+ - Label all subset experiments clearly (full dataset vs 300-question sample vs matched 14B subset)
+ - Add confidence intervals/statistical tests wherever possible
+ - Abstract, conclusion, and limitations all tell the same topology-sensitive story
+
+ ---
+ Implementation Order
+
+ 1. Add packages and \textcolor{red}{} command
+ 2. Rewrite Abstract
+ 3. Revise Introduction (motivation, research questions, "Why A?", contributions)
+ 4. Fix Methodology (critic heuristic main, move theorem, add topology features, revise routing)
+ 5. Add new results (14B table, GSM8K/MATH table, complementarity framing)
+ 6. Add NEW section: Topology (clusters, topic modelling summary, prescriptive rule)
+ 7. Add NEW section: Topology-Aware Routing (router table, fluency-correctness asymmetry)
+ 8. Add Sensitivity Analysis section
+ 9. Add Compute-Accuracy Tradeoff section
+ 10. Add Failure Analysis (summary table in main paper)
+ 11. Expand Related Work (5 paragraphs + comparison table)
+ 12. Rewrite Discussion (three takeaways)
+ 13. Rewrite Limitations
+ 14. Rewrite Conclusion
+ 15. Reorganize Appendix
+ 16. Update references.bib
+ 6. Add NEW section: Topology (clusters, topic modelling summary, prescriptive rule)
+ 7. Add NEW section: Topology-Aware Routing (router table, fluency-correctness asymmetry)
+ 8. Add Sensitivity Analysis section
+ 9. Add Compute-Accuracy Tradeoff section
+ 10. Add Failure Analysis (summary table in main paper)
+ 11. Expand Related Work (5 paragraphs + comparison table)
+ 12. Rewrite Discussion (three takeaways)
+ 13. Rewrite Limitations
+ 14. Rewrite Conclusion
+ 15. Reorganize Appendix
+ 16. Update references.bib
+ 17. Run consistency checks
+ 18. Compile with tectonic
+
+ ---
+ Verification
+
+ 1. Compile PDF with tectonic — must produce no errors
+ 2. Verify main body fits within 8 pages (ACL limit)
+ 3. Check all \ref targets resolve
+ 4. Verify number consistency across tables
+ 5. Ensure all rebuttal promises are delivered
+ 6. Confirm title is unchanged
+ 7. Confirm \textcolor{red}{...} marks all new/reframed content Here is Claude's plan:
+╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+ Plan: ACL ARR Resubmission — "Beyond Linear Reasoning" Paper Revision
+
+ Context
+
+ The paper "Beyond Linear Reasoning: Combining Chain-of-Thought with A* Search for Robust Multi-Strategy Inference" was submitted to ACL ARR March 2026 and received
+ reviews from 3 reviewers:
+ - Reviewer 9TPm: W1-W6 (routing gap, heuristic dataset-dependence, limited benchmarks/scale, ToT comparison, unablated design choices, compute cost)
+ - Reviewer Gftu (1.5 overall): W1 (models too rudimentary), W2 (handcrafted router), W3 (no compute-accuracy tradeoff), W4 (literature not comprehensive, no 2025
+ works)
+ - Reviewer tgwN (2.5 overall): W1 (DeepSeek judge unexplained), W2 (only one heuristic), W3 (only 0.5B/8B models), W4 (restricted to QA benchmarks)
+
+ A detailed rebuttal was submitted promising: topology router, fluency-correctness asymmetry, sensitivity analysis, compute table, 14B results, GSM8K/MATH results,
+ heuristic validation, and 2025 literature. All promises must now be delivered in the revised paper.
+
+ The professor's 9-page revision checklist provides detailed guidance on how to restructure the paper. The core principle is: reframe from "A is better than CoT" to
+ "A and CoT are complementary, and search helps when the problem topology rewards branching."**
+
+ Critical constraints:
+ - Title MUST NOT change (user explicit instruction overrides checklist suggestion)
+ - Use \textcolor{red}{new content} for all reframed/added content
+ - ACL format: 8-page main body + unlimited appendix
+ - Don't paste TMLR numbers without aligning splits
+ - Can incorporate TMLR improvements (topology framework, sensitivity analysis, etc.)
+ - "No room for any error" — must be meticulous
+
+ ---
+ File to Modify
+
+ c:\Users\madamkh\Desktop\Research Work\tanzeel_server_backup\tanzeel server backup\Re_submission_ACL\reasoning astar\latex\main.tex (1508 lines)
+
+ Reference Files
+
+ - TMLR paper: 19th_April\TMLR_Version\main.tex (has topology framework, topic modelling, sensitivity analysis already implemented)
+ - ACL Version: 19th_April\ACL_VERSION_FINAL\main.tex (ACL-formatted TMLR paper)
+ - Checklist PDF: Re_submission_ACL\revision_checklist_Astar_CoT 2.pdf
+ - OpenReview PDF: Re_submission_ACL\Beyond Linear Reasoning_...OpenReview.pdf
+
+ ---
+ Implementation Plan (Ordered by Priority)
+
+ Phase 1: Preamble & Package Setup
+
+ Add packages needed for revision markup:
+ \usepackage{xcolor}  % if not already loaded; may need \PassOptionsToPackage{dvipsnames}{xcolor}
+ \usepackage{xspace}
+ Add command: \newcommand{\pp}{\,pp\xspace}
+
+ ---
+ Phase 2: Global Framing Change (Checklist Item 0)
+
+ Title: Keep unchanged — "Beyond Linear Reasoning: Combining Chain-of-Thought with A* Search for Robust Multi-Strategy Inference"
+
+ Abstract (lines 53-55): Replace with topology-centered abstract per checklist. Wrap new content in \textcolor{red}{...}. Key additions:
+ - CoT/A* complementarity
+ - Reasoning Topology Framework (13 pre-generation structural features)
+ - Topology clusters: A* advantage increases with branching complexity
+ - Topology router outperforming output-based routers
+ - Fluency-Correctness Asymmetry
+ - New generalization, sensitivity, and compute experiments
+
+ Suggested skeleton from checklist:
+
+ ▎ Chain-of-thought prompting commits an LLM to a single linear reasoning path, while search-based methods explore multiple candidate traces. We study whether guided
+ ▎  A* search should replace or complement CoT. Across StrategyQA, LogicQA, HotpotQA, and additional math benchmarks, we find that neither method uniformly
+ ▎ dominates; instead, they solve partially different subsets of instances. We introduce a Reasoning Topology Framework using 13 pre-generation structural features
+ ▎ and show that A* gains increase with branching complexity rather than dataset identity. A topology-aware router that observes no generated traces outperforms
+ ▎ output-based routers such as semantic entropy and LLM-as-critic adjudication, recovering a larger fraction of the oracle gap. We further show that post-hoc
+ ▎ routing is limited by a Fluency-Correctness Asymmetry: in many disagreement cases, the more fluent trace is wrong. Sensitivity and token-cost analyses clarify
+ ▎ when the additional search budget is worthwhile. Overall, A* is not a universal replacement for CoT; it is a higher-cost, topology-sensitive reasoning strategy.
+
+ ---
+ Phase 3: Introduction Revision (Checklist Items 2.1-2.4)
+
+ 2.1 — Add motivation paragraph (after CoT limitation paragraph, ~line 65):
+ New paragraph about search not being free — can introduce over-exploration, redundant decomposition, spurious branches. The important question is "when does the
+ input contain useful branching structure?"
+
+ 2.2 — Replace research question (within the paragraph at ~line 65-66):
+ Replace the current "our focus is whether search and linear reasoning are complementary" with four explicit questions:
+ 1. Does guided search dominate linear CoT under a controlled comparison?
+ 2. If not, do the two methods succeed on complementary instances?
+ 3. Can this complementarity be explained by pre-generation structural properties of the input?
+ 4. Can those structural properties be used to route between CoT and A* before any reasoning trace is generated?
+
+ 2.3 — Add "Why A?" paragraph* (end of Introduction, before Contributions):
+ We use A* not because it is the universally best search algorithm for LLM reasoning, but because it exposes the minimal ingredients of guided search: a frontier of
+ partial reasoning states, an accumulated path cost, an estimated remaining cost, a branching budget, and a stopping rule. DFS/BFS isolate depth or breadth but lack
+ heuristic prioritization; ToT and beam-style methods introduce evaluator-based pruning but entangle decomposition prompts, local scoring, and breadth choices;
+ MCTS-style methods add rollout and value-estimation design choices. A* gives a compact diagnostic abstraction for asking when guided exploration is useful.
+
+ 2.4 — Rewrite Contributions (line 80-82):
+ Replace current 3 contributions with 4 topology-centered ones:
+ 1. Controlled comparison: compare CoT and guided A* across structurally diverse reasoning benchmarks and show that neither uniformly dominates.
+ 2. Complementarity: show that CoT and A* solve non-trivially different subsets of instances, making routing a real problem.
+ 3. Reasoning topology: introduce 13 pre-generation structural features and show that branching complexity predicts A* advantage better than dataset identity.
+ 4. Routing and diagnostics: show that topology-aware routing outperforms output-based routing, and analyze why trace-level adjudication fails through
+ Fluency-Correctness Asymmetry, overthinking failures, sensitivity, and compute-cost analyses.
+
+ ---
+ Phase 4: Methodology Revision (Checklist Items 4.1-4.3)
+
+ 4.1 — Fix heuristic/admissibility (lines 294-391):
+ - Make the critic-based heuristic h(n) = 1 - score(n) the MAIN experimental heuristic
+ - Add subsection "Approximate Conservative Guidance" with three sufficient cases: monotone calibrated scoring, conservative estimation, bounded overestimation
+ - Report empirical validation: 500 annotated states, critic mean 0.43, human 0.58, paired t-test p<0.001, overestimation rate 12.3%, ε_max = 0.14
+ - Move old depth/coverage theorem to Appendix B "Auxiliary Conservative Heuristic Construction"
+ - Do NOT claim critic-based heuristic has formal admissibility guarantee
+
+ 4.2 — Add "Reasoning Topology Features" subsection (after A* method, before routing):
+ Add the 13-feature table:
+
+ ┌───────────────────────┬────────┬───────────────────────────────────────────────┐
+ │        Feature        │ Symbol │                  Description                  │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Question length       │ q_len  │ token count of question                       │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Context length        │ c_len  │ token count of full context                   │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Context sentences     │ c_sent │ number of sentences                           │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Logical connectives   │ conn   │ count of if, then, therefore, because, unless │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Negation markers      │ neg    │ count of not, no, never, neither              │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Comparatives          │ cmp    │ count of more, less, better, worse, than      │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Question marks        │ q?     │ number of question marks                      │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Estimated hop count   │ hop    │ dependency/parser-based proxy                 │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Contextual density    │ con    │ entities per sentence                         │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Distractors           │ dest   │ number of candidate options                   │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Branching coefficient │ bc     │ c_sent × hop / q_len                          │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Reasoning depth       │ ℓ      │ maximum dependency depth                      │
+ ├───────────────────────┼────────┼───────────────────────────────────────────────┤
+ │ Number of options     │ nopt   │ answer options available                      │
+ └───────────────────────┴────────┴───────────────────────────────────────────────┘
+
+ Add sentence: "These features are computed before any model generation and are used only to characterize the structural demands of the input."
+
+ 4.3 — Revise routing subsection (lines 418-436):
+ Split routers into two families:
+ - Output-based routers: Semantic Entropy, LLM-as-Judge, LLM-as-Critic
+ - Pre-generation routers: Random Forest (simple features), Topology Router (13 topology features)
+
+ Add framing sentence: "The topology router should be read not as a final deployed router, but as a diagnostic test of whether the CoT/A* boundary is predictable
+ from problem structure before reasoning begins."
+
+ Add DeepSeek explanation: "We use DeepSeek-R1-Distill-Qwen-14B because it is a strong open instruction-following model for reasoning-trace critique, is
+ architecturally distinct from the LLaMA-3.1-8B generation backbone, and can be run locally without closed API dependence."
+
+ ---
+ Phase 5: Results Section Overhaul (Checklist Items 5-6)
+
+ 5.2 — Add 14B-scale results (after main Table 1):
+ New table:
+
+ ┌────────────┬───────┬───────┬─────────────────────────────────┐
+ │  Dataset   │  CoT  │  A*   │         Interpretation          │
+ ├────────────┼───────┼───────┼─────────────────────────────────┤
+ │ StrategyQA │ 76.02 │ 75.56 │ search not uniformly better     │
+ ├────────────┼───────┼───────┼─────────────────────────────────┤
+ │ HotpotQA   │ 60.19 │ 83.33 │ search strongly helps multi-hop │
+ ├────────────┼───────┼───────┼─────────────────────────────────┤
+ │ LogicQA    │ 57.91 │ 58.12 │ roughly tied                    │
+ └────────────┴───────┴───────┴─────────────────────────────────┘
+
+ Text: "These results show that the pattern is not restricted to 0.5B/8B models. The sign of the A* gain still depends on the reasoning structure."
+
+ 5.3 — Add math-domain extension (after 14B table):
+
+ ┌─────────┬───────┬───────┐
+ │ Dataset │  CoT  │  A*   │
+ ├─────────┼───────┼───────┤
+ │ GSM8K   │ 85.04 │ 86.12 │
+ ├─────────┼───────┼───────┤
+ │ MATH    │ 78.00 │ 79.10 │
+ └─────────┴───────┴───────┘
+
+ Text: "A* gives modest gains on GSM8K and MATH, but the gains are smaller than in topology-heavy multi-hop QA. Coding and long-form reasoning remain future work."
+
+ 6.2 — Add "From aggregate inconsistency to complementarity" (after Table 1):
+ Text explaining that if one method dominated, oracle would add little. The presence of substantial CoT-only and A*-only cells shows complementary computations.
+
+ ---
+ Phase 6: NEW Section — Explaining Complementarity Through Topology (Checklist Item 7)
+
+ This is the central new section — place after the main results/complementarity table and before routing.
+
+ 7.1 — Reasoning Topology: Four Cluster Types:
+
+ ┌─────────┬────────────────┬──────┬──────┬──────┬───────┬──────────────────────┐
+ │ Cluster │    Profile     │  BC  │  A*  │ CoT  │ Both% │    Interpretation    │
+ ├─────────┼────────────────┼──────┼──────┼──────┼───────┼──────────────────────┤
+ │ C1      │ Linear, short  │ 1.28 │ 81.7 │ 82.1 │ 76.4  │ CoT sufficient       │
+ ├─────────┼────────────────┼──────┼──────┼──────┼───────┼──────────────────────┤
+ │ C2      │ Mid-branch     │ 4.24 │ 73.5 │ 66.2 │ 57.8  │ selection critical   │
+ ├─────────┼────────────────┼──────┼──────┼──────┼───────┼──────────────────────┤
+ │ C3      │ Complex, noisy │ 4.02 │ 52.3 │ 49.1 │ 38.6  │ both often fail      │
+ ├─────────┼────────────────┼──────┼──────┼──────┼───────┼──────────────────────┤
+ │ C4      │ Deep-branch    │ 6.49 │ 69.8 │ 58.4 │ 47.2  │ A* advantage largest │
+ └─────────┴────────────────┴──────┴──────┴──────┴───────┴──────────────────────┘
+
+ Text: "As branching complexity increases from C1 to C4, A* advantage increases from approximately −0.4 pp to +11.4 pp. The clusters are not dataset labels: each
+ contains instances from multiple benchmarks. This indicates that the CoT/A* boundary cuts across benchmark identity and is better explained by problem structure."
+
+ Add figure description: A* advantage vs branching coefficient, R² = 0.94.
+
+ 7.2 — Prescriptive decision rule:
+ - C1/linear: use CoT; search overhead unnecessary
+ - C2/mid-branch: route adaptively; this is where router quality matters most
+ - C3/complex noisy: neither reliable; retrieval or stronger models needed
+ - C4/deep-branch: use A*; search has clearest advantage
+
+ 7.3 — Topic modelling validates topology (brief summary):
+ A*-dominant topics (81.4% coverage): multi-hop chaining, premise scanning, temporal ordering, entity resolution
+ CoT-dominant topics (18.6%): single-step inference categories
+
+ ---
+ Phase 7: NEW Section — Topology-Aware Routing (Checklist Item 8)
+
+ 8.1 — Router table (replaces/extends current Table 2):
+
+ ┌──────────────────┬─────────────────┬────────────┬─────────┬───────────────┐
+ │      Router      │      Input      │ StrategyQA │ LogicQA │ Gap recovered │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ A* only          │ -               │ 74.80      │ 44.85   │ -             │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ CoT only         │ -               │ 64.52      │ 45.78   │ -             │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ Semantic Entropy │ traces/samples  │ 74.37      │ 47.47   │ 14.8%         │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ LLM-as-Critic    │ traces          │ 74.19      │ 47.16   │ 12.4%         │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ Random Forest    │ simple features │ 76.25      │ 48.20   │ 18.2%         │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ Topology Router  │ 13 features     │ 77.35      │ 49.01   │ 26.1%         │
+ ├──────────────────┼─────────────────┼────────────┼─────────┼───────────────┤
+ │ Oracle           │ -               │ 84.59      │ 59.29   │ 100%          │
+ └──────────────────┴─────────────────┴────────────┴─────────┴───────────────┘
+
+ Text: "The topology router observes no generated traces, yet outperforms output-based routers. This reverses the intuitive expectation that seeing full traces
+ should be more informative."
+
+ 8.2 — Fluency-Correctness Asymmetry:
+
+ ┌─────────────────────────┬───────────────┬───────┐
+ │         Metric          │      A*       │  CoT  │
+ ├─────────────────────────┼───────────────┼───────┤
+ │ Average fluency score   │ 0.725         │ 0.673 │
+ ├─────────────────────────┼───────────────┼───────┤
+ │ Cases where more fluent │ 62.0%         │ 38.0% │
+ ├─────────────────────────┼───────────────┼───────┤
+ │ More-fluent but wrong   │ 38.0% overall │       │
+ └─────────────────────────┴───────────────┴───────┘
+
+ Text: "Output-based routers are limited because trace fluency is not equivalent to trace correctness. In a substantial fraction of disagreement cases, CoT produces
+ the more fluent trace but the wrong answer."
+
+ ---
+ Phase 8: Sensitivity Analysis (Checklist Item 9)
+
+ 9.1 — Budget sweep (300-question HotpotQA sample, seed=42):
+
+ ┌─────┬──────┬──────┬──────┬──────┬──────┐
+ │  B  │  5   │  10  │  15  │  20  │  30  │
+ ├─────┼──────┼──────┼──────┼──────┼──────┤
+ │ Acc │ 73.0 │ 77.3 │ 78.0 │ 78.7 │ 76.0 │
+ └─────┴──────┴──────┴──────┴──────┴──────┘
+
+ 9.2 — Branching factor sweep:
+
+ ┌─────┬──────┬──────┬──────┬──────┐
+ │  K  │  1   │  2   │  3   │  4   │
+ ├─────┼──────┼──────┼──────┼──────┤
+ │ Acc │ 77.7 │ 78.3 │ 76.0 │ 80.3 │
+ └─────┴──────┴──────┴──────┴──────┘
+
+ Text: "Accuracy improves from B=5 to B=20, then drops at B=30, suggesting diminishing returns and over-exploration. The K=1 variant degrades gracefully and already
+ exceeds self-consistency."
+
+ ---
+ Phase 9: Compute-Accuracy Tradeoff (Checklist Item 10)
+
+ ┌───────────────┬──────────┬──────────┬──────────────────────┐
+ │    Method     │ Accuracy │ Tokens/q │        Notes         │
+ ├───────────────┼──────────┼──────────┼──────────────────────┤
+ │ CoT           │ 76.80    │ ~512     │ single call          │
+ ├───────────────┼──────────┼──────────┼──────────────────────┤
+ │ SC-5          │ 78.21    │ ~2,560   │ 5 CoT traces         │
+ ├───────────────┼──────────┼──────────┼──────────────────────┤
+ │ A*, K=1, B=30 │ 77.7     │ 3,372    │ linear/no branching  │
+ ├───────────────┼──────────┼──────────┼──────────────────────┤
+ │ A*, K=3, B=15 │ 78.0     │ 12,452   │ default              │
+ ├───────────────┼──────────┼──────────┼──────────────────────┤
+ │ A*, K=3, B=20 │ 78.7     │ 12,391   │ peak sample accuracy │
+ └───────────────┴──────────┴──────────┴──────────────────────┘
+
+ Important wording: "A* is substantially more expensive than CoT and SC. Its use is justified only when topology predicts that branching is useful. This motivates
+ topology-aware pre-routing as a compute-saving mechanism."
+
+ ---
+ Phase 10: Failure Analysis (Checklist Item 11)
+
+ Add failure taxonomy table:
+
+ ┌──────────────────────┬────────────┬────────────────────────────────────────────────────────────────────┐
+ │     Failure mode     │ Proportion │                            Description                             │
+ ├──────────────────────┼────────────┼────────────────────────────────────────────────────────────────────┤
+ │ Overthinking         │ 91.1%      │ search continues past correct evidence and accumulates distractors │
+ ├──────────────────────┼────────────┼────────────────────────────────────────────────────────────────────┤
+ │ Premature commitment │ 8.9%       │ search locks onto an early branch                                  │
+ └──────────────────────┴────────────┴────────────────────────────────────────────────────────────────────┘
+
+ Include 2-3 representative examples (Disney ice princess, Menthol/Thanksgiving, Albany GA vs NY) — these already exist in the appendix (lines 1306-1326), reference
+ them and add summary table in main paper.
+
+ Text: "CoT often fails by committing too early; A* often fails by continuing too long. Thus, the same branching mechanism that helps A* on multi-hop and
+ premise-scanning problems hurts it on linear problems."
+
+ ---
+ Phase 11: Related Work Expansion (Checklist Item 3)
+
+ Replace current Related Work (lines 867-884, ~5 short paragraphs) with 5 focused paragraphs:
+
+ 1. CoT and structured reasoning: CoT, Self-Consistency, ToT, GoT, CoT-decoding, CoT not universally beneficial (Meincke et al., 2025). Position: we're the
+ search-side complement.
+ 2. Search-augmented reasoning: MCTS, LATS, MCTSr, self-evaluation beam search, Coconut, rStar-Math (Guan et al., 2025). Our contribution: diagnoses when search
+ helps.
+ 3. Over-exploration and search failures: Fetch/redundant-state (Wang et al., 2025), overthinking survey (Sui et al., 2025), CoT-Valve (Ma et al., 2025). Prior work
+ treats over-exploration as efficiency issue; we treat it as both efficiency and correctness issue.
+ 4. Routing and adaptive computation: Semantic entropy, verifier-based routing, distinction from mixture-of-experts. Our router selects between inference-time
+ algorithms, not neural modules.
+ 5. LLM-as-judge and critic limitations: LLM-as-judge, process supervision, our Fluency-Correctness Asymmetry.
+
+ Add methodological comparison table (at end of Related Work):
+
+ ┌──────────────────┬───────────────────┬───────────┬───────────────────┬─────────────────────┬────────────────────────────────────┐
+ │      Method      │ Search structure  │ Frontier? │    Heuristic?     │  Pre-gen routing?   │          Main limitation           │
+ ├──────────────────┼───────────────────┼───────────┼───────────────────┼─────────────────────┼────────────────────────────────────┤
+ │ CoT              │ linear            │ no        │ no                │ no                  │ premature commitment               │
+ ├──────────────────┼───────────────────┼───────────┼───────────────────┼─────────────────────┼────────────────────────────────────┤
+ │ Self-Consistency │ multiple linear   │ no        │ no                │ no                  │ unguided sampling                  │
+ ├──────────────────┼───────────────────┼───────────┼───────────────────┼─────────────────────┼────────────────────────────────────┤
+ │ ToT              │ tree/BFS-style    │ yes       │ evaluator/pruning │ no                  │ breadth/evaluator entangled        │
+ ├──────────────────┼───────────────────┼───────────┼───────────────────┼─────────────────────┼────────────────────────────────────┤
+ │ MCTS/LATS        │ tree + rollout    │ yes       │ value/rollout     │ no                  │ many design choices                │
+ ├──────────────────┼───────────────────┼───────────┼───────────────────┼─────────────────────┼────────────────────────────────────┤
+ │ A* (ours)        │ priority frontier │ yes       │ yes               │ yes (in this paper) │ higher compute, topology-sensitive │
+ └──────────────────┴───────────────────┴───────────┴───────────────────┴─────────────────────┴────────────────────────────────────┘
+
+ ---
+ Phase 12: Discussion Rewrite (Checklist Item 14)
+
+ Rewrite around three takeaways:
+
+ Takeaway 1: Search is topology-sensitive. Search helps when the problem requires preserving alternatives, scanning premises, chaining facts, or resolving entity
+ paths. CoT is preferable when the answer follows from a compact linear inference.
+
+ Takeaway 2: Routing should happen before generation. Post-hoc trace inspection is limited because fluent traces can be wrong. The topology router success suggests
+ that adaptive inference should begin with problem-structure recognition.
+
+ Takeaway 3: Topology is necessary but not sufficient. The topology router recovers 26.1% of the oracle gap, leaving substantial residual error. Closing this gap
+ likely requires modeling problem-model compatibility.
+
+ ---
+ Phase 13: Limitations Rewrite (Checklist Item 15)
+
+ Replace current limitations with sharper ones:
+ - Search-policy dependence: results based on one budgeted A* implementation
+ - Hand-crafted topology features: 13 features are proxies, not latent causal topology
+ - Single-language setting: dependency/parser-based features may not transfer to non-English
+ - Judge/critic dependence: critic-based heuristic uses DeepSeek; topology router reduces but doesn't eliminate concerns
+ - Compute cost: A* is more expensive; token accounting measured on ablation samples
+ - Domain coverage: math is added, but coding and long-form reasoning remain future work
+ - No learned router: future work should learn topology embeddings or jointly train routing/search
+
+ ---
+ Phase 14: Conclusion Rewrite
+
+ Update to tell the same topology-sensitive story. Key points:
+ - CoT and A* are complementary; complementarity explained by reasoning topology
+ - Topology-aware routing outperforms trace-based routing
+ - A* is not a universal replacement; it's a topology-sensitive strategy
+ - Future: adaptive inference-time strategy selection, learned topology features, broader domains
+
+ ---
+ Phase 15: Appendix Reorganization (Checklist Item 16)
+
+ Target structure:
+ - Appendix A: Detailed qualitative examples (existing + overthinking examples)
+ - Appendix B: Auxiliary conservative heuristic proof (move old admissibility theorem here)
+ - Appendix C: Prompts (CoT prompt, A* step-generation prompt, DeepSeek critic prompt, LLM-as-judge prompt, topology feature extraction details)
+ - Appendix D: Sensitivity analysis (budget and branching sweeps — full tables)
+ - Appendix E: Compute analysis (token counts and node counts)
+ - Appendix F: Additional models/domains (14B results, GSM8K, MATH)
+ - Appendix G: Reproducibility details (dataset splits, seeds, model versions, Ollama/vLLM settings, hardware, code path)
+
+ ---
+ Phase 16: References Update
+
+ Add 2025 works cited in rebuttal:
+ - rStar-Math (Guan et al., 2025)
+ - Overthinking survey (Sui et al., 2025)
+ - Fetch/redundant-state (Wang et al., 2025)
+ - CoT-Valve (Ma et al., 2025)
+ - CoT not universally beneficial (Meincke et al., 2025)
+ - Coconut (if referenced)
+ - MCTSr (if referenced)
+ - LATS (if referenced)
+
+ ---
+ Consistency Checks (Checklist Item 17)
+
+ After all edits:
+ - Do NOT claim critic-based heuristic has same formal admissibility as depth-coverage
+ - Do NOT call A* "theoretically superior"; say it's a controlled diagnostic abstraction
+ - Do NOT mix dataset sizes between ARR and TMLR versions
+ - Do NOT call topology router fully scalable or learned
+ - Do NOT say router closes the oracle gap; say it recovers only part
+ - Do NOT overclaim math/coding generalization
+ - Label all subset experiments clearly (full dataset vs 300-question sample vs matched 14B subset)
+ - Add confidence intervals/statistical tests wherever possible
+ - Abstract, conclusion, and limitations all tell the same topology-sensitive story
+
+ ---
+ Implementation Order
+
+ 1. Add packages and \textcolor{red}{} command
+ 2. Rewrite Abstract
+ 3. Revise Introduction (motivation, research questions, "Why A?", contributions)
+ 4. Fix Methodology (critic heuristic main, move theorem, add topology features, revise routing)
+ 5. Add new results (14B table, GSM8K/MATH table, complementarity framing)
+ 6. Add NEW section: Topology (clusters, topic modelling summary, prescriptive rule)
+ 7. Add NEW section: Topology-Aware Routing (router table, fluency-correctness asymmetry)
+ 8. Add Sensitivity Analysis section
+ 9. Add Compute-Accuracy Tradeoff section
+ 10. Add Failure Analysis (summary table in main paper)
+ 11. Expand Related Work (5 paragraphs + comparison table)
+ 12. Rewrite Discussion (three takeaways)
+ 13. Rewrite Limitations
+ 14. Rewrite Conclusion
+ 15. Reorganize Appendix
+ 16. Update references.bib
+ 6. Add NEW section: Topology (clusters, topic modelling summary, prescriptive rule)
+ 7. Add NEW section: Topology-Aware Routing (router table, fluency-correctness asymmetry)
+ 8. Add Sensitivity Analysis section
+ 9. Add Compute-Accuracy Tradeoff section
+ 10. Add Failure Analysis (summary table in main paper)
+ 11. Expand Related Work (5 paragraphs + comparison table)
+ 12. Rewrite Discussion (three takeaways)
+ 13. Rewrite Limitations
+ 14. Rewrite Conclusion
+ 15. Reorganize Appendix
+ 16. Update references.bib
+ 17. Run consistency checks
+ 18. Compile with tectonic
+
+ ---
+ Verification
+
+ 1. Compile PDF with tectonic — must produce no errors
+ 2. Verify main body fits within 8 pages (ACL limit)
+ 3. Check all \ref targets resolve
+ 4. Verify number consistency across tables
+ 5. Ensure all rebuttal promises are delivered
+ 6. Confirm title is unchanged
+ 7. Confirm \textcolor{red}{...} marks all new/reframed content

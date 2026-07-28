@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MTP Update - 15 June 2026</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #0a0a0a; color: #fff; overflow: hidden; }
+
+.slide {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 60px 80px;
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.slide.active { display: flex; flex-direction: column; justify-content: center; opacity: 1; }
+
+h1 { font-size: 2.8em; font-weight: 300; margin-bottom: 10px; color: #fff; }
+h2 { font-size: 2em; font-weight: 400; margin-bottom: 30px; color: #4fc3f7; }
+h3 { font-size: 1.4em; font-weight: 400; margin-bottom: 20px; color: #80cbc4; }
+p, li { font-size: 1.15em; line-height: 1.8; color: #ccc; }
+ul { list-style: none; padding-left: 0; }
+ul li { padding: 6px 0; padding-left: 20px; position: relative; }
+ul li::before { content: ""; position: absolute; left: 0; top: 14px; width: 8px; height: 8px; background: #4fc3f7; border-radius: 50%; }
+
+.highlight { color: #4fc3f7; font-weight: 500; }
+.red { color: #ef5350; }
+.green { color: #66bb6a; }
+.yellow { color: #ffd54f; }
+
+table { border-collapse: collapse; margin: 20px 0; width: 100%; max-width: 900px; }
+th, td { padding: 10px 16px; text-align: center; border-bottom: 1px solid #333; font-size: 0.95em; }
+th { color: #4fc3f7; font-weight: 500; border-bottom: 2px solid #4fc3f7; }
+td { color: #ddd; }
+
+.meta { position: absolute; bottom: 30px; left: 80px; font-size: 0.8em; color: #666; }
+.page-num { position: absolute; bottom: 30px; right: 80px; font-size: 0.8em; color: #666; }
+.nav-hint { position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%); font-size: 0.75em; color: #444; }
+
+.fade-in { animation: fadeIn 0.6s ease forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.divider { width: 60px; height: 3px; background: #4fc3f7; margin: 15px 0 25px 0; }
+</style>
+</head>
+<body>
+
+<!-- Slide 1: Title -->
+<div class="slide active" id="s1">
+  <div>
+    <h1>MTP Progress Update</h1>
+    <div class="divider"></div>
+    <h2 style="color:#80cbc4; font-size:1.4em;">When Should Language Models Search?<br>A Topology-Aware Analysis of Reasoning Strategies</h2>
+    <p style="margin-top:30px; color:#aaa;">
+      <span class="highlight">Md Tanzeel Khan</span> &amp; <span class="highlight">Dibyanayan</span><br>
+      Supervisor: <strong>Prof. Asif Ekbal</strong>, IIT Patna
+    </p>
+    <p style="margin-top:20px; color:#666;">15 June 2026</p>
+  </div>
+  <div class="meta">ACL &rarr; TMLR Conversion + Code Generation Extension</div>
+  <div class="page-num">1</div>
+</div>
+
+<!-- Slide 2: This Week Summary -->
+<div class="slide" id="s2">
+  <h2>This Week: What Was Done</h2>
+  <div class="divider"></div>
+  <ul>
+    <li><span class="green">Completed</span> ACL &rarr; TMLR format conversion (official template)</li>
+    <li><span class="green">Completed</span> experiments on <span class="highlight">3 new code datasets</span>: HumanEval, MBPP, CodeContests</li>
+    <li><span class="green">Completed</span> all 3 scales (0.5B, 8B, 14B) &times; 4 methods (CoT, A*, SC, ToT)</li>
+    <li><span class="green">Completed</span> topology router analysis on code benchmarks</li>
+    <li><span class="green">Completed</span> qualitative examples + category analysis</li>
+    <li><span class="yellow">Tonight</span> &mdash; Router experiments (Sem. Entropy, LLM-Critic, LLM-Judge, RF) on code</li>
+  </ul>
+  <div class="meta">Paper now covers 8 benchmarks across 3 domains</div>
+  <div class="page-num">2</div>
+</div>
+
+<!-- Slide 3: New Datasets Added -->
+<div class="slide" id="s3">
+  <h2>3 New Code Benchmarks</h2>
+  <div class="divider"></div>
+  <table>
+    <tr><th>Dataset</th><th>Tasks</th><th>Type</th><th>Key Finding</th></tr>
+    <tr><td>HumanEval</td><td>163</td><td>Function-level (docstrings)</td><td class="green">Router works: 51.7% gap recovery</td></tr>
+    <tr><td>MBPP</td><td>500</td><td>One-sentence specs</td><td class="yellow">Router fails (features degenerate)</td></tr>
+    <tr><td>CodeContests</td><td>500</td><td>Algorithmic problems</td><td class="green">A* +18.4pp at 0.5B scale</td></tr>
+  </table>
+  <p style="margin-top:20px;">All three <span class="highlight">support the topology thesis</span>: search helps when problem structure has branching; CoT wins on linear tasks.</p>
+  <div class="page-num">3</div>
+</div>
+
+<!-- Slide 4: Main Results Table -->
+<div class="slide" id="s4">
+  <h2>Results: Code Benchmarks</h2>
+  <div class="divider"></div>
+  <table style="font-size:0.85em;">
+    <tr><th>Dataset</th><th colspan="4">LLaMA-3.1-8B</th><th colspan="4">Qwen-2.5-14B</th></tr>
+    <tr><th></th><th>CoT</th><th>A*</th><th>SC</th><th>ToT</th><th>CoT</th><th>A*</th><th>SC</th><th>ToT</th></tr>
+    <tr><td>HumanEval</td><td>67.5</td><td>64.4</td><td>65.0</td><td class="green">71.8</td><td>77.9</td><td>76.1</td><td>76.1</td><td class="green">79.8</td></tr>
+    <tr><td>MBPP</td><td class="green">39.8</td><td>36.8</td><td>38.0</td><td>40.4</td><td>46.6</td><td>45.0</td><td>46.8</td><td class="green">49.8</td></tr>
+    <tr><td>CodeContests</td><td class="green">100.0</td><td>87.0</td><td>--</td><td>90.3</td><td class="green">99.6</td><td>94.4</td><td>98.2</td><td>94.0</td></tr>
+  </table>
+  <p style="margin-top:15px; font-size:0.95em;">At <span class="highlight">0.5B</span>: CodeContests A* = 68.2% vs CoT = 49.8% <span class="green">(+18.4pp)</span> &mdash; mirrors HotpotQA 0.5B pattern</p>
+  <div class="page-num">4</div>
+</div>
+
+<!-- Slide 5: Key Finding - Topology Router -->
+<div class="slide" id="s5">
+  <h2>Topology Router on Code</h2>
+  <div class="divider"></div>
+  <table>
+    <tr><th>Dataset</th><th>Scale</th><th>Best Single</th><th>Router</th><th>Oracle</th><th>Gap Recovery</th></tr>
+    <tr><td>HumanEval</td><td>8B</td><td>67.5%</td><td class="green">71.3%</td><td>74.8%</td><td class="green">51.7%</td></tr>
+    <tr><td>MBPP</td><td>8B</td><td>39.8%</td><td>39.2%</td><td>44.0%</td><td class="red">-13.9%</td></tr>
+  </table>
+  <p style="margin-top:25px;">HumanEval: <span class="green">51.7% gap recovery</span> &mdash; strongest result across all benchmarks</p>
+  <p>MBPP fails &rarr; confirms features need structural signal (short prompts = no topology)</p>
+  <p style="margin-top:15px; font-size:0.9em; color:#888;">This validates: routing works when structure exists, correctly abstains when it doesn't.</p>
+  <div class="page-num">5</div>
+</div>
+
+<!-- Slide 6: Multi-Return Finding -->
+<div class="slide" id="s6">
+  <h2>Key Discovery: Multi-Return Tasks</h2>
+  <div class="divider"></div>
+  <table>
+    <tr><th>Scale</th><th>CoT (multi-return)</th><th>A* (multi-return)</th><th>A* Advantage</th></tr>
+    <tr><td>0.5B</td><td>45.5%</td><td>18.2%</td><td class="red">-27.3pp</td></tr>
+    <tr><td>8B</td><td class="green">100%</td><td>81.8%</td><td class="red">-18.2pp</td></tr>
+    <tr><td>14B</td><td>81.8%</td><td class="green">100%</td><td class="green">+18.2pp</td></tr>
+  </table>
+  <p style="margin-top:25px;">A* achieves <span class="green">perfect accuracy</span> on multi-return tasks at 14B</p>
+  <p>&ldquo;Capability threshold&rdquo; &mdash; search needs base model competence to explore meaningfully</p>
+  <p style="margin-top:10px; color:#888; font-size:0.9em;">Code analogue of branching topology in QA</p>
+  <div class="page-num">6</div>
+</div>
+
+<!-- Slide 7: Status & Tonight -->
+<div class="slide" id="s7">
+  <h2>Current Status</h2>
+  <div class="divider"></div>
+  <ul>
+    <li><span class="green">Done</span> &mdash; TMLR format conversion (official template, compiles clean)</li>
+    <li><span class="green">Done</span> &mdash; 8 datasets in main table, all scales, all methods</li>
+    <li><span class="green">Done</span> &mdash; Topology router + complementarity + examples in appendix</li>
+    <li><span class="green">Done</span> &mdash; Citations verified (25 entries, all correct)</li>
+    <li><span class="yellow">Tonight</span> &mdash; Run 4 routers on code (fill remaining cells in Table 2)</li>
+    <li><span class="yellow">Wednesday</span> &mdash; Final review + share codes/data with Dibyanayan</li>
+  </ul>
+  <div class="page-num">7</div>
+</div>
+
+<!-- Slide 8: Plan -->
+<div class="slide" id="s8">
+  <h2>Plan: Completion Timeline</h2>
+  <div class="divider"></div>
+  <table>
+    <tr><th>When</th><th>Task</th><th>Status</th></tr>
+    <tr><td>Today (15 June)</td><td>Router experiments on code (Sem. Entropy, Critic, Judge, RF)</td><td class="yellow">Running</td></tr>
+    <tr><td>Tonight</td><td>Update Table 2 with full router results</td><td class="yellow">Pending</td></tr>
+    <tr><td>Tuesday</td><td>Final PDF generation, proofread red-text additions</td><td>Planned</td></tr>
+    <tr><td>Wednesday</td><td>Review with Prof. Ekbal + share to Dibyanayan</td><td>Planned</td></tr>
+    <tr><td>After review</td><td>Remove red color, finalize submission-ready PDF</td><td>Planned</td></tr>
+  </table>
+  <div class="page-num">8</div>
+</div>
+
+<!-- Slide 9: Thank you -->
+<div class="slide" id="s9">
+  <div style="text-align:center;">
+    <h1 style="font-weight:200; font-size:3em;">Thank You</h1>
+    <div class="divider" style="margin:15px auto 25px auto;"></div>
+    <p style="color:#888; font-size:1.1em;">Paper: 8 benchmarks &bull; 3 scales &bull; 4 methods &bull; 27 pages</p>
+    <p style="color:#666; margin-top:30px;">Md Tanzeel Khan &amp; Dibyanayan<br>Prof. Asif Ekbal, IIT Patna</p>
+  </div>
+  <div class="page-num">9</div>
+</div>
+
+<div class="nav-hint">&larr; &rarr; Arrow keys to navigate</div>
+
+<script>
+let current = 0;
+const slides = document.querySelectorAll('.slide');
+const total = slides.length;
+
+function showSlide(n) {
+  slides[current].classList.remove('active');
+  current = (n + total) % total;
+  slides[current].classList.add('active');
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight' || e.key === ' ') showSlide(current + 1);
+  if (e.key === 'ArrowLeft') showSlide(current - 1);
+});
+
+document.addEventListener('click', (e) => {
+  if (e.clientX > window.innerWidth / 2) showSlide(current + 1);
+  else showSlide(current - 1);
+});
+</script>
+</body>
+</html>

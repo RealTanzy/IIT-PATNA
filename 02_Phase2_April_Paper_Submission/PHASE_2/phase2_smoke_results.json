@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Can a human heart last from NYC to Raleigh NC by Toyota Hiux?",
+    "gold": "yes",
+    "pred": null,
+    "correct": false,
+    "nodes": 1,
+    "trace": "",
+    "prompt_version": "phase2_v1",
+    "steps": []
+  },
+  {
+    "question": "Should spaghetti be slick when cooked?",
+    "gold": "no",
+    "pred": null,
+    "correct": false,
+    "nodes": 1,
+    "trace": "",
+    "prompt_version": "phase2_v1",
+    "steps": []
+  },
+  {
+    "question": "Will twenty pea pods contents cover entire chess board?",
+    "gold": "yes",
+    "pred": null,
+    "correct": false,
+    "nodes": 1,
+    "trace": "",
+    "prompt_version": "phase2_v1",
+    "steps": []
+  }
+]

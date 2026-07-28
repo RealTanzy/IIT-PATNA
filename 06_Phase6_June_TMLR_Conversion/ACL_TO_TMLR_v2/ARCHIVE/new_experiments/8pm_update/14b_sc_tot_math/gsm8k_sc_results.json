@@ -1,0 +1,1672 @@
+[
+  {
+    "task_id": "GSM8K/0",
+    "method": "sc",
+    "gold": "18",
+    "pred": "18.0",
+    "correct": true,
+    "time": 20.13888716697693,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/1",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 14.141754627227783,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/2",
+    "method": "sc",
+    "gold": "70000",
+    "pred": "0.0",
+    "correct": false,
+    "time": 24.793477296829224,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/3",
+    "method": "sc",
+    "gold": "540",
+    "pred": "540.0",
+    "correct": true,
+    "time": 16.735474348068237,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/4",
+    "method": "sc",
+    "gold": "20",
+    "pred": "20.0",
+    "correct": true,
+    "time": 19.69951605796814,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/5",
+    "method": "sc",
+    "gold": "64",
+    "pred": "64.0",
+    "correct": true,
+    "time": 24.853168725967407,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/6",
+    "method": "sc",
+    "gold": "260",
+    "pred": "260.0",
+    "correct": true,
+    "time": 23.360433101654053,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/7",
+    "method": "sc",
+    "gold": "160",
+    "pred": "160.0",
+    "correct": true,
+    "time": 29.585345029830933,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "GSM8K/8",
+    "method": "sc",
+    "gold": "45",
+    "pred": "120.0",
+    "correct": false,
+    "time": 32.43527436256409,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/9",
+    "method": "sc",
+    "gold": "460",
+    "pred": "460.0",
+    "correct": true,
+    "time": 24.811943769454956,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/10",
+    "method": "sc",
+    "gold": "366",
+    "pred": "366.0",
+    "correct": true,
+    "time": 21.444648265838623,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/11",
+    "method": "sc",
+    "gold": "694",
+    "pred": "694.0",
+    "correct": true,
+    "time": 23.575294494628906,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/12",
+    "method": "sc",
+    "gold": "13",
+    "pred": "12.0",
+    "correct": false,
+    "time": 26.001729488372803,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/13",
+    "method": "sc",
+    "gold": "18",
+    "pred": "18.0",
+    "correct": true,
+    "time": 30.66689682006836,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/14",
+    "method": "sc",
+    "gold": "60",
+    "pred": "60\\%",
+    "correct": false,
+    "time": 22.200044631958008,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/15",
+    "method": "sc",
+    "gold": "125",
+    "pred": "9.0",
+    "correct": false,
+    "time": 32.45860409736633,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/16",
+    "method": "sc",
+    "gold": "230",
+    "pred": "230\\text{miles",
+    "correct": false,
+    "time": 19.21129608154297,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/17",
+    "method": "sc",
+    "gold": "57500",
+    "pred": "500.0",
+    "correct": false,
+    "time": 25.562808513641357,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/18",
+    "method": "sc",
+    "gold": "7",
+    "pred": "4.0",
+    "correct": false,
+    "time": 17.363322019577026,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "GSM8K/19",
+    "method": "sc",
+    "gold": "6",
+    "pred": "6.0",
+    "correct": true,
+    "time": 30.29600167274475,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/20",
+    "method": "sc",
+    "gold": "15",
+    "pred": "15.0",
+    "correct": true,
+    "time": 28.57474184036255,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/21",
+    "method": "sc",
+    "gold": "14",
+    "pred": "14.0",
+    "correct": true,
+    "time": 16.279308080673218,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/22",
+    "method": "sc",
+    "gold": "7",
+    "pred": "7.0",
+    "correct": true,
+    "time": 15.413833856582642,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/23",
+    "method": "sc",
+    "gold": "8",
+    "pred": "8.0",
+    "correct": true,
+    "time": 16.023709774017334,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/24",
+    "method": "sc",
+    "gold": "26",
+    "pred": "26.0",
+    "correct": true,
+    "time": 16.398449420928955,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/25",
+    "method": "sc",
+    "gold": "2",
+    "pred": "2.0",
+    "correct": true,
+    "time": 26.7919921875,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/26",
+    "method": "sc",
+    "gold": "243",
+    "pred": "243.0",
+    "correct": true,
+    "time": 22.229159832000732,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/27",
+    "method": "sc",
+    "gold": "16",
+    "pred": "60.0",
+    "correct": false,
+    "time": 19.07871699333191,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/28",
+    "method": "sc",
+    "gold": "25",
+    "pred": "25.0",
+    "correct": true,
+    "time": 17.489923238754272,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/29",
+    "method": "sc",
+    "gold": "104",
+    "pred": "104.0",
+    "correct": true,
+    "time": 17.45075297355652,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/30",
+    "method": "sc",
+    "gold": "109",
+    "pred": "109.0",
+    "correct": true,
+    "time": 29.824559688568115,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/31",
+    "method": "sc",
+    "gold": "80",
+    "pred": "80.0",
+    "correct": true,
+    "time": 23.574414014816284,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/32",
+    "method": "sc",
+    "gold": "35",
+    "pred": "35.0",
+    "correct": true,
+    "time": 14.523004055023193,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/33",
+    "method": "sc",
+    "gold": "70",
+    "pred": "70.0",
+    "correct": true,
+    "time": 20.994391918182373,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/34",
+    "method": "sc",
+    "gold": "23",
+    "pred": "23.0",
+    "correct": true,
+    "time": 16.131978511810303,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/35",
+    "method": "sc",
+    "gold": "9",
+    "pred": "9.0",
+    "correct": true,
+    "time": 17.25767421722412,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/36",
+    "method": "sc",
+    "gold": "75",
+    "pred": "30.0",
+    "correct": false,
+    "time": 18.76831030845642,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/37",
+    "method": "sc",
+    "gold": "2",
+    "pred": "**johnhas0legosetsleft**",
+    "correct": false,
+    "time": 25.39035677909851,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/38",
+    "method": "sc",
+    "gold": "10",
+    "pred": "10.0",
+    "correct": true,
+    "time": 24.485167503356934,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/39",
+    "method": "sc",
+    "gold": "18",
+    "pred": "18.0",
+    "correct": true,
+    "time": 32.286885499954224,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "GSM8K/40",
+    "method": "sc",
+    "gold": "8",
+    "pred": "8.0",
+    "correct": true,
+    "time": 16.503172159194946,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/41",
+    "method": "sc",
+    "gold": "200",
+    "pred": "200.0",
+    "correct": true,
+    "time": 22.431238651275635,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/42",
+    "method": "sc",
+    "gold": "26",
+    "pred": "26.0",
+    "correct": true,
+    "time": 14.222668409347534,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/43",
+    "method": "sc",
+    "gold": "48",
+    "pred": "1800.0",
+    "correct": false,
+    "time": 27.79670739173889,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/44",
+    "method": "sc",
+    "gold": "20",
+    "pred": "20.0",
+    "correct": true,
+    "time": 22.235888719558716,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/45",
+    "method": "sc",
+    "gold": "104",
+    "pred": "104.0",
+    "correct": true,
+    "time": 25.188409090042114,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/46",
+    "method": "sc",
+    "gold": "163",
+    "pred": "163.0",
+    "correct": true,
+    "time": 23.468061923980713,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/47",
+    "method": "sc",
+    "gold": "800",
+    "pred": "800.0",
+    "correct": true,
+    "time": 26.47289204597473,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/48",
+    "method": "sc",
+    "gold": "8",
+    "pred": "8.0",
+    "correct": true,
+    "time": 12.952834844589233,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/49",
+    "method": "sc",
+    "gold": "30",
+    "pred": "30.0",
+    "correct": true,
+    "time": 20.60860562324524,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/50",
+    "method": "sc",
+    "gold": "294",
+    "pred": "294.0",
+    "correct": true,
+    "time": 18.381972789764404,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/51",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 18.504614114761353,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/52",
+    "method": "sc",
+    "gold": "15",
+    "pred": "15.0",
+    "correct": true,
+    "time": 24.36245083808899,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/53",
+    "method": "sc",
+    "gold": "40",
+    "pred": "40.0",
+    "correct": true,
+    "time": 24.018927812576294,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/54",
+    "method": "sc",
+    "gold": "40",
+    "pred": "40.0",
+    "correct": true,
+    "time": 17.400214195251465,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/55",
+    "method": "sc",
+    "gold": "14",
+    "pred": "14.0",
+    "correct": true,
+    "time": 13.18842625617981,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/56",
+    "method": "sc",
+    "gold": "3",
+    "pred": "42.0",
+    "correct": false,
+    "time": 12.276359558105469,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "GSM8K/57",
+    "method": "sc",
+    "gold": "83",
+    "pred": "83.0",
+    "correct": true,
+    "time": 23.929980993270874,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/58",
+    "method": "sc",
+    "gold": "57",
+    "pred": "57.0",
+    "correct": true,
+    "time": 19.89188027381897,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/59",
+    "method": "sc",
+    "gold": "187",
+    "pred": "187.0",
+    "correct": true,
+    "time": 14.188121795654297,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/60",
+    "method": "sc",
+    "gold": "17",
+    "pred": "17.0",
+    "correct": true,
+    "time": 20.902418851852417,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/61",
+    "method": "sc",
+    "gold": "1430",
+    "pred": "1430.0",
+    "correct": true,
+    "time": 16.493279933929443,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/62",
+    "method": "sc",
+    "gold": "25000",
+    "pred": "0.0",
+    "correct": false,
+    "time": 30.146802186965942,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/63",
+    "method": "sc",
+    "gold": "1596",
+    "pred": "1596.0",
+    "correct": true,
+    "time": 24.47392225265503,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/64",
+    "method": "sc",
+    "gold": "300",
+    "pred": "300.0",
+    "correct": true,
+    "time": 19.506508827209473,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/65",
+    "method": "sc",
+    "gold": "36",
+    "pred": "36.0",
+    "correct": true,
+    "time": 20.506355047225952,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "GSM8K/66",
+    "method": "sc",
+    "gold": "48",
+    "pred": "48.0",
+    "correct": true,
+    "time": 21.229138135910034,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/67",
+    "method": "sc",
+    "gold": "595",
+    "pred": "595.0",
+    "correct": true,
+    "time": 21.75241446495056,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/68",
+    "method": "sc",
+    "gold": "36",
+    "pred": "36.0",
+    "correct": true,
+    "time": 16.621355772018433,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/69",
+    "method": "sc",
+    "gold": "60",
+    "pred": "60.0",
+    "correct": true,
+    "time": 18.353073120117188,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/70",
+    "method": "sc",
+    "gold": "7425",
+    "pred": "7425.0",
+    "correct": true,
+    "time": 25.241886854171753,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/71",
+    "method": "sc",
+    "gold": "60",
+    "pred": "60.0",
+    "correct": true,
+    "time": 11.962693691253662,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/72",
+    "method": "sc",
+    "gold": "221",
+    "pred": "221.0",
+    "correct": true,
+    "time": 17.420509338378906,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/73",
+    "method": "sc",
+    "gold": "255",
+    "pred": "3.0",
+    "correct": false,
+    "time": 20.531480312347412,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/74",
+    "method": "sc",
+    "gold": "88",
+    "pred": "88.0",
+    "correct": true,
+    "time": 23.711427211761475,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/75",
+    "method": "sc",
+    "gold": "60",
+    "pred": "60.0",
+    "correct": true,
+    "time": 32.167163133621216,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/76",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 38.27415633201599,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/77",
+    "method": "sc",
+    "gold": "100",
+    "pred": "100.0",
+    "correct": true,
+    "time": 28.73593235015869,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/78",
+    "method": "sc",
+    "gold": "6",
+    "pred": "2.0",
+    "correct": false,
+    "time": 35.89225649833679,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "GSM8K/79",
+    "method": "sc",
+    "gold": "70",
+    "pred": "70.0",
+    "correct": true,
+    "time": 22.30646586418152,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/80",
+    "method": "sc",
+    "gold": "10",
+    "pred": "10.0",
+    "correct": true,
+    "time": 25.927247762680054,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/81",
+    "method": "sc",
+    "gold": "17",
+    "pred": "17.0",
+    "correct": true,
+    "time": 22.95085072517395,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/82",
+    "method": "sc",
+    "gold": "623",
+    "pred": "623.0",
+    "correct": true,
+    "time": 22.809537649154663,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/83",
+    "method": "sc",
+    "gold": "600",
+    "pred": "600.0",
+    "correct": true,
+    "time": 22.88179850578308,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/84",
+    "method": "sc",
+    "gold": "15",
+    "pred": "15.0",
+    "correct": true,
+    "time": 26.069841146469116,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/85",
+    "method": "sc",
+    "gold": "44",
+    "pred": "44.0",
+    "correct": true,
+    "time": 21.009479761123657,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/86",
+    "method": "sc",
+    "gold": "22",
+    "pred": "22.0",
+    "correct": true,
+    "time": 24.917567253112793,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/87",
+    "method": "sc",
+    "gold": "9360",
+    "pred": "7920.0",
+    "correct": false,
+    "time": 36.68468952178955,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/88",
+    "method": "sc",
+    "gold": "8000",
+    "pred": "0.0",
+    "correct": false,
+    "time": 21.648513793945312,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "GSM8K/89",
+    "method": "sc",
+    "gold": "24",
+    "pred": "18.0",
+    "correct": false,
+    "time": 25.830217361450195,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "GSM8K/90",
+    "method": "sc",
+    "gold": "225",
+    "pred": "225.0",
+    "correct": true,
+    "time": 27.00407862663269,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/91",
+    "method": "sc",
+    "gold": "28",
+    "pred": "28.0",
+    "correct": true,
+    "time": 27.240047454833984,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/92",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 27.027628183364868,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/93",
+    "method": "sc",
+    "gold": "36",
+    "pred": "36.0",
+    "correct": true,
+    "time": 29.31587505340576,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/94",
+    "method": "sc",
+    "gold": "348",
+    "pred": "348.0",
+    "correct": true,
+    "time": 34.52299499511719,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/95",
+    "method": "sc",
+    "gold": "40",
+    "pred": "40.0",
+    "correct": true,
+    "time": 30.168224096298218,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/96",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 23.272425413131714,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/97",
+    "method": "sc",
+    "gold": "12",
+    "pred": "12.0",
+    "correct": true,
+    "time": 31.102718830108643,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/98",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 30.488653421401978,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "GSM8K/99",
+    "method": "sc",
+    "gold": "58",
+    "pred": "58.0",
+    "correct": true,
+    "time": 25.15070414543152,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/100",
+    "method": "sc",
+    "gold": "175",
+    "pred": "175.0",
+    "correct": true,
+    "time": 32.591017723083496,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/101",
+    "method": "sc",
+    "gold": "6",
+    "pred": "4.0",
+    "correct": false,
+    "time": 25.795928955078125,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/102",
+    "method": "sc",
+    "gold": "26",
+    "pred": "26.0",
+    "correct": true,
+    "time": 30.903104066848755,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/103",
+    "method": "sc",
+    "gold": "140",
+    "pred": "140.0",
+    "correct": true,
+    "time": 22.579872846603394,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/104",
+    "method": "sc",
+    "gold": "500",
+    "pred": "500.0",
+    "correct": true,
+    "time": 26.805928945541382,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/105",
+    "method": "sc",
+    "gold": "20",
+    "pred": "20.0",
+    "correct": true,
+    "time": 18.035621643066406,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/106",
+    "method": "sc",
+    "gold": "72",
+    "pred": "72.0",
+    "correct": true,
+    "time": 38.1436653137207,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/107",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 37.57215762138367,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/108",
+    "method": "sc",
+    "gold": "50",
+    "pred": "50.0",
+    "correct": true,
+    "time": 28.56334924697876,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/109",
+    "method": "sc",
+    "gold": "28",
+    "pred": "28.0",
+    "correct": true,
+    "time": 29.728888511657715,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/110",
+    "method": "sc",
+    "gold": "45",
+    "pred": "45.0",
+    "correct": true,
+    "time": 28.675567150115967,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/111",
+    "method": "sc",
+    "gold": "16",
+    "pred": "16.0",
+    "correct": true,
+    "time": 33.57494807243347,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/112",
+    "method": "sc",
+    "gold": "24",
+    "pred": "24.0",
+    "correct": true,
+    "time": 23.990912437438965,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/113",
+    "method": "sc",
+    "gold": "25",
+    "pred": "25.0",
+    "correct": true,
+    "time": 19.427841901779175,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/114",
+    "method": "sc",
+    "gold": "6",
+    "pred": "6.0",
+    "correct": true,
+    "time": 27.475401401519775,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/115",
+    "method": "sc",
+    "gold": "90",
+    "pred": "5.0",
+    "correct": false,
+    "time": 40.39291763305664,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/116",
+    "method": "sc",
+    "gold": "42",
+    "pred": "42.0",
+    "correct": true,
+    "time": 29.467085599899292,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/117",
+    "method": "sc",
+    "gold": "360",
+    "pred": "360.0",
+    "correct": true,
+    "time": 21.867467641830444,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/118",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 26.31889820098877,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/119",
+    "method": "sc",
+    "gold": "95200",
+    "pred": "5.0",
+    "correct": false,
+    "time": 39.3099467754364,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/120",
+    "method": "sc",
+    "gold": "240",
+    "pred": "240.0",
+    "correct": true,
+    "time": 22.18087077140808,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/121",
+    "method": "sc",
+    "gold": "27",
+    "pred": "27.0",
+    "correct": true,
+    "time": 27.572688341140747,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/122",
+    "method": "sc",
+    "gold": "48",
+    "pred": "48.0",
+    "correct": true,
+    "time": 31.60400891304016,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/123",
+    "method": "sc",
+    "gold": "50",
+    "pred": "7.0",
+    "correct": false,
+    "time": 35.82037377357483,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/124",
+    "method": "sc",
+    "gold": "10",
+    "pred": "10.0",
+    "correct": true,
+    "time": 24.3874614238739,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/125",
+    "method": "sc",
+    "gold": "10",
+    "pred": "10.0",
+    "correct": true,
+    "time": 23.00832462310791,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/126",
+    "method": "sc",
+    "gold": "82",
+    "pred": "82.0",
+    "correct": true,
+    "time": 14.863815069198608,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/127",
+    "method": "sc",
+    "gold": "120",
+    "pred": "120.0",
+    "correct": true,
+    "time": 14.763944387435913,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/128",
+    "method": "sc",
+    "gold": "880",
+    "pred": "880.0",
+    "correct": true,
+    "time": 29.422234535217285,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/129",
+    "method": "sc",
+    "gold": "10000",
+    "pred": "0.0",
+    "correct": false,
+    "time": 27.980860710144043,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/130",
+    "method": "sc",
+    "gold": "30",
+    "pred": "30.0",
+    "correct": true,
+    "time": 13.987401008605957,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/131",
+    "method": "sc",
+    "gold": "940",
+    "pred": "940.0",
+    "correct": true,
+    "time": 12.28119421005249,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/132",
+    "method": "sc",
+    "gold": "60",
+    "pred": "60.0",
+    "correct": true,
+    "time": 21.58638286590576,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/133",
+    "method": "sc",
+    "gold": "13",
+    "pred": "13.0",
+    "correct": true,
+    "time": 21.63406205177307,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/134",
+    "method": "sc",
+    "gold": "720",
+    "pred": "720.0",
+    "correct": true,
+    "time": 13.031244993209839,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/135",
+    "method": "sc",
+    "gold": "40",
+    "pred": "40.0",
+    "correct": true,
+    "time": 17.464576721191406,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/136",
+    "method": "sc",
+    "gold": "6",
+    "pred": "6.0",
+    "correct": true,
+    "time": 11.349625825881958,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/137",
+    "method": "sc",
+    "gold": "29",
+    "pred": "29.0",
+    "correct": true,
+    "time": 25.924954175949097,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/138",
+    "method": "sc",
+    "gold": "105",
+    "pred": "105.0",
+    "correct": true,
+    "time": 27.264540195465088,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/139",
+    "method": "sc",
+    "gold": "70",
+    "pred": "70.0",
+    "correct": true,
+    "time": 16.503655910491943,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/140",
+    "method": "sc",
+    "gold": "20",
+    "pred": "20\\%",
+    "correct": false,
+    "time": 21.498920917510986,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "GSM8K/141",
+    "method": "sc",
+    "gold": "400",
+    "pred": "400.0",
+    "correct": true,
+    "time": 26.566714763641357,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/142",
+    "method": "sc",
+    "gold": "140",
+    "pred": "140.0",
+    "correct": true,
+    "time": 15.591866254806519,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/143",
+    "method": "sc",
+    "gold": "16",
+    "pred": "16.0",
+    "correct": true,
+    "time": 25.25679922103882,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/144",
+    "method": "sc",
+    "gold": "20",
+    "pred": "20.0",
+    "correct": true,
+    "time": 21.118852138519287,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/145",
+    "method": "sc",
+    "gold": "4000",
+    "pred": "4000.0",
+    "correct": true,
+    "time": 22.49101161956787,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/146",
+    "method": "sc",
+    "gold": "2,125",
+    "pred": "2125.0",
+    "correct": true,
+    "time": 20.13769817352295,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/147",
+    "method": "sc",
+    "gold": "75",
+    "pred": "90.0",
+    "correct": false,
+    "time": 21.78319525718689,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "GSM8K/148",
+    "method": "sc",
+    "gold": "30",
+    "pred": "30.0",
+    "correct": true,
+    "time": 16.324097156524658,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/149",
+    "method": "sc",
+    "gold": "16",
+    "pred": "16.0",
+    "correct": true,
+    "time": 18.47054386138916,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/150",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 29.233732223510742,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/151",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 26.228174686431885,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/152",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 14.74742841720581,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/153",
+    "method": "sc",
+    "gold": "48",
+    "pred": "14.0",
+    "correct": false,
+    "time": 32.42524337768555,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/154",
+    "method": "sc",
+    "gold": "272",
+    "pred": "272.0",
+    "correct": true,
+    "time": 29.230963230133057,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/155",
+    "method": "sc",
+    "gold": "280",
+    "pred": "280.0",
+    "correct": true,
+    "time": 30.72060775756836,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/156",
+    "method": "sc",
+    "gold": "1400",
+    "pred": "1400.0",
+    "correct": true,
+    "time": 17.68875026702881,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "GSM8K/157",
+    "method": "sc",
+    "gold": "80",
+    "pred": "80.0",
+    "correct": true,
+    "time": 29.906004667282104,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/158",
+    "method": "sc",
+    "gold": "34",
+    "pred": "34.0",
+    "correct": true,
+    "time": 17.05789279937744,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/159",
+    "method": "sc",
+    "gold": "15",
+    "pred": "15.0",
+    "correct": true,
+    "time": 12.523318767547607,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/160",
+    "method": "sc",
+    "gold": "16",
+    "pred": "16.0",
+    "correct": true,
+    "time": 17.24757957458496,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/161",
+    "method": "sc",
+    "gold": "32",
+    "pred": "32.0",
+    "correct": true,
+    "time": 24.521899223327637,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "GSM8K/162",
+    "method": "sc",
+    "gold": "92",
+    "pred": "345.0",
+    "correct": false,
+    "time": 31.493314743041992,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/163",
+    "method": "sc",
+    "gold": "50",
+    "pred": "54.0",
+    "correct": false,
+    "time": 26.25415301322937,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "GSM8K/164",
+    "method": "sc",
+    "gold": "15",
+    "pred": "15.0",
+    "correct": true,
+    "time": 20.507885694503784,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/165",
+    "method": "sc",
+    "gold": "77",
+    "pred": "77.0",
+    "correct": true,
+    "time": 19.52818274497986,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "GSM8K/166",
+    "method": "sc",
+    "gold": "5",
+    "pred": "15.0",
+    "correct": false,
+    "time": 17.043928146362305,
+    "samples": 5,
+    "pass_count": 1
+  }
+]

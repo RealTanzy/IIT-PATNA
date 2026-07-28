@@ -1,0 +1,25 @@
+{
+  "total_overlap": 100,
+  "bucket_counts": {
+    "both_correct": 20,
+    "both_wrong": 48,
+    "astar_only": 13,
+    "cot_only": 19
+  },
+  "train_bucket_counts": {
+    "both_correct": 16,
+    "both_wrong": 38,
+    "astar_only": 10,
+    "cot_only": 15
+  },
+  "dev_bucket_counts": {
+    "astar_only": 3,
+    "cot_only": 4,
+    "both_wrong": 10,
+    "both_correct": 4
+  },
+  "selected_rescue_train": 10,
+  "selected_preserve_train": 31,
+  "selected_answer_only_train": 6,
+  "output_root": "/home/dibyanayan/tanzeel/THE FINAL CALL/rescue_lora_pilot_logicqa"
+}

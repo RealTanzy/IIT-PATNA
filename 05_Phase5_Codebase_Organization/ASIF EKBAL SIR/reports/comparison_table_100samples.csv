@@ -1,0 +1,4 @@
+dataset,baseline_astar,baseline_cot,previous_approach,new_approach,new_vs_astar,new_vs_previous
+logicqa,33.0,39.0,42.0,42.0,+9.0,+0.0
+hotpotqa,78.0,53.0,39.0,26.0,-52.0,-13.0
+strategyqa,79.0,73.0,48.0,43.0,-36.0,-5.0

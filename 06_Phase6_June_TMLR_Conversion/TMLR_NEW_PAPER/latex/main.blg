@@ -1,0 +1,19 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: plainnat.bst
+Database file #1: custom.bib
+Database file #2: custom1.bib
+Repeated entry---line 1 of file custom1.bib
+ : @misc{wei2023chainofthoughtpromptingelicitsreasoning
+ :                                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 89 of file custom1.bib
+ : @misc{wang2023selfconsistencyimproveschainthought
+ :                                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 185 of file custom1.bib
+ : @misc{lightman2023letsverifystepstep
+ :                                     ,
+I'm skipping whatever remains of this entry
+(There were 3 error messages)

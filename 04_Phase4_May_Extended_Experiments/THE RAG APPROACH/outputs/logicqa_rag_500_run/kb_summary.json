@@ -1,0 +1,9 @@
+{
+  "kb_size": 158,
+  "kb_split": "train",
+  "bucket_breakdown": {
+    "cot_only": 94,
+    "astar_only": 64
+  },
+  "paired_rows_total": 650
+}

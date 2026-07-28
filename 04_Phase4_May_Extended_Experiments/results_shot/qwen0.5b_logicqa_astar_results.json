@@ -1,0 +1,180 @@
+{
+  "model": "qwen2.5:0.5b",
+  "split": "test",
+  "accuracy": 40.0,
+  "avg_f1": 55.12113617376775,
+  "correct": 4,
+  "total": 10,
+  "results": [
+    {
+      "id": 0,
+      "context": "In the planning of a new district in a township, it was decided to build a special community in the southeast, northwest, centered on the citizen park. These four communities are designated as cultural area, leisure area, commercial area and administrative service area. It is known that the administrative service area is southwest of the cultural area, and the cultural area is southeast of the leisure area.",
+      "query": "Based on the above statement, which of the following can be derived?",
+      "options": [
+        "Civic Park is north of the administrative service area.",
+        "The leisure area is southwest of the cultural area.",
+        "The cultural district is in the northeast of the business district.",
+        "The business district is southeast of the leisure area."
+      ],
+      "gold": "A",
+      "pred": "A",
+      "correct": true,
+      "f1": 1.0,
+      "nodes": 2,
+      "trace": "Step 1: The answer is A (fallback)"
+    },
+    {
+      "id": 1,
+      "context": "The company sent three young staff members to the South for business trip. The three of them happened to be sitting in a row. At least one of the two people sitting on the right side of 24 years old was 20 years old.20 years old. At least one of the two people sitting on the left of the accountant is a salesperson, and one of the two people sitting on the right of the salesperson is also a salesperson.",
+      "query": "So what are the three young people on business?",
+      "options": [
+        "0-year-old accountant, 20-year-old salesperson, 24-year-old salesperson.",
+        "0-year-old accountant, 24-year-old salesperson, 24-year-old salesperson.",
+        "4-year-old accountant, 20-year-old salesperson, 20-year-old salesperson.",
+        "0-year-old accountant, 20-year-old accountant, 24-year-old salesperson."
+      ],
+      "gold": "A",
+      "pred": "A",
+      "correct": true,
+      "f1": 0.8333333333333334,
+      "nodes": 3,
+      "trace": "Step 1: The question asks specifically for the information given in the passage.\nThe answer is [A/B/C/D] because [one sentence].\n\nFinal Answer: A. 0-year-old accountant, 20-year-old salesperson, 24-year-old salesperson."
+    },
+    {
+      "id": 2,
+      "context": "In a traditional Chinese medicine preparation, there must be at least one kind of ginseng or codonopsis, and the following conditions must also be met? 1) If there is codonopsis, there must be atractylodes.2) Atractylodes macrocephala and ginseng can only have at most one. You must have Shouwu.4) If you have Shouwu, you must have Atractylodes.",
+      "query": "According to the above statement, which of the following can be drawn about this Chinese medicine preparation?",
+      "options": [
+        "o dangshen.",
+        "o Shouwu.",
+        " \u767d \u672f.",
+        " \u767d \u672f."
+      ],
+      "gold": "B",
+      "pred": "A",
+      "correct": false,
+      "f1": 0.5,
+      "nodes": 3,
+      "trace": "Step 1: CONFIDENCE: 0.95\n\nOption A (\u767d\u672f) can be drawn about this Chinese medicine preparation.\nStep 2: The answer is A (fallback)"
+    },
+    {
+      "id": 3,
+      "context": "In recent years, graduate entrance examinations have continued to heat up. Correspondingly, a variety of postgraduate counseling classes have emerged, especially English and political counseling classes are almost a must for the postgraduates. Xiaozhuang, who has just started working, also intends to take the postgraduate entrance exam, so Xiaozhuang must take English tutoring classes.",
+      "query": "Which of the following can best strengthen the above argument.",
+      "options": [
+        "If you take an English tutoring class, you can pass the graduate entrance exam.",
+        "Only those who intend to take the graduate entrance exam will participate in the English tutoring class.",
+        "Even if you take an English tutoring class, you may not be able to pass the graduate entrance exam.",
+        "If you do not participate in the English tutoring class, you cannot pass the graduate entrance exam."
+      ],
+      "gold": "D",
+      "pred": "C",
+      "correct": false,
+      "f1": 0.6111111111111113,
+      "nodes": 4,
+      "trace": "Step 1: The argument is that Xiaozhuang must take English tutoring classes because he intends to take the postgraduate entrance exam.\nStep 2: The answer is [C] because it directly strengthens the argument by providing a clear and specific condition that must be met for Xiaozhuang to take the English tutoring class."
+    },
+    {
+      "id": 4,
+      "context": "A unit conducted the year-end assessment and after democratic voting, five people were identified as candidates for the first prize. In the selection of five in four, the following factors need to be considered? 1) At least one person of Bingding is selected.2) If E is selected, then A and B are also selected.3) A maximum of 2 people are selected.",
+      "query": "According to the above statement, it can be concluded that who is not in the fourth?",
+      "options": [
+        "A.",
+        "B.",
+        "C.",
+        "Ding."
+      ],
+      "gold": "D",
+      "pred": "A",
+      "correct": false,
+      "f1": 0.0,
+      "nodes": 2,
+      "trace": "Step 1: The answer is A (fallback)"
+    },
+    {
+      "id": 5,
+      "context": "Zhang Ming, Li Ying, Wang Jia and Chen Rui work in a team. They come from four provinces of Jiangsu, Anhui, Fujian and Shandong. Each person can only speak a dialect of their origin. Speaking of southern Fujian dialects, Shandong people have the highest educational level and can speak Central Plains Mandarin. Wang Jia has a lower education level than Fujianese. Li Ying can speak Huizhou dialect and is a colleague with his classmates from Jiangsu. Chen Rui does not understand the dialect of southern Fujian.",
+      "query": "According to the above statement, you can get which of the following?",
+      "options": [
+        "hen Rui can't speak the Central Plains Mandarin.",
+        "hang Ming speaks Minnan dialect.",
+        "i Ying is from Shandong.",
+        "ang Jia can speak Huizhou dialect."
+      ],
+      "gold": "B",
+      "pred": "B",
+      "correct": true,
+      "f1": 1.0,
+      "nodes": 2,
+      "trace": "Step 1: The answer is [B]. Because [Li Ying can speak Huizhou dialect and is a colleague with his classmates from Jiangsu.]."
+    },
+    {
+      "id": 6,
+      "context": "The person in charge of the relevant department said that pilots will be carried out in some areas this year to prepare for the system and policy preparations for the comprehensive clean-up of \"small property houses\", and require all localities to confirm the registration and certification of rural collective land. All small-property houses are not subject to registration and are not protected by law. Therefore, this newly built house in Hexi Village is not protected by law.",
+      "query": "Which of the following is true will most weaken the above argument.",
+      "options": [
+        "This newly built house in Hexi Village has been tacitly approved by relevant departments.",
+        "This newly built house in Hexi Village is a small property house.",
+        "This newly built house in Hexi Village is built on rural collective land.",
+        "Some of the newly built houses in Hexi Village are not small property houses."
+      ],
+      "gold": "D",
+      "pred": "A",
+      "correct": false,
+      "f1": 0.35714285714285715,
+      "nodes": 3,
+      "trace": "Step 1: The newly built house in Hexi Village is not protected by law.\nStep 2: The answer is [A] because [one sentence reason]"
+    },
+    {
+      "id": 7,
+      "context": "There are five teams participating in the game. The audience had the following comments on the results? (1) The champion is either the Shannan team or the Jiangbei team. (2) The champion is neither Shanbei nor Jiangnan. (3) The champion is Jiangnan Team. (4) The champion is not the Shannan team.",
+      "query": "The result of the match showed that only one argument was correct, so who won the championship?",
+      "options": [
+        "hannan.",
+        "iangnan.",
+        "hanbei.",
+        "iangbei."
+      ],
+      "gold": "C",
+      "pred": "C",
+      "correct": true,
+      "f1": 1.0,
+      "nodes": 2,
+      "trace": "Step 1: The answer is [C/D]."
+    },
+    {
+      "id": 8,
+      "context": "Compared with small and medium-sized cities, especially small cities and towns, large cities have higher living costs, which inevitably limits the entry of rural population. Therefore, the development of large cities alone cannot actually achieve urbanization.",
+      "query": "Which of the following is the conclusion must be assumed.",
+      "options": [
+        "Urbanization is the only way for China's development.",
+        "Simple development of large cities is not conducive to the promotion of urbanization.",
+        "To achieve urbanization, the city must fully absorb the rural population.",
+        "The attractiveness of large cities to the rural population in the outside world is significantly lower than that of small and medium-sized cities."
+      ],
+      "gold": "C",
+      "pred": "A",
+      "correct": false,
+      "f1": 0.2105263157894737,
+      "nodes": 2,
+      "trace": "Step 1: The answer is A (fallback)"
+    },
+    {
+      "id": 9,
+      "context": "Researchers recently discovered that there is an area called the thalamus pillow deep in the human brain, which is like an information desk operator, responsible for sorting out the external stimulus information and focusing human attention on the most important for behavior and survival Information. The researchers pointed out that this discovery is expected to bring new treatments for disorders such as attention deficit hyperactivity disorder and schizophrenia caused by lack of attention.",
+      "query": "Which of the following is assumed by the above argument.",
+      "options": [
+        "Some schizophrenia are not caused by lack of attention.",
+        "Visual information is only transmitted through the visual cortex to obtain a neural network to transmit.",
+        "Researchers have developed a new technology that can directly track the communication between the nerve cortex in the visual cortex and thalamus occipital region.",
+        "The brain cannot process too much information in detail at the same time, and will only selectively focus on the things most relevant to the behavior."
+      ],
+      "gold": "D",
+      "pred": "A",
+      "correct": false,
+      "f1": 0.0,
+      "nodes": 2,
+      "trace": "Step 1: The answer is A (fallback)"
+    }
+  ]
+}

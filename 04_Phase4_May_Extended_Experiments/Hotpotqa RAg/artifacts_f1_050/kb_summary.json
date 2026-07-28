@@ -1,0 +1,11 @@
+{
+  "kb_size": 185,
+  "source_breakdown": {
+    "cot": 80,
+    "astar": 105,
+    "cot_soft_f1": 38
+  },
+  "split": "all",
+  "filtered_rows": 500,
+  "all_rows": 500
+}

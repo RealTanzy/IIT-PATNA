@@ -1,0 +1,19 @@
+{
+  "total_dev": 21,
+  "overall_accuracy": 14.285714285714285,
+  "rescue_cases": 3,
+  "rescue_rate": 33.33333333333333,
+  "preserve_cases": 8,
+  "preservation_rate": 12.5,
+  "baseline_cot_accuracy_on_dev": 38.095238095238095,
+  "baseline_astar_accuracy_on_dev": 33.33333333333333,
+  "category_wise_repair": {
+    "logical_constraints": {
+      "total": 3,
+      "repaired": 1,
+      "repair_rate": 33.33333333333333
+    }
+  },
+  "adapter_path": "outputs/adapters/rescue_lora_logicqa_qwen05b_fix1/final",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct"
+}

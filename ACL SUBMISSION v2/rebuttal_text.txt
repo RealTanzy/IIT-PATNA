@@ -1,0 +1,1268 @@
+Go to ACL ARR 2026 May homepage (/group?id=aclweb.org/ACL/ARR/2026/May)
+25 May 2026 (modified: 26 Jun 2026)
+ACL ARR 2026 May Submission
+Everyone
+Revisions (/revisions?id=EKdClSRoGE)
+BibTeX
+CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+When Should Language Models
+Search? A Topology-Aware Analysis
+of Reasoning Strategies
+ (/pdf?
+id=EKdClSRoGE)
+Dibyanayan Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1),
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1),
+Asif Ekbal (/profile?id=~Asif_Ekbal1)
+Keywords: applications, chain-of-thought
+Abstract:
+Search-based reasoning and chain-of-thought (CoT) prompting offer two contrasting inference-time paradigms for language
+models: CoT commits to a single linear trajectory, while search explores alternative partial reasoning paths before selecting an
+answer. In this work, we study this trade-off using A* as a controlled and optimal instantiation of heuristic-guided search.
+Across StrategyQA, LogicQA, HotpotQA, GSM8K, and MATH, and across three model scales, we find that search is not a
+universal upgrade over CoT; instead, the two strategies solve substantially different subsets of instances. To explain this
+complementarity, we introduce a \emph{Reasoning Topology Framework} based on structural features computable before
+generation. A derived \emph{branching coefficient} predicts when search helps better than dataset identity, indicating that
+the CoT--search boundary is primarily topology-dependent. We further train a topology-aware router that selects between CoT
+and A* without observing generated traces. Despite this restriction, it outperforms post-hoc routers based on semantic
+entropy and LLM-as-critic judgments. We attribute this to a \emph{Fluency--Correctness Asymmetry}: fluent traces are often
+incorrect, making trace-level adjudication unreliable. Overall, our results suggest that adaptive reasoning should route by
+problem structure, deploying search only when the input topology warrants its higher cost. Code:
+\url{https://anonymous.4open.science/r/astar-reasoning-EC39} (https://anonymous.4open.science/r/astar-reasoning-
+EC39%7D).
+Paper Type: Long
+Research Area: Language Modeling
+Research Area Keywords: chain-of-thought, prompting
+Languages Studied: English
+EMNLP 2026 AI Reviewing Experiment: yes
+Previous URL:
+/forum?id=Ze6EMFgKWZ (/forum?id=Ze6EMFgKWZ)
+Explanation Of Revisions PDF:
+pdf (/attachment?id=EKdClSRoGE&name=explanation_of_revisions_PDF)
+Reassignment Request Area Chair:
+No, I want the same area chair from our previous submission (subject to their
+availability).
+Reassignment Request Reviewers:
+No, I want the same set of reviewers from our previous submission (subject to their
+availability)
+Preprint:
+yes
+Preprint Status:
+We are considering releasing a non-anonymous preprint in the next two months (i.e., during the
+reviewing process).
+Preferred Venue:
+EMNLP
+Visa Needs:
+yes
+
+
+
+
+
+
+
+Edit  
+
+
+
+
+
+
+
+
+OpenReview.net(/)
+Consent To Share Data:
+yes
+Consent To Share Submission Details:
+On behalf of all authors, we agree to the terms above to share our submission
+details.
+A1 Limitations Section:
+This paper has a limitations section.
+A2 Potential Risks:
+N/A
+B Use Or Create Scientific Artifacts:
+Yes
+B1 Cite Creators Of Artifacts:
+Yes
+B1 Elaboration:
+Section 3
+B2 Discuss The License For Artifacts:
+N/A
+B2 Elaboration:
+N/A
+B3 Artifact Use Consistent With Intended Use:
+N/A
+B4 Data Contains Personally Identifying Info Or Offensive Content:
+N/A
+B5 Documentation Of Artifacts:
+N/A
+B6 Statistics For Data:
+N/A
+C Computational Experiments:
+Yes
+C1 Model Size And Budget:
+N/A
+C2 Experimental Setup And Hyperparameters:
+Yes
+C2 Elaboration:
+Section 3.1
+C3 Descriptive Statistics:
+Yes
+C3 Elaboration:
+Section 3, Table 1
+C4 Parameters For Packages:
+N/A
+D Human Subjects Including Annotators:
+Yes
+D1 Instructions Given To Participants:
+Yes
+D1 Elaboration:
+Section 3.4 and Appendix B.4
+D2 Recruitment And Payment:
+N/A
+D3 Data Consent:
+N/A
+D4 Ethics Review Board Approval:
+N/A
+E Ai Assistants In Research Or Writing:
+No
+E1 Information About Use Of Ai Assistants:
+N/A
+Author Submission Checklist:
+yes
+Association For Computational Linguistics - Blind Submission License Agreement:
+On behalf of all authors, I agree for
+this and all previous versions of this submission
+Submission Number: 9188
+Search keywords...
+Sort: Newest First
+15 / 15 replies shown
+Add:
+Withdrawal
+Author-Editor Confidential Comment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Discussion (?id=EKdClSRoGE#discussion)
+Filter by reply type...
+Filter by author...
+−
+＝
+
+
+Everyone
+Program Chairs
+Submission9188...
+Submission9188 Area...
+Submission9188...
+Submission9188 Authors
+Submission9188...
+Submission9188...
+Submission9188...
+
+Official Review of Submission9188 by Reviewer jRkk
+Official Review by Reviewer jRkk
+02 Jul 2026, 13:25 (modified: 12 Jul 2026, 21:05)
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Authors, Reviewer jRkk
+
+
+≡
+Revisions (/revisions?id=nVE6Fazfk0)
+Add:
+
+Paper Summary:
+The authors use A* search-based reasoning to investigate how LLms reason, whether it be through search-based or
+single trajectory reasoning. When investigating using several reasoning benchmarks like StrategyQA, LogicQA,
+HotpotQA, GSM8K, and MATH, they find that search is not always the optimal reasoning methodology, as it depends
+on the type of reasoning and specific task. As a result, they introduce a reasoning topology framework to determine
+which reasoning strategy is most effective depending on the context and question.
+Summary Of Strengths:
+The authors clearly articulate the need for search-based reasoning, as they highlight the main drawbacks of CoT,
+including the fact that errors can propagate throughout the linear reasoning trace, negatively affecting the
+output.
+The experimental set-up includes several types of reasoning benchmarks, including logical, symbolic and
+mathematical reasoning, making the paper's evaluation comprehensive.
+Compute analysis conducted by the authors is an important part of the paper, as the authors acknowledge that
+A* is substantially more expensive than CoT.
+The interpretability of the proposed topology framework is the main contribution of this work, and shows how
+and when search can help, particularly in highly branched reasoning contexts.
+Summary Of Weaknesses:
+Based on my understanding of the paper, A* uses self-reported confidence. The authors should analyze this part
+of the pipeline further, to identify and understand potential drawbacks.
+The human validation of the reasoning-trace quality shows a moderate agreement between moderators on a
+relatively small sample (100). How does this validation support the authors' work?
+Comments Suggestions And Typos:
+Confidence: 3 =  Pretty sure, but there's a chance I missed something. Although I have a good feel for this area in
+general, I did not carefully check the paper's details, e.g., the math or experimental design.
+Soundness: 3.5
+Excitement: 3.5
+Overall Assessment: 3.5 = Borderline Conference
+Ethical Concerns:
+There are no concerns with this submission
+Needs Ethics Review: No
+Reproducibility: 3 = They could reproduce the results with some difficulty. The settings of parameters are
+underspecified or subjectively determined, and/or the training/evaluation data are not widely available.
+Datasets: 1 = No usable datasets submitted.
+Software: 3 = Potentially useful: Someone might find the new software useful for their work.
+Knowledge Of Or Educated Guess At Author Identity: No
+Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Knowledge Of Paper Source: N/A, I do not know anything about the paper from outside sources
+Impact Of Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Reviewer Certification: I certify that the review I entered accurately reflects my assessment of the work. If you used
+any type of automated tool to help you craft your review, I hereby certify that its use was restricted to improving
+grammar and style, and the substance of the review is either my own work or the work of an acknowledged
+secondary reviewer.
+Publication Ethics Policy Compliance: I did not use any generative AI tools for this review
+Author-Editor Confidential Comment
+Response to weakness #1 and #2
+−
+＝
+≡
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?id=~Asif_Ekbal1))
+15 Jul 2026, 22:16 (modified: 15 Jul 2026, 22:17)
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Authors, Reviewer jRkk
+Revisions (/revisions?id=GOVU5Xn3zp)
+Add:
+
+
+
+
+Comment:
+Based on my understanding of the paper, A* uses self-reported confidence. The
+authors should analyze this part of the pipeline further, to identify and
+understand potential drawbacks.
+Response: Thank you for highlighting this point. The A* procedure uses self-reported confidence only in
+the accumulated path cost, 
+, rather than in the heuristic itself. The heuristic is a
+deterministic progress critic based on reasoning depth and question-content coverage. As stated in the
+manuscript, we treat 
+ as a bounded search-ranking signal, not as a calibrated probability: each transition
+always incurs a base cost of 1, while confidence contributes only an additional penalty between 0 and 1.
+This design limits, but does not eliminate, the drawbacks of self-reported confidence. An incorrect but
+overconfident step may be prioritized and lead to premature commitment, whereas a correct but
+underconfident step may be explored later. Our failure analysis captures these behaviors: among A*
+failures on instances correctly solved by CoT, 8.9% result from premature commitment, while 91.1% result
+from overthinking, where search continues beyond sufficient evidence and accumulates distractors. Thus,
+the dominant observed limitation is excessive exploration rather than confidence alone. Moreover, the
+independent depth–coverage heuristic and voting over multiple goal traces reduce dependence on any
+single confidence estimate. Accordingly, our claims concern this controlled A* instantiation and do not
+assume that self-reported confidence is calibrated or universally reliable.
+W2. The human validation of the reasoning-trace quality shows a moderate
+agreement between moderators on a relatively small sample (100). How does
+this validation support the authors' work?
+Response: Thank you for raising this question. The human evaluation contains 100 CoT–A* disagreement
+instances from each of StrategyQA and LogicQA, for 200 annotated instances in total, selected from
+disagreement pools of 587 and 332 instances, respectively. The purpose of this study is not to establish
+aggregate performance, which is supported by the full-benchmark accuracy and instance-level
+decomposition, but to diagnose why the two strategies succeed on different examples.
+The results show the same pattern across both datasets and in both directions. When CoT is correct and A*
+is wrong, CoT has substantially higher reasoning coverage than A*: 3.00 versus 1.20 on StrategyQA and
+3.00 versus 1.86 on LogicQA. Conversely, when A* is correct, A* has higher coverage: 2.71 versus 1.63 on
+StrategyQA and 2.77 versus 1.88 on LogicQA. Relevance is much less strongly associated with correctness,
+showing that a trace can remain on-topic while still missing the decisive inferential steps.
+We interpret the moderate agreement, 
+–
+, as reflecting the inherent subjectivity of ordinal
+trace-quality assessment, and therefore do not use the human scores as primary statistical evidence.
+Rather, their consistent directional pattern supports the narrower mechanistic conclusion that CoT–A*
+complementarity is driven mainly by whether the strategy covers the required reasoning path, rather than
+by superficial fluency or stylistic quality.
+g(n) = ∑t[1 + (1 −ct)]
+ct
+κ = 0.59 0.68
+Author-Editor Confidential Comment
+Official Review of Submission9188 by Reviewer qkS1
+Official Review by Reviewer qkS1
+29 Jun 2026, 12:09 (modified: 13 Jul 2026, 09:41)
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Authors, Reviewer qkS1
+Revisions (/revisions?id=s5ha9Rh6Ic)
+
+
+
+Paper Summary:
+This paper analyzes when language models should use Chain-of-Thought (CoT) reasoning and when they should use
+search-based reasoning during inference. The authors use A* search as a controlled search method and compare it
+with CoT, showing that neither strategy uniformly outperforms the other; instead, they are complementary and solve
+different types of problems. To explain this complementarity, the paper introduces reasoning topology features and a
+branching coefficient that characterize the structural properties of each problem. Based on these features, the
+authors train a topology-aware router that selects between CoT and A* before generation. The experimental results
+suggest that search is more beneficial for multi-hop or branch-heavy problems, whereas CoT can be more suitable for
+simpler, more linear problems.
+Summary Of Strengths:
+1. The research question is clear and practical. Rather than simply asking whether search is better than CoT, the
+paper addresses the more useful question of when search is actually needed. This is an important issue for
+inference-time reasoning, where both accuracy and computational cost must be considered.
+2. The paper analyzes the complementarity between CoT and search at the instance level. Across multiple
+benchmarks and model scales, the authors show that CoT and A* solve different subsets of problems, and the
+oracle gap makes a strong case for routing between reasoning strategies. This goes beyond average accuracy
+comparisons and helps identify which types of problems benefit from each strategy.
+3. The paper proposes an interpretable and interesting direction through topology-aware routing. Instead of
+evaluating reasoning traces after generation, the authors select a reasoning strategy based only on the problem
+structure before generation. The result that a router using branching coefficients and topology features
+outperforms post-hoc trace-based routers is compelling and provides a useful perspective for adaptive
+reasoning.
+Summary Of Weaknesses:
+1. There appears to be an unexplained discrepancy between the aggregate accuracy in Table 1 and the
+instance-level decomposition in Table 2. In Table 2, “CoT only” is defined as cases where CoT is correct and A* is
+incorrect, while “A* only” is defined as the opposite. Therefore, if Tables 1 and 2 are based on the same evaluation
+set, it would be natural to calculate CoT accuracy as “Both correct + CoT only” and A* accuracy as “Both correct +
+A* only” for each dataset. However, for StrategyQA, if calculated based on Table 2, the CoT accuracy should be
+approximately 73.8% and the A* accuracy approximately 70.3%, whereas Table 1 reports CoT as 64.52% and A* as
+74.80%. In LogicQA and HotpotQA as well, the A* accuracy differs between the values calculated from Table 2 and
+those reported in Table 1. If this discrepancy is due to different evaluation subsets, filtering, or aggregation
+procedures, it should be clearly explained; otherwise, it could undermine the credibility of the paper’s core
+quantitative results.
+2. The term “topology” and the definition of the features are somewhat ambiguous. The topology features
+proposed in the paper are closer to hand-crafted structural or input features—such as question length, context
+length, logical connectives, negation markers, estimated hop count, distractor count, and number of answer
+options—than to mathematical topology or TDA-style features. A clearer definition and justification are needed to
+explain why these features should be considered to capture reasoning topology. Furthermore, the claim would
+be more persuasive if the paper further verified that these features reflect actual reasoning structures rather
+than dataset artifacts or surface statistics.
+3. The rationale for choosing A* search and its relationship to other search methods are not sufficiently clear.
+Although the paper explains that A* is used as a controlled diagnostic, the justification for why A* is more
+appropriate for this research question than other search-based reasoning methods—such as beam search, Tree-
+of-Thought, and MCTS-style search—is somewhat limited. In particular, since the paper’s conclusion extends to
+the general question of when search is helpful, there should be a clearer discussion of whether the topology-
+dependent behavior observed with A* would also hold for other search algorithms, or whether it depends on the
+specific heuristic, frontier management, and cost function used by A*. The paper’s generalizability would be
+strengthened if ablation studies with other search methods, or at least a more detailed comparative analysis,
+were included.
+Add:
+4. The scope and role of human evaluation are limited. While the evaluation of some disagreement instances by
+two annotators is meaningful as a supplementary analysis, it is somewhat limited in supporting the broader
+claims about the relationship between trace fluency and correctness and the superiority of topology-aware
+routing. Human validation involving more annotators, a larger sample size, and more diverse datasets would
+improve the reliability of the analysis of the Fluency-Correctness Asymmetry and routing behavior.
+Comments Suggestions And Typos:
+Minor issue: Since the branching coefficient is one of the paper’s core concepts, it would be more appropriate for
+readability and clarity to present its definition in a separate equation block rather than only in inline text.
+Confidence: 3 =  Pretty sure, but there's a chance I missed something. Although I have a good feel for this area in
+general, I did not carefully check the paper's details, e.g., the math or experimental design.
+Soundness: 2 = Poor: Some of the main claims are not sufficiently supported. There are major
+technical/methodological problems.
+Excitement: 3 = Interesting: I might mention some points of this paper to others and/or attend its presentation in a
+conference if there's time.
+Overall Assessment: 2.5 = Borderline Findings
+Ethical Concerns:
+There are no concerns with this submission
+Reproducibility: 2 = They would be hard pressed to reproduce the results: The contribution depends on data that
+are simply not available outside the author's institution or consortium and/or not enough details are provided.
+Datasets: 1 = No usable datasets submitted.
+Software: 1 = No usable software released.
+Knowledge Of Or Educated Guess At Author Identity: No
+Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Knowledge Of Paper Source: N/A, I do not know anything about the paper from outside sources
+Impact Of Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Reviewer Certification: I certify that the review I entered accurately reflects my assessment of the work. If you used
+any type of automated tool to help you craft your review, I hereby certify that its use was restricted to improving
+grammar and style, and the substance of the review is either my own work or the work of an acknowledged
+secondary reviewer.
+Publication Ethics Policy Compliance: I used a privacy-preserving tool exclusively for the use case(s) approved by
+PEC policy, such as language edits
+Author-Editor Confidential Comment
+Response to #W1
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?id=~Asif_Ekbal1))
+12 Jul 2026, 14:05
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Reviewer qkS1, Authors
+−
+＝
+
+
+
+Comment:
+W1. There appears to be an unexplained discrepancy between the aggregate
+accuracy in Table 1 and the instance-level decomposition in Table 2. In Table 2,
+“CoT only” is defined as cases where CoT is correct and A* is incorrect, while “A*
+only” is defined as the opposite. Therefore, if Tables 1 and 2 are based on the
+same evaluation set, it would be natural to calculate CoT accuracy as “Both
+correct + CoT only” and A* accuracy as “Both correct + A* only” for each dataset.
+However, for StrategyQA, if calculated based on Table 2, the CoT accuracy should
+be approximately 73.8% and the A* accuracy approximately 70.3%, whereas
+Table 1 reports CoT as 64.52% and A* as 74.80%. In LogicQA and HotpotQA as
+well, the A* accuracy differs between the values calculated from Table 2 and
+those reported in Table 1. If this discrepancy is due to different evaluation
+≡
+Add:
+subsets, filtering, or aggregation procedures, it should be clearly explained;
+otherwise, it could undermine the credibility of the paper’s core quantitative
+results.
+Response to W1. Thank you for identifying this inconsistency. The reviewer is correct that, when Tables 1
+and 2 are computed over the same paired evaluation instances, the marginal accuracies must satisfy
+ and 
+. Similarly, the instance-wise oracle
+accuracy must satisfy 
+.
+The discrepancy resulted from a manuscript-versioning error. Table 2 was inadvertently retained from an
+earlier 
+ configuration, whereas Table 1 reports results obtained using the final depth--coverage heuristic.
+The discrepancy was therefore not caused by different evaluation subsets, filtering rules, or aggregation
+procedures.
+We have now recomputed the instance-level decomposition using the same paired CoT and final 
+prediction files used to produce Table 1. The corrected Table 2 is shown below.
+Dataset
+Both correct CoT only
+ only Both wrong
+StrategyQA
+54.73%
+9.79%
+20.07%
+15.41%
+LogicQA
+31.34%
+14.44%
+13.51%
+40.71%
+HotpotQA
+62.70%
+14.10%
+17.40%
+5.80%
+The corrected decomposition exactly reproduces the aggregate results at the precision reported in the
+manuscript:
+StrategyQA: CoT accuracy is 
+, 
+ accuracy is 
+, and
+oracle accuracy is 
+.
+LogicQA: CoT accuracy is 
+, 
+ accuracy is 
+, and oracle
+accuracy is 
+.
+HotpotQA: CoT accuracy is 
+, 
+ accuracy is 
+, and
+oracle accuracy is 
+.
+For every dataset, the four categories also sum to 
+. Therefore, the aggregate results in Table 1 remain
+unchanged, while the corrected decomposition continues to demonstrate substantial instance-level
+complementarity between CoT and 
+.
+We will replace Table 2 with the corrected table above and revise the corresponding discussion.
+We apologize for this version mismatch and thank the reviewer for bringing it to our attention.
+AccCoT = (Nboth + NCoT-only)/N
+AccA∗= (Nboth + NA∗-only)/N
+Accoracle = (Nboth + NCoT-only + NA∗-only)/N
+A∗
+A∗
+A∗
+54.73 + 9.79 = 64.52 A∗
+54.73 + 20.07 = 74.80
+54.73 + 9.79 + 20.07 = 84.59
+31.34 + 14.44 = 45.78 A∗
+31.34 + 13.51 = 44.85
+31.34 + 14.44 + 13.51 = 59.29
+62.70 + 14.10 = 76.80 A∗
+62.70 + 17.40 = 80.10
+62.70 + 14.10 + 17.40 = 94.20
+100
+A∗
+Author-Editor Confidential Comment
+Response to #W2
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?
+id=~Asif_Ekbal1))
+12 Jul 2026, 14:07
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Reviewer qkS1,
+Authors
+−
+＝
+
+
+
+Comment:
+The term “topology” and the definition of the features are somewhat
+ambiguous. The topology features proposed in the paper are closer to
+hand-crafted structural or input features—such as question length,
+context length, logical connectives, negation markers, estimated hop
+count, distractor count, and number of answer options—than to
+≡
+mathematical topology or TDA-style features. A clearer definition and
+justification are needed to explain why these features should be
+considered to capture reasoning topology. Furthermore, the claim would
+be more persuasive if the paper further verified that these features
+reflect actual reasoning structures rather than dataset artifacts or
+surface statistics.
+Response to W2: Thank you for this observation. We agree that reasoning topology does not
+refer to mathematical topology or topological data analysis. We use the term operationally to
+describe the structural form of reasoning induced by an input: whether the problem can be
+solved through a largely linear and globally coherent trajectory, or instead requires preserving,
+comparing, or eliminating multiple partial reasoning paths before committing to an answer.
+This interpretation follows the qualitative regimes identified in Section 3.2 and Appendix B. In
+particular, 
+ is most useful for non-linear evidence aggregation, hypothesis elimination, and
+multi-hop composition, where several candidate facts, constraints, or reasoning paths must be
+considered before commitment. In contrast, CoT is preferable for direct factual reasoning and
+globally coherent argumentation, where a single continuous reasoning trajectory is sufficient.
+We agree that the 13 proposed features are not topological invariants in the mathematical sense.
+Rather, they are pre-generation reasoning-topology proxies intended to capture properties
+associated with reasoning depth, branching opportunity, competing constraints, and the amount
+of evidence that must be integrated. For example, the branching coefficient is defined as:
+bc = (c_sent × hop) / q_len
+where c_sent is the number of context sentences, hop is the estimated reasoning-hop count,
+and q_len is the question length. This quantity combines contextual extent and estimated
+reasoning depth while normalizing for question length. It is therefore intended as an operational
+proxy for the amount of multi-hop branching structure afforded by an input, rather than as a
+formal topological quantity.
+The current results provide several complementary pieces of evidence that the observed
+relationship is not explained purely by dataset identity. First, each of the four reasoning-topology
+clusters contains instances from multiple benchmarks, while the 
+ advantage increases from
+−0.4 percentage points in the linear, short cluster to +11.4 percentage points in the deep-
+branch cluster. The relationship between the branching coefficient and 
+ advantage across
+clusters has 
+. Second, the complementary topic analysis finds that 
+-dominant
+categories are primarily associated with multi-hop entity chains, whereas CoT-dominant
+categories are primarily associated with single-step commonsense reasoning. Third, the human
+analysis indicates that disagreement outcomes are better explained by whether a method covers
+the required reasoning path than by the apparent fluency or surface quality of its trace.
+Nevertheless, we agree that these analyses do not completely eliminate the possibility that the
+handcrafted proxies retain some surface-level or dataset-specific signal. We will therefore revise
+the manuscript to:
+1. explicitly define reasoning topology as the branching, depth, and path-comparison structure
+induced by a reasoning problem;
+2. refer to the proposed features as reasoning-topology proxies, rather than formal topology
+features;
+3. clarify that the cluster, topic, and human analyses provide supporting evidence against a
+purely dataset-specific explanation, rather than definitive proof that all surface-statistic
+confounds have been eliminated; and
+4. acknowledge more explicitly that some proxies, including input length and connective
+counts, may partially capture surface properties in addition to reasoning structure.
+A∗
+A∗
+A∗
+R2 = 0.94
+A∗
+Add:
+Author-Editor Confidential Comment
+ Replying to Response to #W2
+Response to #W3
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?
+id=~Asif_Ekbal1))
+12 Jul 2026, 14:27
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Reviewer qkS1,
+Authors
+−
+＝
+
+
+
+
+Comment:
+The rationale for choosing A* search and its relationship to other search
+methods are not sufficiently clear. Although the paper explains that A* is
+used as a controlled diagnostic, the justification for why A* is more
+appropriate for this research question than other search-based
+reasoning methods—such as beam search, Tree-of-Thought, and MCTS-
+style search—is somewhat limited. In particular, since the paper’s
+conclusion extends to the general question of when search is helpful,
+there should be a clearer discussion of whether the topology-dependent
+behavior observed with A* would also hold for other search algorithms,
+or whether it depends on the specific heuristic, frontier management,
+and cost function used by A*. The paper’s generalizability would be
+strengthened if ablation studies with other search methods, or at least a
+more detailed comparative analysis, were included.
+Response to W3: We use A* not because it is always better than beam search, Tree-of-Thought,
+or MCTS, but because it offers a clean way to study heuristic-guided search. Its design separates
+path cost, heuristic estimate, frontier management, and branching. This makes it easier to
+examine the main contrast with CoT: exploring and prioritizing multiple partial reasoning paths
+instead of committing to a single linear trace.
+Other search methods introduce additional design choices. Beam search uses fixed-width
+pruning, Tree-of-Thought relies on an evaluator, and MCTS depends on rollout, value estimation,
+exploration, and backup rules. These are important methods, but their extra components make it
+harder to isolate why search helps.
+We therefore do not claim that all search algorithms will show the same gains or the same
+routing boundary. Our claim is more limited: problem structure determines whether there is
+room for search to help, while the search algorithm determines how well that opportunity is
+used. Problems involving multi-hop composition, hypothesis elimination, or competing evidence
+paths are more likely to benefit from methods that delay commitment. However, A*, beam
+search, Tree-of-Thought, and MCTS may differ in pruning errors, search efficiency, and
+overthinking.
+Our analysis thus has two levels. At the structural level, we study when maintaining multiple
+partial reasoning paths is better than following one linear path. This idea is shared by several
+search methods. At the algorithmic level, the methods differ in how they prune, score, explore,
+and allocate budget. Therefore, we expect topology to matter across search methods, but not
+necessarily to produce the same gains or the same routing threshold. The boundary reported in
+this paper is specific to our budgeted A* implementation. Testing whether the same pattern
+holds for beam search, Tree-of-Thought, and MCTS is an important direction for future work.
+≡
+Add:
+Author-Editor Confidential Comment
+ Replying to Response to #W3
+Response to W4
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?
+id=~Asif_Ekbal1))
+12 Jul 2026, 14:29
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Reviewer qkS1,
+Authors
+−
+＝
+
+
+
+
+Comment:
+The scope and role of human evaluation are limited. While the
+evaluation of some disagreement instances by two annotators is
+meaningful as a supplementary analysis, it is somewhat limited in
+supporting the broader claims about the relationship between trace
+fluency and correctness and the superiority of topology-aware routing.
+Human validation involving more annotators, a larger sample size, and
+more diverse datasets would improve the reliability of the analysis of the
+Fluency-Correctness Asymmetry and routing behavior.
+Response to W4. Thank you for raising this concern. We agree that the current human
+evaluation should be interpreted as a supplementary diagnostic analysis rather than as
+comprehensive human validation across all tasks and routing settings.
+We would first like to clarify that the empirical superiority of the topology-aware router is not
+inferred from the human evaluation. It is measured directly on the complete evaluation sets of
+five benchmarks. As reported in Table 4, the topology-aware router outperforms CoT, A*,
+semantic-entropy routing, LLM-as-Critic, LLM-as-Judge, and the random-forest router on
+StrategyQA, LogicQA, HotpotQA, GSM8K, and MATH. The improvements of the topology router
+over CoT on the three QA benchmarks are also statistically significant under McNemar's test with
+p < 0.005 . Thus, the routing result is based on benchmark-level predictive accuracy, whereas
+the human evaluation is used only to provide an interpretation of why retrospective trace
+comparison can be unreliable.
+The human analysis considers 100 sampled CoT--A* disagreement instances from StrategyQA
+and 100 from LogicQA. Two postgraduate annotators with experience in language-model
+reasoning evaluated both traces in each instance. Inter-annotator agreement ranges from
+Cohen's kappa of 0.59 to 0.68 across the reported criteria. The annotations consistently show
+that the correct strategy obtains substantially higher coverage of the required reasoning path than the
+incorrect strategy. For example, on StrategyQA, CoT receives an average coverage score of 3.00
+versus 1.20 for A* when CoT is correct, while A* receives 2.71 versus 1.63 for CoT when A* is
+correct. The same directional pattern is observed on LogicQA.
+We nevertheless agree that two annotators, two datasets, and 200 disagreement cases are
+insufficient to establish a universal relationship between trace fluency and correctness. We will
+therefore revise the manuscript to make the scope of this evidence explicit. In particular, we will:
+1. Describe the human evaluation as a supplementary analysis of sampled disagreement cases
+rather than as validation of the routing result itself; and we will also use all datasets and
+three annotators and atleast 500 examples per dataset.
+2. State that the observed Fluency--Correctness Asymmetry is an empirical pattern in the
+analyzed disagreement cases, rather than a universal property of all reasoning traces;
+≡
+Add:
+Accordingly, our revised conclusion will be that the benchmark-level results establish the
+advantage of topology-aware routing in the evaluated setting, while the human analysis provides
+limited but consistent supporting evidence that apparent trace quality does not always reveal
+whether the decisive reasoning path has been covered.
+Author-Editor Confidential Comment
+ Replying to Response to W4
+Official Comment by Reviewer qkS1
+Official Comment by Reviewer qkS1
+13 Jul 2026, 09:41
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Reviewer qkS1,
+Authors
+Add:
+−
+＝
+
+
+
+Comment:
+Thank you for the detailed response. The corrected instance-level decomposition and the
+explanation of the manuscript-versioning issue substantially address my primary concern in W1
+regarding the numerical inconsistency between Tables 1 and 2. The clarifications and planned
+revisions for W2–W4 also sufficiently strengthen the technical presentation, terminology, and
+scope of the claims. I am therefore raising my score from 2.0 to 2.5. The magnitude of the
+inconsistency in the initial submission still limits a larger upward revision, although the rebuttal
+has meaningfully improved my overall assessment of the work.
+Author-Editor Confidential Comment
+Official Review of Submission9188 by Reviewer s1To
+Official Review by Reviewer s1To
+27 Jun 2026, 12:19 (modified: 12 Jul 2026, 21:05)
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Authors, Reviewer s1To
+Revisions (/revisions?id=ovYhi70FAD)
+
+
+
+Paper Summary:
+The paper studies when language models should use search-based reasoning instead of standard chain-of-thought
+prompting. It compares CoT with a budgeted A* search procedure over natural-language reasoning traces. Across
+StrategyQA, LogicQA, HotpotQA, GSM8K, and MATH, the paper finds that neither CoT nor A* uniformly dominates.
+The paper further proposes a topology-aware router based on 13 pre-generation structural features, arguing that
+whether search helps is better explained by problem topology than by dataset identity.
+Summary Of Strengths:
+Deciding when to spend additional inference-time compute is important, especially as search-based reasoning
+methods become more common.
+The instance-level complementarity analysis is useful. The paper shows that CoT and A* solve different subsets of
+examples, which supports the basic motivation that search and linear reasoning are not simply ordered by overall
+accuracy.
+The paper provides useful analysis of when A* helps and when it hurts. The discussion around deferred
+commitment, overthinking, and fluency-correctness asymmetry helps explain why search is not always better
+than CoT.
+Summary Of Weaknesses:
+The topology-aware routing result needs more careful explanation. The router is trained on 13 manually
+designed features, but the paper does not make the training/evaluation protocol clear enough in the main text.
+Since the main claim is that routing can be done from input structure before generation, the paper should clearly
+≡
+Add:
+describe the train/test split, whether splits are within-dataset or cross-dataset, and whether there is any
+benchmark-format leakage.
+The routing setup is somewhat narrow. The router mainly chooses between CoT and A*, but Table 1 shows that
+self-consistency is often competitive, and sometimes stronger, especially on StrategyQA, LogicQA, GSM8K, and
+MATH. If the paper asks when language models should search, the routing decision should ideally include strong
+non-search inference strategies, not only CoT versus A*.
+The compute cost remains important for the main claim. The paper reports that default A* uses around 12,452
+tokens per question, about 24× CoT. Since search is much more expensive, the paper should make the routing
+objective explicitly cost-aware rather than only accuracy-oriented.
+Some terminology is confusing. The paper uses “critic” in multiple ways: a rule-based progress critic, an LLM-as-
+critic router, and an LLM-as-judge baseline. These should be separated more clearly because they play different
+roles in the method.
+The actual implementation of A* is not simple. It has many components, but the paper only ablates budget and
+branching factor. It does not isolate key choices such as confidence-based cost, depth/coverage heuristics,
+successor generation, or goal voting, so it is unclear which parts actually drive the gains.
+Comments Suggestions And Typos:
+It would be helpful to test whether the topology router is learning general reasoning structure or benchmark-
+specific formatting artifacts.
+Since self-consistency is competitive in Table 1, the paper should explain why routing is only between CoT and A*.
+Including more diverse/recent models would defintely be preferred.
+For cost, it is useful to compare cost across all the methods, not just between A* and CoT to better situate how
+A*.
+Confidence: 3 =  Pretty sure, but there's a chance I missed something. Although I have a good feel for this area in
+general, I did not carefully check the paper's details, e.g., the math or experimental design.
+Soundness: 2.5
+Excitement: 2.5
+Overall Assessment: 2.5 = Borderline Findings
+Ethical Concerns:
+There are no concerns with this submission
+Needs Ethics Review: No
+Reproducibility: 3 = They could reproduce the results with some difficulty. The settings of parameters are
+underspecified or subjectively determined, and/or the training/evaluation data are not widely available.
+Datasets: 1 = No usable datasets submitted.
+Software: 1 = No usable software released.
+Knowledge Of Or Educated Guess At Author Identity: No
+Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Knowledge Of Paper Source: N/A, I do not know anything about the paper from outside sources
+Impact Of Knowledge Of Paper: N/A, I do not know anything about the paper from outside sources
+Reviewer Certification: I certify that the review I entered accurately reflects my assessment of the work. If you used
+any type of automated tool to help you craft your review, I hereby certify that its use was restricted to improving
+grammar and style, and the substance of the review is either my own work or the work of an acknowledged
+secondary reviewer.
+Publication Ethics Policy Compliance: I used a privacy-preserving tool exclusively for the use case(s) approved by
+PEC policy, such as language edits
+Author-Editor Confidential Comment
+Response to #W1, #W2
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?id=~Asif_Ekbal1))
+−
+＝
+
+≡
+12 Jul 2026, 15:43
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Reviewer s1To, Authors
+
+
+Comment:
+W1. The topology-aware routing result needs more careful explanation. The
+router is trained on 13 manually designed features, but the paper does not
+make the training/evaluation protocol clear enough in the main text. Since the
+main claim is that routing can be done from input structure before generation,
+the paper should clearly describe the train/test split, whether splits are within-
+dataset or cross-dataset, and whether there is any benchmark-format leakage.
+Response to W1. Thank you for pointing out that the router evaluation protocol was not described clearly
+enough in the main text. We agree that this information is necessary to interpret the topology-routing
+result correctly.
+The results in Table 4 use stratified 5-fold cross-validation with seed 42, performed separately within each
+benchmark. For each fold, the router is trained on four folds and evaluated only on the held-out fold. Thus,
+no evaluation instance is used to train the router that predicts it. The reported accuracy for each
+benchmark is obtained by combining the predictions from its five held-out folds.
+The router receives only the 13 features computed from the input before generation. It does not observe
+the CoT trace, the A* trace, model confidence, predicted answers, correctness labels, or gold answer at
+inference time. Dataset names are also not provided as features. The training target is derived from the
+paired CoT and A* outcomes and indicates which strategy should be selected for that instance. We will
+explicitly state how ties are handled when both strategies are correct or both are incorrect.
+We also clarify that this protocol evaluates within-dataset generalization, not transfer to an unseen
+benchmark. Therefore, the current result supports the claim that input-side structural features can predict
+the preferred strategy for unseen instances from the same benchmark distribution. It does not by itself
+establish that a router trained on some benchmarks will generalize to a new benchmark.
+The reviewer is also correct that the absence of an explicit dataset identifier does not completely rule out
+benchmark-format information. Features such as context length, number of context sentences, and
+number of answer options may indirectly encode dataset format. We will therefore revise the manuscript to
+distinguish reasoning-structure features from format-sensitive features and avoid claiming that the current
+experiment completely eliminates dataset-specific signal.
+In the revision, we will add the following details to the main text:
+the stratified 5-fold within-dataset evaluation protocol and random seed;
+the construction of the routing target, including the treatment of ties;
+confirmation that feature extraction and preprocessing are performed without using generated traces
+or evaluation labels at inference time.
+W2. The routing setup is somewhat narrow. The router mainly chooses between
+CoT and A*, but Table 1 shows that self-consistency is often competitive, and
+sometimes stronger, especially on StrategyQA, LogicQA, GSM8K, and MATH. If
+the paper asks when language models should search, the routing decision
+should ideally include strong non-search inference strategies, not only CoT
+versus A*.
+Response to W2. Thank you for raising this point. We agree that the current routing experiment addresses
+a narrower question than general inference-strategy selection. Our binary router was designed to isolate
+the central comparison studied in the paper: whether an instance should be solved using a single linear
+CoT trajectory or using heuristic-guided search over multiple partial reasoning states. Self-consistency
+differs from A* in an important way: it samples several independent complete CoT trajectories and
+aggregates their answers, but it does not maintain a search frontier, expand partial states, backtrack, or
+prioritize branches using a heuristic. Therefore, the current CoT--A* router specifically tests whether the
+input structure predicts the value of explicit branching and deferred commitment. Nevertheless, the
+reviewer is correct that self-consistency is a strong inference-time alternative. In Table 1, it is competitive
+Add:
+with A* on StrategyQA and HotpotQA and achieves the highest LLaMA-3.1-8B accuracy among the fixed
+methods on LogicQA, GSM8K, and MATH. Consequently, the current binary router should not be
+interpreted as identifying the globally best inference strategy among CoT, self-consistency, and A*. It
+establishes only that pre-generation input features can help decide between linear CoT and our
+budgeted A* search.
+Author-Editor Confidential Comment
+Response to #W3, #W4, #W5
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?
+id=~Asif_Ekbal1))
+12 Jul 2026, 17:38 (modified: 12 Jul 2026, 17:39)
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Reviewer s1To,
+Authors
+Revisions (/revisions?id=gPHt0mteyn)
+−
+＝
+
+
+
+
+Comment:
+W3. The compute cost remains important for the main claim. The paper
+reports that default A* uses around 12,452 tokens per question, about
+24× CoT. Since search is much more expensive, the paper should make
+the routing objective explicitly cost-aware rather than only accuracy-
+oriented.
+Response: Thank you for highlighting this point. We agree that a deployment-oriented router
+should consider both accuracy and inference cost. However, the purpose of the current routing
+experiment is to test a more specific question: whether the relative accuracy advantage of CoT
+and A* can be predicted from the input structure before either reasoning procedure is executed.
+Accordingly, the current router is accuracy-oriented by design. This isolates the main scientific
+claim of the paper: problem topology predicts when explicit branching is useful. A cost-weighted
+objective would introduce an additional deployment-dependent trade-off parameter and could
+obscure whether the CoT--A* boundary is structurally predictable in the first place.
+W4. Some terminology is confusing. The paper uses “critic” in multiple
+ways: a rule-based progress critic, an LLM-as-critic router, and an LLM-as-
+judge baseline. These should be separated more clearly because they
+play different roles in the method.
+Response: Thank you for pointing out this terminology overlap. We agree that the word critic is
+currently used for components with different roles.
+The three components are functionally distinct:
+Component
+Role
+Input
+Used during
+Rule-based progress
+critic
+Computes the A* heuristic score
+A partial reasoning
+state
+A* search
+LLM-as-Critic
+Selects between completed CoT
+and A* traces
+Both full reasoning
+traces
+Post-hoc
+routing
+LLM-as-Judge
+Alternative LLM-based trace-
+selection baseline
+Both full reasoning
+traces
+Post-hoc
+routing
+The rule-based progress critic is not an LLM and does not evaluate factual correctness. It is a
+deterministic scoring function based on reasoning depth and question-content coverage, and it
+is used only to prioritize partial states within A*. In contrast, LLM-as-Critic and LLM-as-Judge are
+≡
+Add:
+output-based routing baselines that inspect completed CoT and A* traces and select between
+them. These two baselines differ only in their prompting formulation.
+We will revise the terminology to make these roles clearer. Specifically, we will rename the rule-
+based progress critic as the rule-based progress scorer throughout the paper. We will also
+describe LLM-as-Critic more explicitly as a pairwise LLM trace selector, while retaining LLM-as-
+Judge as a separate prompting baseline. In addition, we will add a short clarification in Section
+2.5 distinguishing search-time scoring from post-hoc trace selection.
+This revision is terminological and does not change the method or experimental results.
+W5. The actual implementation of A* is not simple. It has many
+components, but the paper only ablates budget and branching factor. It
+does not isolate key choices such as confidence-based cost,
+depth/coverage heuristics, successor generation, or goal voting, so it is
+unclear which parts actually drive the gains.
+Response: Thank you for this point. We agree that the current ablations do not fully attribute the
+gains to individual components of the A* implementation. Our budget and branching-factor
+studies isolate the main search-capacity variables, but not the effects of the confidence-based
+path cost, depth/coverage heuristic, successor generation, or goal voting.
+Our claim is therefore not that each component is independently necessary, but that this
+complete budgeted A* instantiation provides a controlled test of heuristic-guided branching
+versus linear CoT. We will clarify this scope and add targeted ablations where feasible, including
+removing the confidence penalty, separating the depth and coverage heuristic terms, and
+replacing multi-goal voting with single-best-goal selection. We will also identify full component
+attribution as a limitation of the current study.
+Author-Editor Confidential Comment
+ Replying to Response to #W3, #W4, #W5
+Response to Comments Suggestions And Typos
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?
+id=~Asif_Ekbal1))
+12 Jul 2026, 18:19
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Reviewer s1To,
+Authors
+−
+＝
+
+
+
+
+Comment:
+Response to Comment 1. Thank you for raising this concern. We agree that excluding dataset
+IDs does not fully prevent benchmark leakage, since structural features may still reveal the
+dataset.
+We have performed additional analyses across pooled benchmarks, task domains, and model
+scales. First, the topology clusters are constructed over pooled QA and mathematics instances,
+with each cluster containing examples from multiple benchmarks. Despite this mixing, the
+relative advantage of A* increases with the branching coefficient:
+Cluster Structural profile Branching coefficient CoT
+A*
+A* advantage
+C1
+Linear, short
+1.28 82.1 81.7
+-0.4
+C3
+Complex, noisy
+4.02 49.1 52.3
++3.2
+C2
+Mid-branch
+4.24 66.2 73.5
++7.3
+≡
+Cluster Structural profile Branching coefficient CoT
+A*
+A* advantage
+C4
+Deep-branch
+6.49 58.4 69.8
++11.4
+The relationship between branching coefficient and A* advantage has an R^2 of 0.94. Because
+the clusters contain instances from multiple benchmarks, this pattern cannot be explained
+simply by assigning one strategy to each dataset.
+Second, we have evaluated the same 13-feature routing formulation across eight benchmarks
+spanning QA, mathematics, and code generation, and across three model scales:
+Domain
+Benchmark
+Qwen-0.5B LLaMA-3.1-8B Qwen-2.5-14B
+QA
+StrategyQA
+64.74
+77.35
+76.46
+QA
+LogicQA
+24.98
+49.01
+58.68
+QA
+HotpotQA
+30.00
+82.41
+83.17
+Mathematics GSM8K
+26.84
+91.10
+80.82
+Mathematics MATH
+33.21
+81.52
+48.40
+Code
+HumanEval
+34.97
+72.50
+79.75
+Code
+MBPP
+25.99
+40.63
+48.42
+Code
+CodeContests
+75.20
+95.00
+--
+The values are topology-router accuracies. The router remains effective across substantially
+different formats, including boolean QA, multiple-choice logical reasoning, mathematical
+problems, code generation, and programming. We also performed an independent cross-dataset
+topic analysis over 3,660 questions: A* is stronger in 6 of 8 topic categories covering 66.2% of the
+instances, and these categories primarily involve multi-hop factual or entity chains; the two CoT-
+dominant categories primarily involve single-step commonsense reasoning.
+These results provide evidence against a purely benchmark-specific explanation, but we agree
+that they do not completely eliminate indirect format leakage. We will therefore distinguish
+reasoning-structure features from format-sensitive features more clearly and avoid
+presenting the current results as definitive evidence of unseen-benchmark transfer. We will also
+add an ablation removing raw length and answer-format features and report leave-one-
+benchmark-out routing, which directly tests whether the learned decision rule transfers to an
+unseen benchmark format.
+Response to Comment 2. Thank you for this point. We agree that self-consistency is a strong
+inference-time alternative. We have compared CoT, A*, self-consistency, and Tree-of-Thought
+across all eight benchmarks. The LLaMA-3.1-8B results are:
+Benchmark
+CoT
+A*
+Self-Consistency Tree-of-Thought
+StrategyQA
+64.52 74.80
+71.22
+72.24
+LogicQA
+45.78 44.85
+46.10
+46.21
+HotpotQA
+76.80 80.10
+78.21
+78.45
+GSM8K
+85.04 86.12
+86.90
+60.00
+MATH
+78.00 79.10
+79.50
+40.10
+HumanEval
+67.48 64.42
+65.03
+71.78
+MBPP
+39.80 36.80
+38.00
+40.40
+Add:
+Benchmark
+CoT
+A*
+Self-Consistency Tree-of-Thought
+CodeContests 77.40 87.00
+99.00
+91.20
+These results confirm the reviewer's observation: self-consistency is strongest on GSM8K, MATH,
+and CodeContests, and remains competitive on several other benchmarks.
+The present binary router is deliberately designed to isolate the specific comparison studied in
+the paper: a single linear CoT trajectory versus A* search over partial reasoning states. Self-
+consistency samples multiple independent complete CoT traces and aggregates their answers,
+but it does not maintain a frontier, expand partial states, backtrack, or prioritize branches with a
+heuristic. It therefore captures sampling diversity, whereas A* captures guided exploration and
+deferred commitment.
+Accordingly, the current routing result answers the narrower question: when should explicit
+heuristic-guided search replace single-trajectory CoT? It should not be interpreted as
+identifying the globally best inference strategy among CoT, self-consistency, A*, and Tree-of-
+Thought. We will revise the paper to state this scope explicitly and refer to the current model as a
+CoT--A search router*, rather than a general inference-strategy router.
+The results above also motivate a broader cost-aware router over {CoT, self-consistency,
+A*} , which would choose among single-path reasoning, sampling-based aggregation, and
+explicit search. We will identify this as an important extension rather than implying that the
+current binary router covers all inference-time strategies.
+Author-Editor Confidential Comment
+ Replying to Response to Comments Suggestions And Typos
+Response to comment 3,4
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?
+id=~Asif_Ekbal1))
+12 Jul 2026, 18:23
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Reviewer s1To,
+Authors
+−
+＝
+
+
+
+
+Comment:
+Response to Comment 3. Thank you for these suggestions. We agree that broader model
+coverage and a more complete cost comparison are important for establishing the scope of the
+conclusions.
+We have performed experiments with two model families and three substantially different scales:
+Qwen-0.5B, LLaMA-3.1-8B, and Qwen-2.5-14B. We evaluate each model across eight benchmarks
+spanning QA, mathematics, and code generation. Representative CoT and A* results are shown
+below:
+Model
+StrategyQA: CoT /
+A*
+HotpotQA: CoT /
+A*
+GSM8K: CoT /
+A*
+CodeContests: CoT /
+A*
+Qwen-0.5B
+53.60 / 53.40
+8.40 / 30.00
+26.84 / 14.48
+49.80 / 68.20
+LLaMA-3.1-
+8B
+64.52 / 74.80
+76.80 / 80.10
+85.04 / 86.12
+77.40 / 87.00
+Qwen-2.5-
+14B
+76.02 / 75.56
+60.19 / 83.33
+61.56 / 80.59
+99.60 / 94.40
+≡
+Add:
+The results show that the effect of search is not tied to one model family or scale. For example,
+A* improves HotpotQA by 21.60 points at 0.5B and 23.14 points at 14B, improves GSM8K by
+19.03 points at 14B, and improves CodeContests by 18.40 points at 0.5B and 9.60 points at 8B. At
+the same time, A* can underperform on structurally simpler tasks, reinforcing the need for
+routing. We agree that evaluation on additional recent model families would further strengthen
+generality, and we will state the current model coverage clearly rather than implying universality.
+Response to Comment 4. Thank you for these suggestions. We have also performed a broader
+compute comparison on the same stratified 300-question HotpotQA sample. All token counts
+below are measured rather than estimated:
+Method
+Accuracy Tokens per question Relative to CoT
+CoT
+76.80
+approximately 512
+1.0x
+Self-Consistency, 5 traces
+78.21
+approximately 2,560
+5.0x
+A*, K=1, B=30
+77.70
+3,372
+6.6x
+A*, K=3, B=15
+78.00
+12,452
+24.3x
+A*, K=3, B=20
+78.70
+12,391
+24.2x
+This comparison places A* more clearly relative to a strong multi-sample baseline. Reduced-
+budget A* is moderately more expensive than five-trace self-consistency, while default A* is
+substantially more expensive for a relatively small additional accuracy gain on this sample. This
+supports our central motivation for pre-generation routing: expensive search should be reserved
+for instances whose structure indicates that branching is likely to help.
+We agree that a complete comparison should also include measured end-to-end costs for Tree-
+of-Thought and the routing baselines. In particular, semantic-entropy, LLM-as-Critic, and LLM-as-
+Judge routing require generating multiple candidate traces before routing, and the LLM-based
+selectors require an additional model call. By contrast, the topology router uses only input-side
+features and requires no LLM call before executing the selected strategy. We will report the
+measured end-to-end token costs of these methods so that their accuracy can be compared
+under the same computational accounting.
+Author-Editor Confidential Comment
+ Replying to Response to comment 3,4
+Official Comment by Authors
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?
+id=~Asif_Ekbal1))
+13 Jul 2026, 10:22
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Authors, Reviewer
+s1To
+Add:
+−
+＝
+
+
+
+
+Comment:
+We thank reviewer S1To for the detailed review of our manuscript. We have carefully addressed
+each of the points raised above. We kindly request you to consider our responses and, if
+appropriate, update your score.
+Author-Editor Confidential Comment
+≡
+OpenReview (/about) is a long-term project to advance science through improved peer review
+with legal nonprofit status. We gratefully acknowledge the support of the OpenReview
+Sponsors (/sponsors). © 2026 OpenReview
+Official Comment by Authors
+Official Comment
+by Authors (
+MD Tanzeel Adam Khan (/profile?id=~MD_Tanzeel_Adam_Khan1), Dibyanayan
+Bandyopadhyay (/profile?id=~Dibyanayan_Bandyopadhyay1), Asif Ekbal (/profile?
+id=~Asif_Ekbal1))
+15 Jul 2026, 22:08
+Program Chairs, Senior Area Chairs, Area Chairs, Reviewers Submitted, Reviewer s1To,
+Authors
+Add:
+−
+＝
+
+
+
+Comment:
+Thank you again for your thoughtful review. We have carefully addressed all of your queries
+above. We kindly request you to review our responses and please feel free to reach out if you
+have any further questions or require additional clarification.
+Author-Editor Confidential Comment
+About OpenReview (/about)
+Contact (/contact)
+FAQ (https://docs.openreview.net/getting-
+started/frequently-asked-questions)
+Hosting a Venue (/group?
+id=OpenReview.net/Support)
+Sponsors (/sponsors)
+Terms of Use (/legal/terms) / Privacy Policy
+(/legal/privacy)
+All Venues (/venues)
+Donate (/donate)
+≡

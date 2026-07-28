@@ -1,0 +1,90 @@
+[
+  {
+    "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "f1": 1.0,
+    "nodes": 14,
+    "q_type": "yesno",
+    "trace": "Step 1: Both Scott Derrickson and Ed Wood are American nationals.\nStep 2: yes\n0.9\nStep 3: The answer is: yes\n0.9",
+    "terminal_trace": "Step 1: Both Scott Derrickson and Ed Wood are American nationals.\nStep 2: yes\n0.9\nStep 3: The answer is: yes\n0.9\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: Both Scott Derrickson and Ed Wood are American nationals.",
+        "content": "Both Scott Derrickson and Ed Wood are American nationals.",
+        "confidence": 0.99,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: yes\n0.9",
+        "content": "yes\n0.9",
+        "confidence": 0.6,
+        "is_factual": false
+      },
+      {
+        "step_number": 3,
+        "step": "Step 3: The answer is: yes\n0.9",
+        "content": "The answer is: yes\n0.9",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+    "gold": "Chief of Protocol",
+    "pred": "None",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 6,
+    "q_type": "bridge",
+    "trace": "Step 1: Corliss Archer in the film \"Kiss and Tell\" was portrayed by Shirley Temple.\nStep 2: The answer is: None\nCONFIDENCE: 1.0\n\nThe context does not mention Shirley Temple holding any government position. It mentions her as a child actress, singer, dancer, businesswoman, and diplomat, but not as holding a government position.",
+    "terminal_trace": "Step 1: Corliss Archer in the film \"Kiss and Tell\" was portrayed by Shirley Temple.\nStep 2: The answer is: None\nCONFIDENCE: 1.0\n\nThe context does not mention Shirley Temple holding any government position. It mentions her as a child actress, singer, dancer, businesswoman, and diplomat, but not as holding a government position.\nFinal Answer: None",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: Corliss Archer in the film \"Kiss and Tell\" was portrayed by Shirley Temple.",
+        "content": "Corliss Archer in the film \"Kiss and Tell\" was portrayed by Shirley Temple.",
+        "confidence": 0.9,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: The answer is: None\nCONFIDENCE: 1.0\n\nThe context does not mention Shirley Temple holding any government position. It mentions her as a child actress, singer, dancer, businesswoman, and diplomat, but not as holding a government position.",
+        "content": "The answer is: None\nCONFIDENCE: 1.0\n\nThe context does not mention Shirley Temple holding any government position. It mentions her as a child actress, singer, dancer, businesswoman, and diplomat, but not as holding a government position.",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+    "gold": "Animorphs",
+    "pred": "Animorphs",
+    "correct": true,
+    "f1": 1.0,
+    "nodes": 6,
+    "q_type": "bridge",
+    "trace": "Step 1: The bridge entity is \"companion books\" and \"science fantasy series\" or more specifically, a series with a \"science fantasy\" theme.\nStep 2: The answer is: Animorphs",
+    "terminal_trace": "Step 1: The bridge entity is \"companion books\" and \"science fantasy series\" or more specifically, a series with a \"science fantasy\" theme.\nStep 2: The answer is: Animorphs\nFinal Answer: Animorphs",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The bridge entity is \"companion books\" and \"science fantasy series\" or more specifically, a series with a \"science fantasy\" theme.",
+        "content": "The bridge entity is \"companion books\" and \"science fantasy series\" or more specifically, a series with a \"science fantasy\" theme.",
+        "confidence": 0.9,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: The answer is: Animorphs",
+        "content": "The answer is: Animorphs",
+        "confidence": 0.99,
+        "is_factual": false
+      }
+    ]
+  }
+]

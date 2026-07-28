@@ -1,0 +1,25 @@
+{
+  "dataset_jsonl": "Hotpotqa RAg/data/cot_astar_runs/hotpotqa_paired_all.jsonl",
+  "split": "all",
+  "start_index": 0,
+  "max_questions": 200,
+  "kb_jsonl": "/home/dibyanayan/tanzeel/Hotpotqa RAg/artifacts/hotpotqa_reasoning_kb.jsonl",
+  "index_meta": "/home/dibyanayan/tanzeel/Hotpotqa RAg/artifacts/hotpotqa_index_meta.json",
+  "faiss_index": "/home/dibyanayan/tanzeel/Hotpotqa RAg/artifacts/hotpotqa_questions.faiss",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 1,
+  "exclude_same_example": true,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "max_new_tokens": 120,
+  "output_dir": "Hotpotqa RAg/outputs/hotpotqa_llama31_rag_eval200",
+  "metrics": {
+    "total": 200,
+    "parsed": 199,
+    "correct": 40,
+    "accuracy": 0.2,
+    "avg_f1": 0.25432057525807517,
+    "parsed_rate": 0.995,
+    "elapsed_sec": 473.31004643440247,
+    "avg_sec_per_question": 2.3665502321720124
+  }
+}

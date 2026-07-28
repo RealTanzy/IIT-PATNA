@@ -1,0 +1,2007 @@
+nohup: ignoring input
+Running CoT on LogicQA with model: qwen2.5:0.5b
+0it [00:00, ?it/s]1it [00:04,  4.06s/it]2it [00:06,  2.98s/it]3it [00:07,  2.34s/it]4it [00:09,  1.94s/it]5it [00:10,  1.66s/it]6it [00:12,  1.82s/it]7it [00:13,  1.71s/it]8it [00:15,  1.70s/it]9it [00:16,  1.47s/it]10it [00:17,  1.32s/it]11it [00:18,  1.32s/it]12it [00:20,  1.26s/it]13it [00:21,  1.34s/it]14it [00:22,  1.25s/it]15it [00:24,  1.36s/it]16it [00:26,  1.60s/it]17it [00:28,  1.68s/it]18it [02:43, 41.82s/it]19it [02:45, 29.98s/it]20it [02:49, 21.98s/it]21it [04:08, 39.13s/it]22it [04:10, 28.18s/it]23it [04:13, 20.54s/it]24it [04:16, 15.11s/it]25it [04:20, 11.85s/it]26it [04:23,  9.25s/it]27it [04:27,  7.56s/it]28it [04:30,  6.38s/it]29it [04:33,  5.41s/it]30it [04:37,  4.79s/it]31it [04:40,  4.19s/it]32it [04:43,  3.88s/it]33it [04:45,  3.38s/it]34it [04:48,  3.29s/it]35it [04:51,  3.30s/it]36it [04:55,  3.46s/it]37it [04:59,  3.56s/it]38it [05:03,  3.78s/it]39it [05:07,  3.63s/it]40it [05:11,  3.78s/it]41it [05:15,  3.96s/it]42it [05:17,  3.47s/it]43it [05:20,  3.26s/it]44it [05:24,  3.42s/it]45it [05:27,  3.19s/it]46it [05:29,  3.04s/it]47it [05:32,  2.82s/it]48it [05:35,  2.88s/it]49it [05:38,  2.88s/it]50it [05:40,  2.83s/it]51it [05:43,  2.72s/it]52it [05:45,  2.57s/it]53it [05:47,  2.50s/it]54it [05:51,  2.77s/it]55it [05:53,  2.66s/it]56it [05:55,  2.36s/it]57it [05:57,  2.46s/it]58it [06:00,  2.47s/it]59it [06:03,  2.51s/it]60it [06:05,  2.54s/it]61it [06:09,  2.81s/it]62it [06:13,  3.16s/it]63it [06:16,  3.15s/it]64it [06:18,  3.02s/it]65it [06:22,  3.22s/it]66it [06:27,  3.63s/it]67it [06:29,  3.35s/it]68it [06:32,  3.22s/it]
+Problem 1:
+  Q: Based on the above statement, which of the following can be derived?...
+  Pred: A | Gold: A | ✅
+
+Problem 2:
+  Q: So what are the three young people on business?...
+  Pred: D | Gold: A | ❌
+
+Problem 3:
+  Q: According to the above statement, which of the following can be drawn about this...
+  Pred: C | Gold: B | ❌
+
+Problem 4:
+  Q: Which of the following can best strengthen the above argument....
+  Pred: A | Gold: D | ❌
+
+Problem 5:
+  Q: According to the above statement, it can be concluded that who is not in the fou...
+  Pred: C | Gold: D | ❌
+
+Problem 6:
+  Q: According to the above statement, you can get which of the following?...
+  Pred: A | Gold: B | ❌
+
+Problem 7:
+  Q: Which of the following is true will most weaken the above argument....
+  Pred: A | Gold: D | ❌
+
+Problem 8:
+  Q: The result of the match showed that only one argument was correct, so who won th...
+  Pred: C | Gold: C | ✅
+
+Problem 9:
+  Q: Which of the following is the conclusion must be assumed....
+  Pred: B | Gold: C | ❌
+
+Problem 10:
+  Q: Which of the following is assumed by the above argument....
+  Pred: D | Gold: D | ✅
+
+Problem 11:
+  Q: Which of the following is true is the best argument against the above argument....
+  Pred: A | Gold: B | ❌
+
+Problem 12:
+  Q: Which of the following can best question the above view?...
+  Pred: D | Gold: D | ✅
+
+Problem 13:
+  Q: Which one, if true, most doubts the views of the above media....
+  Pred: A | Gold: A | ✅
+
+Problem 14:
+  Q: If it is true, can it most support the opinions of the above experts?...
+  Pred: B | Gold: D | ❌
+
+Problem 15:
+  Q: Which of the following, if true, most doubts the opinions of the above experts?...
+  Pred: A | Gold: B | ❌
+
+Problem 16:
+  Q: Based on the above statement, which of the following can be derived?...
+  Pred: B | Gold: D | ❌
+
+Problem 17:
+  Q: Based on the above information, regarding the order of the five stations from we...
+  Pred: B | Gold: C | ❌
+
+Problem 18:
+  Q: If Jiushang Station is adjacent to Haoyun Station and east of Haoyun Station, it...
+  Pred: None | Gold: A | ❌
+
+Problem 19:
+  Q: If Hao Yun stands to the east of Jiushang Station, you can get?...
+  Pred: A | Gold: B | ❌
+
+Problem 20:
+  Q: If Haoyun Station is adjacent to Yinling Station, you can get?...
+  Pred: C | Gold: D | ❌
+
+Problem 21:
+  Q: Which of the following, if true, can best refute the above argument?...
+  Pred: A | Gold: B | ❌
+
+Problem 22:
+  Q: Which of the following, if true, will best support the above argument?...
+  Pred: B | Gold: A | ❌
+
+Problem 23:
+  Q: Which of the following, if true, best supports the above researchers ’views?...
+  Pred: A | Gold: C | ❌
+
+Problem 24:
+  Q: Regarding the overall average price of residential housing in the above three ci...
+  Pred: A | Gold: D | ❌
+
+Problem 25:
+  Q: Which of the following is most appropriate as a corollary of the above discussio...
+  Pred: C | Gold: A | ❌
+
+Problem 26:
+  Q: Which of the following, if true, would best support the above argument?...
+  Pred: A | Gold: B | ❌
+
+Problem 27:
+  Q: Which of the following must be selected?...
+  Pred: D | Gold: D | ✅
+
+Problem 28:
+  Q: If Guo Yanran is selected, which of the following must also be selected?...
+  Pred: A | Gold: D | ❌
+
+Problem 29:
+  Q: If He Zhilian is not selected, which of the following is not selected?...
+  Pred: C | Gold: A | ❌
+
+Problem 30:
+  Q: If Tang Xiaohua is selected, which two of the following must be selected?...
+  Pred: D | Gold: D | ✅
+
+Problem 31:
+  Q: Which of the following, if true, best supports the above-mentioned scientists ’s...
+  Pred: D | Gold: D | ✅
+
+Problem 32:
+  Q: Which of the following, if true, would best refute the views of ordinary people?...
+  Pred: A | Gold: C | ❌
+
+Problem 33:
+  Q: Which of the following is true to best refute the above speculation?...
+  Pred: A | Gold: A | ✅
+
+Problem 34:
+  Q: Which of the following, if true, can best refute the views of the above scientis...
+  Pred: A | Gold: D | ❌
+
+Problem 35:
+  Q: Which of the following, if true, can best refute the views of the above scientis...
+  Pred: A | Gold: C | ❌
+
+Problem 36:
+  Q: In order from bottom to top, which of the following matches the distribution of ...
+  Pred: B | Gold: A | ❌
+
+Problem 37:
+  Q: If the Human Resources Department is not at the upper level of the Administratio...
+  Pred: A | Gold: B | ❌
+
+Problem 38:
+  Q: If the human resources department is not on the top floor, the floors that the R...
+  Pred: A | Gold: D | ❌
+
+Problem 39:
+  Q: If the Finance Department is on the third level, which of the following may be c...
+  Pred: D | Gold: B | ❌
+
+Problem 40:
+  Q: Which of the following may be the two departments where the first and second tie...
+  Pred: A | Gold: C | ❌
+
+Problem 41:
+  Q: Which of the following is most similar to the above argument?...
+  Pred: B | Gold: D | ❌
+
+Problem 42:
+  Q: Which of the following, if true, would best refute the above experimental conclu...
+  Pred: C | Gold: A | ❌
+
+Problem 43:
+  Q: Which of the following, if true, can best refute the above argument?...
+  Pred: A | Gold: B | ❌
+
+Problem 44:
+  Q: Which of the following, if true, would best support the above research findings?...
+  Pred: A | Gold: C | ❌
+
+Problem 45:
+  Q: Regarding the newly recruited researchers of the unit in 2013, which of the foll...
+  Pred: A | Gold: D | ❌
+
+Problem 46:
+  Q: Which of the following, if true, best supports the idea of ​​gradually extending...
+  Pred: B | Gold: A | ❌
+
+Problem 47:
+  Q: Which of the following, if true, would weaken the above argument most?...
+  Pred: D | Gold: D | ✅
+
+Problem 48:
+  Q: Which of the following is most suitable as a corollary of the above discussion....
+  Pred: A | Gold: D | ❌
+
+Problem 49:
+  Q: Which of the following, if true, would best refute the arguments of the above su...
+  Pred: A | Gold: C | ❌
+
+Problem 50:
+  Q: Which of the following is most important for evaluating the above conclusion?...
+  Pred: A | Gold: B | ❌
+
+Problem 51:
+  Q: Which of the following conclusions can be drawn from the above conclusions?...
+  Pred: A | Gold: C | ❌
+
+Problem 52:
+  Q: Which of the following is most helpful in eliminating this inconsistency?...
+  Pred: A | Gold: A | ✅
+
+Problem 53:
+  Q: The comments of Ukrainian observers are best used to refute which of the followi...
+  Pred: A | Gold: D | ❌
+
+Problem 54:
+  Q: Which of the following can most question the above view?...
+  Pred: A | Gold: D | ❌
+
+Problem 55:
+  Q: Which of the following can guarantee the correctness of the above statement?...
+  Pred: D | Gold: A | ❌
+
+Problem 56:
+  Q: If you want to get the conclusion that the plane was hijacked by a terrorist org...
+  Pred: A | Gold: B | ❌
+
+Problem 57:
+  Q: Which of the following can best question the above research conclusions?...
+  Pred: A | Gold: C | ❌
+
+Problem 58:
+  Q: Which of the following is most similar to the above reasoning?...
+  Pred: A | Gold: D | ❌
+
+Problem 59:
+  Q: Which of the following is most likely the hypothesis of the above argument?...
+  Pred: C | Gold: D | ❌
+
+Problem 60:
+  Q: Which of the following can best question the decision of the city government?...
+  Pred: D | Gold: B | ❌
+
+Problem 61:
+  Q: Which of the following means exactly the same as the above assertion?...
+  Pred: D | Gold: A | ❌
+
+Problem 62:
+  Q: Which of the following can weaken Lao Zhang ’s suggestion the most?...
+  Pred: A | Gold: D | ❌
+
+Problem 63:
+  Q: Which of the following best refutes the above argument?...
+  Pred: C | Gold: A | ❌
+
+Problem 64:
+  Q: Which of the following raises the most serious question to the above conclusion?...
+  Pred: A | Gold: A | ✅
+
+Problem 65:
+  Q: Which of the following may be correct?...
+  Pred: A | Gold: D | ❌
+
+Problem 66:
+  Q: Which of the following must be correct?...
+  Pred: A | Gold: C | ❌
+
+Problem 67:
+  Q: Which of the following is correct, you can determine the employer of each gradua...
+  Pred: D | Gold: B | ❌
+
+Problem 68:
+  Q: If Liu was hired by Tianxuan, which of the following must be wrong?...
+  Pred: A | Gold: D | ❌
+
+Problem 69:
+  Q: According to this statistic, which of the following must be true?...
+69it [06:35,  3.15s/it]70it [06:39,  3.21s/it]71it [06:42,  3.22s/it]72it [06:45,  3.16s/it]73it [06:47,  2.86s/it]74it [06:51,  3.05s/it]75it [06:54,  3.05s/it]76it [06:56,  2.99s/it]77it [06:59,  2.82s/it]78it [07:02,  2.84s/it]79it [07:04,  2.78s/it]80it [07:09,  3.20s/it]81it [07:11,  3.10s/it]82it [07:17,  3.96s/it]83it [07:24,  4.78s/it]84it [07:27,  4.10s/it]85it [07:29,  3.73s/it]86it [07:36,  4.55s/it]87it [07:41,  4.73s/it]88it [07:44,  4.33s/it]89it [07:49,  4.28s/it]90it [07:54,  4.56s/it]91it [07:57,  4.25s/it]92it [08:02,  4.27s/it]93it [08:08,  4.82s/it]94it [08:14,  5.21s/it]95it [08:17,  4.58s/it]96it [08:22,  4.58s/it]97it [08:29,  5.29s/it]98it [08:31,  4.57s/it]99it [08:34,  3.82s/it]100it [08:37,  3.74s/it]101it [08:41,  3.84s/it]102it [08:47,  4.42s/it]103it [08:50,  3.98s/it]104it [08:54,  3.91s/it]105it [08:57,  3.75s/it]106it [09:02,  4.12s/it]107it [09:06,  4.00s/it]108it [09:08,  3.45s/it]109it [09:10,  3.13s/it]110it [09:14,  3.19s/it]111it [09:16,  3.09s/it]112it [09:21,  3.58s/it]113it [09:25,  3.70s/it]114it [09:28,  3.41s/it]115it [09:32,  3.60s/it]116it [09:35,  3.55s/it]117it [09:41,  4.32s/it]118it [09:46,  4.25s/it]119it [09:50,  4.23s/it]120it [09:54,  4.11s/it]121it [09:57,  3.91s/it]122it [09:59,  3.41s/it]123it [10:02,  3.06s/it]124it [10:03,  2.66s/it]125it [10:06,  2.66s/it]126it [10:09,  2.74s/it]127it [10:13,  3.09s/it]128it [10:17,  3.43s/it]129it [10:19,  2.98s/it]130it [10:21,  2.80s/it]131it [10:24,  2.68s/it]132it [10:27,  3.02s/it]133it [10:32,  3.36s/it]134it [10:37,  3.97s/it]135it [10:39,  3.35s/it]136it [10:41,  3.04s/it]  Pred: A | Gold: C | ❌
+
+Problem 70:
+  Q: The decision of the academic conference organizing committee is most likely base...
+  Pred: A | Gold: A | ✅
+
+Problem 71:
+  Q: Which of the following can best question the blogger ’s conclusion?...
+  Pred: D | Gold: D | ✅
+
+Problem 72:
+  Q: Which of the following can most strongly support the views of the above jurists?...
+  Pred: A | Gold: B | ❌
+
+Problem 73:
+  Q: Which of the following best supports the above argument?...
+  Pred: A | Gold: D | ❌
+
+Problem 74:
+  Q: If only one sentence of the analyst ’s prediction is correct, who is the first?...
+  Pred: A | Gold: D | ❌
+
+Problem 75:
+  Q: Which of the following is most similar to the above argument?...
+  Pred: A | Gold: D | ❌
+
+Problem 76:
+  Q: If the above statement is true, which of the following cannot be true?...
+  Pred: D | Gold: C | ❌
+
+Problem 77:
+  Q: Which of the following conclusions can be made based on the above discussion?...
+  Pred: B | Gold: B | ✅
+
+Problem 78:
+  Q: Which of the following can guarantee the correctness of the above statement?...
+  Pred: A | Gold: A | ✅
+
+Problem 79:
+  Q: Which of the following is most similar to the question-making argument?...
+  Pred: A | Gold: D | ❌
+
+Problem 80:
+  Q: Which of the following, if true, would most weaken the above arguments and sugge...
+  Pred: A | Gold: A | ✅
+
+Problem 81:
+  Q: Which of the following most appropriately summarizes the loopholes in the above ...
+  Pred: A | Gold: D | ❌
+
+Problem 82:
+  Q: Based on the above conclusions, which of the following conclusions is most likel...
+  Pred: A | Gold: B | ❌
+
+Problem 83:
+  Q: Which of the following most accurately summarizes the controversial focus of Ms....
+  Pred: A | Gold: D | ❌
+
+Problem 84:
+  Q: Which of the following, if true, would most weaken the above argument?...
+  Pred: A | Gold: B | ❌
+
+Problem 85:
+  Q: Which of the following most appropriately summarizes the loopholes in the conclu...
+  Pred: A | Gold: C | ❌
+
+Problem 86:
+  Q: If the following items are true, they can weaken the above argument, except....
+  Pred: A | Gold: A | ✅
+
+Problem 87:
+  Q: If the following item is true, can the argument be strengthened most?...
+  Pred: D | Gold: D | ✅
+
+Problem 88:
+  Q: Which of the following, if true, would most weaken the above conclusions of the ...
+  Pred: B | Gold: C | ❌
+
+Problem 89:
+  Q: Which of the following is most likely assumed by the above argument?...
+  Pred: A | Gold: D | ❌
+
+Problem 90:
+  Q: Which of the following most accurately summarizes the method Xiao Wang used to r...
+  Pred: B | Gold: B | ✅
+
+Problem 91:
+  Q: How many guests did Mr. Chen come forward to invite?...
+  Pred: C | Gold: D | ❌
+
+Problem 92:
+  Q: The logic loophole in the above argument is most similar to the following one?...
+  Pred: A | Gold: B | ❌
+
+Problem 93:
+  Q: The following assumptions can make the above inference hold, except....
+  Pred: C | Gold: A | ❌
+
+Problem 94:
+  Q: Based on the above experiment, which of the following must be true?...
+  Pred: B | Gold: D | ❌
+
+Problem 95:
+  Q: Which of the following most appropriately points out the loophole of the above a...
+  Pred: A | Gold: D | ❌
+
+Problem 96:
+  Q: An analogy with which of the following inferences shows that the above inference...
+  Pred: A | Gold: D | ❌
+
+Problem 97:
+  Q: If the above determination is true, which of the following must be true?...
+  Pred: A | Gold: B | ❌
+
+Problem 98:
+  Q: Which of the following, if true, would most weaken the above argument?...
+  Pred: C | Gold: A | ❌
+
+Problem 99:
+  Q: Kobayashi is most likely to understand the rules of swimming as?...
+  Pred: A | Gold: C | ❌
+
+Problem 100:
+  Q: Which of the following, if true, would most weaken the above argument?...
+  Pred: A | Gold: D | ❌
+
+Problem 101:
+  Q: If the above determination is true, which of the following must be true?...
+  Pred: A | Gold: C | ❌
+
+Problem 102:
+  Q: Which of the following must be true?...
+  Pred: C | Gold: A | ❌
+
+Problem 103:
+  Q: If F and M are not in charge of the same department, which of the following must...
+  Pred: D | Gold: C | ❌
+
+Problem 104:
+  Q: Which of the following options is the closest to the meaning of this maxim?...
+  Pred: A | Gold: C | ❌
+
+Problem 105:
+  Q: Which of the following supplements will most strongly support the reasoning in t...
+  Pred: D | Gold: B | ❌
+
+Problem 106:
+  Q: Which of the following conclusions can be deduced from the above discussion?...
+  Pred: A | Gold: C | ❌
+
+Problem 107:
+  Q: Which of the following reasoning clearly shows that the above argument is not va...
+  Pred: B | Gold: A | ❌
+
+Problem 108:
+  Q: Which of the following, if true, best supports the doctor ’s conclusion?...
+  Pred: A | Gold: C | ❌
+
+Problem 109:
+  Q: Now we need to open the No.1 valve, which two valves are to be opened at the sam...
+  Pred: B | Gold: B | ✅
+
+Problem 110:
+  Q: Which of the following questions is most relevant for refuting the above reasoni...
+  Pred: D | Gold: A | ❌
+
+Problem 111:
+  Q: Which of the following options is not the implied meaning or conclusion that can...
+  Pred: A | Gold: D | ❌
+
+Problem 112:
+  Q: It turned out that only one of the three instructors was right. Which one of the...
+  Pred: B | Gold: D | ❌
+
+Problem 113:
+  Q: Which of the following best explains the contradictory statement above?...
+  Pred: C | Gold: C | ✅
+
+Problem 114:
+  Q: Which of the following options is a correct evaluation of the company and its co...
+  Pred: B | Gold: B | ✅
+
+Problem 115:
+  Q: If the above proposition is true, then which of the following must be true?...
+  Pred: A | Gold: B | ❌
+
+Problem 116:
+  Q: These people's suspicions are based on which of the following unstated premises?...
+  Pred: A | Gold: D | ❌
+
+Problem 117:
+  Q: Who can meet all the requirements of Li Na?...
+  Pred: B | Gold: C | ❌
+
+Problem 118:
+  Q: Which of the following cannot be a logical inference from the above conclusion?...
+  Pred: A | Gold: B | ❌
+
+Problem 119:
+  Q: Which of the following, if true, is the most doubtful of the above conclusion?...
+  Pred: A | Gold: C | ❌
+
+Problem 120:
+  Q: Which of the following, if true, best supports the scientist ’s conclusion?...
+  Pred: A | Gold: C | ❌
+
+Problem 121:
+  Q: Since the conclusion of "friends like dung" is not true, it can be logically der...
+  Pred: A | Gold: B | ❌
+
+Problem 122:
+  Q: The following are all questions about the above views, except?...
+  Pred: A | Gold: D | ❌
+
+Problem 123:
+  Q: According to the above situation, we know that the winner is....
+  Pred: C | Gold: A | ❌
+
+Problem 124:
+  Q: Which sentence is most appropriate for the following?...
+  Pred: A | Gold: C | ❌
+
+Problem 125:
+  Q: Which of the following options is not a logical inference from the above sentenc...
+  Pred: A | Gold: B | ❌
+
+Problem 126:
+  Q: The above conclusion is based on which of the following assumptions?...
+  Pred: A | Gold: C | ❌
+
+Problem 127:
+  Q: Which of the following is most important for evaluating the decision of the supe...
+  Pred: A | Gold: D | ❌
+
+Problem 128:
+  Q: If the above theory about the origin of the moon is correct, which one of the fo...
+  Pred: A | Gold: B | ❌
+
+Problem 129:
+  Q: Which of the following supplements can explain the inconsistency between the tot...
+  Pred: A | Gold: C | ❌
+
+Problem 130:
+  Q: If the No.6 player plays in the final, which of the following must be true?...
+  Pred: B | Gold: D | ❌
+
+Problem 131:
+  Q: Which of the following is most helpful in explaining the Osprey ’s predatory hab...
+  Pred: A | Gold: C | ❌
+
+Problem 132:
+  Q: Which of the following, if true, cannot weaken the above argument?...
+  Pred: A | Gold: D | ❌
+
+Problem 133:
+  Q: Based on your understanding, which of the following options is most appropriate ...
+  Pred: A | Gold: B | ❌
+
+Problem 134:
+  Q: Which of the following must be true?...
+  Pred: A | Gold: C | ❌
+
+Problem 135:
+  Q: Which of the following, if correct, is most helpful in explaining the contradict...
+  Pred: A | Gold: B | ❌
+
+Problem 136:
+  Q: Which of the following is different from the expression in the stem?...
+  Pred: A | Gold: C | ❌
+
+Problem 137:
+137it [10:44,  2.87s/it]138it [10:48,  3.25s/it]139it [10:53,  3.82s/it]140it [10:57,  3.83s/it]141it [10:59,  3.43s/it]142it [11:02,  3.14s/it]143it [11:07,  3.76s/it]144it [11:11,  3.87s/it]145it [11:15,  3.98s/it]146it [11:18,  3.51s/it]147it [11:21,  3.42s/it]148it [11:28,  4.56s/it]149it [11:33,  4.69s/it]150it [11:36,  4.07s/it]151it [11:38,  3.62s/it]152it [11:46,  4.71s/it]153it [11:49,  4.26s/it]154it [11:53,  4.17s/it]155it [11:55,  3.62s/it]156it [11:58,  3.32s/it]157it [12:00,  2.92s/it]158it [12:06,  3.80s/it]159it [12:09,  3.72s/it]160it [12:14,  4.12s/it]161it [12:16,  3.53s/it]162it [12:18,  3.05s/it]163it [12:21,  2.82s/it]164it [12:24,  2.97s/it]165it [12:28,  3.22s/it]166it [12:32,  3.41s/it]167it [12:36,  3.67s/it]168it [12:40,  3.94s/it]169it [12:44,  3.86s/it]170it [12:49,  4.08s/it]171it [12:54,  4.33s/it]172it [12:57,  3.95s/it]173it [12:59,  3.44s/it]174it [13:01,  2.96s/it]175it [13:02,  2.57s/it]176it [13:06,  2.92s/it]177it [13:10,  3.10s/it]178it [13:14,  3.33s/it]179it [13:15,  2.92s/it]180it [13:17,  2.62s/it]181it [13:19,  2.44s/it]182it [13:22,  2.57s/it]183it [13:26,  2.77s/it]184it [13:29,  3.09s/it]185it [17:20, 71.44s/it]186it [17:24, 51.14s/it]187it [17:27, 36.81s/it]188it [17:32, 26.99s/it]189it [17:35, 20.03s/it]190it [17:37, 14.49s/it]191it [17:39, 10.93s/it]192it [17:44,  9.12s/it]193it [17:48,  7.33s/it]194it [21:44, 76.09s/it]195it [21:49, 54.62s/it]196it [21:52, 39.24s/it]197it [21:55, 28.27s/it]198it [21:57, 20.50s/it]199it [22:00, 15.31s/it]200it [22:02, 11.37s/it]201it [22:04,  8.60s/it]202it [22:07,  6.90s/it]  Q: To verify this conclusion, which of the following experimental methods is the mo...
+  Pred: A | Gold: C | ❌
+
+Problem 138:
+  Q: Which of the following, if proven, can reasonably lead to the salesperson ’s con...
+  Pred: A | Gold: C | ❌
+
+Problem 139:
+  Q: Which of the following options is the same as the argument in the question stem?...
+  Pred: A | Gold: B | ❌
+
+Problem 140:
+  Q: Which of the following is a correct description of the four assertions in the st...
+  Pred: A | Gold: B | ❌
+
+Problem 141:
+  Q: In order to make the last sentence in the subject a logical inference from the p...
+  Pred: A | Gold: C | ❌
+
+Problem 142:
+  Q: If the scientist ’s proposal to control the European fern is adopted, which of t...
+  Pred: B | Gold: C | ❌
+
+Problem 143:
+  Q: Which of the following options most clearly shows the absurdity of the above rea...
+  Pred: A | Gold: B | ❌
+
+Problem 144:
+  Q: Which of the following provides the strongest support for the argument in the qu...
+  Pred: B | Gold: B | ✅
+
+Problem 145:
+  Q: If S and Z are now connected at the same time, which of the following must be tr...
+  Pred: A | Gold: A | ✅
+
+Problem 146:
+  Q: Based on the above conditions, which of the following must be true?...
+  Pred: A | Gold: C | ❌
+
+Problem 147:
+  Q: Each of the following patients can be treated by Dr. Li, except which one?...
+  Pred: A | Gold: D | ❌
+
+Problem 148:
+  Q: If E is treated by Dr. Wang, which of the following must be true?...
+  Pred: A | Gold: C | ❌
+
+Problem 149:
+  Q: If Dr. Li is responsible for the treatment of G, which of the following may be t...
+  Pred: D | Gold: B | ❌
+
+Problem 150:
+  Q: According to the question, which of the following must be true?...
+  Pred: B | Gold: A | ❌
+
+Problem 151:
+  Q: If Jesse goes to Dalian, which of the following must be true?...
+  Pred: A | Gold: A | ✅
+
+Problem 152:
+  Q: If the conclusion of the question is true, which two people cannot go to Hangzho...
+  Pred: A | Gold: C | ❌
+
+Problem 153:
+  Q: Based on the question, can you determine which of the following options is true?...
+  Pred: A | Gold: D | ❌
+
+Problem 154:
+  Q: Which of the following options can be derived from the above questions?...
+  Pred: B | Gold: B | ✅
+
+Problem 155:
+  Q: Which of the following is true will raise the most doubts about the opinions of ...
+  Pred: B | Gold: B | ✅
+
+Problem 156:
+  Q: If the essayist's statement is true, which of the following options cannot be tr...
+  Pred: A | Gold: A | ✅
+
+Problem 157:
+  Q: Which of the following options does not apply to Bush ’s logic?...
+  Pred: B | Gold: D | ❌
+
+Problem 158:
+  Q: If the above items are true, which of the following must be true?...
+  Pred: A | Gold: D | ❌
+
+Problem 159:
+  Q: The above argument is based on which of the following unstated premises?...
+  Pred: D | Gold: B | ❌
+
+Problem 160:
+  Q: Which of the following options uses the same reasoning method as in the question...
+  Pred: A | Gold: B | ❌
+
+Problem 161:
+  Q: The fact that Liu Xiang won the championship and his words do not constitute a r...
+  Pred: A | Gold: C | ❌
+
+Problem 162:
+  Q: Which of the following conclusions can be drawn from the above statement?...
+  Pred: A | Gold: C | ❌
+
+Problem 163:
+  Q: If the statement in the stem is true, which of the following must be true?...
+  Pred: A | Gold: A | ✅
+
+Problem 164:
+  Q: If only one of the above three sentences is true, which of the following must be...
+  Pred: A | Gold: A | ✅
+
+Problem 165:
+  Q: If the above statement is true, which of the following statements must be true?...
+  Pred: A | Gold: A | ✅
+
+Problem 166:
+  Q: Which of the following is true will most strongly indicate that the above explan...
+  Pred: C | Gold: C | ✅
+
+Problem 167:
+  Q: Based on the above, which of the following must be true?...
+  Pred: A | Gold: B | ❌
+
+Problem 168:
+  Q: Which of the following arguments contains defects most similar to those in the a...
+  Pred: A | Gold: B | ❌
+
+Problem 169:
+  Q: Which of the following is most helpful in explaining the phenomenon mentioned in...
+  Pred: A | Gold: D | ❌
+
+Problem 170:
+  Q: Which of the following statements must be assumed in the above reasoning?...
+  Pred: A | Gold: B | ❌
+
+Problem 171:
+  Q: Which of the following options is closest to what Premier Wen Jiabao said above?...
+  Pred: C | Gold: D | ❌
+
+Problem 172:
+  Q: Which of the following, if true, best supports the scientist ’s conclusion?...
+  Pred: A | Gold: C | ❌
+
+Problem 173:
+  Q: Based on the above questions, which of the following options for night duty is t...
+  Pred: B | Gold: C | ❌
+
+Problem 174:
+  Q: Which of the following statements is based on the assumptions that the above arg...
+  Pred: A | Gold: C | ❌
+
+Problem 175:
+  Q: If the above statement is true, which of the following best confirms the expert'...
+  Pred: A | Gold: D | ❌
+
+Problem 176:
+  Q: Assuming that the death penalty cannot prevent crime, then in which of the follo...
+  Pred: C | Gold: C | ✅
+
+Problem 177:
+  Q: Students are most likely to understand the professor ’s statement as?...
+  Pred: A | Gold: A | ✅
+
+Problem 178:
+  Q: Which of the following must be assumed in the above conclusion?...
+  Pred: D | Gold: D | ✅
+
+Problem 179:
+  Q: Which of the following is the speaker who is most willing to answer the question...
+  Pred: C | Gold: C | ✅
+
+Problem 180:
+  Q: Which of the following statements is true, which weakens the argument most stron...
+  Pred: A | Gold: D | ❌
+
+Problem 181:
+  Q: Which of the following, if correct, will best reconcile the inconsistencies betw...
+  Pred: A | Gold: B | ❌
+
+Problem 182:
+  Q: The above argument cannot be derived?...
+  Pred: C | Gold: C | ✅
+
+Problem 183:
+  Q: Which of the following sentences is different from the above sentence?...
+  Pred: A | Gold: D | ❌
+
+Problem 184:
+  Q: If any of the following is true, it is most helpful to explain why sucrose kills...
+  Pred: A | Gold: A | ✅
+
+Problem 185:
+  Q: Which one of the following correctly describes David's choice?...
+  Pred: None | Gold: B | ❌
+
+Problem 186:
+  Q: Regarding the meaning of the relevant words in this cryptographic language, whic...
+  Pred: A | Gold: B | ❌
+
+Problem 187:
+  Q: Which of the following is true can raise greater doubts about the above conclusi...
+  Pred: C | Gold: A | ❌
+
+Problem 188:
+  Q: The above example best illustrates which of the following scientific statements?...
+  Pred: A | Gold: D | ❌
+
+Problem 189:
+  Q: Which of the following results can be derived from the above conditions?...
+  Pred: A | Gold: A | ✅
+
+Problem 190:
+  Q: Which of the following is the assumption on which the above argument is based?...
+  Pred: B | Gold: C | ❌
+
+Problem 191:
+  Q: If the above statement is true, which of the following options will it most stro...
+  Pred: A | Gold: B | ❌
+
+Problem 192:
+  Q: The above argument must assume which of the following?...
+  Pred: A | Gold: D | ❌
+
+Problem 193:
+  Q: If J is the first speaker, who must be the second speaker?...
+  Pred: A | Gold: B | ❌
+
+Problem 194:
+  Q: If J is the fourth speaker, who must be the third speaker?...
+  Pred: A | Gold: D | ❌
+
+Problem 195:
+  Q: If L speaks before lunch and M is not the sixth speaker, the speaker immediately...
+  Pred: B | Gold: C | ❌
+
+Problem 196:
+  Q: If the speeches of M and N are separated by lunch, which of the following lists ...
+  Pred: A | Gold: D | ❌
+
+Problem 197:
+  Q: If J speaks before F, how many N can be ranked?...
+  Pred: B | Gold: A | ❌
+
+Problem 198:
+  Q: Which of the following four players can participate in the game together?...
+  Pred: B | Gold: D | ❌
+
+Problem 199:
+  Q: Which of the following players will definitely participate in the game?...
+  Pred: A | Gold: B | ❌
+
+Problem 200:
+  Q: Which of the following listed players cannot participate in the game together?...
+  Pred: A | Gold: C | ❌
+
+Problem 201:
+  Q: If H does not participate in the game, which of the following two players must b...
+  Pred: C | Gold: A | ❌
+
+Problem 202:
+  Q: Which two of the following players will be selected by the coach to make the fou...
+  Pred: A | Gold: D | ❌
+
+Problem 203:
+203it [22:09,  5.39s/it]204it [22:11,  4.39s/it]205it [22:13,  3.60s/it]206it [22:16,  3.30s/it]207it [22:18,  3.03s/it]208it [22:20,  2.64s/it]209it [22:22,  2.56s/it]210it [22:24,  2.45s/it]211it [22:26,  2.26s/it]212it [22:28,  2.17s/it]213it [22:30,  2.08s/it]214it [22:33,  2.23s/it]215it [22:36,  2.55s/it]216it [22:38,  2.31s/it]217it [22:39,  1.94s/it]218it [22:40,  1.86s/it]219it [22:43,  2.20s/it]220it [22:45,  2.02s/it]221it [22:47,  2.00s/it]222it [22:49,  1.98s/it]223it [22:52,  2.17s/it]224it [22:53,  2.07s/it]225it [22:55,  1.93s/it]226it [22:58,  2.23s/it]227it [23:00,  2.23s/it]228it [23:03,  2.32s/it]229it [23:05,  2.35s/it]230it [23:07,  2.26s/it]231it [23:09,  2.09s/it]232it [23:11,  2.09s/it]233it [23:13,  2.06s/it]234it [23:15,  2.20s/it]235it [23:17,  1.94s/it]236it [23:19,  2.09s/it]237it [23:21,  1.91s/it]238it [23:23,  1.98s/it]239it [23:25,  2.04s/it]240it [23:27,  2.10s/it]241it [23:29,  1.98s/it]242it [23:31,  2.06s/it]243it [23:35,  2.46s/it]244it [23:37,  2.47s/it]245it [23:39,  2.32s/it]246it [23:41,  2.28s/it]247it [23:44,  2.30s/it]248it [23:47,  2.56s/it]249it [23:50,  2.64s/it]250it [23:52,  2.55s/it]251it [23:54,  2.51s/it]252it [23:56,  2.38s/it]253it [23:58,  2.18s/it]254it [24:00,  2.08s/it]255it [24:02,  2.07s/it]256it [24:05,  2.22s/it]257it [24:07,  2.27s/it]258it [24:09,  2.07s/it]259it [24:11,  2.17s/it]260it [24:14,  2.32s/it]261it [24:16,  2.24s/it]262it [24:18,  2.17s/it]263it [24:20,  2.30s/it]264it [24:22,  2.11s/it]265it [24:24,  2.09s/it]266it [24:27,  2.25s/it]267it [24:28,  2.02s/it]  Q: In order to deduce the above conclusions logically, it is necessary to assume wh...
+  Pred: A | Gold: C | ❌
+
+Problem 204:
+  Q: Which of the following statements can best complete the above argument?...
+  Pred: A | Gold: D | ❌
+
+Problem 205:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: A | Gold: C | ❌
+
+Problem 206:
+  Q: Which of the following, if true, is the most doubtful of an assertion?...
+  Pred: A | Gold: B | ❌
+
+Problem 207:
+  Q: If the above statement is true, which of the following conclusions can best be s...
+  Pred: A | Gold: C | ❌
+
+Problem 208:
+  Q: Which of the following cannot be derived from the above sentence?...
+  Pred: A | Gold: D | ❌
+
+Problem 209:
+  Q: If the above items are true, which of the following items must be true?...
+  Pred: A | Gold: C | ❌
+
+Problem 210:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: D | Gold: D | ✅
+
+Problem 211:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: A | Gold: B | ❌
+
+Problem 212:
+  Q: Which of the following is closest to the meaning of the above paragraph?...
+  Pred: A | Gold: C | ❌
+
+Problem 213:
+  Q: Which of the following is the hypothetical hypothesis of this scientist?...
+  Pred: A | Gold: A | ✅
+
+Problem 214:
+  Q: Which of the following does not constitute doubt or rebuttal to the above argume...
+  Pred: B | Gold: D | ❌
+
+Problem 215:
+  Q: Which of the following questions is most important for commenting on the above a...
+  Pred: A | Gold: D | ❌
+
+Problem 216:
+  Q: If the above statement is true, which of the following must be true?...
+  Pred: A | Gold: D | ❌
+
+Problem 217:
+  Q: Which of the following options can logically complete the above argument?...
+  Pred: A | Gold: B | ❌
+
+Problem 218:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: D | Gold: D | ✅
+
+Problem 219:
+  Q: Which of the following does not constitute a rebuttal to the above argument?...
+  Pred: A | Gold: A | ✅
+
+Problem 220:
+  Q: Which of the following questions does not constitute a doubt about the reliabili...
+  Pred: A | Gold: B | ❌
+
+Problem 221:
+  Q: Which of the following methods is most helpful to prove the reliability of the a...
+  Pred: C | Gold: A | ❌
+
+Problem 222:
+  Q: If the above is true, which statement is most strongly supported?...
+  Pred: A | Gold: C | ❌
+
+Problem 223:
+  Q: If all of the above are true, which of them strongly supports the following stat...
+  Pred: A | Gold: B | ❌
+
+Problem 224:
+  Q: If the above statement is true, which of the following statements cannot be fals...
+  Pred: A | Gold: A | ✅
+
+Problem 225:
+  Q: If the above statement is true, which statement cannot be true?...
+  Pred: A | Gold: D | ❌
+
+Problem 226:
+  Q: If the following statement is true, in addition to which one can provide a reaso...
+  Pred: B | Gold: C | ❌
+
+Problem 227:
+  Q: The following hypothesis can give the strongest support for the above reasoning?...
+  Pred: A | Gold: B | ❌
+
+Problem 228:
+  Q: Which of the following, if true, can best explain the flow of most of the 100 bi...
+  Pred: A | Gold: C | ❌
+
+Problem 229:
+  Q: If the above statement is true, which statement is best supported?...
+  Pred: A | Gold: A | ✅
+
+Problem 230:
+  Q: Which of the following is the hypothesis that the above argument relies on?...
+  Pred: D | Gold: C | ❌
+
+Problem 231:
+  Q: Which of the following statements about the situation over the past five years i...
+  Pred: C | Gold: A | ❌
+
+Problem 232:
+  Q: Which of the following can most strongly support the above argument?...
+  Pred: A | Gold: A | ✅
+
+Problem 233:
+  Q: Which of the following is the obvious meaning of the above sentence?...
+  Pred: A | Gold: C | ❌
+
+Problem 234:
+  Q: If the above statement is true, which of the following conclusions is most stron...
+  Pred: D | Gold: C | ❌
+
+Problem 235:
+  Q: Which of the following statements gives the most reasonable explanation for the ...
+  Pred: C | Gold: D | ❌
+
+Problem 236:
+  Q: Which of the following most accurately describes the shortcomings of the above a...
+  Pred: A | Gold: A | ✅
+
+Problem 237:
+  Q: Which of the following statements is the hypothesis upon which the superior argu...
+  Pred: A | Gold: B | ❌
+
+Problem 238:
+  Q: Which of the following cannot be derived from the meaning of the title?...
+  Pred: D | Gold: D | ✅
+
+Problem 239:
+  Q: If the following statement is true, which one will weaken the above conclusion m...
+  Pred: A | Gold: B | ❌
+
+Problem 240:
+  Q: Which of the following is true and can raise the most doubts about this official...
+  Pred: A | Gold: D | ❌
+
+Problem 241:
+  Q: If the following statements are true, except for which one can weaken the above ...
+  Pred: A | Gold: A | ✅
+
+Problem 242:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: A | Gold: A | ✅
+
+Problem 243:
+  Q: Which of the following lists are acceptable member choices for these two groups?...
+  Pred: A | Gold: B | ❌
+
+Problem 244:
+  Q: If the members of the printing group are composed of F, H, L, and M, and the mem...
+  Pred: D | Gold: B | ❌
+
+Problem 245:
+  Q: If the printing group has only three members, G, H, and L, and under sufficient ...
+  Pred: A | Gold: D | ❌
+
+Problem 246:
+  Q: If both K and L are members of both groups, and the printing group has exactly t...
+  Pred: A | Gold: D | ❌
+
+Problem 247:
+  Q: How many employees can be a member of printing group and binding group at most?...
+  Pred: B | Gold: C | ❌
+
+Problem 248:
+  Q: Which of the following lists are acceptable arrangements for the second team's p...
+  Pred: A | Gold: D | ❌
+
+Problem 249:
+  Q: If H is in Team 2, which of the listed arrangements is acceptable for Team 1?...
+  Pred: A | Gold: A | ✅
+
+Problem 250:
+  Q: Which of the following is an acceptable arrangement for the first team's perform...
+  Pred: B | Gold: A | ❌
+
+Problem 251:
+  Q: If G is in team 1, which pair of magicians can be in team 1?...
+  Pred: B | Gold: D | ❌
+
+Problem 252:
+  Q: If G is in team 1 and K is in team 2, which of the following magicians must be b...
+  Pred: A | Gold: C | ❌
+
+Problem 253:
+  Q: If the following items are true, can the above opinions be questioned, except?...
+  Pred: D | Gold: A | ❌
+
+Problem 254:
+  Q: Which conclusion is most appropriate to derive from the question stem?...
+  Pred: D | Gold: C | ❌
+
+Problem 255:
+  Q: If the above statement is true, which of the following statements cannot be fals...
+  Pred: C | Gold: B | ❌
+
+Problem 256:
+  Q: Which of the following conclusions can be derived from the above statement?...
+  Pred: A | Gold: A | ✅
+
+Problem 257:
+  Q: Which of the following most accurately points out the fallacy of this statistica...
+  Pred: C | Gold: C | ✅
+
+Problem 258:
+  Q: Which of the following statements is the most appropriate conclusion for the abo...
+  Pred: C | Gold: C | ✅
+
+Problem 259:
+  Q: Which of the following can most logically complete the above discussion?...
+  Pred: A | Gold: A | ✅
+
+Problem 260:
+  Q: If this team does not go to I Peak due to climate reasons, which of the followin...
+  Pred: A | Gold: D | ❌
+
+Problem 261:
+  Q: Which of the following options does not help explain the gap between the statist...
+  Pred: A | Gold: D | ❌
+
+Problem 262:
+  Q: If the findings in the above survey are correct, which of the following conclusi...
+  Pred: A | Gold: B | ❌
+
+Problem 263:
+  Q: If any of the following is true, can you raise the most doubts about this expert...
+  Pred: A | Gold: D | ❌
+
+Problem 264:
+  Q: Which of the following is true will prove that at least one of the premises of t...
+  Pred: A | Gold: C | ❌
+
+Problem 265:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: A | Gold: C | ❌
+
+Problem 266:
+  Q: Which of the following, if true, can give the economist ’s assertion the greates...
+  Pred: C | Gold: B | ❌
+
+Problem 267:
+  Q: The following options all support the point of view in the question, except?...
+  Pred: C | Gold: C | ✅
+
+Problem 268:
+268it [24:30,  2.04s/it]269it [24:33,  2.41s/it]270it [24:36,  2.32s/it]271it [24:38,  2.27s/it]272it [24:40,  2.26s/it]273it [24:42,  2.18s/it]274it [24:44,  2.06s/it]275it [24:46,  2.05s/it]276it [24:48,  2.18s/it]277it [24:50,  1.98s/it]278it [24:52,  1.98s/it]279it [24:54,  1.99s/it]280it [24:56,  2.11s/it]281it [24:58,  2.06s/it]282it [25:00,  1.90s/it]283it [25:02,  2.05s/it]284it [25:05,  2.18s/it]285it [25:08,  2.47s/it]286it [25:11,  2.64s/it]287it [25:14,  2.70s/it]288it [25:15,  2.43s/it]289it [25:17,  2.33s/it]290it [25:20,  2.29s/it]291it [25:22,  2.23s/it]292it [25:24,  2.19s/it]293it [25:26,  2.19s/it]294it [25:28,  2.27s/it]295it [25:30,  2.17s/it]296it [25:33,  2.21s/it]297it [25:35,  2.16s/it]298it [25:38,  2.51s/it]299it [25:40,  2.41s/it]300it [25:43,  2.59s/it]301it [25:46,  2.54s/it]302it [25:48,  2.35s/it]303it [25:50,  2.33s/it]304it [25:52,  2.11s/it]305it [25:54,  2.17s/it]306it [25:56,  2.09s/it]307it [25:58,  2.13s/it]308it [26:00,  2.06s/it]309it [26:02,  1.96s/it]310it [26:04,  2.01s/it]311it [26:06,  2.09s/it]312it [26:08,  2.10s/it]313it [26:10,  2.16s/it]314it [26:12,  1.95s/it]315it [26:14,  1.99s/it]316it [26:17,  2.30s/it]317it [26:19,  2.13s/it]318it [26:20,  1.92s/it]319it [26:22,  2.01s/it]320it [26:25,  2.12s/it]321it [26:27,  2.14s/it]322it [26:30,  2.32s/it]323it [26:31,  2.08s/it]324it [26:33,  1.96s/it]325it [26:35,  2.01s/it]326it [26:37,  2.10s/it]327it [26:39,  2.12s/it]328it [26:41,  2.07s/it]329it [26:43,  2.00s/it]330it [26:45,  1.85s/it]331it [26:47,  1.89s/it]332it [26:49,  1.90s/it]  Q: The assumptions relied upon by the above comments are?...
+  Pred: A | Gold: D | ❌
+
+Problem 269:
+  Q: Which of the following, if true, best supports Li Ming ’s point of view?...
+  Pred: A | Gold: A | ✅
+
+Problem 270:
+  Q: Which of the following options is a proper evaluation of the "me" reasoning?...
+  Pred: B | Gold: B | ✅
+
+Problem 271:
+  Q: Which of the following statements is true and seriously weakens the views in the...
+  Pred: A | Gold: D | ❌
+
+Problem 272:
+  Q: Which of the following options poses the weakest question to the point of view i...
+  Pred: A | Gold: D | ❌
+
+Problem 273:
+  Q: Please determine which of the following options is true?...
+  Pred: A | Gold: C | ❌
+
+Problem 274:
+  Q: Which of the following statements, if true, weakens the above argument the most?...
+  Pred: D | Gold: B | ❌
+
+Problem 275:
+  Q: Which of the following, if true, can weaken the above argument to the greatest e...
+  Pred: A | Gold: B | ❌
+
+Problem 276:
+  Q: Which of the following does not question the reliability of statistical inferenc...
+  Pred: A | Gold: D | ❌
+
+Problem 277:
+  Q: Which of the following options most strongly supports the argument in the questi...
+  Pred: A | Gold: A | ✅
+
+Problem 278:
+  Q: Which of the following, if true, can explain this seemingly contradictory attitu...
+  Pred: A | Gold: A | ✅
+
+Problem 279:
+  Q: Which of the following questions is most relevant for evaluating the above argum...
+  Pred: A | Gold: B | ❌
+
+Problem 280:
+  Q: The reasoning in which of the following is most similar to the one above?...
+  Pred: A | Gold: C | ❌
+
+Problem 281:
+  Q: Which of the following can most logically complete the above discussion?...
+  Pred: C | Gold: A | ❌
+
+Problem 282:
+  Q: Please logically predict the result of the match based on the question?...
+  Pred: A | Gold: D | ❌
+
+Problem 283:
+  Q: The order of the five islands from north to south can be?...
+  Pred: A | Gold: C | ❌
+
+Problem 284:
+  Q: If G is adjacent to I and to the north of I, which of the following statements m...
+  Pred: C | Gold: A | ❌
+
+Problem 285:
+  Q: If I is at a position north of G, which of the following states that positioning...
+  Pred: C | Gold: B | ❌
+
+Problem 286:
+  Q: If it is found that G is the northernmost island, how many possible arrangements...
+  Pred: C | Gold: C | ✅
+
+Problem 287:
+  Q: If G and E are adjacent, which of the following statements must be true?...
+  Pred: A | Gold: D | ❌
+
+Problem 288:
+  Q: If the information in the stem is true, which of the following conclusions will ...
+  Pred: A | Gold: B | ❌
+
+Problem 289:
+  Q: Which of the following, if true, can explain the above contradiction?...
+  Pred: A | Gold: B | ❌
+
+Problem 290:
+  Q: Which of the following does not weaken, but supports the argument in the questio...
+  Pred: A | Gold: D | ❌
+
+Problem 291:
+  Q: Which of the following is the hypothesis discussed by the economist?...
+  Pred: D | Gold: A | ❌
+
+Problem 292:
+  Q: Which of the following options does not support the argument in the question ste...
+  Pred: C | Gold: C | ✅
+
+Problem 293:
+  Q: If the following items are true, you can question the above points, except?...
+  Pred: A | Gold: A | ✅
+
+Problem 294:
+  Q: If the premises in the question stem are true, you can infer?...
+  Pred: A | Gold: B | ❌
+
+Problem 295:
+  Q: If the above statement is true, which of the following must be true?...
+  Pred: A | Gold: B | ❌
+
+Problem 296:
+  Q: Logically, which of the following is an appropriate evaluation of the argument i...
+  Pred: B | Gold: C | ❌
+
+Problem 297:
+  Q: Which of the following is most consistent with the principles discussed above?...
+  Pred: A | Gold: D | ❌
+
+Problem 298:
+  Q: Which of the following may list the final distribution of these 7 employees?...
+  Pred: A | Gold: D | ❌
+
+Problem 299:
+  Q: Which of the following lists is a complete and accurate list that cannot be assi...
+  Pred: D | Gold: C | ❌
+
+Problem 300:
+  Q: If which of the following statements is true, can the distribution of 7 employee...
+  Pred: A | Gold: C | ❌
+
+Problem 301:
+  Q: Which of the following pairs of employees is unlikely to be assigned to the sale...
+  Pred: A | Gold: B | ❌
+
+Problem 302:
+  Q: If X and F are assigned to the same department, which of the following statement...
+  Pred: A | Gold: B | ❌
+
+Problem 303:
+  Q: If we add" life does not mean emptiness "to the above argument, what other concl...
+  Pred: D | Gold: D | ✅
+
+Problem 304:
+  Q: In answering the reporter's question, the professor used the strategy expressed ...
+  Pred: A | Gold: B | ❌
+
+Problem 305:
+  Q: Which of the following statements is the hypothesis on which this parent ’s infe...
+  Pred: D | Gold: D | ✅
+
+Problem 306:
+  Q: Which of the following statements, if true, can reasonably explain the seemingly...
+  Pred: A | Gold: C | ❌
+
+Problem 307:
+  Q: Which of the following statements, if true, can best explain the seemingly contr...
+  Pred: D | Gold: C | ❌
+
+Problem 308:
+  Q: Which of the following statements is the hypothesis on which this critic ’s conc...
+  Pred: B | Gold: A | ❌
+
+Problem 309:
+  Q: Which of the following demonstration techniques is used in the above argument?...
+  Pred: B | Gold: D | ❌
+
+Problem 310:
+  Q: If the following statements are true, they can weaken Rachel. Carson's conclusio...
+  Pred: A | Gold: C | ❌
+
+Problem 311:
+  Q: Which of the following statements, if true, can weaken the conclusion of the abo...
+  Pred: A | Gold: D | ❌
+
+Problem 312:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: A | Gold: C | ❌
+
+Problem 313:
+  Q: Which of the following is the same as the method of argument of the Japanese Sup...
+  Pred: A | Gold: B | ❌
+
+Problem 314:
+  Q: Which of the following conclusions can be derived from the above statement?...
+  Pred: C | Gold: C | ✅
+
+Problem 315:
+  Q: Which of the following statements is most suitable as a conclusion derived from ...
+  Pred: A | Gold: B | ❌
+
+Problem 316:
+  Q: The reasoning in the above argument is flawed because the argument....
+  Pred: A | Gold: D | ❌
+
+Problem 317:
+  Q: If the following options are true, they can support the expert's point of view, ...
+  Pred: C | Gold: B | ❌
+
+Problem 318:
+  Q: Which of the following will be the strongest support for the above conclusion if...
+  Pred: D | Gold: D | ✅
+
+Problem 319:
+  Q: Which of the following statements best describes the flaws of the above argument...
+  Pred: D | Gold: B | ❌
+
+Problem 320:
+  Q: If the above statement is true, which of the following statements must be true?...
+  Pred: A | Gold: B | ❌
+
+Problem 321:
+  Q: Which of the following statements, if true, can weaken the above argument most e...
+  Pred: C | Gold: A | ❌
+
+Problem 322:
+  Q: Which of the following conclusions can be derived from the above statement?...
+  Pred: D | Gold: C | ❌
+
+Problem 323:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: B | Gold: D | ❌
+
+Problem 324:
+  Q: Which of the following expressions does not agree with the expression above?...
+  Pred: A | Gold: D | ❌
+
+Problem 325:
+  Q: If the following items are true, all inconsistencies in the above may be reasona...
+  Pred: A | Gold: D | ❌
+
+Problem 326:
+  Q: If the following items are true, they will enhance the confidence of this report...
+  Pred: A | Gold: B | ❌
+
+Problem 327:
+  Q: Which of the following, if true, can weaken the above argument most effectively?...
+  Pred: A | Gold: A | ✅
+
+Problem 328:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: D | Gold: A | ❌
+
+Problem 329:
+  Q: Which of the following statements, if true, can weaken the argument most strongl...
+  Pred: A | Gold: D | ❌
+
+Problem 330:
+  Q: Which of the following conclusions can be derived from the above discussion?...
+  Pred: A | Gold: B | ❌
+
+Problem 331:
+  Q: This shows which of the following can most logically complete the above discussi...
+  Pred: B | Gold: D | ❌
+
+Problem 332:
+  Q: If Xiao Wang told Xiao Zhao all the truth, which of the following must be true?...
+  Pred: A | Gold: C | ❌
+
+Problem 333:
+333it [26:51,  2.00s/it]334it [26:52,  1.87s/it]335it [26:55,  1.96s/it]336it [26:57,  1.99s/it]337it [26:58,  1.94s/it]338it [27:00,  1.95s/it]339it [27:02,  1.88s/it]340it [27:05,  2.05s/it]341it [27:06,  1.95s/it]342it [27:08,  1.86s/it]343it [27:11,  2.07s/it]344it [27:12,  2.01s/it]345it [27:15,  2.16s/it]346it [27:17,  2.18s/it]347it [27:19,  2.15s/it]348it [27:21,  2.14s/it]349it [27:23,  2.04s/it]350it [27:26,  2.39s/it]351it [27:29,  2.48s/it]352it [27:31,  2.37s/it]353it [27:33,  2.28s/it]354it [27:35,  2.21s/it]355it [27:37,  2.19s/it]356it [27:39,  1.93s/it]357it [27:40,  1.83s/it]358it [27:43,  1.92s/it]359it [27:45,  1.95s/it]360it [27:46,  1.95s/it]361it [27:49,  2.04s/it]362it [27:51,  2.10s/it]363it [27:53,  2.07s/it]364it [27:55,  2.04s/it]365it [27:57,  2.10s/it]366it [27:59,  2.11s/it]367it [28:01,  2.07s/it]368it [28:03,  1.95s/it]369it [28:05,  2.00s/it]370it [28:07,  2.09s/it]371it [28:09,  2.05s/it]372it [28:11,  2.09s/it]373it [28:13,  1.92s/it]374it [28:16,  2.11s/it]375it [28:18,  2.11s/it]376it [28:20,  2.27s/it]377it [28:25,  2.87s/it]378it [28:26,  2.54s/it]379it [28:28,  2.33s/it]380it [28:30,  2.11s/it]381it [28:32,  2.05s/it]382it [28:34,  2.13s/it]383it [28:36,  1.99s/it]384it [28:37,  1.92s/it]385it [28:40,  2.14s/it]386it [28:42,  2.01s/it]387it [28:44,  2.07s/it]388it [28:46,  1.95s/it]389it [28:48,  1.97s/it]390it [28:50,  2.01s/it]391it [28:53,  2.25s/it]392it [28:55,  2.20s/it]393it [28:59,  2.88s/it]394it [29:02,  2.83s/it]395it [29:04,  2.62s/it]396it [29:06,  2.32s/it]397it [29:08,  2.38s/it]  Q: If the above statement is true, then the following must be true, except....
+  Pred: B | Gold: D | ❌
+
+Problem 334:
+  Q: Which of the following statements is an implicit assumption in police remarks?...
+  Pred: A | Gold: C | ❌
+
+Problem 335:
+  Q: Which of the following statements, if true, can weaken the above conclusion most...
+  Pred: C | Gold: B | ❌
+
+Problem 336:
+  Q: Which of the following statements best describes the flaws of the above argument...
+  Pred: C | Gold: C | ✅
+
+Problem 337:
+  Q: Which of the following statements, if correct, can weaken the above conclusion m...
+  Pred: A | Gold: B | ❌
+
+Problem 338:
+  Q: Which of the following, if true, can best strengthen Zhang Tao ’s objections?...
+  Pred: A | Gold: C | ❌
+
+Problem 339:
+  Q: Which of the following statements, if true, paid the strongest criticism of the ...
+  Pred: A | Gold: D | ❌
+
+Problem 340:
+  Q: The following items can be derived from Loren Barra ’s exposition, except?...
+  Pred: A | Gold: C | ❌
+
+Problem 341:
+  Q: Which of the following statements, if true, can weaken the above argument most e...
+  Pred: B | Gold: B | ✅
+
+Problem 342:
+  Q: The above argument is wrong because it?...
+  Pred: B | Gold: B | ✅
+
+Problem 343:
+  Q: Which of the following may list eligible cultivation arrangements?...
+  Pred: A | Gold: A | ✅
+
+Problem 344:
+  Q: If s is planted in an even-numbered vegetable pool, which of the following state...
+  Pred: A | Gold: C | ❌
+
+Problem 345:
+  Q: If S and Q are planted in odd-numbered vegetable ponds, which of the following s...
+  Pred: A | Gold: B | ❌
+
+Problem 346:
+  Q: Which of the following statements cannot be true?...
+  Pred: A | Gold: D | ❌
+
+Problem 347:
+  Q: If the H species is in No.2 Caichizi, which of the following statements must be ...
+  Pred: C | Gold: A | ❌
+
+Problem 348:
+  Q: Which of the following statements may be true?...
+  Pred: A | Gold: D | ❌
+
+Problem 349:
+  Q: If there is an I in the subcommittee where M serves, which of the following stat...
+  Pred: C | Gold: C | ✅
+
+Problem 350:
+  Q: If F and M are not members of the same subcommittee, which of the following stat...
+  Pred: D | Gold: C | ❌
+
+Problem 351:
+  Q: Which of the following statements must be true?...
+  Pred: A | Gold: A | ✅
+
+Problem 352:
+  Q: Which of the following statements must be true?...
+  Pred: D | Gold: D | ✅
+
+Problem 353:
+  Q: If the above statement is true, which of the following statements must be false?...
+  Pred: A | Gold: C | ❌
+
+Problem 354:
+  Q: In order for the above conclusion to be true, which of the following statements ...
+  Pred: A | Gold: D | ❌
+
+Problem 355:
+  Q: If any of the following statements are true, can the above argument be weakened ...
+  Pred: B | Gold: B | ✅
+
+Problem 356:
+  Q: If this saying is true, which of the following statements must be false?...
+  Pred: A | Gold: B | ❌
+
+Problem 357:
+  Q: If any of the following statements are true, can the above argument be weakened ...
+  Pred: C | Gold: C | ✅
+
+Problem 358:
+  Q: A lot of meaningless words can cause people to respond positively or negatively....
+  Pred: A | Gold: D | ❌
+
+Problem 359:
+  Q: The following statements, except which one, can explain this American approach?...
+  Pred: A | Gold: A | ✅
+
+Problem 360:
+  Q: If any of the following statements is true, can the biggest question be raised?...
+  Pred: D | Gold: B | ❌
+
+Problem 361:
+  Q: Which argument is most similar to the reasoning above?...
+  Pred: A | Gold: A | ✅
+
+Problem 362:
+  Q: Which of the following statements is the most accurate summary of the features o...
+  Pred: C | Gold: D | ❌
+
+Problem 363:
+  Q: If which of the following statements is true, can the Czech official's assertion...
+  Pred: A | Gold: D | ❌
+
+Problem 364:
+  Q: Which of the following statements has the most serious inconsistency with Chen G...
+  Pred: A | Gold: B | ❌
+
+Problem 365:
+  Q: If any of the following statements is true, is it most advantageous to strengthe...
+  Pred: A | Gold: A | ✅
+
+Problem 366:
+  Q: If any of the following statements, can the above conclusion be reached logicall...
+  Pred: D | Gold: A | ❌
+
+Problem 367:
+  Q: If the following statement is true, in addition to which statement, can you ques...
+  Pred: D | Gold: D | ✅
+
+Problem 368:
+  Q: Which of the following statements does not support the above argument?...
+  Pred: A | Gold: C | ❌
+
+Problem 369:
+  Q: If any of the following statements are true, can the above argument be strengthe...
+  Pred: A | Gold: B | ❌
+
+Problem 370:
+  Q: Which of the following statements best matches the economist ’s description of t...
+  Pred: A | Gold: A | ✅
+
+Problem 371:
+  Q: Which of the following statements is the logical conclusion of the economist ’s ...
+  Pred: A | Gold: D | ❌
+
+Problem 372:
+  Q: If which of the following statements is true, which strongly supports the expert...
+  Pred: A | Gold: A | ✅
+
+Problem 373:
+  Q: Adding the following statement, this official can come to the conclusion that "C...
+  Pred: A | Gold: B | ❌
+
+Problem 374:
+  Q: Which of the following statements contains the reasoning errors most similar to ...
+  Pred: A | Gold: A | ✅
+
+Problem 375:
+  Q: Which of the following statements is the assumption that led to the above conclu...
+  Pred: A | Gold: B | ❌
+
+Problem 376:
+  Q: Based on the above statement, please determine which of the following statements...
+  Pred: A | Gold: A | ✅
+
+Problem 377:
+  Q: Which of the following statements most accurately indicates the error in the abo...
+  Pred: A | Gold: A | ✅
+
+Problem 378:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: C | Gold: C | ✅
+
+Problem 379:
+  Q: If the above statement is true, which of the following statements must be false?...
+  Pred: D | Gold: B | ❌
+
+Problem 380:
+  Q: If any of the following statements is true, can the above argument be weakened m...
+  Pred: C | Gold: C | ✅
+
+Problem 381:
+  Q: The answer to which of the following questions would hardly question the conclus...
+  Pred: D | Gold: D | ✅
+
+Problem 382:
+  Q: Coupled with which of the following statements, it can be logically introduced t...
+  Pred: B | Gold: C | ❌
+
+Problem 383:
+  Q: Which of the following statements is assumed by this sociologist ’s assertion?...
+  Pred: C | Gold: C | ✅
+
+Problem 384:
+  Q: The answer to which of the following questions is most helpful in evaluating the...
+  Pred: A | Gold: A | ✅
+
+Problem 385:
+  Q: The following statements, except which one, can support the scientist's point of...
+  Pred: A | Gold: D | ❌
+
+Problem 386:
+  Q: If the above statement is true, which of the following statements must be true?...
+  Pred: C | Gold: D | ❌
+
+Problem 387:
+  Q: Which of the following statements is most suitable as the conclusion of the abov...
+  Pred: B | Gold: B | ✅
+
+Problem 388:
+  Q: The differences between Zhang Qiang and Li Ming are?...
+  Pred: C | Gold: C | ✅
+
+Problem 389:
+  Q: If the above statement is true, which of the following statements must be false?...
+  Pred: B | Gold: B | ✅
+
+Problem 390:
+  Q: Which of the following inferences is most similar to the one used above?...
+  Pred: A | Gold: C | ❌
+
+Problem 391:
+  Q: Which of the following ways did Zhu Hong's argument take place?...
+  Pred: C | Gold: D | ❌
+
+Problem 392:
+  Q: If which of the following statements is true, the most serious shaken Lin Na's r...
+  Pred: A | Gold: C | ❌
+
+Problem 393:
+  Q: Which of the following items (from left to right) may be the athlete's ranking f...
+  Pred: A | Gold: A | ✅
+
+Problem 394:
+  Q: Which of the following athletes listed in the list of clothing can not be red?...
+  Pred: A | Gold: B | ❌
+
+Problem 395:
+  Q: If X reaches the finish point third, the following athlete's costume must be gre...
+  Pred: B | Gold: C | ❌
+
+Problem 396:
+  Q: If the clothing of three athletes happens to be green, which of the following at...
+  Pred: A | Gold: A | ✅
+
+Problem 397:
+  Q: It is impossible for the athletes listed in which of the following to reach the ...
+  Pred: C | Gold: D | ❌
+
+Problem 398:
+  Q: Which of the following may list the complete and accurate arms allocation plan f...
+398it [29:11,  2.51s/it]399it [29:13,  2.46s/it]400it [29:16,  2.52s/it]401it [29:18,  2.50s/it]402it [29:21,  2.65s/it]403it [29:24,  2.50s/it]404it [29:25,  2.26s/it]405it [29:28,  2.33s/it]406it [29:29,  2.14s/it]407it [29:32,  2.23s/it]408it [29:34,  2.14s/it]409it [29:36,  2.07s/it]410it [29:38,  2.27s/it]411it [29:40,  2.14s/it]412it [29:42,  2.03s/it]413it [29:44,  1.97s/it]414it [29:46,  1.90s/it]415it [29:48,  1.92s/it]416it [29:50,  1.97s/it]417it [29:51,  1.82s/it]418it [29:54,  2.03s/it]419it [29:56,  2.07s/it]420it [29:58,  2.06s/it]421it [30:00,  2.00s/it]422it [30:02,  1.94s/it]423it [30:03,  1.93s/it]424it [30:05,  1.89s/it]425it [30:07,  1.88s/it]426it [30:11,  2.47s/it]427it [30:14,  2.52s/it]428it [30:16,  2.37s/it]429it [30:18,  2.30s/it]430it [30:20,  2.17s/it]431it [30:22,  2.10s/it]432it [30:24,  2.07s/it]433it [30:26,  2.21s/it]434it [30:28,  2.17s/it]435it [30:30,  2.19s/it]436it [30:32,  2.10s/it]437it [30:34,  2.00s/it]438it [30:37,  2.26s/it]439it [30:40,  2.50s/it]440it [30:42,  2.40s/it]441it [30:44,  2.14s/it]442it [30:46,  2.05s/it]443it [30:49,  2.36s/it]444it [30:51,  2.48s/it]445it [30:54,  2.37s/it]446it [30:56,  2.48s/it]447it [30:58,  2.32s/it]448it [31:01,  2.43s/it]449it [31:05,  2.84s/it]450it [33:14, 40.82s/it]451it [33:17, 29.47s/it]452it [33:20, 21.37s/it]453it [33:22, 15.70s/it]454it [33:24, 11.49s/it]455it [33:26,  8.60s/it]456it [33:28,  6.68s/it]457it [33:30,  5.24s/it]458it [33:32,  4.36s/it]459it [33:33,  3.51s/it]460it [33:35,  2.89s/it]461it [33:38,  3.05s/it]462it [33:40,  2.64s/it]  Pred: B | Gold: D | ❌
+
+Problem 399:
+  Q: Which of the following lists is a list of all recruits who are unlikely to be en...
+  Pred: D | Gold: D | ✅
+
+Problem 400:
+  Q: If which of the following statements is true, can you fully determine the arms o...
+  Pred: D | Gold: C | ❌
+
+Problem 401:
+  Q: Which of the following recruits cannot be assigned as transport soldiers togethe...
+  Pred: A | Gold: B | ❌
+
+Problem 402:
+  Q: If X is not assigned as an engineer, which of the following statements may be tr...
+  Pred: C | Gold: C | ✅
+
+Problem 403:
+  Q: This commenter ’s reasoning is flawed because he....
+  Pred: A | Gold: D | ❌
+
+Problem 404:
+  Q: Which of the following statements best describes the flaws in the above argument...
+  Pred: D | Gold: B | ❌
+
+Problem 405:
+  Q: If the above statement is true, which of the following statements must be true?...
+  Pred: C | Gold: C | ✅
+
+Problem 406:
+  Q: If which of the following statements is true, can the strongest support for the ...
+  Pred: C | Gold: A | ❌
+
+Problem 407:
+  Q: Which of the following statements is the assumption that holds the above conclus...
+  Pred: A | Gold: A | ✅
+
+Problem 408:
+  Q: If which of the following statements is true, is it most helpful to explain the ...
+  Pred: C | Gold: B | ❌
+
+Problem 409:
+  Q: If which of the following statements is true, which strongly supports the above ...
+  Pred: A | Gold: D | ❌
+
+Problem 410:
+  Q: Which of the following inferences is most similar to the above inferences?...
+  Pred: A | Gold: B | ❌
+
+Problem 411:
+  Q: If which of the following statements is true, will the above conclusion be weake...
+  Pred: B | Gold: C | ❌
+
+Problem 412:
+  Q: In all of the following statements, except for which one, refute the assumptions...
+  Pred: A | Gold: A | ✅
+
+Problem 413:
+  Q: Which of the following is the hypothesis required by this ethicist ’s argument?...
+  Pred: C | Gold: C | ✅
+
+Problem 414:
+  Q: Which of the following statements most accurately expresses the meaning of Perri...
+  Pred: A | Gold: B | ❌
+
+Problem 415:
+  Q: If any of the following statements is true, can the above medical scientist's co...
+  Pred: A | Gold: D | ❌
+
+Problem 416:
+  Q: If any of the following statements are true, is it most helpful to eliminate the...
+  Pred: A | Gold: C | ❌
+
+Problem 417:
+  Q: Which of the following statements is the assumption upon which the above argumen...
+  Pred: C | Gold: B | ❌
+
+Problem 418:
+  Q: If the following statement is true, in addition to which one can weaken the abov...
+  Pred: A | Gold: C | ❌
+
+Problem 419:
+  Q: If the following statement is used as a hypothesis, the conclusion of the above ...
+  Pred: A | Gold: C | ❌
+
+Problem 420:
+  Q: If any of the following statements are true, can we best explain the seemingly c...
+  Pred: A | Gold: D | ❌
+
+Problem 421:
+  Q: If which of the following statements is true, the above argument is weakened mos...
+  Pred: D | Gold: B | ❌
+
+Problem 422:
+  Q: If the above statement is true, which of the following statements must be true?...
+  Pred: A | Gold: A | ✅
+
+Problem 423:
+  Q: Which of the following ways of reasoning is most similar to the above argument?...
+  Pred: A | Gold: D | ❌
+
+Problem 424:
+  Q: Which of the following assertions can support the opinions of these experts?...
+  Pred: A | Gold: A | ✅
+
+Problem 425:
+  Q: Which of the following statements best describes the flaws in Zhang Hua ’s infer...
+  Pred: C | Gold: D | ❌
+
+Problem 426:
+  Q: If which of the following statements is true, it weakens the speculation above?...
+  Pred: A | Gold: C | ❌
+
+Problem 427:
+  Q: If the above statement is true, which of the following statements must be true?...
+  Pred: A | Gold: D | ❌
+
+Problem 428:
+  Q: Which of the following statements accurately summarizes the most serious flaw of...
+  Pred: C | Gold: D | ❌
+
+Problem 429:
+  Q: Which of the following statements is the hypothesis on which student representat...
+  Pred: A | Gold: C | ❌
+
+Problem 430:
+  Q: Which of the following statements best fits the principles expressed above?...
+  Pred: A | Gold: A | ✅
+
+Problem 431:
+  Q: If any of the following statements is true, will it weaken the author's interpre...
+  Pred: A | Gold: D | ❌
+
+Problem 432:
+  Q: If the following statement is true, which one best explains the above anomalies?...
+  Pred: A | Gold: C | ❌
+
+Problem 433:
+  Q: Which of the following statements is the assumption required for the above concl...
+  Pred: A | Gold: C | ❌
+
+Problem 434:
+  Q: Which of the following arguments is most similar to the above argument?...
+  Pred: D | Gold: C | ❌
+
+Problem 435:
+  Q: If which of the following statements is true, provides the best explanation for ...
+  Pred: A | Gold: A | ✅
+
+Problem 436:
+  Q: If any of the following statements are true, can the conclusion of the above arg...
+  Pred: D | Gold: C | ❌
+
+Problem 437:
+  Q: Which of the following statements best illustrates the shortcomings of the above...
+  Pred: A | Gold: B | ❌
+
+Problem 438:
+  Q: If any of the following statements is true, can the above argument be weakened m...
+  Pred: A | Gold: A | ✅
+
+Problem 439:
+  Q: If any of the following statements are true, will it be most helpful to resolve ...
+  Pred: A | Gold: B | ❌
+
+Problem 440:
+  Q: Which of the following reasoning has the same form as the above reasoning?...
+  Pred: A | Gold: A | ✅
+
+Problem 441:
+  Q: Which of the following statements most accurately expresses the underlying princ...
+  Pred: C | Gold: B | ❌
+
+Problem 442:
+  Q: If which of the following statements is true, gives the best explanation for the...
+  Pred: A | Gold: D | ❌
+
+Problem 443:
+  Q: Which of the following lists the possible exhibition order?...
+  Pred: A | Gold: D | ❌
+
+Problem 444:
+  Q: If the age of Y is the second earliest, which of the following statements might ...
+  Pred: A | Gold: A | ✅
+
+Problem 445:
+  Q: Which of the following cannot be the earliest porcelain?...
+  Pred: A | Gold: C | ❌
+
+Problem 446:
+  Q: If the age of X is earlier than S, which of the following statements might be tr...
+  Pred: A | Gold: D | ❌
+
+Problem 447:
+  Q: If the age of M is earlier than Q but later than K, which of the following state...
+  Pred: D | Gold: C | ❌
+
+Problem 448:
+  Q: Which of the following lists the possible combinations of accompaniment and sing...
+  Pred: A | Gold: A | ✅
+
+Problem 449:
+  Q: If X is an accompaniment to L and H, which of the following statements must be t...
+  Pred: D | Gold: A | ❌
+
+Problem 450:
+  Q: If W is the accompaniment of F and M, which pair of singers can X accompany?...
+  Pred: A | Gold: B | ❌
+
+Problem 451:
+  Q: W cannot accompany any of the following singers?...
+  Pred: A | Gold: C | ❌
+
+Problem 452:
+  Q: It is impossible for Y to accompany the following pair of singers?...
+  Pred: A | Gold: A | ✅
+
+Problem 453:
+  Q: Which of the following questions is most important to assess the rationality of ...
+  Pred: B | Gold: D | ❌
+
+Problem 454:
+  Q: If the above statement is true, which of the following statements cannot be supp...
+  Pred: D | Gold: C | ❌
+
+Problem 455:
+  Q: Which of the following statements is not a hypothesis for the "flying rhino" act...
+  Pred: C | Gold: D | ❌
+
+Problem 456:
+  Q: If the following statement is true, which one gives the best explanation for the...
+  Pred: C | Gold: A | ❌
+
+Problem 457:
+  Q: Which of the following statements is true and provides the best explanation for ...
+  Pred: C | Gold: C | ✅
+
+Problem 458:
+  Q: If the following statement is true, which one is the strongest proof of the just...
+  Pred: A | Gold: C | ❌
+
+Problem 459:
+  Q: Which of the following points out the logical question in the lawyer ’s answer?...
+  Pred: A | Gold: C | ❌
+
+Problem 460:
+  Q: Which of the following statements most accurately points out the flaws in the ab...
+  Pred: B | Gold: D | ❌
+
+Problem 461:
+  Q: If the above statement is true, which of the following statements about the stud...
+  Pred: A | Gold: D | ❌
+
+Problem 462:
+  Q: If the following statement is true, which one is most appropriate to challenge t...
+  Pred: A | Gold: B | ❌
+
+Problem 463:
+463it [33:43,  2.82s/it]464it [33:45,  2.64s/it]465it [33:47,  2.32s/it]466it [33:49,  2.18s/it]467it [33:51,  2.26s/it]468it [33:53,  2.15s/it]469it [33:56,  2.25s/it]470it [33:58,  2.22s/it]471it [34:00,  2.33s/it]472it [34:03,  2.43s/it]473it [34:06,  2.48s/it]474it [34:08,  2.39s/it]475it [34:10,  2.23s/it]476it [34:11,  2.06s/it]477it [34:13,  2.00s/it]478it [34:16,  2.10s/it]479it [34:17,  1.91s/it]480it [34:20,  2.10s/it]481it [34:22,  2.16s/it]482it [34:24,  2.12s/it]483it [34:26,  2.08s/it]484it [34:28,  2.10s/it]485it [34:30,  2.13s/it]486it [34:32,  2.06s/it]487it [34:34,  2.05s/it]488it [34:36,  2.06s/it]489it [34:38,  1.88s/it]490it [34:40,  1.95s/it]491it [34:41,  1.84s/it]492it [34:44,  1.95s/it]493it [34:46,  2.13s/it]494it [34:49,  2.32s/it]495it [34:52,  2.44s/it]496it [34:56,  3.00s/it]497it [34:59,  2.87s/it]498it [35:01,  2.71s/it]499it [35:03,  2.52s/it]500it [35:06,  2.56s/it]500it [35:06,  4.21s/it]
+  Q: If the following statement is true, all but one of them question the netizen's j...
+  Pred: A | Gold: D | ❌
+
+Problem 464:
+  Q: If the above statement is true, which of the following statements must be true?...
+  Pred: A | Gold: C | ❌
+
+Problem 465:
+  Q: If the sand monk's words are true, which of the following statements must be tru...
+  Pred: A | Gold: D | ❌
+
+Problem 466:
+  Q: The reasoning in the above reasoning is flawed because of the argument?...
+  Pred: B | Gold: B | ✅
+
+Problem 467:
+  Q: If the following statement is true, all but one of the items can weaken the conc...
+  Pred: C | Gold: B | ❌
+
+Problem 468:
+  Q: Which of the following ways of reasoning is most similar to the reasoning of the...
+  Pred: A | Gold: C | ❌
+
+Problem 469:
+  Q: If the above statement is true, which of the following must be true?...
+  Pred: A | Gold: B | ❌
+
+Problem 470:
+  Q: If the following statement is true, which one would most strongly weaken the abo...
+  Pred: A | Gold: D | ❌
+
+Problem 471:
+  Q: Which of the following statements is true, which most seriously shakes the tradi...
+  Pred: A | Gold: D | ❌
+
+Problem 472:
+  Q: The defect of which of the following arguments is most similar to the above argu...
+  Pred: A | Gold: B | ❌
+
+Problem 473:
+  Q: If any of the following statements is true, will it most support the hypothesis ...
+  Pred: A | Gold: C | ❌
+
+Problem 474:
+  Q: Which of the following statements is the hypothesis that the above argument reli...
+  Pred: D | Gold: C | ❌
+
+Problem 475:
+  Q: Which of the following statements most preparedly points out the shortcomings of...
+  Pred: A | Gold: C | ❌
+
+Problem 476:
+  Q: Which of the following best describes the techniques used in Paine ’s argument....
+  Pred: D | Gold: A | ❌
+
+Problem 477:
+  Q: Which of the following statements can provide the best support for the above con...
+  Pred: A | Gold: A | ✅
+
+Problem 478:
+  Q: The answer to which of the following questions is least relevant to assess the a...
+  Pred: A | Gold: B | ❌
+
+Problem 479:
+  Q: Which of the following statements is consistent with the above two documents?...
+  Pred: A | Gold: D | ❌
+
+Problem 480:
+  Q: If any of the following statements are true, can we best explain the seemingly c...
+  Pred: A | Gold: D | ❌
+
+Problem 481:
+  Q: Which of the following statements accurately points out the shortcomings of the ...
+  Pred: D | Gold: A | ❌
+
+Problem 482:
+  Q: If any of the following statements is true, can it best explain why the German g...
+  Pred: A | Gold: A | ✅
+
+Problem 483:
+  Q: If the following statements are true, all but one can weaken Aristotle ’s interp...
+  Pred: A | Gold: D | ❌
+
+Problem 484:
+  Q: If the following statement is true, which one most powerfully weakened the exper...
+  Pred: D | Gold: C | ❌
+
+Problem 485:
+  Q: If the following statement is true, in addition to which one can weaken the abov...
+  Pred: A | Gold: B | ❌
+
+Problem 486:
+  Q: Which of the following is necessary to evaluate the dumping behavior mentioned a...
+  Pred: A | Gold: A | ✅
+
+Problem 487:
+  Q: Which of the following principles is most helpful to show the rationality of the...
+  Pred: D | Gold: D | ✅
+
+Problem 488:
+  Q: If the above statement is true, which hypothesis is best supported?...
+  Pred: D | Gold: A | ❌
+
+Problem 489:
+  Q: Which of the following statements is the hypothesis on which Lu Bian ’s argument...
+  Pred: A | Gold: D | ❌
+
+Problem 490:
+  Q: How many chefs can meet the above conditions?...
+  Pred: B | Gold: D | ❌
+
+Problem 491:
+  Q: Which of the following statements most pointed out the shortcomings of the above...
+  Pred: D | Gold: A | ❌
+
+Problem 492:
+  Q: If the above statement is true, which of the following statements is not necessa...
+  Pred: A | Gold: C | ❌
+
+Problem 493:
+  Q: Which of the following can be a complete and accurate arrangement of the duty da...
+  Pred: A | Gold: B | ❌
+
+Problem 494:
+  Q: Which of the following must be true?...
+  Pred: A | Gold: C | ❌
+
+Problem 495:
+  Q: If P is on duty in the second day, which of the following can be true?...
+  Pred: A | Gold: D | ❌
+
+Problem 496:
+  Q: If H is on duty the same day before S, which of the following must be true?...
+  Pred: A | Gold: A | ✅
+
+Problem 497:
+  Q: The following lists the order of serving from the first to the seventh, which on...
+  Pred: C | Gold: A | ❌
+
+Problem 498:
+  Q: If the fourth goes to X, which of the following statements must be true?...
+  Pred: C | Gold: C | ✅
+
+Problem 499:
+  Q: If the fourth is K, which of the following statements may be true?...
+  Pred: D | Gold: B | ❌
+
+Problem 500:
+  Q: Which of the following may be true?...
+  Pred: C | Gold: D | ❌
+
+Final Accuracy: 120/500 (24.00%)
+Time elapsed: 2106.20s
+Saved to qwen_results/qwen0.5b_logicqa_cot_results.json

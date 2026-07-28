@@ -1,0 +1,17 @@
+Given a question, a rewritten rationale, and the successful source trace:
+
+(1) Does the rationale support the stated final answer? Reply YES or NO.
+(2) Does the rationale add unsupported claims not present in the source trace? Reply YES or NO.
+
+Return exactly:
+SUPPORT: <YES/NO>
+UNSUPPORTED: <YES/NO>
+
+Question:
+{question_block}
+
+Rewritten rationale:
+{rewritten_rationale}
+
+Source trace:
+{astar_trace}

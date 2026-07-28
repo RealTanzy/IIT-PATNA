@@ -1,0 +1,1506 @@
+nohup: ignoring input
+Running CoT on HotpotQA with model: qwen2.5:0.5b
+0it [00:00, ?it/s]1it [01:21, 81.84s/it]2it [01:24, 35.28s/it]3it [02:44, 55.59s/it]4it [02:47, 34.74s/it]5it [02:49, 23.19s/it]6it [02:51, 15.96s/it]7it [02:56, 12.24s/it]8it [02:59,  9.38s/it]9it [03:02,  7.30s/it]10it [03:05,  6.13s/it]11it [03:09,  5.32s/it]12it [03:12,  4.65s/it]13it [03:16,  4.36s/it]14it [03:19,  4.04s/it]15it [03:21,  3.47s/it]16it [03:24,  3.25s/it]17it [03:28,  3.43s/it]18it [03:31,  3.34s/it]19it [03:34,  3.39s/it]20it [03:39,  3.68s/it]21it [03:42,  3.53s/it]22it [03:46,  3.76s/it]23it [03:51,  4.09s/it]24it [03:54,  3.64s/it]25it [03:56,  3.32s/it]26it [04:00,  3.46s/it]27it [04:03,  3.28s/it]28it [04:05,  3.03s/it]29it [04:07,  2.78s/it]30it [04:10,  2.84s/it]31it [04:13,  2.78s/it]32it [04:16,  2.82s/it]33it [04:18,  2.73s/it]34it [04:21,  2.61s/it]35it [04:23,  2.52s/it]36it [04:27,  2.88s/it]37it [04:29,  2.70s/it]38it [04:31,  2.48s/it]39it [04:33,  2.40s/it]40it [04:36,  2.44s/it]41it [04:39,  2.55s/it]42it [04:41,  2.54s/it]Problem 1:
+Q: Were Scott Derrickson and Ed Wood of the same nationality?...
+Pred: [answer] No | Gold: yes | EM: ❌ | F1: 0.00
+Problem 2:
+Q: What government position was held by the woman who portrayed...
+Pred: Secretary of State for Constitutional Affairs | Gold: Chief of Protocol | EM: ❌ | F1: 0.22
+Problem 3:
+Q: What science fantasy young adult series, told in first perso...
+Pred: \] | Gold: Animorphs | EM: ❌ | F1: 0.00
+Problem 4:
+Q: Are the Laleli Mosque and Esma Sultan Mansion located in the...
+Pred: Since the Laleli Mosque and Esma Sultan Mansion are both located in different neighborhoods (Bosphorus and Ortaköy), they are not in the same neighborhood. | Gold: no | EM: ❌ | F1: 0.00
+Problem 5:
+Q: The director of the romantic comedy "Big Stone Gap" is based...
+Pred: There is no romantic comedy film directed by Adriana Trigiani | Gold: Greenwich Village, New York City | EM: ❌ | F1: 0.00
+Problem 6:
+Q: 2014 S/S is the debut album of a South Korean boy group that...
+Pred: Shinee | Gold: YG Entertainment | EM: ❌ | F1: 0.00
+Problem 7:
+Q: Who was known by his stage name Aladin and helped organizati...
+Pred: Method Man (Method Man & Redman) helped organizations improve their performance as a consultant | Gold: Eenasul Fateh | EM: ❌ | F1: 0.00
+Problem 8:
+Q: The arena where the Lewiston Maineiacs played their home gam...
+Pred: The Dwyer Arena houses two ice surfaces with a capacity of 200 x 85 ft. Each surface seats up to 1,400 people. | Gold: 3,677 seated | EM: ❌ | F1: 0.00
+Problem 9:
+Q: Who is older, Annie Morton or Terry Richardson?...
+Pred: Annie Morton is older | Gold: Terry Richardson | EM: ❌ | F1: 0.00
+Problem 10:
+Q: Are Local H and For Against both from the United States?...
+Pred: Conclusion: While both bands have their origins in the United States, they are not exactly the same country. Therefore, we cannot conclude that Local H and For Against are both from the United States based on this information alone. | Gold: yes | EM: ❌ | F1: 0.00
+Problem 11:
+Q: What is the name of the fight song of the university whose m...
+Pred: Therefore, the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area is "We're From Kansas." | Gold: Kansas Song | EM: ❌ | F1: 0.13
+Problem 12:
+Q: What screenwriter with credits for "Evolution" co-wrote a fi...
+Pred: He co-wrote the screenplay for "Evolution" along with Nick Vallelonga. | Gold: David Weissman | EM: ❌ | F1: 0.00
+Problem 13:
+Q: What year did Guns N Roses perform a promo for a movie starr...
+Pred: Therefore, Guns N' Roses performed a promo for their first studio album (released in 1987) on their official website. | Gold: 1999 | EM: ❌ | F1: 0.00
+Problem 14:
+Q: Are Random House Tower and 888 7th Avenue both used for real...
+Pred: [answer] 888 7th Avenue is not used for real estate like Random House Tower | Gold: no | EM: ❌ | F1: 0.00
+Problem 15:
+Q: The football manager who recruited David Beckham managed Man...
+Pred: Therefore, the football manager who recruited David Beckham managed Manchester United during the timeframe of 1992-1996. | Gold: from 1986 to 2013 | EM: ❌ | F1: 0.00
+Problem 16:
+Q: Brown State Fishing Lake is in a country that has a populati...
+Pred: 330 million | Gold: 9,984 | EM: ❌ | F1: 0.00
+Problem 17:
+Q: The Vermont Catamounts men's soccer team currently competes ...
+Pred: The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as the America East Conference from 1988 to 1996. | Gold: the North Atlantic Conference | EM: ❌ | F1: 0.08
+Problem 18:
+Q: Are Giuseppe Verdi and Ambroise Thomas both Opera composers ...
+Pred: Therefore, **Giuseppe Verdi and Ambroise Thomas are not both Opera composers**. | Gold: yes | EM: ❌ | F1: 0.00
+Problem 19:
+Q: Roger O. Egeberg was Assistant Secretary for Health and Scie...
+Pred: 1993-1997 | Gold: 1969 until 1974 | EM: ❌ | F1: 0.00
+Problem 20:
+Q: Which writer was from England, Henry Roth or Robert Erskine ...
+Pred: Not enough information | Gold: Robert Erskine Childers DSC | EM: ❌ | F1: 0.00
+Problem 21:
+Q: Which other Mexican Formula One race car driver has held the...
+Pred: Force India VJM04 | Gold: Pedro Rodríguez | EM: ❌ | F1: 0.00
+Problem 22:
+Q: This singer of A Rather Blustery Day also voiced what hedgeh...
+Pred: Therefore, the answer to the question "This singer of A Rather Blustery Day also voiced what hedgehog? " is: Winnie the Pooh. | Gold: Sonic | EM: ❌ | F1: 0.00
+Problem 23:
+Q: Aside from the Apple Remote, what other device can control t...
+Pred: Therefore, apart from the Apple Remote, none of the other devices mentioned can control the program that the Apple Remote was originally designed to interact with. | Gold: keyboard function keys | EM: ❌ | F1: 0.00
+Problem 24:
+Q: Which performance act has a higher instrument to person rati...
+Pred: **Wolf Alice** | Gold: Badly Drawn Boy | EM: ❌ | F1: 0.00
+Problem 25:
+Q: What was the father of Kasper Schmeichel voted to be by the ...
+Pred: "The answer is: No information found | Gold: World's Best Goalkeeper | EM: ❌ | F1: 0.00
+Problem 26:
+Q: Who was the writer of These Boots Are Made for Walkin' and w...
+Pred: Based on this reasoning, we can conclude that "These Boots Are Made for Walkin'" was written by Lee Hazlewood and he died in 2007. | Gold: Barton Lee Hazlewood | EM: ❌ | F1: 0.15
+Problem 27:
+Q: The 2011–12 VCU Rams men's basketball team, led by third yea...
+Pred: The final answer is: **2011**. | Gold: 1838 | EM: ❌ | F1: 0.00
+Problem 28:
+Q: Are both Dictyosperma, and Huernia described as a genus?...
+Pred: [answer] = "Yes" | Gold: yes | EM: ❌ | F1: 0.67
+Problem 29:
+Q: Kaiser Ventures corporation was founded by an American indus...
+Pred: The answer to this question is: Edgar Kaiser Jr. | Gold: Henry J. Kaiser | EM: ❌ | F1: 0.18
+Problem 30:
+Q: What is the name for the adventure in "Tunnels and Trolls", ...
+Pred: The name for the adventure in "Tunnels and Trolls", a game designed by Ken St | Gold: Arena of Khazan | EM: ❌ | F1: 0.00
+Problem 31:
+Q: When was Poison's album "Shut Up, Make Love" released?...
+Pred: Poison's album "Shut Up, Make Love" was released in 2000 | Gold: 2000 | EM: ❌ | F1: 0.18
+Problem 32:
+Q: Hayden is a singer-songwriter from Canada, but where does Bu...
+Pred: The final answer is: **Southern and central Alberta, Canada.** | Gold: Fujioka, Gunma | EM: ❌ | F1: 0.00
+Problem 33:
+Q: Which  French ace pilot and adventurer fly L'Oiseau Blanc...
+Pred: Charles Nungesser fly L'Oiseau Blanc | Gold: Charles Eugène | EM: ❌ | F1: 0.29
+Problem 34:
+Q: Are Freakonomics and In the Realm of the Hackers both Americ...
+Pred: Yes | Gold: no | EM: ❌ | F1: 0.00
+Problem 35:
+Q: Which band, Letters to Cleo or Screaming Trees, had more mem...
+Pred: Letters to Cleo | Gold: Letters to Cleo | EM: ✅ | F1: 1.00
+Problem 36:
+Q: Alexander Kerensky was defeated and destroyed by the Bolshev...
+Pred: "The answer is: November 1917" | Gold: October 1922 | EM: ❌ | F1: 0.00
+Problem 37:
+Q: Seven Brief Lessons on Physics was written by an Italian phy...
+Pred: 1937 | Gold: 2000 | EM: ❌ | F1: 0.00
+Problem 38:
+Q: The Livesey Hal War Memorial commemorates the fallen of whic...
+Pred: World War I | Gold: World War II | EM: ❌ | F1: 0.67
+Problem 39:
+Q: Are both Elko Regional Airport and Gerald R. Ford Internatio...
+Pred: No" | Gold: no | EM: ✅ | F1: 1.00
+Problem 40:
+Q: Ralph Hefferline was a psychology professor at a university ...
+Pred: The final answer is: **Columbia University**. | Gold: New York City | EM: ❌ | F1: 0.00
+Problem 41:
+Q: Which dog's ancestors include Gordon and Irish Setters: the ...
+Pred: The Manchester Terrier's ancestors include Gordon and Irish Setters. | Gold: Scotch Collie | EM: ❌ | F1: 0.00
+Problem 42:
+Q: Where is the company that Sachin Warrier worked for as a sof...
+Pred: Therefore, the answer to the question "Where is the company that Sachin Warrier worked for as a software engineer headquartered? " is: Tata Consultancy Services Limited (TCS). | Gold: Mumbai | EM: ❌ | F1: 0.00
+Problem 43:
+Q: A Japanese manga series based on a 16 year old high school s...
+43it [04:44,  2.76s/it]44it [04:48,  2.92s/it]45it [04:52,  3.30s/it]46it [04:55,  3.12s/it]47it [04:57,  2.89s/it]48it [05:01,  3.34s/it]49it [05:05,  3.45s/it]50it [05:08,  3.29s/it]51it [05:11,  3.17s/it]52it [05:15,  3.41s/it]53it [05:18,  3.39s/it]54it [05:21,  3.19s/it]55it [05:23,  2.92s/it]56it [05:26,  3.03s/it]57it [05:29,  3.00s/it]58it [05:33,  3.04s/it]59it [05:35,  2.79s/it]60it [05:38,  2.96s/it]61it [05:40,  2.75s/it]62it [05:44,  3.16s/it]63it [05:47,  3.05s/it]64it [05:52,  3.44s/it]65it [05:58,  4.32s/it]66it [06:03,  4.48s/it]67it [06:05,  3.82s/it]68it [06:10,  4.27s/it]69it [06:16,  4.58s/it]70it [06:20,  4.61s/it]71it [06:24,  4.24s/it]72it [06:29,  4.48s/it]73it [06:34,  4.65s/it]74it [06:36,  4.02s/it]75it [06:42,  4.58s/it]76it [06:48,  4.84s/it]77it [06:53,  4.86s/it]78it [06:56,  4.43s/it]79it [07:02,  4.94s/it]80it [07:07,  4.83s/it]81it [07:09,  4.05s/it]82it [07:12,  3.62s/it]83it [07:16,  3.94s/it]Pred: Therefore, based on this analysis, we can conclude that Masakazu Katsura (I"s) was the author of "I"s" who was born in 1960. | Gold: 1962 | EM: ❌ | F1: 0.00
+Problem 44:
+Q: The battle in which Giuseppe Arimondi lost his life secured ...
+Pred: The battle in which Giuseppe Arimondi lost his life secured the Treaty of Addis Ababa for Ethiopia. | Gold: sovereignty | EM: ❌ | F1: 0.00
+Problem 45:
+Q: Alfred Balk served as the secretary of the Committee on the ...
+Pred: Answer: George W. Bush | Gold: Nelson Rockefeller | EM: ❌ | F1: 0.00
+Problem 46:
+Q: A medieval fortress in Dirleton, East Lothian, Scotland bord...
+Pred: A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of the Firth of Forth, which is part of the SSSI. | Gold: Yellowcraig | EM: ❌ | F1: 0.00
+Problem 47:
+Q: Who is the writer of this song that was inspired by words on...
+Pred: Phil Spector wrote "To Know Him Is to Love Him", which was inspired by words on a tombstone and was the first track on the box set Back to Mono | Gold: Phil Spector | EM: ❌ | F1: 0.14
+Problem 48:
+Q: What type of forum did a former Soviet statesman initiate?...
+Pred: **None** | Gold: Organizations could come together to address global issues | EM: ❌ | F1: 0.00
+Problem 49:
+Q: Are Ferocactus and Silene both types of plant?...
+Pred: **Yes**, Ferocactus and Silene are both types of plant | Gold: yes | EM: ❌ | F1: 0.20
+Problem 50:
+Q: Which British first-generation jet-powered medium bomber was...
+Pred: The English Electric Canberra was used in the South West Pacific theatre of World War II | Gold: English Electric Canberra | EM: ❌ | F1: 0.35
+Problem 51:
+Q: Which year and which conference was the 14th season for this...
+Pred: The 14th season for this conference was the 2009 NCAA Division I FBS football season | Gold: 2009 Big 12 Conference | EM: ❌ | F1: 0.24
+Problem 52:
+Q: In 1991 Euromarché was bought by a chain that operated how a...
+Pred: Therefore, based on the information provided, Euromarché was acquired by Carrefour in 1991 and operated hypermarkets. The answer to the question "In 1991 Euromarché was bought by a chain that operated how any hypermarkets at the end of 2016?" is: Carrefour. | Gold: 1,462 | EM: ❌ | F1: 0.00
+Problem 53:
+Q: What race track in the midwest hosts a 500 mile race eavery ...
+Pred: The final answer is: There is not enough information provided to determine which specific race track in the Midwest hosts a 500-mile race in May. | Gold: Indianapolis Motor Speedway | EM: ❌ | F1: 0.00
+Problem 54:
+Q: In what city did the "Prince of tenors" star in a film based...
+Pred: Therefore, the answer to the question "In what city did the 'Prince of tenors' star in a film based on an opera by Giacomo Puccini?" is: Rome. | Gold: Rome | EM: ❌ | F1: 0.09
+Problem 55:
+Q: Ellie Goulding worked with what other writers on her third s...
+Pred: On My Mind | Gold: Max Martin, Savan Kotecha and Ilya Salmanzadeh | EM: ❌ | F1: 0.00
+Problem 56:
+Q: Which Australian city founded in 1838 contains a boarding sc...
+Pred: Winona, Minnesota | Gold: Marion, South Australia | EM: ❌ | F1: 0.00
+Problem 57:
+Q: D1NZ is a series based on what oversteering technique?...
+Pred: Car drifting | Gold: Drifting | EM: ❌ | F1: 0.67
+Problem 58:
+Q: who is younger Keith Bostic or Jerry Glanville ?...
+Pred: Keith Bostic is younger than Jerry Glanville | Gold: Keith Bostic | EM: ❌ | F1: 0.44
+Problem 59:
+Q: According to the 2001 census, what was the population of the...
+Pred: The answer is: 261 | Gold: 35,124 | EM: ❌ | F1: 0.00
+Problem 60:
+Q: Are both Cypress and Ajuga genera?...
+Pred: Both Cypress and Ajuga genera | Gold: no | EM: ❌ | F1: 0.00
+Problem 61:
+Q: What distinction is held by the former NBA player who was a ...
+Pred: The former NBA player was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting. | Gold: shortest player ever to play in the National Basketball Association | EM: ❌ | F1: 0.07
+Problem 62:
+Q: What is the name of the executive producer of the film that ...
+Pred: "Lionheart (1987 film)" | Gold: Ronald Shusett | EM: ❌ | F1: 0.00
+Problem 63:
+Q: Who was born earlier, Emma Bull or Virginia Woolf?...
+Pred: Emma Bull | Gold: Adeline Virginia Woolf | EM: ❌ | F1: 0.00
+Problem 64:
+Q: What was the Roud Folk Song Index of the nursery rhyme inspi...
+Pred: 821 | Gold: 821 | EM: ✅ | F1: 1.00
+Problem 65:
+Q: Scott Parkin has been a vocal critic of Exxonmobil and anoth...
+Pred: [answer] 70+ | Gold: more than 70 countries | EM: ❌ | F1: 0.33
+Problem 66:
+Q: What WB supernatrual drama series was Jawbreaker star Rose M...
+Pred: **Rose McGowan** | Gold: Charmed | EM: ❌ | F1: 0.00
+Problem 67:
+Q: Vince Phillips held a junior welterweight title by an organi...
+Pred: The IBF | Gold: International Boxing Hall of Fame | EM: ❌ | F1: 0.00
+Problem 68:
+Q: What is the name of the singer who's song was released as th...
+Pred: The name of the singer who's song was released as the lead single from the album "Confessions" is Usher. | Gold: Usher | EM: ❌ | F1: 0.12
+Problem 69:
+Q: who is the younger brother of The episode guest stars of The...
+Pred: Bill Murray | Gold: Bill Murray | EM: ✅ | F1: 1.00
+Problem 70:
+Q: The 2017–18 Wigan Athletic F.C. season will be a year in whi...
+Pred: **Answer: League Cup** | Gold: Carabao Cup | EM: ❌ | F1: 0.40
+Problem 71:
+Q: Which of Tara Strong major voice role in animated series is ...
+Pred: The Teen Titans Go! | Gold: Teen Titans Go! | EM: ✅ | F1: 1.00
+Problem 72:
+Q: What is the inhabitant of the city where  122nd SS-Standarte...
+Pred: The 122nd SS-Standarte was formed in Strasbourg, France | Gold: 276,170 inhabitants | EM: ❌ | F1: 0.00
+Problem 73:
+Q: What color clothing do people of the Netherlands wear during...
+Pred: C) Scarfs | Gold: orange | EM: ❌ | F1: 0.00
+Problem 74:
+Q: What was the name of the 1996 loose adaptation of William Sh...
+Pred: The name of the 1996 loose adaptation of William Shakespeare's "Romeo and Juliet" written by James Gunn was "The Tragedy of Romeo and Juliet" | Gold: Tromeo and Juliet | EM: ❌ | F1: 0.17
+Problem 75:
+Q: Robert Suettinger was the national intelligence officer unde...
+Pred: Therefore, based solely on the provided context, I cannot definitively say that Robert Suettinger was the national intelligence officer under the Clinton administration. | Gold: William Jefferson Clinton | EM: ❌ | F1: 0.09
+Problem 76:
+Q: What American professional Hawaiian surfer born 18 October 1...
+Pred: Therefore, John "John" Alexander Florence is the American professional Hawaiian surfer born on 18 October 1992 who won the Moche Rip Curl Pro Portugal event. | Gold: John John Florence | EM: ❌ | F1: 0.15
+Problem 77:
+Q: What is the middle name of the actress who plays Bobbi Bacha...
+Pred: Therefore, the answer to the question "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness? " is: Christopher. | Gold: Ann | EM: ❌ | F1: 0.00
+Problem 78:
+Q: Alvaro Mexia had a diplomatic mission with which tribe of in...
+Pred: [Apalache] | Gold: Apalachees | EM: ❌ | F1: 0.00
+Problem 79:
+Q: What nationality were social anthropologists Alfred Gell and...
+Pred: - Edmund Leach is an English (British) social anthropologist. | Gold: British | EM: ❌ | F1: 0.25
+Problem 80:
+Q: In which year was the King who made the 1925 Birthday Honour...
+Pred: Therefore, the King who made the 1925 Birthday Honours (George V) was born in 1865. | Gold: 1865 | EM: ❌ | F1: 0.14
+Problem 81:
+Q: What is the county seat of the county where East Lempster, N...
+Pred: Ossipee | Gold: Newport | EM: ❌ | F1: 0.00
+Problem 82:
+Q: The Album Against the Wind was the 11th Album of a Rock sing...
+Pred: Therefore, the answer to the question "The Rock singers stage name is?" is: Bob Seger. | Gold: Bob Seger | EM: ❌ | F1: 0.29
+Problem 83:
+Q: Rostker v. Goldberg held that the practice of what way of fi...
+Pred: The practice of filling military vacancies through gender discrimination was consitutional | Gold: Conscription | EM: ❌ | F1: 0.00
+Problem 84:
+Q: Handi-Snacks are a snack food product line sold by what Amer...
+84it [07:20,  3.72s/it]85it [07:25,  4.15s/it]86it [07:28,  4.00s/it]87it [07:32,  3.89s/it]88it [07:36,  3.84s/it]89it [07:41,  4.12s/it]90it [07:44,  3.94s/it]91it [07:46,  3.25s/it]92it [07:49,  3.16s/it]93it [07:52,  3.11s/it]94it [07:55,  3.21s/it]95it [08:00,  3.81s/it]96it [08:03,  3.63s/it]97it [08:06,  3.17s/it]98it [08:11,  3.72s/it]99it [08:16,  4.08s/it]100it [08:20,  4.21s/it]101it [08:25,  4.49s/it]102it [08:28,  4.14s/it]103it [08:32,  3.91s/it]104it [08:35,  3.82s/it]105it [08:37,  3.23s/it]106it [08:40,  2.93s/it]107it [08:41,  2.63s/it]108it [08:44,  2.63s/it]109it [08:48,  2.91s/it]110it [08:52,  3.30s/it]111it [08:55,  3.34s/it]112it [08:57,  2.87s/it]113it [08:59,  2.62s/it]114it [09:02,  2.76s/it]115it [09:07,  3.33s/it]116it [09:10,  3.26s/it]117it [09:15,  3.76s/it]118it [09:17,  3.18s/it]119it [09:19,  2.87s/it]120it [09:22,  3.08s/it]121it [09:28,  3.80s/it]122it [09:32,  3.74s/it]123it [09:35,  3.61s/it]124it [09:38,  3.43s/it]125it [09:42,  3.64s/it]126it [09:46,  3.74s/it]Pred: Therefore, we can conclude that Handi-Snacks are a snack food product line sold by Mondelez International, which is located in Illinois. | Gold: Mondelez International, Inc. | EM: ❌ | F1: 0.17
+Problem 85:
+Q: What was the name of a woman from the book titled "Their Liv...
+Pred: Monica Lewinsky | Gold: Monica Lewinsky | EM: ✅ | F1: 1.00
+Problem 86:
+Q: When was the American lawyer, lobbyist and political consult...
+Pred: March 2016 | Gold: April 1, 1949 | EM: ❌ | F1: 0.00
+Problem 87:
+Q: In what year was the novel that Lourenço Mutarelli based "Ni...
+Pred: 1970 | Gold: 1866 | EM: ❌ | F1: 0.00
+Problem 88:
+Q: Where are Teide National Park and Garajonay National Park lo...
+Pred: The answer is: Teide National Park is in Tenerife (Canary Islands, Spain) and Garajonay National Park is in La Orotava, a municipality of La Gomera | Gold: Canary Islands, Spain | EM: ❌ | F1: 0.23
+Problem 89:
+Q: How many copies of Roald Dahl's variation on a popular anecd...
+Pred: 1 copy of Roald Dahl's variation on a popular anecdote was sold in 1959 | Gold: 250 million | EM: ❌ | F1: 0.00
+Problem 90:
+Q: What occupation do Chris Menges and Aram Avakian share?...
+Pred: [answer] Cinematographer or Film Director | Gold: director | EM: ❌ | F1: 0.33
+Problem 91:
+Q: Andrew Jaspan was the co-founder of what not-for-profit medi...
+Pred: The Conversation | Gold: The Conversation | EM: ✅ | F1: 1.00
+Problem 92:
+Q: Which American film director hosted the 18th Independent Spi...
+Pred: Therefore, the American film director who hosted the 18th Independent Spirit Awards in 2002 was John Samuel Waters Jr., not Mihai Mălaimare Jr. | Gold: John Waters | EM: ❌ | F1: 0.17
+Problem 93:
+Q: Where does the hotel and casino located in which Bill Cosby'...
+Pred:  | Gold: Las Vegas Strip in Paradise | EM: ❌ | F1: 0.00
+Problem 94:
+Q: Do the drinks Gibson and Zurracapote both contain gin?...
+Pred: No | Gold: no | EM: ✅ | F1: 1.00
+Problem 95:
+Q: In what month is the annual documentary film festival, that ...
+Pred: [January] | Gold: March and April | EM: ❌ | F1: 0.00
+Problem 96:
+Q: Tysons Galleria is located in what county?...
+Pred: **Tysons Galleria is located in the Town of Poughkeepsie, New York | Gold: Fairfax County | EM: ❌ | F1: 0.00
+Problem 97:
+Q: Bordan Tkachuk was the CEO of a company that provides what s...
+Pred: **IT products and services** | Gold: IT products and services | EM: ✅ | F1: 1.00
+Problem 98:
+Q: Which filmmaker was known for animation, Lev Yilmaz or Pamel...
+Pred: **Pamela B | Gold: Levni Yilmaz | EM: ❌ | F1: 0.00
+Problem 99:
+Q: In which city is the ambassador of the Rabat-Salé-Kénitra ad...
+Pred: "Ilocos Region" | Gold: Beijing | EM: ❌ | F1: 0.00
+Problem 100:
+Q: Are Yingkou and Fuding the same level of city?...
+Pred: Yingkou is a prefecture-level city, while Fuding is a railway station | Gold: no | EM: ❌ | F1: 0.00
+Problem 101:
+Q: Where did the descendants of the group of black Indians asso...
+Pred: Oklahoma | Gold: Coahuila, Mexico | EM: ❌ | F1: 0.00
+Problem 102:
+Q: David Huntsinger has worked with this gospel singer born in ...
+Pred: David Huntsinger has worked with Karen Clark-Sheard | Gold: Larnelle Harris | EM: ❌ | F1: 0.00
+Problem 103:
+Q: What year was the brother of this first round draft pick by ...
+Pred: 1974 | Gold: 2003 | EM: ❌ | F1: 0.00
+Problem 104:
+Q: Where is the stadium at which 1964 Georgia Tech Yellow Jacke...
+Pred: The stadium where the 1964 Georgia Tech Yellow Jackets football team played their home game was located at The corner of North Avenue at Techwood Drive on the campus of the Georgia Institute of Technology in Atlanta. | Gold: North Avenue at Techwood Drive | EM: ❌ | F1: 0.27
+Problem 105:
+Q: Since 2 June 2017, The Leader of Fine Gael had been held by ...
+Pred: Leo Varadkar | Gold: Leo Varadkar | EM: ✅ | F1: 1.00
+Problem 106:
+Q: Which American film actor and dancer starred in the 1945 fil...
+Pred: Edwin L. Marin | Gold: George Raft | EM: ❌ | F1: 0.00
+Problem 107:
+Q: hree Men on a Horse is a play by a playwright born in which ...
+Pred: The answer is: 1887 | Gold: 1887 | EM: ❌ | F1: 0.50
+Problem 108:
+Q: What type of activity does Owner earnings and Warren Buffett...
+Pred: philanthropy | Gold: business | EM: ❌ | F1: 0.00
+Problem 109:
+Q: When was the  former Indian cricketer who made his ODI debut...
+Pred: The answer is: 7 October 1978 | Gold: 7 October 1978 | EM: ❌ | F1: 0.75
+Problem 110:
+Q: Which airplane was this Major test-flying after whom the bas...
+Pred: The Major test-flying after whom the 514th Flight Test Squadron (514 FLTS) is stated at is the McDonnell Douglas C-17 Globemaster III | Gold: B-17 Flying Fortress bomber | EM: ❌ | F1: 0.00
+Problem 111:
+Q: Based on a True Story... is an album by which country music ...
+Pred: Blake Shelton | Gold: Blake Shelton | EM: ✅ | F1: 1.00
+Problem 112:
+Q: Over how many centuries were the "dwelling place of the dead...
+Pred: [answer] The "dwelling place of the dead" was built in the late 19th or early 20th century | Gold: three centuries | EM: ❌ | F1: 0.00
+Problem 113:
+Q: When was the British author who wrote the novel on which "He...
+Pred: Edward Hunter Davies, OBE (born 7 January 1936) | Gold: 7 January 1936 | EM: ❌ | F1: 0.55
+Problem 114:
+Q: Who died first, George Archainbaud or Ralph Murphy?...
+Pred: Answer: George Archainbaud died first. | Gold: George Archainbaud | EM: ❌ | F1: 0.57
+Problem 115:
+Q: Which component of shellite has the formula (ON)CHOH?...
+Pred: **(ON)CHOH** | Gold: picric acid | EM: ❌ | F1: 0.00
+Problem 116:
+Q: The Argentine PGA Championship record holder has won how man...
+Pred: 1 tournament worldwide | Gold: 230 | EM: ❌ | F1: 0.00
+Problem 117:
+Q: Suicide's 1977 released album features a song based on what ...
+Pred: Suicide (1977 album): Suicide is the debut album from the American rock band Suicide | Gold: Marvel | EM: ❌ | F1: 0.00
+Problem 118:
+Q: What other political position did the person who introduced ...
+Pred: This conclusion is based on the information provided in the context paragraphs and my reasoning process. | Gold: United States Senator | EM: ❌ | F1: 0.00
+Problem 119:
+Q: Were the bands Skin Yard and Ostava from the U.S.?...
+Pred: [answer] Neither Skin Yard nor Ostava are from the U | Gold: no | EM: ❌ | F1: 0.00
+Problem 120:
+Q: Are Daryl Hall and Gerry Marsden both musicians?...
+Pred: Therefore, while both individuals are involved in music production and performance, they do not share a common musical family or genre. They are separate artists within the broader field of American rock, R&B, and soul music. | Gold: yes | EM: ❌ | F1: 0.00
+Problem 121:
+Q: What major truck road is located in Backford Cross?...
+Pred: **U | Gold: The A41 | EM: ❌ | F1: 0.00
+Problem 122:
+Q: In which role did Caroline Carver played in a 1999 Hallmark ...
+Pred: Therefore, Caroline Carver played the role of "Callum Williams" in the 1996 made-for-TV fantasy movie "The Boys Next Door". | Gold: Princess Jessica | EM: ❌ | F1: 0.00
+Problem 123:
+Q: What's the name of the fantasy film starring Sarah Bolger, f...
+Pred: Therefore, the answer to the question "What's the name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around their estate? " is: The Spiderwick Chronicles. | Gold: The Spiderwick Chronicles | EM: ❌ | F1: 0.14
+Problem 124:
+Q: Maxeda has been owned since 2004 by which American multinati...
+Pred: Therefore, the answer to the question "Maxeda has been owned since 2004 by which American multinational equity firm? " is: Kohlberg Kravis Roberts. | Gold: KKR & Co | EM: ❌ | F1: 0.00
+Problem 125:
+Q: The youngest daughter of Lady Mary-Gaye Curzon stars with Do...
+Pred: The youngest daughter of Lady Mary-Gaye Curzon stars with Douglas Smith and Lucien Laviscount in "Lady Alexandra Curzon: Lady Alexandra Naldera Curzon, CBE (20 March/April 1904 – 7 August 1995)," which is a 2017 film | Gold: The Bye Bye Man | EM: ❌ | F1: 0.00
+Problem 126:
+Q: Mummulgum is a stop on the Bruxner Highway before reaching t...
+Pred: Therefore, Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of the Richmond River. | Gold: Richmond | EM: ❌ | F1: 0.12
+127it [09:50,  3.77s/it]128it [09:53,  3.61s/it]129it [09:56,  3.33s/it]130it [10:00,  3.72s/it]131it [10:07,  4.53s/it]132it [10:11,  4.44s/it]133it [10:14,  4.12s/it]134it [10:18,  3.95s/it]135it [10:24,  4.55s/it]136it [10:28,  4.33s/it]137it [10:31,  4.07s/it]138it [10:34,  3.56s/it]139it [10:36,  3.20s/it]140it [10:39,  3.08s/it]141it [10:44,  3.85s/it]142it [10:48,  3.68s/it]143it [10:52,  4.01s/it]144it [10:54,  3.37s/it]145it [10:57,  3.03s/it]146it [10:58,  2.70s/it]147it [11:03,  3.27s/it]148it [11:06,  3.27s/it]149it [11:10,  3.42s/it]150it [11:16,  4.30s/it]151it [11:19,  3.71s/it]152it [11:23,  3.95s/it]153it [11:28,  4.20s/it]154it [11:32,  4.05s/it]155it [11:35,  3.68s/it]156it [11:37,  3.27s/it]157it [11:38,  2.76s/it]158it [11:41,  2.73s/it]159it [11:45,  2.96s/it]160it [11:49,  3.31s/it]161it [11:52,  3.15s/it]162it [11:53,  2.72s/it]163it [11:55,  2.45s/it]Problem 127:
+Q: Which American audio engineer and clandestine chemist, who w...
+Pred: Therefore, the answer to the question "Which American audio engineer and clandestine chemist, who was a key figure in the San Francisco Bay Area hippie movement during the 1960s recorded the album 'Old and in the Way?'" is Gary Arlington. | Gold: Owsley Stanley | EM: ❌ | F1: 0.00
+Problem 128:
+Q: When was the palace founded at which Columba de Dunbar died ...
+Pred: 1435 | Gold: the late 12th Century | EM: ❌ | F1: 0.00
+Problem 129:
+Q: Where is the Bubblegum Alley, that is similar to Gum Wall, l...
+Pred: The Bubblegum Alley is located in downtown Seattle, California | Gold: San Luis Obispo, California | EM: ❌ | F1: 0.17
+Problem 130:
+Q: At what venue was the January 2, 2012 game featured the Univ...
+Pred: The January 2, 2012 game featured the University of Louisville team at Parkway Field in Louisville, Kentucky | Gold: Mercedes-Benz Superdome | EM: ❌ | F1: 0.00
+Problem 131:
+Q: Which film was Oscar nominated, LaLee's Kin: The Legacy of C...
+Pred: Gimme Shelter, the 1970 Rolling Stones' documentary | Gold: LaLee's Kin: The Legacy of Cotton | EM: ❌ | F1: 0.00
+Problem 132:
+Q: Which board game was published most recently, Pirate's Cove ...
+Pred: **Pirate's Cove** | Gold: Pirate's Cove | EM: ✅ | F1: 1.00
+Problem 133:
+Q: Alice David is the voice of Lara Croft in a video game devel...
+Pred: **Eidos Interactive** | Gold: Crystal Dynamics | EM: ❌ | F1: 0.00
+Problem 134:
+Q: Which Eminem album included vocals from a singer who had an ...
+Pred: There is no single Eminem album that includes vocals from a singer named Rihanna and has an album titled "Unapologetic | Gold: "The Marshall Mathers LP 2" | EM: ❌ | F1: 0.00
+Problem 135:
+Q: This American crime film set in South Los Angeles was writte...
+Pred: [Sabotage] | Gold: Suicide Squad | EM: ❌ | F1: 0.00
+Problem 136:
+Q: SuperMansion starred the actress who had a recurring role as...
+Pred: based on the information provided in the context paragraph | Gold: Jillian Belk | EM: ❌ | F1: 0.00
+Problem 137:
+Q: The 1974 Texas Tech Raiders football team represented what p...
+Pred: Therefore, based on the provided context and the specific details given about the 1974 team, we can conclude that the 1974 Texas Tech Red Raiders football team represented Texas Tech University in Lubbock, Texas. | Gold: Texas Tech University | EM: ❌ | F1: 0.18
+Problem 138:
+Q: During Siege of Bharatpur, which Commander-in-Chief of Irela...
+Pred: Commander-in-Chief, Ireland and Commander-in-Chief of India contributed to the storming of the castle during the Siege of Bharatpur. | Gold: Lord Combermere | EM: ❌ | F1: 0.00
+Problem 139:
+Q: For what type of work is the production company for The Year...
+Pred: Rankin/Bass Productions | Gold: seasonal television specials, particularly its work in stop motion animation | EM: ❌ | F1: 0.00
+Problem 140:
+Q: What year was the film that starred the composer for "The Na...
+Pred: 2009 | Gold: 2014 | EM: ❌ | F1: 0.00
+Problem 141:
+Q: The author of Sexual Politics attended which British Univers...
+Pred: Therefore, the answer to the question "The author of Sexual Politics attended which British University? " is: Oxford University. | Gold: Oxford | EM: ❌ | F1: 0.12
+Problem 142:
+Q: Who had the best singles ranking, Roberta Vinci or Jorge Loz...
+Pred: [answer] Jorge Lozano | Gold: Roberta Vinci | EM: ❌ | F1: 0.00
+Problem 143:
+Q: Both Truth in Science and Discovery embrace what campaign?...
+Pred: The final answer is: **Truth in Science promotes intelligent design creationism alongside evolution | Gold: "Teach the Controversy" campaign | EM: ❌ | F1: 0.00
+Problem 144:
+Q: Josey Scott and Ian Watkins were both promising musicians. W...
+Pred: Ian Watkins | Gold: Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012. | EM: ❌ | F1: 0.12
+Problem 145:
+Q: The movies Queen of Blood and Battle Beyond the Sun both con...
+Pred: Queen of Blood and Battle Beyond the Sun both contained scenes from the 1959 Soviet feature "Nebo Zovyot", which was a space opera film directed by Mikhail Karyukov and Aleksandr Kozyr. | Gold: Nebo Zovyot | EM: ❌ | F1: 0.13
+Problem 146:
+Q: Who was born first, Erika Jayne or Marco Da Silva...
+Pred: [answer is: Erika Jayne] | Gold: Erika Jayne | EM: ❌ | F1: 0.67
+Problem 147:
+Q: When did the English local newspaper, featuring the sculptur...
+Pred: "The answer is: No specific year or date can be determined | Gold: 2009 | EM: ❌ | F1: 0.00
+Problem 148:
+Q: What is the name of the Isles who were led by Aonghus Mór an...
+Pred: From this sentence, we can infer that Aonghus Mór led the Kingdom of the Isles, which is described as being "over 8300 km²". Therefore, the name of the Isles who were led by Aonghus Mór and covered a total land area of over 8300 km2 is the Kingdom of the Isles. | Gold: Kingdom of the Isles | EM: ❌ | F1: 0.13
+Problem 149:
+Q: Who is Bruce Spizer an expert on, known as the most influent...
+Pred: The final answer is: The Beatles. | Gold: The Beatles | EM: ❌ | F1: 0.40
+Problem 150:
+Q: Which song was behind the third single on the album  "A Lot ...
+Pred: **Chattahoochee** | Gold: "We'll Burn That Bridge" | EM: ❌ | F1: 0.00
+Problem 151:
+Q: What occupation was shared by David Yates and Pietro Germi?...
+Pred: David Yates and Pietro Germi did not share a common occupation as both were screenwriters and directors | Gold: director | EM: ❌ | F1: 0.00
+Problem 152:
+Q: Marcus Wayne Garland spent nine seasons with an American pro...
+Pred: Therefore, based on the information provided and our inference about the establishment of the AL, we can conclude that Marcus Wayne Garland spent nine seasons with an American professional baseball team that is based in Baltimore, Maryland, and was one of the AMerican League's original eight charter franchises when the league was established in 1894. | Gold: 1901 | EM: ❌ | F1: 0.00
+Problem 153:
+Q: The lamp used in many lighthouses is similiar to this type o...
+Pred: The lamp used in many lighthouses is a hollow-cathode lamp | Gold: Argand lamp | EM: ❌ | F1: 0.20
+Problem 154:
+Q: The songs from the sountrack to "When Harry Met Sally" are p...
+Pred: **Nora Ephron** performed the songs from the soundtrack to "When Harry Met Sally" with seven top 20 US albums | Gold: seven | EM: ❌ | F1: 0.11
+Problem 155:
+Q: Are Broughtonia and Laeliocattleya both orchids?...
+Pred: Yes, Broughtonia and Laeliocattleya are both orchids | Gold: yes | EM: ❌ | F1: 0.25
+Problem 156:
+Q: Where was the world cup hosted that Algeria qualified for th...
+Pred: The 2014 FIFA World Cup | Gold: Brazil | EM: ❌ | F1: 0.00
+Problem 157:
+Q: Which was fought earlier in our nation's history, the Seven ...
+Pred: The Seven Days Battles were fought earlier in our nation's history | Gold: The Seven Days Battles | EM: ❌ | F1: 0.46
+Problem 158:
+Q: What retailer in ABQ Uptown is headquarted in Poole, Dorset,...
+Pred: Therefore, the retailer in ABQ Uptown that is headquartered in Poole, Dorset is Lush Ltd., which is an outdoor luxury shopping mall located in Poole, Dorset, United Kingdom. | Gold: Lush Ltd. | EM: ❌ | F1: 0.14
+Problem 159:
+Q: What football club plays in the area between the old tool ga...
+Pred: Therefore, the football club that plays in the area between Brook Bar and Trafford Bar is Manchester United F.C. | Gold: Manchester United | EM: ❌ | F1: 0.21
+Problem 160:
+Q: The song "Chim Chim Cher-ee" can be heard  in the "Mary Popp...
+Pred: 1989 | Gold: 1989 | EM: ✅ | F1: 1.00
+Problem 161:
+Q: Who held the record for the longest service in the Australia...
+Pred: [Philip Ruddock] | Gold: Kathryn Jean Martin | EM: ❌ | F1: 0.00
+Problem 162:
+Q: Which man who presented the Australia 2022 FIFA World Cup bi...
+Pred: Ben Buckley was born on October 22, 1957 | Gold: Frank Lowy | EM: ❌ | F1: 0.00
+Problem 163:
+Q: What major city is the Faith Lutheran Middle School and High...
+Pred: [summerlin] | Gold: Las Vegas | EM: ❌ | F1: 0.00
+Problem 164:
+Q: What British singer-songwriter hosted the 16th Annual Young ...
+164it [11:58,  2.59s/it]165it [12:01,  2.85s/it]166it [12:04,  2.85s/it]167it [12:08,  2.97s/it]168it [15:59, 71.64s/it]169it [16:02, 51.03s/it]170it [16:06, 36.88s/it]171it [16:11, 27.24s/it]172it [16:13, 19.72s/it]173it [16:15, 14.28s/it]174it [16:19, 11.25s/it]175it [16:23,  9.04s/it]176it [16:25,  7.03s/it]177it [20:23, 76.37s/it]178it [20:27, 54.67s/it]179it [20:30, 38.97s/it]180it [20:32, 28.13s/it]181it [20:35, 20.54s/it]182it [20:38, 15.21s/it]183it [20:40, 11.23s/it]184it [20:42,  8.58s/it]185it [20:45,  6.86s/it]186it [20:47,  5.46s/it]187it [20:49,  4.32s/it]188it [20:51,  3.71s/it]189it [20:54,  3.37s/it]190it [20:56,  2.97s/it]191it [20:58,  2.62s/it]192it [21:01,  2.63s/it]193it [21:02,  2.43s/it]194it [21:04,  2.18s/it]195it [21:06,  2.15s/it]196it [21:08,  2.08s/it]197it [21:12,  2.62s/it]198it [21:14,  2.33s/it]199it [21:15,  2.18s/it]200it [21:17,  1.92s/it]201it [21:20,  2.20s/it]202it [21:21,  2.04s/it]203it [21:23,  1.99s/it]Pred: Therefore, the answer to the question "What British singer-songwriter hosted the 16th Annual Young Hollywood Awards? " is Jeremy Schoenberg. | Gold: Kelly Lee Osbourne | EM: ❌ | F1: 0.00
+Problem 165:
+Q: Who did the Star and Dagger bass player marry?...
+Pred: The answer to the question "Who did the Star and Dagger bass player marry? " is: None. | Gold: Sean Yseult. | EM: ❌ | F1: 0.00
+Problem 166:
+Q: In 2017, what was 3/4th of the organization that also has a ...
+Pred: $175 million | Gold: Prescription Drug User Fee Act | EM: ❌ | F1: 0.00
+Problem 167:
+Q: Which came out first, Dinosaur or McFarland, USA...
+Pred: Final answer: Dinosaur (2000) came out first compared to McFarland, USA (2015). | Gold: Dinosaur | EM: ❌ | F1: 0.15
+Problem 168:
+Q: Both Bishop Carroll Catholic High School and Kapaun Mt. Carm...
+Pred: Therefore, based on this reasoning, I can conclude that both Bishop Carroll Catholic High School and Kapaun Mt. Carmel Catholic High School are located in the same city in Kansas: Wichita. | Gold: Wichita | EM: ❌ | F1: 0.06
+Problem 169:
+Q: What was the 58th quadrennial American presidential election...
+Pred: 2017 | Gold: United States presidential election of 2016 | EM: ❌ | F1: 0.00
+Problem 170:
+Q: This Celtic ruler who was born in AD 43 ruled southeastern B...
+Pred: The Roman Emperor Constantine I | Gold: Roman | EM: ❌ | F1: 0.40
+Problem 171:
+Q: What is the name of the detective novelist parent of the aut...
+Pred: Sue Grafton | Gold: C. W. Grafton | EM: ❌ | F1: 0.40
+Problem 172:
+Q: What is the birthplace of the Senator who represents the fir...
+Pred: Brooklyn, New York | Gold: Brooklyn, New York | EM: ✅ | F1: 1.00
+Problem 173:
+Q: The Memphis Hustle are based in a suburb of a city with a po...
+Pred: 2010: 48,982 | Gold: 48,982 | EM: ❌ | F1: 0.67
+Problem 174:
+Q: Which songwriting duo composed music for "La La Land", and c...
+Pred: Benj Pasek and Justin Paul | Gold: Pasek & Paul | EM: ❌ | F1: 0.57
+Problem 175:
+Q: Which of the city at the south of Shelly Beach, New South Wa...
+Pred: Therefore, Shelly Beach, New South Wales is a local government area in the Hunter region because it's located at the south of the city where the Central Coast region meets the Hunter region. | Gold: City of Newcastle | EM: ❌ | F1: 0.13
+Problem 176:
+Q: Are Bamboo Mañalac and Danny Jones both musicians?...
+Pred: Bamboo Mañalac and Danny Jones are both musicians | Gold: yes | EM: ❌ | F1: 0.00
+Problem 177:
+Q: Works by Hanna Leena Kristiina Varis are part of a collectio...
+Pred: Based on this reasoning, I can conclude that Hanna Leena Kristiina Varis' works are part of a collection in Vienna, Austria. The answer to the question is: 65,000 drawings and approximately 1 million old master prints. | Gold: drawings | EM: ❌ | F1: 0.06
+Problem 178:
+Q: When was the Western Germanic language spoken from which the...
+Pred: The Western Germanic language was spoken from the 8th century to the 12th century | Gold: between the 8th and 16th centuries | EM: ❌ | F1: 0.13
+Problem 179:
+Q: Born on 6 March 1937, this man was also a citizen of the Uni...
+Pred: Yes, Vatroslav Rožić was a citizen of the United Kingdom | Gold: Alistair Grant | EM: ❌ | F1: 0.00
+Problem 180:
+Q: What country does Hatton Hill and Hatton Castle, Angus have ...
+Pred: Therefore, Hatton Hill and Hatton Castle, Angus have in common the Scottish country of Scotland. | Gold: Scotland | EM: ❌ | F1: 0.13
+Problem 181:
+Q: What podcast was the cheif executive officer of Nerdist Indu...
+Pred: The chief executive officer of Nerdist Industries was Chris Hardwick | Gold: Comedy Film Nerds | EM: ❌ | F1: 0.00
+Problem 182:
+Q: Randall Cunningham II was a multi-sport athlete at the high ...
+Pred: Therefore, the answer to the question "Randall Cunningham II was a multi-sport athlete at the high school located in what Nevada city? " is: Bishop Gorman High School. | Gold: Summerlin | EM: ❌ | F1: 0.00
+Problem 183:
+Q: Which English musician is known for both the songs "See Your...
+Pred: Billy Bragg | Gold: George Harrison | EM: ❌ | F1: 0.00
+Problem 184:
+Q: Which professional ice hockey position does the Captain of t...
+Pred: The Captain of the National Hockey League All-Star Game "Away Team" plays as the captain for the Chicago Blackhawks | Gold: Canadian professional ice hockey centre | EM: ❌ | F1: 0.10
+Problem 185:
+Q: What year did the series on CBS, starring the actor who know...
+Pred: The series on CBS, starring the actor known for his role in "Rebel Without a Cause," aired in 1960 | Gold: 1952 | EM: ❌ | F1: 0.00
+Problem 186:
+Q: What season was the character introduced that becomes the ma...
+Pred: Answer: Season 3 | Gold: third | EM: ❌ | F1: 0.00
+Problem 187:
+Q: Who were the directors of the 2009 American science fiction ...
+Pred: Mark Neveldine and Brian Taylor. | Gold: Mark Neveldine and Brian Taylor | EM: ✅ | F1: 1.00
+Problem 188:
+Q: Which travel parody series featured American actor, comedian...
+Pred: Therefore, the answer to the question "Which travel parody series featured American actor, comedian, and radio host best known as the host of 'The Joe Schmo Show'? " is: Hidden America with Jonah Ray. | Gold: Hidden America with Jonah Ray | EM: ❌ | F1: 0.29
+Problem 189:
+Q: Do The Importance of Being Icelandic and The Five Obstructio...
+Pred: **Final Answer: No**, "The Importance of Being Icelandic" and "The Five Obstructions" do not belong to the same film genre. | Gold: no | EM: ❌ | F1: 0.11
+Problem 190:
+Q: Tefik Selim Mborja was a part of a party that held power in ...
+Pred: 1967 | Gold: 1943 | EM: ❌ | F1: 0.00
+Problem 191:
+Q: Joe Walker played for which team that ends their regular sea...
+Pred: [answer] Oregon Ducks | Gold: Oregon Ducks football | EM: ❌ | F1: 0.67
+Problem 192:
+Q: What station broadcast the episode "Marry Me a Little, Marry...
+Pred: The station that broadcast the episode "Marry Me a Little, Marry Me a Little More" of the series created by Max Mutchnick and David Kohan is NBC | Gold: National Broadcasting Company | EM: ❌ | F1: 0.00
+Problem 193:
+Q: Georges-Henri Bousquet translated the work of a historian wh...
+Pred: This conclusion is justified by the information provided in the context paragraphs and the specific details about Al-Ghazali's heritage. | Gold: North African Arab | EM: ❌ | F1: 0.00
+Problem 194:
+Q: In which city are the headquarters of the American research ...
+Pred: [Scarborough] | Gold: Murray Hill | EM: ❌ | F1: 0.00
+Problem 195:
+Q: What is the full name of the viral respiratory disease in wh...
+Pred: Severe acute respiratory syndrome (SARS) | Gold: severe acute respiratory syndrome | EM: ❌ | F1: 0.89
+Problem 196:
+Q: Which Kentucky Writers Hall of Fame author has had works pub...
+Pred: "The answer is: None | Gold: Wendell Berry | EM: ❌ | F1: 0.00
+Problem 197:
+Q: What director worked with Vikram Bhatt on a film starring ac...
+Pred: Therefore, the director who worked with Vikram Bhatt on a film starring actors Rajneesh Duggal and Adah Sharma is Bhushan Patel. | Gold: Tinu Suresh Desai | EM: ❌ | F1: 0.00
+Problem 198:
+Q:  Robert Smith founded the multinational company headquartere...
+Pred: Golden Valley, Minnesota | Gold: Golden Valley, Minnesota, | EM: ✅ | F1: 1.00
+Problem 199:
+Q: What amount was the settlement that the character from the S...
+Pred: $15 | Gold: $10.5 million | EM: ❌ | F1: 0.00
+Problem 200:
+Q: Considered the strongest recorded tropical cyclone, which cy...
+Pred: There is no single film made about a specific cyclone in the provided context | Gold: 1999 Odisha cyclone | EM: ❌ | F1: 0.13
+Problem 201:
+Q: The 2000 British film Snatch was later adapted into a televi...
+Pred: Netflix | Gold: Crackle | EM: ❌ | F1: 0.00
+Problem 202:
+Q: Chris Williams last played for which football club from the ...
+Pred: Answer: Salford City Football Club | Gold: Salford City Football Club | EM: ❌ | F1: 0.89
+Problem 203:
+Q: Who designed the hotel that held the IFBB professional bodyb...
+Pred: The hotel where the IFBB professional bodybuilding competitions were held in September 1991 was the Walt Disney World Dolphin Hotel | Gold: architect Michael Graves | EM: ❌ | F1: 0.00
+Problem 204:
+204it [21:25,  1.97s/it]205it [21:27,  2.06s/it]206it [21:29,  2.05s/it]207it [21:31,  1.92s/it]208it [21:34,  2.11s/it]209it [21:36,  2.27s/it]210it [21:39,  2.31s/it]211it [21:41,  2.31s/it]212it [21:43,  2.30s/it]213it [21:45,  2.19s/it]214it [21:47,  2.03s/it]215it [21:49,  1.97s/it]216it [21:51,  2.02s/it]217it [21:53,  2.11s/it]218it [21:55,  2.14s/it]219it [21:57,  2.02s/it]220it [21:59,  2.05s/it]221it [22:01,  1.92s/it]222it [22:03,  2.02s/it]223it [22:05,  1.99s/it]224it [22:07,  2.09s/it]225it [22:09,  2.04s/it]226it [22:12,  2.33s/it]227it [22:15,  2.40s/it]228it [22:17,  2.28s/it]229it [22:19,  2.35s/it]230it [22:22,  2.39s/it]231it [22:25,  2.63s/it]232it [22:28,  2.64s/it]233it [22:30,  2.57s/it]234it [22:32,  2.52s/it]235it [22:34,  2.29s/it]236it [22:36,  2.23s/it]237it [22:38,  2.08s/it]238it [22:40,  2.11s/it]239it [22:43,  2.34s/it]240it [22:45,  2.19s/it]241it [22:47,  2.20s/it]242it [22:49,  2.15s/it]243it [22:52,  2.32s/it]244it [22:54,  2.23s/it]245it [22:56,  2.24s/it]246it [22:58,  2.22s/it]Q: At the 71st Golden Globe Awards for television in 2013, what...
+Pred: Breaking Bad won the Best Animated Feature Film award at the 64th Golden Globe Awards | Gold: multiple awards | EM: ❌ | F1: 0.13
+Problem 205:
+Q: Which actor does American Beauty and American Beauty have in...
+Pred: American Beauty and American Beauty have in common that both stars Kevin Spacey and Lester Burnham | Gold: Kevin Spacey | EM: ❌ | F1: 0.22
+Problem 206:
+Q: Onika Tanya Maraj is a judge on a television show hosted by ...
+Pred: Onika Tanya Maraj is a judge on a television show hosted by Sarah Millican | Gold: Ryan Seacrest | EM: ❌ | F1: 0.00
+Problem 207:
+Q: Are Hot Rod and The Memory of Our People both magazines?...
+Pred: [answer] Hot Rod | Gold: yes | EM: ❌ | F1: 0.00
+Problem 208:
+Q: Who was Chamberlain and Colonel of the military staff of The...
+Pred: Chamberlain and Colonel Judd were James A | Gold: Colonel Charles Hastings Judd | EM: ❌ | F1: 0.40
+Problem 209:
+Q: Who has written more than 300 papers, Semyon Aranovich Gersh...
+Pred: **Semyon Aranovich Gershgorin** | Gold: Pavel Sergeyevich Alexandrov | EM: ❌ | F1: 0.00
+Problem 210:
+Q: Which post DC Extended Universe actress will also play a rol...
+Pred: The answer to this question is: There is no such actress in the provided information. | Gold: Gal Gadot | EM: ❌ | F1: 0.00
+Problem 211:
+Q: Who was the captain of the only battleship to provide gunfir...
+Pred: [Captain J | Gold: Rear Adm. J. Edward Snyder | EM: ❌ | F1: 0.29
+Problem 212:
+Q: The Polar Bears featuring the voice of Armie Hammer, is also...
+Pred: Beatitude (album) | Gold: Jackson Storm | EM: ❌ | F1: 0.00
+Problem 213:
+Q: Which tower is taller, 712 Fifth Avenue or Manhattan Life In...
+Pred: The final answer is: 712 Fifth Avenue is not taller than the Manhattan Life Insurance Building. | Gold: 712 5th Avenue | EM: ❌ | F1: 0.24
+Problem 214:
+Q: Is the Pakistan fast bowler who joined the Kent County Crick...
+Pred: Wahab Riaz is a left-hand batsman | Gold: right-hand | EM: ❌ | F1: 0.00
+Problem 215:
+Q: Who was born first, Arthur Conan Doyle or Penelope Lively?...
+Pred: Therefore, the answer to the question "Who was born first, Arthur Conan Doyle or Penelope Lively? " is: Arthur Conan Doyle. | Gold: Arthur Ignatius Conan Doyle | EM: ❌ | F1: 0.27
+Problem 216:
+Q: The Tennessee Volunteers football team plays as a member for...
+Pred: The Tennessee Volunteers football team plays as a member for a conference in Birmingham, Alabama | Gold: Birmingham, Alabama | EM: ❌ | F1: 0.29
+Problem 217:
+Q: Ernest Foot was the best friend of the fighter pilot who had...
+Pred: Therefore, Ernest Foot was the best friend of the fighter pilot who had 131 victories. | Gold: 44 | EM: ❌ | F1: 0.00
+Problem 218:
+Q: From March 631 to April 631, Farrukhzad Khosrau V was the ki...
+Pred: **Sasanian Empire** | Gold: the Parthian Empire | EM: ❌ | F1: 0.50
+Problem 219:
+Q: Which suburb is a soap opera featuring a character named Bev...
+Pred: Therefore, the suburb where the soap opera "Neighbours" features a character named Beverly Marshall is Erinsborough. | Gold: Erinsborough | EM: ❌ | F1: 0.14
+Problem 220:
+Q: Which country did the Falkland Islands beat in the 2010 Comm...
+Pred: Therefore, the answer to the question "Which country did the Falkland Islands beat in the 2010 Commonwealth games that has eleven administrative divisions? " is: Samoa. | Gold: Samoa | EM: ❌ | F1: 0.09
+Problem 221:
+Q: Which Netflix series "Unbreakable" character is Elizabeth Cl...
+Pred: Therefore, based on the provided context and general knowledge of television shows, we cannot confidently say that "Unbreakable Kimmy Schmidt" is the correct answer. To provide an accurate response, we would need more specific information about this particular show or its characters. | Gold: Kimberly Couger "Kimmy" Schmidt | EM: ❌ | F1: 0.09
+Problem 222:
+Q: Which television series featured an actor who also performed...
+Pred: that Ben Elton from "Get a Life" and Filthy Rich & Catflap from "The Young Ones" were both TV series characters who appeared in "The Young Ones" | Gold: "The Comic Strip Presents..." | EM: ❌ | F1: 0.00
+Problem 223:
+Q: Are both Dafeng District and Dazhou located in the same prov...
+Pred: No | Gold: no | EM: ✅ | F1: 1.00
+Problem 224:
+Q: In what century did this Native warrior and chief, whose bro...
+Pred: Answer: 1805 | Gold: nineteenth | EM: ❌ | F1: 0.00
+Problem 225:
+Q: What film was written and directed by Joby Harold with music...
+Pred: "Awake" | Gold: Awake | EM: ✅ | F1: 1.00
+Problem 226:
+Q: What is the name of the ethnic group who settled in Canada i...
+Pred: - This group was known as the "Shiners." | Gold: French Canadians | EM: ❌ | F1: 0.00
+Problem 227:
+Q: The author of The Thing of It Is... is what Nationality?...
+Pred: American | Gold: American | EM: ✅ | F1: 1.00
+Problem 228:
+Q: How long is the bridge in the Öresund Region that connect Co...
+Pred: 8 km | Gold: 8 km | EM: ✅ | F1: 1.00
+Problem 229:
+Q: Martin Patterson "Pat" Hingle was a close friend of an actor...
+Pred: Martin Patterson "Pat" Hingle was a close friend of Clint Eastwood | Gold: Rawhide | EM: ❌ | F1: 0.00
+Problem 230:
+Q: Is the Marsilea or the Brabejum the genus of more individual...
+Pred: The Marsilea genus** | Gold: Marsilea | EM: ❌ | F1: 0.67
+Problem 231:
+Q: What building is opposite the ceremonial meeting place of th...
+Pred: The Blackman-Bosworth Store | Gold: Mark Masons' Hall | EM: ❌ | F1: 0.00
+Problem 232:
+Q: What material did a hairdresser from Yorkshire, England inve...
+Pred: Starlite | Gold: Starlite | EM: ✅ | F1: 1.00
+Problem 233:
+Q: One Raffles Place is one of the tallest skyscrapers in the c...
+Pred: There is no such building mentioned in the provided information | Gold: Hong Kong | EM: ❌ | F1: 0.00
+Problem 234:
+Q: Which case came first, Craig v. Boren or United States v. Pa...
+Pred: **United States v | Gold: Craig v. Boren | EM: ❌ | F1: 0.33
+Problem 235:
+Q: What is the nickname of the city where Darling's Waterfront ...
+Pred: Bangor | Gold: "Queen City" | EM: ❌ | F1: 0.00
+Problem 236:
+Q: The Kansas City Wizards have had three home venues in Kansas...
+Pred: Arrowhead Stadium | Gold: Arrowhead Stadium | EM: ✅ | F1: 1.00
+Problem 237:
+Q: Henry Hall is known for fighting in the Revolutionary War, a...
+Pred: **Cranberry bog** | Gold: acidic | EM: ❌ | F1: 0.00
+Problem 238:
+Q: A scam involving a male calling small town fast-food restaur...
+Pred: A scam involving a male calling small town fast-food restaurants and pretending to be a police officer to have them strip search employees was turned into a movie of "The White Sari" | Gold: Compliance | EM: ❌ | F1: 0.00
+Problem 239:
+Q: What airport serviced by American Airlines Shuttle, is also ...
+Pred: Therefore, American Airlines Shuttle operates at Logan International Airport (IATA: BOS), which meets both criteria of being the largest airport in the New England region and 17th busiest in the U.S. | Gold: Logan International Airport | EM: ❌ | F1: 0.19
+Problem 240:
+Q: Which genus has more species, Xanthoceras or Ehretia?...
+Pred: Xanthoceras" | Gold: Ehretia | EM: ❌ | F1: 0.00
+Problem 241:
+Q: What arcade game is named after the only player in major lea...
+Pred: Frank Thomas' Big Hurt | Gold: a pinball machine | EM: ❌ | F1: 0.00
+Problem 242:
+Q: What american actress/singer born in 1956 recorded the song ...
+Pred: The final answer is: **Robby Benson** | Gold: Donna Paige Helmintoller | EM: ❌ | F1: 0.00
+Problem 243:
+Q: Which professional baseball player and National 1993 Basebal...
+Pred: Reggie Jackson | Gold: Reginald Martinez "Reggie" Jackson | EM: ❌ | F1: 0.67
+Problem 244:
+Q: Salisbury Woodland Gardens links a zoo with a park designed ...
+Pred: Thomas Mawson | Gold: Thomas Mawson | EM: ✅ | F1: 1.00
+Problem 245:
+Q: What class of instrument does Apatim Majumdar play?...
+Pred: **The Sarod** | Gold: strings | EM: ❌ | F1: 0.00
+Problem 246:
+Q: Jamie Harris is best known for his role as The Hook-Handed M...
+Pred: Jamie Harris is best known for his role as The Hook-Handed Man in a movie directed by Lemony Snicket's A Series of Unfortunate Events. | Gold: Brad Silberling | EM: ❌ | F1: 0.00
+Problem 247:
+247it [23:00,  2.07s/it]248it [23:02,  2.18s/it]249it [23:04,  2.09s/it]250it [23:06,  2.06s/it]251it [23:09,  2.37s/it]252it [23:11,  2.24s/it]253it [23:14,  2.26s/it]254it [23:16,  2.18s/it]255it [23:18,  2.31s/it]256it [23:20,  2.05s/it]257it [23:22,  2.05s/it]258it [23:24,  2.21s/it]259it [23:26,  2.04s/it]260it [23:28,  1.98s/it]261it [23:30,  1.97s/it]262it [23:32,  1.99s/it]263it [23:34,  2.12s/it]264it [23:36,  2.00s/it]265it [23:38,  1.98s/it]266it [23:40,  2.09s/it]267it [23:43,  2.22s/it]268it [23:46,  2.57s/it]269it [23:49,  2.70s/it]270it [23:52,  2.63s/it]271it [23:54,  2.45s/it]272it [23:56,  2.34s/it]273it [23:58,  2.27s/it]274it [24:00,  2.19s/it]275it [24:02,  2.20s/it]276it [24:04,  2.06s/it]277it [24:06,  2.16s/it]278it [24:09,  2.30s/it]279it [24:11,  2.21s/it]280it [24:13,  2.20s/it]281it [24:16,  2.44s/it]282it [24:18,  2.40s/it]283it [24:22,  2.75s/it]284it [24:23,  2.39s/it]285it [24:26,  2.56s/it]286it [24:28,  2.22s/it]287it [24:30,  2.17s/it]288it [24:31,  2.01s/it]Q: How many laps did Harry Prowell run during the 10,000 metres...
+Pred: Therefore, during the 1967 Pan American Games, which was held in Mexico City, Mexico, Harry Prowell ran approximately 35 laps around an Olympic-sized track. | Gold: 25 laps | EM: ❌ | F1: 0.08
+Problem 248:
+Q: Are  Chrysalis and Look both women's magazines?...
+Pred: Since they are not exactly the same in terms of content and purpose, we can conclude that Chrysalis and Look are not both women's magazines. | Gold: yes | EM: ❌ | F1: 0.00
+Problem 249:
+Q: Which author has won more Pulitzer Prizes, Thomas Friedman o...
+Pred: **Answer: Henri Bergson** | Gold: Thomas Loren Friedman | EM: ❌ | F1: 0.00
+Problem 250:
+Q: Yoann Lemoine, a French video director, has created music vi...
+Pred: "Video Games" by Lana Del Rey | Gold: Taylor Swift | EM: ❌ | F1: 0.00
+Problem 251:
+Q: In what city can a person find both the Nusretiye Clock Towe...
+Pred: Therefore, the final answer is: **Tophane and Kumanovo**. | Gold: Istanbul, Turkey | EM: ❌ | F1: 0.00
+Problem 252:
+Q: What is Opry Mills in Nashville, Tennessee?...
+Pred: [answer] O Pry Mills is a super-regional shopping mall located in Nashville, Tennessee | Gold: super-regional shopping mall | EM: ❌ | F1: 0.40
+Problem 253:
+Q: Spaceware Sky Division II is manufactured by this subsidiary...
+Pred: Ordos City China Science Flying Universe Science and Technology Co | Gold: Ordos City | EM: ❌ | F1: 0.33
+Problem 254:
+Q: Which director had the longest career, Alain Resnais or Scot...
+Pred: **Alain Resnais** | Gold: Scott Sidney | EM: ❌ | F1: 0.00
+Problem 255:
+Q: in 1999, Spirit Halloween LLC was purchased by a mall retail...
+Pred: Based on this reasoning, I can conclude that in 1999, Spirit Halloween LLC was purchased by a mall retailer with 600 stores in the United States and Canada. | Gold: over 600 stores | EM: ❌ | F1: 0.14
+Problem 256:
+Q: James Fieser received his B.A. from what liberal arts work c...
+Pred: Berea College | Gold: Berea College | EM: ✅ | F1: 1.00
+Problem 257:
+Q: What year did Roy Rogers and his third wife star in a film d...
+Pred: [answer] | Gold: 1945 | EM: ❌ | F1: 0.00
+Problem 258:
+Q:  The name "Mountbatten-Windsor" applies to male-line descend...
+Pred: Therefore, the name "Mountbatten-Windsor" applies to male-line descendants of Queen Elizabeth II and Prince Philip, Duke of Edinburgh who are not using royal styles or titles. This family is part of the European dynastic lineage established in the Zulu royal family and the Capetian dynasty. | Gold: Mountbatten family | EM: ❌ | F1: 0.05
+Problem 259:
+Q: Who is known for producing the documentary television series...
+Pred: Therefore, the person known for producing the documentary television series based on the book by science historian James Burke is James Burke himself. | Gold: James Burke | EM: ❌ | F1: 0.18
+Problem 260:
+Q: which is larger Asante Traditional Buildings or Gulangyu?...
+Pred: Gulangyu | Gold: Gulangyu | EM: ✅ | F1: 1.00
+Problem 261:
+Q: Armageddon in Retrospect was written by the author who was b...
+Pred: [answer] | Gold: Slaughterhouse-Five | EM: ❌ | F1: 0.00
+Problem 262:
+Q: Patrick Kennedy is known for his collections of Irish  folkt...
+Pred: The province is called "Medieval Ireland" | Gold: the east of Ireland | EM: ❌ | F1: 0.25
+Problem 263:
+Q: What NIFL Premier Intermediate League team did Sean Connor p...
+Pred: The NIFL Premier Intermediate League team that Sean Connor played for was the Distillery Football Club | Gold: Distillery | EM: ❌ | F1: 0.13
+Problem 264:
+Q: Which character does this protagonist, who secretly loves an...
+Pred: Juliet | Gold: Tybalt | EM: ❌ | F1: 0.00
+Problem 265:
+Q: What was the name of the fanzine that interviewed the Sex Pi...
+Pred: SKUM | Gold: SKUM | EM: ✅ | F1: 1.00
+Problem 266:
+Q: What, known as AAS, is commonly used in bodybuilding?...
+Pred: The final answer is: Anabolic/androgenic steroids (AAS). | Gold: Anabolic steroids | EM: ❌ | F1: 0.25
+Problem 267:
+Q: Which American character actor who starred on the television...
+Pred: Therefore, the answer to the question is: **Don S. Davis**. | Gold: Don S. Davis | EM: ❌ | F1: 0.55
+Problem 268:
+Q: Candy Coburn has shared the stage with an American country m...
+Pred: Therefore, based on the given context, I don't have enough information to determine who plays guitar in the band that includes Candy Coburn as a member. The question asks for a specific answer, but there's not enough information provided to make such a determination. | Gold: Charles Kelley | EM: ❌ | F1: 0.00
+Problem 269:
+Q: What is the population according to the 2007 population cens...
+Pred: The population is approximately **3,384,569**. | Gold: 3,384,569 | EM: ❌ | F1: 0.40
+Problem 270:
+Q: Which composer created Night Ferry first performed in 2012 a...
+Pred: Anna Clyne | Gold: Anna Clyne | EM: ✅ | F1: 1.00
+Problem 271:
+Q: To which aircraft carrier was the VMF-213 Marine Fighting Sq...
+Pred: The USS "Essex" (CV/CA/CVS-9) was the aircraft carrier that VMF-213 was assigned to during World War II | Gold: USS Essex | EM: ❌ | F1: 0.24
+Problem 272:
+Q: Can Stenocereus and Pachypodium both include tree like plant...
+Pred: **Answer: No**, Stenocereus and Pachypodium do not both include tree-like plants. | Gold: yes | EM: ❌ | F1: 0.00
+Problem 273:
+Q: What movie did Pitof direct which had an action-adventure ti...
+Pred: Tron: Evolution: Battle Grids | Gold: Catwoman | EM: ❌ | F1: 0.00
+Problem 274:
+Q: on 16 January 1995 "First Knight" was being filmed at a stud...
+Pred: Answer: 20 miles | Gold: 7 miles | EM: ❌ | F1: 0.40
+Problem 275:
+Q: What is the name of the actress who has received a Drama Des...
+Pred: Laura Osnes | Gold: Laura Ann Osnes | EM: ❌ | F1: 0.80
+Problem 276:
+Q: Marion Greene was a health policy analyst for St. Judt Medic...
+Pred: 20 | Gold: 20 | EM: ✅ | F1: 1.00
+Problem 277:
+Q: Which Genus has more species Eucryphia or Lepidozamia ?...
+Pred: [Eucryphia] | Gold: Eucryphia | EM: ✅ | F1: 1.00
+Problem 278:
+Q: In what city was the Italian Baroque composer who composed a...
+Pred: that the Italian Baroque composer who composed a set of sonatas, titled Op | Gold: Venice | EM: ❌ | F1: 0.00
+Problem 279:
+Q: Meaning "reddish water" in Hawaiian, which location was Butc...
+Pred: Waimea Canyon State Park | Gold: Waimea Bay | EM: ❌ | F1: 0.33
+Problem 280:
+Q: What type of magazine is Eugene Habecker the chairman of?...
+Pred: Therefore, the type of magazine that Eugene Habecker is the chairman of is likely "Christianity Today." | Gold: evangelical Christian periodical | EM: ❌ | F1: 0.00
+Problem 281:
+Q: Flyboys stars which actor who was nominated for an Academy A...
+Pred: [answer] James Franco | Gold: James Franco | EM: ❌ | F1: 0.80
+Problem 282:
+Q: The English actor Kris Marshall played which character in th...
+Pred: Therefore, based on the information provided in the context, we can conclude that Kris Marshall played the character of Dave in "Death in Paradise". | Gold: DI Humphrey Goodman | EM: ❌ | F1: 0.00
+Problem 283:
+Q: In what month was the relief first officer of the flight tha...
+Pred: Aurelio Valle | Gold: February | EM: ❌ | F1: 0.00
+Problem 284:
+Q: Which film was released first: Sacred Planet or Oz the Great...
+Pred: Therefore, "Sacred Planet" was released first. | Gold: Sacred Planet | EM: ❌ | F1: 0.50
+Problem 285:
+Q: I'd Come for You is a single by the band formed in what Albe...
+Pred: Calgary | Gold: Hanna | EM: ❌ | F1: 0.00
+Problem 286:
+Q: Who is older, Ferdi Taygan or Mahesh Bhupathi?...
+Pred: Therefore, Ferdi Taygan is older than Mahesh Bhupathi. | Gold: Ferdi Taygan | EM: ❌ | F1: 0.40
+Problem 287:
+Q: Other than racing, what sport does the 1998 champion of the ...
+Pred: Output: "There is no specific sport mentioned in the provided context paragraphs that Alex Zanardi practiced." | Gold: paracyclist | EM: ❌ | F1: 0.00
+Problem 288:
+Q: Where did Ian Harland study prior to studying at the oldest ...
+Pred: Peterhouse, Cambridge | Gold: The Dragon School in Oxford | EM: ❌ | F1: 0.00
+Problem 289:
+Q: In what 1997 American mystery crime film did Johnny Galecki ...
+289it [24:34,  2.08s/it]290it [24:36,  2.09s/it]291it [24:37,  1.94s/it]292it [24:40,  2.07s/it]293it [24:42,  2.01s/it]294it [24:44,  2.11s/it]295it [24:46,  2.16s/it]296it [24:48,  2.10s/it]297it [24:50,  2.00s/it]298it [24:52,  2.15s/it]299it [24:55,  2.23s/it]300it [24:56,  1.99s/it]301it [24:58,  1.89s/it]302it [25:00,  2.08s/it]303it [25:03,  2.23s/it]304it [25:05,  2.20s/it]305it [25:07,  2.18s/it]306it [25:09,  2.03s/it]307it [25:11,  1.94s/it]308it [25:13,  2.12s/it]309it [25:15,  1.98s/it]310it [25:18,  2.22s/it]311it [25:19,  1.98s/it]312it [25:21,  1.91s/it]313it [25:23,  1.85s/it]314it [25:24,  1.86s/it]315it [25:27,  2.11s/it]316it [25:29,  1.92s/it]317it [25:31,  1.93s/it]318it [25:33,  1.94s/it]319it [25:34,  1.91s/it]320it [25:36,  1.93s/it]321it [25:38,  1.93s/it]322it [25:41,  2.07s/it]323it [25:42,  1.97s/it]324it [25:44,  1.87s/it]325it [25:46,  1.93s/it]326it [25:48,  1.97s/it]327it [25:51,  2.16s/it]Pred: Based on these steps, we can conclude that Johnny Galecki started appearing in the 1989 American mystery crime film "National Lampoon's Christmas Vacation". | Gold: Suicide Kings | EM: ❌ | F1: 0.00
+Problem 290:
+Q: Which came to market first, "Hey Pa! There's a Goat on the R...
+Pred: Therefore, "Hey Pa! There's a Goat on the Roof" came to market first. | Gold: Hey Pa! There's a Goat on the Roof | EM: ❌ | F1: 0.71
+Problem 291:
+Q: What record did the Super Bowl XXXIV champions finish the re...
+Pred: The Super Bowl XXXIV champions finished the regular-season with a record of 13-3 | Gold: a record of 13–3 | EM: ❌ | F1: 0.46
+Problem 292:
+Q: What is the population of the town at the intersection of In...
+Pred: The population of the town at the intersection of Interstate Highways 77 and the longest Interstate Highway within the borders of Virginia is 8,211 | Gold: 8,211 at the 2010 census | EM: ❌ | F1: 0.17
+Problem 293:
+Q: What was the nickname of the hitman hired by an Italian Amer...
+Pred: The hitmen were called "The Crowned Prince of the Philadelphia Mob | Gold: The Crowned Prince of the Philadelphia Mob | EM: ❌ | F1: 0.77
+Problem 294:
+Q: What was the position of Jean Baptiste Androuet du Cerceau u...
+Pred: The position of Jean Baptiste Androuet du Cerceau under the man who was King of the Polish-Lithuanian Commonwealth from 1573 to 1575 was that he was an advisor or assistant | Gold: supervisor of the royal works | EM: ❌ | F1: 0.07
+Problem 295:
+Q: Which American music star appeared as a guest in a Will & Gr...
+Pred: Based on these steps, the answer to the question "Which American music star appeared as a guest in a Will & Grace episode called 'Back Up, Dancer'? " is: Tracy Poust. | Gold: Janet Damita Jo Jackson | EM: ❌ | F1: 0.00
+Problem 296:
+Q: What army did the namesake of the ship launched as the Münch...
+Pred: The name of the army that the namesake of the ship launched as the München in 1930 fought in during the American Revolutionary War was the American Continental Army | Gold: Continental Army | EM: ❌ | F1: 0.17
+Problem 297:
+Q: The Church of the Guanche People was founded in the city tha...
+Pred: Therefore, the answer to the question "The Church of the Guanche People was founded in the city that is on the most populated island of what larger area?" is: Troms county. | Gold: Macaronesia | EM: ❌ | F1: 0.00
+Problem 298:
+Q: What officially ended the first phase of the military confli...
+Pred: Therefore, the answer to the question "What officially ended the first phase of the military conflict between the British Raj and the Emirate of Afghanistan from 1878 to 1880? " is: The Treaty of Gandamak. | Gold: Treaty of Gandamak | EM: ❌ | F1: 0.20
+Problem 299:
+Q: The mass killing that took place at Oakland, California on A...
+Pred: The answer is: [answer] Oregon | Gold: Oregon | EM: ❌ | F1: 0.40
+Problem 300:
+Q: When did the rock band that sang "All Join Hands" rise to pr...
+Pred: The rock band that sang "All Join Hands" rose to prominence in the early 1970s. | Gold: early 1970s | EM: ❌ | F1: 0.27
+Problem 301:
+Q: Where is the company that owns thanKing Horse pub restaurant...
+Pred: Bury St Edmunds, Suffolk, England | Gold: Bury St Edmunds, | EM: ❌ | F1: 0.75
+Problem 302:
+Q: What is the uppermost age range for the sort of fiction writ...
+Pred: The uppermost age range for the sort of fiction written by Alexander Gordon Smith is 13 years old | Gold: early 20s | EM: ❌ | F1: 0.00
+Problem 303:
+Q: What is the birthday of the actress who was the Duchess in "...
+Pred: 23 June | Gold: 23 November 1946 | EM: ❌ | F1: 0.40
+Problem 304:
+Q: Which film starring Patrick Tatten is based on a book writte...
+Pred: True Love (Spanish: Amor Verdadero) is a book written by the American entertainer Jennifer Lopez | Gold: The Soloist | EM: ❌ | F1: 0.00
+Problem 305:
+Q: Are Skeptical Inquirer and The Progressive Populist both tab...
+Pred: [answer] | Gold: no | EM: ❌ | F1: 0.00
+Problem 306:
+Q: The 1984 film "Marlene" is a documentary about an actress bo...
+Pred: 1901 | Gold: 1901 | EM: ✅ | F1: 1.00
+Problem 307:
+Q: Which former mill town is near Rivington Hall Barn?...
+Pred: Therefore, the former mill town near Rivington Hall Barn is Almonte, Ontario. | Gold: Bolton | EM: ❌ | F1: 0.00
+Problem 308:
+Q: What prolific English engineer, who died on 15 December 1857...
+Pred: The final answer is: Charles Stephen Boreham | Gold: George Cayley | EM: ❌ | F1: 0.00
+Problem 309:
+Q: Which dog is considered a giant dog breed, the  Leonberger o...
+Pred: **Answer: The Leonberger is considered a giant dog breed.** | Gold: The Leonberger is a giant dog breed. | EM: ❌ | F1: 0.83
+Problem 310:
+Q: Are Staten Island Catapult and This Is Elvis both documentar...
+Pred: Therefore, **Staten Island Catapult** and **This Is Elvis** are not both documentaries. | Gold: yes | EM: ❌ | F1: 0.00
+Problem 311:
+Q: What is the year of the event that occured first, Making Tod...
+Pred: **"Making Today a Perfect Day was produced"** | Gold: 2013 | EM: ❌ | F1: 0.00
+Problem 312:
+Q: Which magazine is published more often, Shonen Jump or Rolli...
+Pred: **Shonen Jump** is published more often | Gold: Rolling Stone | EM: ❌ | F1: 0.00
+Problem 313:
+Q: Where is the Cocoa Krispies and former Superman sponsor loca...
+Pred: The Wisconsin Center is located in downtown Milwaukee, Wisconsin | Gold: Battle Creek, Michigan | EM: ❌ | F1: 0.00
+Problem 314:
+Q: Who was born first Am Rong or Ava DuVernay ?...
+Pred: Ava DuVernay | Gold: Am Rong | EM: ❌ | F1: 0.00
+Problem 315:
+Q: How many days did it take the Best New Artist of 2009 to sel...
+Pred: Therefore, it took the Best New Artist of 2009 approximately **2548 days** to sell 2 million copies in the UK and break the twenty-year-old record. | Gold: 29 | EM: ❌ | F1: 0.00
+Problem 316:
+Q: "Ew!" is a song by a television host born where?...
+Pred: Therefore, the answer to the question "Ew!" is: Jimmy Fallon | Gold: Bay Ridge, Brooklyn | EM: ❌ | F1: 0.00
+Problem 317:
+Q: The northern English anglian Kingdom in the Humber estuary s...
+Pred: Therefore, the final answer is: There isn't enough information to determine what dialect of English a northern English anglian Kingdom in the Humber estuary spoke. | Gold: Northumbrian | EM: ❌ | F1: 0.00
+Problem 318:
+Q: What Kentucky county has a population of 60,316 and features...
+Pred: [answer] Oldham County | Gold: Oldham County | EM: ❌ | F1: 0.80
+Problem 319:
+Q: Are both Duke Energy and Affiliated Managers Group based in ...
+Pred: The final answer is: **"No."** | Gold: no | EM: ❌ | F1: 0.40
+Problem 320:
+Q: Two positions were filled in The Voice of Ireland b which Br...
+Pred: 2. Girls Aloud | Gold: The Saturdays | EM: ❌ | F1: 0.00
+Problem 321:
+Q: Who was also an actor, Serri or John Fogerty?...
+Pred: John Fogerty (actor) | Gold: Serri | EM: ❌ | F1: 0.00
+Problem 322:
+Q: What is the international football competition for women tha...
+Pred: The international football competition for women that Liu Ailing played in the 1991, 1995, and 1999 editions of FIFA Women's World Cup tournaments was the Togo women's national football team | Gold: international football competition | EM: ❌ | F1: 0.20
+Problem 323:
+Q: Rock Springs is a collection of short stories by an author b...
+Pred: Therefore, the answer to the question "Rock Springs is a collection of short stories by an author born in what year? " is: 1944. | Gold: 1944 | EM: ❌ | F1: 0.10
+Problem 324:
+Q: Folie à Deux is a studio album by the American rock band for...
+Pred: Wilmette, Illinois. | Gold: Wilmette | EM: ❌ | F1: 0.67
+Problem 325:
+Q: This work of literature _______ , known by its Greek title O...
+Pred: The final answer is: Hamlet | Gold: Oedipus Rex | EM: ❌ | F1: 0.00
+Problem 326:
+Q: Katherine Waterston and Chrisann Brennan has what in common?...
+Pred: [answer] American women | Gold: Steve Jobs | EM: ❌ | F1: 0.00
+Problem 327:
+Q: The voice of Homer Simpson also voices what alien character ...
+Pred: This alien character is Mel Gibson, who voices Abraham Jedediah Simpson II (Grampa) in the animated TV series "The Simpsons". | Gold: Kodos | EM: ❌ | F1: 0.00
+Problem 328:
+328it [25:53,  2.20s/it]329it [25:55,  2.24s/it]330it [25:57,  2.11s/it]331it [25:59,  1.97s/it]332it [26:01,  2.11s/it]333it [26:05,  2.49s/it]334it [26:07,  2.46s/it]335it [26:09,  2.35s/it]336it [26:11,  2.22s/it]337it [26:13,  2.21s/it]338it [26:15,  2.08s/it]339it [26:17,  1.90s/it]340it [26:18,  1.79s/it]341it [26:20,  1.93s/it]342it [26:22,  1.98s/it]343it [26:25,  2.03s/it]344it [26:27,  2.07s/it]345it [26:29,  2.08s/it]346it [26:31,  2.16s/it]347it [26:33,  2.12s/it]348it [26:35,  2.08s/it]349it [26:37,  2.04s/it]350it [26:39,  1.98s/it]351it [26:41,  2.00s/it]352it [26:43,  1.97s/it]353it [26:45,  2.01s/it]354it [26:47,  2.07s/it]355it [26:49,  2.01s/it]356it [26:51,  2.10s/it]357it [26:54,  2.18s/it]358it [26:56,  2.27s/it]359it [27:01,  2.86s/it]360it [27:02,  2.56s/it]361it [27:04,  2.26s/it]362it [27:06,  2.18s/it]363it [27:08,  2.11s/it]364it [27:10,  2.00s/it]365it [27:12,  2.06s/it]366it [27:13,  1.89s/it]367it [27:16,  2.06s/it]368it [27:18,  2.06s/it]369it [27:20,  2.08s/it]Q: What studio album did Kanye West record with Roc-A-Fella Rec...
+Pred: "The College Dropout" | Gold: My Beautiful Dark Twisted Fantasy | EM: ❌ | F1: 0.00
+Problem 329:
+Q: Were Enrique Carreras and Lionel Ngakane both filmakers duri...
+Pred: **No**, neither Enrique Carreras nor Lionel Ngakane were both filmakers during the 20th century | Gold: yes | EM: ❌ | F1: 0.00
+Problem 330:
+Q: The city that contains the Yunnan Provincial Museum is also ...
+Pred: The final answer: The city that contains the Yunnan Provincial Museum is also known by "Xiangtan." | Gold: Spring city | EM: ❌ | F1: 0.13
+Problem 331:
+Q: Where is the singer of "B Boy" raised?...
+Pred: Philadelphia | Gold: Philadelphia | EM: ✅ | F1: 1.00
+Problem 332:
+Q: The Column of Saint Zanobi  is a monumental marble column lo...
+Pred: Minor basilica | Gold: a minor basilica | EM: ✅ | F1: 1.00
+Problem 333:
+Q: The Ingerophrynus gollum is named after a character in a boo...
+Pred: 12 copies | Gold: 150 million copies | EM: ❌ | F1: 0.40
+Problem 334:
+Q: What Danish eurodance group had a single called "Barbie Girl...
+Pred: Therefore, the answer to the question "What Danish eurodance group had a single called 'Barbie Girl' which resulted in a lawsuit in 2002?" is Aqua. | Gold: Aqua | EM: ❌ | F1: 0.09
+Problem 335:
+Q: Which case was decided first, Selle v. Gibb or Reynolds v. S...
+Pred: The answer is: Reynolds v | Gold: 1964 | EM: ❌ | F1: 0.00
+Problem 336:
+Q: Mamie Gummer played the role of Nancy Crozier on the TV seri...
+Pred: Mamie Gummer played the role of Nancy Crozier on the TV series airing on W Network (Love It or List It Vancouver) | Gold: CBS | EM: ❌ | F1: 0.00
+Problem 337:
+Q: What country do both Adnan Akmal and Kamran Akmal represent ...
+Pred: [answer] Pakistan and South Africa | Gold: Pakistani | EM: ❌ | F1: 0.00
+Problem 338:
+Q: Did Franki Valli sing with Hellogoodbye or The Four Seasons?...
+Pred: Franki Valli did not sing with Hellogoodbye or The Four Seasons. He specifically sang with the Four Seasons during his time as a member of the band. | Gold: The Four Seasons | EM: ❌ | F1: 0.16
+Problem 339:
+Q: Both Sorbaria and Goldenrod are a genus of more than 50 flow...
+Pred: Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants | Gold: no | EM: ❌ | F1: 0.00
+Problem 340:
+Q: What is the capacity of the Stadium, other than Kauffman Sta...
+Pred: Therefore, the capacity of the stadium besides Kauffman Stadium is 21,489. | Gold: 76,416 | EM: ❌ | F1: 0.00
+Problem 341:
+Q: Who is the current drummer of the band who did the song "Wha...
+Pred: Therefore, based on the context provided, the current drummer of the band that performed "What Lovers Do" is Timothy "Yogi" Watts. | Gold: Matt Flynn | EM: ❌ | F1: 0.00
+Problem 342:
+Q: What 2017 Christopher B. Landon directed American slasher fi...
+Pred: Therefore, based on the information provided in the context paragraph, the answer to the question "What 2017 Christopher B. Landon directed American slasher film is Jessica Rothe starring in? " is: Happy Death Day. | Gold: Happy Death Day | EM: ❌ | F1: 0.19
+Problem 343:
+Q: Who was the president of the Sinn Fein political party durin...
+Pred: The Volunteer Political Party (VPP) | Gold: Gerard "Gerry" Adams | EM: ❌ | F1: 0.00
+Problem 344:
+Q: Which of these battles occurred earlier--the Battle of Pelel...
+Pred: **The Battle of Peleliu** occurred earlier than the Battle of Belleau Wood | Gold: The Battle of Belleau Wood | EM: ❌ | F1: 0.57
+Problem 345:
+Q: Garden Island Naval Chapel is the oldest Chistian chapel of ...
+Pred: The Royal Australian Navy | Gold: Australian Defence Force | EM: ❌ | F1: 0.33
+Problem 346:
+Q: Július Satinský was born in a city that has a current popula...
+Pred: 9,426,959 | Gold: about 450,000 | EM: ❌ | F1: 0.00
+Problem 347:
+Q: What was the name of the 19th century foundry which was loca...
+Pred: Therefore, the 19th century foundry that was located in a village directly across the Hudson River from Westpoint in Putnam County, New York, is Cold Spring. | Gold: West Point Iron and Cannon Foundry | EM: ❌ | F1: 0.07
+Problem 348:
+Q: What fictional character created by Tom Clancy was turned in...
+Pred: Answer: Dr. John Patrick "Jack" Ryan Sr., KCVO (Hon.), Ph.D. | Gold: Jack Ryan | EM: ❌ | F1: 0.33
+Problem 349:
+Q: Wheat salad is composed typically of what red fruit?...
+Pred: This conclusion is based on the fact that tomatoes are a common ingredient in many types of wheat salads and are often referred to as "red fruits." | Gold: tomato | EM: ❌ | F1: 0.00
+Problem 350:
+Q: What year did the biographical-comedy-crime film directed by...
+Pred: [answer: 2011] | Gold: 2009 | EM: ❌ | F1: 0.00
+Problem 351:
+Q: when was the album that includes the song by Dustin Lynch re...
+Pred: Based on this reasoning, I can conclude that the album "Where It's At (Yep, Yep)" was released to country radio on February 17, 2017. | Gold: September 8, 2017 | EM: ❌ | F1: 0.08
+Problem 352:
+Q: Which playwright lived a longer life, Edward Albee or J. M. ...
+Pred: J | Gold: Edward Franklin Albee III | EM: ❌ | F1: 0.00
+Problem 353:
+Q: Are both Rutgers University and Carnegie Mellon University l...
+Pred: **No** | Gold: yes | EM: ❌ | F1: 0.00
+Problem 354:
+Q: Vanessa Bley is what person who organizes and often finances...
+Pred: **Vanessa Bley is a singer who organizes and often finances concerts, plays, or operas, performing a role** | Gold: impresario | EM: ❌ | F1: 0.00
+Problem 355:
+Q: Were Thomas H. Ince and Joseph McGrath of the same nationali...
+Pred: "The answer is: No | Gold: no | EM: ❌ | F1: 0.50
+Problem 356:
+Q: Are Phlebodium and Pieris both species of ferns?...
+Pred: No, Phlebodium and Pieris are not both species of ferns | Gold: no | EM: ❌ | F1: 0.18
+Problem 357:
+Q: Bartlett's Bridge was built by the engineer who worked for t...
+Pred: Charles A | Gold: Worcester County | EM: ❌ | F1: 0.00
+Problem 358:
+Q: Which novelist, J. G. Farrell or Louis Aragon, wrote of the ...
+Pred: both j g farrell and louis aragon | Gold: Farrell | EM: ❌ | F1: 0.25
+Problem 359:
+Q: What city did the characters from Gargoyles the Movie: The H...
+Pred: Escalante Petrified Forest State Park | Gold: modern-day New York City | EM: ❌ | F1: 0.00
+Problem 360:
+Q: Who were the producers of the show for which Chris McKay mad...
+Pred: Therefore, based on this information, we can conclude that the producers of the show for which Chris McKay made his feature film directorial debut were Dallas Austin and Tionne 'T-Boz' Watkins. | Gold: Dan Lin, Roy Lee, Phil Lord and Christopher Miller | EM: ❌ | F1: 0.05
+Problem 361:
+Q: The Waterloo Vase has been used as a garden ornament at whos...
+Pred: Buckingham Palace | Gold: reigning monarch of the United Kingdom | EM: ❌ | F1: 0.00
+Problem 362:
+Q: Scott Sandelin grew up in a town in what Minnesota county?...
+Pred: **Hibbing** | Gold: Saint Louis County | EM: ❌ | F1: 0.00
+Problem 363:
+Q: The 37th Disney animated feature film Tarzan features You'll...
+Pred: We don't have enough information to determine who wrote "You'll Be in My Heart | Gold: Phil Collins | EM: ❌ | F1: 0.00
+Problem 364:
+Q: What type of media does J. T. Petty and Outlast have in comm...
+Pred: Uterine cancer (womb cancer) and uterine cancer are both types of cancer that emerge from the tissue of the uterus | Gold: video game | EM: ❌ | F1: 0.00
+Problem 365:
+Q: Where did the architect of the Governor's House, located in ...
+Pred: The architect of the Governor's House, located in Knutsford, England, graduated from Lancaster University | Gold: Cambridge University | EM: ❌ | F1: 0.14
+Problem 366:
+Q:  What is the latest album of Tim Hecker, the Canadian electr...
+Pred: The latest album of Tim Hecker is "Love Streams | Gold: Love Streams | EM: ❌ | F1: 0.40
+Problem 367:
+Q: What is the name of this Fortune 500 American company that o...
+Pred: Lowe's | Gold: Lowe's | EM: ✅ | F1: 1.00
+Problem 368:
+Q: For what "first" was Ivory Lee Brown's nephew credited for i...
+Pred: Adrian Peterson | Gold: first freshman to finish as the runner-up | EM: ❌ | F1: 0.00
+Problem 369:
+Q: Haruki Murakami said that writing "Dance Dance Dance" had be...
+Pred: 1988 | Gold: 1987 | EM: ❌ | F1: 0.00
+370it [27:22,  1.99s/it]371it [27:24,  1.92s/it]372it [27:26,  2.05s/it]373it [27:28,  2.19s/it]374it [27:31,  2.16s/it]375it [27:33,  2.38s/it]376it [27:37,  2.82s/it]377it [27:40,  2.71s/it]378it [27:41,  2.40s/it]379it [27:44,  2.42s/it]380it [27:47,  2.54s/it]381it [27:49,  2.44s/it]382it [27:51,  2.46s/it]383it [27:54,  2.66s/it]384it [27:57,  2.54s/it]385it [28:00,  2.63s/it]386it [28:01,  2.34s/it]387it [28:03,  2.28s/it]388it [28:06,  2.29s/it]389it [28:08,  2.28s/it]390it [28:10,  2.21s/it]391it [28:12,  2.09s/it]392it [28:14,  2.15s/it]393it [28:16,  2.20s/it]394it [28:18,  2.05s/it]395it [28:20,  2.03s/it]396it [28:22,  1.99s/it]397it [28:24,  1.97s/it]398it [28:25,  1.84s/it]399it [28:27,  1.82s/it]400it [28:30,  2.01s/it]401it [28:32,  1.96s/it]402it [28:34,  1.97s/it]403it [28:36,  2.10s/it]404it [28:38,  1.96s/it]405it [28:39,  1.88s/it]406it [28:41,  1.92s/it]407it [28:43,  1.88s/it]Problem 370:
+Q: Erica Packer was the second wife of what Australian business...
+Pred: Therefore, based on this information, we can conclude that Erica Packer was the second wife of James Packer. | Gold: James Packer | EM: ❌ | F1: 0.21
+Problem 371:
+Q: What type of media does Bitter Jester and Sicko have in comm...
+Pred: documentary film" | Gold: documentary | EM: ❌ | F1: 0.67
+Problem 372:
+Q: What country does Eric A. Sykes and Eccles, Greater Manchest...
+Pred: **Britain** | Gold: England | EM: ❌ | F1: 0.00
+Problem 373:
+Q: What South Korean actor was a member of the pop duo TVXQ and...
+Pred: Changmin | Gold: Jung Yun-ho | EM: ❌ | F1: 0.00
+Problem 374:
+Q: which is traditionally drunk before retiring to bed, Hot tod...
+Pred: Hot toddy | Gold: Hot toddy | EM: ✅ | F1: 1.00
+Problem 375:
+Q: What year was the film "Mom" released, starring the voice of...
+Pred: 2017 | Gold: 2017 | EM: ✅ | F1: 1.00
+Problem 376:
+Q: For One Night Only was hosted by the man most well-known for...
+Pred: [answer] | Gold: The Late Late Show | EM: ❌ | F1: 0.00
+Problem 377:
+Q: What company did Roscoe Channing form with the owner of a le...
+Pred: Answer: The company Roscoe Channing formed with the owner of a leading stable of thoroughbred racehorses is the Hudson Bay Mining and Smelting Company. | Gold: Hudson Bay Mining and Smelting Company | EM: ❌ | F1: 0.46
+Problem 378:
+Q: Jens Risom introduced what type of design, characterized by ...
+Pred: Scandinavian design | Gold: Scandinavian design | EM: ✅ | F1: 1.00
+Problem 379:
+Q: Which of the movie which has Rich Lee 3-D previsualizations ...
+Pred: Therefore, the answer to the question "Which of the movie which has Rich Lee 3-D previsualizations was directed by Francis Lawrence? " is: "The Hunger Games film series". | Gold: Constantine | EM: ❌ | F1: 0.00
+Problem 380:
+Q: What criteria subjectively qualifies the Houston Astrodome t...
+Pred: The Houston Astrodome was called "The Eighth Wonder of the World" because it served multiple teams (MLB, NFL, and NBA) and hosted professional sports events. | Gold: comparable to the seven Wonders of the World | EM: ❌ | F1: 0.14
+Problem 381:
+Q: Who was born first, José Echegaray y Eizaguirre or P. J. O'R...
+Pred: José Echegaray y Eizaguirre was born first | Gold: José Echegaray y Eizaguirre | EM: ❌ | F1: 0.73
+Problem 382:
+Q: Who did the Doncaster Belles play in the 1994 FA Women's Cup...
+Pred: Doncaster Rovers Belles played in the 1994 FA Women's Cup Final held at Glanford Park | Gold: Knowsley United Women | EM: ❌ | F1: 0.00
+Problem 383:
+Q: What act for Innocent Records achieved Platinum sales and sh...
+Pred: Brown" because it's mentioned in relation to Innocent Records' name and music but not explicitly about their act with a primary color in the RGB model | Gold: Blue | EM: ❌ | F1: 0.00
+Problem 384:
+Q: What national historic district is located near a village in...
+Pred: Cromwell's Run Rural Historic District | Gold: Valhalla Highlands Historic District | EM: ❌ | F1: 0.44
+Problem 385:
+Q: Which American writer wrote both The Ganymede Takeover (1967...
+Pred: Therefore, the American writer who wrote both The Ganymede Takeover and The Man in the High Castle (1962) is Samuel R. Delany. | Gold: Philip K. Dick | EM: ❌ | F1: 0.00
+Problem 386:
+Q: Curt Menefee is the host of the Fox network's NFL show with ...
+Pred: The team Curt Menefee is hosting in his Fox NFL Sunday is the New York Giants (NFL) | Gold: New York Giants | EM: ❌ | F1: 0.33
+Problem 387:
+Q: Francisco Jose Hernandez was a participant in an invasion th...
+Pred: Therefore, based on the given context and the analysis above, I cannot definitively state that Francisco José Hernández participated in an invasion that took place in 1961. | Gold: 1961 | EM: ❌ | F1: 0.08
+Problem 388:
+Q: Dead but Rising was a song by the Danish band fomed in what ...
+Pred: Answer: Copenhagen | Gold: Copenhagen | EM: ❌ | F1: 0.67
+Problem 389:
+Q: The man, who the award in which "Summer of the Monkeys" won,...
+Pred: Therefore, based on the provided context and general knowledge about the AERA, we can conclude that while Vance Powell was a spokesman for white sectors of America, it's not clear if he was specifically a spokesman for the white sector of America. The information given does not provide enough details to definitively state this. | Gold: middle America | EM: ❌ | F1: 0.04
+Problem 390:
+Q: Which lead actor/actress in War Chhod Na Yaar has also acted...
+Pred: Therefore, based on this reasoning, the answer to the question "Which lead actor/actress in War Chhod Na Yaar has also acted in Bengali and English-language films? " is: Sharman Joshi. | Gold: Soha Ali Khan | EM: ❌ | F1: 0.00
+Problem 391:
+Q: What type of movie are Wishing Stairs and Voice?...
+Pred: Wishing Stairs and Voice are both types of movie classifications used within opera (specifically in the field of voice classification). Wishing Stairs falls under horror film genres, while Voice classification involves identifying human singing voices based on specific characteristics. | Gold: South Korean horror film | EM: ❌ | F1: 0.10
+Problem 392:
+Q: Which cast member of Alice Upside Down also stars in the ABC...
+Pred: Therefore, the answer to the question "Which cast member of Alice Upside Down also stars in the ABC Family/Freeform drama 'Switched at Birth'? " is: Alyson Stoner. | Gold: Lucas Stephen Grabeel | EM: ❌ | F1: 0.00
+Problem 393:
+Q: What kind of movie directed by F. Javier gutierrez did an It...
+Pred: "Rings" | Gold: American supernatural psychological horror film | EM: ❌ | F1: 0.00
+Problem 394:
+Q: In which county is the English king Harold Godwinson buried?...
+Pred: Waltham Abbey | Gold: Essex | EM: ❌ | F1: 0.00
+Problem 395:
+Q: Who wrote The Devils, and was an eninent English theater, op...
+Pred: There is no English theater, opera, or film director named "John Whiting" who wrote "The Devils" | Gold: Peter Hall | EM: ❌ | F1: 0.00
+Problem 396:
+Q: Which Grand Slam singles tournament have Francesca Schiavone...
+Pred: The final answer is: **[answer] French Open (2010)** | Gold: French Open | EM: ❌ | F1: 0.44
+Problem 397:
+Q: "Kapitän zur See" Ernst Lindemann was the commander of which...
+Pred: Tirpitz | Gold: Bismarck | EM: ❌ | F1: 0.00
+Problem 398:
+Q: Which football team does Lewis Young's older brother, Ashley...
+Pred: Manchester United | Gold: Premier League club Manchester United and the England national team | EM: ❌ | F1: 0.36
+Problem 399:
+Q: Snowdrop is a proprietary game engine first revealed with an...
+Pred: - | Gold: Massive Entertainment | EM: ❌ | F1: 0.00
+Problem 400:
+Q: Wendy Ayche was featured in 2016 in an annual production cre...
+Pred: YouTube Rewind is a video series produced and created by YouTube and Portal A Interactive. | Gold: Portal A Interactive | EM: ❌ | F1: 0.27
+Problem 401:
+Q: John MacGregor, Baron MacGregor of Pulham Market was educate...
+Pred: No information available | Gold: King George IV | EM: ❌ | F1: 0.00
+Problem 402:
+Q: Which game was released first, Icehouse pieces or Kill Docto...
+Pred: **Kill Doctor Lucky** came before **Icehouse Pieces**. | Gold: Icehouse pieces | EM: ❌ | F1: 0.44
+Problem 403:
+Q: American Blues included the drummer from which American rock...
+Pred: Therefore, based on the information given and our analysis, we can conclude that American Blues did not include a drummer from Chris Robinson Brotherhood. | Gold: ZZ Top | EM: ❌ | F1: 0.00
+Problem 404:
+Q: The Indian actor and philanthropist, who starred in "Mera Da...
+Pred: 1992 | Gold: 1977 | EM: ❌ | F1: 0.00
+Problem 405:
+Q: The Jeep Cherokee was originally sold as a variant of a Jeep...
+Pred: The Jeep Cherokee was originally sold as a variant of a Jeep model produced during the years 1963 to 1974 | Gold: 1963 to 1991 | EM: ❌ | F1: 0.21
+Problem 406:
+Q: Where was the person born who was recognized by MIAL and is ...
+Pred: Nabi Tajima | Gold: Laurel, Mississippi | EM: ❌ | F1: 0.00
+Problem 407:
+Q: Which magazine is older, Gallery or Dime Magazine?...
+Pred: Therefore, **Dime Magazine** is older than Gallery. | Gold: arose on the "Playboy" magazine pattern in the 1970s. | EM: ❌ | F1: 0.14
+Problem 408:
+408it [28:45,  1.90s/it]409it [28:49,  2.65s/it]410it [28:52,  2.56s/it]411it [28:54,  2.34s/it]412it [28:56,  2.24s/it]413it [28:57,  2.11s/it]414it [29:00,  2.13s/it]415it [29:02,  2.10s/it]416it [29:04,  2.15s/it]417it [29:06,  2.27s/it]418it [29:08,  2.12s/it]419it [29:10,  2.01s/it]420it [29:13,  2.37s/it]421it [29:15,  2.18s/it]422it [29:18,  2.49s/it]423it [29:20,  2.24s/it]424it [29:22,  2.09s/it]425it [29:23,  2.00s/it]426it [29:27,  2.38s/it]427it [29:29,  2.48s/it]428it [29:32,  2.53s/it]429it [29:34,  2.42s/it]430it [29:36,  2.30s/it]431it [29:40,  2.78s/it]432it [29:43,  2.74s/it]433it [31:52, 40.86s/it]434it [31:55, 29.37s/it]435it [31:58, 21.39s/it]436it [32:00, 15.50s/it]437it [32:02, 11.50s/it]438it [32:04,  8.62s/it]439it [32:06,  6.68s/it]440it [32:08,  5.30s/it]441it [32:10,  4.27s/it]442it [32:11,  3.42s/it]443it [32:13,  3.04s/it]444it [32:16,  3.00s/it]445it [32:19,  3.01s/it]446it [32:21,  2.68s/it]447it [32:23,  2.53s/it]448it [32:25,  2.24s/it]Q: which writer has the highest number of skill  Langston Hughe...
+Pred: **Langston Hughes** has the highest number of skills | Gold: Langston Hughes | EM: ❌ | F1: 0.44
+Problem 409:
+Q: How large is the shopping mall where KGOT radio station has ...
+Pred: The shopping mall where KGOT radio station has its studios is likely to be larger than the Dimond Center | Gold: 728,000 ft² | EM: ❌ | F1: 0.00
+Problem 410:
+Q: What are the names of the members of the Detroit-based hip h...
+Pred: [Apollo Brown and D12] | Gold: Royce da 5'9" (Bad) and Eminem (Evil) | EM: ❌ | F1: 0.18
+Problem 411:
+Q: Which has the larger population, Shanghai or Hanggin Rear Ba...
+Pred: **Shanghai** has the larger population. | Gold: Shanghai | EM: ❌ | F1: 0.40
+Problem 412:
+Q: Jacques Mathou starred in Delicatessen, the 1991 French movi...
+Pred: The film in question is "Delicatessen," and it is a tribute or homage to Terry Gilliam | Gold: Terry Gilliam | EM: ❌ | F1: 0.25
+Problem 413:
+Q: Jacques Sernas, actor in Fugitive in Trieste, was of what na...
+Pred: French | Gold: Lithuanian-born French | EM: ❌ | F1: 0.67
+Problem 414:
+Q: The VMAQT-1 logo is a female spirit in Irish mythology who h...
+Pred: Pramlocha | Gold: a family member | EM: ❌ | F1: 0.00
+Problem 415:
+Q: The actress that played the leading role in the independent ...
+Pred: Therefore, the final answer is: **Douglas Jackson**. | Gold: Douglas Jackson | EM: ❌ | F1: 0.50
+Problem 416:
+Q: Which band is from England, Fireflight or Dirty Pretty Thing...
+Pred: Therefore, the answer to the question "Which band is from England? " is: Fireflight | Gold: Dirty Pretty Things | EM: ❌ | F1: 0.00
+Problem 417:
+Q: The Bart the Fink episode of The Simpsons aired in February ...
+Pred: Therefore, based on this information, I can conclude that the kiddie show where Bart the Fink aired in 1996 was "Double, Double, Boy in Trouble". | Gold: The Itchy & Scratchy Show | EM: ❌ | F1: 0.08
+Problem 418:
+Q: Which mall, Wilton Mall or Viaport Rotterdam, has had more o...
+Pred: Therefore, Viaport Rotterdam has had more owners than Wilton Mall. The final answer is: "Viaport Rotterdam" | Gold: Viaport Rotterdam | EM: ❌ | F1: 0.24
+Problem 419:
+Q: Which close friend of an American former basketball player w...
+Pred: Chauncey Billups | Gold: signing free agent Chauncey Billups | EM: ❌ | F1: 0.57
+Problem 420:
+Q: What is the 2010 population of the city 2.1 miles southwest ...
+Pred: Therefore, the 2010 population of the city 2.1 miles southwest of Marietta Air Force Station is **51,904**. | Gold: 51,271 | EM: ❌ | F1: 0.00
+Problem 421:
+Q: Are Buried Country and South of the Border both films turned...
+Pred: Both films are not stage performances, but they both involve live performances in theaters or venues. Therefore, Buried Country and South of the Border are not both films turned into stage performances. | Gold: no | EM: ❌ | F1: 0.00
+Problem 422:
+Q: "A Summer in the Cage" and "American Hardcore" are both what...
+Pred: [answer is: documentaries] | Gold: documentary | EM: ❌ | F1: 0.00
+Problem 423:
+Q: How many novels are there in the series of novels of which S...
+Pred: Therefore, we can conclude that there are 10 novels in the series of novels for "Shadows in Flight". | Gold: fifteen | EM: ❌ | F1: 0.00
+Problem 424:
+Q: One of the coaches of Southern Methodist University also pla...
+Pred: Mike Cavan | Gold: defensive coordinator | EM: ❌ | F1: 0.00
+Problem 425:
+Q: What is the height of the player who won the 2015 AFL Rising...
+Pred: The player who won the 2015 AFL Rising Star award is Jesse Hogan, and he was 1 | Gold: 1.95 m | EM: ❌ | F1: 0.00
+Problem 426:
+Q: Las Vegas Festival Grounds is north of the hotel that is own...
+Pred: MGM Resorts International owns the Hotel at Las Vegas Festival Grounds | Gold: MGM Resorts International | EM: ❌ | F1: 0.46
+Problem 427:
+Q: Which musical fantasy film is older, Bedknobs and Broomstick...
+Pred: **Bedknobs and Broomsticks** | Gold: Bedknobs and Broomsticks | EM: ✅ | F1: 1.00
+Problem 428:
+Q: Which river system in Chilhowie, Virginia was the starting p...
+Pred: Therefore, based on the context and historical accounts of LongHunters, I can conclude that the river system in Chilhowie, Virginia was the starting place for most Longhunters. | Gold: Holston River | EM: ❌ | F1: 0.08
+Problem 429:
+Q: What party does the House of Commons representative for Cong...
+Pred: The House of Commons representative for Congleton belongs to the Conservative Party | Gold: British Conservative Party | EM: ❌ | F1: 0.31
+Problem 430:
+Q: Season 2 of Rick and Morty began with the episode directed b...
+Pred: Ryan Ridley | Gold: Wes Archer | EM: ❌ | F1: 0.00
+Problem 431:
+Q: What team did the recipient of the 2007 Brownlow Medal play ...
+Pred: West Coast Eagles | Gold: Geelong Football Club | EM: ❌ | F1: 0.00
+Problem 432:
+Q: Were both the Battle of Stones River and the Battle of the C...
+Pred: **Final Answer: Yes**, both the Battle of Stones River and the Battle of the Ch'ongch'on River were fought in the 19th century. | Gold: no | EM: ❌ | F1: 0.00
+Problem 433:
+Q: Who has more scope of profession, Phil Rosen or  Delmer Dave...
+Pred: Therefore, **Delmer Daves** has more scope of profession compared to Phil Rosen. | Gold: Delmer Lawrence Daves | EM: ❌ | F1: 0.27
+Problem 434:
+Q: Which band has more members, Test Icicles or X Ambassadors?...
+Pred: No information available | Gold: X Ambassadors | EM: ❌ | F1: 0.00
+Problem 435:
+Q: The movies The Boatniks and The Great Locomotive Chase were ...
+Pred: Walt Disney Productions | Gold: Walt Disney Productions | EM: ✅ | F1: 1.00
+Problem 436:
+Q: How long is the river for which Frenchmans Creek is a tribut...
+Pred: The river for which Frenchmans Creek is a tributary is 1472 km long | Gold: 2844 km | EM: ❌ | F1: 0.15
+Problem 437:
+Q: Where is the school that Tyler Kalinoski went to located?...
+Pred: Olathe East High School | Gold: located in Olathe, Kansas | EM: ❌ | F1: 0.25
+Problem 438:
+Q: Ambrose Mendy has managed and/or advised a British professio...
+Pred: "The answer is: None | Gold: "The Ring" magazine | EM: ❌ | F1: 0.00
+Problem 439:
+Q: Rejuvelac is kind of grain water invented and promoted by a ...
+Pred: Ann Wigmore (1909–1994) | Gold: 1909 | EM: ❌ | F1: 0.00
+Problem 440:
+Q: What town host an annual media finance conference that has f...
+Pred: Therefore, the answer to the question "What town hosts an annual media finance conference that has featured an Australian-born American media mogul? " is: Sun Valley, Idaho. | Gold: Sun Valley, Idaho | EM: ❌ | F1: 0.24
+Problem 441:
+Q: Ronald Reagan and George H. W. Bush both held which position...
+Pred: Therefore, both Ronald Reagan and George H. W. Bush held the positions of **President** during their terms as presidents. | Gold: President of the United States | EM: ❌ | F1: 0.18
+Problem 442:
+Q: In between The Bears and I and Oceans which was released on ...
+Pred: In between "The Bears and I" (1974) and "Oceans" (1974), by Buena Vista Distribution | Gold: The Bears and I | EM: ❌ | F1: 0.38
+Problem 443:
+Q: What book provided the foundation for Masters and Johnson's ...
+Pred: **AlphaPets** | Gold: Patterns of Sexual Behavior | EM: ❌ | F1: 0.00
+Problem 444:
+Q: What star of "Attack of the Gryphon" was also a voice artist...
+Pred: Therefore, there is no star of "Attack of the Gryphon" who was also a voice artist for Johnny Bravo. | Gold: Larry Richard Drake | EM: ❌ | F1: 0.00
+Problem 445:
+Q: Which fantasy film from 1971 featured the song "The Age of N...
+Pred: The answer is: The Golden Voyage of Sinbad | Gold: Bedknobs and Broomsticks | EM: ❌ | F1: 0.00
+Problem 446:
+Q: Mick Carter is the landlord of a public house located at wha...
+Pred: The Queen Victoria public house in London E20 | Gold: 46 Albert Square, Walford, London E20 | EM: ❌ | F1: 0.31
+Problem 447:
+Q: What television thriller anthology did the winner of one Gol...
+Pred: Ugly Betty | Gold: Darkroom | EM: ❌ | F1: 0.00
+Problem 448:
+Q: What Cayman Islands registered Mandarin and Cantonese-langua...
+Pred: Phoenix Hong Kong Channel | Gold: Phoenix Television | EM: ❌ | F1: 0.33
+Problem 449:
+449it [32:27,  2.21s/it]450it [32:29,  2.19s/it]451it [32:31,  2.19s/it]452it [32:34,  2.25s/it]453it [32:36,  2.25s/it]454it [32:39,  2.35s/it]455it [32:42,  2.52s/it]456it [32:44,  2.53s/it]457it [32:46,  2.25s/it]458it [32:48,  2.14s/it]459it [32:49,  2.08s/it]460it [32:52,  2.06s/it]461it [32:53,  2.01s/it]462it [32:55,  1.95s/it]463it [32:58,  2.14s/it]464it [33:00,  2.12s/it]465it [33:02,  2.12s/it]466it [33:04,  2.01s/it]467it [33:06,  2.12s/it]468it [33:08,  2.07s/it]469it [33:10,  2.09s/it]470it [33:12,  2.10s/it]471it [33:14,  2.02s/it]472it [33:16,  1.86s/it]473it [33:18,  1.90s/it]474it [33:20,  1.95s/it]475it [33:22,  2.00s/it]476it [33:25,  2.25s/it]477it [33:27,  2.29s/it]478it [33:30,  2.52s/it]479it [33:34,  2.89s/it]480it [33:37,  2.92s/it]481it [33:39,  2.66s/it]482it [33:41,  2.43s/it]483it [33:44,  2.78s/it]484it [33:45,  2.21s/it]485it [33:46,  1.79s/it]486it [33:47,  1.46s/it]487it [33:48,  1.30s/it]Q: What is the name of the film starring Rose McGowan and featu...
+Pred: Therefore, the answer to the question "What is the name of the film starring Rose McGowan and features the character Earl McGraw's daughter? " is: The Doom Generation. | Gold: Planet Terror | EM: ❌ | F1: 0.00
+Problem 450:
+Q: Chimaja Appawas the younger brother of a general of the Mara...
+Pred: Therefore, Chimaji Appa was the younger brother of Bajirao Peshwa, who served as the Prime Minister to the fifth Maratha Chhatrapati Shahu. | Gold: "Peshwa" (Prime Minister) | EM: ❌ | F1: 0.27
+Problem 451:
+Q: What is the name of the oldest child that attended the Trump...
+Pred: Jared Kushner | Gold: Donald Trump Jr. | EM: ❌ | F1: 0.00
+Problem 452:
+Q: The 1st Virginia Regiment saw action at a battle that led to...
+Pred: The 1st Virginia Regiment saw action at the Battle of Trenton, which led to the departure of the Royal Governor, Lord Dunmore | Gold: Royal Governor Lord Dunmore | EM: ❌ | F1: 0.36
+Problem 453:
+Q: Which Argentine telenovela broadcast by Telefe from March 12...
+Pred: [answer] ) | Gold: Graduados | EM: ❌ | F1: 0.00
+Problem 454:
+Q: What was position of the man who served Prince Andrew from 1...
+Pred: Therefore, the position of the man who served Prince Andrew from 1990 to 2001 was "second son and third child". | Gold: Private Secretary and Treasurer | EM: ❌ | F1: 0.09
+Problem 455:
+Q: Are Agee and To Shoot an Elephant both documentaries about w...
+Pred: **Yes**, Agee and To Shoot an Elephant are both documentaries about war | Gold: no | EM: ❌ | F1: 0.00
+Problem 456:
+Q: What shallow water table aquifer is located near the county ...
+Pred: Therefore, the shallow water table aquifer located near the county seat of Keith County, Nebraska is the Ogallala Aquifer. | Gold: Ogallala Aquifer | EM: ❌ | F1: 0.22
+Problem 457:
+Q: Who was born first Mahbub ul Haq or Ibn Arabi?...
+Pred: Mahbub ul Haq | Gold: ibnʿArabī | EM: ❌ | F1: 0.00
+Problem 458:
+Q: What does the goddess associated with the goddess frigg  con...
+Pred: Nanna (Norse deity) has a long list of tales that she tells to Baldr | Gold: various deities, beings, and heroes | EM: ❌ | F1: 0.00
+Problem 459:
+Q: What competition held in Kathmandu, Nepal did Julian Bolling...
+Pred: The competition held in Kathmandu, Nepal that Julian Bolling competed in was the South Asian Games (SAG) | Gold: 1984 South Asian Games | EM: ❌ | F1: 0.32
+Problem 460:
+Q: William Pery served as Captain of the Yeomen of the Guard un...
+Pred: **Lord Salisbury** | Gold: Viscount Cranborne | EM: ❌ | F1: 0.00
+Problem 461:
+Q:  William Cammisano was part of which Mafia family?...
+Pred: The Kansas City crime family | Gold: Kansas City crime family | EM: ✅ | F1: 1.00
+Problem 462:
+Q: 1956 Night Series Cup games were played at what inner suburb...
+Pred: Albert Park | Gold: Albert Park | EM: ✅ | F1: 1.00
+Problem 463:
+Q: When did the game which held three times in  in East Asia fi...
+Pred: The game which held three times in East Asia first held in 2008 | Gold: in 1896 | EM: ❌ | F1: 0.14
+Problem 464:
+Q: Blinding Edge Pictures produced which 2000 film starring Bru...
+Pred: The Whole Nine Yards | Gold: Unbreakable | EM: ❌ | F1: 0.00
+Problem 465:
+Q: What kind of dinosaur does Raymond Ochoa voice in the Pixar ...
+Pred: Answer: Raymond Ochoa voices Arlo in the Pixar film "The Good Dinosaur". | Gold: Apatosaurus | EM: ❌ | F1: 0.00
+Problem 466:
+Q: Which American Space Western animated series did Celebrity H...
+Pred: Answer: BraveStarr | Gold: BraveStarr | EM: ❌ | F1: 0.67
+Problem 467:
+Q: How are elephants connected to Gajabrishta?...
+Pred: Therefore, the answer to the question "How are elephants connected to Gajabrishta? " is: Elephants are connected to Gaja through their family (Elephantidae) and their place of origin. | Gold: Sanskrit | EM: ❌ | F1: 0.00
+Problem 468:
+Q: Which battle occurred first, the Battle of Manila or the Bat...
+Pred: The Battle of Manila occurred first | Gold: Battle of Guam | EM: ❌ | F1: 0.50
+Problem 469:
+Q: Kam Heskin plays Paige Morgan in a 2004 film directed by who...
+Pred: The final answer is: Martha Coolidge | Gold: Martha Coolidge | EM: ❌ | F1: 0.57
+Problem 470:
+Q: What 2016 film stars actor Xavier Samuel and an actress who ...
+Pred: Based on these steps and reasoning, the 2016 film that stars actor Xavier Samuel and an actress who portrayed Vasilisa Dragomir in the film "Vampire Academy" is "Spin Out". | Gold: Mr. Church | EM: ❌ | F1: 0.00
+Problem 471:
+Q: What type of profession does Ithu Engal Neethi and Shoba Cha...
+Pred: Both Ithu Engal Neethi and Shoba Chandrasekhar have a common profession in that they are film directors | Gold: director | EM: ❌ | F1: 0.00
+Problem 472:
+Q: In what field does the firm at which Claudio Fernández-Aráoz...
+Pred: Therefore, based on these steps, we can conclude that the firm at which Claudio Fernández-Aráoz was a current senior adviser offers services in the field of international corporate law. | Gold: Executive Search, Board Consulting | EM: ❌ | F1: 0.00
+Problem 473:
+Q: Eric Ambler and Carol Shields are both best Known for what p...
+Pred: The answer to the question is: **Screenwriting**. | Gold: author | EM: ❌ | F1: 0.00
+Problem 474:
+Q: Which "Official Ireland" group comprises about  78.3% of the...
+Pred: Therefore, the answer to the question "Which 'Official Ireland' group comprises about 78.3% of the population of Ireland?" is: Official Ireland | Gold: The Catholic Church in Ireland | EM: ❌ | F1: 0.09
+Problem 475:
+Q: Where was the telefilm shot that was based on the 1977 Kathe...
+Pred: The telefilm shot that was based on the 1977 Katherine Paterson book 'Bridge to Terabithia' was released in 1985 and was based on a television series called 'The Great Gilly Hopkins | Gold: Edmonton, Alberta | EM: ❌ | F1: 0.00
+Problem 476:
+Q: Which American cable news and talk radio host was the former...
+Pred: Sean Hannity | Gold: Charles Joseph | EM: ❌ | F1: 0.00
+Problem 477:
+Q: What Division was the college footbal team that fired their ...
+Pred: Therefore, the college football team that fired their head coach on November 24, 2006 was the 2009 Virginia Cavaliers (University of Virginia), and they represented the University of Virginia in the 2006 NCAA Division I FBS football season. | Gold: NCAA Division I FBS football | EM: ❌ | F1: 0.26
+Problem 478:
+Q: Which is a Macedonian weekly, Hänt Extra or Tea Moderna?...
+Pred: Hänt Extra | Gold: Tea Moderna | EM: ❌ | F1: 0.00
+Problem 479:
+Q: What is the shared country of ancestry between Art Laboe and...
+Pred: The shared country of ancestry between Art Laboe and Scout Tufankjian is **Armenia**. | Gold: Armenian | EM: ❌ | F1: 0.00
+Problem 480:
+Q: Who programmed a cartridge-based development system made by ...
+Pred: Shepardson Microsystems | Gold: Kathleen O'Brien | EM: ❌ | F1: 0.00
+Problem 481:
+Q: Which record label released Van Morrison's "I've Been Workin...
+Pred: The record label that released Van Morrison's "I've Been Working" on the album "His Band and the Street Choir" is RCA Records | Gold: Warner Bros | EM: ❌ | F1: 0.00
+Problem 482:
+Q: Hate Them is the ninth album by a band likened to who?...
+Pred: Answer: Darkthrone | Gold: Motörhead | EM: ❌ | F1: 0.00
+Problem 483:
+Q: How did Emilie du Chatelet, Voltaire's love, contribute to t...
+Pred: **Emilie du Châtelet contributed by translating and commenting on Isaac Newton's "Principia" and explaining the diverse laws of physics | Gold: commentary on Isaac Newton's book "Principia" | EM: ❌ | F1: 0.33
+Problem 484:
+Q: Were Goo Goo Dolls and Echosmith formed in the same city?...
+Pred: No | Gold: no | EM: ✅ | F1: 1.00
+Problem 485:
+Q: The Detroit mayoral elections of 2009 took place to fill the...
+Pred: Kwame Kilpatrick was sentenced to four months in jail and then released on probation after serving 99 days | Gold: four months in jail | EM: ❌ | F1: 0.36
+Problem 486:
+Q: In what year was the team that Luke Clark plays either right...
+Pred: 2011 | Gold: 1963 | EM: ❌ | F1: 0.00
+Problem 487:
+Q: What genre of music was played by both Tappi Tíkarrass and I...
+Pred: punk/pop | Gold: rock | EM: ❌ | F1: 0.00
+Problem 488:
+488it [33:49,  1.38s/it]489it [33:50,  1.14s/it]490it [33:51,  1.06s/it]491it [33:52,  1.26s/it]492it [33:53,  1.08s/it]493it [33:54,  1.01it/s]494it [33:55,  1.06it/s]495it [33:55,  1.13it/s]496it [33:56,  1.20it/s]497it [33:57,  1.13it/s]498it [33:59,  1.10s/it]499it [34:00,  1.08s/it]500it [34:01,  1.10s/it]500it [34:01,  4.08s/it]
+Q: A puzzle-platform video game developed by the Valve Corporat...
+Pred: None of the given options (Portal, Half-Life 2: Lost Coast, Aperture Tag) are part of the "Gateways" series | Gold: Gateways | EM: ❌ | F1: 0.12
+Problem 489:
+Q: What produces the hormone that promotes sodium retention in ...
+Pred: Aldosterone | Gold: zona glomerulosa | EM: ❌ | F1: 0.00
+Problem 490:
+Q: How many Senate seats will be contested during the midterm e...
+Pred: 80 | Gold: 33 | EM: ❌ | F1: 0.00
+Problem 491:
+Q: In between Berghuis v. Thompkins and Mississippi University ...
+Pred: The final answer is: Hirabayashi v. United States | Gold: Mississippi University for Women | EM: ❌ | F1: 0.00
+Problem 492:
+Q: Which jazz singer has a 2003 album entitled The Boy Next Doo...
+Pred: Stacey Kent | Gold: Stacey Kent | EM: ✅ | F1: 1.00
+Problem 493:
+Q: The actor who appeared on Charlotte's Shorts and Weeds was b...
+Pred: Gary Anthony Williams was born in 1891 | Gold: 1966 | EM: ❌ | F1: 0.00
+Problem 494:
+Q: After he was contracted by the team that is headquartered in...
+Pred: The 2011 Honda Indy Toronto | Gold: DTM | EM: ❌ | F1: 0.00
+Problem 495:
+Q: In which year did this division, where Cleveland Browns plac...
+Pred: Therefore, in 2012, the Cleveland Browns season (which was their 64th season as a professional sports franchise and their 60th season as a member of the NFL) adopted its current name from the AFC North division. | Gold: 2002 | EM: ❌ | F1: 0.00
+Problem 496:
+Q: How many restaurants comprise the quick service restaurant c...
+Pred: Therefore, the quick service restaurant chain that Ron Joyce helped found comprises 5,002 restaurants. | Gold: 4,613 | EM: ❌ | F1: 0.00
+Problem 497:
+Q: Anthony Avent played basketball fo a High School that is loc...
+Pred: Weldon Drew: Wokingham Borough, England. | Gold: lower Manhattan | EM: ❌ | F1: 0.00
+Problem 498:
+Q: What edition of tennis' US Open was the 2017 US Open when Pe...
+Pred: The 2017 US Open | Gold: 137th | EM: ❌ | F1: 0.00
+Problem 499:
+Q: Walt Zeboski photographed which 40th President during his ca...
+Pred: Walt Zeboski photographed Ronald Reagan during his campaign in 1980 | Gold: Ronald Wilson Reagan | EM: ❌ | F1: 0.31
+Problem 500:
+Q: What type of film are both "500 Years Later" and "Manson"?...
+Pred: Documentary films | Gold: documentary | EM: ❌ | F1: 0.67
+Results: 42/500 EM=8.40%  F1=20.18%
+Time: 2041.43s
+Saved to /home/dibyanayan/tanzeel/COT Reasoning qwen/qwen_results/qwen0.5b_hotpotqa_cot_results.json

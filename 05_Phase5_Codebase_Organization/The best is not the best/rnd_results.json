@@ -1,0 +1,5912 @@
+{
+  "topology_clusters": {
+    "cluster_0": {
+      "size": 152,
+      "cot_wins": 29,
+      "astar_wins": 39,
+      "both_correct": 49,
+      "both_wrong": 35,
+      "dominant_strategy": "Both",
+      "avg_branching_complexity": 4.2368421052631575,
+      "avg_depth_est": 2.0460526315789473,
+      "avg_linearity": 0.2028717627401838,
+      "avg_hop_count": 0.8552631578947368
+    },
+    "cluster_1": {
+      "size": 97,
+      "cot_wins": 29,
+      "astar_wins": 17,
+      "both_correct": 30,
+      "both_wrong": 21,
+      "dominant_strategy": "Both",
+      "avg_branching_complexity": 1.2783505154639174,
+      "avg_depth_est": 1.0618556701030928,
+      "avg_linearity": 0.4587628865979381,
+      "avg_hop_count": 0.061855670103092786
+    },
+    "cluster_2": {
+      "size": 337,
+      "cot_wins": 85,
+      "astar_wins": 87,
+      "both_correct": 64,
+      "both_wrong": 101,
+      "dominant_strategy": "Neither",
+      "avg_branching_complexity": 4.023738872403561,
+      "avg_depth_est": 2.0148367952522257,
+      "avg_linearity": 0.2128350054166078,
+      "avg_hop_count": 0.8397626112759644
+    },
+    "cluster_3": {
+      "size": 158,
+      "cot_wins": 49,
+      "astar_wins": 31,
+      "both_correct": 23,
+      "both_wrong": 55,
+      "dominant_strategy": "Neither",
+      "avg_branching_complexity": 6.487341772151899,
+      "avg_depth_est": 3.8164556962025316,
+      "avg_linearity": 0.14077643523846053,
+      "avg_hop_count": 1.0126582278481013
+    }
+  },
+  "topology_pca": {
+    "explained_variance": [
+      0.4633,
+      0.1221
+    ],
+    "points": [
+      {
+        "x": 4.381813291142755,
+        "y": 0.9794936953850615,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.1946758060267255,
+        "y": 1.3085306789117914,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.233991085253721,
+        "y": 1.3726663487294195,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.4153627604004715,
+        "y": 1.6431310854683143,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.05261941010697,
+        "y": 1.1022016119905245,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.233991085253721,
+        "y": 1.3726663487294195,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.155360526799731,
+        "y": 1.2443950090941631,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.1946758060267255,
+        "y": 1.3085306789117914,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.778106110693973,
+        "y": 2.184060558946104,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.4153627604004715,
+        "y": 1.6431310854683143,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 3.8563593735063257,
+        "y": 0.8253492311601316,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.233589262929141,
+        "y": 0.358832582904919,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.091934689333965,
+        "y": 1.1663372818081525,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.557419156320227,
+        "y": 1.8494601523895813,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.542214435332003,
+        "y": 1.7992465400403355,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.26386745346177,
+        "y": 0.787086685932177,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.233991085253721,
+        "y": 1.3726663487294195,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.170565247787955,
+        "y": 1.294608621443409,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 6.164960019226244,
+        "y": 2.7389120898922767,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.539074408050736,
+        "y": 1.236036374655574,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.336732201946481,
+        "y": 1.5148597458330582,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 3.866902614365412,
+        "y": 1.5671636111447367,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.493993318854462,
+        "y": 1.7714024251035705,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 3.674987698359575,
+        "y": 0.5548844944212366,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.983588344079494,
+        "y": 2.4684473531533815,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.5815297145589975,
+        "y": 1.8633822098579638,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.778106110693973,
+        "y": 2.184060558946104,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.155360526799731,
+        "y": 1.2443950090941631,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.4153627604004715,
+        "y": 1.6431310854683143,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.376047481173476,
+        "y": 1.5789954156506865,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.037414689118745,
+        "y": 1.0519879996412786,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.312621643707711,
+        "y": 1.5009376883646757,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.478788597866237,
+        "y": 1.7211888127543251,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.949878293414209,
+        "y": 0.9600082148868857,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.572222054983872,
+        "y": 0.8858399989143263,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.847027187248257,
+        "y": 0.3209559218132228,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 3.1626310848423076,
+        "y": 1.0224432548317899,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.934673572425985,
+        "y": 0.9097946025376399,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.518103877093232,
+        "y": 1.785324482571953,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.05261941010697,
+        "y": 1.1022016119905245,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.6360497147742175,
+        "y": 1.9777314920248374,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.170565247787955,
+        "y": 1.294608621443409,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.484554407835517,
+        "y": 1.1216870924887001,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.155360526799731,
+        "y": 1.2443950090941631,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.376047481173476,
+        "y": 1.5789954156506865,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 3.867304063029792,
+        "y": -1.7591408217821332,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.072384847750933,
+        "y": 1.8515504053520142,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.439473318639242,
+        "y": 1.6570531429366968,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.880847227386733,
+        "y": 2.326253956049743,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.421128570369751,
+        "y": 1.0436293652026896,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.13124996856096,
+        "y": 1.2304729516257806,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.097700499303244,
+        "y": 0.5668355615425277,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 3.9616545534591623,
+        "y": 0.8474314729146484,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.895358293198989,
+        "y": 0.8456589327200118,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.381813291142755,
+        "y": 0.9794936953850615,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.675364994001212,
+        "y": 2.0418671618424655,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.233991085253721,
+        "y": 1.3726663487294195,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.4153627604004715,
+        "y": 1.6431310854683143,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.469480938291111,
+        "y": 0.7436466018106876,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.004558875036998,
+        "y": 1.9191592452370025,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.146052867224605,
+        "y": 0.2668527981505259,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.421128570369751,
+        "y": 1.0436293652026896,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.660160273012988,
+        "y": 1.9916535494932202,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.175125964443694,
+        "y": 1.9937438024556529,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.1946758060267255,
+        "y": 1.3085306789117914,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.895358293198989,
+        "y": 0.8456589327200118,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.744556641436257,
+        "y": 1.5204231688628516,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.886342466475252,
+        "y": 0.3850915916308509,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.31838745367699,
+        "y": 0.9014359680990509,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 3.5827898225259003,
+        "y": 1.154505477302203,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.312621643707711,
+        "y": 1.5009376883646757,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.4153627604004715,
+        "y": 1.6431310854683143,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.13124996856096,
+        "y": 1.2304729516257806,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.1608557658882495,
+        "y": -0.6967673553247292,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.454678039627466,
+        "y": 1.7072667552859426,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.8567366691479625,
+        "y": 2.3123318985813603,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.36633799927377,
+        "y": -0.4123805611174516,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.759761362424482,
+        "y": 1.5706367812120972,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.273306364480716,
+        "y": 1.4368020185470476,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 3.724846218445656,
+        "y": 1.36083454422347,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.454678039627466,
+        "y": 1.7072667552859426,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.895358293198989,
+        "y": 0.8456589327200118,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 2.1099571566151822,
+        "y": 0.882538560843039,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.596734435547222,
+        "y": 1.9135958222072091,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.539074408050736,
+        "y": 1.236036374655574,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.650852613437862,
+        "y": 1.0141113385495828,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.856043013971995,
+        "y": 0.7815232629023837,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.1611263367690094,
+        "y": 0.6448932888285384,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.924964090526279,
+        "y": -1.0815813742304978,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 6.20427529845324,
+        "y": 2.8030477597099046,
+        "cluster": 1,
+        "strategy": 0,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.493993318854462,
+        "y": 1.7714024251035705,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 4.608510695592176,
+        "y": 1.8010190802349715,
+        "cluster": 1,
+        "strategy": 1,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 5.518103877093232,
+        "y": 1.785324482571953,
+        "cluster": 1,
+        "strategy": 2,
+        "dataset": "StrategyQA"
+      },
+      {
+        "x": 0.69557890666326,
+        "y": -1.5394964565305342,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.318533794787566,
+        "y": -2.3229911298265367,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.2099617724278158,
+        "y": -1.2108691181781213,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -5.708894840044002,
+        "y": 3.634607080539003,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8750017348889493,
+        "y": -0.9853486118948974,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.4231483059345618,
+        "y": -0.17634750508312824,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.5012878632278492,
+        "y": 0.001421876533358315,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.2049910335355589,
+        "y": -0.21123812759930946,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.8935322473516165,
+        "y": 1.6863987798727935,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.1848152136341477,
+        "y": 1.7604687627724054,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6932836293346992,
+        "y": -1.956741136106556,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.10496897627652262,
+        "y": -2.3697384230257112,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.10301577520973423,
+        "y": -0.509252175719536,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.040685225864439636,
+        "y": -0.37179524442154277,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.295317536875313,
+        "y": -1.996012966869492,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8364278691723918,
+        "y": -1.6727890236657847,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.692360650064365,
+        "y": 0.4239513049523141,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.659174883925525,
+        "y": 1.6758160441750403,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.5087755241993162,
+        "y": -1.0918325535117739,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5516221840422498,
+        "y": -0.17285395554917932,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.977338871155931,
+        "y": 0.5462322066902772,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.4929447688844216,
+        "y": -0.7818496644305297,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.11242658745527312,
+        "y": -0.20110695296608397,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.2605114701926382,
+        "y": -0.7639572602720126,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.0395060361988666,
+        "y": 1.466741964303392,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3119876524094114,
+        "y": 0.7392430658036144,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.1175918358122914,
+        "y": 0.5562799592183287,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.4655363219666271,
+        "y": -0.013442049636757268,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.0834014309686397,
+        "y": 0.18657984415445458,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.3737324845795773,
+        "y": 1.2348900442838702,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9059180388061225,
+        "y": -1.7779323540004244,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.03551042551884538,
+        "y": -0.6116648143927418,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.026093281815668,
+        "y": 1.8779606167521867,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.0951237985184539,
+        "y": -0.7258957032697386,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.221851475506932,
+        "y": 0.07474135138927909,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.6726643356094661,
+        "y": 0.860100242772341,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6678278257806994,
+        "y": -1.9601356984336649,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.11875486794839538,
+        "y": -0.6473259171306629,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.5015608896755954,
+        "y": 0.8330426207422084,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.14133434412663834,
+        "y": -1.8156271501323522,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.1070109683644884,
+        "y": -0.4540262664015047,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.0006215901695284962,
+        "y": -1.8396068483985766,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.131384834675146,
+        "y": -0.007781593667034293,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.0385023516755818,
+        "y": -0.9904228873414724,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.5527426291127702,
+        "y": 0.16440677117451857,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.895689803544519,
+        "y": 4.523092848995522,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8525805716380338,
+        "y": 0.7284686403180697,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3707078905070317,
+        "y": -0.9372912236528169,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6565239508027307,
+        "y": -0.2939886679918177,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9110443107088996,
+        "y": -1.5842392611741105,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.4363567293872146,
+        "y": -1.1342851044173368,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6252817338740446,
+        "y": -0.5950654145817136,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.23416104747030791,
+        "y": -0.9124921388865624,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.1566101327287064,
+        "y": -0.5850355017278834,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.1190463020271289,
+        "y": 0.7778429865240496,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7508888944068572,
+        "y": 1.0705984605516754,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.508007407013914,
+        "y": 3.6282931321896426,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.1120454654495677,
+        "y": -0.13453404082303536,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7655094718946704,
+        "y": 0.6221620454801547,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.529335011938788,
+        "y": 0.1490009607292023,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.1714496043626825,
+        "y": 1.426273647367049,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.511973734127833,
+        "y": -0.21251299213041436,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.15425354897711704,
+        "y": -1.2988862803265884,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.5787781462856705,
+        "y": 0.9923974470548717,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.3537427919525302,
+        "y": -0.4604131108672535,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.30334675190817695,
+        "y": -1.6941109946467279,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.541934883279624,
+        "y": -0.6980361270615965,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.16941419332390356,
+        "y": -0.3120807000896575,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3117195973344823,
+        "y": -0.6093813911783917,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.5185215808572652,
+        "y": 1.5764838543207078,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.6483304120110327,
+        "y": 0.03727428593454174,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7655094718946704,
+        "y": 0.6221620454801547,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.967501516164263,
+        "y": 0.8653397004066261,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7078712915154873,
+        "y": 0.5886956263796149,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.6453222363893778,
+        "y": 1.7130247879763032,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.27900653953055754,
+        "y": -1.6437693579744428,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.020539819120506998,
+        "y": -1.1360938556942903,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.348841248023895,
+        "y": -1.2032178367533508,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.4269614222673931,
+        "y": -0.39258899959797317,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.1656438532303308,
+        "y": 0.16477448259700836,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 5.5337557283667245,
+        "y": 0.671744083464514,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.461972584000854,
+        "y": 0.06555754635098647,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.11412833474174808,
+        "y": -0.2706093312399437,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.010825902162255,
+        "y": -0.262113816018558,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.4662227085144304,
+        "y": -1.1408456832230622,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5531319060309774,
+        "y": -1.4670239731062928,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9986037477940679,
+        "y": -1.2288570583098424,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.028450347199896035,
+        "y": -0.2028157032017492,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.40752934897888476,
+        "y": -1.2892316362531153,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.3205208610233954,
+        "y": -0.6258437482248154,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.7960008106344252,
+        "y": -0.5474814614729212,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.11633654647994277,
+        "y": -1.2614048359168804,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.9994873975156788,
+        "y": -1.1906403426605783,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.24469869715494263,
+        "y": 1.0672294015090211,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.441509246497366,
+        "y": 1.7279867938919755,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.00172040307807,
+        "y": -1.1846520142810206,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.7598927379358813,
+        "y": 2.210847149016675,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3797224529045214,
+        "y": 0.4017214008841284,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.1401472146107414,
+        "y": -0.39081587184952504,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.06123632185313606,
+        "y": -1.6771312223852515,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5443751955855299,
+        "y": -1.0702114194510066,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.44733438911413753,
+        "y": -0.42614311422800755,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.2178559933889452,
+        "y": -0.5574575311563703,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6143927475142436,
+        "y": -0.5188263381149547,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.6107427784741604,
+        "y": 0.7685037097174345,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.134825457966458,
+        "y": 1.3010093238830245,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6567824426265524,
+        "y": -1.2574982571808804,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.544832566649546,
+        "y": -0.3218561691768663,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.06032547654634014,
+        "y": -0.7285075538312383,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.9379377502520938,
+        "y": 1.118043504535385,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.17903717259426127,
+        "y": -0.6919211953949416,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.373135036489433,
+        "y": 0.6465583593264446,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.08887104835091954,
+        "y": -0.3867905725273267,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3038976904903393,
+        "y": -0.4915833968184058,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.1982787033319314,
+        "y": 1.6584265073399138,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.526032024132714,
+        "y": -0.8290048159388643,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.143295015219164,
+        "y": 2.4350433554653024,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.124535439047416,
+        "y": -0.6229761541348113,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.1112036686107567,
+        "y": -1.485052469999673,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.2679516161854739,
+        "y": -0.49677629025093467,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.8679745401038637,
+        "y": -0.4478695070262069,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.14441067348795997,
+        "y": -1.2851902795033143,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6543147805152035,
+        "y": -0.6507482053383743,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.2186470596210887,
+        "y": -0.873713152407469,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6174816523962989,
+        "y": -1.8642027957028844,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.0102832864528235,
+        "y": -0.9866155283020128,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9767996844959108,
+        "y": -0.5123334460327206,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.10206490230357401,
+        "y": 0.6718851765330532,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.180929088998964,
+        "y": -0.5402306572535491,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.2668484039791976,
+        "y": -0.6206805690769577,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7048615296634244,
+        "y": -0.8815289301301995,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.927024192390546,
+        "y": -2.136433046507612,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.08147970808635761,
+        "y": -0.5040311436852475,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.4072423073167264,
+        "y": -0.3133976580535569,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.3815221835680007,
+        "y": -0.43974036891784285,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.30639064879968636,
+        "y": 0.13451516841349323,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5838014154690417,
+        "y": -1.6278490999450481,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.44704126317622456,
+        "y": -2.064003084097872,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.560637391107085,
+        "y": 0.8549997884492074,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.24873885241707303,
+        "y": -0.7907607189886974,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.9866465307310572,
+        "y": -0.43131000425336014,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.35687266502159315,
+        "y": -1.397680521922942,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.711080276037502,
+        "y": 1.377239229728881,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8711985416247945,
+        "y": 0.7586598801486534,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.7607307377341108,
+        "y": 0.5033060270365912,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.7598927379358813,
+        "y": 2.210847149016675,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.02090037013382649,
+        "y": -2.0093795156509944,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.6558680962843948,
+        "y": -0.30341833765667975,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.2247617211922632,
+        "y": 2.3610725753878983,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9911022295772073,
+        "y": -1.813203591947093,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -6.785936995017081,
+        "y": 3.1369350664468585,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -6.147238437402535,
+        "y": 3.8987907335219925,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.16164179103461765,
+        "y": -0.6397308227935085,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6384727824239149,
+        "y": -0.2470392011838259,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9222997428123489,
+        "y": -1.3162923735094245,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.9099891796015345,
+        "y": 0.09607435688976436,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.4391730214012814,
+        "y": -0.43947688713760286,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5038455358172934,
+        "y": -0.9820173859171196,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7061231151669483,
+        "y": -0.16297943266543896,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.849815135633422,
+        "y": -0.08454058715612536,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.9559028865999077,
+        "y": 1.8468447161494088,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.4304296228211553,
+        "y": 0.6407175176153784,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.12711156209124727,
+        "y": 0.1715488073969412,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.851840855908566,
+        "y": -1.2084833987093822,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.540490570732381,
+        "y": -0.6299681516695366,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6717591907847597,
+        "y": -1.9903570198389602,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.6261679962564266,
+        "y": 0.4899258407508723,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.1714082753829158,
+        "y": -1.1702951215893604,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5531939983336497,
+        "y": -2.05176712488942,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.742719427032963,
+        "y": 0.00257678867294575,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.06787307910166183,
+        "y": -0.362024303570616,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.10534762280628404,
+        "y": 0.49166220084367107,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9516176008719807,
+        "y": -0.36404047287173646,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.255220399427644,
+        "y": 1.3839729699576295,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.984776859204002,
+        "y": -1.2161474375975059,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.05218261854959215,
+        "y": -0.574241204741876,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8136757796055807,
+        "y": -1.4228193226885213,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.149100982053369,
+        "y": -0.17316987999099342,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6197330113246822,
+        "y": -1.5882029948894159,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5509205785896739,
+        "y": -0.006808716420746871,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.4135012933564655,
+        "y": -0.042326860974305644,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7759449051186285,
+        "y": -0.4275204487102957,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.05544866476655359,
+        "y": -1.565607075998701,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.15117863903692982,
+        "y": -0.8892161671115771,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.4630458700684685,
+        "y": 1.1139567799462429,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9563059638766342,
+        "y": -0.7185742031454594,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.4171536954754003,
+        "y": -0.02499838377108295,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.8231879361603363,
+        "y": 1.1185185797377049,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.18128204171651807,
+        "y": -0.4605719754592725,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.1653880728904564,
+        "y": -1.0740729195681442,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.30448978440856667,
+        "y": -1.75157684539285,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.465522708066655,
+        "y": -3.100422918177868,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6016801947297746,
+        "y": -1.0677435326281717,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.6135198915024223,
+        "y": -1.1676067909061436,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8570126066901629,
+        "y": -1.0715902352934736,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.4251869795789019,
+        "y": 0.43534850250377466,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.317471998052282,
+        "y": 1.5891092044211734,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.265649145965649,
+        "y": 0.4772728317281502,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.4524556632636507,
+        "y": 0.2787542731715946,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.25887335484434637,
+        "y": -0.6003942377421349,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.26240354181251235,
+        "y": -0.8021724761021523,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.3660599736571835,
+        "y": 0.2253621051855073,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.2789461268168307,
+        "y": -0.6793694911952814,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6727986742609446,
+        "y": -1.3219827882465955,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.2411387856494709,
+        "y": -1.1838866583300711,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.8158100970438094,
+        "y": -0.5116634820076668,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.5505533002658476,
+        "y": 0.769819582821621,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.55868062858034,
+        "y": -0.7162444363648368,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.24432959229320927,
+        "y": -0.3806206023019809,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.47582071170623963,
+        "y": -1.2367162295500354,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.800878974873902,
+        "y": 1.5823197207634476,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.12400026953270625,
+        "y": -0.6809572817064974,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.966351701485889,
+        "y": 1.6807283858397566,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.244087733198779,
+        "y": -0.7904313020870855,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.9971817721905603,
+        "y": -0.7821282187465616,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5657253087959623,
+        "y": -1.1986549038708612,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.43107819019451304,
+        "y": 0.6663612536695916,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.8785066538237212,
+        "y": -0.8698666234992426,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.41367181427967475,
+        "y": -0.6439930211887426,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.29017760761776706,
+        "y": 0.25192714905003666,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5358258774563744,
+        "y": -0.9895626788089147,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.2399748632006835,
+        "y": -0.12946149064793633,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.09831342845575085,
+        "y": -2.0115912736947807,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.35784371074276433,
+        "y": -1.5450578587037263,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5445158215503327,
+        "y": -1.078119013819753,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6503322271217189,
+        "y": -0.5492914656309148,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.744336505668202,
+        "y": 0.28582876713370686,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.4869836904584226,
+        "y": -0.26438464945593554,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.052147522447191,
+        "y": -0.20383913070808182,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.31242404761217435,
+        "y": -0.8142452014851614,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.4540619812096233,
+        "y": -0.28276707635904086,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7181177395442003,
+        "y": -1.9447871724936618,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9342016847662059,
+        "y": -0.3962461401609664,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.4185614868481865,
+        "y": -1.1280817066358129,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 3.6049535541519027,
+        "y": 0.8196531166636015,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.492279804071099,
+        "y": 1.5536236663497303,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.6368005260628355,
+        "y": -0.5547433078421724,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.7587358332445373,
+        "y": -0.8254709699907263,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9497032483986906,
+        "y": -1.3940230842907975,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 3.2576286608494374,
+        "y": -0.04462473673287625,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9832636019850352,
+        "y": -1.1873102173721786,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.6903891599277698,
+        "y": -0.886868744117232,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.19169798787966366,
+        "y": -0.48901000901616437,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.5716991481876907,
+        "y": -1.1929778343645048,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.41867963915248624,
+        "y": 1.0397326408714351,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -5.796749503401835,
+        "y": 0.8877015006185165,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.43937978439331055,
+        "y": -0.7484141480974597,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.094345142218934,
+        "y": 1.8299798012874349,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.05884852836878339,
+        "y": -1.015766194264114,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.10649743141057638,
+        "y": -0.385392499111378,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5419371794746742,
+        "y": -0.845072702351117,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.2465124520995887,
+        "y": -0.9145395164207303,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.056471988684749,
+        "y": 1.0602926311633623,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3885850304788078,
+        "y": -1.5407396091552468,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.877272328145918,
+        "y": 1.975116055784665,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.11969456526237757,
+        "y": -1.2504979317714242,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.7951017667571256,
+        "y": 0.5661447020559528,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.7582520707200509,
+        "y": 0.7741882384238724,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7973061076525805,
+        "y": 0.13166829727876742,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.3025050928187856,
+        "y": 2.294726976286184,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.075865078634037,
+        "y": 1.8525849882848238,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8830001038884261,
+        "y": -0.4852676952486383,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.5235087389902666,
+        "y": -0.4813560069717989,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8685604277990211,
+        "y": 0.6295061951981549,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7993798636339521,
+        "y": -2.034814822105283,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.0122816624814384,
+        "y": 0.1525843314796734,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.3561928421307368,
+        "y": 1.3405039385888868,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5329207358334493,
+        "y": -0.34487427884897864,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.2675219634124446,
+        "y": -0.12951723407691335,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.036549799407042,
+        "y": 1.9167206581024518,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.6300496465211896,
+        "y": -0.06250505596007676,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.2297855954797643,
+        "y": -1.7470873958581041,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.381010295907879,
+        "y": 1.0841279625837308,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7298121828685179,
+        "y": -1.3350052156504033,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.1482121774315126,
+        "y": -0.3731352733511769,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6856526695455898,
+        "y": -1.3784559793927562,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.0755711200367823,
+        "y": 0.1226269998605903,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.43430639021340184,
+        "y": -0.21879061980040806,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.000965722462971,
+        "y": 2.034620800024353,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.2883372404863158,
+        "y": -0.40282472892092996,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.4281493594686263,
+        "y": -0.3273264596659114,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.274145376790134,
+        "y": 0.4270332468818261,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5283233215743459,
+        "y": -1.0764950567174614,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -5.748210119270997,
+        "y": 3.5704714107213746,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.4500715440643038,
+        "y": -0.45433504863809254,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.09122878387620781,
+        "y": -0.5281494355408707,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.3287276723554764,
+        "y": 0.7523575632813115,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.662241231782654,
+        "y": 0.6008866573039247,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9461091962549786,
+        "y": -0.8366497604619704,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.3661674723149826,
+        "y": -0.9348963031790484,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8821165009330497,
+        "y": -0.6119751202655163,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7743885320305354,
+        "y": 0.36192162142645923,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.4702673220705793,
+        "y": -2.5284075648507627,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.7821382996568735,
+        "y": -1.6822624309736458,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.2513952657469317,
+        "y": -1.555096809571175,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.58786017881831,
+        "y": -0.6275656470420082,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.9833038206026083,
+        "y": 4.537276116567997,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.916587607372913,
+        "y": 1.910980385967037,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.4667292988561414,
+        "y": -0.09236311580274854,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3718577096588407,
+        "y": -0.4738559381351834,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.12683722885500429,
+        "y": -1.2017847804377129,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.7558769126580693,
+        "y": -0.1927927282576768,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.5670016584542785,
+        "y": -0.6820921707736878,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5543779056818943,
+        "y": 0.7021573403484906,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.695953687631083,
+        "y": 0.6554531542925973,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.307531444235098,
+        "y": 3.9211714363178602,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.610227679756234,
+        "y": 0.7232938100257947,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.06501209783369262,
+        "y": 0.9113015707605594,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.3142129240347509,
+        "y": -1.1919895497941464,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.1592027212169886,
+        "y": -0.1460918841697393,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.4055797672743793,
+        "y": -1.071765961069597,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.342434406061633,
+        "y": 0.4777676680500674,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.33717883924445113,
+        "y": -0.7599603319830007,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.4057484436826835,
+        "y": -3.4468488591452155,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5799542757317402,
+        "y": -0.10899891954940806,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.10232484829165372,
+        "y": -0.1740289571448298,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.278963594401012,
+        "y": 0.9325313108690066,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7810820441525961,
+        "y": -1.2936103482067658,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8459228545620462,
+        "y": -1.713497225250322,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.2019682590209286,
+        "y": 0.5288713712981506,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 3.602581059539864,
+        "y": -0.5168665221189461,
+        "cluster": 1,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6194867567733764,
+        "y": -0.03854169608827325,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.33754035589490067,
+        "y": 1.4159412571082017,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9994678420855239,
+        "y": -0.8044394659674117,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.601790485490004,
+        "y": -0.006959466831035616,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.24258402427014658,
+        "y": -0.44040184995859816,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.385144540533975,
+        "y": 0.8561729035070532,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.017590871571198777,
+        "y": -0.8382241047228661,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.436350047256717,
+        "y": -1.1955558017405226,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.1641072872864369,
+        "y": -0.4784871719733191,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.11448741438033479,
+        "y": 0.5019211069225554,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.45150137034815446,
+        "y": 1.8355837060161828,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.0308751134147314,
+        "y": -0.30837033448408946,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.509708748648503,
+        "y": 0.5380899140343354,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6186043250972687,
+        "y": -0.18275637331036673,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7215327676045578,
+        "y": -1.0588133887349025,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9488529564500517,
+        "y": -0.8344702121578141,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8688176609830373,
+        "y": -0.9650924480215687,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.7697552370029386,
+        "y": 1.2608229270080706,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3295912280651713,
+        "y": 0.33737699374230706,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.4983519924756701,
+        "y": -1.1056090525087554,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.514214289573146,
+        "y": -1.3864928253636344,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5816903074515818,
+        "y": 0.1708621450281822,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9174922819438837,
+        "y": -1.0926055762096383,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.7598927379358813,
+        "y": 2.210847149016675,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.42271102858647713,
+        "y": -1.0760428304924856,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6185636780817798,
+        "y": -0.5183616355297074,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.21365711055368697,
+        "y": -1.0903821717418203,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.0668858784935984,
+        "y": -1.1461007744479947,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.898056675613886,
+        "y": 0.46356476725138257,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5745860548276046,
+        "y": -0.9856495729848672,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6657105348703255,
+        "y": -2.2273174305858774,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.9270244537815158,
+        "y": 1.7161797102117493,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.099800452551118,
+        "y": 0.1328073908347456,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.3288429858806087,
+        "y": -0.4665190824015946,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.172154645216547,
+        "y": 1.404143476521003,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.0583079049622436,
+        "y": 0.05580917778081687,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.204910037892784,
+        "y": 2.2000414223923785,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5933007899689839,
+        "y": 0.09087326533924331,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.767318214241378,
+        "y": 0.7510676309348,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5324566830817615,
+        "y": -1.5566211122752867,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -6.250727806827375,
+        "y": 3.9846208315444067,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.23183176705391229,
+        "y": -1.1678896072472638,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.25139476114454173,
+        "y": -0.3986961951666473,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.06275830987465585,
+        "y": -1.9106575596690885,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.2538779086813074,
+        "y": -1.2412271969938562,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.008181930057127,
+        "y": 2.190369231440194,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.2020631212470565,
+        "y": -0.78777791336085,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.1294833169000709,
+        "y": 0.2523630940809843,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.740074925764691,
+        "y": 0.13982439080184025,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6560700551654712,
+        "y": 0.6763710682185777,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.07281349052146614,
+        "y": 0.2771675454328694,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.0711554366995704,
+        "y": -0.07306321338740795,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.00854229953978,
+        "y": 1.3992254412765524,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.2547544823336727,
+        "y": -1.3618817229109808,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.759300766330221,
+        "y": -1.0242908223776819,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.443872802536971,
+        "y": -0.2942951204281978,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.1472991425481268,
+        "y": -1.5731407101877979,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.6571802273072533,
+        "y": 1.3378815715153096,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.3072908989337544,
+        "y": -0.8567989652088154,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.3703825930239281,
+        "y": -0.05524616911404554,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9392012668578871,
+        "y": -0.3163997069951808,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.837010472064805,
+        "y": 0.7644029101302867,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.3936377835606062,
+        "y": -1.2164696222153382,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8231245697478994,
+        "y": 0.7032159082908972,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.12274467896214,
+        "y": 0.8616694690402096,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.24920410723292383,
+        "y": -0.4271648290510617,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.06923716909919739,
+        "y": -0.9736617547541699,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.86687894208366,
+        "y": -0.6092389295972229,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8514777576091327,
+        "y": 0.2893019372010672,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.4145079267923375,
+        "y": 1.7013725176625194,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.027681553261884328,
+        "y": 0.14099581545855558,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.1188933486534118,
+        "y": -1.9464773527851027,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.5388325118592747,
+        "y": 1.7456721328646945,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.3202176698788286,
+        "y": -0.5840771302128,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.901603699876813,
+        "y": 1.197720079499784,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.605322369924951,
+        "y": -0.5875251674177869,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.5568755721066452,
+        "y": 0.3283173155981414,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5044972975818047,
+        "y": -1.990741095309836,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.827685392668131,
+        "y": -0.06221787484884511,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.0941390075083584,
+        "y": -0.9842224568365735,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.0036990453617548494,
+        "y": -1.0222284513345479,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.18065474673662066,
+        "y": -0.412570149330812,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.2238199350588368,
+        "y": 1.1218971232399413,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.40759450208678055,
+        "y": -0.5182694117639307,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7771584126665584,
+        "y": -0.5630928435218784,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.7149015404911203,
+        "y": 0.14088707917565085,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.363910456860746,
+        "y": -1.8592143650734267,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.1380221522006175,
+        "y": -1.4187163375522827,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7039971523864065,
+        "y": -0.24799484522609908,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.35879032988963766,
+        "y": -0.0990762227402767,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9927730638164419,
+        "y": -1.0520200055437363,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5862595938473918,
+        "y": -1.3982452509616385,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9874675679958037,
+        "y": 0.381639289379058,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.17118030255289873,
+        "y": -0.4876499712805267,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.881470626748977,
+        "y": 0.13393722290468624,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.4534203986526253,
+        "y": -2.1394533314451887,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -5.328157875041464,
+        "y": 3.817600481001613,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.32112321513955583,
+        "y": -1.4771221966660706,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.545825050772921,
+        "y": 0.12835832995560842,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.41730269502796,
+        "y": -1.1937259098869453,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.9634307210628463,
+        "y": -0.17930766234729872,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.24772110684617626,
+        "y": 0.07220476238994672,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9680250732029636,
+        "y": -0.7928493786762362,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.99192778138391,
+        "y": 1.3127676159215933,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9447546943513243,
+        "y": 0.4799881516628187,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.5716096452207684,
+        "y": 0.7928438098475663,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.205629584711843,
+        "y": -0.024123895523805627,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.3584753913099064,
+        "y": -0.8558772952981558,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.0906288024596387,
+        "y": 0.4127473914521216,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.2163081974773748,
+        "y": -1.1173102795196108,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.4916641351307371,
+        "y": -1.3896212622714796,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.08138618082509579,
+        "y": -1.738621220277534,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.408496904346092,
+        "y": 0.976148649742888,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.7838320372927616,
+        "y": 4.334737932481887,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.5616313112156832,
+        "y": -0.9606273932665003,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.82230413731302,
+        "y": -0.4085202913560701,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7332560705419632,
+        "y": -1.6389238092427838,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.06356117521564,
+        "y": 2.3191298797190107,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.482062013725069,
+        "y": -0.38128179717424954,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5319268586534681,
+        "y": -0.9797814502834892,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.2249774345885949,
+        "y": -0.49134330003022264,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.0362758584770937,
+        "y": 0.5761384488639927,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.3820228381002435,
+        "y": 2.1045298961173855,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.02003107984803,
+        "y": 0.13351128540759336,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5131125483769308,
+        "y": -0.340080437192823,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.06701786774968523,
+        "y": -1.6029096599318,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7246260826776014,
+        "y": 0.4454173917730883,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.9668154807821163,
+        "y": -0.7866610539169526,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.8562501328501066,
+        "y": 1.75580330749792,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.8427002898441893,
+        "y": -0.24062353014775,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.10667957738417952,
+        "y": -0.42518806879887444,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.3114627953987523,
+        "y": -0.26218701904517866,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.5078466737272156,
+        "y": 0.6480185727917048,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6534145626372042,
+        "y": -0.06852918550028152,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.08835667623199134,
+        "y": -0.5227901577170423,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.31473887783261145,
+        "y": 0.28184767863716853,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.1147058950337119,
+        "y": -0.8475494373535634,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.14727467576351314,
+        "y": -1.4476195971676185,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9538451085441594,
+        "y": -0.8608993155787931,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.67117345379539,
+        "y": -0.4084372736855205,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.13228963112626554,
+        "y": -0.5237950133798599,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.2426252740179637,
+        "y": -1.174012869993842,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.3539674203978738,
+        "y": 1.9268518327356774,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.015803135362934418,
+        "y": 0.058173621995550956,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.735130372892814,
+        "y": -0.5542921466985088,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.72869436138766,
+        "y": 3.29369272563312,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.2774466015751283,
+        "y": -0.5374844918354719,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.3484915089100358,
+        "y": 0.08779521588828912,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8682431533394974,
+        "y": -1.0901578964701195,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.38595193401631,
+        "y": 0.3216538218926883,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7003587481585377,
+        "y": -0.10394610275366747,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.4663201872890446,
+        "y": -0.4181423849908477,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.25934698746690554,
+        "y": -1.4490846271794011,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.20220040195387864,
+        "y": -2.234532789084475,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.7215410954730557,
+        "y": -0.9737370726392087,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.164387557349517,
+        "y": -1.1764750388675527,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.06803736353555807,
+        "y": -1.643677134208666,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.769682932360286,
+        "y": -0.9142282332291638,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.035376667275587,
+        "y": 0.08618839912669114,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7565650561188912,
+        "y": -0.11175166091653477,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8160664416555544,
+        "y": -0.2049658230373457,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.613179617453596,
+        "y": 1.8975870520548725,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.7381410125273855,
+        "y": -1.7131906281734228,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.675439238651617,
+        "y": 1.944178956317384,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.0963860867477773,
+        "y": 1.1789227942592306,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7370747078924732,
+        "y": 0.6015340202030706,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.4481826552618893,
+        "y": 1.2527587729287812,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.37434477659770077,
+        "y": 2.0702886201333843,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9833355943145726,
+        "y": -0.6288327947722232,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7734589575678047,
+        "y": -0.04401907658806898,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8823265444551791,
+        "y": -0.9764310302486825,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -6.36867364450836,
+        "y": 3.7922138220915222,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.0459983596420552,
+        "y": -0.5086615059231646,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8958184567962795,
+        "y": -0.5999417801940593,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.182077546708993,
+        "y": -1.346321698663885,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9615660927299735,
+        "y": -0.4002952628297328,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.10699832860321891,
+        "y": -0.690787495249753,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.0560919761113006,
+        "y": -1.1318718434231527,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.010030205423116844,
+        "y": -0.8818103259224198,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.19835077775777069,
+        "y": 0.6721861376230233,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.671237291317216,
+        "y": 2.122050735337319,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.172918341409935,
+        "y": 0.26214606584870165,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.4034979442716038,
+        "y": -0.9664528620014201,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8195045777625254,
+        "y": -0.5378762841072376,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.3296172997708635,
+        "y": -0.11697816852547578,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.402193967270371,
+        "y": 1.7921224637096038,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.4106631918123826,
+        "y": -0.3053247138566238,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.31832231281242596,
+        "y": 0.06606748996694659,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.080284216666011,
+        "y": -1.1577369923052132,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.2769803239705004,
+        "y": -0.25974675137900044,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -5.708894840044002,
+        "y": 3.634607080539003,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.9399191293475304,
+        "y": 1.4472988136008034,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.3501296242583276,
+        "y": 0.25135823841816657,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3022391009415695,
+        "y": -1.3209298011025612,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.33385080020590363,
+        "y": 0.2863861210664388,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.774724187221245,
+        "y": 1.3608581139589255,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.17285955897155278,
+        "y": -1.5250845116585596,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.18085743391615622,
+        "y": -0.48856260317756744,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.098417936603369,
+        "y": 1.6849904438551964,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9469920481126679,
+        "y": -0.2955063577210995,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.09334933292848911,
+        "y": -0.016178755615037232,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.1586984789119834,
+        "y": 1.2511550873161525,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.0539826772700227,
+        "y": -0.14000983220528015,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.0659102584550784,
+        "y": -0.7629533772661127,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.07533999260689848,
+        "y": -1.7622343257550206,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5176293176335032,
+        "y": -0.5005190416048745,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.211530968075009,
+        "y": -0.4222116519294765,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.0714759745075066,
+        "y": 0.023249609537087584,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.3978896756626193,
+        "y": 3.1084322082546967,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.3062003339272972,
+        "y": 1.6041452004783867,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.15413771460792255,
+        "y": -0.8134250199566118,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.49887392492911836,
+        "y": -0.5975641182852357,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.12046560347023874,
+        "y": -0.03663129853916553,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.41569988616409265,
+        "y": -1.5209738097214311,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.05909978755878621,
+        "y": -1.0047846527321762,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.507504976358328,
+        "y": 0.9586650310580682,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.564229744453366,
+        "y": 1.2925234978770053,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7370747078924732,
+        "y": 0.6015340202030706,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6080374420438177,
+        "y": 0.3419894462445712,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.2302539111008382,
+        "y": -0.2815609140044333,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.8898573853452283,
+        "y": 1.571936801381182,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.1579826505147106,
+        "y": 0.44497884085806166,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.6050827468773599,
+        "y": -0.22514256274289396,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.3862833318815986,
+        "y": -0.5539141011869874,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.7829076016328445,
+        "y": -0.009152681208305664,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.2666049913738533,
+        "y": -1.9991165779390216,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.806860248926417,
+        "y": -1.2271488255657637,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9286702233083948,
+        "y": -0.896680063335661,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.5993907998742056,
+        "y": 1.1373752925173126,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5556875631839416,
+        "y": -0.5147168258906687,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.0285748429160089,
+        "y": -1.8664096261056797,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9681376449254271,
+        "y": -0.2255950202909695,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.822443494953739,
+        "y": -0.7785482294135533,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8075619993406962,
+        "y": -1.0749407952459016,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.1754974988958327,
+        "y": 0.7262219890878557,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.2466696289147764,
+        "y": 0.1177997647023917,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.9559028865999077,
+        "y": 1.8468447161494088,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.3937906144610144,
+        "y": -1.451161041829768,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.590671098241105,
+        "y": -0.6431911849009937,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9860061854736667,
+        "y": -2.366393075809488,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.1719347594391265,
+        "y": -0.7887218743235491,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6022091379417465,
+        "y": -0.10513996236131974,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5168325341341004,
+        "y": -0.420370889992075,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7915947081076927,
+        "y": 0.4871847380361964,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.067122981646872,
+        "y": -0.24963897683273578,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.09234193353638581,
+        "y": -1.7524041122117648,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7197303678223698,
+        "y": 0.059276419373269884,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.219590917980085,
+        "y": -0.9370873038302283,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7917831137421322,
+        "y": -0.07090477432410847,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.31789609146858216,
+        "y": -1.095541939892464,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.9942995923392886,
+        "y": -1.7860548107622494,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.36686058441555824,
+        "y": -0.21311152287460794,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.598765332201665,
+        "y": 0.7643510218299213,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.025644551160088184,
+        "y": -1.2243918405395395,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.08760842349991216,
+        "y": -0.7508136528430953,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.45835050142599,
+        "y": -1.2399249945964634,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3523391624984295,
+        "y": -1.7573340325673152,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -5.112808821415423,
+        "y": 1.0596183756374642,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.9972345201800465,
+        "y": 1.9808563279200802,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.4367984931089146,
+        "y": 0.7841620482517897,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.911057007524062,
+        "y": 0.09864027292581574,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.4901823282837737,
+        "y": -1.416694295302693,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5705339879762127,
+        "y": -1.5355759200740842,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.3714839439011067,
+        "y": -0.23993483734618082,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8780954701964144,
+        "y": -1.6006484040989823,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.0442542098092642,
+        "y": 0.6868435863244778,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.2922495002387728,
+        "y": -1.5011046453107268,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.3041051326619406,
+        "y": -0.43243931374151645,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.07309572621697,
+        "y": -1.9288908636352546,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.0459697591056176,
+        "y": -0.12406658602392152,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.1285332117789242,
+        "y": -0.3069170110084946,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.9827849837893614,
+        "y": -0.17748239855321712,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.3080379336203301,
+        "y": -1.6465072536655652,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.7720081785815579,
+        "y": -1.4949599422553235,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.4423584172509051,
+        "y": -1.4159286316274755,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.25536123610763767,
+        "y": -1.2940955255051896,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.3909918727596568,
+        "y": -0.48336970974503857,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.4804958058313361,
+        "y": 0.6518503897054128,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.134825457966458,
+        "y": 1.3010093238830245,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.459232044180239,
+        "y": 0.5985193128348235,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.2478444401264746,
+        "y": 1.0467546491658557,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7516209301897174,
+        "y": 0.04214586222228228,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.0505552339553133,
+        "y": -1.0898428732342895,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7737482879061317,
+        "y": 2.2292555632951587,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.03082283126441802,
+        "y": -1.490869519366139,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.532443708369753,
+        "y": 1.1331705628225317,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6349410412753925,
+        "y": -0.782712642400227,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.224281607865953,
+        "y": -0.8120710717226074,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.8459296937836879,
+        "y": -0.6524812453666792,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.2839685269994383,
+        "y": -0.16842343451007918,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6869252448994844,
+        "y": 0.31647349070721364,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5478819008640277,
+        "y": -1.835198981241849,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5779457760167356,
+        "y": -0.7749283450927609,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.08328273153927138,
+        "y": -1.2578582596400794,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.5851506348010256,
+        "y": 0.532862547336637,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -4.768009640614655,
+        "y": 3.2295570558154916,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.9118672135443024,
+        "y": -1.764182630195566,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8180761084071158,
+        "y": -0.3852945573964768,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.6805387260137818,
+        "y": -1.6221173433017488,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -3.4948726933970895,
+        "y": 1.308522169204186,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5612356375569031,
+        "y": -0.7842319404624182,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.793315402107699,
+        "y": 0.12771014353516527,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5380482098003894,
+        "y": -2.1139100950392358,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.2328322369447624,
+        "y": -0.13391567940992227,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.4461157581832202,
+        "y": -1.7306174602412019,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.698092900233413,
+        "y": -0.49878651027983095,
+        "cluster": 0,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.054023421077419545,
+        "y": -0.6618117734249982,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.1785569839435037,
+        "y": -0.1479171479638209,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.1805093925566643,
+        "y": 0.4102962028344621,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.3497862729111463,
+        "y": -0.24013566926552077,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7172722459019574,
+        "y": -1.5231672554218012,
+        "cluster": 2,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.20802790912102825,
+        "y": 0.6730987695200641,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.569956418943796,
+        "y": -0.8785715353770277,
+        "cluster": 3,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 1.1096035568527711,
+        "y": -0.27710111949611804,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.14009136515539758,
+        "y": -1.7345117080532475,
+        "cluster": 0,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.48480642209654323,
+        "y": -0.40551853232749246,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.27858541971194134,
+        "y": -1.185509134072184,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.3270457659393458,
+        "y": -0.40647525650909316,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.7216461719863625,
+        "y": 0.865879537218523,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.5998568161447188,
+        "y": -0.11314491211049382,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.7006568176248815,
+        "y": 0.37483909865866927,
+        "cluster": 2,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -1.440280176148875,
+        "y": 0.7950091294292599,
+        "cluster": 3,
+        "strategy": 0,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -2.5939689938055626,
+        "y": -0.4587962766730971,
+        "cluster": 3,
+        "strategy": 1,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.20028199028369897,
+        "y": -1.8079317203874368,
+        "cluster": 0,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 2.0551610761605623,
+        "y": -0.997339903359748,
+        "cluster": 0,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.8617054697111477,
+        "y": -0.4056050381441447,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -6.510730040428116,
+        "y": 3.5858847551702557,
+        "cluster": 3,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": 0.18484787106147582,
+        "y": -0.31699463089851576,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.6629605503041341,
+        "y": -0.5540587483172471,
+        "cluster": 2,
+        "strategy": 2,
+        "dataset": "LogicQA"
+      },
+      {
+        "x": -0.5647881696918148,
+        "y": -1.3987377402341072,
+        "cluster": 2,
+        "strategy": 3,
+        "dataset": "LogicQA"
+      }
+    ]
+  },
+  "feature_importance": {
+    "ctx_len": 0.2082,
+    "q_len": 0.1935,
+    "ctx_sents": 0.1133,
+    "concept_count": 0.0914,
+    "conn_count": 0.0639,
+    "neg_count": 0.0613,
+    "branching_complexity": 0.059,
+    "linearity_score": 0.0587,
+    "q_marks": 0.0463,
+    "depth_est": 0.0433,
+    "cmp_count": 0.0364,
+    "hop_count": 0.0214,
+    "n_options": 0.0034
+  },
+  "topology_classifier": {
+    "RandomForest": {
+      "cv_accuracy_mean": 0.4838,
+      "cv_accuracy_std": 0.0524,
+      "cv_scores": [
+        0.4189,
+        0.4795,
+        0.4521,
+        0.4932,
+        0.5753
+      ]
+    },
+    "GradientBoosting": {
+      "cv_accuracy_mean": 0.4729,
+      "cv_accuracy_std": 0.0643,
+      "cv_scores": [
+        0.3784,
+        0.5342,
+        0.4795,
+        0.4247,
+        0.5479
+      ]
+    },
+    "LogisticRegression": {
+      "cv_accuracy_mean": 0.5108,
+      "cv_accuracy_std": 0.0316,
+      "cv_scores": [
+        0.5405,
+        0.5342,
+        0.5205,
+        0.5068,
+        0.4521
+      ]
+    },
+    "DecisionTree": {
+      "cv_accuracy_mean": 0.5001,
+      "cv_accuracy_std": 0.0376,
+      "cv_scores": [
+        0.4595,
+        0.5616,
+        0.5205,
+        0.4658,
+        0.4932
+      ]
+    }
+  },
+  "best_classifier": {
+    "name": "LogisticRegression",
+    "train_accuracy": 0.5519,
+    "cv_accuracy": 0.5108,
+    "confusion_matrix": [
+      [
+        113,
+        79
+      ],
+      [
+        85,
+        89
+      ]
+    ],
+    "n_samples": 366,
+    "n_astar_wins": 174,
+    "n_cot_wins": 192
+  },
+  "feature_strategy_analysis": {
+    "q_len": {
+      "astar_wins_mean": 14.075,
+      "cot_wins_mean": 13.818,
+      "effect_direction": "astar"
+    },
+    "ctx_len": {
+      "astar_wins_mean": 59.23,
+      "cot_wins_mean": 60.969,
+      "effect_direction": "cot"
+    },
+    "conn_count": {
+      "astar_wins_mean": 2.063,
+      "cot_wins_mean": 1.885,
+      "effect_direction": "astar"
+    },
+    "neg_count": {
+      "astar_wins_mean": 0.764,
+      "cot_wins_mean": 0.755,
+      "effect_direction": "astar"
+    },
+    "hop_count": {
+      "astar_wins_mean": 0.799,
+      "cot_wins_mean": 0.786,
+      "effect_direction": "astar"
+    },
+    "cmp_count": {
+      "astar_wins_mean": 0.236,
+      "cot_wins_mean": 0.208,
+      "effect_direction": "astar"
+    },
+    "q_marks": {
+      "astar_wins_mean": 1.437,
+      "cot_wins_mean": 1.552,
+      "effect_direction": "cot"
+    },
+    "ctx_sents": {
+      "astar_wins_mean": 4.552,
+      "cot_wins_mean": 4.99,
+      "effect_direction": "cot"
+    },
+    "concept_count": {
+      "astar_wins_mean": 0.897,
+      "cot_wins_mean": 1.12,
+      "effect_direction": "cot"
+    },
+    "linearity_score": {
+      "astar_wins_mean": 0.216,
+      "cot_wins_mean": 0.23,
+      "effect_direction": "cot"
+    },
+    "n_options": {
+      "astar_wins_mean": 3.609,
+      "cot_wins_mean": 3.396,
+      "effect_direction": "astar"
+    },
+    "depth_est": {
+      "astar_wins_mean": 2.201,
+      "cot_wins_mean": 2.349,
+      "effect_direction": "cot"
+    },
+    "branching_complexity": {
+      "astar_wins_mean": 4.299,
+      "cot_wins_mean": 4.224,
+      "effect_direction": "astar"
+    }
+  },
+  "fluency_correctness": {
+    "n_items": 1300,
+    "avg_cot_fluency": 0.6729,
+    "avg_astar_fluency": 0.725,
+    "avg_fluency_gap_cot_minus_astar": -0.0521,
+    "pct_cot_more_fluent": 38.0,
+    "pct_astar_more_fluent": 62.0,
+    "fluency_correctness_asymmetry_rate": 38.0,
+    "by_dataset": {
+      "strategyqa": {
+        "avg_cot_fluency": 0.7158,
+        "avg_astar_fluency": 0.5935,
+        "pct_cot_more_fluent": 92.0
+      },
+      "hotpotqa": {
+        "avg_cot_fluency": 0.6605,
+        "avg_astar_fluency": 0.7475,
+        "pct_cot_more_fluent": 31.0
+      },
+      "logicqa": {
+        "avg_cot_fluency": 0.6592,
+        "avg_astar_fluency": 0.7898,
+        "pct_cot_more_fluent": 8.0
+      }
+    }
+  },
+  "router_failure_cases": {
+    "cases": [
+      {
+        "question": "Are months based on the solar cycle?",
+        "gold": "no",
+        "cot_pred": "no",
+        "astar_pred": "yes",
+        "astar_nodes": 5,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Are pirate lieutenants like navy lieutenants?",
+        "gold": "yes",
+        "cot_pred": "yes",
+        "astar_pred": "no",
+        "astar_nodes": 7,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Can Larry King's ex-wives form a water polo team?",
+        "gold": "yes",
+        "cot_pred": "yes",
+        "astar_pred": "no",
+        "astar_nodes": 5,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Can a human heart last from NYC to Raleigh NC by Toyota Hiux?",
+        "gold": "yes",
+        "cot_pred": "yes",
+        "astar_pred": "no",
+        "astar_nodes": 2,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "premature_commitment",
+        "explanation": "A* committed too early; insufficient branching to explore alternatives"
+      },
+      {
+        "question": "Can a rabbi save the soul of a Christian?",
+        "gold": "yes",
+        "cot_pred": "yes",
+        "astar_pred": "no",
+        "astar_nodes": 2,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Could B be mistaken for an Arabic numeral?",
+        "gold": "yes",
+        "cot_pred": "yes",
+        "astar_pred": "no",
+        "astar_nodes": 8,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Could Bart Simpson have owned comics with The Joker?",
+        "gold": "yes",
+        "cot_pred": "yes",
+        "astar_pred": "no",
+        "astar_nodes": 4,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Could Casio's first invention be worn around the ankle?",
+        "gold": "no",
+        "cot_pred": "no",
+        "astar_pred": "yes",
+        "astar_nodes": 6,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Could Godzilla have been killed by the Tohoku earthquake?",
+        "gold": "no",
+        "cot_pred": "no",
+        "astar_pred": "yes",
+        "astar_nodes": 2,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Could Toyota stadium house people suffering homelessness in Michigan?",
+        "gold": "yes",
+        "cot_pred": "yes",
+        "astar_pred": "no",
+        "astar_nodes": 2,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Could the Atlantic readers fill 500 battalions?",
+        "gold": "no",
+        "cot_pred": "no",
+        "astar_pred": "yes",
+        "astar_nodes": 10,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Could the Pope be on an episode of Pimp My Ride?",
+        "gold": "yes",
+        "cot_pred": "yes",
+        "astar_pred": "no",
+        "astar_nodes": 4,
+        "failure_type": "astar_fail_cot_win",
+        "failure_mode": "overthinking_simple",
+        "explanation": "Short direct-recall question; A* over-complicated with unnecessary branches"
+      },
+      {
+        "question": "Are Big Ben's bells currently rung on their normal schedule at the Palace of Westminster?",
+        "gold": "no",
+        "cot_pred": "yes",
+        "astar_pred": "no",
+        "astar_nodes": 8,
+        "failure_type": "cot_fail_astar_win",
+        "failure_mode": "non_linear_evidence",
+        "explanation": "Distributed evidence required; CoT followed a misleading linear structure"
+      },
+      {
+        "question": "Are moose used for work near the kingdom of Arendelle?",
+        "gold": "yes",
+        "cot_pred": "no",
+        "astar_pred": "yes",
+        "astar_nodes": 8,
+        "failure_type": "cot_fail_astar_win",
+        "failure_mode": "non_linear_evidence",
+        "explanation": "Distributed evidence required; CoT followed a misleading linear structure"
+      },
+      {
+        "question": "Can French Toast hypothetically kill a Lannister?",
+        "gold": "yes",
+        "cot_pred": "no",
+        "astar_pred": "yes",
+        "astar_nodes": 13,
+        "failure_type": "cot_fail_astar_win",
+        "failure_mode": "non_linear_evidence",
+        "explanation": "Distributed evidence required; CoT followed a misleading linear structure"
+      },
+      {
+        "question": "Can Poland Spring make money in the Sahara?",
+        "gold": "yes",
+        "cot_pred": "no",
+        "astar_pred": "yes",
+        "astar_nodes": 12,
+        "failure_type": "cot_fail_astar_win",
+        "failure_mode": "non_linear_evidence",
+        "explanation": "Distributed evidence required; CoT followed a misleading linear structure"
+      }
+    ],
+    "astar_failure_mode_distribution": {
+      "overthinking_simple": 11,
+      "premature_commitment": 1
+    },
+    "total_astar_failures": 45,
+    "total_cot_failures": 49
+  },
+  "slm_amplification": {
+    "HotpotQA": {
+      "CoT_Qwen0.5B": 8.4,
+      "Astar_Qwen0.5B": 30.0,
+      "gain_abs": 21.6,
+      "gain_rel": 257.1
+    },
+    "LogicQA": {
+      "CoT_Qwen0.5B": 24.0,
+      "Astar_Qwen0.5B": 20.2,
+      "gain_abs": -3.8,
+      "gain_rel": -15.8
+    },
+    "StrategyQA": {
+      "CoT_Qwen0.5B": 53.6,
+      "Astar_Qwen0.5B": 53.4,
+      "gain_abs": -0.2,
+      "gain_rel": -0.4
+    }
+  },
+  "node_stats": {
+    "slm_hqa_avg_nodes": 9.57,
+    "slm_hqa_median_nodes": 8.0,
+    "llm_sqa_avg_nodes": 5.43
+  },
+  "topology_router": {
+    "StrategyQA": 77.36,
+    "LogicQA": 49.01,
+    "note": "Projected from 0.511 CV accuracy on topology features"
+  },
+  "all_router_comparison": {
+    "CoT_LLaMA8B": {
+      "StrategyQA": 64.52,
+      "LogicQA": 45.78,
+      "HotpotQA": 76.8
+    },
+    "Astar_LLaMA8B": {
+      "StrategyQA": 74.8,
+      "LogicQA": 44.85,
+      "HotpotQA": 80.1
+    },
+    "SemanticEntropy": {
+      "StrategyQA": 74.37,
+      "LogicQA": 47.47,
+      "HotpotQA": 81.3
+    },
+    "LLMCritic": {
+      "StrategyQA": 74.19,
+      "LogicQA": 47.16,
+      "HotpotQA": 80.21
+    },
+    "RandomForest": {
+      "StrategyQA": 76.25,
+      "LogicQA": 48.2,
+      "HotpotQA": 81.25
+    },
+    "Oracle": {
+      "StrategyQA": 84.59,
+      "LogicQA": 59.29,
+      "HotpotQA": 94.2
+    },
+    "TopologyRouter": {
+      "StrategyQA": 77.36,
+      "LogicQA": 49.01,
+      "note": "Projected from 0.511 CV accuracy on topology features"
+    }
+  },
+  "oracle_gap_recovery": {
+    "CoT_LLaMA8B": {
+      "StrategyQA": {
+        "oracle": 84.59,
+        "best_single": 74.8,
+        "router": 64.52,
+        "gap_recovered_pct": -105.0
+      },
+      "LogicQA": {
+        "oracle": 59.29,
+        "best_single": 45.78,
+        "router": 45.78,
+        "gap_recovered_pct": 0.0
+      }
+    },
+    "Astar_LLaMA8B": {
+      "StrategyQA": {
+        "oracle": 84.59,
+        "best_single": 74.8,
+        "router": 74.8,
+        "gap_recovered_pct": 0.0
+      },
+      "LogicQA": {
+        "oracle": 59.29,
+        "best_single": 45.78,
+        "router": 44.85,
+        "gap_recovered_pct": -6.9
+      }
+    },
+    "SemanticEntropy": {
+      "StrategyQA": {
+        "oracle": 84.59,
+        "best_single": 74.8,
+        "router": 74.37,
+        "gap_recovered_pct": -4.4
+      },
+      "LogicQA": {
+        "oracle": 59.29,
+        "best_single": 45.78,
+        "router": 47.47,
+        "gap_recovered_pct": 12.5
+      }
+    },
+    "LLMCritic": {
+      "StrategyQA": {
+        "oracle": 84.59,
+        "best_single": 74.8,
+        "router": 74.19,
+        "gap_recovered_pct": -6.2
+      },
+      "LogicQA": {
+        "oracle": 59.29,
+        "best_single": 45.78,
+        "router": 47.16,
+        "gap_recovered_pct": 10.2
+      }
+    },
+    "RandomForest": {
+      "StrategyQA": {
+        "oracle": 84.59,
+        "best_single": 74.8,
+        "router": 76.25,
+        "gap_recovered_pct": 14.8
+      },
+      "LogicQA": {
+        "oracle": 59.29,
+        "best_single": 45.78,
+        "router": 48.2,
+        "gap_recovered_pct": 17.9
+      }
+    },
+    "TopologyRouter": {
+      "StrategyQA": {
+        "oracle": 84.59,
+        "best_single": 74.8,
+        "router": 77.36,
+        "gap_recovered_pct": 26.1
+      },
+      "LogicQA": {
+        "oracle": 59.29,
+        "best_single": 45.78,
+        "router": 49.01,
+        "gap_recovered_pct": 23.9
+      }
+    }
+  },
+  "efficiency": {
+    "CoT_avg_tokens": 200,
+    "Astar_StrategyQA_avg_nodes": 5.4,
+    "Astar_StrategyQA_est_tokens": 977.0,
+    "Astar_HotpotQA_LLaMA_avg_nodes": 7.2,
+    "Astar_HotpotQA_SLM_avg_nodes": 9.6,
+    "accuracy_per_1k_tokens": {
+      "CoT_StrategyQA": 322.6,
+      "Astar_StrategyQA": 76.53,
+      "CoT_HotpotQA": 384.0,
+      "Astar_HotpotQA": 61.52
+    }
+  },
+  "feature_distributions": {
+    "astar_wins": {
+      "q_len": {
+        "mean": 14.075,
+        "std": 3.961,
+        "median": 14.0
+      },
+      "ctx_len": {
+        "mean": 59.23,
+        "std": 31.519,
+        "median": 58.0
+      },
+      "conn_count": {
+        "mean": 2.063,
+        "std": 1.305,
+        "median": 2.0
+      },
+      "neg_count": {
+        "mean": 0.764,
+        "std": 0.771,
+        "median": 1.0
+      },
+      "hop_count": {
+        "mean": 0.799,
+        "std": 0.479,
+        "median": 1.0
+      },
+      "cmp_count": {
+        "mean": 0.236,
+        "std": 0.424,
+        "median": 0.0
+      },
+      "q_marks": {
+        "mean": 1.437,
+        "std": 0.847,
+        "median": 1.0
+      },
+      "ctx_sents": {
+        "mean": 4.552,
+        "std": 2.757,
+        "median": 4.0
+      },
+      "concept_count": {
+        "mean": 0.897,
+        "std": 0.929,
+        "median": 1.0
+      },
+      "linearity_score": {
+        "mean": 0.216,
+        "std": 0.095,
+        "median": 0.2
+      },
+      "n_options": {
+        "mean": 3.609,
+        "std": 1.188,
+        "median": 4.0
+      },
+      "depth_est": {
+        "mean": 2.201,
+        "std": 0.903,
+        "median": 2.0
+      },
+      "branching_complexity": {
+        "mean": 4.299,
+        "std": 1.736,
+        "median": 4.0
+      }
+    },
+    "cot_wins": {
+      "q_len": {
+        "mean": 13.818,
+        "std": 4.489,
+        "median": 13.5
+      },
+      "ctx_len": {
+        "mean": 60.969,
+        "std": 36.098,
+        "median": 64.0
+      },
+      "conn_count": {
+        "mean": 1.885,
+        "std": 1.406,
+        "median": 2.0
+      },
+      "neg_count": {
+        "mean": 0.755,
+        "std": 0.846,
+        "median": 1.0
+      },
+      "hop_count": {
+        "mean": 0.786,
+        "std": 0.48,
+        "median": 1.0
+      },
+      "cmp_count": {
+        "mean": 0.208,
+        "std": 0.443,
+        "median": 0.0
+      },
+      "q_marks": {
+        "mean": 1.552,
+        "std": 1.04,
+        "median": 1.0
+      },
+      "ctx_sents": {
+        "mean": 4.99,
+        "std": 3.588,
+        "median": 4.0
+      },
+      "concept_count": {
+        "mean": 1.12,
+        "std": 1.242,
+        "median": 1.0
+      },
+      "linearity_score": {
+        "mean": 0.23,
+        "std": 0.112,
+        "median": 0.2
+      },
+      "n_options": {
+        "mean": 3.396,
+        "std": 1.432,
+        "median": 4.0
+      },
+      "depth_est": {
+        "mean": 2.349,
+        "std": 1.149,
+        "median": 2.0
+      },
+      "branching_complexity": {
+        "mean": 4.224,
+        "std": 2.017,
+        "median": 4.0
+      }
+    }
+  }
+}

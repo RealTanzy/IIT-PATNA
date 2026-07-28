@@ -1,0 +1,200 @@
+{"index": 1, "example_id": "eval_0", "question": "Are more people today related to Genghis Khan than Julius Caesar?", "prediction": null, "gold": "yes", "is_correct": false}
+{"index": 2, "example_id": "eval_1", "question": "Could the members of The Police perform lawful arrests?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 3, "example_id": "eval_2", "question": "Would a Monoamine Oxidase candy bar cheer up a depressed friend?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 4, "example_id": "eval_3", "question": "Would a dog respond to bell before Grey seal?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 5, "example_id": "eval_4", "question": "Is a pound sterling valuable?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 6, "example_id": "eval_5", "question": "Is shrimp scampi definitely free of plastic?", "prediction": "yes", "gold": "no", "is_correct": false}
+{"index": 7, "example_id": "eval_6", "question": "Do the anchors on Rede Globo speak Chinese?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 8, "example_id": "eval_7", "question": "Will the Albany in Georgia reach a hundred thousand occupants before the one in New York?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 9, "example_id": "eval_8", "question": "Is a Boeing 737 cost covered by Wonder Woman (2017 film) box office receipts?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 10, "example_id": "eval_9", "question": "Is the language used in Saint Vincent and the Grenadines rooted in English?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 11, "example_id": "eval_10", "question": "Can you buy Casio products at Petco?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 12, "example_id": "eval_11", "question": "Did the Space Race use relay batons?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 13, "example_id": "eval_12", "question": "Are Christmas trees dissimilar to deciduous trees?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 14, "example_id": "eval_13", "question": "Does Biochemistry study gluons?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 15, "example_id": "eval_14", "question": "Did land owners elect their rulers in the Kingdom of Hungary?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 16, "example_id": "eval_15", "question": "Would Nancy Pelosi publicly denounce abortion?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 17, "example_id": "eval_16", "question": "Does Dragon Ball shows and movies fall short of Friday 13th number of projects?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 18, "example_id": "eval_17", "question": "Would a student of the class of 2017 have amnesia about 9/11?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 19, "example_id": "eval_18", "question": "Is greed the most prevalent of the Seven Deadly Sins?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 20, "example_id": "eval_19", "question": "Would a psychic who admits to hot reading be trustworthy?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 21, "example_id": "eval_20", "question": "Is average number of peas in a pod enough commas for a billion?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 22, "example_id": "eval_21", "question": "Does actress Leila George lack the height to be a model?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 23, "example_id": "eval_22", "question": "Is Dustin Hoffman one of the B'nei Yisrael?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 24, "example_id": "eval_23", "question": "If you were on a diet, would you have to skip lunch at McDonald's?", "prediction": "yes", "gold": "no", "is_correct": false}
+{"index": 25, "example_id": "eval_24", "question": "Could the Powerpuff Girls hypothetically attend the Camden Military Academy?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 26, "example_id": "eval_25", "question": "Would the top of Mount Fuji stick out of the Sea of Japan?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 27, "example_id": "eval_26", "question": "Would an uninsured person be more likely than an insured person to decline a CT scan?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 28, "example_id": "eval_27", "question": "Was the Donatello crucifix identified in 2020 life size?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 29, "example_id": "eval_28", "question": "Is Disneyland Paris the largest Disney resort?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 30, "example_id": "eval_29", "question": "Could someone with fine motor control issues benefit from an altered keyboard layout?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 31, "example_id": "eval_30", "question": "Would Adam Sandler get a reference to Cole Spouse and a scuba man doll?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 32, "example_id": "eval_31", "question": "Is there a warthog on Broadway?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 33, "example_id": "eval_32", "question": "Does Disney have an ice princess?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 34, "example_id": "eval_33", "question": "Would a geographer use biochemistry in their work?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 35, "example_id": "eval_34", "question": "Could George Washington's own speeches have been recorded live to a compact disc?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 36, "example_id": "eval_35", "question": "Was Lil Jon's top ranked Billboard song a collaboration with a member of The Lox?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 37, "example_id": "eval_36", "question": "Would food made with black salt smell of sulfur?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 38, "example_id": "eval_37", "question": "Would a broadcast from Spirit make the news in 2020?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 39, "example_id": "eval_38", "question": "Is Miami a city on the American West Coast?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 40, "example_id": "eval_39", "question": "Could Robert Wadlow hypothetically see Frankenstein's monster's bald spot from above?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 41, "example_id": "eval_40", "question": "Is the tibia necessary to win the Stanley Cup?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 42, "example_id": "eval_41", "question": "Would an ethics professor teach a class on Cezanne?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 43, "example_id": "eval_42", "question": "If you add water to rice pudding is it horchata?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 44, "example_id": "eval_43", "question": "Can the Swiss Guard fill the Virginia General Assembly chairs?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 45, "example_id": "eval_44", "question": "If your skin was turning the color of a zombie, could it be because of nickel?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 46, "example_id": "eval_45", "question": "Would a Dolce & Gabbana suit wearer be shunned by their Amish cousins?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 47, "example_id": "eval_46", "question": "Is the Illuminati card game still popular?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 48, "example_id": "eval_47", "question": "Can a strawberry get worms similar to dogs?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 49, "example_id": "eval_48", "question": "Is Menthol associated with Thanksgiving?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 50, "example_id": "eval_49", "question": "Would someone in Mumbai refer to Solanum melongena as an eggplant?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 51, "example_id": "eval_50", "question": "Is it okay to lie after taking an oath in a court of law?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 52, "example_id": "eval_51", "question": "Is art prioritized in the US education system?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 53, "example_id": "eval_52", "question": "While on a liquid diet, are there some types of soup you cannot eat?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 54, "example_id": "eval_53", "question": "Would it be impossible to use an Iwato scale for a twelve-tone technique composition?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 55, "example_id": "eval_54", "question": "Would the Titanic be well preserved at the bottom of the Gulf of Finland?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 56, "example_id": "eval_55", "question": "Could a dandelion suffer from hepatitis?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 57, "example_id": "eval_56", "question": "Did any country in Portuguese Colonial War share Switzerlands role in WWII?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 58, "example_id": "eval_57", "question": "Would a week be enough time to watch every episode of Ugly Betty?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 59, "example_id": "eval_58", "question": "Would a Pict be confused by Old English?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 60, "example_id": "eval_59", "question": "Was the Louisiana Purchase made with bitcoin?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 61, "example_id": "eval_60", "question": "Did Japanese serfdom have higher status than English counterpart?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 62, "example_id": "eval_61", "question": "Is the best tasting part of the papaya in the center?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 63, "example_id": "eval_62", "question": "Could Lil Wayne's children ride in a Chevrolet Corvette ZR1 together?", "prediction": null, "gold": "no", "is_correct": false}
+{"index": 64, "example_id": "eval_63", "question": "Is double duty an incorrect phrase for host of Dancing With The Stars?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 65, "example_id": "eval_64", "question": "Could Lil Wayne legally operate a vehicle on his own at the beginning of his career?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 66, "example_id": "eval_65", "question": "Could an ocelot subsist on a single bee hummingbird per day?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 67, "example_id": "eval_66", "question": "Does Ukrainian Greek Catholic Church recognize Alexander Nevsky as a saint?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 68, "example_id": "eval_67", "question": "Was the original James Bond actor born near the Washington Monument?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 69, "example_id": "eval_68", "question": "Did J. P. Morgan have healthy lungs?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 70, "example_id": "eval_69", "question": "Would Firefighters be included in a September 11th memorial?", "prediction": null, "gold": "yes", "is_correct": false}
+{"index": 71, "example_id": "eval_70", "question": "Does Andrew Johnson's presidential number exceed Elagabalus's Emperor number?", "prediction": "yes", "gold": "no", "is_correct": false}
+{"index": 72, "example_id": "eval_71", "question": "Are any animals in Chinese calendar Chordata?", "prediction": null, "gold": "yes", "is_correct": false}
+{"index": 73, "example_id": "eval_72", "question": "Would a hypothetical Yeti be towered over by Andre the Giant?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 74, "example_id": "eval_73", "question": "Are you likely to find a crucifix in Karachi?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 75, "example_id": "eval_74", "question": "Was The Little Prince's titular character allergic to flowers?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 76, "example_id": "eval_75", "question": "Was a person sold a Creative Commons License for Boticelli's The Birth of Venus ripped off?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 77, "example_id": "eval_76", "question": "Did Millard Fillmore help to establish the University of Pittsburgh?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 78, "example_id": "eval_77", "question": "Does Northern fur seal make good pet for six year old?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 79, "example_id": "eval_78", "question": "Would a pear sink in water?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 80, "example_id": "eval_79", "question": "WIll Noah's Ark hypothetically sail through flooded Lincoln Tunnel?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 81, "example_id": "eval_80", "question": "Can you write a whole Haiku in a single tweet?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 82, "example_id": "eval_81", "question": "Would you take a photo of a Saltwater crocodile in Memphis?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 83, "example_id": "eval_82", "question": "Could Scooby Doo fit in a kangaroo pouch?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 84, "example_id": "eval_83", "question": "Do manta rays live in water above the safe temperature for cold food storage?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 85, "example_id": "eval_84", "question": "Is the kayak a traditional boat in New Zealand?", "prediction": "yes", "gold": "no", "is_correct": false}
+{"index": 86, "example_id": "eval_85", "question": "Has the Subway restaurant franchise had any connections with child abusers?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 87, "example_id": "eval_86", "question": "Would the high school class of 2010 have lived through the Presidency of Richard Nixon?", "prediction": "yes", "gold": "no", "is_correct": false}
+{"index": 88, "example_id": "eval_87", "question": "Could ten gallons of seawater crush a six year old?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 89, "example_id": "eval_88", "question": "Would a Deacon be likely to be a fan of the podcast 'God Awful Movies'?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 90, "example_id": "eval_89", "question": "Could a giant squid fit aboard the deck of the titanic?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 91, "example_id": "eval_90", "question": "Do more anchovy live in colder temperature waters than warmer?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 92, "example_id": "eval_91", "question": "Is Antarctica a good location for Groundhog Day?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 93, "example_id": "eval_92", "question": "Can the Powerpuff Girls form a complete tag team wrestling match?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 94, "example_id": "eval_93", "question": "Will someone die without white blood cells?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 95, "example_id": "eval_94", "question": "Does rock star Keith Richards play a captain of a boat in a movie?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 96, "example_id": "eval_95", "question": "Is 3D printing able to make adenovirus?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 97, "example_id": "eval_96", "question": "Would an eleventh-grader be eligible for Medicare?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 98, "example_id": "eval_97", "question": "Is there a full Neptunian orbit between the first two burials of women in the Panthéon?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 99, "example_id": "eval_98", "question": "Will Oasis cruise boat traverse the Lincoln Tunnel?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 100, "example_id": "eval_99", "question": "Could Oscar Wilde have operated a motor vehicle?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 101, "example_id": "eval_100", "question": "Would George Fox support stoning?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 102, "example_id": "eval_101", "question": "Will Tokyo Tower be repainted only once during President Trump's first term?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 103, "example_id": "eval_102", "question": "Has a neanderthal ever served on the Supreme Court of the United States?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 104, "example_id": "eval_103", "question": "Can Clouded leopards chase down many Pronghorn antelopes?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 105, "example_id": "eval_104", "question": "Does the anatomy of a camel lend itself to jokes on Wednesdays?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 106, "example_id": "eval_105", "question": "Can voice actors for Goofy and Bugs Bunny each get one stripe from American flag?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 107, "example_id": "eval_106", "question": "Did Clark Gable appear in any movies scored by John Williams?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 108, "example_id": "eval_107", "question": "Is Linus Torvalds' wife unable to physically defend herself?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 109, "example_id": "eval_108", "question": "Did Eric Clapton have similar taste in women to one of the Beatles?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 110, "example_id": "eval_109", "question": "Is watching  Star Wars necessary to know who Darth Vader is?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 111, "example_id": "eval_110", "question": "Did Eddie Murphy's father see his first stand up show?", "prediction": "yes", "gold": "no", "is_correct": false}
+{"index": 112, "example_id": "eval_111", "question": "Could a silverfish reach the top of the Empire State Building?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 113, "example_id": "eval_112", "question": "Are there winged statuettes in the home of the creator of Law & Order?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 114, "example_id": "eval_113", "question": "Was Donald Trump the target of Islamophobia?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 115, "example_id": "eval_114", "question": "Would baker's dozen of side by side Mac Trucks jam up Golden Gate Bridge?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 116, "example_id": "eval_115", "question": "Could someone mistake the smell of your brussels sprouts for a fart?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 117, "example_id": "eval_116", "question": "Do guitarist's have fingers that can handle pain better than average?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 118, "example_id": "eval_117", "question": "Were there under 150,000 American troops in Vietnam in 1965?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 119, "example_id": "eval_118", "question": "Did Native American tribes teach Spaniards how to cultivate maize?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 120, "example_id": "eval_119", "question": "Has Oscar Wilde's most famous character ever been in an Eva Green project?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 121, "example_id": "eval_120", "question": "Do frogs feel disgust?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 122, "example_id": "eval_121", "question": "Did either Kublai Khan or his grandfather practice monogamy?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 123, "example_id": "eval_122", "question": "Does a person need to be a parent to become a grandparent?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 124, "example_id": "eval_123", "question": "Did Van Gogh suffer from a mental disorder?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 125, "example_id": "eval_124", "question": "Is the span in C-SPAN named after Alan Greenspan?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 126, "example_id": "eval_125", "question": "Would Eminem perform well at the International Mathematical Olympiad?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 127, "example_id": "eval_126", "question": "Can a computer be programmed entirely in Boolean algebra?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 128, "example_id": "eval_127", "question": "Is Guitar Hero Beatles inappropriate for a US third grader?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 129, "example_id": "eval_128", "question": "In American society, will a bachelor's degree often include a leap year?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 130, "example_id": "eval_129", "question": "At a presentation about post traumatic stress disorder, would Ariana Grande be a topic of relevance?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 131, "example_id": "eval_130", "question": "Were plants crucial for The King of Rock'n Roll's snack with bananas?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 132, "example_id": "eval_131", "question": "Could you read The Atlantic magazine during the Games of the XXII Olympiad?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 133, "example_id": "eval_132", "question": "Can you find Bob Marley's face in most smoke shops?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 134, "example_id": "eval_133", "question": "Could Elizabeth I of England have seen the play Dido, Queen of Carthage ?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 135, "example_id": "eval_134", "question": "Is Britney Spears' breakdown attributed to bipolar disorder?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 136, "example_id": "eval_135", "question": "Is week old chlorine water safe to drink?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 137, "example_id": "eval_136", "question": "Is the foot part of the metric system?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 138, "example_id": "eval_137", "question": "Would it be typical for a Rede Globo anchor to say Konnichiwa to the viewers?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 139, "example_id": "eval_138", "question": "Does Hades appear in a Disney Channel musical movie?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 140, "example_id": "eval_139", "question": "Were weather phenomena avoided when naming minor league baseball teams?", "prediction": "yes", "gold": "no", "is_correct": false}
+{"index": 141, "example_id": "eval_140", "question": "Could a Hwasong-15 missile hypothetically reach Voyager 2?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 142, "example_id": "eval_141", "question": "Could someone theoretically use an armadillo as a shield?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 143, "example_id": "eval_142", "question": "Does Linus Torvalds make money off of DirectX?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 144, "example_id": "eval_143", "question": "Did a Mediterranean Sea creature kill Steve Irwin?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 145, "example_id": "eval_144", "question": "Do you need to worry about Zika virus in Antarctica?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 146, "example_id": "eval_145", "question": "Did the writer of Christmas carol fast during Ramadan?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 147, "example_id": "eval_146", "question": "Are most books written as a Haiku?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 148, "example_id": "eval_147", "question": "Does the country that received the most gold medals during the 1976 Olympics still exist?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 149, "example_id": "eval_148", "question": "Will Chuck Norris be a nonagenarian by time next leap year after 2020 happens?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 150, "example_id": "eval_149", "question": "Does Bombyx mori have a monopoly over silk production?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 151, "example_id": "eval_150", "question": "Has cannabis been a big influence in rap music genre?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 152, "example_id": "eval_151", "question": "Do Jews believe in any New Testament angels?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 153, "example_id": "eval_152", "question": "Did Christina Aguilera turn her chair around for Kelly Clarkson on The Voice?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 154, "example_id": "eval_153", "question": "Do Christians anticipate an existence in Sheol after death?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 155, "example_id": "eval_154", "question": "Would an anxious person benefit from receiving courage from the Wizard of Oz?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 156, "example_id": "eval_155", "question": "Is polyamory allowed in the Catholic Church?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 157, "example_id": "eval_156", "question": "Does a Generation Y member satisfy NYPD police officer age requirement?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 158, "example_id": "eval_157", "question": "Could the main character of \"Alice's Adventures in Wonderland\" join a Masonic Lodge?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 159, "example_id": "eval_158", "question": "Did King James I despise fairy beings?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 160, "example_id": "eval_159", "question": "Did Evander Holyfield compete in an Olympics hosted in the western hemisphere?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 161, "example_id": "eval_160", "question": "Did Harry Houdini's wife make psychics look foolish?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 162, "example_id": "eval_161", "question": "Does handedness determine how you use American Sign Language?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 163, "example_id": "eval_162", "question": "Do onions have a form that resembles the inside of a tree?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 164, "example_id": "eval_163", "question": "Are moose used for work near the kingdom of Arendelle?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 165, "example_id": "eval_164", "question": "Is eleventh grade required to get a driver's licence?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 166, "example_id": "eval_165", "question": "Do some home remedies result in your skin color turning blue?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 167, "example_id": "eval_166", "question": "Was ethanol beneficial to Jack Kerouac's health?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 168, "example_id": "eval_167", "question": "Did Doctor Strange creators also make Batman?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 169, "example_id": "eval_168", "question": "Was Charlemagne's father instrumental in outcome of the Battle of Tours?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 170, "example_id": "eval_169", "question": "Would Janet Jackson avoid a dish with ham?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 171, "example_id": "eval_170", "question": "Can giant pandas sell out a Metallica show?", "prediction": null, "gold": "no", "is_correct": false}
+{"index": 172, "example_id": "eval_171", "question": "Would multiple average rulers be necessary to measure the length of a giant armadillo?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 173, "example_id": "eval_172", "question": "Can you only see hippopotamus in Africa?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 174, "example_id": "eval_173", "question": "Was Kane (wrestler) banned from WCW  headquarters city?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 175, "example_id": "eval_174", "question": "Was Rumi's work serialized in a magazine?", "prediction": "yes", "gold": "no", "is_correct": false}
+{"index": 176, "example_id": "eval_175", "question": "Is Olympia, Washington part of \"Ish river country\"?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 177, "example_id": "eval_176", "question": "Would someone with back pain enjoy picking strawberries?", "prediction": "yes", "gold": "no", "is_correct": false}
+{"index": 178, "example_id": "eval_177", "question": "Was the Euro used in Prussia?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 179, "example_id": "eval_178", "question": "Did Eiffel Tower contribute to a war victory?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 180, "example_id": "eval_179", "question": "Has the Indian Ocean garbage patch not completed two full rotations of debris since its discovery?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 181, "example_id": "eval_180", "question": "Do some religions look forward to armageddon?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 182, "example_id": "eval_181", "question": "Could a llama birth twice during War in Vietnam (1945-46)?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 183, "example_id": "eval_182", "question": "Is Rick and Morty considered an anime?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 184, "example_id": "eval_183", "question": "Does The Hague border multiple bodies of water?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 185, "example_id": "eval_184", "question": "Could a chipmunk fit 100 chocolate chips in his mouth?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 186, "example_id": "eval_185", "question": "Would a pescatarian be unable to eat anchovy pizza?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 187, "example_id": "eval_186", "question": "Would Sophist's have hypothetically made good lawyers?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 188, "example_id": "eval_187", "question": "Can fish get Tonsillitis?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 189, "example_id": "eval_188", "question": "Will Queen Elizabeth be buried in the Pantheon?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 190, "example_id": "eval_189", "question": "Does coding rely on Boolean algebra characters?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 191, "example_id": "eval_190", "question": "Was Gandalf present at the death of Eomer?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 192, "example_id": "eval_191", "question": "Would Amy Winehouse's death have been prevented with Narcan?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 193, "example_id": "eval_192", "question": "Are those incapable of reproduction incapable of parenthood?", "prediction": "yes", "gold": "no", "is_correct": false}
+{"index": 194, "example_id": "eval_193", "question": "Is Mixed martial arts totally original from Roman Colosseum games?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 195, "example_id": "eval_194", "question": "Can Herpes simplex virus spread on Venus?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 196, "example_id": "eval_195", "question": "Is Bern located east of Paris?", "prediction": "yes", "gold": "yes", "is_correct": true}
+{"index": 197, "example_id": "eval_196", "question": "Would keelhauling be a fair punishment under the Eighth Amendment?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 198, "example_id": "eval_197", "question": "Would Franz Ferdinand have survived with armadillo armor?", "prediction": "no", "gold": "no", "is_correct": true}
+{"index": 199, "example_id": "eval_198", "question": "Can you find a railroad engineer on TNT?", "prediction": "no", "gold": "yes", "is_correct": false}
+{"index": 200, "example_id": "eval_199", "question": "Could Amazon afford The Mona Lisa?", "prediction": "no", "gold": "yes", "is_correct": false}

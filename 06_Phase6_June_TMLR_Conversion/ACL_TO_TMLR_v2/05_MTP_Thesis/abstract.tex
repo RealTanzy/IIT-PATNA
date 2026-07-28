@@ -1,0 +1,14 @@
+\newpage
+\chapter*{\centering Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\quad Chain-of-thought (CoT) prompting and search-based reasoning represent two contrasting inference-time paradigms for large language models. CoT commits to a single linear trajectory, while search explores alternative partial reasoning paths before committing to an answer. In this thesis, we study this trade-off using A* as a controlled instantiation of heuristic-guided search.
+
+Across eight benchmarks---StrategyQA, LogicQA, HotpotQA, GSM8K, MATH, HumanEval, MBPP, and CodeContests---spanning question answering, mathematical reasoning, and code generation, and across three model scales (0.5B, 8B, 14B), we find that search is not a universal upgrade over CoT. Instead, the two strategies solve substantially different subsets of instances, with oracle gaps of up to 14 percentage points above the best single method.
+
+To explain this complementarity, we introduce a \emph{Reasoning Topology Framework} based on 13 structural features computable from the input alone, before any generation. A derived branching coefficient predicts when search helps better than dataset identity ($R^2 = 0.94$ on QA/math clusters). Building on this, we train a topology-aware router that selects between CoT and A* without observing generated traces. Despite this restriction, it outperforms post-hoc routers based on semantic entropy and LLM-as-critic judgments, recovering 32.3\% of the oracle gap at 8B scale across all benchmarks.
+
+We attribute this counterintuitive result to a \emph{Fluency--Correctness Asymmetry}: in 38\% of disagreement cases, the more fluent trace is actually wrong, systematically misleading post-hoc judges. On code generation, the topology router recovers 67.8\% of the HumanEval oracle gap and 89.7\% on CodeContests at 0.5B scale. Our results suggest that adaptive reasoning should route by problem structure rather than trace evaluation, deploying search only when the input topology warrants its higher cost.
+
+\vskip 2ex
+\noindent\textbf{Keywords:} Large Language Models, Chain-of-Thought, A* Search, Reasoning Topology, Adaptive Routing, Code Generation

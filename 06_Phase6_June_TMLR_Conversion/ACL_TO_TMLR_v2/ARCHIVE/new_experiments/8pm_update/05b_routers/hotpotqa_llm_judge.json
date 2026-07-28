@@ -1,0 +1,294 @@
+{
+  "router": "llm_judge",
+  "dataset": "hotpotqa",
+  "model": "qwen-2.5-0.5b",
+  "results": [
+    {
+      "task_id": "hotpotqa/0",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/1",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/2",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/3",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/4",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/5",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/6",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/7",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/8",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/9",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/10",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/11",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/12",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/13",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/14",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/15",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/16",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/17",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/18",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/19",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/20",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/21",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/22",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/23",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/24",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/25",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/26",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/27",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/28",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/29",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/30",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/31",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/32",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/33",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/34",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/35",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/36",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "hotpotqa/37",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/38",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "hotpotqa/39",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    }
+  ],
+  "summary": {
+    "total": 40,
+    "router_accuracy": 32.5,
+    "cot_accuracy": 7.5,
+    "astar_accuracy": 30.0,
+    "oracle_accuracy": 35.0
+  }
+}

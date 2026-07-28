@@ -1,0 +1,1363 @@
+Atom of Thoughts for Markov LLM Test-Time Scaling
+Fengwei Teng1,2, Quan Shi 3, Zhaoyang Yu 2, Jiayi Zhang 1,2,
+Yuyu Luo1, Chenglin Wu 2†, Zhijiang Guo 1†
+1HKUST(GZ), 2DeepWisdom, 3Renmin University of China
+Abstract
+Large Language Models (LLMs) have achieved significant performance gains
+through test-time scaling methods. However, existing approaches often incur redun-
+dant computations due to the accumulation of historical dependency information
+during inference. To address this challenge, we leverage the memoryless property
+of Markov processes to minimize reliance on historical context and propose a
+Markovian reasoning process. This foundational Markov chain structure enables
+seamless integration with various test-time scaling methods, thereby improving
+their scaling efficiency. By further scaling up the Markovian reasoning chain
+through integration with techniques such as tree search and reflective refinement,
+we uncover an emergent atomic reasoning structure, where reasoning trajectories
+are decomposed into a series of self-contained, low-complexity atomic units. We
+name this design Atom of Thoughts (AOT). Extensive experiments demonstrate
+that AOT consistently outperforms existing baselines as computational budgets
+increase. Importantly, AOT integrates seamlessly with existing reasoning frame-
+works and different LLMs (both reasoning and non-reasoning), facilitating scalable,
+high-performance inference.We submit our code alongside this paper and will make
+it publicly available to facilitate reproducibility and future research.
+1 Introduction
+Large Language Models (LLMs) exhibit remarkable scaling behavior: as model parameters and
+training data increase, their performance improves predictably across a wide range of tasks [21, 23].
+Recently, test-time scaling methods have emerged to push the performance boundary further by
+increasing computational resources during inference. These range from basic Chain-of-Thought
+(CoT) prompting that extends reasoning chains [ 37], to more structured approaches like Tree-of-
+Thought (ToT) [44] and Graph-of-Thought (GoT) [4] that organize multiple LLM invocations for
+exploring solution spaces, and recent reasoning models such as OpenAI O1 [ 27] and DeepSeek
+R1 [9] that enhance LLMs’ long-chain reasoning ability through post-training [30, 25, 18].
+However, current framework-based test-time scaling methods typically rely heavily on retaining
+extensive historical information. Even the simplest CoT must preserve the entire reasoning trajectory
+to generate each subsequent step [37, 58]. Tree-based methods maintain ancestor and sibling relations
+for branching decisions [ 44, 61, 11], while Graph-based methods introduce even more complex
+dependencies through arbitrary node connections [4, 57]. Figure 1b analyzes these representative
+structures and abstract the complexity of historical information and reasoning completion token
+involved at each LLM invocation.
+To decouple the current problem’s reasoning from processing historical information and thus mini-
+mize their mutual interference during test-time computation, we aim to generalize Markov chain–style
+structures to general-purpose reasoning. By exploiting thememoryless propertyof Markov pro-
+cesses, we design the Markovian reasoning process, where each state encapsulates a self-contained
+†Corresponding Authors. Contact: steamedbun2002@outlook.com
+39th Conference on Neural Information Processing Systems (NeurIPS 2025).
+arXiv:2502.12018v4  [cs.CL]  27 Dec 2025
+
+CoT thoughts1.For any positive integer k, thenumber of nonempty finite sets B withmax B = k is 2^(k−1). 2.Therefore the total count is Σ_{k ∈ A}2^(k−1) = 2024 = 2^10 + 2^9 + 2^8 + 2^7+ 2^6 + 2^5 + 2^3.3.Match each term 2^(k−1) to get thesum is 55.
+AoT states1.Calculate the sum Σ_{k ∈ A} k, giventhat Σ_{k ∈ A} 2^(k−1) equals 2024.2.Calculate 11 + 10 + 9 + 8 + 7 + 6 + 4
+QuestionAlice chooses a set A of positiveintegers. Bob lists all finite nonemptysets B of positive integers such thatmax B ∈  A, and there are 2024 such sets.Find ∑_{a ∈ A} a.
+(a)
+Token Consumption
+O(n)
+O(1)
+O(b)
+O(b)
+...
+O(b)
+O(n)
+expansion
+pruning
+LLM Invocation
+Token Consumption
+O(n)
+decomposition contraction
+...
+o(n)
+...
+CoT History Prompt
+CoT Reasoning Completion
+ToT/GoT History Prompt
+ToT/GoT Reasoning Completion
+AoT History Prompt
+AoT Reasoning Completion (b)
+Figure 1:Token Allocation Comparison in Reasoning Frameworks.Figure (a)demonstrates
+the differences between thoughts and states, where the red-highlighted text in thoughts reflects
+dependencies on historical information, whereas states maintain answer-equivalence with the initial
+problem while progressively reducing execution complexity.Figure (b)illustrates differences in
+the number of prompt tokens and completion tokens for CoT, ToT, GoT, and the state-based AOT.
+For simplicity, we assume each thought consists of the same number of tokens, with an average of
+O(n) thoughts required to express a solution. While ToT maintains b branches, resulting in a fixed
+number of b invocations per expansion stage, GoT’s settings can be flexibly adjusted depending on
+the scenario and are thus denoted asO(b).
+problem, thereby significantly reducing historical dependencies. The reasoning process is expressed
+as a sequence of states with progressively reduced test-time complexity, rather than an accumulation
+of historical thoughts like CoT, as illustrated in Figure 1a. To ensure steady progress, we introduce
+a two-phase state transition mechanism: the decomposition stage converts the current state into a
+Directed Acyclic Graph (DAG)-based reasoning path, and the contraction stage uses its structure to
+reduce dependencies and generate the next state.
+This fundamental structure with memoryless property distinguish our approach from many CoT-based
+methods. Thus, our method can be seamlessly integrated with existing test-time scaling methods,
+enhancing their scaling efficiency. While exploring integrations with tree search and reflective
+refinement to further scale up the Markovian reasoning chain, we identify an emergent trend towards
+an atomic reasoning structure (Figure 4), where reasoning trajectories are represented as a series
+of self-contained, low-complexity atomic problems. To emphasize this characteristic, we name our
+approach Atom of Thoughts (AOT).
+Our contributions are summarized as follows:
+• Markovian Reasoning Process.We introduce a general-purpose Markovian reasoning
+process that achieves high-quality and cost-effective reasoning across various scenarios,
+including code generation, mathematical reasoning, and multi-step reasoning tasks.
+• Scalable Reasoning Structure.The basic structure design of Markov chain in AOT facili-
+tates seamless integration with various test-time scaling methods, significantly enhancing
+computational efficiency and allowing the combination of different methods’ advantages.
+This scalability ensures more effective utilization of increased computational budgets without
+the overhead of maintaining extensive historical contexts.
+• Atomic Reasoning.Further leveraging AOT’s seamless integration capability to enhance
+itself, by integrating with tree search and reflective refinement to scale up the exploration of
+the Markovian reasoning chain, we uncover an emergent atomic reasoning structure. In this
+structure, complex reasoning trajectories are decomposed into a sequence of atomic, self-
+2
+
+contained units with low complexity. This atomicization brings about improved reasoning
+performance and robustness.
+2 Related Work
+2.1 Reasoning Framework
+Drawing inspiration from cognitive behaviors in human reasoning [ 3]—such as step-by-step de-
+composition [ 37, 62, 35, 13], reflective refinement [ 24, 60, 59, 52], and aggregation ensem-
+ble [ 36, 20, 46]—various prompting strategies have been developed to enhance the reasoning
+capabilities of LLMs. These reasoning frameworks typically employ structured representations,
+including chains, graphs, and trees [44, 4, 56], to model the reasoning space efficiently and system-
+atically. Chain-based methods, for instance, decompose complex problems into linear sequences
+of subproblems [37, 62, 35], primarily optimizing for stepwise dependency. In contrast, tree- and
+graph-based formalisms support hierarchical exploration of multiple reasoning paths, allowing for
+more dynamic adaptation during the problem-solving process [44, 4]. These structured approaches
+have demonstrably improved LLM performance in diverse applications like code generation, question
+answering, and complex data processing [ 17, 16, 53, 55], by enabling LLMs to tackle intricate
+problems with enhanced coherence and interpretability.
+While these structured methods significantly expand LLMs’ reasoning capabilities, they also inher-
+ently accumulate historical dependencies. This accumulation can lead to increased computational
+costs and potential interference during the inference process. Recent efforts have attempted to
+mitigate this reliance on historical information by exploring Markovian reasoning processes and
+atomic reasoning steps, aiming for more memoryless transitions [ 40, 38, 63, 39]. However, these
+approaches often suffer from task-specific design limitations, hindering generalizability and efficient
+parallelism [12, 42, 50]. In contrast, AOT introduces a DAG-based approach that decouples partial
+subproblems into atomic nodes. This decoupling enables independent state transitions without the
+substantial overhead associated with maintaining historical context. By iteratively decomposing
+problems into these atomic nodes and then contracting them, our method reduces overall complexity
+and inherently supports efficient parallel execution, thereby addressing the limitations of traditional
+chain, tree, and graph-based structures.
+2.2 Test-Time Scaling
+Test-time scaling has emerged as a powerful mechanism to enhance LLM reasoning by extending
+computational effort during inference. Framework-based approaches augment LLM capabilities
+through structured reasoning extensions, leveraging cognitive operations and external tool integration
+to facilitate deeper exploration of solution spaces [ 54, 29, 7]. These methods introduce reflective
+reasoning cycles, recursive problem-solving, and dynamic path selection, significantly improving
+performance on complex reasoning tasks. Despite these advances, existing techniques commonly
+preserve full historical state information throughout the reasoning process. This can lead to redundant
+computational overhead and potential conflicts across successive reasoning steps.
+Recent work has explored alternative strategies, such as supervised fine-tuning on CoT trajectories,
+demonstrating improved LLM capacity to maintain coherent, long-term reasoning [ 48, 6, 45, 31,
+32, 33]. Reinforcement learning have further pushed these boundaries by enabling models to
+autonomously extend reasoning chains, potentially unlocking emergent cognitive patterns [22, 51,
+9, 49]. However, similar to framework-based methods, these techniques often rely on maintaining
+expansive historical contexts, which can limit their efficiency and scalability as reasoning paths
+become extended.
+In contrast to these history-dependent methods, our approach adopts a Markovian perspective,
+modeling the reasoning process as state transitions assisted by a temporary DAG structure. This
+memoryless design eliminates the need for redundant history tracking, focusing computational
+resources solely on current state transformations. Furthermore, our proposed two-phase transition
+mechanism, comprising decomposition and contraction stages, facilitates atomic problem-solving.
+This enhances computational efficiency while maintaining structural clarity. This structured yet
+flexible approach not only reduces dependency overhead but also aligns naturally with the principles
+3
+
+Chain of Thoughts
+Tree of Thoughts
+Graph of Thoughts
+Q0
+Q1
+Q2
+1
+1
+2
+2
+n0,2
+n0,3
+n1,2
+n1,1
+n1,3
+Markov Process
+Self-Consistency
+...
+Decomposition Contraction
+0
+8
+16
+AB=10.
+Given sin B = 3/5, find cos B.
+n0,4
+n0,5n0,1
+There are two possible
+triangles ABC satisfying AB
+= 10, AC = b > 10, and sin
+B = 3/5. Find the positive
+difference between the
+lengths of side BC. 
+n0,4
+Forest of Thoughts
+Given two triangles ABC
+satisfying AB = 10, AC = b
+> 10, sin B = 3/5, cos B =
+± 4/5 respectively, find
+the positive difference
+between the lengths of side
+BC. 
+Given b2 = a12 - 16a1 +
+100 and b2 = a22 + 16a2 + 100,
+find the positive difference
+between a1  and a2.
+AC = b > 10.
+Let BC = a1, find the equation
+when cos B is 4/5.
+Let BC = a2, find the equation 
+when cos B is -4/5.
+Figure 2:Overview of AOT.The Markov reasoning framework iteratively derives states Qi+1 from
+predecessors Qi using DAG decomposition and contraction. The left part shows this iterative process,
+while the right part highlights the integration with existing methods. Any intermediate state Qi can
+act as an entry point Q0 for other methods, ensuring flexible composition while preserving answer
+equivalence to the original question. This allows AOT to operate independently or as a preprocessing
+module to optimize the performance or efficiency of existing approaches.
+of test-time scaling, offering seamless integration with existing reasoning frameworks to achieve
+scalable, high-performance inference.
+3 Atomic Reasoning via Markov Process
+In this section, we first formally derive a Markovian reasoning process grounded in a clear probabilistic
+formulation. We then discuss how this Markovian reasoning structure can be integrated seamlessly
+with other reasoning methods to further scale up inference time. Finally, we demonstrate how atomic
+reasoning structures naturally emerge through such scaling-up procedures. The overview of this
+Markovian reasoning process is illustrated in Figure 2.
+3.1 Markovian Reasoning Process
+Reasoning Chain.CoT reasoning introduces a sequence of intermediate steps Ti to solve a problem.
+This process can be formalized as a probabilistic sampling procedure:
+A∼p(A|T, Q 0)
+NY
+i=0
+p(Ti|T<i, Q0)(1)
+where A is the final answer, andT={T 0, T1, . . . , TN } is the sequence of thoughts, each conditioned
+on the previous stepsT <i and the initial questionQ 0.
+An alternative formulation—Least-to-Most [ 62] prompting—reframes the node of chain as a sub-
+questionQ i, yielding:
+A∼p(A|Q)
+NY
+i=0
+p(Qi|Q<i)(2)
+Under the above formulation, the reasoning process is characterized by the accumulation of in-
+termediate thoughts or subquestions in the sequence, leading to a continual increase in historical
+information. However, ideally, if the reasoning chain satisfies the property of a memoryless Markov
+process—where each stateS i+1 depends only onS i—we obtain:
+A∼p(A|S N )
+NY
+i=0
+p(Si+1|Si)(3)
+where Si represents a state in the Markovian reasoning process. In the following paragraph, we
+will explicitly clarify the semantic content of the Markov state Si, resulting in a more specific and
+practical representation.
+4
+
+Markov State.In practice, real-world problems rarely satisfy the strict Markov assumption directly.
+To establish a meaningful Markovian formulation, we reuse the subquestion symbol Qi to represent
+the Markov states Si, initialized by the original question Q0. Since the final answer A must be
+derivable from the final state Q−1, it follows naturally that Q−1 is answer-equivalent to Q0. Thus,
+an essential invariant emerges: each intermediate subquestion Qi must preserve answer-equivalence
+with the original question. To ensure meaningful Markov state transitions, we further impose that
+the sequence of subquestions {Q0, Q1, . . . , QN } monotonically reduces in complexity, guaranteeing
+genuine reasoning progress at each transition.
+Two-phase TransitionHowever, state transitions aiming at test-time reduction remain challenging
+for LLMs, especially without task-specific training. This difficulty arises primarily from the complex
+historical dependencies within reasoning trajectories. To address this issue, we propose a two-phase
+transition mechanism that first explicitly decomposes the current state Qi to capture the internal
+dependencies before contracting them into the next state.
+In the decomposition phase, we introduce a DAG scaffold Gi to explicitly represent the dependency
+structure among reasoning steps within each intermediate question Qi. This temporary structure is
+later discarded to eliminate historical dependencies, enabling the Markovian transition. Formally, the
+DAG is defined as:
+Gi = (N, E), E⊆ {(N j, Nk)|j < k}(4)
+where nodes Nk represent individual thoughts or subquestions, and edges (Nj, Nk) indicate that
+nodeN j provides necessary information for nodeN k.
+In the subsequent contraction phase, we transform the temporary DAG structure Gi into the next
+Markov state Qi+1. Specifically, nodes without incoming edges in Gi are independent and can be
+safely discarded, whereas the remaining dependent nodes are reformulated into an answer-equivalent
+independent question Qi+1. Formally, the overall Markovian transition process can be expressed as:
+A∼p(A|Q N )
+NY
+i=0
+p(Qi+1|Gi)p(G i|Qi).(5)
+A detailed step-by-step example demonstrating the complete decomposition-contraction process is
+provided in Appendix B.2.
+3.2 Emerged Atomic Reasoning
+The Markovian reasoning process provides a fundamental, low-level structural prior for inference.
+In this subsection, we discuss the design of a termination mechanism to counteract the potential
+fragility introduced by strict memorylessness, thereby constructing a stable reasoning framework.
+Moreover, we describe how this Markovian reasoning structure can be combined with additional
+methods—particularly through structured exploration via tree search and reflective verification—to
+further scale up test-time reasoning. This combined approach reveals the emergence of a stable,
+indivisible reasoning structure, termed atomic reasoning.
+Termination Strategy.Unlike CoT-based approaches, which can recover from early errors by
+leveraging accumulated context, our Markov chain lacks such a fallback due to its memoryless nature.
+This amplifies the risk of propagating low-quality transitions—if an intermediate question Qi+1
+diverges semantically from the original task, subsequent reasoning becomes meaningless.
+To address this, we introduce a quality-aware termination strategy. After each transition Qi →
+Qi+1, an LLM-as-a-judge selects the best answer to the original question Q0 from the triplet
+{solve(Qi),solve(G i),solve(Q i+1)}. Crucially, this mechanism implicitly enforces answer equiv-
+alence: if Qi+1 fails to preserve answer equivalence with Q0, then solve(Qi+1) will not provide a
+valid answer for Q0 and thus cannot be selected by the judge. This selection-based filtering naturally
+ensures that only semantically stable transformations maintaining answer equivalence are retained. If
+Qi+1 is not selected, the process terminates and returns the best candidate among the three. Detailed
+quality metrics demonstrating the effectiveness of this mechanism are provided in Appendix B.1.
+Modular Integration.Since each Markov state is constrained to be an equivalently transformed
+representation of the original question, the reasoning process forms a semantically aligned and
+5
+
+Table 1: Performance Comparison.
+Model Benchmark CoT CoT-SC SR AR AFlow ToT GoT FoT AoT
+Non-Reasoning LLMs
+GPT-4o-mini
+MATH 78.3 81.8 78.7 65.4 83.0 82.0 82.3 82.683.6
+GSM8K 90.9 92.0 91.7 87.2 93.5 91.8 92.1 94.2 95.0
+MBPP 72.4 73.2 72.8 70.1 74.0 73.5 73.7 74.8 75.2
+LongBench 57.6 58.6 58.2 52.9 61.0 59.0 59.2 60.868.5
+DeepSeek-V3
+MATH 94.4 95.2 94.8 90.1 96.1 95.0 95.3 95.696.5
+GSM8K 96.2 97.0 96.8 92.5 97.8 96.5 96.8 97.598.2
+MBPP 75.7 76.5 76.0 73.2 77.3 76.8 77.0 78.2 79.6
+LongBench 58.8 60.1 59.5 55.3 63.5 61.2 61.5 63.371.0
+Reasoning LLMs
+O3-mini
+AIME 79.6 81.0 80.2 76.0 82.5 81.2 81.5 81.883.0
+LiveCodeBench 23.6 25.0 24.2 20.0 26.5 25.2 25.5 27.8 32.2
+LongBench 56.3 57.5 56.8 52.0 58.0 56.5 56.8 57.9 65.3
+DeepSeek-R1
+AIME 78.3 79.7 78.9 74.7 81.2 79.9 80.2 80.581.7
+LiveCodeBench 24.5 25.9 25.1 20.9 27.4 26.1 26.4 28.1 30.9
+LongBench 55.1 56.2 55.4 52.3 58.7 57.0 57.5 58.2 67.9
+fully self-contained sequence of problem representations. This property enables modular reasoning
+without compromising the integrity of the overall task. In practice, each state within the chain can be
+independently routed to specialized solvers, subjected to verification procedures, or further embedded
+into structured reasoning frameworks—such as tree-based or graph-based inference. The introduction
+of the Markov reasoning process thus does not merely offer an alternative to previous reasoning chain
+methods, but rather defines a structural foundation upon which diverse test-time reasoning strategies
+can be constructed.
+Atomic Structure.Although the termination strategy ensures robustness, it also restricts the
+emergence of deeper reasoning chains. To explore the full potential of the Markov process, we
+sample and extend trajectories, combining tree search and reflection mechanisms. These structured
+explorations reveal a statistically supported phenomenon: deeper reasoning states tend to converge
+into irreducible forms, maintaining a stable and relatively low reasoning token count, from which
+the original problem’s answer can be directly inferred with high execution stability. We refer to
+these stable forms as atomic structures: indivisible and self-contained representations that require
+no further decomposition. Importantly, atomicity is not imposed a priori, but emerges naturally
+as a property discovered throughout the reasoning process. This convergence toward atomic units
+represents a logical endpoint where problems become sufficiently simple that further decomposition
+is neither necessary nor beneficial. Notably, this convergence point is jointly determined by both the
+intrinsic complexity of the problem and the reasoning capabilities of the underlying model—different
+problems may converge at different depths, and the same problem may exhibit different atomic
+granularities when solved by models with varying capacities.
+4 Experiments
+Our experiments aim at two primary objectives. First, we conduct main experiments across a variety
+of datasets spanning mathematics, code generation, and multi-hop question answering to demonstrate
+the cost-efficiency advantages of AOT as a general-purpose reasoning framework. Second, leveraging
+the flexibility provided by the basic Markov chain structure in our approach, we design integration
+experiments at various granularities. These experiments explore the utilization of AOT as a plug-in
+component to enhance cost-efficiency in other reasoning frameworks and investigate scaling effects
+in integration with classical methods like tree search and verification-based reflection, analyzing
+emergent reasoning phenomena.
+6
+
+1
+ 0 1 2 3
+Cost (USD, log 2 scale)
+Accuracy (%)
+MATH
+3
+ 2
+ 1
+ 0 1
+Cost (USD, log 2 scale)
+GSM8K
+2
+ 1
+ 0 1 2
+Cost (USD, log 2 scale)
+LongBench
+5
+ 4
+ 3
+ 2
+ 1
+Cost (USD, log 2 scale)
+Accuracy (%)
+AIME
+3
+ 2
+ 1
+ 0 1
+Cost (USD, log 2 scale)
+LiveCodeBench
+AoT
+AoT w/o DAG
+AoT w/decomposition
+FoT
+GoT
+ToT
+CoT
+CoT-SC
+SR
+AFlow
+80
+78
+76
+84
+82
+80
+78
+29
+26
+23
+94
+92
+90
+65
+60
+Figure 3: A comparison of performance and cost of various methods and ablation methods on the
+dataset, with GPT-4o-mini as the backbone. Each node in the curves represents an AoT (or ablation
+variants) iteration result, where increasing token consumption indicates deeper iterations. Due to
+relatively poor AR performance leading to scattered data points, AR data points are excluded.
+4.1 Experimental Setup
+Benchmarks and Metrics.We evaluate AOT across representative benchmarks covering mathemat-
+ical reasoning (MATH [14], GSM8K [8], AIME1), code generation (MBPP [1], LiveCodeBench [19]),
+and multi-hop question answering tasks (HotpotQA [43], MuSiQue [34], and 2WikiMultiHopQA [15]
+preprocessed by LongBench [2]), see Appendix F.3 for details. Following previous work [54, 5], we
+report pass rates for mathematical and coding benchmarks, and F1 scores for multi-hop QA tasks.
+Settings.All prompt templates used in Markov reasoning process for experiments are fully de-
+scribed in Appendix A.1. Key hyperparameters, including model temperature and Markov chain
+length, are detailed and discussed in Appendix A.2. We set the default temperature to 1.0 and the
+maximum Markov chain length to 3 for the main experiments to balance performance and efficiency
+while enabling scaling curves. Due to AOT ’s design and termination mechanism, longer chain
+lengths increase the performance ceiling without linearly increasing costs.
+Backbones and Baselines.AOT is designed to be compatible with various LLM backbones. To
+demonstrate its effectiveness, we employed two categories of LLMs. The first category comprises
+non-reasoning LLMs, specifically GPT-4o-mini [26] and DeepSeek-V3 [10]. The second category
+includes reasoning-capable LLMs such as O3-mini [ 28] and DeepSeek R1 [ 9]. Specifically, we
+use non-reasoning models to evaluate performance on MATH, GSM8K, and MBPP, and reasoning-
+capable models to evaluate performance on more challenging tasks such as AIME and LiveCodeBench.
+Additionally, since multi-hop QA is not a primary focus for reasoning-capable models, both categories
+of models are evaluated on LongBench for comprehensive comparison.
+For comparison, we evaluated AOT against a diverse set of baseline methods, broadly categorized by
+their interaction pattern with the LLM: single-call or multi-call invocations. Single-call approaches
+include well-known techniques like Chain-of-Thought (CoT) [37] and Chain-of-Draft (CoD) [41].
+Multi-call methods represent more complex workflows, such as CoT with Self-Consistency (CoT-
+SC) [36], Self-Refine (SR) [24], Analogical Prompting (AP) [47], Forest-of-Thought (FoT) [5], and
+the agentic framework AFlow [54]. Further details are provided in Appendix A.3.
+1https://huggingface.co/datasets/Maxwell-Jia/AIME_2024
+7
+
+4.2 Main Results
+Table 1 presents the main experimental results. Across both Non-Reasoning and Reasoning LLMs,
+AOT consistently demonstrates strong performance. For Non-Reasoning LLMs such as GPT-4o-mini
+and DeepSeek-V3, AOT achieves the highest scores on benchmarks like MATH, GSM8K, MBPP,
+and LongBench, often surpassing all other compared methods. For instance, with GPT-4o-mini, AOT
+scores 83.6 on MATH, 95.0 on GSM8K, 75.2 on MBPP, and 68.5 on LongBench, which are the top
+performances. Similarly, DeepSeek-V3 with AOT leads with scores on all benchmarks.
+In the Reasoning LLMs section, featuring O3-mini and DeepSeek-R1, AoT continues to exhibit
+competitive and often leading performance. For O3-mini, AoT achieves the highest scores on AIME
+(83.0), LiveCodeBench (32.2), and LongBench (65.3). With DeepSeek-R1, AoT again leads on
+all tasks. Overall, AOT consistently achieves state-of-the-art or highly competitive results across a
+diverse set of models and benchmarks, demonstrating its effectiveness.
+Figure 3 further demonstrates that performance improves progressively with additional reasoning
+iterations. This highlights the effectiveness of our proposed termination strategy: by mitigating error
+propagation from memoryless Markovian transitions, it preserves the desirable test-time scaling
+property—performance does not degrade as more computational resources are allocated.
+4.3 Ablation Study
+We conduct ablation studies to examine the impact of core components in our framework. Specifically,
+we evaluate two variants: (1) Without Decomposition, where the model directly contracts reasoning
+trajectories from the initial question without constructing a DAG; and (2) Without DAG-guided
+Contraction, where decomposition still occurs, but the contraction step does not rely on any structural
+guidance. In this setting, only the first naturally independent subproblem is separated out. Figure 3
+shows that both ablations significantly degrade performance, with the second variant causing a more
+severe drop. This suggests that partial or superficial structural cues can be more harmful than providing
+none at all. These results underscore the importance of explicitly modeling fine-grained dependencies
+in reasoning trajectories, showing that faithful structural representations meaningfully enhance
+reasoning effectiveness and precision. Comprehensive quality metrics for the DAG generation
+process, including answer equivalence maintenance rates (>99% across all datasets) and complexity
+reduction rates (74-82%), are provided in Appendix B.1.
+4.4 Scaling Up Analysis
+In this section, we further explore the scalability of AOT by integrating it with existing reasoning
+frameworks, leveraging its flexible, modular design. We begin our analysis by using individual
+Markov states as integration points—a lightweight and straightforward approach where interme-
+diate states processed by AOT serve as optimized entry points for other reasoning methods. Our
+experiments reveal substantial efficiency improvements at test-time, which encourages us to examine
+larger, more structured integration granularities to fully capitalize on the structural strengths of our
+framework. Notably, as we progressively extend the Markov chain during scaling analysis, we
+observe a consistent reduction in the number of tokens required for reasoning in the final states.
+Through detailed analysis, we identify emerging atomic characteristics in the reasoning trajectories,
+motivating us to design further scaling-up experiments based on this property.
+State Integration.The Markov states Qi generated by AOT represent simplified, yet answer-
+equivalent reformulations of the original questions, making them ideal entry points for external
+methods. Indeed, AOT itself demonstrates such modular integration potential, employing basic
+CoT-style prompting to solve each intermediate state. To experimentally validate the effectiveness of
+these intermediate states, we investigate whether initiating reasoning using optimized intermediate
+states Q1 can enhance both accuracy and computational efficiency in external frameworks. The
+results, illustrated in Figure 4, confirm that starting reasoning from these optimized intermediate states
+notably improves performance while simultaneously reducing computational costs, as demonstrated
+in the integration with frameworks such as FoT.
+Tree Searching.Beyond single-state integration, the full Markov sequence Q generated by AOT
+can provide a structured scaffold for more complex reasoning frameworks, effectively replacing
+8
+
+1.1 2.1 3.2 4.4 5.8 8.7 11.9 13.5
+Cost (log scale)
+60
+65
+70
+75
+80
+85
+90
+95Score
+Integration Performance
+1.6 2.9 4.4 5.8 8.7 11.9
+Cost
+0.8
+1.0
+1.2
+1.4
+1.6
+1.8
+2.0Token Ratio
+Atomic Structure Convergence
+Atomic Structure FoT ToT + Markov chain + Reflective Refinement FoT + Markov state ToT + Markov chain
+Figure 4: The process involves gradually enhancing integration for scaling up at test time. ToT uses
+three branches, while FoT employs two, four, and eight trees, respectively.
+traditional CoT-based structures. In conventional CoT-based ToT, the inherent randomness of LLM-
+based sampling can lead to inconsistencies in reasoning chain lengths, causing nodes at the same depth
+to represent varying stages of reasoning progress. This inconsistency complicates node comparison
+and diminishes pruning effectiveness. In contrast, the Markov chains constructed by AOT ensure
+answer equivalence between each intermediate node and the original question, thereby guaranteeing
+fundamental comparability across nodes at the same depth. This structural consistency significantly
+enhances the gains from scaling through parallel sampling at test-time.
+Reflective Refinement.Termination strategy in AOT provides a safeguard for the quality of
+single-pass Markov reasoning. When a transition yields a low-quality intermediate state, early
+termination allows the system to avoid wasting computation on unpromising paths. However, this
+conservative mechanism may also limit further exploration. To address this, we augment our method
+with verification-based reflection, where transitions Qi →Q i+1 are evaluated by an LLM-as-a-
+judge to assess whether the newly generated state exhibits a significant degradation in test-time
+performance. If such degradation is detected, the system triggers a reflective refinement step,
+encouraging deeper and more meaningful reasoning rather than trivial reformulations. This reflective
+verification substantially improves comparability between nodes at the same depth, increases the
+effective exploration space, and further amplifies the benefits of structural scaling. When combining
+all three integration strategies (ToT + Markov chain + Reflective Refinement), we observe significant
+performance gains: for instance, on MATH, this full integration achieves 84.9% accuracy compared
+to ToT’s 82.0%, and on AIME, it reaches 81.2% versus ToT’s 78.0%, demonstrating the compounding
+benefits of our modular design.
+Atomic Struture.Due to the inherent scalability of the AOT architecture, deeper Markov chains—
+enabled by both tree search and verification-based reflection—exhibit stronger test-time performance
+and require fewer reasoning tokens in the final state. Statistical analysis reveals that the token count
+of final reasoning steps gradually approaches that of a minimal DAG representation comprising all
+independent subproblems generated during transitions. This suggests a natural convergence toward
+atomic states—questions that are semantically represent indivisible reasoning units. We refer to this
+phenomenon as atomic reasoning, where the entire reasoning trajectory is composed of such minimal,
+non-decomposable elements. To further validate this insight, we conduct an additional experiment
+where we isolate and re-execute these highly atomic reasoning paths independently. While this incurs
+significantly higher computational cost, the results exhibit stable scaling trends, highlighting the
+structural advantages of AOT with high budget.
+5 Conclusions and Future Work
+We present AOT, a general-purpose reasoning framework that leverages Markovian transitions to
+minimize historical dependencies during inference. By alternating between decomposition and
+contraction, AOT incrementally reduces complex queries into atomic subproblems, enabling scalable
+and modular reasoning across maths, code, and multi-hop QA tasks. Empirically, we show that AOT
+not only scales gracefully with compute but also integrates flexibly into existing reasoning paradigms
+as a plug-in module. Limitations and broader impacts of AOT are provided in Appendix C and D.
+9
+
+While AOT offers a promising path toward atomic reasoning, its current implementation operates
+solely at inference time. A natural extension is to align this structure with training-time objec-
+tives—teaching models to internalize Markovian and atomic reasoning patterns directly. This could
+involve supervised fine-tuning with synthetic traces, reinforcement learning over decomposition
+trajectories, or pretraining on datasets that promote context-isolated reasoning.
+More broadly, this work lays the foundation for reasoning systems that emphasize minimal context,
+compositionality, and structural modularity. We hope AOT serves as a stepping stone toward more
+efficient, interpretable, and robust reasoning with large language models.
+References
+[1] Jacob Austin, Augustus Odena, Maxwell Nye, Maarten Bosma, Henryk Michalewski, David
+Dohan, Ellen Jiang, Carrie Cai, Michael Terry, Quoc Le, et al. Program synthesis with large
+language models.arXiv preprint arXiv:2108.07732, 2021.
+[2] Yushi Bai, Xin Lv, Jiajie Zhang, Hongchang Lyu, Jiankai Tang, Zhidian Huang, Zhengxiao
+Du, Xiao Liu, Aohan Zeng, Lei Hou, Yuxiao Dong, Jie Tang, and Juanzi Li. Longbench: A
+bilingual, multitask benchmark for long context understanding. InACL (1), pages 3119–3137.
+Association for Computational Linguistics, 2024.
+[3] W. Bechtel, A. Abrahamsen, and G. Graham. Cognitive science: History. In Neil J. Smelser and
+Paul B. Baltes, editors,International Encyclopedia of the Social & Behavioral Sciences, pages
+2154–2158. Pergamon, Oxford, 2001. ISBN 978-0-08-043076-8. doi: https://doi.org/10.1016/
+B0-08-043076-7/01442-X. URL https://www.sciencedirect.com/science/article/
+pii/B008043076701442X.
+[4] Maciej Besta, Nils Blach, Ales Kubicek, Robert Gerstenberger, Michal Podstawski, Lukas
+Gianinazzi, Joanna Gajda, Tomasz Lehmann, Hubert Niewiadomski, Piotr Nyczyk, and Torsten
+Hoefler. Graph of thoughts: Solving elaborate problems with large language models. InAAAI,
+pages 17682–17690. AAAI Press, 2024.
+[5] Zhenni Bi, Kai Han, Chuanjian Liu, Yehui Tang, and Yunhe Wang. Forest-of-thought: Scaling
+test-time compute for enhancing LLM reasoning.CoRR, abs/2412.09078, 2024.
+[6] Edward Y . Chang, Yuxuan Tong, Morry Niu, Graham Neubig, and Xiang Yue. Demystifying
+long chain-of-thought reasoning in llms.CoRR, abs/2502.03373, 2025.
+[7] Lingjiao Chen, Jared Quincy Davis, Boris Hanin, Peter Bailis, Ion Stoica, Matei Zaharia, and
+James Zou. Are more LLM calls all you need? towards scaling laws of compound inference
+systems.CoRR, abs/2403.02419, 2024.
+[8] Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz Kaiser,
+Matthias Plappert, Jerry Tworek, Jacob Hilton, Reiichiro Nakano, Christopher Hesse, and John
+Schulman. Training verifiers to solve math word problems.CoRR, abs/2110.14168, 2021.
+[9] DeepSeek-AI. Deepseek-r1: Incentivizing reasoning capability in llms via reinforcement
+learning, 2025. URLhttps://arxiv.org/abs/2501.12948.
+[10] DeepSeek-AI, Aixin Liu, Bei Feng, Bing Xue, Bingxuan Wang, Bochao Wu, Chengda Lu,
+Chenggang Zhao, Chengqi Deng, Chenyu Zhang, Chong Ruan, Damai Dai, Daya Guo, Dejian
+Yang, Deli Chen, Dongjie Ji, Erhang Li, Fangyun Lin, Fucong Dai, Fuli Luo, Guangbo Hao,
+Guanting Chen, Guowei Li, H. Zhang, Han Bao, Hanwei Xu, Haocheng Wang, Haowei Zhang,
+Honghui Ding, Huajian Xin, Huazuo Gao, Hui Li, Hui Qu, J. L. Cai, Jian Liang, Jianzhong
+Guo, Jiaqi Ni, Jiashi Li, Jiawei Wang, Jin Chen, Jingchang Chen, Jingyang Yuan, Junjie Qiu,
+Junlong Li, Junxiao Song, Kai Dong, Kai Hu, Kaige Gao, Kang Guan, Kexin Huang, Kuai
+Yu, Lean Wang, Lecong Zhang, Lei Xu, Leyi Xia, Liang Zhao, Litong Wang, Liyue Zhang,
+Meng Li, Miaojun Wang, Mingchuan Zhang, Minghua Zhang, Minghui Tang, Mingming Li,
+Ning Tian, Panpan Huang, Peiyi Wang, Peng Zhang, Qiancheng Wang, Qihao Zhu, Qinyu
+Chen, Qiushi Du, R. J. Chen, R. L. Jin, Ruiqi Ge, Ruisong Zhang, Ruizhe Pan, Runji Wang,
+Runxin Xu, Ruoyu Zhang, Ruyi Chen, S. S. Li, Shanghao Lu, Shangyan Zhou, Shanhuang
+Chen, Shaoqing Wu, Shengfeng Ye, Shengfeng Ye, Shirong Ma, Shiyu Wang, Shuang Zhou,
+10
+
+Shuiping Yu, Shunfeng Zhou, Shuting Pan, T. Wang, Tao Yun, Tian Pei, Tianyu Sun, W. L.
+Xiao, and Wangding Zeng. Deepseek-v3 technical report.CoRR, abs/2412.19437, 2024. doi:
+10.48550/ARXIV .2412.19437. URLhttps://doi.org/10.48550/arXiv.2412.19437.
+[11] Ruomeng Ding, Chaoyun Zhang, Lu Wang, Yong Xu, Minghua Ma, Wei Zhang, Si Qin, Saravan
+Rajmohan, Qingwei Lin, and Dongmei Zhang. Everything of thoughts: Defying the law of
+penrose triangle for thought generation. InACL (Findings), pages 1638–1662. Association for
+Computational Linguistics, 2024.
+[12] Shibo Hao, Yi Gu, Haodi Ma, Joshua Jiahua Hong, Zhen Wang, Daisy Zhe Wang, and Zhiting
+Hu. Reasoning with language model is planning with world model. InEMNLP, pages 8154–
+8173. Association for Computational Linguistics, 2023.
+[13] Shibo Hao, Yi Gu, Haotian Luo, Tianyang Liu, Xiyan Shao, Xinyuan Wang, Shuhua Xie,
+Haodi Ma, Adithya Samavedhi, Qiyue Gao, Zhen Wang, and Zhiting Hu. LLM reasoners:
+New evaluation, library, and analysis of step-by-step reasoning with large language models.
+InFirst Conference on Language Modeling, 2024. URL https://openreview.net/forum?
+id=b0y6fbSUG0.
+[14] Dan Hendrycks, Collin Burns, Saurav Kadavath, Akul Arora, Steven Basart, Eric Tang, Dawn
+Song, and Jacob Steinhardt. Measuring mathematical problem solving with the MATH dataset.
+InNeurIPS Datasets and Benchmarks, 2021.
+[15] Xanh Ho, Anh-Khoa Duong Nguyen, Saku Sugawara, and Akiko Aizawa. Constructing A
+multi-hop QA dataset for comprehensive evaluation of reasoning steps. InCOLING, pages
+6609–6625. International Committee on Computational Linguistics, 2020.
+[16] Sirui Hong, Yizhang Lin, Bang Liu, Bangbang Liu, Binhao Wu, Ceyao Zhang, Chenxing Wei,
+Danyang Li, Jiaqi Chen, Jiayi Zhang, et al. Data interpreter: An llm agent for data science.
+arXiv preprint arXiv:2402.18679, 2024.
+[17] Sirui Hong, Mingchen Zhuge, Jonathan Chen, Xiawu Zheng, Yuheng Cheng, Jinlin Wang, Ceyao
+Zhang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, Liyang Zhou, Chenyu Ran, Lingfeng
+Xiao, Chenglin Wu, and Jürgen Schmidhuber. Metagpt: Meta programming for A multi-agent
+collaborative framework. InICLR. OpenReview.net, 2024.
+[18] Zhenyu Hou, Xin Lv, Rui Lu, Jiajie Zhang, Yujiang Li, Zijun Yao, Juanzi Li, Jie Tang, and
+Yuxiao Dong. Advancing language model reasoning through reinforcement learning and
+inference scaling.CoRR, abs/2501.11651, 2025.
+[19] Naman Jain, King Han, Alex Gu, Wen-Ding Li, Fanjia Yan, Tianjun Zhang, Sida Wang, Ar-
+mando Solar-Lezama, Koushik Sen, and Ion Stoica. Livecodebench: Holistic and contamination
+free evaluation of large language models for code. InThe Thirteenth International Conference
+on Learning Representations, 2024.
+[20] Dongfu Jiang, Xiang Ren, and Bill Yuchen Lin. Llm-blender: Ensembling large language models
+with pairwise ranking and generative fusion. InACL (1), pages 14165–14178. Association for
+Computational Linguistics, 2023.
+[21] Jared Kaplan, Sam McCandlish, Tom Henighan, Tom B. Brown, Benjamin Chess, Rewon Child,
+Scott Gray, Alec Radford, Jeffrey Wu, and Dario Amodei. Scaling laws for neural language
+models.CoRR, abs/2001.08361, 2020.
+[22] Kimi, Angang Du, Bofei Gao, Bowei Xing, Changjiu Jiang, Cheng Chen, Cheng Li, Chenjun
+Xiao, Chenzhuang Du, Chonghua Liao, et al. Kimi k1. 5: Scaling reinforcement learning with
+llms.arXiv preprint arXiv:2501.12599, 2025.
+[23] Zhong-Zhi Li, Duzhen Zhang, Ming-Liang Zhang, Jiaxin Zhang, Zengyan Liu, Yuxuan Yao,
+Haotian Xu, Junhao Zheng, Pei-Jie Wang, Xiuyi Chen, et al. From system 1 to system 2: A
+survey of reasoning large language models.arXiv preprint arXiv:2502.17419, 2025.
+11
+
+[24] Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri
+Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank Gupta, Bodhisattwa Prasad
+Majumder, Katherine Hermann, Sean Welleck, Amir Yazdanbakhsh, and Peter Clark. Self-refine:
+Iterative refinement with self-feedback. InNeurIPS, 2023.
+[25] Niklas Muennighoff, Zitong Yang, Weijia Shi, Xiang Lisa Li, Li Fei-Fei, Hannaneh Hajishirzi,
+Luke Zettlemoyer, Percy Liang, Emmanuel J. Candès, and Tatsunori Hashimoto. s1: Simple
+test-time scaling.CoRR, abs/2501.19393, 2025.
+[26] OpenAI. Gpt-4o mini: advancing cost-efficient intelligence, 2024. URL https://openai.
+com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/.
+[27] OpenAI. Introducing openai o1, 2024. URLhttps://openai.com/o1/.
+[28] OpenAI. OpenAI o3-mini: Pushing the frontier of cost-effective reasoning, 2025. URL
+https://openai.com/index/openai-o3-mini/.
+[29] Jon Saad-Falcon, Adrian Gamarra Lafuente, Shlok Natarajan, Nahum Maru, Hristo Todorov,
+Etash Guha, Estefany Kelly Buchanan, Mayee F. Chen, Neel Guha, Christopher Ré, and Azalia
+Mirhoseini. Archon: An architecture search framework for inference-time techniques.CoRR,
+abs/2409.15254, 2024.
+[30] Charlie Snell, Jaehoon Lee, Kelvin Xu, and Aviral Kumar. Scaling LLM test-time compute
+optimally can be more effective than scaling model parameters.CoRR, abs/2408.03314, 2024.
+[31] Huatong Song, Jinhao Jiang, Yingqian Min, Jie Chen, Zhipeng Chen, Wayne Xin Zhao, Lei Fang,
+and Ji-Rong Wen. R1-searcher: Incentivizing the search capability in llms via reinforcement
+learning.arXiv preprint arXiv:2503.05592, 2025.
+[32] Huatong Song, Jinhao Jiang, Wenqing Tian, Zhipeng Chen, Yuhuan Wu, Jiahao Zhao, Yingqian
+Min, Wayne Xin Zhao, Lei Fang, and Ji-Rong Wen. R1-searcher++: Incentivizing the dynamic
+knowledge acquisition of llms via reinforcement learning.arXiv preprint arXiv:2505.17005,
+2025.
+[33] Shuang Sun, Huatong Song, Yuhao Wang, Ruiyang Ren, Jinhao Jiang, Junjie Zhang, Fei Bai,
+Jia Deng, Wayne Xin Zhao, Zheng Liu, et al. Simpledeepsearcher: Deep information seeking
+via web-powered reasoning trajectory synthesis.arXiv preprint arXiv:2505.16834, 2025.
+[34] Harsh Trivedi, Niranjan Balasubramanian, Tushar Khot, and Ashish Sabharwal. Musique:
+Multihop questions via single-hop question composition.Trans. Assoc. Comput. Linguistics,
+10:539–554, 2022.
+[35] Lei Wang, Wanyu Xu, Yihuai Lan, Zhiqiang Hu, Yunshi Lan, Roy Ka-Wei Lee, and Ee-Peng
+Lim. Plan-and-solve prompting: Improving zero-shot chain-of-thought reasoning by large
+language models. InACL (1), pages 2609–2634. Association for Computational Linguistics,
+2023.
+[36] Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc V . Le, Ed H. Chi, Sharan Narang, Aakanksha
+Chowdhery, and Denny Zhou. Self-consistency improves chain of thought reasoning in language
+models. InICLR. OpenReview.net, 2023.
+[37] Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed H. Chi,
+Quoc V . Le, and Denny Zhou. Chain-of-thought prompting elicits reasoning in large language
+models. InNeurIPS, 2022.
+[38] Kun Xiang, Zhili Liu, Zihao Jiang, Yunshuang Nie, Runhui Huang, Haoxiang Fan, Han-
+hui Li, Weiran Huang, Yihan Zeng, Jianhua Han, Lanqing Hong, Hang Xu, and Xiaodan
+Liang. Atomthink: A slow thinking framework for multimodal mathematical reasoning.CoRR,
+abs/2411.11930, 2024.
+[39] Kun Xiang, Zhili Liu, Zihao Jiang, Yunshuang Nie, Kaixin Cai, Yiyang Yin, Runhui Huang,
+Haoxiang Fan, Hanhui Li, Weiran Huang, et al. Can atomic step decomposition enhance the
+self-structured reasoning of multimodal large models?arXiv preprint arXiv:2503.06252, 2025.
+12
+
+[40] Amy Xin, Jinxin Liu, Zijun Yao, Zhicheng Lee, Shulin Cao, Lei Hou, and Juanzi Li. Atomr:
+Atomic operator-empowered large language models for heterogeneous knowledge reasoning.
+CoRR, abs/2411.16495, 2024.
+[41] Silei Xu, Wenhao Xie, Lingxiao Zhao, and Pengcheng He. Chain of draft: Thinking faster
+by writing less.CoRR, abs/2502.18600, 2025. doi: 10.48550/ARXIV .2502.18600. URL
+https://doi.org/10.48550/arXiv.2502.18600.
+[42] Wen Yang, Kai Fan, and Minpeng Liao. Markov chain of thought for efficient mathematical
+reasoning.CoRR, abs/2410.17635, 2024.
+[43] Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William W. Cohen, Ruslan Salakhut-
+dinov, and Christopher D. Manning. Hotpotqa: A dataset for diverse, explainable multi-hop
+question answering. InEMNLP, pages 2369–2380. Association for Computational Linguistics,
+2018.
+[44] Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Tom Griffiths, Yuan Cao, and Karthik
+Narasimhan. Tree of thoughts: Deliberate problem solving with large language models. In
+NeurIPS, 2023.
+[45] Xinhao Yao, Ruifeng Ren, Yun Liao, and Yong Liu. Unveiling the mechanisms of explicit cot
+training: How chain-of-thought enhances reasoning generalization.CoRR, abs/2502.04667,
+2025.
+[46] Yuxuan Yao, Han Wu, Mingyang LIU, Sichun Luo, Xiongwei Han, Jie Liu, Zhijiang Guo, and
+Linqi Song. Determine-then-ensemble: Necessity of top-k union for large language model
+ensembling. InThe Thirteenth International Conference on Learning Representations, 2025.
+URLhttps://openreview.net/forum?id=FDnZFpHmU4.
+[47] Michihiro Yasunaga, Xinyun Chen, Yujia Li, Panupong Pasupat, Jure Leskovec, Percy Liang,
+Ed H. Chi, and Denny Zhou. Large language models as analogical reasoners. InICLR.
+OpenReview.net, 2024.
+[48] Yixin Ye, Zhen Huang, Yang Xiao, Ethan Chern, Shijie Xia, and Pengfei Liu. Limo: Less is
+more for reasoning.arXiv preprint arXiv:2502.03387, 2025.
+[49] Qiying Yu, Zheng Zhang, Ruofei Zhu, Yufeng Yuan, Xiaochen Zuo, Yu Yue, Tiantian Fan,
+Gaohong Liu, Lingjun Liu, Xin Liu, et al. Dapo: An open-source llm reinforcement learning
+system at scale.arXiv preprint arXiv:2503.14476, 2025.
+[50] Oussama Zekri, Ambroise Odonnat, Abdelhakim Benechehab, Linus Bleistein, Nicolas Boullé,
+and Ievgen Redko. Large language models as markov chains.CoRR, abs/2410.02724, 2024.
+[51] Weihao Zeng, Yuzhen Huang, Qian Liu, Wei Liu, Keqing He, Zejun Ma, and Junxian He.
+Simplerl-zoo: Investigating and taming zero reinforcement learning for open base models in the
+wild.arXiv preprint arXiv:2503.18892, 2025.
+[52] Jingtao Zhan, Jiahao Zhao, Jiayu Li, Yiqun Liu, Bo Zhang, Qingyao Ai, Jiaxin Mao, Hongning
+Wang, Min Zhang, and Shaoping Ma. Evaluating intelligence via trial and error.arXiv preprint
+arXiv:2502.18858, 2025.
+[53] Guibin Zhang, Kaijie Chen, Guancheng Wan, Heng Chang, Hong Cheng, Kun Wang, Shuyue Hu,
+and Lei Bai. Evoflow: Evolving diverse agentic workflows on the fly.CoRR, abs/2502.07373,
+2025.
+[54] Jiayi Zhang, Jinyu Xiang, Zhaoyang Yu, Fengwei Teng, Xionghui Chen, Jiaqi Chen, Mingchen
+Zhuge, Xin Cheng, Sirui Hong, Jinlin Wang, et al. Aflow: Automating agentic workflow
+generation.arXiv preprint arXiv:2410.10762, 2024.
+[55] Jiayi Zhang, Chuang Zhao, Yihan Zhao, Zhaoyang Yu, Ming He, and Jianping Fan. Mobileex-
+perts: A dynamic tool-enabled agent team in mobile devices.arXiv preprint arXiv:2407.03913,
+2024.
+13
+
+[56] Jinghan Zhang and Kunpeng Liu. Thought space explorer: Navigating and expanding thought
+space for large language model reasoning. In2024 IEEE International Conference on Big Data
+(BigData), pages 8259–8251. IEEE, 2024.
+[57] Yifan Zhang, Yang Yuan, and Andrew Chi-Chih Yao. On the diagram of thought.CoRR,
+abs/2409.10038, 2024.
+[58] Zhuosheng Zhang, Aston Zhang, Mu Li, and Alex Smola. Automatic chain of thought prompting
+in large language models. InICLR. OpenReview.net, 2023.
+[59] Chuanyang Zheng, Zhengying Liu, Enze Xie, Zhenguo Li, and Yu Li. Progressive-hint prompt-
+ing improves reasoning in large language models.CoRR, abs/2304.09797, 2023.
+[60] Huaixiu Steven Zheng, Swaroop Mishra, Xinyun Chen, Heng-Tze Cheng, Ed H. Chi, Quoc V .
+Le, and Denny Zhou. Take a step back: Evoking reasoning via abstraction in large language
+models. InICLR. OpenReview.net, 2024.
+[61] Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, and Yu-Xiong Wang.
+Language agent tree search unifies reasoning, acting, and planning in language models. In
+ICML. OpenReview.net, 2024.
+[62] Denny Zhou, Nathanael Schärli, Le Hou, Jason Wei, Nathan Scales, Xuezhi Wang, Dale
+Schuurmans, Claire Cui, Olivier Bousquet, Quoc V . Le, and Ed H. Chi. Least-to-most prompting
+enables complex reasoning in large language models. InICLR. OpenReview.net, 2023.
+[63] Pei Zhou, Jay Pujara, Xiang Ren, Xinyun Chen, Heng-Tze Cheng, Quoc V . Le, Ed H. Chi,
+Denny Zhou, Swaroop Mishra, and Huaixiu Steven Zheng. SELF-DISCOVER: large language
+models self-compose reasoning structures. InNeurIPS, 2024.
+Appendix Overview
+This appendix is organized into three main parts: Section A provides comprehensive implementation
+details including prompts, hyperparameters, and baseline configurations; Section B presents detailed
+empirical analyses validating our framework’s effectiveness; and Sections C–D discuss limitations
+and broader impacts of this work.
+A Implementation Details
+This section provides comprehensive implementation details necessary for reproducing our experi-
+ments, including prompt templates, hyperparameter settings, and baseline method configurations.
+A.1 Prompt Templates
+We present the core prompt structures used in AOT for different task domains. Our framework
+employs four key prompt types: (1) direct for solving problems, (2) decompose for extracting
+DAG structures, (3) contract for generating simplified questions, and (4) judge for LLM-as-a-
+judge evaluation. Below we detail domain-specific implementations for mathematical reasoning,
+code generation, and multi-hop question answering.
+Design Rationale.The Multi-hop QA prompts use JSON for structured responses, while Math and
+Code tasks use HTML-like tags (e.g.,<answer></answer>). This design choice reflects task-specific
+requirements: JSON naturally accommodates Multi-hop QA’s need for structured outputs including
+reasoning chains and supporting evidence, while HTML tags provide clear answer demarcation for
+Math and Code tasks. Function parameters also vary by domain—Multi-hop QA requires context
+passages, Code generation needs test cases and dependency information, while Math tasks only
+require the question. These variations align with the inherent characteristics of each problem type
+rather than representing arbitrary design choices.
+14
+
+A.1.1 Mathematical Reasoning
+def direct ( question : str ) :
+i n s t r u c t i o n = " " "
+You are a precise math question solver . Solve the given math
+question step by step using a standard alg eb ra ic approach :
+QUESTION : { question }
+You can freely reason in your response , but please enclose the
+final answer within < answer > </ answer > tags ( pure number without
+units and e x p l a n a t i o n s )
+" " "
+prompt = i n s t r u c t i o n . format ( question = question )
+return prompt
+def d ec om po se () :
+i n s t r u c t i o n = " " "
+De co mp os e the previous re aso ni ng t r a j e c t o r y into a series of
+sub - q ue st ion s or thoughts .
+I n s t r u c t i o n s :
+1. Each sub - question or thought should list its other sub -
+q ues ti on s or thoughts ’ indexes it depends (0 - based , can be an
+empty list )
+2. D e p e n d e n c i e s are defined as i n f o r m a t i o n needed in sub -
+question or thought that :
+- Does NOT come directly from the original question
+- MUST come from previous sub - que st io ns or thoughts
+" " "
+return i n s t r u c t i o n
+def contract () :
+i n s t r u c t i o n = " " "
+Generate a s i m p l i f i e d i n t e r m e d i a t e form of the original
+question based on the previous sub - qu es ti on s or thoughts step by
+step .
+The previous sub - qu es tio ns or thoughts with marked
+d e p e n d e n c i e s actually form a directed acyclic graph ( DAG ) , where
+nodes whose d e p e n d e n c i e s is empty list can be regarded as
+i n d e p e n d e n t sub - q ue st io ns or thoughts .
+The s i m p l i f i e d question must be :
+1. self - c ont ai ne d : The s i m p l i f i e d question ’s d e s c r i p t i o n must
+contain all i n f o r m a t i o n needed to solve itself , without r equ ir in g
+a d d i t i o n a l i n f o r m a t i o n from the original question or re as oni ng
+t r a j e c t o r y
+2. test - time reduced : The s i m p l i f i e d question must require
+fewer rea so ni ng steps compared to the original question ( these
+steps are reduced because these solved i n d e p e n d e n t sub - problems or
+thoughts become known c o n d i t i o n s in the s i m p l i f i e d question or
+excluded as i nc or re ct e x p l o r a t i o n s )
+" " "
+fo rm at te r = " Last step , enclose the question within < question > </
+question > tags "
+i n s t r u c t i o n += f or ma tte r
+return i n s t r u c t i o n
+def judge ( question : str , s ol uti on s : list ) :
+i n s t r u c t i o n = " " "
+Here is the original problem :
+{ question }
+15
+
+Here are some ref er en ce so lu ti on s :
+{ so lu ti on s }
+Ensemble the best answer to the original problem from the
+s olu ti on s step by step :
+" " "
+fo rm at te r = " Last step , enclose the answer within < answer > </ answer
+> tags ( must be an integer or decimal number without units and
+e x p l a n a t i o n s ) "
+i n s t r u c t i o n += f or ma tte r
+s o l u t i o n s _ s t r = " "
+for i , solution in e nu me ra te ( so lu ti on s ) :
+s o l u t i o n s _ s t r += f " solution { i }: { solution }\ n "
+prompt = i n s t r u c t i o n . format ( question = question , so lu ti on s =
+s o l u t i o n s _ s t r )
+return prompt
+Listing 1: Math
+A.1.2 Code Generation
+def direct ( question : str , contexts : str ) :
+i n s t r u c t i o n = " " "
+Solve the f ol lo wi ng problem step by step :
+{ question }
+Your code should be a python function with format : { contexts }
+Please extend your r ea so nin g process as much as possible ; the
+longer the chain of thought , the better .
+" " "
+fo rm at te r = " Last step , enclose your code within ‘‘‘ python and ‘‘‘
+"
+i n s t r u c t i o n += f or ma tte r
+prompt = i n s t r u c t i o n . format ( question = question , contexts = contexts )
+return prompt
+def d ec om po se () :
+i n s t r u c t i o n = " " "
+De co mp os e the previous re aso ni ng t r a j e c t o r y into a series of
+sub - q ue st ion s or thoughts .
+I n s t r u c t i o n s :
+1. Each sub - question or thought should list its other sub -
+q ues ti on s or thoughts ’ indexes it depends (0 - based , can be an
+empty list )
+2. D e p e n d e n c i e s are defined as i n f o r m a t i o n needed in sub -
+question or thought that :
+- Does NOT come directly from the original question
+- MUST come from previous sub - que st io ns or thoughts
+" " "
+return i n s t r u c t i o n
+def contract ( dag , t e s t _ c a s e s ) :
+i n s t r u c t i o n = " " "
+Generate a s i m p l i f i e d i n t e r m e d i a t e form of the original
+problem based on the variable d e p e n d e n c y analysis .
+You ast . arg given a directed acyclic graph ( DAG ) r e p r e s e n t i n g
+the d e p e n d e n c i e s between v ar ia ble s in the original code :
+{ dag }
+16
+
+And the original test cases :
+{ t e s t _ c a s e s }
+The s i m p l i f i e d problem must be :
+1. Self - c ont ai ne d : The d e s c r i p t i o n must contain all
+i n f o r m a t i o n needed to solve itself , without req ui ri ng a d d i t i o n a l
+context from the original problem
+2. Test - time reduced : The s i m p l i f i e d problem must require
+fewer rea so ni ng steps by using i n t e r m e d i a t e v ar iab le s from the
+original code as direct inputs
+Your task is to :
+1. Create a s i m p l i f i e d version of the problem that starts with
+i n t e r m e d i a t e va ri ab les as inputs
+2. Generate new test cases that use these i n t e r m e d i a t e
+v ari ab le s as p a r a m e t e r s while m a i n t a i n i n g the exact same expected
+outputs as in the original test cases
+Do not use any code examples in your s i m p l i f i e d problem
+f o r m u l a t i o n .
+" " "
+fo rm at te r = r " Enclose the s i m p l i f i e d problem within < question > </
+question > tag and the new test cases ( assert codes , use \ n to
+split each case ) within < test > </ test > tag "
+i n s t r u c t i o n += f or ma tte r
+prompt = i n s t r u c t i o n . format ( dag = dag , t e s t _ c a s e s = t e s t _ c a s e s )
+return prompt
+def judge ( question : str , s ol uti on s : list ) :
+i n s t r u c t i o n = " " "
+Here is the original problem :
+{ question }
+Here are some ref er en ce so lu ti on s :
+{ so lu ti on s }
+Give the index of the best solution as your answer .
+" " "
+fo rm at te r = " Last step , enclose the answer within < answer > </ answer
+> tags (0 - based ) "
+i n s t r u c t i o n += f or ma tte r
+s o l u t i o n s _ s t r = " "
+for i , solution in e nu me ra te ( so lu ti on s ) :
+s o l u t i o n s _ s t r += f " solution { i }: { solution }\ n "
+prompt = i n s t r u c t i o n . format ( question = question , so lu ti on s =
+s o l u t i o n s _ s t r )
+return prompt
+Listing 2: Code
+A.1.3 Multi-hop Question Answering
+def direct ( question : str , contexts : str ) :
+i n s t r u c t i o n = " " "
+Solve the f ol lo wi ng multi - hop question step by step :
+{ question }
+CONTEXTS :
+{ contexts }
+17
+
+Firstly , you need to extract the relevant s u p p o r t i n g s en te nc es
+from the original text , then cut out the c o n t i n u o u s segments as
+the answer .
+" " "
+fo rm at te r = " " "
+Provide your response in this JSON format :
+{{
+" question " : { question } ,
+" thought " : " give your step by step thought process here " ,
+" s u p p o r t i n g _ s e n t e n c e s " : [
+" Include ALL s ent en ce s needed to justify your answer " ,
+" Use ... for long se nte nc es when a p p r o p r i a t e "
+] ,
+" answer " : " Your precise answer fo ll ow in g the i n s t r u c t i o n s
+above " or " none " if no answer can be found
+}}
+" " "
+i n s t r u c t i o n += f or ma tte r
+prompt = i n s t r u c t i o n . format ( question = question , contexts = contexts )
+return prompt
+def d ec om po se ( question : str , t r a j e c t o r y : str , answer : str ) :
+i n s t r u c t i o n = " " "
+You are tasked with breaking down a multiple choice question
+r eas on in g process into sub - q ue st io ns .
+Original Question : { question }
+Complete Re aso ni ng Process : { t r a j e c t o r y }
+I n s t r u c t i o n s :
+1. Break down the r ea so nin g process into a series of sub -
+q ues ti on s
+2. Each sub - question should :
+- Be written in i n t e r r o g a t i v e form
+- Have a clear answer
+- List its other sub - q ues ti on s ’ indexes it depends (0 - based
+, can be an empty list )
+3. D e p e n d e n c i e s are defined as i n f o r m a t i o n needed to answer
+the current sub - question that :
+- Does NOT come directly from the original question
+- MUST come from the answers of previous sub - que st io ns
+" " "
+fo rm at te r = " " "
+Format your response as the fo llo wi ng JSON object :
+{{
+" thought " : " < the thought process of how to step by step
+propose the sub - qu est io ns until the answer of the original
+question in the given re as oni ng process is obtained > " ,
+" sub - qu es tio ns " : [
+{{
+" d e s c r i p t i o n " : " < the d e s c r i p t i o n of the sub -
+question > " ,
+" answer " : < the answer to the sub - question > ,
+" depend " : [ < indices of the d ep en de nt sub - questions
+> , ...]
+}}
+] ,
+" answer " : " { answer } "
+}}
+" " "
+return ( i n s t r u c t i o n + f orm at te r ) . format ( question = question ,
+t r a j e c t o r y = trajectory , answer = answer )
+def contract ( question : str , d e c o m p o s e _ r e s u l t : dict , i n d e p e n d e n t : list ,
+de pe nd en t : list ) :
+18
+
+i n s t r u c t i o n = " " "
+You are a multiple choice question solver s p e c i a l i z i n g in
+o p t i m i z i n g step - by - step re aso ni ng p roc es se s . Your task is to
+optimize the existing re as on ing t r a j e c t o r y into a more efficient ,
+single self - co nt ai ned question .
+For the original question : { question }
+Here are step - by - step r eas on in g process :
+{ response }
+{ s u b _ q u e s t i o n s }
+Here are e x p l a n a t i o n s of key concepts :
+1. self - c ont ai ne d : The o pti mi ze d question must be solvable
+independently , without relying on any external i n f o r m a t i o n
+2. e ff ic ien t : The o pt im iz ed question must be simpler than the
+original , re qu ir in g fewer re as on in g steps and having a clearer
+r eas on in g process ( these steps are reduced because some solved sub
+- problems become known c o n d i t i o n s in the o pt im iz ed question or are
+excluded as i nc or re ct e x p l o r a t i o n s )
+Note : Since this is a multiple choice question , the o pti mi ze d
+question must c o m p l e t e l y retain the options of the original
+question .
+You can freely reason in your response , but please enclose the
+your o pti mi ze d question within < question > </ question > tags
+" " "
+s u b _ q u e s t i o n s = " " "
+The f ol lo wi ng sub - qu est io ns and their answers can serve as
+known c o n d i t i o n s :
+{ i n d e p e n d e n t }
+The d e s c r i p t i o n s of the f ol low in g que st io ns can be used to
+form the d e s c r i p t i o n of the op tim iz ed problem :
+{ de pe nd en t }
+" " "
+answer = d e c o m p o s e _ r e s u l t [ " answer " ]
+for sub_q in i n d e p e n d e n t :
+sub_q . pop ( " depend " , None )
+for sub_q in de pe nd ent :
+sub_q . pop ( " depend " , None )
+s u b _ q u e s t i o n s = s u b _ q u e s t i o n s . format ( i n d e p e n d e n t = independent ,
+d epe nd en t = dep en de nt )
+return i n s t r u c t i o n . format ( question = question , answer = answer ,
+response = d e c o m p o s e _ r e s u l t [ " response " ] , s u b _ q u e s t i o n s = s u b _ q u e s t i o n s
+)
+def judge ( question : str , s ol uti on s : list ) :
+i n s t r u c t i o n = " " "
+You are a precise multiple choice question solver . Compare
+then s y n t h e s i z e the best answer from multiple so lut io ns to select
+the most correct option :
+QUESTION : { question }
+SO LU TI ON S :
+{ so lu ti on s }
+Extend your chain of thought as much as possible ; the longer
+the chain of thought , the better .
+19
+
+You can freely reason in your response , even propose new
+r eas on in g to get a better answer than all solutions , but please
+mark the final option with < answer > single letter of your chosen
+option </ answer > tags
+" " "
+s o l u t i o n s _ s t r = " "
+for i , solution in e nu me ra te ( so lu ti on s ) :
+s o l u t i o n s _ s t r += f " solution { i }: { solution }\ n "
+prompt = i n s t r u c t i o n . format ( question = question , so lu ti on s =
+s o l u t i o n s _ s t r )
+return prompt
+Listing 3: Multi-hop QA
+A.2 Hyperparameter Configuration
+Maximum Transition Count.The maximum number of transitions in the Markovian reasoning
+chain is a key hyperparameter that controls the depth of reasoning exploration. Theoretically, longer
+chains enable deeper reasoning, but practical considerations require balancing performance gains with
+computational efficiency. Throughout our experiments, we uniformly set the maximum transition
+count to 3, which empirically provides an effective trade-off (see Section B.3 for empirical justification
+based on structural depth analysis).
+Adaptive Setting.For query-specific optimization, the maximum transition count can be dynami-
+cally determined by analyzing the initial DAG structure. Since each transition ideally eliminates one
+layer of independent nodes (those without incoming edges), the depth of the initially decomposed
+DAG G0 serves as a reasonable upper bound estimate for the required number of transitions. This can
+be computed via a simple graph traversal without additional LLM invocations.
+Other Hyperparameters.We use temperature T= 1.0 for all LLM sampling operations to balance
+exploration and determinism. For integration experiments with tree-based methods (Section 4.4), we
+use 3 branches for ToT and vary the number of trees in FoT as {2, 4, 8} to study scaling behavior.
+A.3 Baseline Implementation Details
+This subsection describes our implementation of baseline methods to ensure fair and reproducible
+comparisons.
+A.3.1 Forest of Thoughts (FoT)
+In our implementation, we utilize the classical Tree of Thoughts (ToT) approach as the fundamental
+tree structure within the Forest of Thoughts framework, while maintaining several critical mechanisms
+from the original FoT design, including majority voting for aggregating results across different trees
+and expert evaluation for assessing solution quality.
+However, our implementation differs from the original FoT in certain aspects to accommodate a
+broader range of question types. Specifically, we remove the early stopping criteria that terminate tree
+splitting when nodes cannot produce valid outputs. While this mechanism is particularly effective
+for constrained tasks like Game-of-24 where rule-based validation is straightforward, it is less
+applicable to our diverse evaluation scenarios where output validity is less clearly defined. Instead, we
+maintain tree expansion regardless of intermediate output quality, allowing the framework to explore
+potentially valuable paths that might initially appear suboptimal. Additionally, we omit the Input
+Data Augmentation technique, as analogical reasoning approaches do not demonstrate consistent
+effectiveness across different question domains in our experiments.
+These modifications preserve the core strengths of FoT while enhancing its adaptability to a wider
+range of reasoning tasks. Our implementation successfully reproduces the scaling curves reported in
+the original FoT paper and achieves superior performance across multiple benchmarks.
+20
+
+A.3.2 AFlow
+For AFlow, we adopt the optimal workflows identified in the original work for each benchmark
+dataset while making necessary adaptations to our experimental setup. For mathematical reasoning
+tasks on MATH and GSM8K, we directly employ AFlow’s proven optimal workflows. For multi-hop
+reasoning scenarios in LongBench, we use the workflow initially optimized for HotpotQA, as both
+datasets share core multi-hop reasoning characteristics. This approach ensures we leverage AFlow’s
+strengths while maintaining consistency across similar problem types.
+A.3.3 Dataset-Specific Details
+For the MATH dataset, we filter out questions with non-integer or non-decimal answers to ensure
+consistent evaluation. We evaluate the first 1,000 cases from MATH for efficiency, while assessing
+the remaining benchmarks in their entirety.
+B Empirical Analysis and Validation
+This section presents detailed empirical analyses that validate the effectiveness of our framework,
+including quality metrics for DAG generation, concrete examples of the decomposition-contraction
+process, and statistical analyses of structural properties.
+B.1 DAG Generation Quality Assessment
+To evaluate the quality of our two-phase transition mechanism (decomposition and contraction), we
+provide comprehensive quality metrics across multiple datasets. Table 2 presents three key metrics
+that assess different aspects of the DAG generation and state transition process.
+Table 2: DAG Generation Quality Metrics Across Benchmarks
+Metric MATH GSM8K MBPP LongBench
+Answer Equivalence Maintenance 99.2% 99.5% 99.7% 99.3%
+Test-time Complexity Reduction 76.4% 82.1% 74.8% 79.2%
+LLM-as-a-Judge Selection Rate 92.5% 95.8% 83.1% 91.5%
+Evaluation Methodology.Both answer equivalence and test-time complexity reduction are assessed
+through LLM evaluation, where the evaluator LLM is provided with Qi and Qi+1 along with their
+execution processes. The LLM judges answer equivalence by examining whether the reasoning
+trajectory’s derivation goals remain consistent, and assesses complexity reduction by analyzing the
+trajectory length and required reasoning steps.
+Metric Definitions.
+• Answer Equivalence Maintenance: The probability that the contracted question Qi+1
+maintains answer equivalence with the original question Q0. The consistently high rates
+(>99% across all datasets) demonstrate the reliability of our transition mechanism.
+• Test-time Complexity Reduction: The probability thatQi+1 successfully reduces reasoning
+complexity compared to Qi. Rates between 74%-82% indicate that most transitions achieve
+meaningful simplification.
+• LLM-as-a-Judge Selection Rate: The probability that Qi+1 is selected (or at least not re-
+jected) by the LLM-as-a-judge when choosing among {solve(Qi),solve(G i),solve(Q i+1)}.
+High selection rates (83%-96%) confirm that the generated states provide valuable reasoning
+improvements.
+These metrics collectively demonstrate that our DAG generation and contraction process reliably
+maintains answer equivalence while achieving meaningful complexity reduction, validating the
+effectiveness of our two-phase transition design.
+21
+
+B.2 Detailed DAG Decomposition and Contraction Examples
+To provide concrete understanding of how the DAG decomposition and contraction mechanism
+works in practice, we present detailed step-by-step examples demonstrating the complete two-phase
+transition process.
+B.2.1 Mathematical Reasoning Example
+Original Problem (Q0):There are two possible triangles ABC satisfying AB = 10, AC = b > 10,
+and sin B = 3/5. Find the positive difference between the lengths of side BC.
+Step 1: Direct Reasoning Trajectory.When solving Q0 directly, the LLM generates the following
+reasoning chain:
+1. Given sin B = 3/5, we can find cos B using the Pythagorean identity:cos 2 B+ sin 2 B= 1
+2. This gives uscos 2 B= 1−(3/5) 2 = 1−9/25 = 16/25
+3. Therefore, cos B = ±4/5 (two possible values)
+4. Using the Law of Cosines:b 2 =a 2 +c 2 −2accosB, wherea=BC,c=AB= 10
+5. For cos B = 4/5:b 2 =a 2 + 100−20a(4/5) =a 2 −16a+ 100
+6. For cos B = -4/5:b 2 =a 2 + 100−20a(−4/5) =a 2 + 16a+ 100
+7. Solving these two cases yields two possible values for BC
+8. The positive difference is computed from these two values
+Step 2: DAG Decomposition (Q0 → G 0).The LLM decomposes this reasoning trajectory into a
+dependency structure:
+Node 0:“Calculate cos B from sin B = 3/5 using the Pythagorean identity”
+• Dependencies: [] (no dependencies, independent subproblem)
+• Result: cos B = ±4/5
+Node 1:“Given AB = 10, AC = b > 10, and cos B = ±4/5, apply the Law of Cosines to find the two
+possible values of BC”
+• Dependencies: [0] (depends on the result of Node 0)
+Node 2:“Calculate the positive difference between the two values of BC”
+• Dependencies: [1] (depends on the result of Node 1)
+The DAG structure is: Node 0→Node 1→Node 2, forming a linear chain of depth 3.
+Step 3: Contraction (G0 →Q 1).Nodes without incoming edges (Node 0) represent independent
+subproblems that can be directly solved. After solving Node 0, we obtain cos B = ±4/5. This
+information is incorporated into the problem statement, and nodes depending on it are reformulated:
+Contracted Question (Q1):Given that cos B can be either 4/5 or -4/5, with AB = 10 and AC =
+b > 10, use the Law of Cosines to find the two possible values of BC, then calculate their positive
+difference.
+Key observations:
+•Q 1 is self-contained: All necessary information (cos B values) is now explicitly stated
+•Q 1 maintains answer equivalence withQ 0: SolvingQ 1 yields the same final answer
+•Q 1 has reduced test-time complexity: The trigonometric calculation is eliminated, reducing
+reasoning steps from 8 to approximately 5
+• The DAG depth is reduced from 3 to 2 (only Nodes 1 and 2 remain)
+22
+
+Step 4: LLM-as-a-Judge Selection.After generating the triplet
+{solve(Q0),solve(G 0),solve(Q 1)}, the LLM-as-a-judge evaluates which provides the best
+answer to the original problemQ 0. In this case:
+• solve(Q 0): Direct solution with full reasoning chain
+• solve(G 0): Solution by explicitly solving each node in the DAG
+• solve(Q 1): Solution of the contracted problem
+If Q1 maintains answer equivalence (which it does), solve(Q1) will provide a valid answer and is
+likely to be selected due to its cleaner reasoning structure. If the contraction process had failed to
+maintain equivalence, solve(Q1) would produce an incorrect or nonsensical answer, and the judge
+would select one of the other options, naturally filtering out the failed transition.
+Iteration Potential.If we continue from Q1, a second transition could further decompose and
+contract the problem, potentially separating the two Law of Cosines calculations from the difference
+computation. This iterative process continues until reaching an atomic state where no further
+meaningful decomposition is possible.
+B.2.2 Key Insights from the Example
+This example illustrates several important aspects of our framework:
+1. Structural Guidance:The DAG explicitly captures dependencies, allowing the contraction
+phase to identify which information can be “baked into” the problem statement (Node 0’s
+result) versus which must remain as reasoning steps (Nodes 1-2).
+2. Answer Equivalence:The contracted question Q1 asks for exactly the same final answer as
+Q0, ensuring the Markov property holds while making meaningful progress.
+3. Complexity Reduction:By solving independent subproblems and incorporating their
+results,Q 1 requires fewer reasoning steps, reducing the test-time computational burden.
+4. Implicit Quality Control:The LLM-as-a-judge mechanism naturally filters failed transi-
+tions—if contraction produces an invalid or non-equivalent question, it won’t be selected,
+preventing error propagation.
+B.3 Analysis of Structural Diversity
+To understand the structural characteristics of problems decomposed by our framework and provide
+empirical justification for our hyperparameter choices, we analyze the DAG structures generated
+from the first 1,000 questions of the MATH dataset.
+B.3.1 Graph Structure and Chain Length
+Figures 5 and 6 reveal clear structural patterns in the decomposed questions. The depth distribution
+(Figure 5) shows that most questions exhibit depths between 2 and 4, with depth 3 being the most
+common pattern. This observation provides empirical justification for our choice of maximum
+transition count (3) in the main experiments—the structural depth naturally aligns with the transition
+requirements for most problems.
+Similarly, the subquestion count distribution (Figure 6) indicates that questions typically decompose
+into 2 to 5 subquestions, with 3-4 subquestions representing the most frequent pattern. These statistics
+suggest that most reasoning problems naturally decompose into a small number of manageable sub-
+problems, supporting our framework’s design assumption that complex reasoning can be effectively
+simplified through structured decomposition.
+B.3.2 Correlation Between Structural Complexity and Performance
+Notably, we observed correlations between these structural metrics and solution accuracy. The scatter
+plots reveal two important patterns: First, as shown in Figure 7b, as the depth of the solution graph
+increases, there is a general trend of decreasing accuracy. Second, as illustrated in Figure 7a, questions
+with more subquestions tend to show lower accuracy rates. The color intensity of the points provides
+23
+
+0 1 2 3 4 5 6 7
+Depth
+0
+50
+100
+150
+200
+250Count
+5
+182
+269
+251
+145
+90
+35
+23
+Problem Count Distribution by Depth
+Figure 5: Distribution of solution depths across questions. Darker orange bars indicate depths that
+appear more frequently in the dataset.
+1 2 3 4 5 6 7 8 9
+Subproblems
+0
+50
+100
+150
+200
+250Count
+4
+52
+202
+243
+226
+132
+75
+37
+29
+Problem Count Distribution by Subproblems
+Figure 6: Distribution of subquestion counts across questions. Darker green bars represent more
+common subquestion counts in the solutions.
+additional insight - darker points represent more common structural patterns in our dataset, showing
+that most of our high-accuracy solutions come from questions with moderate depth and subquestion
+counts. This suggests that more complex question structures, characterized by either greater depth or
+more subquestions, pose greater challenges for question-solving systems. The decline in accuracy
+could be attributed to error propagation through longer solution chains and the increased cognitive
+load required to maintain consistency across more complex question structures.
+C Limitations
+While AOT demonstrates promising results across multiple domains, several limitations remain. First,
+the current implementation relies on a fixed maximum transition count (set to 3), which may not
+be optimal for all problem types. Although we propose an adaptive setting based on initial DAG
+depth, a fully dynamic termination criterion would be more robust. Second, the decomposition
+process adds computational overhead compared to direct inference, which might be a trade-off for
+real-time applications. Finally, the quality of decomposition depends heavily on the underlying
+LLM’s capability; weaker models may struggle to generate valid dependency graphs, potentially
+degrading performance.
+24
+
+0.0 2.5 5.0 7.5 10.0 12.5 15.0 17.5 20.0
+Number of Subproblems
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0Accuracy
+Accuracy vs Number of Subproblems
+(a) Number of subquestions vs accuracy
+0 2 4 6 8 10
+Depth
+0.4
+0.5
+0.6
+0.7
+0.8Accuracy
+Accuracy vs Depth (b) Solution depth vs accuracy
+Figure 7: Correlation between structural complexity and performance. Color intensity reflects data
+density - darker points represent more frequent patterns.
+D Broader Impacts
+This work contributes to the advancement of reasoning capabilities in large language models, which
+has potential positive impacts in scientific discovery, education, and complex problem-solving. By
+making reasoning processes more structured and interpretable through decomposition, AOT could
+help in building more trustworthy AI systems. However, as with any advanced AI capability, there are
+risks of misuse, such as generating more sophisticated disinformation or automating malicious code
+generation. We believe that the modular nature of our framework also offers opportunities for better
+monitoring and control, as individual reasoning steps can be inspected and verified. Future work
+should focus on developing robust safety guardrails that can operate within this structured reasoning
+framework.
+25

@@ -1,0 +1,128 @@
+{
+  "logicqa": {
+    "baseline_astar": {
+      "path": "Tanzeel_astar/Dibyanayan_results/logicqa_astar_100_llama3.1_8b_device0.json",
+      "accuracy": 33.0,
+      "correct": 33,
+      "total": 100,
+      "llm": 0,
+      "fallback": 0
+    },
+    "baseline_cot": {
+      "path": "Tanzeel_astar/Dibyanayan_results/logicqa_cot_100_llama3.1_8b_device0.json",
+      "accuracy": 39.0,
+      "correct": 39,
+      "total": 100,
+      "llm": 0,
+      "fallback": 0
+    },
+    "previous": {
+      "path": "PHASE_3/logicqa_phase3_dualtrace_100_llama3.1_8b.json",
+      "accuracy": 42.0,
+      "correct": 42,
+      "total": 100,
+      "llm": 0,
+      "fallback": 0
+    },
+    "new_vllm_rewrite": {
+      "path": "PHASE_3/runs_100_vllm_rewrite/logicqa/phase3_logicqa_100_vllm_rewrite_llama_synth.json",
+      "accuracy": 42.0,
+      "correct": 42,
+      "total": 100,
+      "llm": 100,
+      "fallback": 0
+    },
+    "new_llm_rewrite": {
+      "path": "ASIF EKBAL SIR/experiments/proper_llm_device0/logicqa/phase3_logicqa_100_llm_rewrite_llm_synth_device0.json",
+      "accuracy": 37.0,
+      "correct": 37,
+      "total": 100,
+      "llm": 100,
+      "fallback": 0
+    }
+  },
+  "hotpotqa": {
+    "baseline_astar": {
+      "path": "Tanzeel_astar/Dibyanayan_results/hotpotqa_astar_100_llama3.1_8b_device0.json",
+      "accuracy": 78.0,
+      "correct": 78,
+      "total": 100,
+      "llm": 0,
+      "fallback": 0
+    },
+    "baseline_cot": {
+      "path": "Tanzeel_astar/Dibyanayan_results/hotpotqa_cot_100_llama3.1_8b_device0.json",
+      "accuracy": 53.0,
+      "correct": 53,
+      "total": 100,
+      "llm": 0,
+      "fallback": 0
+    },
+    "previous": {
+      "path": "PHASE_3/runs_100_deterministic_rewrite/hotpotqa/phase3_hotpotqa_100_det_rewrite_llama_synth.json",
+      "accuracy": 39.0,
+      "correct": 39,
+      "total": 100,
+      "llm": 100,
+      "fallback": 0
+    },
+    "new_vllm_rewrite": {
+      "path": "PHASE_3/runs_100_vllm_rewrite/hotpotqa/phase3_hotpotqa_100_vllm_rewrite_llama_synth.json",
+      "accuracy": 26.0,
+      "correct": 26,
+      "total": 100,
+      "llm": 100,
+      "fallback": 0
+    },
+    "new_llm_rewrite": {
+      "path": "ASIF EKBAL SIR/experiments/proper_llm_device0/hotpotqa/phase3_hotpotqa_100_llm_rewrite_llm_synth_device0.json",
+      "accuracy": 20.0,
+      "correct": 20,
+      "total": 100,
+      "llm": 100,
+      "fallback": 0
+    }
+  },
+  "strategyqa": {
+    "baseline_astar": {
+      "path": "Tanzeel_astar/Dibyanayan_results/strategyqa_astar_100_llama3.1_8b_device0.json",
+      "accuracy": 79.0,
+      "correct": 79,
+      "total": 100,
+      "llm": 0,
+      "fallback": 0
+    },
+    "baseline_cot": {
+      "path": "Tanzeel_astar/Dibyanayan_results/strategyqa_cot_100_llama3.1_8b_device0.json",
+      "accuracy": 73.0,
+      "correct": 73,
+      "total": 100,
+      "llm": 0,
+      "fallback": 0
+    },
+    "previous": {
+      "path": "PHASE_3/runs_100_deterministic_rewrite/strategyqa/phase3_strategyqa_100_det_rewrite_llama_synth.json",
+      "accuracy": 48.0,
+      "correct": 48,
+      "total": 100,
+      "llm": 100,
+      "fallback": 0
+    },
+    "new_vllm_rewrite": {
+      "path": "PHASE_3/runs_100_vllm_rewrite/strategyqa/phase3_strategyqa_100_vllm_rewrite_llama_synth.json",
+      "accuracy": 43.0,
+      "correct": 43,
+      "total": 100,
+      "llm": 100,
+      "fallback": 0
+    },
+    "new_llm_rewrite": {
+      "path": "ASIF EKBAL SIR/experiments/proper_llm_device0/strategyqa/phase3_strategyqa_100_llm_rewrite_llm_synth_device0.json",
+      "accuracy": 25.0,
+      "correct": 25,
+      "total": 100,
+      "llm": 100,
+      "fallback": 0
+    }
+  }
+}

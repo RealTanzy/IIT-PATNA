@@ -1,0 +1,10 @@
+{
+  "total": 200,
+  "parsed": 200,
+  "correct": 41,
+  "accuracy": 0.205,
+  "avg_f1": 0.27529166666666666,
+  "parsed_rate": 1.0,
+  "elapsed_sec": 62.110647201538086,
+  "avg_sec_per_question": 0.3105532360076904
+}

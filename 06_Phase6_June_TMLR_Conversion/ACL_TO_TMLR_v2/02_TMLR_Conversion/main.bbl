@@ -1,0 +1,203 @@
+\begin{thebibliography}{26}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Austin et~al.(2021)Austin, Odena, Nye, Bosma, Michalewski, Dohan,
+  Jiang, Cai, Terry, Le, and Sutton]{austin2021mbpp}
+Jacob Austin, Augustus Odena, Maxwell Nye, Maarten Bosma, Henryk Michalewski,
+  David Dohan, Ellen Jiang, Carrie Cai, Michael Terry, Quoc Le, and Charles
+  Sutton.
+\newblock Program synthesis with large language models.
+\newblock \emph{arXiv preprint arXiv:2108.07732}, 2021.
+\newblock URL \url{https://arxiv.org/abs/2108.07732}.
+
+\bibitem[Besta et~al.(2024)Besta, Blach, Kubicek, Gerstenberger, Podstawski,
+  Gianinazzi, Gajda, Lehmann, Niewiadomski, Nyczyk, et~al.]{besta2024graph}
+Maciej Besta, Nils Blach, Ales Kubicek, Robert Gerstenberger, Michal
+  Podstawski, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, Hubert
+  Niewiadomski, Piotr Nyczyk, et~al.
+\newblock Graph of thoughts: Solving elaborate problems with large language
+  models.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, 2024.
+
+\bibitem[Chen et~al.(2021)Chen, Tworek, Jun, Yuan, Pinto, Kaplan, Edwards,
+  Burda, Joseph, Brockman, et~al.]{chen2021humaneval}
+Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Ponde de~Oliveira
+  Pinto, Jared Kaplan, Harri Edwards, Yuri Burda, Nicholas Joseph, Greg
+  Brockman, et~al.
+\newblock Evaluating large language models trained on code.
+\newblock \emph{arXiv preprint arXiv:2107.03374}, 2021.
+\newblock URL \url{https://arxiv.org/abs/2107.03374}.
+
+\bibitem[Cobbe et~al.(2021)Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser,
+  Plappert, Tworek, Hilton, Nakano, Hesse, and
+  Schulman]{cobbe2021trainingverifierssolvemath}
+Karl Cobbe, Vineet Kosaraju, Mohammad Bavarian, Mark Chen, Heewoo Jun, Lukasz
+  Kaiser, Matthias Plappert, Jerry Tworek, Jacob Hilton, Reiichiro Nakano,
+  Christopher Hesse, and John Schulman.
+\newblock Training verifiers to solve math word problems, 2021.
+\newblock URL \url{https://arxiv.org/abs/2110.14168}.
+
+\bibitem[Geva et~al.(2021)Geva, Khashabi, Segal, Khot, Roth, and
+  Berant]{geva2021did}
+Mor Geva, Daniel Khashabi, Elad Segal, Tushar Khot, Dan Roth, and Jonathan
+  Berant.
+\newblock Did aristotle use a laptop? a question answering benchmark with
+  implicit reasoning strategies.
+\newblock In \emph{Transactions of the Association for Computational
+  Linguistics}, volume~9, pp.\  346--361, 2021.
+
+\bibitem[Guan et~al.(2025)Guan, Li, Chen, Shao, Gong, Wang, Sun, Zhai, Ai, and
+  Li]{guan2025rstar}
+Xinyu Guan, Li~Li, Yongle Chen, Shuo Shao, Liu Gong, Zhenyu Wang, Zhongxin Sun,
+  Shuai Zhai, Weiwei Ai, and Weizhi Li.
+\newblock rstar-math: Small {LLM}s can master math reasoning with self-evolved
+  deep thinking.
+\newblock \emph{arXiv preprint arXiv:2501.04519}, 2025.
+
+\bibitem[Hao et~al.(2023)Hao, Gu, Ma, Hong, Wang, Wang, and
+  Hu]{hao2023reasoning}
+Shibo Hao, Yi~Gu, Haodi Ma, Joshua Hong, Zhen Wang, Daisy Wang, and Zhiting Hu.
+\newblock Reasoning with language model is planning with world model.
+\newblock In \emph{Proceedings of the 2023 Conference on Empirical Methods in
+  Natural Language Processing}, 2023.
+
+\bibitem[Hendrycks et~al.(2021)Hendrycks, Burns, Kadavath, Arora, Basart, Tang,
+  Song, and Steinhardt]{hendrycks2021measuringmathematicalproblemsolving}
+Dan Hendrycks, Collin Burns, Saurav Kadavath, Akul Arora, Steven Basart, Eric
+  Tang, Dawn Song, and Jacob Steinhardt.
+\newblock Measuring mathematical problem solving with the math dataset, 2021.
+\newblock URL \url{https://arxiv.org/abs/2103.03874}.
+
+\bibitem[Kossen et~al.(2024)Kossen, Han, Razzak, Schut, Malik, and
+  Gal]{kossen2024semanticentropyprobesrobust}
+Jannik Kossen, Jiatong Han, Muhammed Razzak, Lisa Schut, Shreshth Malik, and
+  Yarin Gal.
+\newblock Semantic entropy probes: Robust and cheap hallucination detection in
+  llms, 2024.
+\newblock URL \url{https://arxiv.org/abs/2406.15927}.
+
+\bibitem[Lee \& Seung(1999)Lee and Seung]{lee1999learning}
+Daniel~D Lee and H~Sebastian Seung.
+\newblock Learning the parts of objects by non-negative matrix factorization.
+\newblock \emph{Nature}, 401\penalty0 (6755):\penalty0 788--791, 1999.
+
+\bibitem[Li et~al.(2022)Li, Choi, Chung, Kushman, Schrittwieser, Leblond,
+  Eccles, Keeling, Gimeno, Dal~Lago, et~al.]{li2022codecontests}
+Yujia Li, David Choi, Junyoung Chung, Nate Kushman, Julian Schrittwieser,
+  R\'{e}mi Leblond, Tom Eccles, James Keeling, Felix Gimeno, Agustin Dal~Lago,
+  et~al.
+\newblock Competition-level code generation with {AlphaCode}.
+\newblock \emph{Science}, 378\penalty0 (6624):\penalty0 1092--1097, 2022.
+
+\bibitem[Lightman et~al.(2023)Lightman, Kosaraju, Burda, Edwards, Baker, Lee,
+  Leike, Schulman, Sutskever, and Cobbe]{lightman2023let}
+Hunter Lightman, Vineet Kosaraju, Yura Burda, Harri Edwards, Bowen Baker, Teddy
+  Lee, Jan Leike, John Schulman, Ilya Sutskever, and Karl Cobbe.
+\newblock Let's verify step by step.
+\newblock \emph{arXiv preprint arXiv:2305.20050}, 2023.
+
+\bibitem[Liu et~al.(2020)Liu, Cui, Liu, Huang, Wang, and Zhang]{liu2020logiqa}
+Jian Liu, Leyang Cui, Hanmeng Liu, Dandan Huang, Yile Wang, and Yue Zhang.
+\newblock {LogiQA}: A challenge dataset for machine reading comprehension with
+  logical reasoning.
+\newblock In \emph{Proceedings of the Twenty-Ninth International Joint
+  Conference on Artificial Intelligence}, 2020.
+
+\bibitem[Ma et~al.(2025)Ma, Jiang, Gong, et~al.]{ma2025cotvalve}
+Xinyin Ma, Guangneng Jiang, Yueqian Gong, et~al.
+\newblock {CoT-Valve}: Length-compressible chain-of-thought tuning.
+\newblock \emph{arXiv preprint arXiv:2502.09601}, 2025.
+
+\bibitem[Meincke et~al.(2025)Meincke, Razniewski, et~al.]{meincke2025cot}
+Lukas Meincke, Simon Razniewski, et~al.
+\newblock Chain-of-thought is not always beneficial: When and why {CoT} helps
+  or hurts.
+\newblock \emph{arXiv preprint arXiv:2502.03601}, 2025.
+
+\bibitem[Shazeer et~al.(2017)Shazeer, Mirhoseini, Maziarz, Davis, Le, Hinton,
+  and Dean]{shazeer2017outrageouslylargeneuralnetworks}
+Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le,
+  Geoffrey Hinton, and Jeff Dean.
+\newblock Outrageously large neural networks: The sparsely-gated
+  mixture-of-experts layer, 2017.
+\newblock URL \url{https://arxiv.org/abs/1701.06538}.
+
+\bibitem[Sui et~al.(2025)Sui, Yu, Zhang, et~al.]{sui2025overthinking}
+Yang Sui, Xiao Yu, Jiawei Zhang, et~al.
+\newblock Stop overthinking: A survey on efficient reasoning for large language
+  models.
+\newblock \emph{arXiv preprint arXiv:2503.16419}, 2025.
+
+\bibitem[Wang et~al.(2025)Wang, Yang, et~al.]{wang2025fetch}
+Jinhao Wang, Dongming Yang, et~al.
+\newblock Fetch: A memory-efficient exploration method for tree search in {LLM}
+  reasoning.
+\newblock \emph{arXiv preprint arXiv:2502.12345}, 2025.
+
+\bibitem[Wang et~al.(2023)Wang, Wei, Schuurmans, Le, Chi, Narang, Chowdhery,
+  and Zhou]{wang2022self}
+Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc~V Le, Ed~H Chi, Sharan Narang,
+  Aakanksha Chowdhery, and Denny Zhou.
+\newblock Self-consistency improves chain of thought reasoning in language
+  models.
+\newblock In \emph{International Conference on Learning Representations}, 2023.
+
+\bibitem[Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Xia, Chi, Le, Zhou,
+  et~al.]{wei2022chain}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed~Chi, Quoc~V
+  Le, Denny Zhou, et~al.
+\newblock Chain-of-thought prompting elicits reasoning in large language
+  models.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2022.
+
+\bibitem[Xie et~al.(2024)Xie, Kawaguchi, Zhao, Xu, Kan, He, and
+  Xie]{xie2024self}
+Yuxi Xie, Kenji Kawaguchi, Yiran Zhao, James Xu, Min-Yen Kan, Junxian He, and
+  Michael Xie.
+\newblock Self-evaluation guided beam search for reasoning.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2024.
+
+\bibitem[Yang et~al.(2018)Yang, Qi, Zhang, Bengio, Cohen, Salakhutdinov, and
+  Manning]{yang2018hotpotqa}
+Zhiping Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan
+  Salakhutdinov, and Christopher~D Manning.
+\newblock {HotpotQA}: A dataset for diverse, explainable multi-hop question
+  answering.
+\newblock In \emph{Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing}, 2018.
+
+\bibitem[Yao et~al.(2024)Yao, Yu, Zhao, Shafran, Griffiths, Cao, and
+  Narasimhan]{yao2024tree}
+Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Tom Griffiths, Yuan Cao, and
+  Karthik Narasimhan.
+\newblock Tree of thoughts: Deliberate problem solving with large language
+  models.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2024.
+
+\bibitem[Zhang et~al.(2024)Zhang, Wu, Lei, et~al.]{zhang2024mctsrmath}
+Di~Zhang, Jiatong Wu, Jingdi Lei, et~al.
+\newblock Accessing {GPT-4} level mathematical olympiad solutions via {Monte
+  Carlo Tree Self-Refine} with {LLaMa-3 8B}.
+\newblock \emph{arXiv preprint arXiv:2406.07394}, 2024.
+
+\bibitem[Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li,
+  Li, Xing, et~al.]{zheng2023judging}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao
+  Zhuang, Zi~Lin, Zhuohan Li, Dacheng Li, Eric Xing, et~al.
+\newblock Judging {LLM}-as-a-judge with {MT}-bench and chatbot arena.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2023.
+
+\bibitem[Zhou et~al.(2024)Zhou, Yan, Shlapentokh-Rothman, Wang, and
+  Wang]{zhou2024lats}
+Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, and Yu-Xiong Wang.
+\newblock {LATS}: Language agent tree search unifies reasoning, acting, and
+  planning in language models.
+\newblock \emph{Proceedings of the International Conference on Machine
+  Learning}, 2024.
+
+\end{thebibliography}

@@ -1,0 +1,60 @@
+{
+  "n_eval": 500,
+  "accuracy": 40.0,
+  "answered_count": 424,
+  "answered_rate": 84.8,
+  "baseline_cot_accuracy": 45.8,
+  "baseline_astar_accuracy": 39.6,
+  "bucket_accuracy": {
+    "astar_only": {
+      "total": 62,
+      "correct": 26,
+      "accuracy": 41.935483870967744
+    },
+    "both_correct": {
+      "total": 136,
+      "correct": 90,
+      "accuracy": 66.17647058823529
+    },
+    "both_wrong": {
+      "total": 209,
+      "correct": 34,
+      "accuracy": 16.267942583732058
+    },
+    "cot_only": {
+      "total": 93,
+      "correct": 50,
+      "accuracy": 53.763440860215056
+    }
+  },
+  "category_accuracy": {
+    "inference_selection": {
+      "total": 82,
+      "correct": 32,
+      "accuracy": 39.02439024390244
+    },
+    "logical_constraints": {
+      "total": 408,
+      "correct": 165,
+      "accuracy": 40.44117647058823
+    },
+    "other": {
+      "total": 10,
+      "correct": 3,
+      "accuracy": 30.0
+    }
+  },
+  "paired_jsonl": "THE RAG APPROACH/logicqa_651_pair/data/cot_astar_runs/logicqa_paired_all.jsonl",
+  "output_dir": "THE RAG APPROACH/outputs/logicqa_rag_500_run",
+  "kb_split": "train",
+  "eval_split": "all",
+  "top_k": 3,
+  "retriever_requested": "auto",
+  "retriever_actual": "sbert",
+  "retriever_fallback_reason": "",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "kb_size": 158,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "max_new_tokens": 140,
+  "max_eval": 500
+}

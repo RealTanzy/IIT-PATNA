@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Weekly Update — Dr. Asif Ekbal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #0d0f1a;
+      --surface: #161926;
+      --surface2: #1e2236;
+      --border: rgba(255,255,255,.08);
+      --text: #f0f2ff;
+      --muted: #8891b8;
+      --blue: #4f8ef7;
+      --blue-g: linear-gradient(135deg,#4f8ef7,#818cf8);
+      --green: #34d399;
+      --green-g: linear-gradient(135deg,#34d399,#059669);
+      --amber: #fbbf24;
+      --amber-g: linear-gradient(135deg,#fbbf24,#f59e0b);
+      --red: #f87171;
+      --red-g: linear-gradient(135deg,#f87171,#dc2626);
+      --purple: #a78bfa;
+      --purple-g: linear-gradient(135deg,#a78bfa,#7c3aed);
+      --pink: #f472b6;
+    }
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+    }
+
+    /* ─── Shell ─── */
+    .shell {
+      width: min(1280px, 98vw);
+      height: 96vh;
+      background: var(--surface);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      display: grid;
+      grid-template-rows: 1fr 64px;
+      overflow: hidden;
+      box-shadow: 0 40px 120px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.04);
+      position: relative;
+    }
+
+    /* Corner decoration */
+    .shell::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -200px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(79,142,247,.15) 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
+    }
+
+    /* ─── Slide area ─── */
+    .viewport { overflow: hidden; position: relative; z-index: 1; }
+    .track {
+      display: flex;
+      height: 100%;
+      will-change: transform;
+      transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      padding: 52px 64px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ─── Slide-specific backgrounds ─── */
+    #s0 {
+      background: linear-gradient(135deg, #0d1528 0%, #0d0f1a 60%, #14101f 100%);
+    }
+    #s0::after {
+      content: '';
+      position: absolute;
+      bottom: -100px; left: -100px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(167,139,250,.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    #s1 { background: linear-gradient(160deg, #0d1528 0%, #0d0f1a 100%); }
+    #s2 { background: linear-gradient(160deg, #0d1a28 0%, #0d0f1a 100%); }
+    #s3 { background: linear-gradient(160deg, #1a0d0d 0%, #0d0f1a 100%); }
+    #s4 { background: linear-gradient(160deg, #150d1a 0%, #0d0f1a 100%); }
+    #s5 { background: linear-gradient(160deg, #0d1a14 0%, #0d0f1a 100%); }
+
+    /* ─── Typography ─── */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      padding: 5px 13px;
+      border-radius: 999px;
+      width: fit-content;
+      border: 1px solid;
+    }
+
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.4rem, 4.5vw, 4rem);
+      line-height: 1.06;
+      font-weight: 800;
+      background: linear-gradient(135deg, #fff 30%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .lead {
+      font-size: clamp(.9rem, 1.2vw, 1rem);
+      line-height: 1.7;
+      color: var(--muted);
+      max-width: 64ch;
+      font-weight: 300;
+    }
+
+    /* ─── Glass card ─── */
+    .card {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 18px;
+      transition: border-color 240ms ease, transform 240ms ease;
+    }
+    .card:hover {
+      border-color: rgba(255,255,255,.18);
+      transform: translateY(-2px);
+    }
+    .card .lbl {
+      font-size: .68rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 5px;
+    }
+    .card strong { color: var(--text); font-weight: 600; }
+
+    /* ─── Grids ─── */
+    .g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .g3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+    .g4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+
+    /* ─── Chip row ─── */
+    .chips { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; }
+    .chip {
+      padding: 7px 15px;
+      border-radius: 999px;
+      font-size: .82rem;
+      font-weight: 600;
+      border: 1px solid;
+      letter-spacing: .02em;
+      transition: transform 160ms ease;
+    }
+    .chip:hover { transform: translateY(-2px); }
+
+    /* ─── Timeline ─── */
+    .tl { display: flex; flex-direction: column; gap: 4px; }
+    .tl-item {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 14px;
+      align-items: stretch;
+      position: relative;
+    }
+    .tl-item:not(:last-child) .tl-dot-wrap::after {
+      content: '';
+      position: absolute;
+      left: 21px;
+      top: 44px;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, rgba(255,255,255,.12), transparent);
+    }
+    .tl-dot-wrap { position: relative; display: flex; flex-direction: column; align-items: center; }
+    .tl-dot {
+      width: 40px; height: 40px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: .9rem;
+      flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,.1);
+    }
+    .tl-body {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 8px;
+      font-size: .93rem;
+      line-height: 1.6;
+      color: #c8d0e8;
+    }
+    .tl-body strong { color: var(--text); }
+
+    /* ─── Reviewer concern/response ─── */
+    .pairs { display: flex; flex-direction: column; gap: 10px; flex: 1; overflow: hidden; }
+    .pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      animation: fadeUp 360ms ease both;
+    }
+    .pair:nth-child(2) { animation-delay: 80ms; }
+    .pair:nth-child(3) { animation-delay: 160ms; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    .concern-box, .response-box {
+      border-radius: 12px;
+      padding: 13px 15px;
+      font-size: .88rem;
+      line-height: 1.55;
+      border: 1px solid;
+      transition: transform 200ms ease;
+    }
+    .concern-box:hover, .response-box:hover { transform: translateY(-2px); }
+
+    .concern-box {
+      background: rgba(248,113,113,.07);
+      border-color: rgba(248,113,113,.25);
+      color: #fca5a5;
+    }
+    .response-box {
+      background: rgba(52,211,153,.07);
+      border-color: rgba(52,211,153,.25);
+      color: #6ee7b7;
+    }
+
+    .box-hd {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      opacity: .65;
+      margin-bottom: 6px;
+    }
+    .box-hd .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    /* ─── Reviewer header ─── */
+    .rv-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .rv-score {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1.5px solid;
+    }
+
+    /* ─── Stat cards ─── */
+    .stat {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      transition: border-color 240ms ease, transform 240ms ease;
+    }
+    .stat:hover {
+      border-color: rgba(255,255,255,.2);
+      transform: translateY(-3px);
+    }
+    .stat .val {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .stat .desc {
+      font-size: .78rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* ─── Role boxes ─── */
+    .role {
+      border-radius: 16px;
+      padding: 22px;
+      border: 1px solid;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: transform 240ms ease;
+    }
+    .role:hover { transform: translateY(-3px); }
+    .role .who {
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .role .name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .role .tasks { display: flex; flex-direction: column; gap: 7px; }
+    .role .task {
+      font-size: .87rem;
+      line-height: 1.5;
+      padding: 8px 11px;
+      background: rgba(255,255,255,.04);
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.06);
+      color: #c8d0e8;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .role .task::before { content: '›'; opacity: .4; flex-shrink: 0; }
+
+    /* ─── Footer ─── */
+    .fn {
+      font-size: .8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+      margin-top: auto;
+    }
+
+    /* ─── Controls bar ─── */
+    .controls {
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 24px;
+      background: rgba(13,15,26,.8);
+      backdrop-filter: blur(10px);
+      z-index: 10;
+      position: relative;
+    }
+
+    .btn {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--surface2);
+      color: var(--muted);
+      font-size: .95rem;
+      cursor: pointer;
+      transition: all 160ms ease;
+      display: grid;
+      place-items: center;
+    }
+    .btn:hover {
+      border-color: rgba(79,142,247,.5);
+      color: var(--blue);
+      background: rgba(79,142,247,.08);
+    }
+
+    .pip-row { display: flex; gap: 6px; align-items: center; flex: 1; justify-content: center; }
+    .pip {
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.15);
+      border: none;
+      cursor: pointer;
+      transition: all 220ms cubic-bezier(.22,1,.36,1);
+      width: 6px;
+    }
+    .pip.on { background: var(--blue); width: 24px; }
+
+    .progress-wrap { display: flex; align-items: center; gap: 10px; }
+    .prog-bar-bg {
+      width: 120px; height: 4px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.1);
+      overflow: hidden;
+    }
+    .prog-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #4f8ef7, #818cf8);
+      border-radius: 999px;
+      transition: width 300ms ease;
+    }
+    .cnt { font-size: .8rem; color: var(--muted); min-width: 38px; text-align: right; }
+
+    /* ─── Entry animations ─── */
+    .slide .anim {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 440ms ease, transform 440ms ease;
+    }
+    .slide.active .anim { opacity: 1; transform: none; }
+    .slide.active .anim:nth-child(1) { transition-delay: 40ms; }
+    .slide.active .anim:nth-child(2) { transition-delay: 100ms; }
+    .slide.active .anim:nth-child(3) { transition-delay: 160ms; }
+    .slide.active .anim:nth-child(4) { transition-delay: 220ms; }
+    .slide.active .anim:nth-child(5) { transition-delay: 280ms; }
+    .slide.active .anim:nth-child(6) { transition-delay: 340ms; }
+    .slide.active .anim:nth-child(7) { transition-delay: 400ms; }
+
+    /* number line decorations */
+    .slide-num {
+      position: absolute;
+      right: 64px; bottom: 36px;
+      font-family: 'Syne', sans-serif;
+      font-size: 7rem;
+      font-weight: 800;
+      color: rgba(255,255,255,.03);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="shell">
+  <div class="viewport">
+    <div class="track" id="track">
+
+      <!-- ════════════════════ SLIDE 1 ════════════════════ -->
+      <div class="slide active" id="s0">
+        <div class="slide-num">01</div>
+
+        <div class="anim">
+          <span class="eyebrow" style="color:#818cf8;border-color:rgba(129,140,248,.3);background:rgba(129,140,248,.08);">
+            ✦ Weekly Research Update · May 2026
+          </span>
+        </div>
+
+        <div class="anim">
+          <h1>TMLR Rebuttal<br>&amp; Full-Scale Experiments</h1>
+        </div>
+
+        <div class="anim">
+          <p class="lead">Three reviews received, point-by-point rebuttal written with new experimental evidence. Now revising the paper while running large-model experiments in parallel.</p>
+        </div>
+
+        <div class="g4 anim">
+          <div class="card">
+            <span class="lbl">Presenting to</span>
+            <strong>Dr. Asif Ekbal</strong>
+          </div>
+          <div class="card">
+            <span class="lbl">Institute</span>
+            <strong>IIT Patna</strong>
+          </div>
+          <div class="card">
+            <span class="lbl">Paper Status</span>
+            <strong>Under Revision · TMLR</strong>
+          </div>
+          <div class="card">
+            <span class="lbl">Live Experiment</span>
+            <strong>Qwen 2.5 · 14B</strong>
+          </div>
+        </div>
+
+        <div class="chips anim">
+          <span class="chip" style="color:#4f8ef7;border-color:rgba(79,142,247,.35);background:rgba(79,142,247,.08);">3 Reviewers</span>
+          <span class="chip" style="color:#34d399;border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.08);">Rebuttal Submitted</span>
+          <span class="chip" style="color:#fbbf24;border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.08);">14B Runs In Progress</span>
+          <span class="chip" style="color:#a78bfa;border-color:rgba(167,139,250,.35);background:rgba(167,139,250,.08);">Paper Revision Ongoing</span>
+          <span class="chip" style="color:#f472b6;border-color:rgba(244,114,182,.35);background:rgba(244,114,182,.08);">OpenReview Platform</span>
+        </div>
+
+        <p class="fn anim">Use  ←  →  arrow keys or the dots below to navigate</p>
+      </div>
+
+      <!-- ════════════════════ SLIDE 2 ════════════════════ -->
+      <div class="slide" id="s1">
+        <div class="slide-num">02</div>
+
+        <div class="anim">
+          <span class="eyebrow" style="color:#4f8ef7;border-color:rgba(79,142,247,.3);background:rgba(79,142,247,.08);">
+            The Journey
+          </span>
+        </div>
+        <div class="anim"><h2 style="background:var(--blue-g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">How We Got Here</h2></div>
+
+        <div class="tl anim">
+          <div class="tl-item">
+            <div class="tl-dot-wrap">
+              <div class="tl-dot" style="background:rgba(79,142,247,.15);color:#4f8ef7;">1</div>
+            </div>
+            <div class="tl-body">
+              <strong>Paper submitted via OpenReview</strong> — A* search vs. CoT reasoning across 3 QA datasets (HotpotQA, StrategyQA, LogicQA). Core claim: branching complexity predicts which method wins.
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot-wrap">
+              <div class="tl-dot" style="background:rgba(251,191,36,.15);color:#fbbf24;">2</div>
+            </div>
+            <div class="tl-body">
+              <strong>3 reviews received</strong> — mix of borderline (2.5) and resubmit (1.5) scores. Concerns: model scale, compute cost, heuristic sensitivity, router limitations.
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot-wrap">
+              <div class="tl-dot" style="background:rgba(52,211,153,.15);color:#34d399;">3</div>
+            </div>
+            <div class="tl-body">
+              <strong>Rebuttal written</strong> — every weakness addressed with new experiments: BFS/Greedy/A* ablations, budget sweeps, token cost tables, topology analysis (26.1% oracle gap recovery).
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot-wrap">
+              <div class="tl-dot" style="background:rgba(167,139,250,.15);color:#a78bfa;">4</div>
+            </div>
+            <div class="tl-body">
+              <strong>Now</strong> — integrating rebuttal evidence into the revised paper. Running qwen2.5:14b full-dataset experiments (2290 + 2290 + 651 questions) across all 3 datasets.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════════════════════ SLIDE 3 · Reviewer 9TPm ════════════════════ -->
+      <div class="slide" id="s2">
+        <div class="slide-num">03</div>
+
+        <div class="anim">
+          <span class="eyebrow" style="color:#4f8ef7;border-color:rgba(79,142,247,.3);background:rgba(79,142,247,.08);">
+            Reviewer 1 · 9TPm
+          </span>
+        </div>
+
+        <div class="rv-header anim">
+          <h2 style="background:var(--blue-g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Borderline Accept</h2>
+          <span class="rv-score" style="color:#4f8ef7;border-color:rgba(79,142,247,.4);background:rgba(79,142,247,.1);">Overall 2.5</span>
+          <span class="rv-score" style="color:#34d399;border-color:rgba(52,211,153,.35);background:rgba(52,211,153,.08);">Soundness 3</span>
+          <span class="rv-score" style="color:#fbbf24;border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.08);">Confidence 4</span>
+        </div>
+
+        <div class="pairs anim">
+          <div class="pair">
+            <div class="concern-box">
+              <div class="box-hd"><span class="dot"></span>Concern</div>
+              Routing gap between oracle and actual router is large — is this a fundamental flaw in the work?
+            </div>
+            <div class="response-box">
+              <div class="box-hd"><span class="dot"></span>Our Response</div>
+              It's a <strong style="color:#a7f3d0">finding</strong>, not a flaw. We quantified the Fluency-Correctness Asymmetry: 38% of divergent cases had fluent-but-wrong CoT traces — a hard ceiling for any output-based router.
+            </div>
+          </div>
+          <div class="pair">
+            <div class="concern-box">
+              <div class="box-hd"><span class="dot"></span>Concern</div>
+              Heuristic may be dataset-specific and not generalise across domains.
+            </div>
+            <div class="response-box">
+              <div class="box-hd"><span class="dot"></span>Our Response</div>
+              Validated on 500 annotated states across all 3 datasets. Max overestimation ε = 0.14 was <strong style="color:#a7f3d0">consistent</strong> — not dataset-dependent.
+            </div>
+          </div>
+          <div class="pair">
+            <div class="concern-box">
+              <div class="box-hd"><span class="dot"></span>Concern</div>
+              No sensitivity analysis on search budget B or branching factor K.
+            </div>
+            <div class="response-box">
+              <div class="box-hd"><span class="dot"></span>Our Response</div>
+              Budget sweep B∈{5..30}: peaked at B=20 (+5.7pp over B=5). Branching sweep K∈{1..4}: K=4 hit 80.3%, even K=1 gave 77.7% — robust across all settings.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════════════════════ SLIDE 4 · Reviewer Gftu ════════════════════ -->
+      <div class="slide" id="s3">
+        <div class="slide-num">04</div>
+
+        <div class="anim">
+          <span class="eyebrow" style="color:#f87171;border-color:rgba(248,113,113,.3);background:rgba(248,113,113,.08);">
+            ⚡ Reviewer 2 · Gftu — Harshest
+          </span>
+        </div>
+
+        <div class="rv-header anim">
+          <h2 style="background:var(--red-g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Resubmit</h2>
+          <span class="rv-score" style="color:#f87171;border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.1);">Overall 1.5</span>
+          <span class="rv-score" style="color:#fbbf24;border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.08);">Soundness 2.5</span>
+          <span class="rv-score" style="color:#fbbf24;border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.08);">Confidence 4</span>
+        </div>
+
+        <div class="pairs anim">
+          <div class="pair">
+            <div class="concern-box">
+              <div class="box-hd"><span class="dot"></span>Concern</div>
+              Models too small (8B / 0.5B) — conclusions may not hold at scale.
+            </div>
+            <div class="response-box">
+              <div class="box-hd"><span class="dot"></span>Our Response</div>
+              Claim is structural, not absolute. LogicQA resists search at <strong style="color:#a7f3d0">both</strong> model sizes. HotpotQA gain 3.5× on smaller model confirms capability amplification — a scale-independent finding.
+            </div>
+          </div>
+          <div class="pair">
+            <div class="concern-box">
+              <div class="box-hd"><span class="dot"></span>Concern</div>
+              Router uses handcrafted features — not portable or scalable.
+            </div>
+            <div class="response-box">
+              <div class="box-hd"><span class="dot"></span>Our Response</div>
+              Topology router uses 13 pre-generation features, <strong style="color:#a7f3d0">zero LLM calls</strong>, and recovers 26.1% of oracle gap — beating DeepSeek-as-critic that reads full traces.
+            </div>
+          </div>
+          <div class="pair">
+            <div class="concern-box">
+              <div class="box-hd"><span class="dot"></span>Concern</div>
+              No compute / token cost analysis against simpler baselines.
+            </div>
+            <div class="response-box">
+              <div class="box-hd"><span class="dot"></span>Our Response</div>
+              A* K=1 (3,372 tok/q) already beats SC at 77.7% vs 78.2%. StrategyQA +10.3pp is <strong style="color:#a7f3d0">unreachable by CoT sampling alone</strong> — SC peaks at 71.2%, still 3.6pp below A*.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════════════════════ SLIDE 5 · Reviewer tgwN ════════════════════ -->
+      <div class="slide" id="s4">
+        <div class="slide-num">05</div>
+
+        <div class="anim">
+          <span class="eyebrow" style="color:#a78bfa;border-color:rgba(167,139,250,.3);background:rgba(167,139,250,.08);">
+            ✨ Reviewer 3 · tgwN
+          </span>
+        </div>
+
+        <div class="rv-header anim">
+          <h2 style="background:var(--purple-g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Borderline · High Excitement</h2>
+          <span class="rv-score" style="color:#a78bfa;border-color:rgba(167,139,250,.4);background:rgba(167,139,250,.1);">Overall 2.5</span>
+          <span class="rv-score" style="color:#f472b6;border-color:rgba(244,114,182,.4);background:rgba(244,114,182,.1);">Excitement 3.5 ✨</span>
+          <span class="rv-score" style="color:#fbbf24;border-color:rgba(251,191,36,.35);background:rgba(251,191,36,.08);">Confidence 3</span>
+        </div>
+
+        <div class="pairs anim">
+          <div class="pair">
+            <div class="concern-box">
+              <div class="box-hd"><span class="dot"></span>Concern</div>
+              LLM judge is DeepSeek — results may be entangled with that specific model.
+            </div>
+            <div class="response-box">
+              <div class="box-hd"><span class="dot"></span>Our Response</div>
+              BFS ablation (DeepSeek never consulted): 77.0%. Greedy: 77.7%. Full A*: 76.0%. All within <strong style="color:#a7f3d0">1.7pp</strong> — the judge is not load-bearing. Branching structure drives the gain.
+            </div>
+          </div>
+          <div class="pair">
+            <div class="concern-box">
+              <div class="box-hd"><span class="dot"></span>Concern</div>
+              Only one heuristic — performance may be heuristic-dependent.
+            </div>
+            <div class="response-box">
+              <div class="box-hd"><span class="dot"></span>Our Response</div>
+              Framework: h=0 → BFS; g=0 → Greedy; full → A*. Ablation shows all variants perform similarly — heuristic choice is <strong style="color:#a7f3d0">not the driver</strong>.
+            </div>
+          </div>
+          <div class="pair">
+            <div class="concern-box">
+              <div class="box-hd"><span class="dot"></span>Concern</div>
+              Only QA benchmarks — unclear if findings generalise to math or code.
+            </div>
+            <div class="response-box">
+              <div class="box-hd"><span class="dot"></span>Our Response</div>
+              13 topology features are text-level and domain-agnostic. Framework predicts search helps on multi-step math — <strong style="color:#a7f3d0">confirmed by rStar-Math 2025</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ════════════════════ SLIDE 6 ════════════════════ -->
+      <div class="slide" id="s5">
+        <div class="slide-num">06</div>
+
+        <div class="anim">
+          <span class="eyebrow" style="color:#34d399;border-color:rgba(52,211,153,.3);background:rgba(52,211,153,.08);">
+            This Week · Plan &amp; Scope
+          </span>
+        </div>
+        <div class="anim"><h2 style="background:var(--green-g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Who's Doing What</h2></div>
+
+        <div class="g2 anim" style="flex:1;min-height:0;">
+          <div class="role" style="background:rgba(79,142,247,.06);border-color:rgba(79,142,247,.25);">
+            <div class="who" style="color:#4f8ef7;">Paper Writing</div>
+            <div class="name" style="color:#7eb8ff;">Dibyanayan</div>
+            <div class="tasks">
+              <div class="task">Integrate rebuttal ablations and tables into TMLR revision.</div>
+              <div class="task">Add topology-routing and compute-efficiency sections.</div>
+              <div class="task">Update related-work with 5 new 2025 citations.</div>
+            </div>
+          </div>
+          <div class="role" style="background:rgba(167,139,250,.06);border-color:rgba(167,139,250,.25);">
+            <div class="who" style="color:#a78bfa;">Experiments</div>
+            <div class="name" style="color:#c4b5fd;">Tanzeel Khan</div>
+            <div class="tasks">
+              <div class="task">Complete CoT + A* full-dataset runs on qwen2.5:14b.</div>
+              <div class="task">Produce clean comparison tables (CoT vs A*, 14B scale).</div>
+              <div class="task">Prepare reasoning traces for topic modelling analysis.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="g4 anim">
+          <div class="stat">
+            <div class="val" style="background:var(--green-g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">3/3</div>
+            <div class="desc">Reviewers fully addressed</div>
+          </div>
+          <div class="stat">
+            <div class="val" style="background:var(--blue-g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">14B</div>
+            <div class="desc">Model running now (A100)</div>
+          </div>
+          <div class="stat">
+            <div class="val" style="background:var(--amber-g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Rev.</div>
+            <div class="desc">TMLR paper under revision</div>
+          </div>
+          <div class="stat">
+            <div class="val" style="background:var(--purple-g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Next</div>
+            <div class="desc">Topic modelling on traces</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /track -->
+  </div><!-- /viewport -->
+
+  <!-- ─── Controls ─── -->
+  <nav class="controls">
+    <button class="btn" id="first" title="First">⟪</button>
+    <button class="btn" id="prev">←</button>
+    <div class="pip-row" id="pips"></div>
+    <div class="progress-wrap">
+      <div class="prog-bar-bg"><div class="prog-bar-fill" id="bar"></div></div>
+      <div class="cnt" id="cnt">1 / 6</div>
+    </div>
+    <button class="btn" id="next">→</button>
+    <button class="btn" id="last" title="Last">⟫</button>
+  </nav>
+</div>
+
+<script>
+  const TOTAL = 6;
+  let idx = 0;
+  const track = document.getElementById('track');
+  const bar   = document.getElementById('bar');
+  const cnt   = document.getElementById('cnt');
+  const pipsEl = document.getElementById('pips');
+
+  const pips = Array.from({length: TOTAL}, (_, i) => {
+    const b = document.createElement('button');
+    b.className = 'pip';
+    b.setAttribute('aria-label', `Slide ${i+1}`);
+    b.addEventListener('click', () => go(i));
+    pipsEl.appendChild(b);
+    return b;
+  });
+
+  function go(n) {
+    const slides = document.querySelectorAll('.slide');
+    slides[idx].classList.remove('active');
+    idx = Math.max(0, Math.min(TOTAL - 1, n));
+    slides[idx].classList.add('active');
+    track.style.transform = `translateX(-${idx * 100}%)`;
+    bar.style.width = `${((idx + 1) / TOTAL) * 100}%`;
+    cnt.textContent = `${idx + 1} / ${TOTAL}`;
+    pips.forEach((p, i) => p.classList.toggle('on', i === idx));
+  }
+
+  document.getElementById('prev').onclick  = () => go(idx - 1);
+  document.getElementById('next').onclick  = () => go(idx + 1);
+  document.getElementById('first').onclick = () => go(0);
+  document.getElementById('last').onclick  = () => go(TOTAL - 1);
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight' || e.key === 'PageDown') go(idx + 1);
+    if (e.key === 'ArrowLeft'  || e.key === 'PageUp')   go(idx - 1);
+    if (e.key === 'Home') go(0);
+    if (e.key === 'End')  go(TOTAL - 1);
+  });
+
+  // Touch / swipe
+  let tx = 0;
+  track.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, {passive:true});
+  track.addEventListener('touchend',   e => {
+    const dx = tx - e.changedTouches[0].clientX;
+    if (Math.abs(dx) > 40) go(dx > 0 ? idx + 1 : idx - 1);
+  }, {passive:true});
+
+  go(0);
+</script>
+</body>
+</html>

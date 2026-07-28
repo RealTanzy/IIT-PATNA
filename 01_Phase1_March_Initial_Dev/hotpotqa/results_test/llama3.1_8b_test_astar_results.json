@@ -1,0 +1,11 @@
+[
+  {
+    "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "f1": 1.0,
+    "nodes": 3,
+    "q_type": "yesno"
+  }
+]

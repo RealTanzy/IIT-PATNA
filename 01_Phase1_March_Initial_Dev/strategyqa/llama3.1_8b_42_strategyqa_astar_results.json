@@ -1,0 +1,3502 @@
+[
+  {
+    "question": "Is Mixed martial arts totally original from Roman Colosseum games?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is the cuisine of Hawaii suitable for a vegan?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Is capturing giant squid in natural habitat impossible with no gear?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did the Royal Air Force fight in the Boxer Rebellion?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Would someone in Mumbai refer to Solanum melongena as an eggplant?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Do flying fish have good eyesight?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "If someone is a vegan, would they eat honey?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Can the Great Depression be treated with Prozac?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Does Santa Claus work during summer?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Has categories of Nobel prizes remained same since Alfred Nobel established them?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Does a Starbucks passion tea have ginger in it?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Would Kurt Cobain have benefited from Project Semicolon?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Could you buy Hershey's Kisses in red foil with farthings after 1960?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is electricity necessary to balance an account in Microsoft Excel?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Is a pound sterling valuable?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Can an African Elephant get pregnant twice in a year?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Would the host of The Colbert Report be likely to vote for Trump?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Does Coast to Coast AM have more longevity than the Rush Limbaugh show?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is the foot part of the metric system?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "In baseball, is a \"Homer\" named after the poet Homer who wrote the Odyssey?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Could Casio's first invention be worn around the ankle?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Did Richard III know his grandson?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Would a Fakir be surprised if they saw a comma in their religious book?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Is the name of a mythical creature also the name of a Small Solar System body?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can Kit & Kaboodle hypothetically help someone past the Underworld gates?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Was Walt Disney able to email his illustrations to people living far away?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is a felony jury enough people for a Bunco game?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Could Godzilla have been killed by the Tohoku earthquake?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Is Alan Alda old enough to have fought in the Vietnam War?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Does acupuncture cause pain in many people?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Is Newt Gingrich's nickname a type of Reptile?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can people die from brake failure?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is Europa linked to Viennese waltzes?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Would a Dolce & Gabbana suit wearer be shunned by their Amish cousins?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Could the members of The Police perform lawful arrests?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Will twenty pea pods contents cover entire chess board?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 11
+  },
+  {
+    "question": "Would it be hard to get toilet paper if there were no loggers?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did Linnaeus edit Darwin's draft of Origin of Species?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did Disney's second film rip off a prophet story?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Is Rurouni Kenshin from same country as lead character in Nobunaga's Ambition?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is the Gujarati script the same category of script as Kanji?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would a broadcast from Spirit make the news in 2020?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Was Saudi Aramco started due to an assassination?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Is the span in C-SPAN named after Alan Greenspan?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is \"A Tale of Two Cities\" a parody of the Bible?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Was disc jockey Jay Thomas enemies with Clayton Moore?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 9
+  },
+  {
+    "question": "Is the Flying Spaghetti Monster part of an ancient pantheon?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Are lengths measured in metres in the UK?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Would a Germaphobia be able to participate in Judo?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Could Eddie Hall hypothetically deadlift the world's largest cheeseburger?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Can preventive healthcare reduce STI transmission?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Do German Shepherds worry about the Abitur?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Could the Port of Baltimore handle the entire world's cargo production of ginger each year?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Was story of Jesus inspired by Egyptian myth?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Do people who smoke Djarum's like cloves?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can you swim to Miami from New York?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would a honey badger fit inside an oven?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Is The Joy of Painting TV show still producing new episodes?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Would it be typical for a Rede Globo anchor to say Konnichiwa to the viewers?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Would Topa Inca Yupanqui have encountered the western honey bee?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 9
+  },
+  {
+    "question": "Was Hillary Clinton's deputy chief of staff in 2009 baptised?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would the tunnels at CERN fit onto the High Speed 1 rails?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Does Capricorn astrology symbol have all of the parts of a chimera?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Are Big Ben's bells currently rung on their normal schedule at the Palace of Westminster?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Will a Euro sink in water?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Is a paraplegic suitable for conducting an orchestra?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Are cucumbers often found in desert?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Is a Halloween cruise in the Gulf of Mexico likely to be safe from storms?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Were veterans of the War in Vietnam (1945\u201346) given free education by the Soviet Union?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would Dave Chappelle pray over a Quran?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Can a lifeboat rescue people in the Hooke Sea?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Do carpenters understand geometry?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is the Liberty Bell still in its original location?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Are pirate lieutenants like navy lieutenants?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Is a krabby patty similar to a cheeseburger?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Would a greyhound be able to outrun a greyhound bus?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "If you were on a diet, would you have to skip lunch at McDonald's?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Would Republic of Korea Navy dominate Eritrea navy?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did the 40th president of the United States forward lolcats to his friends?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Could the Austrian casualties from Seven Years' War fit in Indianapolis Motor Speedway?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did Harry Houdini's wife make psychics look foolish?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Do more Cauliflower grow in Arizona than California?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did William Shaespeare read the Daily Mirror?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Does the cuisine of Hawaii embrace foods considered gross in the continental US?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is the voice of the Genie from Disney's Aladdin still alive?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Was Lord Voldemort taught by Professor Dumbledore?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Do black-tailed jackrabbits fear the European wildcat?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Would keelhauling be a fair punishment under the Eighth Amendment?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Could Christopher Walken enlist in the United States Marine Corps?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Was Christina Aguilera born in the forgotten borough?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Did Zorro carve his name into items regularly?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Has Nikola Tesla's name inspired multiple brands?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Does meat from cows fed only grass taste more like wild game?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would 2020 Toyota Supra lag behind at a Nascar rally?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would Dale Earnhardt Jr. be considered a newbie?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is MF Doom a Fantastic Four villain?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Is Brooklyn known for its bread products?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Is Glenn Beck known for his mild temper?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Can eating your weight in celery prevent diabetes?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Was only woman to serve as U.S. Speaker of the House alive during the attack on Pearl Harbor?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Could a white cockatoo have lived through the entire Thirty Years' War?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Do Shinto practitioners keep to a kosher diet?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Is Linus Torvalds' wife unable to physically defend herself?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Would it be difficult to host Stanley Cup Finals at Rock in Rio?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Do you find glutamic acid in a severed finger?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Did Christina Aguilera turn her chair around for Kelly Clarkson on The Voice?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Can professional boxers expect to have low dental bills?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did George Washington drive a Lexus?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Does the Dalai Lama believe in the divine barzakh?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can members of the Green Party of England and Wales vote in the USA?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is accountant a difficult profession for a person suffering from Dyscalculia?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Could Bart Simpson have owned comics with The Joker?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Do Republicans reject all forms of welfare?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is the QWERTY keyboard layout meant to be slow?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Could Sainsbury's buy Tesco?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Were deaths from Apollo 13 mission eclipsed by other space missions?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Are goats found on abyssal plains?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is honey associated with queens?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Was Amy Winehouse a fan of Star Wars: Rogue One?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can Roman numerals fill the normal number of Sudoku box options?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is the average bulk carrier ideal for transporting bromine at room temperature?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is Nine Inch Nails a good guest for students in earliest grade to take Iowa tests?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would a dog easily notice ammonia?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can children be soldiers in the US Army?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can Aerosmith fit in a 2020 Mitsubishi Outlander?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Does a Disney princess on Broadway have red hair?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Do Do It Yourself channels online always show realistic projects?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "4 Krispy Kreme glazed doughnuts exceed AHA  daily sugar allowance?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Do Flat Earthers doubt the existence of Earth's magnetic field?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Would the average Hawaiian male experience more days on Earth compared to a wild cane toad?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Are any of J.K. Rowling's books in the genre of And Then There Were None?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Would a Deacon be likely to be a fan of the podcast 'God Awful Movies'?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "If you have black hair and want red hair, do you need bleach?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is Eighth Amendment to the United States Constitution popular in court?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Is a pottery kiln inappropriate for use with glass blowing?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Could Little Women have been a book read by veterans of the civil war?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is it legal for a licensed child driving Mercedes-Benz to be employed in US?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Does Metallica use Soulseek?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Was The Great Gatsby inspired by the novel 1984?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is sound barrier too much for Audi R8 V-10 Plus to break?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would most school children in New York be wearing jackets on groundhog day?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is it normal to see a red panda in Shanghai outside of a zoo?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Does Mario use mushrooms to run faster?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Would the Titanic be well preserved at the bottom of the Gulf of Finland?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Would only warm weather attire be a good idea on Mercury?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Was Noah associated with a dove?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Did Paul the Apostle's cause of death violate the tenets of Ahimsa?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would Adam Sandler get a reference to Cole Spouse and a scuba man doll?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Was Dioskourides a lapidary?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Do children's bicycles often have extra wheels?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Will the small intenstine break down a cotton ball?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Could someone in a coma experience fear?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Can any person with a driver's license work in transport of aviation fuel?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Did Isaac's father almost commit similar crime as Marvin Gay Sr.?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Was the original Metroid groundbreaking for its polygons?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did Rand Paul frequently swim in Lake Michigan during his undergraduate years?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Are Doctors of Homeopathy more likely than Doctors of Internal Medicine to recommend Quartz as a treatment?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did Clark Gable marry more women once than Richard Burton?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Was Anthony Quinn more prolific at making children than J.D. Salinger?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Does Carmen Electra own a junk?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Is week old chlorine water safe to drink?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Does the name C-SPAN refer to a form of telecommunications that utilizes outer space?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Is Cape Town south of the Equator?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is it hard for Rahul Dravid to order food at a restaurant in Aurangabad?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Was Great Recession the period of severest unemployment?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Do people watching Coen brothers films in Guinea Bissau need subtitles?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Is Disney associated with Los Angeles County?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can someone with dermatitis be a hand model?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would a student in eleventh grade be unable to run for president of the United States?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Is a paleo dieter unlikely to color beverages green for St. Patrick's Day?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did brother of Goofy creator's employer commit an excommunicable offense?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Does Pikachu like Charles Darwin?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Do mollymawks live where albatrosses cannot?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Would a crocodile survive longer in Great Salt Lake than alligator?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is a railroad engineer needed during NASCAR events?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would it be possible to fit a football field in Alcatraz Island?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Are banana trees used by judges for maintaining order?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Would a student of the class of 2017 have amnesia about 9/11?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Is it comfortable to wear sandals outside Esperanza Base?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Could the Pope be on an episode of Pimp My Ride?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Would a baby gray whale fit in a tractor-trailer?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is an astronomer interested in drosophila?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is Christianity better for global warming than Satanism?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 14
+  },
+  {
+    "question": "Would food made with black salt smell of sulfur?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Did Subway have a sex offender as a spokesperson?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Can Poland Spring make money in the Sahara?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 12
+  },
+  {
+    "question": "Should cactus soil always be damp?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Does the actress who played Elizabeth II speak fluent Arabic?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Are any letters directly before and after H missing from Roman numerals?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 1
+  },
+  {
+    "question": "Did the Social Democratic Party of Germany help Frederick II become King of Prussia?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Do the Ubuntu people speak Ubuntu?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Can you substitute the pins in a bowling alley lane with Dustin Hoffman's Oscars?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is there a Yeti associated with Disney theme parks?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Did Christopher Columbus go to Antarctica? ",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would a Durian be dangerous if it fell on your head?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Do Jehovah's Witnesses celebrate day before New Year's Day?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Would the yearly precipitation on Snowdon submerge an upright bowling pin?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Could the main character of \"Alice's Adventures in Wonderland\" join a Masonic Lodge?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Can a carrot receive an organ transplant?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Did Disney get most of Rudyard Kipling's The Jungle Book profits?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Is Snow White an example of good consent?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did Irish mythology inspire Washington Irving?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Did Osama bin Laden likely abstain from alcohol?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Did Emma Stone pursue a higher education?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did any cultures associate celery with death?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Can a dolphin keep a diary?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Could a nymph tick pass through a standard hole punch?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Does The Hague border multiple bodies of water?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Was Bruce Lee absent from the 1964 University of Washington graduation ceremony?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Should a Celiac sufferer avoid spaghetti?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Does American Independence Day occur during autumn?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Did any Golden Globe winners attend John Kerry's alma mater?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would Janet Jackson avoid a dish with ham?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Could Cosmic Girls play League of Legends alone?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Do Leafhoppers compete with Log Cabin syrup producers for resources?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Would it be unusual to see frost in September in Texas?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is it expected that Charla Nash would be anxious near a gorilla?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is nickel a better payout than mercury if given a dollar per atomic number?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Is it safe to eat kidney?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "In star rating systems, is 5 stars considered good?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 9
+  },
+  {
+    "question": "Would Emma Roberts's Nancy Drew be considered a private investigator?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Can a chess board be converted to a Shogi board?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Did Donald Trump come up with the idea for the New York Harbor?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did Jack Dempsey ever witness Conor McGregor's fights?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Can a minor replicate the double-slit experiment?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Would Hodor hypothetically be a good math mathematician?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would Methuselah hypothetically hold a record in the Common Era?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did King of Portuguese people in 1515 have familial ties to the Tudors?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Did number of Imams Reza Shah believed in exceed number of Jesus's disciples?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Would a sofer be a bad job for a vegan?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Were French people involved in the American Civil War?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Has spinach been a source of power in a comic movie?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Do suburbs encourage the use of cars?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would Marvel's Gateway be envious of the Doctor (Doctor Who)'s TARDIS machine?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Can a human heart last from NYC to Raleigh NC by Toyota Hiux?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Does a kangaroo incubate its offspring?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Do gorillas fight with panda bears?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Could Katharine Hepburn have ridden the AirTrain JFK?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can Iowa be hidden in the English Channel?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Did Larry King sign the Magna Carta?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Would Woodrow Wilson support Plessy v. Ferguson decision?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is Jesse W. Moore a potential recipient of a Snoopy-themed award from NASA?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Would a compass attuned to Earth's magnetic field be a bad gift for a Christmas elf??",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Does Canada have a relationship with a monarch?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did Thomas Greenhill's parents violate the concept of monogamy?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is Garfield known for hating italian cuisine?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would Saddam Hussein hypothetically choose Saladin as ally over Idris I?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Do you have to pass through circle of lust to find Saladin in Dante's Inferno?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is hanging a viable execution method on a ship at sea?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 9
+  },
+  {
+    "question": "Is the Muslim world hostile to Israel?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Is Canon Inc. a Kabushiki gaisha?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Does a dentist treat Bluetooth problems?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is Mozambique Drill an easy shot for United States Army Ranger?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 9
+  },
+  {
+    "question": "Are the names of The Powerpuff Girls alliterative? ",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is Antarctica a good location for Groundhog Day?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Are amoebas safe from breast cancer?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Was there fear leading up to the year 2000?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Does the New York Public Library sell Alpo products?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is November a bad time for a photographer to take pictures of a plum tree in bloom?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did Saint Augustine use the Julian calendar?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would the current president of Ohio University hypothetically wear a jockstrap?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Can soup be eaten with the hands?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can DRL Racer X drone get across Brooklyn Bridge in 18 seconds?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would Ibn Saud tolerate salsa music?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Could Javier Sotomayor jump over the head of the average giraffe?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Could a hundred thousand lolcats fit on a first generation iPhone?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Can Clouded leopards chase down many Pronghorn antelopes?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Would a honey badger's dentures be different from a wolverine's?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is greed the most prevalent of the Seven Deadly Sins?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Is Hermione Granger eligible for the Order of the British Empire?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "In the world of Harry Potter, would a snake and skull tattoo be good luck?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did the crew of Apollo 15 take pictures of Mount Sharp?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can 1980 United States presidential election result be considered a photo finish?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Were the Spice Girls inspired by Little Mix?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can Paprika be made without a dehydrator?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did occupants of Vellore Fort need to defend themselves from Grizzly Bears?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Could Sugar Ray Robinson box if he stole in Iran?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Would the chef at Carmine's restaurant panic if there was no basil?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Was the man who played the male lead in Mrs. Doubtfire known for his humour?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "If you have a serious injury in Bangladesh, would you probably dial a Fibonacci number?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would Library of Alexandria need less shelf space than Library of Congress?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Have Jamie Lee Curtis been the subject of fake news?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Are Chipotle Cinnamon Pork Chops appropriate for a Seder?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Could a bee hummingbird balance a scale with a single pea on it?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Does the book Revolutionary Road give a glimpse at life in a suburb?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Is Rick and Morty considered an anime?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is snoring a sign of good breathing while sleeping?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "If you're running focal fossa, are you using linux?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Are queen bees unnecessary for growing apples?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Does conservatism repulse Blaire White?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 12
+  },
+  {
+    "question": "Was the AK-47 used in the Seven Years' War?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would the owners of the company Peter Griffin works for need barley?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Could Amazon afford The Mona Lisa?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can you buy Casio products at Petco?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would four shoes be insufficient for a set of octuplets?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Was 847 Pope Leo same iteration of his name as Ivan the Terrible?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Was Moon Jae-in born outside of Khanbaliq?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Would Eye surgery on a fly be in vain?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Would Dante have hypothetically placed Nostradamus in 3rd Circle of Hell?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Could George Washington's own speeches have been recorded live to a compact disc?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Are common carp sensitive to their environments?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Did Robert Downey Jr. possess same caliber gun as Resident Evil's Barry Burton?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Can I ski in Steamboat Springs, Colorado in August?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Can a rabbi save the soul of a Christian?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Could the first European visitor to Guam been friends with Queen Victoria?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Does an organ donor need to be dead to donate a kidney?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did the Berlin Wall prevent any athletes from competing in the 1936 Summer Olympics?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Does Ronda Rousey avoid BBQ restaraunts?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 10
+  },
+  {
+    "question": "Does the word swastika have meaning in sanskrit?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Could Maroon 5 have hypothetically held a concert at Roman Colosseum?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did pirates who had scurvy need more Vitamin C?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Are twins always born during the same year?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Can a false pope become a saint?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Is sternum connected to any of the bones mentioned in James Weldon Johnson's Dem Bones?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Can a blind person tell time by Big Ben?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Was Walt Disney ever interviewed by Anderson Cooper?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Are there enough Jonny Cash records in the world to give one to each French citizen?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 11
+  },
+  {
+    "question": "Can a ten-pin bowling pin be a deadly weapon?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Was the British car, the Mini, the first car manufactured?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would 2019 Natalie Portman avoid a Snickers bar due to her diet?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Does Disney have an ice princess?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would kaffir lime be good in a White Russian?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 10
+  },
+  {
+    "question": "Did Gauss have a normal brain structure?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Paleography hypothetically helps to understand Cthulhu?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Could Toyota stadium house people suffering homelessness in Michigan?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Could the Powerpuff Girls hypothetically attend the Camden Military Academy?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Is latitude required to determine the coordinates of an area?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Do all shooting sports involve bullets?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is a Cassowary safer pet than a crane?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Does the country that received the most gold medals during the 1976 Olympics still exist?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Does Long John Silver's serve sea otter?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Does Carl Linnaeus share the same final resting place as Michael Jackson?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would Iris (mythology) and Hermes hypothetically struggle at a UPS job?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Would the United States Military Academy reject an applicant with multiple sclerosis?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "If a baby was born on Halloween would they be a Scorpio?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can the Persian Gulf fit in New Jersey?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would a Drow tower over The Hobbit's hero?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is surfing popular in Des Moines, Iowa?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Can you taste Law & Order?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Was the death of Heath Ledger caused by his work on The Dark Knight?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Did the original lead guitarist of Metallica fail after parting from the band?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Does Rahul Dravid belong to the family Gryllidae?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Is it possible for biologist Rachel Carson to have flown to the moon?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Would an ancient visitor to Persia probably consume crocus threads?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can the Dalai Lama fit in a car?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Does US brand Nice depend on Western honey bee?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can a wheelbarrow full of starch kill hyperglycemics?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Is a person with St. Vitus's Dance likely to win a ballet competition?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Do Shivambu practitioners believe ammonia is unhealthy?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 9
+  },
+  {
+    "question": "Was The Little Prince's titular character allergic to flowers?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Did Beethoven enjoy listening to EDM?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Does Home Depot sell item in late September zodiac sign symbol?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Is immersion in virtual reality testable on cnidarians before humans?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 9
+  },
+  {
+    "question": "Are moose used for work near the kingdom of Arendelle?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Is the tree species that the name Leipzig refers to an evergeen tree?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Was the Peak of the Andes hidden from the view of the Colossus of Rhodes?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would Nancy Pelosi have hypothetically been on same side as Gerald Ford?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Did Metallica band members cutting their hair hurt their sales?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would Franz Ferdinand have survived with armadillo armor?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Do frogs feel disgust?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Did Bill Nye vote for Franklin Delano Roosevelt?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Was Florence Nightingale's death more painful than Saint Peter's?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Could Hurricane Harvey catch a Peregrine falcon?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Was the Donatello crucifix identified in 2020 life size?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is it possible that June got its name from mythology?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Did the Democratic Party's nominee for President of the U.S. in 1908 watch TV?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Would Alexander Graham Bell hypothetically support Nazi eugenics?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 10
+  },
+  {
+    "question": "Does Snoop Dogg advocate a straight edge lifestyle?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would a kindergarten teacher make a lesson of the New Testament?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 11
+  },
+  {
+    "question": "Did Holy Land belong to Adamu's tribe?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Should spaghetti be slick when cooked?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Does Felix Potvin have a position on a dodgeball team?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Could the Atlantic readers fill 500 battalions?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 10
+  },
+  {
+    "question": "Is the Royal Air Force ensign on the moon?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Could all of the 2008 Summer Olympics women find a hookup athlete partner?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Would New Year's Eve hypothetically be Bacchus's favorite holiday?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Are quadrupeds represented on Chinese calendar?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can Larry King's ex-wives form a water polo team?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Does Super Mario protagonist hypothetically not need continuing education classes in Illinois?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Could Aretha Franklin vote for a president when her second child was born?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can a minotaur hypothetically injure a tibia playing football?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Has the Holy Grail been featured in at least five films?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Does table tennis use prime numbers?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Are months based on the solar cycle?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Have jokes killed more people than rats in history?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Has Cesar Millan ever tamed a short-eared dog?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Has Billy Joel sold out Astana Arena?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Would a moose hypothetically be too much for a minotaur to devour whole?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Is starving Hamas agent eating pig bad?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 12
+  },
+  {
+    "question": "Could an ocelot outrun a kindergartner? ",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Is the Foreign and Commonwealth Office a European political agency?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Would vegans consider chickpeas for a tuna substitute?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Did Kim Il-sung network on LinkedIn?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did Barack Obama participate in the Reformation?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Does Neville Longbottom have more courage as a child than as an adult?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Is Bern located east of Paris?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can Stone Cold Steve Austin apply his finisher to a mule deer?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Are leaves from coca good for gaining weight?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Are fresh garlic cloves as easy to eat as roasted garlic cloves?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did Holy Saturday 2019 have special significance to pot smokers?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Can French Toast hypothetically kill a Lannister?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 13
+  },
+  {
+    "question": "Can Billie Eilish afford a Porsche?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Will Queen Elizabeth be buried in the Pantheon?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Could B be mistaken for an Arabic numeral?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "If he were poor, would Christopher Reeve have lived?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Was the sable depicted in Marvel comics anthropomorphic?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Is an ammonia fighting cleaner good for pet owners?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Can Spartina Patens thrive in the Sahara Desert?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Was Surfing popular when pogs came out?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Can an adult male stand on top Donatello's bronze David and touch the Sistine Chapel ceiling?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Can vitamin C rich fruits be bad for health?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Could Rhode Island sink into the Bohai Sea?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Would Phineas and Ferb enjoy winter?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Is breakdancing safe for people with tendonitis?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Does walking across Amazonas put a person's life at risk?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Could Charlie Bucket be a hotel manager?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Is it safe to wear sandals in snow?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Did either Kublai Khan or his grandfather practice monogamy?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Was song of Roland protagonist friendly with group that had sagas?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would Arnold Schwarzenegger be unable to run for President of the US?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can oysters be preserved without refrigeration? ",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Do people celebrate Earth Day with a ceremonial tire fire?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Is Dustin Hoffman one of the B'nei Yisrael?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "While viewing \"Scary Movie\" is the viewer likely to experience an increase in adrenaline?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Do ants outperform apes on language ability?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can you see Stonehenge from a window in Dusseldorf?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Did anyone in the 1912 election take a majority of the popular vote?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "Is there a popular Broadway character who is a missionary?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Could the Eiffel Tower be completely submerged at the Arctic Ocean's deepest point?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Can Amtrak's Acela Express break the sound barrier?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Did mercenaries fight for England in the Glorious Revolution?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would Achilles dominate Legolas in a hypothetical fight?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Will Donald Duck hypothetically purchase bell-bottoms for himself?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Is Bugs Bunny known for carrying a root vegetable around with him?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would someone in CHE101 require a Maya Angelou book?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Were all the materials to make a cannon known during the bronze age?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Can the Palace of Westminster tell time in the dark?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Can a Muslim eat a McRib sandwich?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Will electric car struggle to finish Daytona 500?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Does Orange County, California require airplanes to be quiet?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Will bumblebees derail the United States presidential election?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did Maroon 5 go on tour with Nirvana?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Could eating Chinook salmon help Ryan Reynolds?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is Shakespeare famous because of the infinitive form?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Did Cleopatra have ethnicity closer to Egyptians than Greeks?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did Elizabeth II frequently visit Queen Victoria?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is J.D. Salinger's most successful work influential to killers?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Did Marco Polo travel with Christopher Columbus?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Do tourists prefer Tuvalu to Niue?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Could you watch all of JAG in six months?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 8
+  },
+  {
+    "question": "is the brain located in the torso?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Is the Jurassic era a tourist destination?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Was Noah concerned with buoyancy?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would a Rockette look odd with a moustache? ",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can your psychologist say hello to you while you are out at the supermarket?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Could someone mistake the smell of your brussels sprouts for a fart?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Would a kaffir lime be a good ingredient for making a candle?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 5
+  },
+  {
+    "question": "Do movies always show nerds as the losers?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "In Hey Arnold, did any characters stay on a porch all the time?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Can a woman on average have a baby before wheat seed blooms?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Will NY Stock Exchange closing bell be heard in Universal Music Group's headquarters?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Could the Great Wall of China connect the Dodgers to the White Sox?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Does Hanuman have some of the same duties as Athena?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Are rainbows devoid of color made by mixing yin and yang colors?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2
+  },
+  {
+    "question": "Is the language used in Saint Vincent and the Grenadines rooted in English?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Can depression be mistaken for laziness?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Would Donald Duck be allowed into most grocery stores?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Does Zelda Williams have any cousins on her father's side?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 8
+  },
+  {
+    "question": "Are all twins the same gender?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Is Hanuman associated with a Norse god?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Were the first missionaries required to attend mass on Sundays?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Would a vegan eat a traditional Paella dish?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Is the current Chief Justice of the United States forbidden from buying alcohol?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Would the number 666 appear in a church?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7
+  },
+  {
+    "question": "Is winter associated with hot temperatures?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Was Edward II crucial to England's victory at Battle of Falkirk?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Was Mesopotamia part of what is now China?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Do American wheelchair users know what the ADA is?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is letter C crucial to spelling the two most common words in English language?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is capsaicin associated with cooking?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Would a spider wasp be more effective than a bullet ant to stop a criminal?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Does Robert Downey Jr's Marvel Cinematic Universe character survive the Infinity War?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "Is Black Lives Matter connected with capsaicin?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 4
+  },
+  {
+    "question": "Would Seroquel be the first treatment recommended by a doctor to someone with depression?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Are flag of Gabon colors found in rainbow?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Would Emmanuel Macron celebrate Cinco de Mayo?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Would Jean Harris's victim have avoided lentils?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did Christopher Columbus break the fifth commandment in Christianity?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 6
+  },
+  {
+    "question": "During the time immediately after 9/11, was don't ask don't tell still in place?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Was Lorenzo de Medici's patronage of Da Vinci exclusive?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5
+  },
+  {
+    "question": "Was a woman Prime Minister directly before or after Stanley Baldwin?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 10
+  },
+  {
+    "question": "Was Martin Luther same sect as Martin Luther King Jr.?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Was being a mail carrier considered one of the most dangerous jobs?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Were Jackson Pollock's parents not required to say The Pledge of Allegiance as children?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Did Charlemagne have a bar mitzvah?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4
+  },
+  {
+    "question": "Did Brazilian jiu-jitsu Gracie founders have at least a baker's dozen of kids between them?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7
+  },
+  {
+    "question": "Can the Communist Party of the Soviet Union get a perfect all kill?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2
+  },
+  {
+    "question": "Is Y2K relevant to the plot of The Godfather?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Would a hypothetical Yeti be towered over by Andre the Giant?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6
+  },
+  {
+    "question": "Will Lhamo Thondup be considered by Catholic Church to be a saint?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6
+  }
+]

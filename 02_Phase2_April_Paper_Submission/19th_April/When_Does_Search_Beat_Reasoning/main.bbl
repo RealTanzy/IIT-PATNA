@@ -1,0 +1,163 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Besta et~al.(2024)Besta, Blach, Kubicek, Gerstenberger, Podstawski,
+  Gianinazzi, Gajda, Lehmann, Niewadomski, Nyczyk, et~al.]{besta2024graph}
+Maciej Besta, Nils Blach, Ales Kubicek, Robert Gerstenberger, Michal
+  Podstawski, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, Hubert
+  Niewadomski, Piotr Nyczyk, et~al.
+\newblock Graph of thoughts: Solving elaborate problems with large language
+  models.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, 2024.
+
+\bibitem[Geva et~al.(2021)Geva, Khashabi, Segal, Khot, Roth, and
+  Berant]{geva2021did}
+Mor Geva, Daniel Khashabi, Elad Segal, Tushar Khot, Dan Roth, and Jonathan
+  Berant.
+\newblock Did {A}ristotle use a laptop? {A} question answering benchmark with
+  implicit reasoning strategies.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  9:\penalty0 346--361, 2021.
+
+\bibitem[Guan et~al.(2025)Guan, Zhang, Liu, Shang, Sun, Zhu, Yang, and
+  Yang]{guan2025rstar}
+Xinyu Guan, Li~Lyna Zhang, Yifei Liu, Ning Shang, Youran Sun, Yi~Zhu, Fan Yang,
+  and Mao Yang.
+\newblock r{S}tar-{M}ath: Small {LLM}s can master math reasoning with
+  self-evolved deep thinking.
+\newblock \emph{arXiv preprint arXiv:2501.04519}, 2025.
+
+\bibitem[Hao et~al.(2023)Hao, Gu, Ma, Hong, Wang, Wang, and
+  Hu]{hao2023reasoning}
+Shibo Hao, Yi~Gu, Haodi Ma, Joshua Hong, Zhen Wang, Daisy Wang, and Zhiting Hu.
+\newblock Reasoning with language model is planning with world model.
+\newblock In \emph{Proceedings of the 2023 Conference on Empirical Methods in
+  Natural Language Processing}, 2023.
+
+\bibitem[Hao et~al.(2024)Hao, Suber, and Hu]{hao2024training}
+Shibo Hao, Sainbayar Suber, and Zhiting Hu.
+\newblock Training large language models to reason in a continuous latent
+  space.
+\newblock \emph{arXiv preprint arXiv:2412.06769}, 2024.
+
+\bibitem[Hart et~al.(1968)Hart, Nilsson, and Raphael]{hart1968formal}
+Peter~E Hart, Nils~J Nilsson, and Bertram Raphael.
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock \emph{IEEE Transactions on Systems Science and Cybernetics},
+  4\penalty0 (2):\penalty0 100--107, 1968.
+
+\bibitem[Lightman et~al.(2023)Lightman, Kosaraju, Burda, Edwards, Baker, Lee,
+  Leike, Schulman, Sutskever, and Cobbe]{lightman2023lets}
+Hunter Lightman, Vineet Kosaraju, Yura Burda, Harri Edwards, Bowen Baker, Teddy
+  Lee, Jan Leike, John Schulman, Ilya Sutskever, and Karl Cobbe.
+\newblock Let's verify step by step.
+\newblock \emph{arXiv preprint arXiv:2305.20050}, 2023.
+
+\bibitem[Liu et~al.(2020)Liu, Cui, Liu, Huang, Wang, and Zhang]{liu2020logiqa}
+Jian Liu, Leyang Cui, Hanmeng Liu, Dandan Huang, Yile Wang, and Yue Zhang.
+\newblock Logiqa: A challenge dataset for machine reading comprehension with
+  logical reasoning.
+\newblock In \emph{Proceedings of the Twenty-Ninth International Joint
+  Conference on Artificial Intelligence}, 2020.
+
+\bibitem[Ma et~al.(2025)Ma, Wan, Yu, Fang, and Wang]{ma2025cotvalve}
+Xinyin Ma, Guangnian Wan, Runpeng Yu, Gongfan Fang, and Xinchao Wang.
+\newblock {CoT}-{V}alve: Length-compressible chain-of-thought tuning.
+\newblock \emph{arXiv preprint arXiv:2502.09601}, 2025.
+
+\bibitem[Meincke et~al.(2025)]{meincke2025decreasing}
+Lennart Meincke et~al.
+\newblock The decreasing value of chain-of-thought prompting.
+\newblock \emph{SSRN Working Paper}, 2025.
+
+\bibitem[Shazeer et~al.(2017)Shazeer, Mirhoseini, Maziarz, Davis, Le, Hinton,
+  and Dean]{shazeer2017outrageously}
+Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, Andy Davis, Quoc Le,
+  Geoffrey Hinton, and Jeff Dean.
+\newblock Outrageously large neural networks: The sparsely-gated
+  mixture-of-experts layer.
+\newblock \emph{arXiv preprint arXiv:1701.06538}, 2017.
+
+\bibitem[Wang and Zhou(2024)]{wang2024chain}
+Xuezhi Wang and Denny Zhou.
+\newblock Chain-of-thought reasoning without prompting.
+\newblock \emph{arXiv preprint arXiv:2402.10200}, 2024.
+
+\bibitem[Wang et~al.(2023)Wang, Wei, Schuurmans, Le, Chi, Narang, Chowdhery,
+  and Zhou]{wang2023self}
+Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc~V Le, Ed~H Chi, Sharan Narang,
+  Aakanksha Chowdhery, and Denny Zhou.
+\newblock Self-consistency improves chain of thought reasoning in language
+  models.
+\newblock In \emph{International Conference on Learning Representations}, 2023.
+
+\bibitem[Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Xia, Chi, Le, Zhou,
+  et~al.]{wei2022chain}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Fei Xia, Ed~Chi, Quoc~V
+  Le, Denny Zhou, et~al.
+\newblock Chain-of-thought prompting elicits reasoning in large language
+  models.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2022.
+
+\bibitem[Xie et~al.(2024)Xie, Kawaguchi, Zhao, Xu, Kan, He, and
+  Xie]{xie2024self}
+Yuxi Xie, Kenji Kawaguchi, Yiran Zhao, James Xu, Min-Yen Kan, Junxian He, and
+  Michael Xie.
+\newblock Self-evaluation guided beam search for reasoning.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2024.
+
+\bibitem[Yang et~al.(2018)Yang, Qi, Zhang, Bengio, Cohen, Salakhutdinov, and
+  Manning]{yang2018hotpotqa}
+Zhiping Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan
+  Salakhutdinov, and Christopher~D Manning.
+\newblock {HotpotQA}: A dataset for diverse, explainable multi-hop question
+  answering.
+\newblock In \emph{Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing}, 2018.
+
+\bibitem[Yao et~al.(2024)Yao, Yu, Zhao, Shafran, Griffiths, Cao, and
+  Narasimhan]{yao2024tree}
+Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, Thomas~L Griffiths, Yuan Cao,
+  and Karthik Narasimhan.
+\newblock Tree of thoughts: Deliberate problem solving with large language
+  models.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2024.
+
+\bibitem[Zhang et~al.(2025{\natexlab{a}})]{zhang2025streamlined}
+Ante Zhang et~al.
+\newblock Don't get lost in the trees: Streamlining {LLM} reasoning with
+  streamlined tree search.
+\newblock \emph{arXiv preprint arXiv:2501.11485}, 2025{\natexlab{a}}.
+
+\bibitem[Zhang et~al.(2024)Zhang, Huang, Zhou, Li, and
+  Ouyang]{zhang2024accessing}
+Di~Zhang, Xiaoshui Huang, Dongzhan Zhou, Yuqiang Li, and Wanli Ouyang.
+\newblock Accessing {GPT}-4 level mathematical {O}lympiad solutions via {M}onte
+  {C}arlo tree self-refine with {LL}a{M}a-3 8{B}.
+\newblock \emph{arXiv preprint arXiv:2406.07394}, 2024.
+
+\bibitem[Zhang et~al.(2025{\natexlab{b}})]{zhang2025survey}
+Lei Zhang et~al.
+\newblock A survey on the overthinking problem of large reasoning models.
+\newblock \emph{arXiv preprint arXiv:2502.08235}, 2025{\natexlab{b}}.
+
+\bibitem[Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li,
+  Li, Xing, et~al.]{zheng2023judging}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao
+  Zhuang, Zi~Lin, Zhuohan Li, Dacheng Li, Eric Xing, et~al.
+\newblock Judging {LLM}-as-a-judge with {MT}-{B}ench and chatbot arena.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2023.
+
+\bibitem[Zhou et~al.(2024)Zhou, Yan, Shlapentokh-Rothman, Wang, and
+  Wang]{zhou2024language}
+Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, and Yu-Xiong Wang.
+\newblock Language agent tree search unifies reasoning acting and planning in
+  language models.
+\newblock In \emph{International Conference on Machine Learning}, 2024.
+
+\end{thebibliography}

@@ -1,0 +1,218 @@
+[
+  {
+    "question": "Is Mixed martial arts totally original from Roman Colosseum games?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is the cuisine of Hawaii suitable for a vegan?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is capturing giant squid in natural habitat impossible with no gear?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Did the Royal Air Force fight in the Boxer Rebellion?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would someone in Mumbai refer to Solanum melongena as an eggplant?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Do flying fish have good eyesight?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "If someone is a vegan, would they eat honey?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Can the Great Depression be treated with Prozac?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Does Santa Claus work during summer?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Has categories of Nobel prizes remained same since Alfred Nobel established them?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Does a Starbucks passion tea have ginger in it?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would Kurt Cobain have benefited from Project Semicolon?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 1,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  }
+]

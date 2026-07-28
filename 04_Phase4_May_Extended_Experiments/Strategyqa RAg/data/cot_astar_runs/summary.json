@@ -1,0 +1,16 @@
+{
+  "astar_file": "/home/dibyanayan/tanzeel/FINAL_ASTAR/qwen_results/qwen0.5b_strategyqa_astar_results.json",
+  "cot_file": "/home/dibyanayan/tanzeel/COT Reasoning qwen/qwen_results/qwen0.5b_strategyqa_cot_results.json",
+  "total_astar": 500,
+  "total_cot": 500,
+  "total_overlap": 110,
+  "bucket_counts": {
+    "both_correct": 37,
+    "astar_only": 28,
+    "both_wrong": 20,
+    "cot_only": 25
+  },
+  "train_count": 88,
+  "dev_count": 22,
+  "output_jsonl": "/home/dibyanayan/tanzeel/Strategyqa RAg/data/cot_astar_runs/strategyqa_paired_all.jsonl"
+}

@@ -1,0 +1,3514 @@
+{
+  "router": "llm_judge",
+  "dataset": "codecontests",
+  "model": "llama-3.1-8b",
+  "results": [
+    {
+      "task_id": "CC/0",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/1",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/2",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/3",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/4",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/5",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/6",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/7",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/8",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/9",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/10",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/11",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/12",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/13",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/14",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/15",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/16",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/17",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/18",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/19",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/20",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/21",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/22",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/23",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/24",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/25",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/26",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/27",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/28",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/29",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/30",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/31",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/32",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/33",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/34",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/35",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/36",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/37",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/38",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/39",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/40",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/41",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/42",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/43",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/44",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/45",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/46",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/47",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/48",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/49",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/50",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/51",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/52",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/53",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/54",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/55",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/56",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/57",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/58",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/59",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/60",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/61",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/62",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/63",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/64",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/65",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/66",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/67",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/68",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/69",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/70",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/71",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/72",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/73",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/74",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/75",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/76",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/77",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/78",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/79",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/80",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/81",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/82",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/83",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/84",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/85",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/86",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/87",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/88",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/89",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/90",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/91",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/92",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/93",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/94",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/95",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/96",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/97",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/98",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/99",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/100",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/101",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/102",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/103",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/104",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/105",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/106",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/107",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/108",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/109",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/110",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/111",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/112",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/113",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/114",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/115",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/116",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/117",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/118",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/119",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/120",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/121",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/122",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/123",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/124",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/125",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/126",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/127",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/128",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/129",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/130",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/131",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/132",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/133",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/134",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/135",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/136",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/137",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/138",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/139",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/140",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/141",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/142",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/143",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/144",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/145",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/146",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/147",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/148",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/149",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/150",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/151",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/152",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/153",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/154",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/155",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/156",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/157",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/158",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/159",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/160",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/161",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/162",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/163",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/164",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/165",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/166",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/167",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/168",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/169",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/170",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/171",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/172",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/173",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/174",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/175",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/176",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/177",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/178",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/179",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/180",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/181",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/182",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/183",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/184",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/185",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/186",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/187",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/188",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/189",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/190",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/191",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/192",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/193",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/194",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/195",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/196",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/197",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/198",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/199",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/200",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/201",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/202",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/203",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/204",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/205",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/206",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/207",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/208",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/209",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/210",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/211",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/212",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/213",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/214",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/215",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/216",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/217",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/218",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/219",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/220",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/221",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/222",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/223",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/224",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/225",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/226",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/227",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/228",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/229",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/230",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/231",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/232",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/233",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/234",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/235",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/236",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/237",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/238",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/239",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/240",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/241",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/242",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/243",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/244",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/245",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/246",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/247",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/248",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/249",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/250",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/251",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/252",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/253",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/254",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/255",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/256",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/257",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/258",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/259",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/260",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/261",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/262",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/263",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/264",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/265",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/266",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/267",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/268",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/269",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/270",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/271",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/272",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/273",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/274",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/275",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/276",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/277",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/278",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/279",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/280",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/281",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/282",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/283",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/284",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/285",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/286",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/287",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/288",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/289",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/290",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/291",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/292",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/293",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/294",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/295",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/296",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/297",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/298",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/299",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/300",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/301",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/302",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/303",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/304",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/305",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/306",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/307",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/308",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/309",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/310",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/311",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/312",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/313",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/314",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/315",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/316",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/317",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/318",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/319",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/320",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/321",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/322",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/323",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/324",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/325",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/326",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/327",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/328",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/329",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/330",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/331",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/332",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/333",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/334",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/335",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/336",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/337",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/338",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/339",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/340",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/341",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/342",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/343",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/344",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/345",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/346",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/347",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/348",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/349",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/350",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/351",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/352",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/353",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/354",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/355",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/356",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/357",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/358",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/359",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/360",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/361",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/362",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/363",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/364",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/365",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/366",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/367",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/368",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/369",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/370",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/371",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/372",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/373",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/374",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/375",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/376",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/377",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/378",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/379",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/380",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/381",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/382",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/383",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/384",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/385",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/386",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/387",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/388",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/389",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/390",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/391",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/392",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/393",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/394",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/395",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/396",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/397",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/398",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/399",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/400",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/401",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/402",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/403",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/404",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/405",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/406",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/407",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/408",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/409",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/410",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/411",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/412",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/413",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/414",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/415",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/416",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/417",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/418",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/419",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/420",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/421",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/422",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/423",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/424",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/425",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/426",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/427",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/428",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/429",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/430",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/431",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/432",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/433",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/434",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/435",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/436",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/437",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/438",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/439",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/440",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/441",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/442",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/443",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/444",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/445",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/446",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/447",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/448",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/449",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/450",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/451",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/452",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/453",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/454",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/455",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/456",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/457",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/458",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/459",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/460",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/461",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/462",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/463",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/464",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/465",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/466",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/467",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/468",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/469",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/470",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/471",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/472",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/473",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/474",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/475",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/476",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/477",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/478",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/479",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/480",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/481",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/482",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/483",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/484",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/485",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/486",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "CC/487",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/488",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/489",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/490",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/491",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/492",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/493",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/494",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/495",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/496",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/497",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/498",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "CC/499",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    }
+  ],
+  "summary": {
+    "total": 500,
+    "router_accuracy": 97.8,
+    "cot_accuracy": 100.0,
+    "astar_accuracy": 87.0,
+    "oracle_accuracy": 100.0
+  }
+}

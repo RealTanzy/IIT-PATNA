@@ -1,0 +1,1942 @@
+[
+  {
+    "question": "Is Mixed martial arts totally original from Roman Colosseum games?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is the cuisine of Hawaii suitable for a vegan?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is capturing giant squid in natural habitat impossible with no gear?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Did the Royal Air Force fight in the Boxer Rebellion?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would someone in Mumbai refer to Solanum melongena as an eggplant?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Do flying fish have good eyesight?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "If someone is a vegan, would they eat honey?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Can the Great Depression be treated with Prozac?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Does Santa Claus work during summer?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Has categories of Nobel prizes remained same since Alfred Nobel established them?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Does a Starbucks passion tea have ginger in it?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would Kurt Cobain have benefited from Project Semicolon?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Could you buy Hershey's Kisses in red foil with farthings after 1960?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 7,
+    "trace": "Step 1: 1. **Hershey's Kisses History**: Hershey's Kisses have been a popular chocolate product since their introduction in 1907. They are known for their distinctive packaging and variety of flavors.\n\n2. **Red Foil Packaging**: The red foil packaging is iconic for some varieties of Hershey's Kisses, particularly the milk chocolate ones. This specific packaging has been associated with certain types of Hershey's products over the years but isn't exclusive to a particular era or monetary system change.\n\n3. **Farthings**: Farthings were a unit of currency in the United Kingdom and its colonies until they were withdrawn from circulation in 1960. They were worth one-quarter of an old penny, which is equivalent to one-twentieth of a pre-decimal pound.\n\n4. **Monetary System Change (UK)**: The UK switched from the old system with pounds, shillings, and pence to a decimal system with pounds and pence in 1971, but the changeover began in 1960 with the withdrawal of farthings and other low-denomination coins.\n\n5. **Availability Post-1960**: Given that Hershey's Kisses were widely available before 1960 and considering the UK's monetary system changes around this time, it would be unusual for a product to suddenly become unavailable due solely to packaging or currency changes unless there was a significant shift in global trade practices or regulations affecting chocolate imports.\n\n6. **Conclusion**: Considering these points, while specific details about Hershey's Kisses packaging and availability post-1960 are not readily available without further research, it seems plausible that Hershey's Kisses could have been bought with farthings after 1960 if one considers the broader context of international trade and currency exchange rates. However, given the withdrawal of farthings from circulation in 1960, it would be more accurate to say that buying Hershey's Kisses with farthings as a legal tender post-1960 would not have been possible.\n\nThe answer is: No",
+    "terminal_trace": "Step 1: 1. **Hershey's Kisses History**: Hershey's Kisses have been a popular chocolate product since their introduction in 1907. They are known for their distinctive packaging and variety of flavors.\n\n2. **Red Foil Packaging**: The red foil packaging is iconic for some varieties of Hershey's Kisses, particularly the milk chocolate ones. This specific packaging has been associated with certain types of Hershey's products over the years but isn't exclusive to a particular era or monetary system change.\n\n3. **Farthings**: Farthings were a unit of currency in the United Kingdom and its colonies until they were withdrawn from circulation in 1960. They were worth one-quarter of an old penny, which is equivalent to one-twentieth of a pre-decimal pound.\n\n4. **Monetary System Change (UK)**: The UK switched from the old system with pounds, shillings, and pence to a decimal system with pounds and pence in 1971, but the changeover began in 1960 with the withdrawal of farthings and other low-denomination coins.\n\n5. **Availability Post-1960**: Given that Hershey's Kisses were widely available before 1960 and considering the UK's monetary system changes around this time, it would be unusual for a product to suddenly become unavailable due solely to packaging or currency changes unless there was a significant shift in global trade practices or regulations affecting chocolate imports.\n\n6. **Conclusion**: Considering these points, while specific details about Hershey's Kisses packaging and availability post-1960 are not readily available without further research, it seems plausible that Hershey's Kisses could have been bought with farthings after 1960 if one considers the broader context of international trade and currency exchange rates. However, given the withdrawal of farthings from circulation in 1960, it would be more accurate to say that buying Hershey's Kisses with farthings as a legal tender post-1960 would not have been possible.\n\nThe answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: 1. **Hershey's Kisses History**: Hershey's Kisses have been a popular chocolate product since their introduction in 1907. They are known for their distinctive packaging and variety of flavors.\n\n2. **Red Foil Packaging**: The red foil packaging is iconic for some varieties of Hershey's Kisses, particularly the milk chocolate ones. This specific packaging has been associated with certain types of Hershey's products over the years but isn't exclusive to a particular era or monetary system change.\n\n3. **Farthings**: Farthings were a unit of currency in the United Kingdom and its colonies until they were withdrawn from circulation in 1960. They were worth one-quarter of an old penny, which is equivalent to one-twentieth of a pre-decimal pound.\n\n4. **Monetary System Change (UK)**: The UK switched from the old system with pounds, shillings, and pence to a decimal system with pounds and pence in 1971, but the changeover began in 1960 with the withdrawal of farthings and other low-denomination coins.\n\n5. **Availability Post-1960**: Given that Hershey's Kisses were widely available before 1960 and considering the UK's monetary system changes around this time, it would be unusual for a product to suddenly become unavailable due solely to packaging or currency changes unless there was a significant shift in global trade practices or regulations affecting chocolate imports.\n\n6. **Conclusion**: Considering these points, while specific details about Hershey's Kisses packaging and availability post-1960 are not readily available without further research, it seems plausible that Hershey's Kisses could have been bought with farthings after 1960 if one considers the broader context of international trade and currency exchange rates. However, given the withdrawal of farthings from circulation in 1960, it would be more accurate to say that buying Hershey's Kisses with farthings as a legal tender post-1960 would not have been possible.\n\nThe answer is: No",
+        "content": "1. **Hershey's Kisses History**: Hershey's Kisses have been a popular chocolate product since their introduction in 1907. They are known for their distinctive packaging and variety of flavors.\n\n2. **Red Foil Packaging**: The red foil packaging is iconic for some varieties of Hershey's Kisses, particularly the milk chocolate ones. This specific packaging has been associated with certain types of Hershey's products over the years but isn't exclusive to a particular era or monetary system change.\n\n3. **Farthings**: Farthings were a unit of currency in the United Kingdom and its colonies until they were withdrawn from circulation in 1960. They were worth one-quarter of an old penny, which is equivalent to one-twentieth of a pre-decimal pound.\n\n4. **Monetary System Change (UK)**: The UK switched from the old system with pounds, shillings, and pence to a decimal system with pounds and pence in 1971, but the changeover began in 1960 with the withdrawal of farthings and other low-denomination coins.\n\n5. **Availability Post-1960**: Given that Hershey's Kisses were widely available before 1960 and considering the UK's monetary system changes around this time, it would be unusual for a product to suddenly become unavailable due solely to packaging or currency changes unless there was a significant shift in global trade practices or regulations affecting chocolate imports.\n\n6. **Conclusion**: Considering these points, while specific details about Hershey's Kisses packaging and availability post-1960 are not readily available without further research, it seems plausible that Hershey's Kisses could have been bought with farthings after 1960 if one considers the broader context of international trade and currency exchange rates. However, given the withdrawal of farthings from circulation in 1960, it would be more accurate to say that buying Hershey's Kisses with farthings as a legal tender post-1960 would not have been possible.\n\nThe answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is electricity necessary to balance an account in Microsoft Excel?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: The answer is: yes",
+        "content": "The answer is: The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is a pound sterling valuable?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Can an African Elephant get pregnant twice in a year?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would the host of The Colbert Report be likely to vote for Trump?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Does Coast to Coast AM have more longevity than the Rush Limbaugh show?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is the foot part of the metric system?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "In baseball, is a \"Homer\" named after the poet Homer who wrote the Odyssey?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: [Entity/Concept 1]: Homer (poet)\n[Relevant fact]: The poet Homer was a Greek author who wrote epic poems, including the Iliad and the Odyssey.\n\n[Entity/Concept 2]: Homer (baseball term)\n[Relevant fact]: In baseball, \"Homer\" is an informal or colloquial term for a home run, which is when a batter hits the ball out of the playing field, resulting in scoring runs without being tagged out.\nStep 2: no\n(Confidence: 1)\nStep 3: The answer is: no",
+    "terminal_trace": "Step 1: [Entity/Concept 1]: Homer (poet)\n[Relevant fact]: The poet Homer was a Greek author who wrote epic poems, including the Iliad and the Odyssey.\n\n[Entity/Concept 2]: Homer (baseball term)\n[Relevant fact]: In baseball, \"Homer\" is an informal or colloquial term for a home run, which is when a batter hits the ball out of the playing field, resulting in scoring runs without being tagged out.\nStep 2: no\n(Confidence: 1)\nStep 3: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: [Entity/Concept 1]: Homer (poet)\n[Relevant fact]: The poet Homer was a Greek author who wrote epic poems, including the Iliad and the Odyssey.\n\n[Entity/Concept 2]: Homer (baseball term)\n[Relevant fact]: In baseball, \"Homer\" is an informal or colloquial term for a home run, which is when a batter hits the ball out of the playing field, resulting in scoring runs without being tagged out.",
+        "content": "[Entity/Concept 1]: Homer (poet)\n[Relevant fact]: The poet Homer was a Greek author who wrote epic poems, including the Iliad and the Odyssey.\n\n[Entity/Concept 2]: Homer (baseball term)\n[Relevant fact]: In baseball, \"Homer\" is an informal or colloquial term for a home run, which is when a batter hits the ball out of the playing field, resulting in scoring runs without being tagged out.",
+        "confidence": 0.6,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: no\n(Confidence: 1)",
+        "content": "no\n(Confidence: 1)",
+        "confidence": 0.6,
+        "is_factual": false
+      },
+      {
+        "step_number": 3,
+        "step": "Step 3: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.99,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Could Casio's first invention be worn around the ankle?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Did Richard III know his grandson?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 9,
+    "trace": "Step 1: [Entity/Concept 1]: Richard III\n[relevant fact]: He was King of England from 1483 until his death in 1485.\n\n[Entity/Concept 2]: His grandson \n[relevant fact]: Edward V, who was the son of Edward IV and Elizabeth Woodville, was a grandson of Richard III.\nStep 2: Yes\n0.9\nStep 3: The answer is: Yes\n0.95\n\nReasoning: Richard III was the uncle of Edward V, making him his grandson. Since Richard III died in 1485 and Edward V was born in 1470, it is likely that they knew each other during their lifetimes.",
+    "terminal_trace": "Step 1: [Entity/Concept 1]: Richard III\n[relevant fact]: He was King of England from 1483 until his death in 1485.\n\n[Entity/Concept 2]: His grandson \n[relevant fact]: Edward V, who was the son of Edward IV and Elizabeth Woodville, was a grandson of Richard III.\nStep 2: Yes\n0.9\nStep 3: The answer is: Yes\n0.95\n\nReasoning: Richard III was the uncle of Edward V, making him his grandson. Since Richard III died in 1485 and Edward V was born in 1470, it is likely that they knew each other during their lifetimes.\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: [Entity/Concept 1]: Richard III\n[relevant fact]: He was King of England from 1483 until his death in 1485.\n\n[Entity/Concept 2]: His grandson \n[relevant fact]: Edward V, who was the son of Edward IV and Elizabeth Woodville, was a grandson of Richard III.",
+        "content": "[Entity/Concept 1]: Richard III\n[relevant fact]: He was King of England from 1483 until his death in 1485.\n\n[Entity/Concept 2]: His grandson \n[relevant fact]: Edward V, who was the son of Edward IV and Elizabeth Woodville, was a grandson of Richard III.",
+        "confidence": 0.6,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: Yes\n0.9",
+        "content": "Yes\n0.9",
+        "confidence": 0.6,
+        "is_factual": false
+      },
+      {
+        "step_number": 3,
+        "step": "Step 3: The answer is: Yes\n0.95\n\nReasoning: Richard III was the uncle of Edward V, making him his grandson. Since Richard III died in 1485 and Edward V was born in 1470, it is likely that they knew each other during their lifetimes.",
+        "content": "The answer is: Yes\n0.95\n\nReasoning: Richard III was the uncle of Edward V, making him his grandson. Since Richard III died in 1485 and Edward V was born in 1470, it is likely that they knew each other during their lifetimes.",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would a Fakir be surprised if they saw a comma in their religious book?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is the name of a mythical creature also the name of a Small Solar System body?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 9,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Can Kit & Kaboodle hypothetically help someone past the Underworld gates?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Was Walt Disney able to email his illustrations to people living far away?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is a felony jury enough people for a Bunco game?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Could Godzilla have been killed by the Tohoku earthquake?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is Alan Alda old enough to have fought in the Vietnam War?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Does acupuncture cause pain in many people?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is Newt Gingrich's nickname a type of Reptile?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 8,
+    "trace": "Step 1: [Entity/Concept 1]: Newt Gingrich\nRelevant fact: He is a former Speaker of the United States House of Representatives.\n\n[Entity/Concept 2]: Nickname\nRelevant fact: A nickname is an alternate name for someone or something, often informal and colloquial.\n\nNewt's nickname is indeed related to a type of reptile.\nStep 2: Yes\n(Confidence: 1.0)\nStep 3: The answer is: Yes\n(Confidence: 1.0) \n\nNewt Gingrich's nickname \"Newt\" refers to the newt, a type of salamander that belongs to the reptile-like amphibians group.",
+    "terminal_trace": "Step 1: [Entity/Concept 1]: Newt Gingrich\nRelevant fact: He is a former Speaker of the United States House of Representatives.\n\n[Entity/Concept 2]: Nickname\nRelevant fact: A nickname is an alternate name for someone or something, often informal and colloquial.\n\nNewt's nickname is indeed related to a type of reptile.\nStep 2: Yes\n(Confidence: 1.0)\nStep 3: The answer is: Yes\n(Confidence: 1.0) \n\nNewt Gingrich's nickname \"Newt\" refers to the newt, a type of salamander that belongs to the reptile-like amphibians group.\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: [Entity/Concept 1]: Newt Gingrich\nRelevant fact: He is a former Speaker of the United States House of Representatives.\n\n[Entity/Concept 2]: Nickname\nRelevant fact: A nickname is an alternate name for someone or something, often informal and colloquial.\n\nNewt's nickname is indeed related to a type of reptile.",
+        "content": "[Entity/Concept 1]: Newt Gingrich\nRelevant fact: He is a former Speaker of the United States House of Representatives.\n\n[Entity/Concept 2]: Nickname\nRelevant fact: A nickname is an alternate name for someone or something, often informal and colloquial.\n\nNewt's nickname is indeed related to a type of reptile.",
+        "confidence": 0.6,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: Yes\n(Confidence: 1.0)",
+        "content": "Yes\n(Confidence: 1.0)",
+        "confidence": 0.6,
+        "is_factual": false
+      },
+      {
+        "step_number": 3,
+        "step": "Step 3: The answer is: Yes\n(Confidence: 1.0) \n\nNewt Gingrich's nickname \"Newt\" refers to the newt, a type of salamander that belongs to the reptile-like amphibians group.",
+        "content": "The answer is: Yes\n(Confidence: 1.0) \n\nNewt Gingrich's nickname \"Newt\" refers to the newt, a type of salamander that belongs to the reptile-like amphibians group.",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Can people die from brake failure?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is Europa linked to Viennese waltzes?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 6,
+    "trace": "Step 1: 1. **Identify Europa**: Europa is known as a moon of Jupiter in our solar system. It's one of the largest moons and has its own unique features, such as a possible subsurface ocean.\n\n2. **Viennese Waltz Origin**: The Viennese waltz originated from Vienna, Austria. It's a style of ballroom dance that became popular in Europe during the 19th century, particularly associated with the music of Johann Strauss II and his contemporaries.\n\n3. **Connection between Europa and Viennese Waltzes**: There is no direct scientific or historical link between Europa (the moon) and Viennese waltzes (a style of dance). The name \"Europa\" in astronomy comes from European mythology, referring to a Phoenician princess who was abducted by Zeus, but this does not directly relate to the music or dance.\n\n4. **Conclusion**: Given that there is no direct connection between Europa and Viennese waltzes based on historical or scientific facts, I conclude:\n\nThe answer is: No",
+    "terminal_trace": "Step 1: 1. **Identify Europa**: Europa is known as a moon of Jupiter in our solar system. It's one of the largest moons and has its own unique features, such as a possible subsurface ocean.\n\n2. **Viennese Waltz Origin**: The Viennese waltz originated from Vienna, Austria. It's a style of ballroom dance that became popular in Europe during the 19th century, particularly associated with the music of Johann Strauss II and his contemporaries.\n\n3. **Connection between Europa and Viennese Waltzes**: There is no direct scientific or historical link between Europa (the moon) and Viennese waltzes (a style of dance). The name \"Europa\" in astronomy comes from European mythology, referring to a Phoenician princess who was abducted by Zeus, but this does not directly relate to the music or dance.\n\n4. **Conclusion**: Given that there is no direct connection between Europa and Viennese waltzes based on historical or scientific facts, I conclude:\n\nThe answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: 1. **Identify Europa**: Europa is known as a moon of Jupiter in our solar system. It's one of the largest moons and has its own unique features, such as a possible subsurface ocean.\n\n2. **Viennese Waltz Origin**: The Viennese waltz originated from Vienna, Austria. It's a style of ballroom dance that became popular in Europe during the 19th century, particularly associated with the music of Johann Strauss II and his contemporaries.\n\n3. **Connection between Europa and Viennese Waltzes**: There is no direct scientific or historical link between Europa (the moon) and Viennese waltzes (a style of dance). The name \"Europa\" in astronomy comes from European mythology, referring to a Phoenician princess who was abducted by Zeus, but this does not directly relate to the music or dance.\n\n4. **Conclusion**: Given that there is no direct connection between Europa and Viennese waltzes based on historical or scientific facts, I conclude:\n\nThe answer is: No",
+        "content": "1. **Identify Europa**: Europa is known as a moon of Jupiter in our solar system. It's one of the largest moons and has its own unique features, such as a possible subsurface ocean.\n\n2. **Viennese Waltz Origin**: The Viennese waltz originated from Vienna, Austria. It's a style of ballroom dance that became popular in Europe during the 19th century, particularly associated with the music of Johann Strauss II and his contemporaries.\n\n3. **Connection between Europa and Viennese Waltzes**: There is no direct scientific or historical link between Europa (the moon) and Viennese waltzes (a style of dance). The name \"Europa\" in astronomy comes from European mythology, referring to a Phoenician princess who was abducted by Zeus, but this does not directly relate to the music or dance.\n\n4. **Conclusion**: Given that there is no direct connection between Europa and Viennese waltzes based on historical or scientific facts, I conclude:\n\nThe answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would a Dolce & Gabbana suit wearer be shunned by their Amish cousins?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: **yes**\nStep 2: The answer is: yes \n\nCONFIDENCE: 1.0",
+    "terminal_trace": "Step 1: The answer is: **yes**\nStep 2: The answer is: yes \n\nCONFIDENCE: 1.0\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: **yes**",
+        "content": "The answer is: **yes**",
+        "confidence": 0.75,
+        "is_factual": false
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: The answer is: yes \n\nCONFIDENCE: 1.0",
+        "content": "The answer is: yes \n\nCONFIDENCE: 1.0",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Could the members of The Police perform lawful arrests?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Will twenty pea pods contents cover entire chess board?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 9,
+    "trace": "Step 1: [Entity/Concept 1]: Pea pod \nRelevant fact: A typical pea pod contains around 8-10 peas.\n\n[Entity/Concept 2]: Chess board\nRelevant fact: A standard chessboard consists of 64 squares, arranged in an 8x8 grid.\nStep 2: Yes\n(Confidence: 0.9)\nStep 3: The answer is: Yes\n(Confidence: 0.95)",
+    "terminal_trace": "Step 1: [Entity/Concept 1]: Pea pod \nRelevant fact: A typical pea pod contains around 8-10 peas.\n\n[Entity/Concept 2]: Chess board\nRelevant fact: A standard chessboard consists of 64 squares, arranged in an 8x8 grid.\nStep 2: Yes\n(Confidence: 0.9)\nStep 3: The answer is: Yes\n(Confidence: 0.95)\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: [Entity/Concept 1]: Pea pod \nRelevant fact: A typical pea pod contains around 8-10 peas.\n\n[Entity/Concept 2]: Chess board\nRelevant fact: A standard chessboard consists of 64 squares, arranged in an 8x8 grid.",
+        "content": "[Entity/Concept 1]: Pea pod \nRelevant fact: A typical pea pod contains around 8-10 peas.\n\n[Entity/Concept 2]: Chess board\nRelevant fact: A standard chessboard consists of 64 squares, arranged in an 8x8 grid.",
+        "confidence": 0.6,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: Yes\n(Confidence: 0.9)",
+        "content": "Yes\n(Confidence: 0.9)",
+        "confidence": 0.6,
+        "is_factual": false
+      },
+      {
+        "step_number": 3,
+        "step": "Step 3: The answer is: Yes\n(Confidence: 0.95)",
+        "content": "The answer is: Yes\n(Confidence: 0.95)",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would it be hard to get toilet paper if there were no loggers?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Did Linnaeus edit Darwin's draft of Origin of Species?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Did Disney's second film rip off a prophet story?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 7,
+    "trace": "Step 1: [Entity/Concept 1]: Disney\nRelevant fact: A well-known and popular film studio with a vast library of films, including animated classics.\n\nConfidence: 0.9\n\n[Entity/Concept 2]: Second film\nRelevant fact: Not enough context to pinpoint which specific second film is being referred to.\n\nConfidence: 0.7\n\n[Entity/Concept 3]: Prophet story\nRelevant fact: There are many prophet stories in various cultures and religions, but no specific one can be identified without more context.\n\nConfidence: 0.8\nStep 2: Yes\nConfidence: 0.9\nStep 3: The answer is: Yes\nConfidence: 0.8",
+    "terminal_trace": "Step 1: [Entity/Concept 1]: Disney\nRelevant fact: A well-known and popular film studio with a vast library of films, including animated classics.\n\nConfidence: 0.9\n\n[Entity/Concept 2]: Second film\nRelevant fact: Not enough context to pinpoint which specific second film is being referred to.\n\nConfidence: 0.7\n\n[Entity/Concept 3]: Prophet story\nRelevant fact: There are many prophet stories in various cultures and religions, but no specific one can be identified without more context.\n\nConfidence: 0.8\nStep 2: Yes\nConfidence: 0.9\nStep 3: The answer is: Yes\nConfidence: 0.8\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: [Entity/Concept 1]: Disney\nRelevant fact: A well-known and popular film studio with a vast library of films, including animated classics.\n\nConfidence: 0.9\n\n[Entity/Concept 2]: Second film\nRelevant fact: Not enough context to pinpoint which specific second film is being referred to.\n\nConfidence: 0.7\n\n[Entity/Concept 3]: Prophet story\nRelevant fact: There are many prophet stories in various cultures and religions, but no specific one can be identified without more context.\n\nConfidence: 0.8",
+        "content": "[Entity/Concept 1]: Disney\nRelevant fact: A well-known and popular film studio with a vast library of films, including animated classics.\n\nConfidence: 0.9\n\n[Entity/Concept 2]: Second film\nRelevant fact: Not enough context to pinpoint which specific second film is being referred to.\n\nConfidence: 0.7\n\n[Entity/Concept 3]: Prophet story\nRelevant fact: There are many prophet stories in various cultures and religions, but no specific one can be identified without more context.\n\nConfidence: 0.8",
+        "confidence": 0.6,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: Yes\nConfidence: 0.9",
+        "content": "Yes\nConfidence: 0.9",
+        "confidence": 0.6,
+        "is_factual": false
+      },
+      {
+        "step_number": 3,
+        "step": "Step 3: The answer is: Yes\nConfidence: 0.8",
+        "content": "The answer is: Yes\nConfidence: 0.8",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is Rurouni Kenshin from same country as lead character in Nobunaga's Ambition?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is the Gujarati script the same category of script as Kanji?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would a broadcast from Spirit make the news in 2020?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Was Saudi Aramco started due to an assassination?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is the span in C-SPAN named after Alan Greenspan?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is \"A Tale of Two Cities\" a parody of the Bible?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Was disc jockey Jay Thomas enemies with Clayton Moore?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is the Flying Spaghetti Monster part of an ancient pantheon?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Are lengths measured in metres in the UK?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would a Germaphobia be able to participate in Judo?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Could Eddie Hall hypothetically deadlift the world's largest cheeseburger?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Can preventive healthcare reduce STI transmission?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Do German Shepherds worry about the Abitur?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Could the Port of Baltimore handle the entire world's cargo production of ginger each year?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Was story of Jesus inspired by Egyptian myth?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Do people who smoke Djarum's like cloves?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Can you swim to Miami from New York?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would a honey badger fit inside an oven?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is The Joy of Painting TV show still producing new episodes?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would it be typical for a Rede Globo anchor to say Konnichiwa to the viewers?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would Topa Inca Yupanqui have encountered the western honey bee?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Was Hillary Clinton's deputy chief of staff in 2009 baptised?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would the tunnels at CERN fit onto the High Speed 1 rails?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 9,
+    "trace": "Step 1: [Entity/Concept 1]: Tunnels at CERN \n[Relevant fact]: The Large Hadron Collider (LHC) tunnels are approximately 27 km in circumference and have a diameter of about 100 meters.\n\n[Entity/Concept 2]: High Speed 1 rails \n[Relevant fact]: High Speed 1 is a high-speed rail line in the United Kingdom, with a standard gauge track width of 1435 mm (4 ft 8.5 in).\n\nConfidence: 0.9\nStep 2: Yes \n\nConfidence: 0.9\nStep 3: Yes\nConfidence: 1.0\nStep 4: The answer is: Yes\nConfidence: 0.9",
+    "terminal_trace": "Step 1: [Entity/Concept 1]: Tunnels at CERN \n[Relevant fact]: The Large Hadron Collider (LHC) tunnels are approximately 27 km in circumference and have a diameter of about 100 meters.\n\n[Entity/Concept 2]: High Speed 1 rails \n[Relevant fact]: High Speed 1 is a high-speed rail line in the United Kingdom, with a standard gauge track width of 1435 mm (4 ft 8.5 in).\n\nConfidence: 0.9\nStep 2: Yes \n\nConfidence: 0.9\nStep 3: Yes\nConfidence: 1.0\nStep 4: The answer is: Yes\nConfidence: 0.9\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: [Entity/Concept 1]: Tunnels at CERN \n[Relevant fact]: The Large Hadron Collider (LHC) tunnels are approximately 27 km in circumference and have a diameter of about 100 meters.\n\n[Entity/Concept 2]: High Speed 1 rails \n[Relevant fact]: High Speed 1 is a high-speed rail line in the United Kingdom, with a standard gauge track width of 1435 mm (4 ft 8.5 in).\n\nConfidence: 0.9",
+        "content": "[Entity/Concept 1]: Tunnels at CERN \n[Relevant fact]: The Large Hadron Collider (LHC) tunnels are approximately 27 km in circumference and have a diameter of about 100 meters.\n\n[Entity/Concept 2]: High Speed 1 rails \n[Relevant fact]: High Speed 1 is a high-speed rail line in the United Kingdom, with a standard gauge track width of 1435 mm (4 ft 8.5 in).\n\nConfidence: 0.9",
+        "confidence": 0.6,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: Yes \n\nConfidence: 0.9",
+        "content": "Yes \n\nConfidence: 0.9",
+        "confidence": 0.6,
+        "is_factual": false
+      },
+      {
+        "step_number": 3,
+        "step": "Step 3: Yes\nConfidence: 1.0",
+        "content": "Yes\nConfidence: 1.0",
+        "confidence": 0.6,
+        "is_factual": false
+      },
+      {
+        "step_number": 4,
+        "step": "Step 4: The answer is: Yes\nConfidence: 0.9",
+        "content": "The answer is: Yes\nConfidence: 0.9",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Does Capricorn astrology symbol have all of the parts of a chimera?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 7,
+    "trace": "Step 1: [Entity/Concept 1]: Capricorn astrology symbol\n[Relevant fact]: The Capricorn astrology symbol is a Goat-Half Man.\n\n[Entity/Concept 2]: Chimera\n[Relevant fact]: A chimera is a mythological creature that has the physical features of multiple animals combined, such as the head of a lion, body of a goat, and tail of a serpent.\nStep 2: Yes\n(Confidence: 1.0)\nStep 3: The answer is: Yes\n(Confidence: 1.0)",
+    "terminal_trace": "Step 1: [Entity/Concept 1]: Capricorn astrology symbol\n[Relevant fact]: The Capricorn astrology symbol is a Goat-Half Man.\n\n[Entity/Concept 2]: Chimera\n[Relevant fact]: A chimera is a mythological creature that has the physical features of multiple animals combined, such as the head of a lion, body of a goat, and tail of a serpent.\nStep 2: Yes\n(Confidence: 1.0)\nStep 3: The answer is: Yes\n(Confidence: 1.0)\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: [Entity/Concept 1]: Capricorn astrology symbol\n[Relevant fact]: The Capricorn astrology symbol is a Goat-Half Man.\n\n[Entity/Concept 2]: Chimera\n[Relevant fact]: A chimera is a mythological creature that has the physical features of multiple animals combined, such as the head of a lion, body of a goat, and tail of a serpent.",
+        "content": "[Entity/Concept 1]: Capricorn astrology symbol\n[Relevant fact]: The Capricorn astrology symbol is a Goat-Half Man.\n\n[Entity/Concept 2]: Chimera\n[Relevant fact]: A chimera is a mythological creature that has the physical features of multiple animals combined, such as the head of a lion, body of a goat, and tail of a serpent.",
+        "confidence": 0.6,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: Yes\n(Confidence: 1.0)",
+        "content": "Yes\n(Confidence: 1.0)",
+        "confidence": 0.6,
+        "is_factual": false
+      },
+      {
+        "step_number": 3,
+        "step": "Step 3: The answer is: Yes\n(Confidence: 1.0)",
+        "content": "The answer is: Yes\n(Confidence: 1.0)",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Are Big Ben's bells currently rung on their normal schedule at the Palace of Westminster?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Will a Euro sink in water?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is a paraplegic suitable for conducting an orchestra?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Are cucumbers often found in desert?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is a Halloween cruise in the Gulf of Mexico likely to be safe from storms?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Were veterans of the War in Vietnam (1945\u201346) given free education by the Soviet Union?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would Dave Chappelle pray over a Quran?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Can a lifeboat rescue people in the Hooke Sea?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 8,
+    "trace": "Step 1: [Entity/Concept 1]: Lifeboat\n[Relevant fact]: A lifeboat is a vessel designed to rescue people from the water.\n\n[Entity/Concept 2]: Hooke Sea\n[Relevant fact]: I couldn't find any information about the existence of the \"Hooke Sea\", but there is a Hooke Bay, which is a bay in Dorset, England.\nStep 2: Answer: yes\nConfidence: 1.0\nStep 3: The answer is: Yes\nConfidence: 1.0",
+    "terminal_trace": "Step 1: [Entity/Concept 1]: Lifeboat\n[Relevant fact]: A lifeboat is a vessel designed to rescue people from the water.\n\n[Entity/Concept 2]: Hooke Sea\n[Relevant fact]: I couldn't find any information about the existence of the \"Hooke Sea\", but there is a Hooke Bay, which is a bay in Dorset, England.\nStep 2: Answer: yes\nConfidence: 1.0\nStep 3: The answer is: Yes\nConfidence: 1.0\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: [Entity/Concept 1]: Lifeboat\n[Relevant fact]: A lifeboat is a vessel designed to rescue people from the water.\n\n[Entity/Concept 2]: Hooke Sea\n[Relevant fact]: I couldn't find any information about the existence of the \"Hooke Sea\", but there is a Hooke Bay, which is a bay in Dorset, England.",
+        "content": "[Entity/Concept 1]: Lifeboat\n[Relevant fact]: A lifeboat is a vessel designed to rescue people from the water.\n\n[Entity/Concept 2]: Hooke Sea\n[Relevant fact]: I couldn't find any information about the existence of the \"Hooke Sea\", but there is a Hooke Bay, which is a bay in Dorset, England.",
+        "confidence": 0.6,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: Answer: yes\nConfidence: 1.0",
+        "content": "Answer: yes\nConfidence: 1.0",
+        "confidence": 0.6,
+        "is_factual": false
+      },
+      {
+        "step_number": 3,
+        "step": "Step 3: The answer is: Yes\nConfidence: 1.0",
+        "content": "The answer is: Yes\nConfidence: 1.0",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Do carpenters understand geometry?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is the Liberty Bell still in its original location?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Are pirate lieutenants like navy lieutenants?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is a krabby patty similar to a cheeseburger?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: 1. A Krabby Patty is a fictional food item from the animated TV show \"SpongeBob SquarePants.\"\n2. In the show, a Krabby Patty is described as a sandwich made with a beef patty.\n3. A cheeseburger is also a type of sandwich that typically consists of a beef patty, cheese, and other toppings on a bun.\n\nConsidering these points, both Krabby Patties and cheeseburgers share common characteristics: they are both sandwiches featuring a beef patty as the main ingredient.\n\nThe answer is: yes",
+    "terminal_trace": "Step 1: 1. A Krabby Patty is a fictional food item from the animated TV show \"SpongeBob SquarePants.\"\n2. In the show, a Krabby Patty is described as a sandwich made with a beef patty.\n3. A cheeseburger is also a type of sandwich that typically consists of a beef patty, cheese, and other toppings on a bun.\n\nConsidering these points, both Krabby Patties and cheeseburgers share common characteristics: they are both sandwiches featuring a beef patty as the main ingredient.\n\nThe answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: 1. A Krabby Patty is a fictional food item from the animated TV show \"SpongeBob SquarePants.\"\n2. In the show, a Krabby Patty is described as a sandwich made with a beef patty.\n3. A cheeseburger is also a type of sandwich that typically consists of a beef patty, cheese, and other toppings on a bun.\n\nConsidering these points, both Krabby Patties and cheeseburgers share common characteristics: they are both sandwiches featuring a beef patty as the main ingredient.\n\nThe answer is: yes",
+        "content": "1. A Krabby Patty is a fictional food item from the animated TV show \"SpongeBob SquarePants.\"\n2. In the show, a Krabby Patty is described as a sandwich made with a beef patty.\n3. A cheeseburger is also a type of sandwich that typically consists of a beef patty, cheese, and other toppings on a bun.\n\nConsidering these points, both Krabby Patties and cheeseburgers share common characteristics: they are both sandwiches featuring a beef patty as the main ingredient.\n\nThe answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would a greyhound be able to outrun a greyhound bus?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "If you were on a diet, would you have to skip lunch at McDonald's?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would Republic of Korea Navy dominate Eritrea navy?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Did the 40th president of the United States forward lolcats to his friends?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Could the Austrian casualties from Seven Years' War fit in Indianapolis Motor Speedway?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Did Harry Houdini's wife make psychics look foolish?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Do more Cauliflower grow in Arizona than California?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Did William Shaespeare read the Daily Mirror?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Does the cuisine of Hawaii embrace foods considered gross in the continental US?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is the voice of the Genie from Disney's Aladdin still alive?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 5,
+    "trace": "Step 1: [Entity/Concept 1]: The voice of the Genie from Disney's Aladdin\n[Relevant fact]: The voice was provided by Robin Williams, an American actor and comedian.\n\n[Entity/Concept 2]: Robin Williams\n[Relevant fact]: Unfortunately, Robin Williams passed away on August 11, 2014.\nStep 2: The answer is: yes\nConfidence: 1.0",
+    "terminal_trace": "Step 1: [Entity/Concept 1]: The voice of the Genie from Disney's Aladdin\n[Relevant fact]: The voice was provided by Robin Williams, an American actor and comedian.\n\n[Entity/Concept 2]: Robin Williams\n[Relevant fact]: Unfortunately, Robin Williams passed away on August 11, 2014.\nStep 2: The answer is: yes\nConfidence: 1.0\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: [Entity/Concept 1]: The voice of the Genie from Disney's Aladdin\n[Relevant fact]: The voice was provided by Robin Williams, an American actor and comedian.\n\n[Entity/Concept 2]: Robin Williams\n[Relevant fact]: Unfortunately, Robin Williams passed away on August 11, 2014.",
+        "content": "[Entity/Concept 1]: The voice of the Genie from Disney's Aladdin\n[Relevant fact]: The voice was provided by Robin Williams, an American actor and comedian.\n\n[Entity/Concept 2]: Robin Williams\n[Relevant fact]: Unfortunately, Robin Williams passed away on August 11, 2014.",
+        "confidence": 0.6,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: The answer is: yes\nConfidence: 1.0",
+        "content": "The answer is: yes\nConfidence: 1.0",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Was Lord Voldemort taught by Professor Dumbledore?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 7,
+    "trace": "Step 1: [Entity/Concept 1]: Lord Voldemort\n[Relevant fact]: He was a dark wizard and the main antagonist of the Harry Potter series.\n\n[Entity/Concept 2]: Professor Dumbledore\n[Relevant fact]: He was a wise and powerful wizard who served as the headmaster of Hogwarts School of Witchcraft and Wizardry.\n\n[Entity/Concept 3]: Taught by\n[Relevant fact]: There is no indication in the Harry Potter series that Lord Voldemort was taught by Professor Dumbledore.\nStep 2: The answer is: no\nCONFIDENCE: 1.0",
+    "terminal_trace": "Step 1: [Entity/Concept 1]: Lord Voldemort\n[Relevant fact]: He was a dark wizard and the main antagonist of the Harry Potter series.\n\n[Entity/Concept 2]: Professor Dumbledore\n[Relevant fact]: He was a wise and powerful wizard who served as the headmaster of Hogwarts School of Witchcraft and Wizardry.\n\n[Entity/Concept 3]: Taught by\n[Relevant fact]: There is no indication in the Harry Potter series that Lord Voldemort was taught by Professor Dumbledore.\nStep 2: The answer is: no\nCONFIDENCE: 1.0\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: [Entity/Concept 1]: Lord Voldemort\n[Relevant fact]: He was a dark wizard and the main antagonist of the Harry Potter series.\n\n[Entity/Concept 2]: Professor Dumbledore\n[Relevant fact]: He was a wise and powerful wizard who served as the headmaster of Hogwarts School of Witchcraft and Wizardry.\n\n[Entity/Concept 3]: Taught by\n[Relevant fact]: There is no indication in the Harry Potter series that Lord Voldemort was taught by Professor Dumbledore.",
+        "content": "[Entity/Concept 1]: Lord Voldemort\n[Relevant fact]: He was a dark wizard and the main antagonist of the Harry Potter series.\n\n[Entity/Concept 2]: Professor Dumbledore\n[Relevant fact]: He was a wise and powerful wizard who served as the headmaster of Hogwarts School of Witchcraft and Wizardry.\n\n[Entity/Concept 3]: Taught by\n[Relevant fact]: There is no indication in the Harry Potter series that Lord Voldemort was taught by Professor Dumbledore.",
+        "confidence": 0.6,
+        "is_factual": true
+      },
+      {
+        "step_number": 2,
+        "step": "Step 2: The answer is: no\nCONFIDENCE: 1.0",
+        "content": "The answer is: no\nCONFIDENCE: 1.0",
+        "confidence": 0.6,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Do black-tailed jackrabbits fear the European wildcat?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would keelhauling be a fair punishment under the Eighth Amendment?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 4,
+    "trace": "Step 1: The answer is: No",
+    "terminal_trace": "Step 1: The answer is: No\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: No",
+        "content": "The answer is: No",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Could Christopher Walken enlist in the United States Marine Corps?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: Yes",
+    "terminal_trace": "Step 1: The answer is: Yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: Yes",
+        "content": "The answer is: Yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Was Christina Aguilera born in the forgotten borough?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Did Zorro carve his name into items regularly?",
+    "gold": "no",
+    "pred": "yes",
+    "correct": false,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Has Nikola Tesla's name inspired multiple brands?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Does meat from cows fed only grass taste more like wild game?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would 2020 Toyota Supra lag behind at a Nascar rally?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Would Dale Earnhardt Jr. be considered a newbie?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 8,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is MF Doom a Fantastic Four villain?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is Brooklyn known for its bread products?",
+    "gold": "yes",
+    "pred": "yes",
+    "correct": true,
+    "nodes": 5,
+    "trace": "Step 1: The answer is: yes",
+    "terminal_trace": "Step 1: The answer is: yes\nFinal Answer: yes",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: yes",
+        "content": "The answer is: yes",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Is Glenn Beck known for his mild temper?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 6,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Can eating your weight in celery prevent diabetes?",
+    "gold": "no",
+    "pred": "no",
+    "correct": true,
+    "nodes": 2,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Was only woman to serve as U.S. Speaker of the House alive during the attack on Pearl Harbor?",
+    "gold": "yes",
+    "pred": "no",
+    "correct": false,
+    "nodes": 8,
+    "trace": "Step 1: The answer is: no",
+    "terminal_trace": "Step 1: The answer is: no\nFinal Answer: no",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: no",
+        "content": "The answer is: no",
+        "confidence": 0.75,
+        "is_factual": false
+      }
+    ]
+  }
+]

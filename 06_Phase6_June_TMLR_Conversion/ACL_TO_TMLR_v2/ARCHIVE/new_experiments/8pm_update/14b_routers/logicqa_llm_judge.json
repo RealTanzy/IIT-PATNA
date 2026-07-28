@@ -1,0 +1,4571 @@
+{
+  "router": "llm_judge",
+  "dataset": "logicqa",
+  "model": "qwen-2.5-14b",
+  "results": [
+    {
+      "task_id": "logicqa/0",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/1",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/2",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/3",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/4",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/5",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/6",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/7",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/8",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/9",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/10",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/11",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/12",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/13",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/14",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/15",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/16",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/17",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/18",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/19",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/20",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/21",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/22",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/23",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/24",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/25",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/26",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/27",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/28",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/29",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/30",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/31",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/32",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/33",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/34",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/35",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/36",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/37",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/38",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/39",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/40",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/41",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/42",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/43",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/44",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/45",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/46",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/47",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/48",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/49",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/50",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/51",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/52",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/53",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/54",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/55",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/56",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/57",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/58",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/59",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/60",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/61",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/62",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/63",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/64",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/65",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/66",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/67",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/68",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/69",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/70",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/71",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/72",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/73",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/74",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/75",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/76",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/77",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/78",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/79",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/80",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/81",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/82",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/83",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/84",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/85",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/86",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/87",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/88",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/89",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/90",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/91",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/92",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/93",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/94",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/95",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/96",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/97",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/98",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/99",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/100",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/101",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/102",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/103",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/104",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/105",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/106",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/107",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/108",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/109",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/110",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/111",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/112",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/113",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/114",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/115",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/116",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/117",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/118",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/119",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/120",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/121",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/122",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/123",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/124",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/125",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/126",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/127",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/128",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/129",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/130",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/131",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/132",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/133",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/134",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/135",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/136",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/137",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/138",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/139",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/140",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/141",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/142",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/143",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/144",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/145",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/146",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/147",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/148",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/149",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/150",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/151",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/152",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/153",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/154",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/155",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/156",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/157",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/158",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/159",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/160",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/161",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/162",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/163",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/164",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/165",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/166",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/167",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/168",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/169",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/170",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/171",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/172",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/173",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/174",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/175",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/176",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/177",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/178",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/179",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/180",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/181",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/182",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/183",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/184",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/185",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/186",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/187",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/188",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/189",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/190",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/191",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/192",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/193",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/194",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/195",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/196",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/197",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/198",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/199",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/200",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/201",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/202",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/203",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/204",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/205",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/206",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/207",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/208",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/209",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/210",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/211",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/212",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/213",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/214",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/215",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/216",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/217",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/218",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/219",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/220",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/221",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/222",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/223",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/224",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/225",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/226",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/227",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/228",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/229",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/230",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/231",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/232",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/233",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/234",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/235",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/236",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/237",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/238",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/239",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/240",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/241",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/242",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/243",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/244",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/245",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/246",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/247",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/248",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/249",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/250",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/251",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/252",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/253",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/254",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/255",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/256",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/257",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/258",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/259",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/260",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/261",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/262",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/263",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/264",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/265",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/266",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/267",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/268",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/269",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/270",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/271",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/272",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/273",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/274",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/275",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/276",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/277",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/278",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/279",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/280",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/281",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/282",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/283",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/284",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/285",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/286",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/287",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/288",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/289",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/290",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/291",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/292",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/293",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/294",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/295",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/296",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/297",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/298",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/299",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/300",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/301",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/302",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/303",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/304",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/305",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/306",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/307",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/308",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/309",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/310",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/311",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/312",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/313",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/314",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/315",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/316",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/317",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/318",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/319",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/320",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/321",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/322",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/323",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/324",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/325",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/326",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/327",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/328",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/329",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/330",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/331",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/332",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/333",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/334",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/335",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/336",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/337",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/338",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/339",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/340",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/341",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/342",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/343",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/344",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/345",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/346",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/347",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/348",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/349",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/350",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/351",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/352",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/353",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/354",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/355",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/356",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/357",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/358",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/359",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/360",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/361",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/362",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/363",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/364",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/365",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/366",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/367",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/368",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/369",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/370",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/371",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/372",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/373",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/374",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/375",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/376",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/377",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/378",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/379",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/380",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/381",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/382",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/383",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/384",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/385",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/386",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/387",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/388",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/389",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/390",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/391",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/392",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/393",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/394",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/395",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/396",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/397",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/398",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/399",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/400",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/401",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/402",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/403",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/404",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/405",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/406",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/407",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/408",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/409",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/410",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/411",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/412",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/413",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/414",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/415",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/416",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/417",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/418",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/419",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/420",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/421",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/422",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/423",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/424",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/425",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/426",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/427",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/428",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/429",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/430",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/431",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/432",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/433",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/434",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/435",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/436",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/437",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/438",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/439",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/440",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/441",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/442",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/443",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/444",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/445",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/446",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/447",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/448",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/449",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/450",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/451",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/452",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/453",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/454",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/455",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/456",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/457",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/458",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/459",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/460",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/461",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/462",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/463",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/464",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/465",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/466",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/467",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/468",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/469",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/470",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/471",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/472",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/473",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/474",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/475",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/476",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/477",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/478",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/479",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/480",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/481",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/482",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/483",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/484",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/485",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/486",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/487",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/488",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/489",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/490",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/491",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/492",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/493",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/494",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/495",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/496",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/497",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/498",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/499",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/500",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/501",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/502",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/503",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/504",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/505",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/506",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/507",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/508",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/509",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/510",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/511",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/512",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/513",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/514",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/515",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/516",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/517",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/518",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/519",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/520",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/521",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/522",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/523",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/524",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/525",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/526",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/527",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/528",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/529",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/530",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/531",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/532",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/533",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/534",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/535",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/536",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/537",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/538",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/539",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/540",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/541",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/542",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/543",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/544",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/545",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/546",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/547",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/548",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/549",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/550",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/551",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/552",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/553",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/554",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/555",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/556",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/557",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/558",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/559",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/560",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/561",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/562",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/563",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/564",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/565",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/566",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/567",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/568",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/569",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/570",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/571",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/572",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/573",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/574",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/575",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/576",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/577",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/578",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/579",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/580",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/581",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/582",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/583",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/584",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/585",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/586",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/587",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/588",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/589",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/590",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/591",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/592",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/593",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/594",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/595",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/596",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/597",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/598",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/599",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/600",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/601",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/602",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/603",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/604",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/605",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/606",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/607",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/608",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/609",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/610",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/611",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/612",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/613",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/614",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/615",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/616",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/617",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/618",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/619",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/620",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/621",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/622",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/623",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/624",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/625",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/626",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/627",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/628",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/629",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/630",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/631",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/632",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/633",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/634",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/635",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/636",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/637",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/638",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/639",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/640",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/641",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/642",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/643",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/644",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/645",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/646",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/647",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "logicqa/648",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/649",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "logicqa/650",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    }
+  ],
+  "summary": {
+    "total": 651,
+    "router_accuracy": 57.3,
+    "cot_accuracy": 57.3,
+    "astar_accuracy": 57.45,
+    "oracle_accuracy": 68.51
+  }
+}

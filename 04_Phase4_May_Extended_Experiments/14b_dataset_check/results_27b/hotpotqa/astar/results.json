@@ -1,0 +1,242 @@
+[
+  {
+    "question": "What was Iqbal F. Qadir on when he participated in an attack on a radar station located on western shore of the Okhamandal Peninsula?",
+    "gold": "flotilla",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "bridge",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "When did the park at which Tivolis Koncertsal is located open?",
+    "gold": "15 August 1843",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "bridge",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "What is the shared country of ancestry between Art Laboe and Scout Tufankjian?",
+    "gold": "Armenian",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "comparison",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "The school in which the Wilmslow Show is held is designated as what?",
+    "gold": "Centre of Excellence",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "bridge",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Who will Billy Howle be seen opposite in the upcoming British drama film directed by Dominic Cooke?",
+    "gold": "Saoirse Ronan",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "bridge",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "What animated movie, starring Danny Devito, featured music written and produced by Kool Kojak?",
+    "gold": "The Lorax",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "bridge",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Out of the actors who have played the role of Luc Deveraux in the Universal Soldier franchise, which actor has also starred in the movies Holby City, Doctor Strange, the Bourne Ultimatum and Zero Dark Thirty?",
+    "gold": "Scott Adkins",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "bridge",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Tommy's Honour was a drama film that included the actor who found success with what 2016 BBC miniseries?",
+    "gold": "War & Peace",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "bridge",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Which rock band chose its name by drawing it out of a hat, Switchfoot or Midnight Oil?",
+    "gold": "Midnight Oil",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "comparison",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "\"Tunak\", is a bhangra/pop love song by an artist born in which year ?",
+    "gold": "1967",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "bridge",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "Which Captain launched the attack which led to more casualties than any other incident in the war fought between the settlers of the nascent colony of New Netherland and the native Lenape population?",
+    "gold": "Captain John Underhill",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "bridge",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  },
+  {
+    "question": "In which film did Emilio Estevez star in in the same year as Nightmares",
+    "gold": "The Outsiders",
+    "pred": "unknown",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 1,
+    "q_type": "bridge",
+    "trace": "Step 1: The answer is: unknown",
+    "terminal_trace": "Step 1: The answer is: unknown\nFinal Answer: unknown",
+    "reasoning_steps": [
+      {
+        "step_number": 1,
+        "step": "Step 1: The answer is: unknown",
+        "content": "The answer is: unknown",
+        "confidence": 0.5,
+        "is_factual": false
+      }
+    ]
+  }
+]

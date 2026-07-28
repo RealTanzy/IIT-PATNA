@@ -1,0 +1,1102 @@
+[
+  {
+    "question": "Is Mixed martial arts totally original from Roman Colosseum games?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Is the cuisine of Hawaii suitable for a vegan?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Did the Royal Air Force fight in the Boxer Rebellion?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Would someone in Mumbai refer to Solanum melongena as an eggplant?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If someone is a vegan, would they eat honey?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Does Santa Claus work during summer?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Does a Starbucks passion tea have ginger in it?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Is a pound sterling valuable?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Is the foot part of the metric system?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Would a Dolce & Gabbana suit wearer be shunned by their Amish cousins?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Could the members of The Police perform lawful arrests?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Is Rurouni Kenshin from same country as lead character in Nobunaga's Ambition?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Would a broadcast from Spirit make the news in 2020?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Is the span in C-SPAN named after Alan Greenspan?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Was disc jockey Jay Thomas enemies with Clayton Moore?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Do people who smoke Djarum's like cloves?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Would it be typical for a Rede Globo anchor to say Konnichiwa to the viewers?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Is the Liberty Bell still in its original location?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If you were on a diet, would you have to skip lunch at McDonald's?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Would Republic of Korea Navy dominate Eritrea navy?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Did Harry Houdini's wife make psychics look foolish?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Do more Cauliflower grow in Arizona than California?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Would keelhauling be a fair punishment under the Eighth Amendment?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Is Brooklyn known for its bread products?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Can eating your weight in celery prevent diabetes?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Is Linus Torvalds' wife unable to physically defend herself?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Would it be difficult to host Stanley Cup Finals at Rock in Rio?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Did Christina Aguilera turn her chair around for Kelly Clarkson on The Voice?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Does the Dalai Lama believe in the divine barzakh?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Could Sainsbury's buy Tesco?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "4 Krispy Kreme glazed doughnuts exceed AHA  daily sugar allowance?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Would a Deacon be likely to be a fan of the podcast 'God Awful Movies'?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Is Eighth Amendment to the United States Constitution popular in court?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Does Metallica use Soulseek?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Does Mario use mushrooms to run faster?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Would the Titanic be well preserved at the bottom of the Gulf of Finland?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Would Adam Sandler get a reference to Cole Spouse and a scuba man doll?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Are Doctors of Homeopathy more likely than Doctors of Internal Medicine to recommend Quartz as a treatment?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Is week old chlorine water safe to drink?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Did brother of Goofy creator's employer commit an excommunicable offense?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Is a railroad engineer needed during NASCAR events?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Would a student of the class of 2017 have amnesia about 9/11?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Is an astronomer interested in drosophila?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Would food made with black salt smell of sulfur?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Should cactus soil always be damp?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Are any letters directly before and after H missing from Roman numerals?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Did the Social Democratic Party of Germany help Frederick II become King of Prussia?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Could the main character of \"Alice's Adventures in Wonderland\" join a Masonic Lodge?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Did Disney get most of Rudyard Kipling's The Jungle Book profits?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Does The Hague border multiple bodies of water?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Was Bruce Lee absent from the 1964 University of Washington graduation ceremony?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Would Janet Jackson avoid a dish with ham?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Is it expected that Charla Nash would be anxious near a gorilla?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Would Emma Roberts's Nancy Drew be considered a private investigator?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Can a chess board be converted to a Shogi board?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Would Methuselah hypothetically hold a record in the Common Era?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Would Woodrow Wilson support Plessy v. Ferguson decision?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Is Antarctica a good location for Groundhog Day?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Is November a bad time for a photographer to take pictures of a plum tree in bloom?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Could a hundred thousand lolcats fit on a first generation iPhone?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Can Clouded leopards chase down many Pronghorn antelopes?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Is greed the most prevalent of the Seven Deadly Sins?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Would the chef at Carmine's restaurant panic if there was no basil?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Are Chipotle Cinnamon Pork Chops appropriate for a Seder?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Does the book Revolutionary Road give a glimpse at life in a suburb?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Is Rick and Morty considered an anime?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Was the AK-47 used in the Seven Years' War?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Could Amazon afford The Mona Lisa?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Can you buy Casio products at Petco?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Could George Washington's own speeches have been recorded live to a compact disc?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Can I ski in Steamboat Springs, Colorado in August?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Could the first European visitor to Guam been friends with Queen Victoria?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Does an organ donor need to be dead to donate a kidney?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Did the Berlin Wall prevent any athletes from competing in the 1936 Summer Olympics?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Are there enough Jonny Cash records in the world to give one to each French citizen?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Does Disney have an ice princess?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Could the Powerpuff Girls hypothetically attend the Camden Military Academy?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Does the country that received the most gold medals during the 1976 Olympics still exist?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Is a person with St. Vitus's Dance likely to win a ballet competition?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Do Shivambu practitioners believe ammonia is unhealthy?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Was The Little Prince's titular character allergic to flowers?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Are moose used for work near the kingdom of Arendelle?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Would Franz Ferdinand have survived with armadillo armor?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Do frogs feel disgust?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Was Florence Nightingale's death more painful than Saint Peter's?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Was the Donatello crucifix identified in 2020 life size?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Does Snoop Dogg advocate a straight edge lifestyle?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Should spaghetti be slick when cooked?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Is the Royal Air Force ensign on the moon?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Can Larry King's ex-wives form a water polo team?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Could Aretha Franklin vote for a president when her second child was born?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Can a minotaur hypothetically injure a tibia playing football?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Have jokes killed more people than rats in history?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Has Cesar Millan ever tamed a short-eared dog?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Does Neville Longbottom have more courage as a child than as an adult?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Is Bern located east of Paris?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Will Queen Elizabeth be buried in the Pantheon?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Is it safe to wear sandals in snow?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Did either Kublai Khan or his grandfather practice monogamy?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Is Dustin Hoffman one of the B'nei Yisrael?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "While viewing \"Scary Movie\" is the viewer likely to experience an increase in adrenaline?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Do ants outperform apes on language ability?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Can Amtrak's Acela Express break the sound barrier?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Would someone in CHE101 require a Maya Angelou book?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Could someone mistake the smell of your brussels sprouts for a fart?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Is the language used in Saint Vincent and the Grenadines rooted in English?",
+    "gold": "yes",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Are all twins the same gender?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Is the current Chief Justice of the United States forbidden from buying alcohol?",
+    "gold": "no",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Was Martin Luther same sect as Martin Luther King Jr.?",
+    "gold": "no",
+    "router_choice": "A*",
+    "selected_pred": "no",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Would a hypothetical Yeti be towered over by Andre the Giant?",
+    "gold": "yes",
+    "router_choice": "CoT",
+    "selected_pred": "yes",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  }
+]

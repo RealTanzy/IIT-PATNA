@@ -1,0 +1,18 @@
+{
+  "paired_jsonl": "/home/dibyanayan/tanzeel/Hotpotqa RAg/data/cot_astar_runs/hotpotqa_paired_all.jsonl",
+  "split": "all",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "cot_min_f1": 0.3,
+  "astar_min_f1": 0.3,
+  "faiss_metric": "inner_product_on_l2_normalized_vectors",
+  "dimension": 384,
+  "kb_size": 228,
+  "cot_size": 123,
+  "astar_size": 105,
+  "filtered_rows": 500,
+  "all_rows": 500,
+  "kb_jsonl": "Hotpotqa RAg/artifacts_f1_030/hotpotqa_reasoning_kb.jsonl",
+  "kb_cot_jsonl": "Hotpotqa RAg/artifacts_f1_030/hotpotqa_reasoning_kb_cot.jsonl",
+  "kb_astar_jsonl": "Hotpotqa RAg/artifacts_f1_030/hotpotqa_reasoning_kb_astar.jsonl",
+  "faiss_index": "Hotpotqa RAg/artifacts_f1_030/hotpotqa_questions.faiss"
+}

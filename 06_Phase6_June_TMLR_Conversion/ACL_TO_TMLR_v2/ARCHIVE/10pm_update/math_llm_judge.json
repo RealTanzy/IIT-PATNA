@@ -1,0 +1,3514 @@
+{
+  "router": "llm_judge",
+  "dataset": "math",
+  "model": "qwen-2.5-0.5b",
+  "results": [
+    {
+      "task_id": "MATH/0",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/1",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/2",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/3",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/4",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/5",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/6",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/7",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/8",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/9",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/10",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/11",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/12",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/13",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/14",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/15",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/16",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/17",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/18",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/19",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/20",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/21",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/22",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/23",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/24",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/25",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/26",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/27",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/28",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/29",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/30",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/31",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/32",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/33",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/34",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/35",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/36",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/37",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/38",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/39",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/40",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/41",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/42",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/43",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/44",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/45",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/46",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/47",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/48",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/49",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/50",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/51",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/52",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/53",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/54",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/55",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/56",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/57",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/58",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/59",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/60",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/61",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/62",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/63",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/64",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/65",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/66",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/67",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/68",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/69",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/70",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/71",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/72",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/73",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/74",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/75",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/76",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/77",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/78",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/79",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/80",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/81",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/82",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/83",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/84",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/85",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/86",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/87",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/88",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/89",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/90",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/91",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/92",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/93",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/94",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/95",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/96",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/97",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/98",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/99",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/100",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/101",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/102",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/103",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/104",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/105",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/106",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/107",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/108",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/109",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/110",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/111",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/112",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/113",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/114",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/115",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/116",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/117",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/118",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/119",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/120",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/121",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/122",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/123",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/124",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/125",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/126",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/127",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/128",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/129",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/130",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/131",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/132",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/133",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/134",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/135",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/136",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/137",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/138",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/139",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/140",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/141",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/142",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/143",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/144",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/145",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/146",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/147",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/148",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/149",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/150",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/151",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/152",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/153",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/154",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/155",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/156",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/157",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/158",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/159",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/160",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/161",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/162",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/163",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/164",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/165",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/166",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/167",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/168",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/169",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/170",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/171",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/172",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/173",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/174",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/175",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/176",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/177",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/178",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/179",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/180",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/181",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/182",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/183",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/184",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/185",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/186",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/187",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/188",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/189",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/190",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/191",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/192",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/193",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/194",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/195",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/196",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/197",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/198",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/199",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/200",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/201",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/202",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/203",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/204",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/205",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/206",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/207",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/208",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/209",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/210",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/211",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/212",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/213",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/214",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/215",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/216",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/217",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/218",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/219",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/220",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/221",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/222",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/223",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/224",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/225",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/226",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/227",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/228",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/229",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/230",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/231",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/232",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/233",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/234",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/235",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/236",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/237",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/238",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/239",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/240",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/241",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/242",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/243",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/244",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/245",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/246",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/247",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/248",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/249",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/250",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/251",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/252",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/253",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/254",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/255",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/256",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/257",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/258",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/259",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/260",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/261",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/262",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/263",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/264",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/265",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/266",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/267",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/268",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/269",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/270",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/271",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/272",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/273",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/274",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/275",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/276",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/277",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/278",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/279",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/280",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/281",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/282",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/283",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/284",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/285",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/286",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/287",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/288",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/289",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/290",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/291",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/292",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/293",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/294",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/295",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/296",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/297",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/298",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/299",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/300",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/301",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/302",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/303",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/304",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/305",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/306",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/307",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/308",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/309",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/310",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/311",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/312",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/313",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/314",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/315",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/316",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/317",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/318",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/319",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/320",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/321",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/322",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/323",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/324",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/325",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/326",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/327",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/328",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/329",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/330",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/331",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/332",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/333",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/334",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/335",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/336",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/337",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/338",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/339",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/340",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/341",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/342",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/343",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/344",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/345",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/346",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/347",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/348",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/349",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/350",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/351",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/352",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/353",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/354",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/355",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/356",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/357",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/358",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/359",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/360",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/361",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/362",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/363",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/364",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/365",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/366",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/367",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/368",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/369",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/370",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/371",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/372",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/373",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/374",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/375",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/376",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/377",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/378",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/379",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/380",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/381",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/382",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/383",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/384",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/385",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/386",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/387",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/388",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/389",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/390",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/391",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/392",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/393",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/394",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/395",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/396",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/397",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/398",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/399",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/400",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/401",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/402",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/403",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/404",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/405",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/406",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/407",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/408",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/409",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/410",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/411",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/412",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/413",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/414",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/415",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/416",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/417",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/418",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/419",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/420",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/421",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/422",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/423",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/424",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/425",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/426",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/427",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/428",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/429",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/430",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/431",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/432",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/433",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/434",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/435",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/436",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/437",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/438",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/439",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/440",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/441",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/442",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/443",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/444",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/445",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/446",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/447",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/448",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/449",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/450",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/451",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/452",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/453",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/454",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/455",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/456",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/457",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/458",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/459",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/460",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/461",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/462",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/463",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/464",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/465",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/466",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/467",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/468",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/469",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/470",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/471",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/472",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/473",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/474",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/475",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/476",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/477",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/478",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/479",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/480",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/481",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/482",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/483",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/484",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/485",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/486",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/487",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/488",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/489",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/490",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/491",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/492",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/493",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/494",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/495",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/496",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/497",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "MATH/498",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "MATH/499",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    }
+  ],
+  "summary": {
+    "total": 500,
+    "router_accuracy": 32.2,
+    "cot_accuracy": 32.8,
+    "astar_accuracy": 16.2,
+    "oracle_accuracy": 38.2
+  }
+}

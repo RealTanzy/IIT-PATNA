@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>When Does Search Beat Reasoning?</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI',system-ui,sans-serif; background:#f4f6fa; color:#1a2035; height:100vh; overflow:hidden; }
+.deck { width:100vw; height:100vh; position:relative; }
+.slide { display:none; width:100%; height:100%; padding:44px 72px 60px; flex-direction:column; justify-content:center; position:absolute; top:0; left:0; background:#f4f6fa; }
+.slide.active { display:flex; }
+.slide::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg,#2563eb,#7c3aed); }
+.deck-label { font-size:0.7rem; letter-spacing:3px; text-transform:uppercase; color:#2563eb; font-weight:600; margin-bottom:8px; }
+h2 { font-size:1.7rem; font-weight:700; color:#0f172a; margin-bottom:6px; line-height:1.25; }
+.divider { width:44px; height:3px; background:linear-gradient(90deg,#2563eb,#7c3aed); border-radius:2px; margin-bottom:24px; }
+.card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:20px 22px; box-shadow:0 1px 4px rgba(0,0,0,0.06); }
+.card h3 { font-size:0.95rem; font-weight:700; color:#0f172a; margin-bottom:6px; }
+.card p,.card li { font-size:0.84rem; color:#475569; line-height:1.65; }
+.card ul { padding-left:16px; }
+.card-row { display:flex; gap:16px; }
+.card-row .card { flex:1; }
+.finding { background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:10px; padding:14px 20px; margin-top:16px; font-size:0.87rem; color:#1e3a5f; line-height:1.6; }
+.finding strong { color:#1d4ed8; }
+.stat-row { display:flex; gap:14px; }
+.stat { flex:1; background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:18px 16px; text-align:center; box-shadow:0 1px 4px rgba(0,0,0,0.05); }
+.stat .big { font-size:2rem; font-weight:800; line-height:1; margin-bottom:6px; }
+.stat .big.blue { color:#2563eb; }
+.stat .big.purple { color:#7c3aed; }
+.stat .big.orange { color:#ea580c; }
+.stat .big.green { color:#16a34a; }
+.stat p { font-size:0.76rem; color:#64748b; line-height:1.4; }
+table { width:100%; border-collapse:collapse; font-size:0.82rem; }
+thead th { background:#f1f5f9; color:#334155; padding:9px 12px; text-align:left; font-weight:700; border-bottom:2px solid #e2e8f0; }
+tbody td { padding:8px 12px; border-bottom:1px solid #f1f5f9; color:#334155; }
+tbody tr:hover td { background:#f8fafc; }
+.win-a { color:#1d4ed8; font-weight:700; }
+.win-cot { color:#ea580c; font-weight:700; }
+.bold { color:#0f172a; font-weight:700; }
+.steps { display:flex; flex-direction:column; gap:12px; }
+.step { display:flex; align-items:flex-start; gap:14px; }
+.step-num { min-width:30px; height:30px; background:linear-gradient(135deg,#2563eb,#7c3aed); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:700; color:#fff; flex-shrink:0; }
+.step-body h4 { font-size:0.9rem; font-weight:700; color:#0f172a; margin-bottom:2px; }
+.step-body p { font-size:0.8rem; color:#475569; line-height:1.5; }
+.two-col { display:flex; gap:24px; align-items:flex-start; }
+.two-col .left { flex:1.1; }
+.two-col .right { flex:0.9; }
+.bar-group { display:flex; flex-direction:column; gap:8px; }
+.bar-item { display:flex; align-items:center; gap:10px; }
+.bar-label { font-size:0.77rem; color:#475569; width:145px; flex-shrink:0; }
+.bar-track { flex:1; height:20px; background:#f1f5f9; border-radius:4px; overflow:hidden; }
+.bar-fill { height:100%; border-radius:4px; display:flex; align-items:center; padding-left:7px; font-size:0.72rem; font-weight:700; color:#fff; }
+.bar-blue { background:linear-gradient(90deg,#2563eb,#3b82f6); }
+.bar-orange { background:linear-gradient(90deg,#ea580c,#f97316); }
+.bar-purple { background:linear-gradient(90deg,#7c3aed,#a855f7); }
+.bar-green { background:linear-gradient(90deg,#16a34a,#22c55e); }
+.slide-title { background:linear-gradient(135deg,#eff6ff 0%,#faf5ff 100%) !important; align-items:center; text-align:center; }
+.slide-title .tag { font-size:0.72rem; letter-spacing:3px; text-transform:uppercase; color:#7c3aed; font-weight:700; margin-bottom:14px; }
+.slide-title h1 { font-size:2.4rem; font-weight:800; color:#0f172a; line-height:1.2; margin-bottom:10px; }
+.slide-title h1 span { color:#2563eb; }
+.slide-title .sub { font-size:1rem; color:#64748b; margin-bottom:32px; }
+.pill-row { display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+.pill { background:#fff; border:1px solid #e2e8f0; border-radius:20px; padding:6px 16px; font-size:0.78rem; color:#475569; box-shadow:0 1px 3px rgba(0,0,0,0.07); }
+.chart-box { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:16px; box-shadow:0 1px 4px rgba(0,0,0,0.06); }
+.chart-box h3 { font-size:0.85rem; font-weight:700; color:#0f172a; margin-bottom:12px; text-align:center; }
+.nav { position:fixed; bottom:22px; right:36px; display:flex; align-items:center; gap:12px; z-index:100; }
+.nav-btn { background:#fff; border:1px solid #e2e8f0; color:#475569; width:38px; height:38px; border-radius:8px; cursor:pointer; font-size:1rem; transition:all 0.2s; display:flex; align-items:center; justify-content:center; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+.nav-btn:hover { background:#2563eb; color:#fff; border-color:#2563eb; }
+.nav-counter { font-size:0.8rem; color:#94a3b8; }
+.dots { position:fixed; bottom:30px; left:50%; transform:translateX(-50%); display:flex; gap:7px; }
+.dot { width:7px; height:7px; border-radius:50%; background:#cbd5e1; cursor:pointer; transition:all 0.2s; }
+.dot.active { background:#2563eb; width:20px; border-radius:4px; }
+.slide-num { position:fixed; top:18px; right:36px; font-size:0.72rem; color:#94a3b8; letter-spacing:1px; }
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- SLIDE 1: TITLE -->
+<div class="slide slide-title active">
+  <div class="tag">Research Presentation · NLP / LLM Reasoning</div>
+  <h1>When Does <span>Search</span> Beat Reasoning?</h1>
+  <p class="sub">A Topology-Driven Diagnostic of A* versus Chain-of-Thought</p>
+  <div class="pill-row">
+    <div class="pill">📚 2,151 Questions</div>
+    <div class="pill">🤖 LLaMA 3.1-8B</div>
+    <div class="pill">🗂 LogicQA · StrategyQA · HotpotQA</div>
+    <div class="pill">📊 NMF Topic Modelling</div>
+    <div class="pill">🗺 Reasoning Topology</div>
+    <div class="pill">🔀 Adaptive Routing</div>
+  </div>
+  <br>
+  <div style="display:flex;gap:40px;justify-content:center;margin-top:8px">
+    <div style="text-align:center"><div style="font-size:1.8rem;font-weight:800;color:#2563eb">7</div><div style="font-size:0.75rem;color:#64748b">Contributions</div></div>
+    <div style="text-align:center"><div style="font-size:1.8rem;font-weight:800;color:#7c3aed">5</div><div style="font-size:0.75rem;color:#64748b">Comparison methods</div></div>
+    <div style="text-align:center"><div style="font-size:1.8rem;font-weight:800;color:#16a34a">13</div><div style="font-size:0.75rem;color:#64748b">Topology features</div></div>
+    <div style="text-align:center"><div style="font-size:1.8rem;font-weight:800;color:#ea580c">8</div><div style="font-size:0.75rem;color:#64748b">Topic categories</div></div>
+  </div>
+</div>
+
+<!-- SLIDE 2: THE PROBLEM -->
+<div class="slide">
+  <div class="deck-label">Motivation</div>
+  <h2>The Problem — Aggregates Are Misleading</h2>
+  <div class="divider"></div>
+  <div class="two-col">
+    <div class="left">
+      <div class="card-row" style="margin-bottom:14px">
+        <div class="card">
+          <h3>❓ The Core Question</h3>
+          <p>CoT and A* search have both improved LLM reasoning. But no one has answered <em>when</em> search helps vs. hurts — until now.</p>
+        </div>
+        <div class="card">
+          <h3>⚠️ The Inconsistency</h3>
+          <ul>
+            <li>StrategyQA: A* wins <strong>+10.3 pp</strong> (p&lt;0.001)</li>
+            <li>HotpotQA: A* wins <strong>+3.3 pp</strong> (p=0.048)</li>
+            <li>LogicQA: A* <strong>loses −0.9 pp</strong> (p=0.61 NS)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="margin-bottom:14px">
+        <h3>🎯 Our Two Diagnostic Lenses</h3>
+        <div style="display:flex;gap:10px;margin-top:10px">
+          <div style="flex:1;background:#eff6ff;border-radius:8px;padding:10px;font-size:0.8rem;color:#1e40af"><strong>① Reasoning Topology</strong><br>13 structural features → K-means → 4 cluster types → prescriptive routing rule</div>
+          <div style="flex:1;background:#faf5ff;border-radius:8px;padding:10px;font-size:0.8rem;color:#6b21a8"><strong>② Topic Modelling</strong><br>NMF on 2,151 questions → 8 cross-dataset categories → 81.4% A*-dominant</div>
+        </div>
+      </div>
+      <div class="finding"><strong>Prior confound fixed:</strong> Earlier work compared A* on LLaMA-8B vs CoT on Qwen-0.5B — conflating model size with strategy. We ran both on <strong>exactly the same model and questions</strong> (2,151 × 2 balanced design).</div>
+    </div>
+    <div class="right">
+      <div class="chart-box">
+        <h3>Accuracy Comparison Across Benchmarks (%)</h3>
+        <svg viewBox="0 0 320 220" width="100%" style="display:block">
+          <line x1="55" y1="20" x2="55" y2="175" stroke="#e2e8f0" stroke-width="1"/>
+          <line x1="55" y1="175" x2="310" y2="175" stroke="#e2e8f0" stroke-width="1"/>
+          <line x1="55" y1="60" x2="310" y2="60" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4,3"/>
+          <line x1="55" y1="100" x2="310" y2="100" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4,3"/>
+          <line x1="55" y1="140" x2="310" y2="140" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4,3"/>
+          <text x="48" y="23" font-size="8" fill="#94a3b8" text-anchor="end">90%</text>
+          <text x="48" y="63" font-size="8" fill="#94a3b8" text-anchor="end">75%</text>
+          <text x="48" y="103" font-size="8" fill="#94a3b8" text-anchor="end">60%</text>
+          <text x="48" y="143" font-size="8" fill="#94a3b8" text-anchor="end">45%</text>
+          <text x="48" y="178" font-size="8" fill="#94a3b8" text-anchor="end">30%</text>
+          <!-- StrategyQA: CoT=64.52, A*=74.80. scale: 30=175, 90=20, 1pp=155/60=2.583px -->
+          <!-- y = 175-(v-30)*2.583 -->
+          <!-- CoT 64.52 -> 175-89.5=85.5 -> 86, A* 74.80 -> 175-115.7=59.3 -> 59 -->
+          <rect x="70" y="86" width="22" height="89" rx="3" fill="#3b82f6" opacity="0.85"/>
+          <rect x="95" y="59" width="22" height="116" rx="3" fill="#7c3aed" opacity="0.85"/>
+          <!-- LogicQA: CoT=45.78->175-40.8=134, A*=44.85->175-38.4=137 -->
+          <rect x="155" y="134" width="22" height="41" rx="3" fill="#3b82f6" opacity="0.85"/>
+          <rect x="180" y="137" width="22" height="38" rx="3" fill="#7c3aed" opacity="0.85"/>
+          <!-- HotpotQA: CoT=76.80->175-121=54, A*=80.10->175-129.5=45.5->46 -->
+          <rect x="240" y="54" width="22" height="121" rx="3" fill="#3b82f6" opacity="0.85"/>
+          <rect x="265" y="46" width="22" height="129" rx="3" fill="#7c3aed" opacity="0.85"/>
+          <text x="81" y="82" font-size="7.5" fill="#1e40af" text-anchor="middle" font-weight="700">64.5</text>
+          <text x="106" y="55" font-size="7.5" fill="#5b21b6" text-anchor="middle" font-weight="700">74.8</text>
+          <text x="166" y="130" font-size="7.5" fill="#1e40af" text-anchor="middle" font-weight="700">45.8</text>
+          <text x="191" y="133" font-size="7.5" fill="#5b21b6" text-anchor="middle" font-weight="700">44.9</text>
+          <text x="251" y="50" font-size="7.5" fill="#1e40af" text-anchor="middle" font-weight="700">76.8</text>
+          <text x="276" y="42" font-size="7.5" fill="#5b21b6" text-anchor="middle" font-weight="700">80.1</text>
+          <text x="95" y="192" font-size="8.5" fill="#475569" text-anchor="middle" font-weight="600">StrategyQA</text>
+          <text x="178" y="192" font-size="8.5" fill="#475569" text-anchor="middle" font-weight="600">LogicQA</text>
+          <text x="263" y="192" font-size="8.5" fill="#475569" text-anchor="middle" font-weight="600">HotpotQA</text>
+          <rect x="65" y="205" width="10" height="10" rx="2" fill="#3b82f6"/>
+          <text x="80" y="213" font-size="8" fill="#475569">CoT</text>
+          <rect x="110" y="205" width="10" height="10" rx="2" fill="#7c3aed"/>
+          <text x="125" y="213" font-size="8" fill="#475569">A*</text>
+          <text x="108" y="50" font-size="7.5" fill="#16a34a" font-weight="700">+10.3pp ↑</text>
+          <text x="265" y="38" font-size="7.5" fill="#16a34a" font-weight="700">+3.3pp ↑</text>
+          <text x="155" y="122" font-size="7.5" fill="#ea580c" font-weight="700">−0.9pp</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 3: A* vs CoT -->
+<div class="slide">
+  <div class="deck-label">Background</div>
+  <h2>A* Search vs Chain-of-Thought — How They Work</h2>
+  <div class="divider"></div>
+  <div class="card-row" style="margin-bottom:14px">
+    <div class="card" style="border-top:3px solid #3b82f6">
+      <h3>🔗 Chain-of-Thought (CoT)</h3>
+      <p style="margin-bottom:8px">Linear reasoning — one step at a time, no backtracking.</p>
+      <div style="background:#eff6ff;border-radius:6px;padding:8px;font-size:0.78rem;color:#1e40af;font-family:monospace">Q → Step 1 → Step 2 → Step 3 → Answer</div>
+      <p style="margin-top:8px">✅ Fast, fluent, works on single-step tasks<br>❌ Commits early, cannot backtrack on errors<br>Temp τ=0.7, SC uses 5 samples at τ=0.9</p>
+    </div>
+    <div class="card" style="border-top:3px solid #7c3aed">
+      <h3>🌳 A* Search</h3>
+      <p style="margin-bottom:8px">Graph-based — explores multiple branches guided by f(n)=g(n)+h(n).</p>
+      <div style="background:#faf5ff;border-radius:6px;padding:8px;font-size:0.78rem;color:#6b21a8;font-family:monospace">Q → {B1,B2,B3} → score → expand best → ... → Answer</div>
+      <p style="margin-top:8px">✅ Systematic multi-hop, backtracking<br>❌ Higher compute, can overthink simple Qs<br>Nc=3, B=15, critic τ=0.3</p>
+    </div>
+    <div class="card" style="border-top:3px solid #16a34a">
+      <h3>⚖️ Why A* is Theoretically Sound</h3>
+      <p style="margin-bottom:6px">Admissibility verified empirically on 500 annotated states:</p>
+      <ul>
+        <li><strong>Case 2 satisfied:</strong> critic mean score 0.43 vs human 0.58 (p&lt;0.001) → conservative, admissible in expectation</li>
+        <li><strong>Case 3 satisfied:</strong> overestimation rate 12.3%, ε_max=0.14 → bounded sub-optimality</li>
+        <li>Sufficient but not necessary — search budget B acts as regulariser</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card">
+    <h3>📊 Aggregate Results — The Oracle Gap Is the Real Story</h3>
+    <div style="display:flex;gap:12px;margin-top:8px">
+      <div style="flex:1;background:#f0fdf4;border-radius:8px;padding:10px;font-size:0.82rem">
+        <strong style="color:#16a34a">Oracle (per-instance best)</strong><br>
+        StrategyQA: <strong>84.59%</strong> | LogicQA: <strong>59.29%</strong> | HotpotQA: <strong>94.20%</strong><br>
+        <span style="font-size:0.75rem;color:#475569">On HotpotQA: 94.2% correct if you always pick the right method vs 80.1% for A* alone = 14.1pp gap. This is the ceiling for a perfect router.</span>
+      </div>
+      <div style="flex:1;background:#fff7ed;border-radius:8px;padding:10px;font-size:0.82rem">
+        <strong style="color:#ea580c">Complementarity</strong><br>
+        28–32% of questions are answered correctly by <em>exactly one</em> method across all datasets.<br>
+        <span style="font-size:0.75rem;color:#475569">LogicQA "both wrong" = 40.7% — formal logic is hard for current LLMs regardless of strategy.</span>
+      </div>
+      <div style="flex:1;background:#eff6ff;border-radius:8px;padding:10px;font-size:0.82rem">
+        <strong style="color:#1d4ed8">SC and ToT</strong><br>
+        Consistently fall between CoT and A* on all datasets.<br>
+        <span style="font-size:0.75rem;color:#475569">They capture part but not all of the value of guided search — partial but insufficient exploration.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 4: TOPIC MODELLING METHOD -->
+<div class="slide">
+  <div class="deck-label">Methodology</div>
+  <h2>Topic Modelling — How We Found the 8 Categories</h2>
+  <div class="divider"></div>
+  <div class="two-col">
+    <div class="left">
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-body"><h4>Pool all 2,151 questions (dataset labels ignored)</h4><p>LogicQA (651) + StrategyQA (500) + HotpotQA (1,000). Cross-dataset mixing is intentional — we want topics that cut across benchmarks, not within them.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-body"><h4>TF-IDF Vectorisation</h4><p>5,000 features, max_df=0.80, min_df=3, ngram_range=(1,2). Bigrams like "multi hop", "time period" captured. Common words down-weighted. Produces a 2151 × 5000 matrix.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-body"><h4>NMF — Non-negative Matrix Factorisation</h4><p>Decomposes 2151×5000 into k topic components. Non-negativity constraint → additive, parts-based, interpretable topics. Each question assigned to its highest-scoring topic.</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-body"><h4>Select k=8 via NPMI Coherence (Mimno et al. 2011)</h4><p>Swept k∈{6,8,10}. k=8 peaks at NPMI=0.127. Bootstrap stability: 87.3% topic-assignment agreement over 10 folds (std 2.1%). Finding robust: A*-dominant at 79.2% (k=6) and 82.1% (k=10).</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-body"><h4>Measure A* vs CoT accuracy per topic on balanced data</h4><p>Same model, same questions, same evaluation. Whoever wins majority of per-dataset comparisons is the topic winner.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="chart-box">
+        <h3>NPMI Coherence vs k — Why k=8</h3>
+        <svg viewBox="0 0 280 175" width="100%" style="display:block">
+          <line x1="40" y1="15" x2="40" y2="130" stroke="#94a3b8" stroke-width="1.5"/>
+          <line x1="40" y1="130" x2="265" y2="130" stroke="#94a3b8" stroke-width="1.5"/>
+          <line x1="40" y1="50"  x2="265" y2="50"  stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4,3"/>
+          <line x1="40" y1="85"  x2="265" y2="85"  stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4,3"/>
+          <text x="35" y="18"  font-size="7.5" fill="#94a3b8" text-anchor="end">0.130</text>
+          <text x="35" y="53"  font-size="7.5" fill="#94a3b8" text-anchor="end">0.115</text>
+          <text x="35" y="88"  font-size="7.5" fill="#94a3b8" text-anchor="end">0.100</text>
+          <text x="35" y="133" font-size="7.5" fill="#94a3b8" text-anchor="end">0.085</text>
+          <!-- scale: 0.085=130, 0.130=15. 1unit=0.001, 1px=115/45=2.556px/unit -->
+          <!-- k=6: 0.103 → 130-(0.103-0.085)*2556 = 130-46=84 -->
+          <!-- k=8: 0.127 → 130-(0.127-0.085)*2556 = 130-107=23 -->
+          <!-- k=10: 0.118 → 130-(0.118-0.085)*2556 = 130-84=46 -->
+          <!-- x: k=6→90, k=8→165, k=10→240 -->
+          <text x="90"  y="148" font-size="9" fill="#475569" text-anchor="middle">k = 6</text>
+          <text x="165" y="148" font-size="9" fill="#7c3aed" text-anchor="middle" font-weight="700">k = 8</text>
+          <text x="240" y="148" font-size="9" fill="#475569" text-anchor="middle">k = 10</text>
+          <text x="152" y="160" font-size="7.5" fill="#64748b" text-anchor="middle">Number of Topics (k)</text>
+          <rect x="148" y="15" width="34" height="120" rx="4" fill="#7c3aed" opacity="0.06"/>
+          <polyline points="90,84 165,23 240,46" stroke="#2563eb" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <circle cx="90"  cy="84" r="5" fill="#3b82f6"/>
+          <circle cx="165" cy="23" r="7" fill="#7c3aed"/>
+          <circle cx="240" cy="46" r="5" fill="#3b82f6"/>
+          <text x="90"  y="78" font-size="8" fill="#475569" text-anchor="middle">0.103</text>
+          <text x="165" y="16" font-size="9" fill="#7c3aed" text-anchor="middle" font-weight="700">0.127 ★ PEAK</text>
+          <text x="240" y="40" font-size="8" fill="#475569" text-anchor="middle">0.118</text>
+        </svg>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <h3>Why NPMI over Perplexity?</h3>
+        <p>Perplexity always improves as k increases — never gives a peak. NPMI measures <strong>semantic coherence</strong>: "do top words of this topic co-occur more than chance?" This correlates with human interpretability (Mimno et al. 2011, EMNLP).</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 5: TOPIC RESULTS -->
+<div class="slide">
+  <div class="deck-label">Results — Topic Modelling</div>
+  <h2>8 Topics: A* Dominates 81.4% of the Corpus</h2>
+  <div class="divider"></div>
+  <div class="two-col">
+    <div class="left">
+      <table>
+        <thead><tr><th>Topic</th><th>Coverage</th><th>StrategyQA</th><th>HotpotQA</th><th>W</th></tr></thead>
+        <tbody>
+          <tr><td class="bold">content_domain_factual</td><td class="bold">43.7%</td><td><strong>75</strong>/56</td><td><strong>81</strong>/74</td><td class="win-a">A*</td></tr>
+          <tr><td class="bold">assumption_analysis</td><td>13.9%</td><td><strong>82</strong>/50</td><td>—</td><td class="win-a">A*</td></tr>
+          <tr><td class="bold">temporal_event</td><td>9.8%</td><td><strong>79</strong>/75</td><td><strong>80</strong>/66</td><td class="win-a">A*</td></tr>
+          <tr><td class="bold">evaluate_arg_eff.</td><td>9.1%</td><td><strong>78</strong>/76</td><td>62/62</td><td class="win-a">A*</td></tr>
+          <tr><td>comparison_factual</td><td>8.7%</td><td>71/<strong>73</strong></td><td><strong>71</strong>/59</td><td class="win-cot">CoT</td></tr>
+          <tr><td>statement_strength</td><td>5.3%</td><td>33/<strong>67</strong></td><td>—</td><td class="win-cot">CoT</td></tr>
+          <tr><td class="bold">biography_factual</td><td>4.9%</td><td><strong>62</strong>/58</td><td><strong>87</strong>/82</td><td class="win-a">A*</td></tr>
+          <tr><td>best_option_sel.</td><td>4.6%</td><td><strong>100</strong>/75</td><td>100/100</td><td class="win-cot">CoT</td></tr>
+        </tbody>
+      </table>
+      <div class="finding" style="margin-top:12px">
+        <strong>Why A* wins multi-hop categories:</strong> content_domain (2–3 hops, +19pp best gap), assumption_analysis (full premise scan, +32pp), temporal_event (date chains, +14pp). <strong>Why CoT wins:</strong> comparison, statement strength, best option — all single-step inference. A*'s branching adds overhead with no benefit.
+      </div>
+    </div>
+    <div class="right">
+      <div class="chart-box">
+        <h3>Topic Coverage: A*-Dominant vs CoT-Dominant</h3>
+        <svg viewBox="0 0 270 250" width="100%" style="display:block">
+          <text x="5" y="22"  font-size="7.5" fill="#475569">Content Domain</text>
+          <text x="5" y="50"  font-size="7.5" fill="#475569">Assumption Anal.</text>
+          <text x="5" y="78"  font-size="7.5" fill="#475569">Temporal Event</text>
+          <text x="5" y="106" font-size="7.5" fill="#475569">Eval. Argument</text>
+          <text x="5" y="134" font-size="7.5" fill="#475569">Comparison</text>
+          <text x="5" y="162" font-size="7.5" fill="#475569">Statement Str.</text>
+          <text x="5" y="190" font-size="7.5" fill="#475569">Biography</text>
+          <text x="5" y="218" font-size="7.5" fill="#475569">Best Option</text>
+          <!-- A* bars (blue): scale 0-45%→0-194px -->
+          <rect x="110" y="10"  width="194" height="16" rx="3" fill="#2563eb" opacity="0.85"/>
+          <rect x="110" y="38"  width="62"  height="16" rx="3" fill="#2563eb" opacity="0.85"/>
+          <rect x="110" y="66"  width="44"  height="16" rx="3" fill="#2563eb" opacity="0.85"/>
+          <rect x="110" y="94"  width="40"  height="16" rx="3" fill="#2563eb" opacity="0.85"/>
+          <rect x="110" y="178" width="22"  height="16" rx="3" fill="#2563eb" opacity="0.85"/>
+          <!-- CoT bars (orange) -->
+          <rect x="110" y="122" width="38"  height="16" rx="3" fill="#ea580c" opacity="0.85"/>
+          <rect x="110" y="150" width="24"  height="16" rx="3" fill="#ea580c" opacity="0.85"/>
+          <rect x="110" y="206" width="20"  height="16" rx="3" fill="#ea580c" opacity="0.85"/>
+          <!-- Labels -->
+          <text x="308" y="22"  font-size="7.5" fill="#1d4ed8" font-weight="700">43.7%</text>
+          <text x="176" y="50"  font-size="7.5" fill="#1d4ed8" font-weight="700">13.9%</text>
+          <text x="158" y="78"  font-size="7.5" fill="#1d4ed8" font-weight="700">9.8%</text>
+          <text x="154" y="106" font-size="7.5" fill="#1d4ed8" font-weight="700">9.1%</text>
+          <text x="152" y="134" font-size="7.5" fill="#c2410c" font-weight="700">8.7%</text>
+          <text x="138" y="162" font-size="7.5" fill="#c2410c" font-weight="700">5.3%</text>
+          <text x="136" y="190" font-size="7.5" fill="#1d4ed8" font-weight="700">4.9%</text>
+          <text x="134" y="218" font-size="7.5" fill="#c2410c" font-weight="700">4.6%</text>
+          <!-- Legend -->
+          <rect x="110" y="232" width="10" height="8" rx="2" fill="#2563eb"/>
+          <text x="124" y="239" font-size="7.5" fill="#475569">A*-dominant (81.4%)</text>
+          <rect x="205" y="232" width="10" height="8" rx="2" fill="#ea580c"/>
+          <text x="219" y="239" font-size="7.5" fill="#475569">CoT (18.6%)</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 6: TOPOLOGY -->
+<div class="slide">
+  <div class="deck-label">Topology Framework</div>
+  <h2>Branching Coefficient Predicts A* Advantage (R²=0.94)</h2>
+  <div class="divider"></div>
+  <div class="two-col">
+    <div class="left">
+      <p style="font-size:0.83rem;color:#64748b;margin-bottom:14px">K-means (k=4) on 13 structural features across all 2,151 questions. BC = (context_sentences × hop_count) / question_length — measures reasoning complexity per unit question length.</p>
+      <table style="margin-bottom:14px">
+        <thead><tr><th>Cluster</th><th>Profile</th><th>BC</th><th>A*%</th><th>CoT%</th><th>Gap</th><th>Rule</th></tr></thead>
+        <tbody>
+          <tr><td class="bold">C1</td><td>Linear, short</td><td>1.28</td><td>81.7</td><td>82.1</td><td class="win-cot">−0.4</td><td style="font-size:0.75rem;color:#64748b">Use CoT</td></tr>
+          <tr><td class="bold">C2</td><td>Mid-branch</td><td>4.24</td><td>73.5</td><td>66.2</td><td class="win-a">+7.3</td><td style="font-size:0.75rem;color:#64748b">Route adaptively</td></tr>
+          <tr><td class="bold">C3</td><td>Complex, noisy</td><td>4.02</td><td>52.3</td><td>49.1</td><td class="win-a">+3.2</td><td style="font-size:0.75rem;color:#64748b">Use RAG</td></tr>
+          <tr><td class="bold">C4</td><td>Deep-branch</td><td>6.49</td><td>69.8</td><td>58.4</td><td class="win-a">+11.4</td><td style="font-size:0.75rem;color:#64748b">Use A*</td></tr>
+        </tbody>
+      </table>
+      <div class="card">
+        <h3>Top Router Features (XGBoost importance)</h3>
+        <div class="bar-group" style="margin-top:8px">
+          <div class="bar-item"><div class="bar-label">Context length c_len</div><div class="bar-track"><div class="bar-fill bar-blue" style="width:83%">0.208</div></div></div>
+          <div class="bar-item"><div class="bar-label">Question length q_len</div><div class="bar-track"><div class="bar-fill bar-blue" style="width:77%">0.194</div></div></div>
+          <div class="bar-item"><div class="bar-label">Context sentences c_sent</div><div class="bar-track"><div class="bar-fill bar-purple" style="width:45%">0.113</div></div></div>
+          <div class="bar-item"><div class="bar-label">Contextual density con</div><div class="bar-track"><div class="bar-fill bar-purple" style="width:36%">0.091</div></div></div>
+        </div>
+        <p style="margin-top:8px;font-size:0.76rem;color:#64748b">All structural, not lexical → generalises to unseen topics and domains.</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="chart-box">
+        <h3>A* Advantage (pp) vs Branching Coefficient</h3>
+        <svg viewBox="0 0 280 215" width="100%" style="display:block">
+          <line x1="45" y1="15" x2="45" y2="175" stroke="#94a3b8" stroke-width="1.5"/>
+          <line x1="45" y1="175" x2="270" y2="175" stroke="#94a3b8" stroke-width="1.5"/>
+          <line x1="45" y1="55"  x2="270" y2="55"  stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4,3"/>
+          <line x1="45" y1="95"  x2="270" y2="95"  stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4,3"/>
+          <line x1="45" y1="135" x2="270" y2="135" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="4,3"/>
+          <!-- y: range -2 to 13. zero=155, 1pp=9px. y(v)=155-v*9 -->
+          <text x="40" y="18"  font-size="7.5" fill="#94a3b8" text-anchor="end">12</text>
+          <text x="40" y="58"  font-size="7.5" fill="#94a3b8" text-anchor="end">8</text>
+          <text x="40" y="98"  font-size="7.5" fill="#94a3b8" text-anchor="end">4</text>
+          <text x="40" y="138" font-size="7.5" fill="#94a3b8" text-anchor="end">0</text>
+          <text x="40" y="178" font-size="7.5" fill="#94a3b8" text-anchor="end">−4</text>
+          <!-- x: 0→45, 7→270. x(bc)=45+(bc/7)*225 -->
+          <text x="45"  y="188" font-size="7.5" fill="#94a3b8" text-anchor="middle">0</text>
+          <text x="109" y="188" font-size="7.5" fill="#94a3b8" text-anchor="middle">2</text>
+          <text x="173" y="188" font-size="7.5" fill="#94a3b8" text-anchor="middle">4</text>
+          <text x="237" y="188" font-size="7.5" fill="#94a3b8" text-anchor="middle">6</text>
+          <text x="157" y="203" font-size="8" fill="#64748b" text-anchor="middle">Branching Coefficient (BC)</text>
+          <text x="12" y="95" font-size="7.5" fill="#64748b" text-anchor="middle" transform="rotate(-90,12,100)">A* Advantage (pp)</text>
+          <!-- zero line -->
+          <line x1="45" y1="155" x2="270" y2="155" stroke="#e2e8f0" stroke-width="1"/>
+          <!-- trendline: y=-2.3+2.1x. at x=0: adv=-2.3→y=155+20.7=176→175(clip). at x=7: adv=12.4→y=155-112=43 -->
+          <line x1="45" y1="175" x2="270" y2="43" stroke="#ea580c" stroke-width="1.8" stroke-dasharray="6,3" opacity="0.7"/>
+          <!-- C1: bc=1.28, adv=-0.4. x=45+1.28/7*225=86, y=155+3.6=158.6→159 -->
+          <!-- C3: bc=4.02, adv=3.2. x=45+4.02/7*225=174, y=155-28.8=126.2→126 -->
+          <!-- C2: bc=4.24, adv=7.3. x=45+4.24/7*225=181, y=155-65.7=89.3→89 -->
+          <!-- C4: bc=6.49, adv=11.4. x=45+6.49/7*225=253, y=155-102.6=52.4→52 -->
+          <circle cx="86"  cy="159" r="9" fill="#2563eb" opacity="0.9"/>
+          <circle cx="174" cy="126" r="9" fill="#2563eb" opacity="0.9"/>
+          <circle cx="181" cy="89"  r="9" fill="#2563eb" opacity="0.9"/>
+          <circle cx="253" cy="52"  r="9" fill="#7c3aed" opacity="0.9"/>
+          <text x="86"  y="163" font-size="7.5" fill="#fff" text-anchor="middle" dominant-baseline="middle">C1</text>
+          <text x="174" y="130" font-size="7.5" fill="#fff" text-anchor="middle" dominant-baseline="middle">C3</text>
+          <text x="181" y="93"  font-size="7.5" fill="#fff" text-anchor="middle" dominant-baseline="middle">C2</text>
+          <text x="253" y="56"  font-size="7.5" fill="#fff" text-anchor="middle" dominant-baseline="middle">C4</text>
+          <text x="254" y="175" font-size="8.5" fill="#ea580c" text-anchor="end" font-weight="700">R² = 0.94</text>
+        </svg>
+      </div>
+      <div class="finding" style="margin-top:10px"><strong>Key insight:</strong> It is not <em>which dataset</em> a question is from — it is its <strong>structural complexity (BC)</strong> that determines whether A* or CoT wins.</div>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 7: ROUTING + FLUENCY + FAILURE -->
+<div class="slide">
+  <div class="deck-label">Analysis</div>
+  <h2>Routing · Fluency Asymmetry · Failure Modes · SLM</h2>
+  <div class="divider"></div>
+  <div class="card-row" style="margin-bottom:14px">
+    <div class="card" style="border-top:3px solid #2563eb">
+      <h3>🔀 Topology Router Beats All Output-Based Routers</h3>
+      <div class="bar-group" style="margin:8px 0">
+        <div class="bar-item"><div class="bar-label" style="width:155px">Topology Router (pre-gen)</div><div class="bar-track"><div class="bar-fill bar-blue" style="width:84%">26.1%</div></div></div>
+        <div class="bar-item"><div class="bar-label" style="width:155px">Random Forest</div><div class="bar-track"><div class="bar-fill bar-purple" style="width:58%">18.2%</div></div></div>
+        <div class="bar-item"><div class="bar-label" style="width:155px">Semantic Entropy</div><div class="bar-track"><div class="bar-fill bar-orange" style="width:47%">14.8%</div></div></div>
+        <div class="bar-item"><div class="bar-label" style="width:155px">LLM-as-Critic</div><div class="bar-track"><div class="bar-fill bar-orange" style="width:39%">12.4%</div></div></div>
+      </div>
+      <p style="font-size:0.76rem;color:#64748b">Oracle gap recovery (%). Topology router sees <strong>zero model outputs</strong>. Bottleneck = recognising structure, not evaluating traces.</p>
+    </div>
+    <div class="card" style="border-top:3px solid #ea580c">
+      <h3>📝 Fluency ≠ Correctness</h3>
+      <div style="display:flex;gap:8px;margin:8px 0">
+        <div style="flex:1;text-align:center;background:#eff6ff;border-radius:8px;padding:8px"><div style="font-size:1.4rem;font-weight:800;color:#2563eb">0.725</div><div style="font-size:0.7rem;color:#64748b">A* fluency</div></div>
+        <div style="flex:1;text-align:center;background:#fff7ed;border-radius:8px;padding:8px"><div style="font-size:1.4rem;font-weight:800;color:#ea580c">0.673</div><div style="font-size:0.7rem;color:#64748b">CoT fluency</div></div>
+        <div style="flex:1;text-align:center;background:#fef9f0;border-radius:8px;padding:8px"><div style="font-size:1.4rem;font-weight:800;color:#d97706">38%</div><div style="font-size:0.7rem;color:#64748b">Misrouting risk</div></div>
+      </div>
+      <p style="font-size:0.78rem;color:#475569">In 38% of divergent cases, CoT is more fluent but <strong>wrong</strong>. Human eval: A* coverage 2.71 vs CoT 1.63, yet CoT relevance 2.47 — incorrect traces stay on-topic. Any trace-quality router hits a ceiling here.</p>
+    </div>
+    <div class="card" style="border-top:3px solid #7c3aed">
+      <h3>💥 Failure Modes + SLM</h3>
+      <div style="display:flex;gap:8px;margin:8px 0">
+        <div style="flex:1;background:#faf5ff;border-radius:8px;padding:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:#7c3aed">91.1%</div><div style="font-size:0.72rem;color:#64748b">Overthinking — continues past correct answer</div></div>
+        <div style="flex:1;background:#f0fdf4;border-radius:8px;padding:8px;text-align:center"><div style="font-size:1.5rem;font-weight:800;color:#16a34a">3.5×</div><div style="font-size:0.72rem;color:#64748b">Qwen-0.5B gain on HotpotQA (8.4%→30.0%)</div></div>
+      </div>
+      <p style="font-size:0.78rem;color:#475569">Overthinking is structural — A*'s thoroughness is a liability on single-step problems. SLM amplification: A* substitutes the working memory Qwen lacks. On LogicQA, both model sizes lose with A* — topology-driven, not capability-driven.</p>
+    </div>
+  </div>
+  <div class="card-row">
+    <div class="card">
+      <h3>📉 Efficiency Trade-off — When Is A* Worth It?</h3>
+      <p style="font-size:0.82rem">A* uses ~972 tokens/question vs CoT's 200. But on StrategyQA, A* reaches 74.80% while CoT saturates at 64.52% — <strong>a gain CoT cannot achieve at any token budget</strong>. SC uses ~600 tokens and still achieves lower accuracy than A* on branching tasks, confirming guided search &gt; unguided sampling.</p>
+    </div>
+    <div class="card">
+      <h3>🔍 Qualitative Examples</h3>
+      <p style="font-size:0.8rem"><strong style="color:#2563eb">A* wins:</strong> "Is shrimp scampi free of plastic?" — CoT concludes YES; A* finds microplastic bioaccumulation in Step 1, absence of removal in Step 2 → NO (correct).</p>
+      <p style="font-size:0.8rem;margin-top:6px"><strong style="color:#ea580c">CoT wins:</strong> "Is Boeing 737 cost covered by Wonder Woman box office?" — CoT retrieves magnitudes directly. A* misreads it as a financial transactions query — overthinking.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 8: CONCLUSIONS -->
+<div class="slide">
+  <div class="deck-label">Conclusions</div>
+  <h2>7 Contributions — One Central Message</h2>
+  <div class="divider"></div>
+  <div class="stat-row" style="margin-bottom:16px">
+    <div class="stat"><div class="big blue">81.4%</div><p>corpus A*-dominant across 5 of 8 topic categories</p></div>
+    <div class="stat"><div class="big purple">26.1%</div><p>oracle gap recovered with zero model outputs</p></div>
+    <div class="stat"><div class="big orange">91.1%</div><p>A* failures are overthinking — too thorough, not wrong</p></div>
+    <div class="stat"><div class="big green">3.5×</div><p>search amplification for Qwen-0.5B on HotpotQA</p></div>
+  </div>
+  <div class="card-row">
+    <div class="card" style="border-left:4px solid #2563eb">
+      <h3>✅ What Works</h3>
+      <ul>
+        <li>A* on multi-hop: content, assumption, temporal, biography</li>
+        <li>Pre-generation structural routing &gt; post-hoc trace inspection</li>
+        <li>Search amplifies SLMs where working memory is the bottleneck</li>
+        <li>BC alone explains 94% of variance in A* advantage (R²=0.94)</li>
+        <li>Two independent lenses (topology + topics) converge on same conclusion</li>
+      </ul>
+    </div>
+    <div class="card" style="border-left:4px solid #ea580c">
+      <h3>❌ What Doesn't Work</h3>
+      <ul>
+        <li>A* on single-step tasks (comparison, statement strength, option selection)</li>
+        <li>Fluency as a routing signal — 38% systematic misrouting ceiling</li>
+        <li>Aggregate benchmarks — they conceal structural patterns completely</li>
+        <li>Topology router still leaves 73.9% oracle gap unclosed</li>
+      </ul>
+    </div>
+    <div class="card" style="border-left:4px solid #16a34a">
+      <h3>🚀 Next Steps</h3>
+      <ul>
+        <li>Close 73.9% residual: problem–model compatibility scoring</li>
+        <li>Extend to reasoning-native models (o1-mini, DeepSeek-R1)</li>
+        <li>Learn topology embeddings instead of hand-crafted features</li>
+        <li>Calibrated uncertainty-aware search budgeting</li>
+        <li>Multi-language topology transfer</li>
+      </ul>
+    </div>
+  </div>
+  <div class="finding" style="text-align:center;margin-top:12px;font-size:0.95rem">
+    <strong>Central message:</strong> Neither A* nor CoT universally dominates. <strong>Route by topology — pre-generation, using only text structure, before any inference begins.</strong>
+  </div>
+</div>
+
+</div><!-- deck -->
+
+<div class="slide-num" id="slideNum">1 / 8</div>
+<div class="dots" id="dots"></div>
+<div class="nav">
+  <button class="nav-btn" onclick="changeSlide(-1)">&#8592;</button>
+  <span class="nav-counter" id="navCounter">1 / 8</span>
+  <button class="nav-btn" onclick="changeSlide(1)">&#8594;</button>
+</div>
+<script>
+const slides=document.querySelectorAll('.slide');
+const total=slides.length;
+let current=0;
+const dotsEl=document.getElementById('dots');
+slides.forEach((_,i)=>{const d=document.createElement('div');d.className='dot'+(i===0?' active':'');d.onclick=()=>goTo(i);dotsEl.appendChild(d);});
+function goTo(n){slides[current].classList.remove('active');dotsEl.children[current].classList.remove('active');current=(n+total)%total;slides[current].classList.add('active');dotsEl.children[current].classList.add('active');document.getElementById('slideNum').textContent=(current+1)+' / '+total;document.getElementById('navCounter').textContent=(current+1)+' / '+total;}
+function changeSlide(d){goTo(current+d);}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowDown')changeSlide(1);if(e.key==='ArrowLeft'||e.key==='ArrowUp')changeSlide(-1);});
+</script>
+</body>
+</html>

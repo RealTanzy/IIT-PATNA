@@ -1,0 +1,76 @@
+RAG Project Paths Reference
+Generated: 2026-04-06
+
+Code Paths
+- Logicsqa RAg/build_logicqa_faiss_kb.py
+- Logicsqa RAg/logicqa_faiss_rag.py
+- Logicsqa RAg/evaluate_logicqa_faiss_rag_batch.py
+- Strategyqa RAg/build_strategyqa_paired_jsonl.py
+- Strategyqa RAg/build_strategyqa_faiss_kb.py
+- Strategyqa RAg/strategyqa_faiss_rag.py
+- Strategyqa RAg/evaluate_strategyqa_faiss_rag_batch.py
+- Hotpotqa RAg/build_hotpotqa_paired_jsonl.py
+- Hotpotqa RAg/build_hotpotqa_faiss_kb.py
+- Hotpotqa RAg/evaluate_hotpotqa_faiss_rag_batch.py
+- THE RAG APPROACH/logicqa_rag_experiment.py
+- THE RAG APPROACH/logicqa_rag_query_test.py
+- THE RAG APPROACH/tests/test_logicqa_rag_experiment.py
+
+Paired Data and Retrieval Artifacts
+- THE RAG APPROACH/logicqa_651_pair/data/cot_astar_runs/logicqa_paired_all.jsonl
+- Strategyqa RAg/data/cot_astar_runs/strategyqa_paired_all.jsonl
+- Hotpotqa RAg/data/cot_astar_runs/hotpotqa_paired_all.jsonl
+- Logicsqa RAg/artifacts/
+- Strategyqa RAg/artifacts/
+- Hotpotqa RAg/artifacts_f1_050/
+
+Results Paths
+
+LogicQA (200-run)
+- logicqa test output/eval_metrics.json
+- logicqa test output/eval_predictions.jsonl
+- logicqa test output/run_config.json
+
+StrategyQA (200-run)
+- Strategyqa RAg/outputs/strategyqa_llama31_rag_eval200/eval_metrics.json
+- Strategyqa RAg/outputs/strategyqa_llama31_rag_eval200/eval_predictions.jsonl
+- Strategyqa RAg/outputs/strategyqa_llama31_rag_eval200/question_pred_gold_200.csv
+- Strategyqa RAg/outputs/strategyqa_llama31_rag_eval200/question_pred_gold_200.jsonl
+- Strategyqa RAg/outputs/strategyqa_llama31_rag_eval200/run_config.json
+
+HotpotQA (best strict fair run)
+- Hotpotqa RAg/outputs/hotpotqa_llama31_rag_eval200_opt_f1_050/eval_metrics.json
+- Hotpotqa RAg/outputs/hotpotqa_llama31_rag_eval200_opt_f1_050/eval_predictions.jsonl
+- Hotpotqa RAg/outputs/hotpotqa_llama31_rag_eval200_opt_f1_050/question_pred_gold_200.csv
+- Hotpotqa RAg/outputs/hotpotqa_llama31_rag_eval200_opt_f1_050/question_pred_gold_200.jsonl
+- Hotpotqa RAg/outputs/hotpotqa_llama31_rag_eval200_opt_f1_050/run_config.json
+
+HotpotQA (diagnostic allow-self run)
+- Hotpotqa RAg/outputs/hotpotqa_llama31_rag_eval200_opt_f1_050_allowSelf/eval_metrics.json
+- Hotpotqa RAg/outputs/hotpotqa_llama31_rag_eval200_opt_f1_050_allowSelf/eval_predictions.jsonl
+- Hotpotqa RAg/outputs/hotpotqa_llama31_rag_eval200_opt_f1_050_allowSelf/run_config.json
+
+One-shot Backup Folders
+- Logicsqa RAg/
+- Strategyqa RAg/
+- Hotpotqa RAg/
+- THE RAG APPROACH/
+- logicqa test output/
+
+Notes: Results Summary (Llama 3.1 8B)
+Date: 2026-04-06
+
+LogicQA
+- CoT baseline (100): 39/100 = 39.0%
+- A* baseline (100): 33/100 = 33.0%
+- Today's RAG experiment (200): 74/200 = 37.0%
+
+StrategyQA
+- CoT baseline (100): 73/100 = 73.0%
+- A* baseline (100): 79/100 = 79.0%
+- Today's RAG experiment (200): 142/200 = 71.0%
+
+HotpotQA
+- CoT baseline (100): 53/100 = 53.0%
+- A* baseline (100): 78/100 = 78.0%
+- Today's RAG experiment (200, strict fair): 42/200 = 21.0%

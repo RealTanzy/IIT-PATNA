@@ -1,0 +1,48 @@
+ID: 0 | correct=False | pred=Dwarka | gold=flotilla
+Q: What was Iqbal F. Qadir on when he participated in an attack on a radar station located on western shore of the Okhamandal Peninsula?
+SYNTH:
+Step 1: Iqbal F. Qadir participated in an attack on a radar station located on western shore of the Okhamandal Peninsula.
+Step 2: The location of the radar station is Dwarka, which is on the western shore of the Okhamandal Peninsula.
+
+Final Answer: Dwarka
+--------------------------------------------------------------------------------
+ID: 1 | correct=False | pred=A | gold=15 August 1843
+Q: When did the park at which Tivolis Koncertsal is located open?
+SYNTH:
+Step 1: The park on which Tivolis Koncertsal is located is Tivoli Gardens.
+
+Step 2: We know that Tivoli Gardens is the park in question, and we need to find when it opened. Looking at the context for "Tivoli Gardens", we can see that it does not provide a specific date of opening.
+
+However, since there are no other relevant sources or information provided, we cannot determine the exact date of opening.
+--------------------------------------------------------------------------------
+ID: 2 | correct=True | pred=Armenian | gold=Armenian
+Q: What is the shared country of ancestry between Art Laboe and Scout Tufankjian?
+SYNTH:
+Step 1: Art Laboe and Scout Tufankjian share Armenian ancestry as indicated in both sources, with no conflicting information found.
+
+Step 2: The context of the question does not relate to science fantasy young adult series or companion books narrating stories of enslaved worlds and alien species.
+
+Final Answer: Armenian
+--------------------------------------------------------------------------------
+ID: 3 | correct=False | pred=A | gold=Centre of Excellence
+Q: The school in which the Wilmslow Show is held is designated as what?
+SYNTH:
+Step 1: The Wilmslow Show is held at Wilmslow High School, as mentioned in the context of the refined A* trace.
+Step 2: According to the refined A* trace, Wilmslow High School is a mixed-sex 11-18 comprehensive secondary school, but more specifically, it is designated as what?
+Step 3: The refined A* trace does not provide this information directly, so we look at the context and find that the school is indeed designated as a "designated Centre of Excellence" and also designated "good" by Ofsted.
+However, we need to identify the specific designation related to the Wilmslow Show's location.
+
+Step
+--------------------------------------------------------------------------------
+ID: 4 | correct=False | pred=Saoirse Ronan. | gold=Saoirse Ronan
+Q: Who will Billy Howle be seen opposite in the upcoming British drama film directed by Dominic Cooke?
+SYNTH:
+Step 1: Identify the context paragraph that mentions Billy Howle or the film "On Chesil Beach".
+
+The relevant paragraph is:
+"Billy Howle will next be seen opposite Saoirse Ronan in the drama, 'On Chesil Beach'."
+
+Step 2: Specific answer found in the context paragraph about the film "On Chesil Beach": It stars Saoirse Ronan and Billy Howle.
+
+Final Answer: Saoirse Ronan.
+--------------------------------------------------------------------------------

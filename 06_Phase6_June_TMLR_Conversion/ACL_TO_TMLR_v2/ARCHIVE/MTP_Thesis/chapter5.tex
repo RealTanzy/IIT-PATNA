@@ -1,0 +1,62 @@
+\chapter{Conclusion and Future Work}
+
+\section{Summary of Contributions}
+
+This thesis investigated the fundamental question of \emph{when} language models should use search-based reasoning versus chain-of-thought prompting. Our key contributions are:
+
+\begin{enumerate}
+\item \textbf{Complementarity is real and substantial.} Across eight benchmarks spanning QA, math, and code generation, and across three model scales (0.5B, 8B, 14B), we demonstrated that CoT and A* solve genuinely different subsets of instances. The oracle gap---the improvement from perfect per-instance strategy selection---reaches up to 14 percentage points above the best single method.
+
+\item \textbf{The CoT/A* boundary is structural, not dataset-specific.} A derived branching coefficient predicts A* advantage with $R^2 = 0.94$ on QA/math clusters. This means the question ``should I use search?'' is better answered by examining the input's structure than by knowing which dataset it comes from.
+
+\item \textbf{Pre-generation routing outperforms trace-based evaluation.} A topology-aware router that sees only the raw input (no generated traces) recovers 32.3\% of the oracle gap at 8B---outperforming semantic entropy, LLM-as-critic, LLM-as-judge, and random forest baselines. At 0.5B, on CodeContests, it achieves 89.7\% oracle-gap recovery.
+
+\item \textbf{Fluency misleads post-hoc judges.} We identified a Fluency-Correctness Asymmetry: in 38\% of disagreement cases, the more fluent trace is actually wrong. This systematic bias explains why pre-generation routing (which sidesteps fluency entirely) outperforms trace-based methods.
+
+\item \textbf{Cross-domain transfer to code generation.} The topology framework extends to code generation on HumanEval (67.8\% gap recovery at 8B) and CodeContests (89.7\% at 0.5B). Multi-return tasks show a +18.2pp A* advantage at 14B---the code analogue of branching topology in QA.
+
+\item \textbf{Search helps weak models most.} At 0.5B scale, A* provides +18.4pp on CodeContests and +21.6pp on HotpotQA, confirming that search is most valuable when the base model's linear generation is insufficient but it can still generate meaningful candidate steps.
+\end{enumerate}
+
+\section{Key Findings}
+
+\begin{itemize}
+\item \textbf{No single strategy dominates.} The best method varies by dataset, scale, and even by instance within a dataset.
+\item \textbf{A* excels on branching problems.} Multi-hop QA, hypothesis elimination, and multi-constraint code tasks benefit most from search.
+\item \textbf{CoT remains optimal for linear tasks.} Direct factual recall, straightforward algorithms, and single-step computations are better served by CoT.
+\item \textbf{Scale interacts with search benefit.} The A* advantage on GSM8K grows from +1pp at 8B to +19pp at 14B, suggesting that larger models can better exploit search when given the opportunity.
+\item \textbf{Compute overhead is manageable.} A* uses 1.7--3.4$\times$ CoT on code tasks (vs. $\sim$24$\times$ on QA), making topology-based routing practical for deployment.
+\end{itemize}
+
+\section{Limitations}
+
+\begin{itemize}
+\item Our findings are conditioned on a single budgeted A* implementation; a different search policy (MCTS, beam search) could shift the complementarity boundary.
+\item The 13 topology features are hand-designed proxies, interpretable but unlikely to capture the full latent structure of reasoning difficulty.
+\item The features rely on English-language parsing tools, limiting direct transfer to other languages.
+\item On code tasks with ultra-short specifications (MBPP), the NL-oriented features degenerate---code-specific features remain future work.
+\item The topology router varies its classifier (XGBoost, RF, SVM) per dataset via cross-validation; a unified architecture would be preferable.
+\item Token accounting covers only a 300-question ablation sample for QA; full-scale compute measurements are approximated.
+\end{itemize}
+
+\section{Future Work}
+
+Several promising directions emerge from this thesis:
+
+\begin{enumerate}
+\item \textbf{Learned topology embeddings.} Replace the 13 hand-crafted features with a small encoder that learns topology representations end-to-end, jointly optimizing routing and downstream accuracy.
+
+\item \textbf{Code-specific structural features.} Design features tailored to code tasks: AST depth, cyclomatic complexity, specification ambiguity, number of edge cases, input/output type complexity.
+
+\item \textbf{Continuous routing.} Instead of a binary CoT/A* decision, learn to allocate a \emph{continuous compute budget}---choosing both the strategy and the search depth per instance.
+
+\item \textbf{Long-form generation.} Extend the framework to tasks like essay writing, summarization, and multi-turn dialogue where the notion of ``branching'' takes a different form.
+
+\item \textbf{Online adaptation.} A router that updates its routing policy based on observed outcomes, potentially using bandit or RL approaches.
+
+\item \textbf{Integration with process reward models.} Combine topology-based pre-routing with step-level verification during search, potentially achieving both better routing and better within-search evaluation.
+\end{enumerate}
+
+\section{Closing Remarks}
+
+The main message of this thesis is that adaptive inference should start with \emph{structural triage}---examining the input's topology before deciding how to reason---rather than generating traces first and evaluating them post-hoc. The topology framework provides a principled, compute-efficient basis for this triage, and its effectiveness across QA, math, and code generation suggests it captures something fundamental about the structure of reasoning problems.

@@ -1,0 +1,84 @@
+{
+  "humaneval": {
+    "n_tasks": 161,
+    "cot_acc": 0.6708074534161491,
+    "astar_acc": 0.6521739130434783,
+    "oracle_acc": 0.7577639751552795,
+    "cot_only": 17,
+    "astar_only": 14,
+    "both_correct": 91,
+    "both_wrong": 39,
+    "router": {
+      "xgb_cv": 0.5761904761904761,
+      "rf_cv": 0.6428571428571429,
+      "best_router": 0.6428571428571429,
+      "router_overall": 0.6889973380656611,
+      "gap_recovery": 20.9183673469388
+    }
+  },
+  "mbpp": {
+    "n_tasks": 500,
+    "cot_acc": 0.602,
+    "astar_acc": 0.524,
+    "oracle_acc": 0.656,
+    "cot_only": 66,
+    "astar_only": 27,
+    "both_correct": 235,
+    "both_wrong": 172,
+    "router": {
+      "xgb_cv": 0.632748538011696,
+      "rf_cv": 0.6549707602339181,
+      "best_router": 0.6549707602339181,
+      "router_overall": 0.5918245614035088,
+      "gap_recovery": -18.843404808316965
+    }
+  },
+  "codecontests": {
+    "n_tasks": 499,
+    "cot_acc": 1.0,
+    "astar_acc": 0.7034068136272545,
+    "oracle_acc": 1.0,
+    "cot_only": 148,
+    "astar_only": 0,
+    "both_correct": 351,
+    "both_wrong": 0,
+    "router": {
+      "insufficient_data": true,
+      "n_disagree": 148
+    }
+  },
+  "humaneval_14b": {
+    "n_tasks": 163,
+    "cot_acc": 0.7791411042944786,
+    "astar_acc": 0.7607361963190185,
+    "oracle_acc": 0.8711656441717791,
+    "cot_only": 18,
+    "astar_only": 15,
+    "both_correct": 109,
+    "both_wrong": 21,
+    "router": {
+      "xgb_cv": 0.8238095238095238,
+      "rf_cv": 0.6047619047619047,
+      "best_router": 0.8238095238095238,
+      "router_overall": 0.8354951796669587,
+      "gap_recovery": 61.23809523809517
+    }
+  },
+  "mbpp_14b": {
+    "n_tasks": 249,
+    "cot_acc": 0.4779116465863454,
+    "astar_acc": 0.4497991967871486,
+    "oracle_acc": 0.5421686746987951,
+    "cot_only": 23,
+    "astar_only": 16,
+    "both_correct": 96,
+    "both_wrong": 114,
+    "router": {
+      "xgb_cv": 0.4607142857142857,
+      "rf_cv": 0.43571428571428567,
+      "best_router": 0.4607142857142857,
+      "router_overall": 0.4577022375215146,
+      "gap_recovery": -31.450892857142893
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "dataset": "logicqa",
+  "baseline_astar": {
+    "accuracy": 33.0,
+    "correct": 33,
+    "total": 100
+  },
+  "baseline_cot": {
+    "accuracy": 39.0,
+    "correct": 39,
+    "total": 100
+  },
+  "previous": {
+    "accuracy": 42.0,
+    "correct": 42,
+    "total": 100
+  },
+  "new": {
+    "accuracy": 42.0,
+    "correct": 42,
+    "total": 100
+  }
+}

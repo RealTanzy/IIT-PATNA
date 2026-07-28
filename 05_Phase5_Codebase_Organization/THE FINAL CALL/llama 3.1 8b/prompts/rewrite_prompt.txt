@@ -1,0 +1,20 @@
+You are given a multiple-choice logic question, the correct answer letter, and a successful search-style reasoning trace.
+Rewrite the trace into a compact single-pass rationale.
+
+Rules:
+1) Keep only logically necessary steps.
+2) Remove branching/search artifacts, retries, and repeated content.
+3) Do not add unsupported facts.
+4) Use at most 4 numbered steps.
+5) End with exactly: Final Answer: <A/B/C/D>
+
+Question:
+{question_block}
+
+Correct answer:
+{gold}
+
+Successful A* trace:
+{astar_trace}
+
+Output only the rewritten rationale.

@@ -1,0 +1,25 @@
+{
+  "total_overlap": 499,
+  "bucket_counts": {
+    "both_wrong": 329,
+    "both_correct": 50,
+    "cot_only": 69,
+    "astar_only": 51
+  },
+  "train_bucket_counts": {
+    "both_wrong": 263,
+    "both_correct": 40,
+    "cot_only": 55,
+    "astar_only": 41
+  },
+  "dev_bucket_counts": {
+    "both_wrong": 66,
+    "both_correct": 10,
+    "astar_only": 10,
+    "cot_only": 14
+  },
+  "selected_rescue_train": 41,
+  "selected_preserve_train": 82,
+  "selected_answer_only_train": 12,
+  "output_root": "THE RAG APPROACH/logicqa_500_pair"
+}

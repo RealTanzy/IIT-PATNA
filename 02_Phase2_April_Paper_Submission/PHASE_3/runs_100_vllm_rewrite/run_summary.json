@@ -1,0 +1,28 @@
+{
+  "hotpotqa": {
+    "output_json": "PHASE_3/runs_100_vllm_rewrite/hotpotqa/phase3_hotpotqa_100_vllm_rewrite_llama_synth.json",
+    "reasoning_jsonl": "PHASE_3/runs_100_vllm_rewrite/hotpotqa/reasoning_steps_100.jsonl",
+    "preview_txt": "PHASE_3/runs_100_vllm_rewrite/hotpotqa/reasoning_steps_preview.txt",
+    "accuracy": 26.0,
+    "correct": 26,
+    "total": 100,
+    "api_calls": 200,
+    "rewrite_failures": 0,
+    "synthesis_failures": 0,
+    "rewrite_model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "rewrite_base_url": "http://127.0.0.1:8000/v1"
+  },
+  "strategyqa": {
+    "output_json": "PHASE_3/runs_100_vllm_rewrite/strategyqa/phase3_strategyqa_100_vllm_rewrite_llama_synth.json",
+    "reasoning_jsonl": "PHASE_3/runs_100_vllm_rewrite/strategyqa/reasoning_steps_100.jsonl",
+    "preview_txt": "PHASE_3/runs_100_vllm_rewrite/strategyqa/reasoning_steps_preview.txt",
+    "accuracy": 43.0,
+    "correct": 43,
+    "total": 100,
+    "api_calls": 200,
+    "rewrite_failures": 0,
+    "synthesis_failures": 0,
+    "rewrite_model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "rewrite_base_url": "http://127.0.0.1:8000/v1"
+  }
+}

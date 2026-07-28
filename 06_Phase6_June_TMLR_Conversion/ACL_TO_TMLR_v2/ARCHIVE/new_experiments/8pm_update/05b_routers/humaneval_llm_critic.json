@@ -1,0 +1,1155 @@
+{
+  "router": "llm_critic",
+  "dataset": "humaneval",
+  "model": "qwen-2.5-0.5b",
+  "results": [
+    {
+      "task_id": "HumanEval/0",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/1",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/2",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/3",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/4",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/5",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/6",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/7",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/8",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/9",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/10",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/11",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/12",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/13",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/14",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/15",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/16",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/17",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/18",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/19",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/20",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/21",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/22",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/23",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/24",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/25",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/26",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/27",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/28",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/29",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/30",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/31",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/32",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/33",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/34",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/35",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/36",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/37",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/38",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/39",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/40",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/41",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/42",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/43",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/44",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/45",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/46",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/47",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/48",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/49",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/50",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/51",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/52",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/53",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/54",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/55",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/56",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/57",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/58",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/59",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/60",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/61",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/62",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/63",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/64",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/65",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/66",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/67",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/68",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/69",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/70",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/71",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/72",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/73",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/74",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/75",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/76",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/77",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/78",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/79",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/80",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/81",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/82",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/83",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/84",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/85",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/86",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/87",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/88",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/89",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/90",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/91",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/92",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/93",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/94",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/95",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/96",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/97",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/98",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/99",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/100",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/101",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/102",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/103",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/104",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/105",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/106",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/107",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/108",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/109",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/110",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/111",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/112",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/113",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/114",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/115",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/116",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/117",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/118",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/119",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/120",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/121",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/122",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/123",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/124",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/125",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/126",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/127",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/128",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/129",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/130",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/131",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/132",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/133",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/134",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/135",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/136",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/137",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/138",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/139",
+      "cot_correct": true,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/140",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/141",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/142",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/143",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/144",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/145",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/146",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/147",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/148",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/149",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/150",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/151",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/152",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/153",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/154",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/155",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/156",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/157",
+      "cot_correct": false,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    },
+    {
+      "task_id": "HumanEval/158",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/159",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/160",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "cot",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/161",
+      "cot_correct": false,
+      "astar_correct": false,
+      "router_choice": "astar",
+      "router_correct": false
+    },
+    {
+      "task_id": "HumanEval/162",
+      "cot_correct": true,
+      "astar_correct": true,
+      "router_choice": "astar",
+      "router_correct": true
+    }
+  ],
+  "summary": {
+    "total": 163,
+    "router_accuracy": 33.13,
+    "cot_accuracy": 33.74,
+    "astar_accuracy": 20.25,
+    "oracle_accuracy": 38.04
+  }
+}

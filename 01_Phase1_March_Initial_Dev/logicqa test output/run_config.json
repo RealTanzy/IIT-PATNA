@@ -1,0 +1,24 @@
+{
+  "dataset_jsonl": "THE RAG APPROACH/logicqa_651_pair/data/cot_astar_runs/logicqa_paired_all.jsonl",
+  "split": "all",
+  "start_index": 0,
+  "max_questions": 200,
+  "kb_jsonl": "/home/dibyanayan/tanzeel/Logicsqa RAg/artifacts/logicqa_reasoning_kb.jsonl",
+  "index_meta": "/home/dibyanayan/tanzeel/Logicsqa RAg/artifacts/logicqa_index_meta.json",
+  "faiss_index": "/home/dibyanayan/tanzeel/Logicsqa RAg/artifacts/logicqa_questions.faiss",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 1,
+  "exclude_same_example": true,
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "max_new_tokens": 140,
+  "output_dir": "logicqa test output",
+  "metrics": {
+    "total": 200,
+    "parsed": 157,
+    "correct": 74,
+    "accuracy": 0.37,
+    "parsed_rate": 0.785,
+    "elapsed_sec": 2208.982441663742,
+    "avg_sec_per_question": 11.04491220831871
+  }
+}

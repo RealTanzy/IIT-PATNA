@@ -1,0 +1,5002 @@
+[
+  {
+    "task_id": "MATH/0",
+    "method": "sc",
+    "gold": "2",
+    "pred": "6.0",
+    "correct": false,
+    "time": 4.525267601013184,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/1",
+    "method": "sc",
+    "gold": "10",
+    "pred": "10.0",
+    "correct": true,
+    "time": 3.5171730518341064,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/2",
+    "method": "sc",
+    "gold": "\\dfrac{9",
+    "pred": "7.0",
+    "correct": false,
+    "time": 5.742796182632446,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/3",
+    "method": "sc",
+    "gold": "i",
+    "pred": "i",
+    "correct": true,
+    "time": 5.079955339431763,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/4",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 3.295652151107788,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/5",
+    "method": "sc",
+    "gold": "402",
+    "pred": "402.0",
+    "correct": true,
+    "time": 4.2899322509765625,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/6",
+    "method": "sc",
+    "gold": "x \\in [-2,7]",
+    "pred": "0.0",
+    "correct": false,
+    "time": 5.772598505020142,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/7",
+    "method": "sc",
+    "gold": "7",
+    "pred": "5.0",
+    "correct": false,
+    "time": 4.168976306915283,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/8",
+    "method": "sc",
+    "gold": "4,6,14,15",
+    "pred": "10.0",
+    "correct": false,
+    "time": 5.771008014678955,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/9",
+    "method": "sc",
+    "gold": "-\\frac{1",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.771715879440308,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/10",
+    "method": "sc",
+    "gold": "\\frac{x+2",
+    "pred": "\\frac{x+2",
+    "correct": true,
+    "time": 3.832993745803833,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/11",
+    "method": "sc",
+    "gold": "-15",
+    "pred": "-7.0",
+    "correct": false,
+    "time": 5.776444911956787,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/12",
+    "method": "sc",
+    "gold": "10",
+    "pred": "10.0",
+    "correct": true,
+    "time": 3.2586073875427246,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/13",
+    "method": "sc",
+    "gold": "8",
+    "pred": "8.0",
+    "correct": true,
+    "time": 3.8573074340820312,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/14",
+    "method": "sc",
+    "gold": "75",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.661021947860718,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/15",
+    "method": "sc",
+    "gold": "\\frac{11",
+    "pred": "5.5",
+    "correct": false,
+    "time": 5.154424667358398,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/16",
+    "method": "sc",
+    "gold": "-25",
+    "pred": "-25.0",
+    "correct": true,
+    "time": 2.2449076175689697,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/17",
+    "method": "sc",
+    "gold": "8",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.787000417709351,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/18",
+    "method": "sc",
+    "gold": "3",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.149852514266968,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/19",
+    "method": "sc",
+    "gold": "187.5",
+    "pred": "187.5",
+    "correct": true,
+    "time": 3.6840028762817383,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/20",
+    "method": "sc",
+    "gold": "18",
+    "pred": "26.0",
+    "correct": false,
+    "time": 5.773021697998047,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/21",
+    "method": "sc",
+    "gold": "\\$40",
+    "pred": "20.0",
+    "correct": false,
+    "time": 3.4216883182525635,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/22",
+    "method": "sc",
+    "gold": "5",
+    "pred": "0.0",
+    "correct": false,
+    "time": 4.408326625823975,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/23",
+    "method": "sc",
+    "gold": "8",
+    "pred": "2.0",
+    "correct": false,
+    "time": 4.779996633529663,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/24",
+    "method": "sc",
+    "gold": "3125",
+    "pred": "3125.0",
+    "correct": true,
+    "time": 3.1541552543640137,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/25",
+    "method": "sc",
+    "gold": "[0,\\infty)",
+    "pred": "[0\\infty)",
+    "correct": true,
+    "time": 4.706129312515259,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/26",
+    "method": "sc",
+    "gold": ".5",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.674596071243286,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/27",
+    "method": "sc",
+    "gold": "12, 10, 6",
+    "pred": "56.0",
+    "correct": false,
+    "time": 5.778019666671753,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/28",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 4.525432825088501,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/29",
+    "method": "sc",
+    "gold": "16",
+    "pred": "-16.0",
+    "correct": false,
+    "time": 5.14770245552063,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/30",
+    "method": "sc",
+    "gold": "2300",
+    "pred": "42.0",
+    "correct": false,
+    "time": 5.639114141464233,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/31",
+    "method": "sc",
+    "gold": "5",
+    "pred": "6.0",
+    "correct": false,
+    "time": 5.178985118865967,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/32",
+    "method": "sc",
+    "gold": "105",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.774965286254883,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/33",
+    "method": "sc",
+    "gold": "-13.5",
+    "pred": "-9.0",
+    "correct": false,
+    "time": 5.779386520385742,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/34",
+    "method": "sc",
+    "gold": "\\frac{243",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.7037718296051025,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/35",
+    "method": "sc",
+    "gold": "2",
+    "pred": "2.0",
+    "correct": true,
+    "time": 3.732933759689331,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/36",
+    "method": "sc",
+    "gold": "(-\\sqrt{3",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.780575513839722,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/37",
+    "method": "sc",
+    "gold": "23",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.777170658111572,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/38",
+    "method": "sc",
+    "gold": "49",
+    "pred": "57.0",
+    "correct": false,
+    "time": 5.53074836730957,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/39",
+    "method": "sc",
+    "gold": "2x^9 - 8x^7 + 9x^6 - 16x^5 - 12x^4 + 9x^3 - 24x^2",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.678378105163574,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/40",
+    "method": "sc",
+    "gold": "(-\\infty,-8)\\cup (8,\\infty)",
+    "pred": "(-\\infty-8)\\cup(8\\infty)",
+    "correct": true,
+    "time": 5.034754514694214,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/41",
+    "method": "sc",
+    "gold": "0",
+    "pred": "0.0",
+    "correct": true,
+    "time": 3.2070460319519043,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/42",
+    "method": "sc",
+    "gold": "2",
+    "pred": "2.0",
+    "correct": true,
+    "time": 3.7507903575897217,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/43",
+    "method": "sc",
+    "gold": "16",
+    "pred": "16.0",
+    "correct": true,
+    "time": 4.745283842086792,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/44",
+    "method": "sc",
+    "gold": "\\frac{1",
+    "pred": "12.0",
+    "correct": false,
+    "time": 4.611855506896973,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/45",
+    "method": "sc",
+    "gold": "6+9i",
+    "pred": "\\[",
+    "correct": false,
+    "time": 2.368243932723999,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/46",
+    "method": "sc",
+    "gold": "2",
+    "pred": "2.0",
+    "correct": true,
+    "time": 5.111506462097168,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/47",
+    "method": "sc",
+    "gold": "20",
+    "pred": "20.0",
+    "correct": true,
+    "time": 4.296020746231079,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/48",
+    "method": "sc",
+    "gold": "7(x+3) (x-3)",
+    "pred": "7(x+3)(x-3)",
+    "correct": true,
+    "time": 3.6358680725097656,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/49",
+    "method": "sc",
+    "gold": "y^4-2y^3+7y^2+y-5",
+    "pred": "2.0",
+    "correct": false,
+    "time": 4.190787076950073,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/50",
+    "method": "sc",
+    "gold": "4",
+    "pred": "18.0",
+    "correct": false,
+    "time": 5.576204061508179,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/51",
+    "method": "sc",
+    "gold": "0",
+    "pred": "0.0",
+    "correct": true,
+    "time": 4.541316986083984,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/52",
+    "method": "sc",
+    "gold": "12",
+    "pred": "1008.0",
+    "correct": false,
+    "time": 5.773952484130859,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/53",
+    "method": "sc",
+    "gold": "\\frac{7",
+    "pred": "3\\sqrt{2",
+    "correct": false,
+    "time": 4.395378589630127,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/54",
+    "method": "sc",
+    "gold": "69",
+    "pred": "70.0",
+    "correct": false,
+    "time": 5.377629280090332,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/55",
+    "method": "sc",
+    "gold": "5",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.2930498123168945,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/56",
+    "method": "sc",
+    "gold": "\\left(-\\infty,-\\frac 12\\right)\\cup \\left(-\\frac 12,\\infty\\right)",
+    "pred": "(-\\infty-\\frac{1",
+    "correct": false,
+    "time": 3.517328977584839,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/57",
+    "method": "sc",
+    "gold": "\\frac{2",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.674404144287109,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/58",
+    "method": "sc",
+    "gold": "7",
+    "pred": "3.0",
+    "correct": false,
+    "time": 3.671642541885376,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/59",
+    "method": "sc",
+    "gold": "20",
+    "pred": "20.0",
+    "correct": true,
+    "time": 3.7410058975219727,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/60",
+    "method": "sc",
+    "gold": "7",
+    "pred": "7.0",
+    "correct": true,
+    "time": 4.799931287765503,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/61",
+    "method": "sc",
+    "gold": "\\sqrt{x",
+    "pred": "12.0",
+    "correct": false,
+    "time": 4.082094192504883,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/62",
+    "method": "sc",
+    "gold": "78",
+    "pred": "26.0",
+    "correct": false,
+    "time": 5.5785439014434814,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/63",
+    "method": "sc",
+    "gold": "9",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.722189664840698,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/64",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 4.499469518661499,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/65",
+    "method": "sc",
+    "gold": "6",
+    "pred": "6.0",
+    "correct": true,
+    "time": 5.694659471511841,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/66",
+    "method": "sc",
+    "gold": "17",
+    "pred": "0.0",
+    "correct": false,
+    "time": 5.465411424636841,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/67",
+    "method": "sc",
+    "gold": "\\left(1,\\frac{9",
+    "pred": "4.5",
+    "correct": false,
+    "time": 3.757046937942505,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/68",
+    "method": "sc",
+    "gold": "\\frac{15",
+    "pred": "16.0",
+    "correct": false,
+    "time": 5.198753356933594,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/69",
+    "method": "sc",
+    "gold": "-2",
+    "pred": "-2.0",
+    "correct": true,
+    "time": 4.200753688812256,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/70",
+    "method": "sc",
+    "gold": "8",
+    "pred": "8.0",
+    "correct": true,
+    "time": 3.412778854370117,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/71",
+    "method": "sc",
+    "gold": "20",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.519101619720459,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/72",
+    "method": "sc",
+    "gold": "24",
+    "pred": "24.0",
+    "correct": true,
+    "time": 3.0171761512756348,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/73",
+    "method": "sc",
+    "gold": "\\frac{19",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.7756667137146,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/74",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 3.5942437648773193,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/75",
+    "method": "sc",
+    "gold": "-55",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.786510467529297,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/76",
+    "method": "sc",
+    "gold": "60",
+    "pred": "36.0",
+    "correct": false,
+    "time": 5.762577056884766,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/77",
+    "method": "sc",
+    "gold": "-7",
+    "pred": "-7.0",
+    "correct": true,
+    "time": 4.871329307556152,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/78",
+    "method": "sc",
+    "gold": "0.43",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.777476072311401,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/79",
+    "method": "sc",
+    "gold": "108",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.507941484451294,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/80",
+    "method": "sc",
+    "gold": "4950",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.152034759521484,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/81",
+    "method": "sc",
+    "gold": "50",
+    "pred": "104.0",
+    "correct": false,
+    "time": 5.634989261627197,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/82",
+    "method": "sc",
+    "gold": "14",
+    "pred": "20000.0",
+    "correct": false,
+    "time": 5.7824554443359375,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/83",
+    "method": "sc",
+    "gold": "8",
+    "pred": "\\frac{1",
+    "correct": false,
+    "time": 3.229187488555908,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/84",
+    "method": "sc",
+    "gold": "26",
+    "pred": "26.0",
+    "correct": true,
+    "time": 2.9457685947418213,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/85",
+    "method": "sc",
+    "gold": "129",
+    "pred": "90.0",
+    "correct": false,
+    "time": 5.779985666275024,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/86",
+    "method": "sc",
+    "gold": "0",
+    "pred": "0.0",
+    "correct": true,
+    "time": 2.6268274784088135,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/87",
+    "method": "sc",
+    "gold": "-5",
+    "pred": "-5.0",
+    "correct": true,
+    "time": 3.3943161964416504,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/88",
+    "method": "sc",
+    "gold": "2",
+    "pred": "-1.0",
+    "correct": false,
+    "time": 3.549081563949585,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/89",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 4.584436655044556,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/90",
+    "method": "sc",
+    "gold": "30",
+    "pred": "30.0",
+    "correct": true,
+    "time": 5.4634881019592285,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/91",
+    "method": "sc",
+    "gold": "\\frac{2\\sqrt{53",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.7785398960113525,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/92",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 4.565057754516602,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/93",
+    "method": "sc",
+    "gold": "5",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.588939189910889,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/94",
+    "method": "sc",
+    "gold": "3s^2",
+    "pred": "2.0",
+    "correct": false,
+    "time": 3.7855417728424072,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/95",
+    "method": "sc",
+    "gold": "125",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.779833078384399,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/96",
+    "method": "sc",
+    "gold": "8",
+    "pred": "15.0",
+    "correct": false,
+    "time": 4.206605672836304,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/97",
+    "method": "sc",
+    "gold": "286",
+    "pred": "286.0",
+    "correct": true,
+    "time": 4.791330814361572,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/98",
+    "method": "sc",
+    "gold": "(9,11)",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.7742085456848145,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/99",
+    "method": "sc",
+    "gold": "\\dfrac{1",
+    "pred": "\\frac{1",
+    "correct": false,
+    "time": 4.6639862060546875,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/100",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 2.76524019241333,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/101",
+    "method": "sc",
+    "gold": "0",
+    "pred": "0.0",
+    "correct": true,
+    "time": 4.959314346313477,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/102",
+    "method": "sc",
+    "gold": "6",
+    "pred": "6.0",
+    "correct": true,
+    "time": 2.24281644821167,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/103",
+    "method": "sc",
+    "gold": "2x(15x^2-4x+10)",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.774277687072754,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/104",
+    "method": "sc",
+    "gold": "106",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.107804775238037,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/105",
+    "method": "sc",
+    "gold": "10",
+    "pred": "10.0",
+    "correct": true,
+    "time": 3.3365070819854736,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/106",
+    "method": "sc",
+    "gold": "26",
+    "pred": "6.5",
+    "correct": false,
+    "time": 5.741724014282227,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/107",
+    "method": "sc",
+    "gold": "47",
+    "pred": "31.5",
+    "correct": false,
+    "time": 3.7412455081939697,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/108",
+    "method": "sc",
+    "gold": "18",
+    "pred": "18.0",
+    "correct": true,
+    "time": 4.277999639511108,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/109",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 5.776989221572876,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/110",
+    "method": "sc",
+    "gold": "\\frac{\\sqrt7",
+    "pred": "\\frac{\\sqrt{7",
+    "correct": false,
+    "time": 3.929471015930176,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/111",
+    "method": "sc",
+    "gold": "-6",
+    "pred": "-6.0",
+    "correct": true,
+    "time": 4.266953706741333,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/112",
+    "method": "sc",
+    "gold": "15",
+    "pred": "15.0",
+    "correct": true,
+    "time": 2.77618408203125,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/113",
+    "method": "sc",
+    "gold": "\\frac{19",
+    "pred": "\\frac{7",
+    "correct": false,
+    "time": 5.10211706161499,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/114",
+    "method": "sc",
+    "gold": "-1",
+    "pred": "-1.0",
+    "correct": true,
+    "time": 3.1578686237335205,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/115",
+    "method": "sc",
+    "gold": "6",
+    "pred": "30.0",
+    "correct": false,
+    "time": 3.6721041202545166,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/116",
+    "method": "sc",
+    "gold": "\\frac{1",
+    "pred": "0.858",
+    "correct": false,
+    "time": 5.775328874588013,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/117",
+    "method": "sc",
+    "gold": "(2,12)",
+    "pred": "1001001.0",
+    "correct": false,
+    "time": 5.465533018112183,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/118",
+    "method": "sc",
+    "gold": "-8",
+    "pred": "-8.0",
+    "correct": true,
+    "time": 3.4725606441497803,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/119",
+    "method": "sc",
+    "gold": "b=4",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.694469928741455,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/120",
+    "method": "sc",
+    "gold": "6",
+    "pred": "6.0",
+    "correct": true,
+    "time": 2.507502317428589,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/121",
+    "method": "sc",
+    "gold": "7",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.713314056396484,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/122",
+    "method": "sc",
+    "gold": "(15,-11)",
+    "pred": "(15-11)",
+    "correct": true,
+    "time": 4.969515562057495,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/123",
+    "method": "sc",
+    "gold": "\\frac56",
+    "pred": "5.0",
+    "correct": false,
+    "time": 3.7350409030914307,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/124",
+    "method": "sc",
+    "gold": "6",
+    "pred": "-3.0",
+    "correct": false,
+    "time": 5.783015966415405,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/125",
+    "method": "sc",
+    "gold": "15",
+    "pred": "0.0",
+    "correct": false,
+    "time": 5.388900995254517,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/126",
+    "method": "sc",
+    "gold": "19",
+    "pred": "19.0",
+    "correct": true,
+    "time": 2.52243971824646,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/127",
+    "method": "sc",
+    "gold": "\\frac{3",
+    "pred": "\\frac{3",
+    "correct": true,
+    "time": 2.8063111305236816,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/128",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 3.565171241760254,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/129",
+    "method": "sc",
+    "gold": "\\frac{2009",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.779949426651001,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/130",
+    "method": "sc",
+    "gold": "-22",
+    "pred": "12.0",
+    "correct": false,
+    "time": 5.776557683944702,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/131",
+    "method": "sc",
+    "gold": "-2",
+    "pred": "-2.0",
+    "correct": true,
+    "time": 4.1136815547943115,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/132",
+    "method": "sc",
+    "gold": "0",
+    "pred": "0.0",
+    "correct": true,
+    "time": 4.414799451828003,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/133",
+    "method": "sc",
+    "gold": "\\frac{\\sqrt{3",
+    "pred": "\\(9^{-1/4}\\)",
+    "correct": false,
+    "time": 4.199590682983398,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/134",
+    "method": "sc",
+    "gold": "-0.25",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.776901721954346,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/135",
+    "method": "sc",
+    "gold": "1",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.697579860687256,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/136",
+    "method": "sc",
+    "gold": "11",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.508326530456543,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/137",
+    "method": "sc",
+    "gold": "1",
+    "pred": "-1.0",
+    "correct": false,
+    "time": 5.562158823013306,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/138",
+    "method": "sc",
+    "gold": "45",
+    "pred": "8.0",
+    "correct": false,
+    "time": 5.777254581451416,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/139",
+    "method": "sc",
+    "gold": "20",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.2568089962005615,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/140",
+    "method": "sc",
+    "gold": "15554",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.304931402206421,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/141",
+    "method": "sc",
+    "gold": "1",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.386804103851318,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/142",
+    "method": "sc",
+    "gold": "-2",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.2148637771606445,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/143",
+    "method": "sc",
+    "gold": "18",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.777954339981079,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/144",
+    "method": "sc",
+    "gold": "64",
+    "pred": "64.0",
+    "correct": true,
+    "time": 4.809776067733765,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/145",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 1.69818115234375,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/146",
+    "method": "sc",
+    "gold": "36",
+    "pred": "836.4",
+    "correct": false,
+    "time": 4.5203728675842285,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/147",
+    "method": "sc",
+    "gold": "(-6, 10)",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.785998582839966,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/148",
+    "method": "sc",
+    "gold": "10",
+    "pred": "10.0",
+    "correct": true,
+    "time": 2.923060178756714,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/149",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 3.231877565383911,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/150",
+    "method": "sc",
+    "gold": "\\frac{12",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.762940883636475,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/151",
+    "method": "sc",
+    "gold": "-1",
+    "pred": "-1.0",
+    "correct": true,
+    "time": 5.778605699539185,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/152",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 5.41480565071106,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/153",
+    "method": "sc",
+    "gold": "-\\frac32",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.773534774780273,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/154",
+    "method": "sc",
+    "gold": "8",
+    "pred": "8.0",
+    "correct": true,
+    "time": 3.542710542678833,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/155",
+    "method": "sc",
+    "gold": "-8192",
+    "pred": "-8192.0",
+    "correct": true,
+    "time": 5.283039808273315,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/156",
+    "method": "sc",
+    "gold": "36",
+    "pred": "36.0",
+    "correct": true,
+    "time": 4.640422105789185,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/157",
+    "method": "sc",
+    "gold": "-\\frac{1",
+    "pred": "2.0",
+    "correct": false,
+    "time": 4.669750928878784,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/158",
+    "method": "sc",
+    "gold": "9",
+    "pred": "9.0",
+    "correct": true,
+    "time": 5.340314626693726,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/159",
+    "method": "sc",
+    "gold": "20",
+    "pred": "20.0",
+    "correct": true,
+    "time": 4.4001665115356445,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/160",
+    "method": "sc",
+    "gold": "9",
+    "pred": "9.0",
+    "correct": true,
+    "time": 3.91601300239563,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/161",
+    "method": "sc",
+    "gold": "66",
+    "pred": "-62.0",
+    "correct": false,
+    "time": 5.0699567794799805,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/162",
+    "method": "sc",
+    "gold": "600",
+    "pred": "600.0",
+    "correct": true,
+    "time": 5.023092746734619,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/163",
+    "method": "sc",
+    "gold": "6",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.777641534805298,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/164",
+    "method": "sc",
+    "gold": "-11 + 27i",
+    "pred": "27.0",
+    "correct": false,
+    "time": 4.444784164428711,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/165",
+    "method": "sc",
+    "gold": "50",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.271922826766968,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/166",
+    "method": "sc",
+    "gold": "256",
+    "pred": "4.0",
+    "correct": false,
+    "time": 3.7101402282714844,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/167",
+    "method": "sc",
+    "gold": "48",
+    "pred": "48.0",
+    "correct": true,
+    "time": 4.005968332290649,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/168",
+    "method": "sc",
+    "gold": "\\text{Evelyn",
+    "pred": "1.4",
+    "correct": false,
+    "time": 5.590273857116699,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/169",
+    "method": "sc",
+    "gold": "(-\\infty,0)",
+    "pred": "(-\\infty0)",
+    "correct": true,
+    "time": 4.835267543792725,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/170",
+    "method": "sc",
+    "gold": "36",
+    "pred": "32.0",
+    "correct": false,
+    "time": 5.779578924179077,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/171",
+    "method": "sc",
+    "gold": "\\frac{243",
+    "pred": "7.0",
+    "correct": false,
+    "time": 5.778305292129517,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/172",
+    "method": "sc",
+    "gold": "13",
+    "pred": "13.0",
+    "correct": true,
+    "time": 4.903249740600586,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/173",
+    "method": "sc",
+    "gold": "13",
+    "pred": "13.0",
+    "correct": true,
+    "time": 3.569624900817871,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/174",
+    "method": "sc",
+    "gold": "3",
+    "pred": "1.0",
+    "correct": false,
+    "time": 4.924138784408569,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/175",
+    "method": "sc",
+    "gold": "575\\text{ students",
+    "pred": "567.5",
+    "correct": false,
+    "time": 2.805452823638916,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/176",
+    "method": "sc",
+    "gold": "\\frac{5",
+    "pred": "\\frac{5",
+    "correct": true,
+    "time": 4.623931169509888,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/177",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 5.562037944793701,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/178",
+    "method": "sc",
+    "gold": "3",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.335626602172852,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/179",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 2.11836314201355,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/180",
+    "method": "sc",
+    "gold": "6",
+    "pred": "2.0",
+    "correct": false,
+    "time": 4.941560506820679,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/181",
+    "method": "sc",
+    "gold": "16",
+    "pred": "36.0",
+    "correct": false,
+    "time": 3.652428388595581,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/182",
+    "method": "sc",
+    "gold": "13",
+    "pred": "169.0",
+    "correct": false,
+    "time": 5.782013893127441,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/183",
+    "method": "sc",
+    "gold": "0",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.739539384841919,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/184",
+    "method": "sc",
+    "gold": "-\\sqrt{x-3",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.778738260269165,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/185",
+    "method": "sc",
+    "gold": "\\frac{1",
+    "pred": "\\dfrac{8",
+    "correct": false,
+    "time": 4.45826268196106,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/186",
+    "method": "sc",
+    "gold": "\\frac9{5",
+    "pred": "\\frac{9",
+    "correct": false,
+    "time": 4.245330095291138,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/187",
+    "method": "sc",
+    "gold": "75",
+    "pred": "20.0",
+    "correct": false,
+    "time": 4.585111856460571,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/188",
+    "method": "sc",
+    "gold": "\\frac{3",
+    "pred": "\\frac{3",
+    "correct": true,
+    "time": 3.7706799507141113,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/189",
+    "method": "sc",
+    "gold": "b - 1",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.057626247406006,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/190",
+    "method": "sc",
+    "gold": "-9",
+    "pred": "-19.0",
+    "correct": false,
+    "time": 5.772368669509888,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/191",
+    "method": "sc",
+    "gold": "361",
+    "pred": "361.0",
+    "correct": true,
+    "time": 5.381274938583374,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/192",
+    "method": "sc",
+    "gold": "73",
+    "pred": "73.0",
+    "correct": true,
+    "time": 3.9133217334747314,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/193",
+    "method": "sc",
+    "gold": "369",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.767482042312622,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/194",
+    "method": "sc",
+    "gold": "445",
+    "pred": "445.0",
+    "correct": true,
+    "time": 4.499902248382568,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/195",
+    "method": "sc",
+    "gold": "[-3,2]",
+    "pred": "6.0",
+    "correct": false,
+    "time": 5.775788068771362,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/196",
+    "method": "sc",
+    "gold": "81",
+    "pred": "72.0",
+    "correct": false,
+    "time": 4.743667840957642,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/197",
+    "method": "sc",
+    "gold": "7",
+    "pred": "7.0",
+    "correct": true,
+    "time": 3.4160678386688232,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/198",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 5.0928895473480225,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/199",
+    "method": "sc",
+    "gold": "-5",
+    "pred": "-5.0",
+    "correct": true,
+    "time": 2.5915465354919434,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/200",
+    "method": "sc",
+    "gold": "-120",
+    "pred": "7.5",
+    "correct": false,
+    "time": 5.774344444274902,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/201",
+    "method": "sc",
+    "gold": "73.5",
+    "pred": "73.0",
+    "correct": false,
+    "time": 2.972991943359375,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/202",
+    "method": "sc",
+    "gold": "2",
+    "pred": "2.0",
+    "correct": true,
+    "time": 4.013549327850342,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/203",
+    "method": "sc",
+    "gold": "\\frac{135",
+    "pred": "67.5",
+    "correct": false,
+    "time": 3.889967203140259,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/204",
+    "method": "sc",
+    "gold": "8",
+    "pred": "8.0",
+    "correct": true,
+    "time": 2.6364705562591553,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/205",
+    "method": "sc",
+    "gold": "25",
+    "pred": "49.0",
+    "correct": false,
+    "time": 4.815736770629883,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/206",
+    "method": "sc",
+    "gold": "625",
+    "pred": "625.0",
+    "correct": true,
+    "time": 4.812060356140137,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/207",
+    "method": "sc",
+    "gold": "16",
+    "pred": "512.0",
+    "correct": false,
+    "time": 5.103192090988159,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/208",
+    "method": "sc",
+    "gold": "9",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.316539525985718,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/209",
+    "method": "sc",
+    "gold": "363",
+    "pred": "that**all**750people",
+    "correct": false,
+    "time": 4.493684530258179,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/210",
+    "method": "sc",
+    "gold": "103",
+    "pred": "25.5",
+    "correct": false,
+    "time": 5.514242172241211,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/211",
+    "method": "sc",
+    "gold": "0",
+    "pred": "0.0",
+    "correct": true,
+    "time": 4.938928127288818,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/212",
+    "method": "sc",
+    "gold": "400",
+    "pred": "723.0",
+    "correct": false,
+    "time": 2.631124973297119,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/213",
+    "method": "sc",
+    "gold": "29",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.777668237686157,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/214",
+    "method": "sc",
+    "gold": "0",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.421364784240723,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/215",
+    "method": "sc",
+    "gold": "-120",
+    "pred": "-120.0",
+    "correct": true,
+    "time": 5.420147657394409,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/216",
+    "method": "sc",
+    "gold": "19",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.694173336029053,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/217",
+    "method": "sc",
+    "gold": "12",
+    "pred": "12.0",
+    "correct": true,
+    "time": 2.941411018371582,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/218",
+    "method": "sc",
+    "gold": "-9",
+    "pred": "-9.0",
+    "correct": true,
+    "time": 5.158983469009399,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/219",
+    "method": "sc",
+    "gold": "-10",
+    "pred": "0.0",
+    "correct": false,
+    "time": 4.036173343658447,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/220",
+    "method": "sc",
+    "gold": "7",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.772327423095703,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/221",
+    "method": "sc",
+    "gold": "x = 4",
+    "pred": "x=4",
+    "correct": true,
+    "time": 4.951878309249878,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/222",
+    "method": "sc",
+    "gold": "x^4+x^2-10x-24",
+    "pred": "6.0",
+    "correct": false,
+    "time": 5.706829071044922,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/223",
+    "method": "sc",
+    "gold": "2",
+    "pred": "6.0",
+    "correct": false,
+    "time": 5.393646001815796,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/224",
+    "method": "sc",
+    "gold": "52",
+    "pred": "52.0",
+    "correct": true,
+    "time": 4.101174592971802,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/225",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 5.225005149841309,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/226",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 4.03719687461853,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/227",
+    "method": "sc",
+    "gold": "7",
+    "pred": "7.0",
+    "correct": true,
+    "time": 3.993746519088745,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/228",
+    "method": "sc",
+    "gold": "\\frac{3",
+    "pred": "\\frac{3",
+    "correct": true,
+    "time": 3.8430144786834717,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/229",
+    "method": "sc",
+    "gold": "-4",
+    "pred": "-4.0",
+    "correct": true,
+    "time": 5.693152666091919,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/230",
+    "method": "sc",
+    "gold": "7",
+    "pred": "7.0",
+    "correct": true,
+    "time": 4.218096971511841,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/231",
+    "method": "sc",
+    "gold": "6",
+    "pred": "5.0",
+    "correct": false,
+    "time": 4.11967134475708,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/232",
+    "method": "sc",
+    "gold": "169",
+    "pred": "169.0",
+    "correct": true,
+    "time": 4.440296173095703,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/233",
+    "method": "sc",
+    "gold": "54",
+    "pred": "54.0",
+    "correct": true,
+    "time": 4.52763819694519,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/234",
+    "method": "sc",
+    "gold": "50",
+    "pred": "12.0",
+    "correct": false,
+    "time": 5.760745525360107,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/235",
+    "method": "sc",
+    "gold": "36",
+    "pred": "36.0",
+    "correct": true,
+    "time": 4.2555036544799805,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/236",
+    "method": "sc",
+    "gold": "100",
+    "pred": "100.0",
+    "correct": true,
+    "time": 3.133075714111328,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/237",
+    "method": "sc",
+    "gold": "5050",
+    "pred": "5050.0",
+    "correct": true,
+    "time": 2.5911264419555664,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/238",
+    "method": "sc",
+    "gold": "123",
+    "pred": "12.0",
+    "correct": false,
+    "time": 4.77711296081543,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/239",
+    "method": "sc",
+    "gold": "\\frac{5",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.504878759384155,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/240",
+    "method": "sc",
+    "gold": "1",
+    "pred": "0.0",
+    "correct": false,
+    "time": 3.879378318786621,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/241",
+    "method": "sc",
+    "gold": "1",
+    "pred": "8.0",
+    "correct": false,
+    "time": 5.660122632980347,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/242",
+    "method": "sc",
+    "gold": "16",
+    "pred": "16.0",
+    "correct": true,
+    "time": 4.291854381561279,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/243",
+    "method": "sc",
+    "gold": "\\frac{\\sqrt{3",
+    "pred": "\\frac{\\sqrt{3",
+    "correct": true,
+    "time": 4.620267868041992,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/244",
+    "method": "sc",
+    "gold": "12",
+    "pred": "10.0",
+    "correct": false,
+    "time": 5.130535125732422,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/245",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 5.779687166213989,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/246",
+    "method": "sc",
+    "gold": "\\frac{3",
+    "pred": "\\frac{10",
+    "correct": false,
+    "time": 3.9107160568237305,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/247",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 3.5556437969207764,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/248",
+    "method": "sc",
+    "gold": "3702",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.780949831008911,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/249",
+    "method": "sc",
+    "gold": "9",
+    "pred": "-9.0",
+    "correct": false,
+    "time": 4.553767442703247,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/250",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 5.473611831665039,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/251",
+    "method": "sc",
+    "gold": "-\\frac{8",
+    "pred": "-\\frac{8",
+    "correct": true,
+    "time": 5.232821226119995,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/252",
+    "method": "sc",
+    "gold": "43",
+    "pred": "43.0",
+    "correct": true,
+    "time": 2.693284749984741,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/253",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 3.6924469470977783,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/254",
+    "method": "sc",
+    "gold": "220",
+    "pred": "480.0",
+    "correct": false,
+    "time": 4.327869176864624,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/255",
+    "method": "sc",
+    "gold": "5",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.774121522903442,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/256",
+    "method": "sc",
+    "gold": "6r^2-4r-24",
+    "pred": "24.0",
+    "correct": false,
+    "time": 4.203495502471924,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/257",
+    "method": "sc",
+    "gold": "22",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.779764652252197,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/258",
+    "method": "sc",
+    "gold": "364",
+    "pred": "364.0",
+    "correct": true,
+    "time": 3.147132158279419,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/259",
+    "method": "sc",
+    "gold": "\\$15,\\!000",
+    "pred": "0.0",
+    "correct": false,
+    "time": 4.103693246841431,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/260",
+    "method": "sc",
+    "gold": "3",
+    "pred": "0.0",
+    "correct": false,
+    "time": 5.418394565582275,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/261",
+    "method": "sc",
+    "gold": "\\frac12",
+    "pred": "\\frac{1",
+    "correct": false,
+    "time": 4.432528257369995,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/262",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 4.379228591918945,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/263",
+    "method": "sc",
+    "gold": "1",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.675992012023926,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/264",
+    "method": "sc",
+    "gold": "81",
+    "pred": "81.0",
+    "correct": true,
+    "time": 1.9752986431121826,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/265",
+    "method": "sc",
+    "gold": "5",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.771939754486084,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/266",
+    "method": "sc",
+    "gold": "26",
+    "pred": "19.625",
+    "correct": false,
+    "time": 5.36993932723999,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/267",
+    "method": "sc",
+    "gold": "\\sqrt{13",
+    "pred": "8.0",
+    "correct": false,
+    "time": 4.488125801086426,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/268",
+    "method": "sc",
+    "gold": "\\frac{68",
+    "pred": "9.0",
+    "correct": false,
+    "time": 5.781005382537842,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/269",
+    "method": "sc",
+    "gold": "13",
+    "pred": "13.0",
+    "correct": true,
+    "time": 3.6524815559387207,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/270",
+    "method": "sc",
+    "gold": "10",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.662605285644531,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/271",
+    "method": "sc",
+    "gold": "8",
+    "pred": "8.0",
+    "correct": true,
+    "time": 5.594728469848633,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/272",
+    "method": "sc",
+    "gold": "80",
+    "pred": "80.0",
+    "correct": true,
+    "time": 2.4062066078186035,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/273",
+    "method": "sc",
+    "gold": "16",
+    "pred": "-4.0",
+    "correct": false,
+    "time": 4.399550437927246,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/274",
+    "method": "sc",
+    "gold": "2",
+    "pred": "\\text{nosolution",
+    "correct": false,
+    "time": 5.695434093475342,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/275",
+    "method": "sc",
+    "gold": "-2",
+    "pred": "-3.0",
+    "correct": false,
+    "time": 4.916155815124512,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/276",
+    "method": "sc",
+    "gold": "5",
+    "pred": "\\sqrt{13",
+    "correct": false,
+    "time": 5.689987897872925,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/277",
+    "method": "sc",
+    "gold": "23",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.189893484115601,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/278",
+    "method": "sc",
+    "gold": "-2",
+    "pred": "-3.0",
+    "correct": false,
+    "time": 3.745819091796875,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/279",
+    "method": "sc",
+    "gold": "5",
+    "pred": "61.0",
+    "correct": false,
+    "time": 5.443238258361816,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/280",
+    "method": "sc",
+    "gold": "10",
+    "pred": "-2.0",
+    "correct": false,
+    "time": 5.670839309692383,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/281",
+    "method": "sc",
+    "gold": "2",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.773522853851318,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/282",
+    "method": "sc",
+    "gold": "2",
+    "pred": "2.0",
+    "correct": true,
+    "time": 5.736131906509399,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/283",
+    "method": "sc",
+    "gold": "40",
+    "pred": "44.0",
+    "correct": false,
+    "time": 5.5191521644592285,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/284",
+    "method": "sc",
+    "gold": "7",
+    "pred": "7.0",
+    "correct": true,
+    "time": 5.1007819175720215,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/285",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 5.770369529724121,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/286",
+    "method": "sc",
+    "gold": "\\$ 139",
+    "pred": "84.0",
+    "correct": false,
+    "time": 5.513117074966431,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/287",
+    "method": "sc",
+    "gold": "7",
+    "pred": "7.0",
+    "correct": true,
+    "time": 3.2047042846679688,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/288",
+    "method": "sc",
+    "gold": "12",
+    "pred": "200.0",
+    "correct": false,
+    "time": 5.261347770690918,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/289",
+    "method": "sc",
+    "gold": "81\\text{ teachers",
+    "pred": "897.0",
+    "correct": false,
+    "time": 5.704783916473389,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/290",
+    "method": "sc",
+    "gold": "2",
+    "pred": "\\frac{7",
+    "correct": false,
+    "time": 4.801746368408203,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/291",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 5.775193691253662,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/292",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 4.9334306716918945,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/293",
+    "method": "sc",
+    "gold": "-\\frac1{2x",
+    "pred": "-1.0",
+    "correct": false,
+    "time": 5.323033571243286,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/294",
+    "method": "sc",
+    "gold": "30",
+    "pred": "12.0",
+    "correct": false,
+    "time": 5.0681116580963135,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/295",
+    "method": "sc",
+    "gold": "74726",
+    "pred": "0.0",
+    "correct": false,
+    "time": 5.161931753158569,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/296",
+    "method": "sc",
+    "gold": "(5,-6)",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.318052291870117,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/297",
+    "method": "sc",
+    "gold": "-120",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.723650217056274,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/298",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 3.6605260372161865,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/299",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 2.6194820404052734,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/300",
+    "method": "sc",
+    "gold": "28",
+    "pred": "28.0",
+    "correct": true,
+    "time": 3.6945621967315674,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/301",
+    "method": "sc",
+    "gold": "800",
+    "pred": "800.0",
+    "correct": true,
+    "time": 3.213685989379883,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/302",
+    "method": "sc",
+    "gold": "9",
+    "pred": "6.0",
+    "correct": false,
+    "time": 4.971322298049927,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/303",
+    "method": "sc",
+    "gold": "10",
+    "pred": "2.0",
+    "correct": false,
+    "time": 4.1424994468688965,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/304",
+    "method": "sc",
+    "gold": "-4",
+    "pred": "10.0",
+    "correct": false,
+    "time": 4.267942190170288,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/305",
+    "method": "sc",
+    "gold": "549",
+    "pred": "43.0",
+    "correct": false,
+    "time": 5.557095050811768,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/306",
+    "method": "sc",
+    "gold": "(-16,-4)",
+    "pred": "(24)",
+    "correct": false,
+    "time": 5.142118453979492,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/307",
+    "method": "sc",
+    "gold": "27",
+    "pred": "93.0",
+    "correct": false,
+    "time": 5.28723406791687,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/308",
+    "method": "sc",
+    "gold": "(-4x^2+x+1)(4x^2+x+1)",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.771899223327637,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/309",
+    "method": "sc",
+    "gold": "4(3-x)(3+x)",
+    "pred": "4(3+x)(3-x)",
+    "correct": false,
+    "time": 3.7674970626831055,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/310",
+    "method": "sc",
+    "gold": "5",
+    "pred": "5.0",
+    "correct": true,
+    "time": 3.8475136756896973,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/311",
+    "method": "sc",
+    "gold": "0",
+    "pred": "0.0",
+    "correct": true,
+    "time": 5.012317895889282,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/312",
+    "method": "sc",
+    "gold": "11",
+    "pred": "11.0",
+    "correct": true,
+    "time": 3.050006628036499,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/313",
+    "method": "sc",
+    "gold": "7",
+    "pred": "7.0",
+    "correct": true,
+    "time": 5.587618589401245,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/314",
+    "method": "sc",
+    "gold": "22",
+    "pred": "22.0",
+    "correct": true,
+    "time": 5.747929096221924,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/315",
+    "method": "sc",
+    "gold": "C",
+    "pred": "b",
+    "correct": false,
+    "time": 4.3788323402404785,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/316",
+    "method": "sc",
+    "gold": "18",
+    "pred": "56.0",
+    "correct": false,
+    "time": 5.337625503540039,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/317",
+    "method": "sc",
+    "gold": "0",
+    "pred": "-120.0",
+    "correct": false,
+    "time": 4.789437294006348,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/318",
+    "method": "sc",
+    "gold": "0",
+    "pred": "0.0",
+    "correct": true,
+    "time": 3.3131637573242188,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/319",
+    "method": "sc",
+    "gold": "8",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.773297548294067,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/320",
+    "method": "sc",
+    "gold": "11",
+    "pred": "11.0",
+    "correct": true,
+    "time": 4.568742036819458,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/321",
+    "method": "sc",
+    "gold": "2",
+    "pred": "2.0",
+    "correct": true,
+    "time": 5.11535120010376,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/322",
+    "method": "sc",
+    "gold": "125",
+    "pred": "125.0",
+    "correct": true,
+    "time": 3.3064568042755127,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/323",
+    "method": "sc",
+    "gold": "2\\sqrt{22",
+    "pred": "16.0",
+    "correct": false,
+    "time": 4.2822425365448,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/324",
+    "method": "sc",
+    "gold": "174",
+    "pred": "84.0",
+    "correct": false,
+    "time": 4.317250728607178,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/325",
+    "method": "sc",
+    "gold": "7",
+    "pred": "7.0",
+    "correct": true,
+    "time": 4.953775644302368,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/326",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 3.8987317085266113,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/327",
+    "method": "sc",
+    "gold": "14",
+    "pred": "7.0",
+    "correct": false,
+    "time": 3.38895320892334,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/328",
+    "method": "sc",
+    "gold": "9",
+    "pred": "9.0",
+    "correct": true,
+    "time": 1.6482598781585693,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/329",
+    "method": "sc",
+    "gold": "16",
+    "pred": "28.0",
+    "correct": false,
+    "time": 3.9209132194519043,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/330",
+    "method": "sc",
+    "gold": "800000",
+    "pred": "500.0",
+    "correct": false,
+    "time": 5.644787788391113,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/331",
+    "method": "sc",
+    "gold": "\\frac{\\sqrt6",
+    "pred": "\\sqrt{\\frac{2}{3}}",
+    "correct": false,
+    "time": 3.719141960144043,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/332",
+    "method": "sc",
+    "gold": "2",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.180208921432495,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/333",
+    "method": "sc",
+    "gold": "-3",
+    "pred": "-3.0",
+    "correct": true,
+    "time": 5.268648624420166,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/334",
+    "method": "sc",
+    "gold": "\\frac{4",
+    "pred": "\\frac{4",
+    "correct": true,
+    "time": 5.065834283828735,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/335",
+    "method": "sc",
+    "gold": "\\frac{1",
+    "pred": "4.0",
+    "correct": false,
+    "time": 4.990451812744141,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/336",
+    "method": "sc",
+    "gold": "5",
+    "pred": "16.0",
+    "correct": false,
+    "time": 5.7886247634887695,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/337",
+    "method": "sc",
+    "gold": "64",
+    "pred": "15.0",
+    "correct": false,
+    "time": 4.060166358947754,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/338",
+    "method": "sc",
+    "gold": "5",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.680887699127197,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/339",
+    "method": "sc",
+    "gold": "9",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.779637336730957,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/340",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 4.323853969573975,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/341",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 4.056741714477539,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/342",
+    "method": "sc",
+    "gold": "2",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.770696640014648,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/343",
+    "method": "sc",
+    "gold": "\\frac{6\\sqrt{5",
+    "pred": "\\frac{6\\sqrt{5",
+    "correct": true,
+    "time": 4.324646234512329,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/344",
+    "method": "sc",
+    "gold": "10",
+    "pred": "10.0",
+    "correct": true,
+    "time": 5.327967882156372,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/345",
+    "method": "sc",
+    "gold": "\\$16,\\!386.16",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.197788715362549,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/346",
+    "method": "sc",
+    "gold": "5",
+    "pred": "8.0",
+    "correct": false,
+    "time": 5.774661302566528,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/347",
+    "method": "sc",
+    "gold": "x^3 + 2x^2 + x",
+    "pred": "x^3+2x^2+x",
+    "correct": true,
+    "time": 3.966602325439453,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/348",
+    "method": "sc",
+    "gold": "3",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.767564296722412,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/349",
+    "method": "sc",
+    "gold": "1050",
+    "pred": "1050.0",
+    "correct": true,
+    "time": 3.102825403213501,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/350",
+    "method": "sc",
+    "gold": "6",
+    "pred": "6cookies",
+    "correct": false,
+    "time": 3.1911702156066895,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/351",
+    "method": "sc",
+    "gold": "1.8",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.771085023880005,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/352",
+    "method": "sc",
+    "gold": "2",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.771916151046753,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/353",
+    "method": "sc",
+    "gold": "0.75",
+    "pred": "0.75",
+    "correct": true,
+    "time": 5.42442774772644,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/354",
+    "method": "sc",
+    "gold": "-15",
+    "pred": "-15.0",
+    "correct": true,
+    "time": 5.11113166809082,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/355",
+    "method": "sc",
+    "gold": "-4",
+    "pred": "6.0",
+    "correct": false,
+    "time": 5.511998653411865,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/356",
+    "method": "sc",
+    "gold": "10",
+    "pred": "10.0",
+    "correct": true,
+    "time": 3.687340021133423,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/357",
+    "method": "sc",
+    "gold": "2010",
+    "pred": "2010.0",
+    "correct": true,
+    "time": 5.6380438804626465,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/358",
+    "method": "sc",
+    "gold": "-3",
+    "pred": "-3.0",
+    "correct": true,
+    "time": 3.653729200363159,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/359",
+    "method": "sc",
+    "gold": "-114",
+    "pred": "-114.0",
+    "correct": true,
+    "time": 5.1784820556640625,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/360",
+    "method": "sc",
+    "gold": "24",
+    "pred": "24.0",
+    "correct": true,
+    "time": 5.5540771484375,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/361",
+    "method": "sc",
+    "gold": "8",
+    "pred": "12.0",
+    "correct": false,
+    "time": 3.3285300731658936,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/362",
+    "method": "sc",
+    "gold": "\\frac 54",
+    "pred": "\\frac{1",
+    "correct": false,
+    "time": 4.527820348739624,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/363",
+    "method": "sc",
+    "gold": "3",
+    "pred": "\\(3\\)",
+    "correct": false,
+    "time": 3.2983591556549072,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/364",
+    "method": "sc",
+    "gold": "89",
+    "pred": "-7.0",
+    "correct": false,
+    "time": 5.6495866775512695,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/365",
+    "method": "sc",
+    "gold": "99940009",
+    "pred": "1.0",
+    "correct": false,
+    "time": 4.697433948516846,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/366",
+    "method": "sc",
+    "gold": "\\dfrac{1",
+    "pred": "\\frac{1",
+    "correct": false,
+    "time": 5.378423690795898,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/367",
+    "method": "sc",
+    "gold": "2\\sqrt{5",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.5444324016571045,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/368",
+    "method": "sc",
+    "gold": "27",
+    "pred": "27.0",
+    "correct": true,
+    "time": 3.874473810195923,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/369",
+    "method": "sc",
+    "gold": "360",
+    "pred": "30.0",
+    "correct": false,
+    "time": 5.7759764194488525,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/370",
+    "method": "sc",
+    "gold": "4000",
+    "pred": "4000.0",
+    "correct": true,
+    "time": 4.538795709609985,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/371",
+    "method": "sc",
+    "gold": "17",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.776463747024536,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/372",
+    "method": "sc",
+    "gold": "200",
+    "pred": "200.0",
+    "correct": true,
+    "time": 2.8923230171203613,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/373",
+    "method": "sc",
+    "gold": "11",
+    "pred": "11.0",
+    "correct": true,
+    "time": 2.8355748653411865,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/374",
+    "method": "sc",
+    "gold": "4",
+    "pred": "6.0",
+    "correct": false,
+    "time": 5.460195779800415,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/375",
+    "method": "sc",
+    "gold": "-3",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.164132595062256,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/376",
+    "method": "sc",
+    "gold": "(-\\infty, -7)\\cup(-7, 3)\\cup(3, \\infty)",
+    "pred": "(-\\infty-7)\\cup(-73)\\cup(3\\infty)",
+    "correct": true,
+    "time": 5.345902442932129,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/377",
+    "method": "sc",
+    "gold": "11",
+    "pred": "11.0",
+    "correct": true,
+    "time": 2.4634149074554443,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/378",
+    "method": "sc",
+    "gold": "\\left[\\frac{1",
+    "pred": "0.0",
+    "correct": false,
+    "time": 5.780160427093506,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/379",
+    "method": "sc",
+    "gold": "24",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.768506765365601,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/380",
+    "method": "sc",
+    "gold": "4",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.78235125541687,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/381",
+    "method": "sc",
+    "gold": "143",
+    "pred": "143.0",
+    "correct": true,
+    "time": 5.425534009933472,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/382",
+    "method": "sc",
+    "gold": "17",
+    "pred": "7.0",
+    "correct": false,
+    "time": 5.7646424770355225,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/383",
+    "method": "sc",
+    "gold": "9\\pi",
+    "pred": "10.0",
+    "correct": false,
+    "time": 5.090630769729614,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/384",
+    "method": "sc",
+    "gold": "21y+14",
+    "pred": "14.0",
+    "correct": false,
+    "time": 1.8504619598388672,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/385",
+    "method": "sc",
+    "gold": "44\\%",
+    "pred": "100.0",
+    "correct": false,
+    "time": 5.606029987335205,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/386",
+    "method": "sc",
+    "gold": "-4",
+    "pred": "-4.0",
+    "correct": true,
+    "time": 4.2961390018463135,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/387",
+    "method": "sc",
+    "gold": "20",
+    "pred": "20.0",
+    "correct": true,
+    "time": 3.144662857055664,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/388",
+    "method": "sc",
+    "gold": "2",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.775416851043701,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/389",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 3.233572244644165,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/390",
+    "method": "sc",
+    "gold": "22",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.544599771499634,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/391",
+    "method": "sc",
+    "gold": "8",
+    "pred": "0.21972",
+    "correct": false,
+    "time": 5.7752180099487305,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/392",
+    "method": "sc",
+    "gold": "5",
+    "pred": "16.0",
+    "correct": false,
+    "time": 5.781340837478638,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/393",
+    "method": "sc",
+    "gold": "(r+5)^2",
+    "pred": "(r+5)^2",
+    "correct": true,
+    "time": 3.8335275650024414,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/394",
+    "method": "sc",
+    "gold": "3\\sqrt{2",
+    "pred": "6.0",
+    "correct": false,
+    "time": 5.2339091300964355,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/395",
+    "method": "sc",
+    "gold": "-6",
+    "pred": "-6.0",
+    "correct": true,
+    "time": 4.693774938583374,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/396",
+    "method": "sc",
+    "gold": "49",
+    "pred": "49.0",
+    "correct": true,
+    "time": 4.664952278137207,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/397",
+    "method": "sc",
+    "gold": "\\frac{5",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.776375770568848,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/398",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 4.005437135696411,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/399",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 2.9790074825286865,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/400",
+    "method": "sc",
+    "gold": "7z^{96",
+    "pred": "7z^{96",
+    "correct": true,
+    "time": 3.9921064376831055,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/401",
+    "method": "sc",
+    "gold": "17",
+    "pred": "17.0",
+    "correct": true,
+    "time": 3.4213714599609375,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/402",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 2.7485198974609375,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/403",
+    "method": "sc",
+    "gold": "\\frac{11",
+    "pred": "12.0",
+    "correct": false,
+    "time": 5.70437479019165,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/404",
+    "method": "sc",
+    "gold": "\\frac16",
+    "pred": "\\frac{1",
+    "correct": false,
+    "time": 4.328020095825195,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/405",
+    "method": "sc",
+    "gold": "10\\sqrt{2",
+    "pred": "10\\sqrt{2",
+    "correct": true,
+    "time": 4.506076335906982,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/406",
+    "method": "sc",
+    "gold": "118 \\text{ dollars",
+    "pred": "382.26",
+    "correct": false,
+    "time": 5.772726058959961,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/407",
+    "method": "sc",
+    "gold": "-1",
+    "pred": "\\frac{k(k-4)",
+    "correct": false,
+    "time": 5.318898916244507,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/408",
+    "method": "sc",
+    "gold": "x^3+27",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.412369728088379,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/409",
+    "method": "sc",
+    "gold": "6",
+    "pred": "6.0",
+    "correct": true,
+    "time": 3.8815622329711914,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/410",
+    "method": "sc",
+    "gold": "2b",
+    "pred": "2b",
+    "correct": true,
+    "time": 4.523562908172607,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/411",
+    "method": "sc",
+    "gold": "3",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.6236865520477295,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/412",
+    "method": "sc",
+    "gold": "6x-5",
+    "pred": "6x-5",
+    "correct": true,
+    "time": 3.9142425060272217,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/413",
+    "method": "sc",
+    "gold": "3",
+    "pred": "3.0",
+    "correct": true,
+    "time": 4.508908748626709,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/414",
+    "method": "sc",
+    "gold": "-2",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.762929439544678,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/415",
+    "method": "sc",
+    "gold": "2",
+    "pred": "4.0",
+    "correct": false,
+    "time": 3.3408710956573486,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/416",
+    "method": "sc",
+    "gold": "0",
+    "pred": "0.0",
+    "correct": true,
+    "time": 5.581421852111816,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/417",
+    "method": "sc",
+    "gold": "12",
+    "pred": "7.0",
+    "correct": false,
+    "time": 5.27065110206604,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/418",
+    "method": "sc",
+    "gold": "108",
+    "pred": "108.0",
+    "correct": true,
+    "time": 2.049668073654175,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/419",
+    "method": "sc",
+    "gold": "-3",
+    "pred": "-3.0",
+    "correct": true,
+    "time": 3.333606481552124,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/420",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 2.4330577850341797,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/421",
+    "method": "sc",
+    "gold": "\\frac15",
+    "pred": "\\text{undefined",
+    "correct": false,
+    "time": 3.198591470718384,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/422",
+    "method": "sc",
+    "gold": "2500",
+    "pred": "50.0",
+    "correct": false,
+    "time": 5.769718647003174,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/423",
+    "method": "sc",
+    "gold": "8",
+    "pred": "3.0",
+    "correct": false,
+    "time": 5.70715856552124,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/424",
+    "method": "sc",
+    "gold": "\\frac32",
+    "pred": "0.0",
+    "correct": false,
+    "time": 5.786535024642944,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/425",
+    "method": "sc",
+    "gold": "12",
+    "pred": "12.0",
+    "correct": true,
+    "time": 2.6821563243865967,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/426",
+    "method": "sc",
+    "gold": "700",
+    "pred": "700.0",
+    "correct": true,
+    "time": 2.830034017562866,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/427",
+    "method": "sc",
+    "gold": "21",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.771586894989014,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/428",
+    "method": "sc",
+    "gold": "\\cfrac{25",
+    "pred": "\\cfrac{5",
+    "correct": false,
+    "time": 3.8941144943237305,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/429",
+    "method": "sc",
+    "gold": "9\\text{ a.m.",
+    "pred": "43.0",
+    "correct": false,
+    "time": 3.397038698196411,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/430",
+    "method": "sc",
+    "gold": "14",
+    "pred": "14.0",
+    "correct": true,
+    "time": 5.386228322982788,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/431",
+    "method": "sc",
+    "gold": "8",
+    "pred": "8.0",
+    "correct": true,
+    "time": 3.0027129650115967,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/432",
+    "method": "sc",
+    "gold": "3",
+    "pred": "-3.0",
+    "correct": false,
+    "time": 5.73117470741272,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/433",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 2.5390093326568604,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/434",
+    "method": "sc",
+    "gold": "-48",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.362003803253174,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/435",
+    "method": "sc",
+    "gold": "2",
+    "pred": "2.0",
+    "correct": true,
+    "time": 3.591850519180298,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/436",
+    "method": "sc",
+    "gold": "0",
+    "pred": "-1.0",
+    "correct": false,
+    "time": 4.440711259841919,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/437",
+    "method": "sc",
+    "gold": "575",
+    "pred": "1001.0",
+    "correct": false,
+    "time": 4.814845085144043,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/438",
+    "method": "sc",
+    "gold": "55",
+    "pred": "10.0",
+    "correct": false,
+    "time": 5.778307676315308,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/439",
+    "method": "sc",
+    "gold": "\\dfrac{4",
+    "pred": "\\frac{4",
+    "correct": false,
+    "time": 4.730853319168091,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/440",
+    "method": "sc",
+    "gold": "75",
+    "pred": "75.0",
+    "correct": true,
+    "time": 2.4878082275390625,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/441",
+    "method": "sc",
+    "gold": "12",
+    "pred": "12.0",
+    "correct": true,
+    "time": 5.49433708190918,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/442",
+    "method": "sc",
+    "gold": "28",
+    "pred": "28.0",
+    "correct": true,
+    "time": 4.155679941177368,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/443",
+    "method": "sc",
+    "gold": "121",
+    "pred": "121.0",
+    "correct": true,
+    "time": 3.4329216480255127,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/444",
+    "method": "sc",
+    "gold": "292i",
+    "pred": "146.0",
+    "correct": false,
+    "time": 4.890688180923462,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/445",
+    "method": "sc",
+    "gold": "4",
+    "pred": "17.0",
+    "correct": false,
+    "time": 5.552077531814575,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/446",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 5.278564453125,
+    "samples": 5,
+    "pass_count": 4
+  },
+  {
+    "task_id": "MATH/447",
+    "method": "sc",
+    "gold": "125",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.774375677108765,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/448",
+    "method": "sc",
+    "gold": "7.5",
+    "pred": "6.25",
+    "correct": false,
+    "time": 5.704755783081055,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/449",
+    "method": "sc",
+    "gold": "3.2",
+    "pred": "0.04",
+    "correct": false,
+    "time": 5.269801378250122,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/450",
+    "method": "sc",
+    "gold": "13",
+    "pred": "0.0",
+    "correct": false,
+    "time": 5.765797138214111,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/451",
+    "method": "sc",
+    "gold": "-1",
+    "pred": "-1.0",
+    "correct": true,
+    "time": 3.556384801864624,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/452",
+    "method": "sc",
+    "gold": "1600",
+    "pred": "1600.0",
+    "correct": true,
+    "time": 3.227832078933716,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/453",
+    "method": "sc",
+    "gold": "[1,9]",
+    "pred": "[19]",
+    "correct": true,
+    "time": 5.303110122680664,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/454",
+    "method": "sc",
+    "gold": "2",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.740467071533203,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/455",
+    "method": "sc",
+    "gold": "(1,3)",
+    "pred": "\\text{nosolution",
+    "correct": false,
+    "time": 5.499368667602539,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/456",
+    "method": "sc",
+    "gold": "12",
+    "pred": "6.0",
+    "correct": false,
+    "time": 5.6796417236328125,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/457",
+    "method": "sc",
+    "gold": "-150",
+    "pred": "-150.0",
+    "correct": true,
+    "time": 5.579600095748901,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/458",
+    "method": "sc",
+    "gold": "\\frac{1",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.7783753871917725,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/459",
+    "method": "sc",
+    "gold": "4",
+    "pred": "4.0",
+    "correct": true,
+    "time": 4.154551267623901,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/460",
+    "method": "sc",
+    "gold": "9",
+    "pred": "9.0",
+    "correct": true,
+    "time": 2.5747458934783936,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/461",
+    "method": "sc",
+    "gold": "17",
+    "pred": "17.0",
+    "correct": true,
+    "time": 5.07781982421875,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/462",
+    "method": "sc",
+    "gold": "2",
+    "pred": "2.0",
+    "correct": true,
+    "time": 4.473493337631226,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/463",
+    "method": "sc",
+    "gold": "-\\frac{14",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.411467552185059,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/464",
+    "method": "sc",
+    "gold": "5",
+    "pred": "0.0",
+    "correct": false,
+    "time": 4.425644397735596,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/465",
+    "method": "sc",
+    "gold": "2",
+    "pred": "8.0",
+    "correct": false,
+    "time": 4.856763124465942,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/466",
+    "method": "sc",
+    "gold": "7.5",
+    "pred": "2.0",
+    "correct": false,
+    "time": 2.7804627418518066,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/467",
+    "method": "sc",
+    "gold": "8\\pi",
+    "pred": "32\\pi",
+    "correct": false,
+    "time": 4.025555610656738,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/468",
+    "method": "sc",
+    "gold": "-9",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.77269434928894,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/469",
+    "method": "sc",
+    "gold": "-3",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.8089258670806885,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/470",
+    "method": "sc",
+    "gold": "-5",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.595288515090942,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/471",
+    "method": "sc",
+    "gold": "15",
+    "pred": "2cupcakes",
+    "correct": false,
+    "time": 4.762040376663208,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/472",
+    "method": "sc",
+    "gold": "1120",
+    "pred": "1120.0",
+    "correct": true,
+    "time": 3.7617084980010986,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/473",
+    "method": "sc",
+    "gold": "16",
+    "pred": "600.0",
+    "correct": false,
+    "time": 3.2230966091156006,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/474",
+    "method": "sc",
+    "gold": "108",
+    "pred": "-3.0",
+    "correct": false,
+    "time": 4.976443767547607,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/475",
+    "method": "sc",
+    "gold": "23",
+    "pred": "5.0",
+    "correct": false,
+    "time": 5.778041839599609,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/476",
+    "method": "sc",
+    "gold": "2500",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.436342000961304,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/477",
+    "method": "sc",
+    "gold": "\\frac{1",
+    "pred": "\\frac{1",
+    "correct": true,
+    "time": 4.094035625457764,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/478",
+    "method": "sc",
+    "gold": "-15",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.774989604949951,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/479",
+    "method": "sc",
+    "gold": "93",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.770864248275757,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/480",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 3.285032272338867,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/481",
+    "method": "sc",
+    "gold": "\\frac{1",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.692669153213501,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/482",
+    "method": "sc",
+    "gold": "90",
+    "pred": "90.0",
+    "correct": true,
+    "time": 3.9179491996765137,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/483",
+    "method": "sc",
+    "gold": "128",
+    "pred": "120.0",
+    "correct": false,
+    "time": 4.532317161560059,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/484",
+    "method": "sc",
+    "gold": "0",
+    "pred": "0.0",
+    "correct": true,
+    "time": 5.429191827774048,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/485",
+    "method": "sc",
+    "gold": "30",
+    "pred": "4.0",
+    "correct": false,
+    "time": 3.5651586055755615,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/486",
+    "method": "sc",
+    "gold": "-36",
+    "pred": "2.0",
+    "correct": false,
+    "time": 5.56076717376709,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/487",
+    "method": "sc",
+    "gold": "\\frac{23",
+    "pred": "4.0",
+    "correct": false,
+    "time": 5.1590800285339355,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/488",
+    "method": "sc",
+    "gold": "3",
+    "pred": "1.0",
+    "correct": false,
+    "time": 5.291218280792236,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/489",
+    "method": "sc",
+    "gold": "1023",
+    "pred": "963.0",
+    "correct": false,
+    "time": 4.786028623580933,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/490",
+    "method": "sc",
+    "gold": "12",
+    "pred": "12.0",
+    "correct": true,
+    "time": 2.4352996349334717,
+    "samples": 5,
+    "pass_count": 5
+  },
+  {
+    "task_id": "MATH/491",
+    "method": "sc",
+    "gold": "x=9",
+    "pred": "9.0",
+    "correct": false,
+    "time": 4.926329851150513,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/492",
+    "method": "sc",
+    "gold": "2",
+    "pred": "0.0",
+    "correct": false,
+    "time": 5.6277549266815186,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/493",
+    "method": "sc",
+    "gold": "\\frac{1",
+    "pred": "\\frac{1",
+    "correct": true,
+    "time": 3.417660713195801,
+    "samples": 5,
+    "pass_count": 3
+  },
+  {
+    "task_id": "MATH/494",
+    "method": "sc",
+    "gold": "2",
+    "pred": "2.0",
+    "correct": true,
+    "time": 5.739203214645386,
+    "samples": 5,
+    "pass_count": 1
+  },
+  {
+    "task_id": "MATH/495",
+    "method": "sc",
+    "gold": "\\frac{7",
+    "pred": "\\infty",
+    "correct": false,
+    "time": 5.505340814590454,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/496",
+    "method": "sc",
+    "gold": "1",
+    "pred": "1.0",
+    "correct": true,
+    "time": 4.13841700553894,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/497",
+    "method": "sc",
+    "gold": "27",
+    "pred": "27.0",
+    "correct": true,
+    "time": 4.006982088088989,
+    "samples": 5,
+    "pass_count": 2
+  },
+  {
+    "task_id": "MATH/498",
+    "method": "sc",
+    "gold": "20",
+    "pred": "60.0",
+    "correct": false,
+    "time": 3.518954038619995,
+    "samples": 5,
+    "pass_count": 0
+  },
+  {
+    "task_id": "MATH/499",
+    "method": "sc",
+    "gold": "7",
+    "pred": "0.301",
+    "correct": false,
+    "time": 5.0619847774505615,
+    "samples": 5,
+    "pass_count": 1
+  }
+]

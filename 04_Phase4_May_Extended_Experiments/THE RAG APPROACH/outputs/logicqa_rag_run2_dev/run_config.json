@@ -1,0 +1,16 @@
+{
+  "paired_jsonl": "/home/dibyanayan/tanzeel/THE FINAL CALL/llama 3.1 8b/data/cot_astar_runs/logicqa_paired_all.jsonl",
+  "output_dir": "THE RAG APPROACH/outputs/logicqa_rag_run2_dev",
+  "kb_split": "train",
+  "eval_split": "dev",
+  "top_k": 3,
+  "retriever_requested": "auto",
+  "retriever_actual": "sbert",
+  "retriever_fallback_reason": "",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "max_new_tokens": 140,
+  "max_eval": 0,
+  "max_steps_per_trace": 8,
+  "max_step_chars": 220
+}

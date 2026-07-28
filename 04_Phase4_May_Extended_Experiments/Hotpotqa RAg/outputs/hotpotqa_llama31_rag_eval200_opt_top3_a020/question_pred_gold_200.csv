@@ -1,0 +1,201 @@
+index,example_id,question,prediction,gold,is_correct,f1
+1,hotpotqa_5baf0f126a29,"""A Summer in the Cage"" and ""American Hardcore"" are both what kind of film?",Documentary films.,documentary,False,0.6666666666666666
+2,hotpotqa_65cdde3cc860,"""Ew!"" is a song by a television host born where?",Philadelphia.,"Bay Ridge, Brooklyn",False,0.0
+3,hotpotqa_c3934d8a8e00,"""Kapitän zur See"" Ernst Lindemann was the commander of which one of two battleships built for Nazi Germany's ""Kriegsmarine""?",Bismarck.,Bismarck,True,1.0
+4,hotpotqa_4b6ab4412f5e,1956 Night Series Cup games were played at what inner suburb of Melbourne that is 3km south of Melbourne's central business district?,South Yarra.,Albert Park,False,0.0
+5,hotpotqa_d8a3a4d50414,2014 S/S is the debut album of a South Korean boy group that was formed by who?,Big Hit Entertainment.,YG Entertainment,False,0.4
+6,hotpotqa_d46bc1dcb563,"A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",1975,1962,False,0.0
+7,hotpotqa_b3bec93ae2da,"A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",North Sea coast.,Yellowcraig,False,0.0
+8,hotpotqa_8e0d28b44e20,A puzzle-platform video game developed by the Valve Corporation is part of what 2012 action-adventure game?,Portal 2.,Gateways,False,0.0
+9,hotpotqa_1200541af44b,A scam involving a male calling small town fast-food restaurants and pretending to be a police officer to have them strip search employees was turned into a movie of what name?,Police Academy.,Compliance,False,0.0
+10,hotpotqa_1650360d4ef7,"According to the 2001 census, what was the population of the city in which Kirton End is located?","3,384,569","35,124",False,0.0
+11,hotpotqa_1d3b6c675a94,"After he was contracted by the team that is headquartered in Affalterbach, Baden-Württemberg, Germany, Dario Franchitti competed in what series?",DTM series.,DTM,False,0.6666666666666666
+12,hotpotqa_44c7f8d17a37,Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?,October 1917.,October 1922,False,0.5
+13,hotpotqa_84a76d9032ab,Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?,Walter Mondale,Nelson Rockefeller,False,0.0
+14,hotpotqa_95c6f285a918,Alice David is the voice of Lara Croft in a video game developed by which company ?,Eidos Interactive.,Crystal Dynamics,False,0.0
+15,hotpotqa_0c3cde92b4e9,Alvaro Mexia had a diplomatic mission with which tribe of indigenous people?,Kongo tribe.,Apalachees,False,0.0
+16,hotpotqa_56f2f4714878,Ambrose Mendy has managed and/or advised a British professional boxer that as of July 2017 is ranked the world's seventh best super middleweight by who?,International Boxing Hall of Fame.,"""The Ring"" magazine",False,0.0
+17,hotpotqa_7d65df2a285d,American Blues included the drummer from which American rock band?,The Doors.,ZZ Top,False,0.0
+18,hotpotqa_66a518a68d6c,Andrew Jaspan was the co-founder of what not-for-profit media outlet?,The Conversation.,The Conversation,True,1.0
+19,hotpotqa_d95aaa54a6d9,Anthony Avent played basketball fo a High School that is located in a city approcimately 8 mi west of where?,"Raleigh, North Carolina.",lower Manhattan,False,0.0
+20,hotpotqa_11530be5c435,Are Agee and To Shoot an Elephant both documentaries about war?,yes,no,False,0.0
+21,hotpotqa_753631d285c6,Are Bamboo Mañalac and Danny Jones both musicians?,yes,yes,True,1.0
+22,hotpotqa_164dfbda9a04,Are Broughtonia and Laeliocattleya both orchids?,yes,yes,True,1.0
+23,hotpotqa_eace2f234378,Are Buried Country and South of the Border both films turned into stage performances?,yes,no,False,0.0
+24,hotpotqa_05eb02ac2f2c,Are Chrysalis and Look both women's magazines?,yes,yes,True,1.0
+25,hotpotqa_6080d7041f38,Are Daryl Hall and Gerry Marsden both musicians?,yes,yes,True,1.0
+26,hotpotqa_67b399d7a01d,Are Ferocactus and Silene both types of plant?,yes,yes,True,1.0
+27,hotpotqa_d22f6bc48db3,Are Freakonomics and In the Realm of the Hackers both American documentaries?,yes,no,False,0.0
+28,hotpotqa_279f01fc15de,Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?,yes,yes,True,1.0
+29,hotpotqa_0e6539d09bba,Are Hot Rod and The Memory of Our People both magazines?,no,yes,False,0.0
+30,hotpotqa_f97d1b215f08,Are Local H and For Against both from the United States?,yes,yes,True,1.0
+31,hotpotqa_47ff84f7394e,Are Phlebodium and Pieris both species of ferns?,no,no,True,1.0
+32,hotpotqa_aa06ca4107f1,Are Random House Tower and 888 7th Avenue both used for real estate?,yes,no,False,0.0
+33,hotpotqa_9274d08703b4,Are Skeptical Inquirer and The Progressive Populist both tabloid-style magazines?,no,no,True,1.0
+34,hotpotqa_19bd6448f945,Are Staten Island Catapult and This Is Elvis both documentaries?,no,yes,False,0.0
+35,hotpotqa_6d955d577ef4,Are Yingkou and Fuding the same level of city?,no,no,True,1.0
+36,hotpotqa_449e44ba23a8,Are both Cypress and Ajuga genera?,no,no,True,1.0
+37,hotpotqa_c790d37091a3,Are both Dafeng District and Dazhou located in the same province?,no,no,True,1.0
+38,hotpotqa_a7ee5cbd3a04,"Are both Dictyosperma, and Huernia described as a genus?",yes,yes,True,1.0
+39,hotpotqa_401941e2d5b5,Are both Duke Energy and Affiliated Managers Group based in Massachusetts?,no,no,True,1.0
+40,hotpotqa_bb2862438f92,Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?,no,no,True,1.0
+41,hotpotqa_018fb62b75cb,Are both Rutgers University and Carnegie Mellon University located in America?,yes,yes,True,1.0
+42,hotpotqa_6444d426f81f,Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?,no,no,True,1.0
+43,hotpotqa_a758b8984556,Armageddon in Retrospect was written by the author who was best known for what 1969 satire novel?,Slaughterhouse-Five.,Slaughterhouse-Five,True,1.0
+44,hotpotqa_b3d7fbf9a7a6,"Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",iPod.,keyboard function keys,False,0.0
+45,hotpotqa_fcb9f9cca253,"At the 71st Golden Globe Awards for television in 2013, what achievement did Breaking Bad, police sitcom Brooklyn Nine-Nine and American Hustle attain?",Nominations.,multiple awards,False,0.0
+46,hotpotqa_489e475f4050,"At what venue was the January 2, 2012 game featured the University of Louisville team?",KFC Yum! Center.,Mercedes-Benz Superdome,False,0.0
+47,hotpotqa_d5f56bfcbdcf,Bartlett's Bridge was built by the engineer who worked for the county seat of which Massachusetts county?,Suffolk County.,Worcester County,False,0.5
+48,hotpotqa_aebcdd9f4526,"Based on a True Story... is an album by which country music star, with the single My Eyes?",Maren Morris.,Blake Shelton,False,0.0
+49,hotpotqa_f00b61716163,Blinding Edge Pictures produced which 2000 film starring Bruce Willis?,Happy Death Day.,Unbreakable,False,0.0
+50,hotpotqa_70df4bfca16f,Bordan Tkachuk was the CEO of a company that provides what sort of products?,Oil and gas equipment.,IT products and services,False,0.25
+51,hotpotqa_8286e9234d08,"Born on 6 March 1937, this man was also a citizen of the United Kingdom.",Robert Erskine Childers.,Alistair Grant,False,0.0
+52,hotpotqa_45fdc53165b3,Both Bishop Carroll Catholic High School and Kapaun Mt. Carmel Catholic High School are located in which city in Kansas?,Wichita.,Wichita,True,1.0
+53,hotpotqa_ed669e9675b6,Both Sorbaria and Goldenrod are a genus of more than 50 flowering plants?,yes,no,False,0.0
+54,hotpotqa_2c272fe306d4,Both Truth in Science and Discovery embrace what campaign?,Connections.,"""Teach the Controversy"" campaign",False,0.0
+55,hotpotqa_1a71ac88f257,Brown State Fishing Lake is in a country that has a population of how many inhabitants ?,I couldn't find the information about Brown State Fishing Lake.,"9,984",False,0.0
+56,hotpotqa_d86f92403947,Can Stenocereus and Pachypodium both include tree like plants?,no,yes,False,0.0
+57,hotpotqa_19ce4446e1b6,Candy Coburn has shared the stage with an American country music group with who playing guitar?,ZZ Top.,Charles Kelley,False,0.0
+58,hotpotqa_3692522f03c5,"Chimaja Appawas the younger brother of a general of the Maratha Empire in India, who served as what to the fifth Maratha Chhatrapati Shahu from 1720 until his death?",Peshwa.,"""Peshwa"" (Prime Minister)",False,0.5
+59,hotpotqa_fe9beee295a2,Chris Williams last played for which football club from the National League North?,Farsley Celtic,Salford City Football Club,False,0.0
+60,hotpotqa_5dc5f2a416e4,"Considered the strongest recorded tropical cyclone, which cyclone had a film made about it in 2007?",Cyclone Tracy.,1999 Odisha cyclone,False,0.4
+61,hotpotqa_125ec0ceff4b,Curt Menefee is the host of the Fox network's NFL show with co-host Michael Anthony Strahan who spent his entire 15-year career with what team?,Green Bay Packers.,New York Giants,False,0.0
+62,hotpotqa_6543b4b408b6,D1NZ is a series based on what oversteering technique?,Oversteer.,Drifting,False,0.0
+63,hotpotqa_300d55a51552,David Huntsinger has worked with this gospel singer born in the month of July?,Kirk Franklin.,Larnelle Harris,False,0.0
+64,hotpotqa_015d5e650947,Dead but Rising was a song by the Danish band fomed in what city in 2001?,Copenhagen.,Copenhagen,True,1.0
+65,hotpotqa_6bb6d41b8f85,Did Franki Valli sing with Hellogoodbye or The Four Seasons?,no,The Four Seasons,False,0.0
+66,hotpotqa_a03b13d5cbc9,Do The Importance of Being Icelandic and The Five Obstructions belong to different film genres ?,yes,no,False,0.0
+67,hotpotqa_6c7593cbac81,Do the drinks Gibson and Zurracapote both contain gin?,no,no,True,1.0
+68,hotpotqa_6c324c933e94,"During Siege of Bharatpur, which Commander-in-Chief of Ireland and Commander-in-Chief of India contributed to the storming of the castle?",Sir David Ochterlony.,Lord Combermere,False,0.0
+69,hotpotqa_c8ea76398e2b,"Ellie Goulding worked with what other writers on her third studio album, Delirium?",Greg Kurstin.,"Max Martin, Savan Kotecha and Ilya Salmanzadeh",False,0.0
+70,hotpotqa_e45da01527c6,Eric Ambler and Carol Shields are both best Known for what profession?,Novelists.,author,False,0.0
+71,hotpotqa_cfab0b54e875,Erica Packer was the second wife of what Australian businessman?,James Packer,James Packer,True,1.0
+72,hotpotqa_122445c1376b,Ernest Foot was the best friend of the fighter pilot who had how many victories?,25,44,False,0.0
+73,hotpotqa_f033c53ca040,"Flyboys stars which actor who was nominated for an Academy Award for ""127 Hours""?",James Franco,James Franco,True,1.0
+74,hotpotqa_b1182f2f7b17,Folie à Deux is a studio album by the American rock band formed in which city?,Chicago.,Wilmette,False,0.0
+75,hotpotqa_602a33c5226a,For One Night Only was hosted by the man most well-known for hosting what show from 1962 until 1999?,The Tonight Show.,The Late Late Show,False,0.4
+76,hotpotqa_3fe316c150e8,"For what ""first"" was Ivory Lee Brown's nephew credited for in Heisman Trophy balloting?",First-team All-American.,first freshman to finish as the runner-up,False,0.0
+77,hotpotqa_c7054abb40aa,For what type of work is the production company for The Year Without a Santa Claus best known?,Animated Christmas movies.,"seasonal television specials, particularly its work in stop motion animation",False,0.0
+78,hotpotqa_8026d07a56cd,Francisco Jose Hernandez was a participant in an invasion that took place in what year?,No information available.,1961,False,0.0
+79,hotpotqa_af86f338771d,"From March 631 to April 631, Farrukhzad Khosrau V was the king of an empire that succeeded which empire?",Sassanid Empire.,the Parthian Empire,False,0.5
+80,hotpotqa_5bcac5914395,Garden Island Naval Chapel is the oldest Chistian chapel of a naval branch of what defence force?,Royal Australian Navy.,Australian Defence Force,False,0.3333333333333333
+81,hotpotqa_af0eb9eceb17,Georges-Henri Bousquet translated the work of a historian who is of what heritage?,French,North African Arab,False,0.0
+82,hotpotqa_085b47727b0e,"Handi-Snacks are a snack food product line sold by what American multinational confectionery, food, and beverage company that is based in Illinois?",Wrigley Company.,"Mondelez International, Inc.",False,0.0
+83,hotpotqa_9261c59c3513,"Haruki Murakami said that writing ""Dance Dance Dance"" had been a healing act after his unexpected fame following the publication of a novel published in which year ?",1988.,1987,False,0.0
+84,hotpotqa_84c87b4d3f82,Hate Them is the ninth album by a band likened to who?,The Cult.,Motörhead,False,0.0
+85,hotpotqa_f624486fb531,"Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",Japan.,"Fujioka, Gunma",False,0.0
+86,hotpotqa_e864fbcd7ec7,"Henry Hall is known for fighting in the Revolutionary War, and for being the first to successfully cultivate this food found in what type of bogs?",Peat bogs.,acidic,False,0.0
+87,hotpotqa_bce3eed4f9bd,How are elephants connected to Gajabrishta?,No information available.,Sanskrit,False,0.0
+88,hotpotqa_246e5568c0e8,"How did Emilie du Chatelet, Voltaire's love, contribute to the basic laws of physics?",Translation and mathematical work.,"commentary on Isaac Newton's book ""Principia""",False,0.0
+89,hotpotqa_885e0e358a98,How large is the shopping mall where KGOT radio station has its studios ?,I do not have information about the size of the shopping mall where KGOT radio station has its studios.,"728,000 ft²",False,0.0
+90,hotpotqa_c58ee9a4d2f5,"How long is the bridge in the Öresund Region that connect Copenhagen, Denmark and Malmo, Sweden?",16 kilometers.,8 km,False,0.0
+91,hotpotqa_f8cdfaf61212,How long is the river for which Frenchmans Creek is a tributary?,New River,2844 km,False,0.0
+92,hotpotqa_2a935840d910,How many Senate seats will be contested during the midterm elections that Nancy Soderberg has filed to run for Congress in?,Two Senate seats.,33,False,0.0
+93,hotpotqa_8b85c68b4d64,How many copies of Roald Dahl's variation on a popular anecdote sold?,150 million copies.,250 million,False,0.4
+94,hotpotqa_711197555c49,How many days did it take the Best New Artist of 2009 to sell 2 million copies of an album in the UK and break a twenty year old record?,1 week.,29,False,0.0
+95,hotpotqa_ed2ae31aef4f,"How many laps did Harry Prowell run during the 10,000 metres race at the 1967 Pan American Games?",7 laps.,25 laps,False,0.5
+96,hotpotqa_d147b7ad95af,How many novels are there in the series of novels of which Shadows in Flight is the tenth novel ?,10 novels.,fifteen,False,0.0
+97,hotpotqa_607a8e32cc46,How many restaurants comprise the quick service restaurant chain that Ron Joyce helped found?,Tim Hortons 650.,"4,613",False,0.0
+98,hotpotqa_258a06c3ff5e,I'd Come for You is a single by the band formed in what Alberta city?,Calgary.,Hanna,False,0.0
+99,hotpotqa_3ad79f31ed87,In 1991 Euromarché was bought by a chain that operated how any hypermarkets at the end of 2016?,Ahold.,"1,462",False,0.0
+100,hotpotqa_69e52a6b445f,"In 2017, what was 3/4th of the organization that also has a Center for Veterinary Medicine as well as part of the U.S. Department of Health and Human Services, spent on?",75 percent of its budget.,Prescription Drug User Fee Act,False,0.0
+101,hotpotqa_be56726b35c2,In between Berghuis v. Thompkins and Mississippi University for Women v. Hogan which one was a case decided 5-4 by the Supreme Court of the United States?,Berghuis v. Thompkins.,Mississippi University for Women,False,0.0
+102,hotpotqa_62f3c2941862,"In between The Bears and I and Oceans which was released on July 31, 1974, by Buena Vista Distribution?",Oceans.,The Bears and I,False,0.0
+103,hotpotqa_33077f3715b9,In what 1997 American mystery crime film did Johnny Galecki start in?,I Know What You Know,Suicide Kings,False,0.0
+104,hotpotqa_4f060b8855fc,"In what century did this Native warrior and chief, whose brother Tenskwatawa led the Tippecanoe order of battle, become the primary leader of a large, multi tribal confederacy?",18th century.,nineteenth,False,0.0
+105,hotpotqa_1c8ab9c63850,In what city can a person find both the Nusretiye Clock Tower and the Eski Imaret Mosque be found?,Istanbul.,"Istanbul, Turkey",False,0.6666666666666666
+106,hotpotqa_c5d6fe5828bc,"In what city did the ""Prince of tenors"" star in a film based on an opera by Giacomo Puccini?",Milan.,Rome,False,0.0
+107,hotpotqa_033e80261508,"In what city was the Italian Baroque composer who composed a set of sonatas, titled Op. 5, born?",Alessandro Scarlatti.,Venice,False,0.0
+108,hotpotqa_c9e8dc6d44a4,In what field does the firm at which Claudio Fernández-Aráoz was a currently a senior adviser offers services?,Executive search and leadership.,"Executive Search, Board Consulting",False,0.5
+109,hotpotqa_2c18ca757ece,"In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held?",January.,March and April,False,0.0
+110,hotpotqa_5d3ac69591e3,In what month was the relief first officer of the flight that crashed on its way to Cairo with a stop in New York Born?,January.,February,False,0.0
+111,hotpotqa_1a4b5854007d,"In what year was the novel that Lourenço Mutarelli based ""Nina"" on based first published?",2005,1866,False,0.0
+112,hotpotqa_2b5c8989a726,In what year was the team that Luke Clark plays either right back or central midfielder for founded?,I couldn't find any information about a person named Luke Clark playing for a team.,1963,False,0.0
+113,hotpotqa_b625f240598c,In which city are the headquarters of the American research and scientific development company where Ravi Sethi worked as computer scientist located?,Palo Alto.,Murray Hill,False,0.0
+114,hotpotqa_4a3f7a91f522,In which city is the ambassador of the Rabat-Salé-Kénitra administrative region to China based?,Rabat.,Beijing,False,0.0
+115,hotpotqa_01dc8b557a64,In which county is the English king Harold Godwinson buried?,Worcestershire.,Essex,False,0.0
+116,hotpotqa_779e6c3594c8,In which role did Caroline Carver played in a 1999 Hallmark Entertainment made-for-TV fantasy movie?,The Woman in White.,Princess Jessica,False,0.0
+117,hotpotqa_3d57442b75cd,"In which year did this division, where Cleveland Browns placed fourth in 2009, adopt its current name?",American Football Conference.,2002,False,0.0
+118,hotpotqa_53d3e24b76a9,In which year was the King who made the 1925 Birthday Honours born?,1865,1865,True,1.0
+119,hotpotqa_f5a4bb133225,Is the Marsilea or the Brabejum the genus of more individual species of plants?,no,Marsilea,False,0.0
+120,hotpotqa_c2f2c2ac4d1d,"Is the Pakistan fast bowler who joined the Kent County Cricket Club in June, 2011 a left-hand or right-hand batsmans?",no,right-hand,False,0.0
+121,hotpotqa_7d9225b73b54,"Jacques Mathou starred in Delicatessen, the 1991 French movie in the style of which celebrated American animator?",Terry Gilliam.,Terry Gilliam,True,1.0
+122,hotpotqa_2a2a8121064d,"Jacques Sernas, actor in Fugitive in Trieste, was of what nationality?",Lithuanian.,Lithuanian-born French,False,0.0
+123,hotpotqa_f51e38f0f674,James Fieser received his B.A. from what liberal arts work college that was founded in 1855?,Knox College.,Berea College,False,0.5
+124,hotpotqa_f9f21ac09ff5,Jamie Harris is best known for his role as The Hook-Handed Man in a movie directed by who ?,Mark Neveldine and Brian Taylor.,Brad Silberling,False,0.0
+125,hotpotqa_9fd1e70e390f,"Jens Risom introduced what type of design, characterized by minimalism and functionality?",Jens Risom's modernist design.,Scandinavian design,False,0.3333333333333333
+126,hotpotqa_34f25c837712,Joe Walker played for which team that ends their regular season with the Civil War rivalry game?,Oregon State Beavers.,Oregon Ducks football,False,0.3333333333333333
+127,hotpotqa_ee0627267780,"John MacGregor, Baron MacGregor of Pulham Market was educated at the University of St Andrews and another university established by what monach?",University of Oxford.,King George IV,False,0.0
+128,hotpotqa_0a69fdd2b003,"Josey Scott and Ian Watkins were both promising musicians. Which of these talented men was incarcerated, impacting his career with a rock band?",Ian Watkins.,Lostprophets disbanded in 2013 after Watkins was charged with sexual offences in late 2012.,False,0.125
+129,hotpotqa_361db8e837e8,Július Satinský was born in a city that has a current population of what?,Bratislava.,"about 450,000",False,0.0
+130,hotpotqa_a13345c03d94,Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?,Andrew Jackson.,Henry J. Kaiser,False,0.0
+131,hotpotqa_9d224815c62b,Kam Heskin plays Paige Morgan in a 2004 film directed by who?,Christopher B. Landon,Martha Coolidge,False,0.0
+132,hotpotqa_bee210af78e6,Katherine Waterston and Chrisann Brennan has what in common?,They are both artists.,Steve Jobs,False,0.0
+133,hotpotqa_d9014b2561ea,Las Vegas Festival Grounds is north of the hotel that is owned by which company?,Caesars Entertainment,MGM Resorts International,False,0.0
+134,hotpotqa_affaf564c254,Mamie Gummer played the role of Nancy Crozier on the TV series airing on what network?,The CW.,CBS,False,0.0
+135,hotpotqa_f170a4da0f27,"Marcus Wayne Garland spent nine seasons with an American professional baseball team that is based in Baltimore, Maryland, and was one of the AMerican League's original eight charter franchises when the league was established in what year?",1901.,1901,True,1.0
+136,hotpotqa_2e1906167279,"Marion Greene was a health policy analyst for St. Judt Medical company, which had how many principal operations worldwide?",I couldn't find any information about Marion Greene and St. Judt Medical company.,20,False,0.0
+137,hotpotqa_e833e3b48520,"Martin Patterson ""Pat"" Hingle was a close friend of an actor who achieved success in what Western TV series?",Gunsmoke.,Rawhide,False,0.0
+138,hotpotqa_a0c98c332f83,Maxeda has been owned since 2004 by which American multinational equity firm?,Bain Capital,KKR & Co,False,0.0
+139,hotpotqa_d1173bf35096,"Meaning ""reddish water"" in Hawaiian, which location was Butch Van Artsdalen known for surfing 25-foot waves at?",Pipeline.,Waimea Bay,False,0.0
+140,hotpotqa_2ea8fd10e732,Mick Carter is the landlord of a public house located at what address?,The Queen Vic.,"46 Albert Square, Walford, London E20",False,0.0
+141,hotpotqa_eae20bc725fc,Mummulgum is a stop on the Bruxner Highway before reaching the town on the banks of which river?,Clarence River.,Richmond,False,0.0
+142,hotpotqa_838bc716ee8a,One Raffles Place is one of the tallest skyscrapers in the city of Singapore and tallest in the wolrd outside North America until it was succeeded by a Building in city?,Taipei 101.,Hong Kong,False,0.0
+143,hotpotqa_1e6909d369b4,One of the coaches of Southern Methodist University also played what role at the Arizona State Sun Devils?,Defensive coordinator.,defensive coordinator,True,1.0
+144,hotpotqa_6135ca366c4e,Onika Tanya Maraj is a judge on a television show hosted by whom?,Nicki Minaj,Ryan Seacrest,False,0.0
+145,hotpotqa_75d17d51a033,"Other than racing, what sport does the 1998 champion of the Toyota GRand Prix practice?",Alpine Skiing.,paracyclist,False,0.0
+146,hotpotqa_221e2b32eb29,"Over how many centuries were the ""dwelling place of the dead"" built?",over 13 centuries.,three centuries,False,0.4
+147,hotpotqa_e55c1145f61b,Patrick Kennedy is known for his collections of Irish folktales from a province situated in which part of Ireland ?,Munster province.,the east of Ireland,False,0.0
+148,hotpotqa_8a6ff1431076,Ralph Hefferline was a psychology professor at a university that is located in what city?,Berea College,New York City,False,0.0
+149,hotpotqa_cb4e1d862aa7,Randall Cunningham II was a multi-sport athlete at the high school located in what Nevada city?,Las Vegas.,Summerlin,False,0.0
+150,hotpotqa_729aed5a987c,"Rejuvelac is kind of grain water invented and promoted by a ""holistic health"" practitioner born in which year ?",1920s.,1909,False,0.0
+151,hotpotqa_9fcf7cef7c08,Robert Smith founded the multinational company headquartered in what city?,Oakland.,"Golden Valley, Minnesota,",False,0.0
+152,hotpotqa_c95ae2efc8d2,Robert Suettinger was the national intelligence officer under which former Governor of Arkansas?,Bill Clinton,William Jefferson Clinton,False,0.4
+153,hotpotqa_c55828674e8f,Rock Springs is a collection of short stories by an author born in what year?,1947,1944,False,0.0
+154,hotpotqa_53e538e4c389,Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?,John F. Kennedy.,1969 until 1974,False,0.0
+155,hotpotqa_50844267cab2,Ronald Reagan and George H. W. Bush both held which position in office?,President of the United States.,President of the United States,True,1.0
+156,hotpotqa_b360dd61672c,Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?,Sex-based discrimination.,Conscription,False,0.0
+157,hotpotqa_6cab1ce4f312,Salisbury Woodland Gardens links a zoo with a park designed and built under the watchful eye of who?,Beatrix Potter.,Thomas Mawson,False,0.0
+158,hotpotqa_caa9317dfa6f,Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?,60 countries.,more than 70 countries,False,0.3333333333333333
+159,hotpotqa_e1b079631669,Scott Sandelin grew up in a town in what Minnesota county?,St. Louis County.,Saint Louis County,False,0.6666666666666666
+160,hotpotqa_3860202293c2,Season 2 of Rick and Morty began with the episode directed by whom?,Justin Roiland.,Wes Archer,False,0.0
+161,hotpotqa_b809b81e943f,Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?,1983.,2000,False,0.0
+162,hotpotqa_062826e5f580,"Since 2 June 2017, The Leader of Fine Gael had been held by which Irish Fine Gael politician who has served as Taoiseach and Minister for Defence?",Leo Varadkar.,Leo Varadkar,True,1.0
+163,hotpotqa_817586f9f2d0,Snowdrop is a proprietary game engine first revealed with an online-only action role-playing video game developed by who?,Remedy Entertainment.,Massive Entertainment,False,0.5
+164,hotpotqa_4a89e3b39454,"Spaceware Sky Division II is manufactured by this subsidiary, which is one of twelve subdivisions of Inner Mongolia, China?",Inner Mongolia.,Ordos City,False,0.0
+165,hotpotqa_d90aeeb7ee6a,Suicide's 1977 released album features a song based on what brand's comic character?,Howard the Duck.,Marvel,False,0.0
+166,hotpotqa_8ffc801b394a,SuperMansion starred the actress who had a recurring role as whom on Workaholics?,Jessica Walter,Jillian Belk,False,0.0
+167,hotpotqa_bb9f356c967d,Tefik Selim Mborja was a part of a party that held power in Albania until what year?,1997.,1943,False,0.0
+168,hotpotqa_59e65279b65e,"The 1974 Texas Tech Raiders football team represented what public research university in Lubbock, Texas?",Texas Tech University.,Texas Tech University,True,1.0
+169,hotpotqa_d19f698f512c,"The 1984 film ""Marlene"" is a documentary about an actress born in what year?",1901.,1901,True,1.0
+170,hotpotqa_d0b42c03da70,The 1st Virginia Regiment saw action at a battle that led to the departure of what Royal Governor?,Berkeley.,Royal Governor Lord Dunmore,False,0.0
+171,hotpotqa_e5ac398ec578,The 2000 British film Snatch was later adapted into a television series for what streaming service?,Sky Atlantic.,Crackle,False,0.0
+172,hotpotqa_0a6e40868fd7,"The 2011–12 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",1838,1838,True,1.0
+173,hotpotqa_55d4c98aef6f,The 2017–18 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons?,EFL Cup.,Carabao Cup,False,0.5
+174,hotpotqa_a281cb127698,The 37th Disney animated feature film Tarzan features You'll be in my heart by which artist?,Phil Collins.,Phil Collins,True,1.0
+175,hotpotqa_d569ee13bdaa,The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born may 6 1945. What was the Rock singers stage name ?,Bob Seger,Bob Seger,True,1.0
+176,hotpotqa_4c4019ed4e76,The Argentine PGA Championship record holder has won how many tournaments worldwide?,No information available.,230,False,0.0
+177,hotpotqa_507064c4f618,"The Bart the Fink episode of The Simpsons aired in February of 1996, and involves the host of which kiddie show?",Krusty the Clown.,The Itchy & Scratchy Show,False,0.0
+178,hotpotqa_64271d6c2aee,The Church of the Guanche People was founded in the city that is on the most populated island of what larger area?,Tenerife,Macaronesia,False,0.0
+179,hotpotqa_b314a6243675,The Column of Saint Zanobi is a monumental marble column located just north of religious building with the status of what?,Minor Basilica.,a minor basilica,True,1.0
+180,hotpotqa_f53b23722d2c,The Detroit mayoral elections of 2009 took place to fill the vacancy created by a politician who was sentenced to what?,prison time.,four months in jail,False,0.0
+181,hotpotqa_2436a77e5c6e,"The English actor Kris Marshall played which character in the highly rated comedy-drama television series ""Death in Paradise""?",Humphrey Goodman.,DI Humphrey Goodman,False,0.8
+182,hotpotqa_3197103b1667,"The Indian actor and philanthropist, who starred in ""Mera Damad,"" entered the film industry in what year?",1980.,1977,False,0.0
+183,hotpotqa_76aff9d72da5,The Ingerophrynus gollum is named after a character in a book that sold how many copies?,50 million.,150 million copies,False,0.4
+184,hotpotqa_f351c088c4ca,The Jeep Cherokee was originally sold as a variant of a Jeep model produced during what years?,Jeep Wagoneer (1974-1983).,1963 to 1991,False,0.0
+185,hotpotqa_2e9f1ed6b40c,The Kansas City Wizards have had three home venues in Kansas City in their time. Which was their first?,Arrowhead Stadium.,Arrowhead Stadium,True,1.0
+186,hotpotqa_f689aec338af,"The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",World War II.,World War II,True,1.0
+187,hotpotqa_b675a8044b5c,The Memphis Hustle are based in a suburb of a city with a population of what in 2010?,"652,310.","48,982",False,0.0
+188,hotpotqa_f6588e4ae94e,"The Polar Bears featuring the voice of Armie Hammer, is also the same voice actor for which character in Cars 3?",Jackson Storm.,Jackson Storm,True,1.0
+189,hotpotqa_565e5ce2b3d9,The Tennessee Volunteers football team plays as a member for a conference in what city?,Knoxville.,"Birmingham, Alabama",False,0.0
+190,hotpotqa_0ce156d00cc6,The VMAQT-1 logo is a female spirit in Irish mythology who heralds the death of what?,Cattle.,a family member,False,0.0
+191,hotpotqa_430b11c0bdc6,The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?,America East Conference,the North Atlantic Conference,False,0.3333333333333333
+192,hotpotqa_3eac7f41528a,The Waterloo Vase has been used as a garden ornament at whose residence and administrative headquarters?,Blenheim Palace.,reigning monarch of the United Kingdom,False,0.0
+193,hotpotqa_052b7b6f7a2f,The actor who appeared on Charlotte's Shorts and Weeds was born in what year?,1977,1966,False,0.0
+194,hotpotqa_e3751fccce53,"The actress that played the leading role in the independent film ""A Perfect Ending"" also stars with John Bregar in a 2008 film directed by who?",Patrick Gilles.,Douglas Jackson,False,0.0
+195,hotpotqa_f6b7f12fd989,The arena where the Lewiston Maineiacs played their home games can seat how many people?,"2,500.","3,677 seated",False,0.0
+196,hotpotqa_227e8ba96992,The author of Sexual Politics attended which British University?,Barnard College,Oxford,False,0.0
+197,hotpotqa_a07991fc4f16,The author of The Thing of It Is... is what Nationality?,American.,American,True,1.0
+198,hotpotqa_9fd651d586df,The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?,Independence from the Ottoman Empire.,sovereignty,False,0.0
+199,hotpotqa_f2612dadab3b,The city that contains the Yunnan Provincial Museum is also known by what nickname?,Flower City.,Spring city,False,0.5
+200,hotpotqa_131ce228213c,"The director of the romantic comedy ""Big Stone Gap"" is based in what New York city?",New York City.,"Greenwich Village, New York City",False,0.7499999999999999

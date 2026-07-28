@@ -1,0 +1,1216 @@
+Beyond Linear Reasoning: Combining Chain-of-Thought with A* Search
+for Robust Multi-Strategy Inference
+Anonymous ACL submission
+Abstract001
+Chain-of-thought (CoT) prompting elicits use-002
+ful reasoning from large language models, but003
+its strictly linear generation can be brittle on004
+problems that require backtracking, multi-hop005
+synthesis, or comparison across competing hy-006
+potheses. We study a complementary alterna-007
+tive: a budgeted A*-style search over reason-008
+ing traces, where an LLM proposes succes-009
+sor steps and a conservative heuristic priori-010
+tizes which partial traces to expand. Across011
+StrategyQA, LogicQA, and HotpotQA, we find012
+strong instance-level complementarity between013
+CoT and A*: the oracle that selects the cor-014
+rect strategy per example substantially outper-015
+forms either method alone. We then evaluate016
+routing strategies based on semantic entropy, a017
+feature-based random forest, and LLM-based018
+pairwise adjudication. Routing improves accu-019
+racy, but still recovers only part of the oracle020
+gain, showing that the main challenge is not021
+search itself but deciding when to use it. Qual-022
+itative and human analysis further show that023
+A* helps most on non-linear evidence aggre-024
+gation, hypothesis elimination, and multi-hop025
+chaining, whereas CoT remains stronger on026
+direct factual recall and globally coherent rea-027
+soning. Overall, our results position A* not028
+as a replacement for CoT, but as a complemen-029
+tary reasoning strategy whose value depends on030
+the structure of the problem. Code is available031
+at: https://anonymous.4open.science/r/032
+astar-reasoning-EC39033
+1 Introduction034
+Chain-of-thought (CoT) prompting (Wei et al.,035
+2022) has become the standard way to elicit step-036
+by-step reasoning from large language models037
+(LLMs). By generating intermediate reasoning038
+steps before a final answer, CoT often improves per-039
+formance on arithmetic, commonsense, and sym-040
+bolic tasks. However, its core generation process041
+is still strictlylinear: the model commits to a sin-042
+gle trace s1 →s 2 → · · · →s T , and later steps043
+are conditioned on all earlier commitments. This 044
+design creates three well-known pressures. First, 045
+an early mistake can propagate through the entire 046
+trace because the model has no built-in backtrack- 047
+ing mechanism. Second, questions that require 048
+integrating several independent pieces of evidence 049
+can be awkward to solve with a single left-to-right 050
+narrative. Third, CoT has no explicit search objec- 051
+tive that trades off trace length, uncertainty, and 052
+alternative hypotheses.053
+These limitations motivate search-based reason- 054
+ing. If the model can explore multiple partial traces, 055
+then it can reconsider early commitments, compare 056
+candidate branches, and prioritize promising rea- 057
+soning states. In this paper, we study a budgeted 058
+A*-style search procedure over natural-language 059
+reasoning traces. The language model generates 060
+successor steps, a step cost penalizes both trace 061
+length and low-confidence steps, and a conserva- 062
+tive heuristic prioritizes which partial trace to ex- 063
+pand next. We pair this search procedure with 064
+standard CoT and ask a deliberately narrower ques- 065
+tion than “does search replace CoT?” Our focus 066
+is whether search and linear reasoning arecomple- 067
+mentary, and whether simple routing mechanisms 068
+can exploit that complementarity.069
+Motivating example.On StrategyQA, linear 070
+CoT can pursue a locally plausible but ultimately 071
+irrelevant chain, while A* can surface the deci- 072
+sive evidence earlier by exploring alternative par- 073
+tial traces. For example, on the question “Is shrimp 074
+scampi definitely free of plastic?”, CoT misses the 075
+key fact of microplastic accumulation in seafood, 076
+whereas A* reaches that premise early and answers 077
+correctly. This illustrates the central hypothesis of078
+the paper: CoT and search are complementary, and 079
+the real challenge is deciding when to use which.080
+This pattern persists at scale. Across all three 081
+benchmarks, CoT and A* solve different subsets 082
+of examples. On StrategyQA, A* outperforms 083
+CoT (74.80% vs. 64.52%), yet the oracle reaches 084
+1
+
+84.59%. On LogicQA, CoT is slightly stronger085
+(45.78% vs. 44.85%), but the oracle still reaches086
+59.29%. On HotpotQA, A* again leads (80.10%087
+vs. 76.80%), while the oracle reaches 94.20%. To-088
+gether, these gaps show that the main opportunity089
+isstrategy selection: different questions favor dif-090
+ferent reasoning algorithms.091
+Contributions.We make three contributions. (1)092
+We formalize abudgetedA*-style reasoning proce-093
+dure for LLMs, define a conservative heuristic, and094
+state explicit assumptions under which the heuristic095
+is admissible for the underlying path-cost objective.096
+(2) We provide an empirical analysis across Strat-097
+egyQA, LogicQA, and HotpotQA showing sub-098
+stantial complementarity between linear CoT and099
+search-based reasoning. (3) We evaluate three rout-100
+ing strategies—semantic entropy, a feature-based101
+random forest, and an LLM-as-critic—and pair the102
+quantitative results with a diagnostic qualitative103
+taxonomy of when each reasoning strategy helps104
+or fails.105
+2 Methodology106
+We first formalize CoT and search-based reasoning107
+under a common notation and then describe the108
+routing mechanisms that choose between them.109
+2.1 Notation and Problem Setup110
+Let Q= (q, C,O) denote a reasoning problem,111
+where q is the question, C is an optional context112
+passage, and O={o 1, . . . , oK} is the candidate113
+answer set for multiple-choice tasks or the output114
+space for free-form tasks. Areasoning trace τ=115
+(s1, s2, . . . , sT ) is an ordered sequence of natural-116
+language reasoning steps, and a prediction function117
+ϕ(τ)∈ O extracts the final answer from the trace.118
+Let Mθ denote a language model with parameters119
+θ.120
+2.2 Chain-of-Thought (CoT) Reasoning121
+In CoT prompting, the model generates a single122
+reasoning trace autoregressively:123
+τ CoT = (s 1, s2, . . . , sT )
+st ∼ M θ(· |q, C,O, s 1:t−1). (1)124
+Generation terminates when the model emits a ter-125
+minal answer pattern, and the final prediction is126
+ˆyCoT =ϕ(τ CoT).127
+Why linear generation can fail.Equation (1)128
+defines exactly one path through the space of possi- 129
+ble reasoning traces. Let T denote the set of valid 130
+traces for a problem. CoT explores one element 131
+τ CoT ∈ T with no mechanism to evaluate inter- 132
+mediate branches before committing, to backtrack 133
+when an early step is misleading, or to combine 134
+evidence from multiple partial trajectories. Alter- 135
+natives, such as breadth-first search and depth-first 136
+search remove some of these constraints, but they 137
+are either computationally impractical or lack a 138
+principled cost-based priority rule.139
+2.3 Budgeted A* Search over Reasoning140
+Traces141
+We therefore search over the space of reasoning 142
+traces using an A*-style priority rule, but with a fi- 143
+nite node budget and a multi-goal voting procedure 144
+for tractability.145
+State space.The search space is a tree G=146
+(S,E) where each node n∈ S represents a par- 147
+tial reasoning state:148
+n= (τ n, dn), τ n = (s 1, . . . , sdn).(2)149
+Here, τn is the partial trace stored at node n and 150
+dn =|τ n| is its depth. The root node n0 has τn0 =151
+∅ and dn0 = 0 . An edge (n, n′)∈ E exists when 152
+τn′ =τ n ⊕sfor some reasoning steps.153
+Successor generation.Given a node n with state 154
+(τn, dn), we ask the language model to propose Nc 155
+candidate next steps:156
+{(s(j), c(j))}Nc
+j=1 =GS(M θ, q, C,O, τ n, Nc).
+(3)157
+GS refers to the step-generation function. Each 158
+candidate consists of step text s(j) and a self- 159
+reported confidence c(j) ∈[0.5,0.99] . The can- 160
+didate induces a successor node n′
+j with trace 161
+τn′
+j
+=τ n ⊕s (j) and depthd n′
+j
+=d n + 1.162
+Goal condition.A node is a goal node if its last 163
+step contains a terminal answer pattern:164
+ISGOAL(n) =1
+h
+∃p∈ P:p⊂s dn
+i
+,(4)165
+where P contains answer templates such as “The 166
+answer is [A/B/C/D]” for multiple-choice tasks.167
+Path cost.The cumulative cost of a node trades 168
+off reasoning length and uncertainty:169
+g(n) =
+dnX
+t=1
+
+1+(1−c t)
+
+=d n +
+dnX
+t=1
+(1−c t).(5)170
+2
+
+Motivating ExampleQuery: “Is shrimp scampi definitely free of plastic?”Gold: FALSE
+✗Chain-of-ThoughtLinear generation
+Commits early to a chronological preparation schema
+and overlooks the central biological premise.
+Step 1. Shrimp harvesting:Shrimp are caught or
+farmed; while microplastics may exist in seawa-
+ter, there is no conclusive evidence that shrimp
+contain significant plastic.
+Step 2. Processing:Cleaning and preparation do not
+necessarily involve plastic contamination.
+Step 3. Cooking:Cooking itself does not introduce plas-
+tic.
+Step 4. Ingredients:No direct evidence suggests serious
+contamination from ingredients.
+Step 5. Oversight:Regulatory standards make contami-
+nation unlikely.
+Answer.YES(Incorrect)
+✓A* SearchHeuristic-guided
+Prioritizes the most relevant premise and avoids a dis-
+tracting step-by-step preparation narrative.
+Step 1. Seafood, including shrimp, often contains mi-
+croplastics in tissues and digestive systems.
+Step 2. Standard shrimp scampi preparation does not re-
+move microplastics already present in the shrimp.
+Answer.FALSE(Correct)
+Figure 1: Comparison of reasoning trajectories on a StrategyQA example. CoT follows a plausible but misdirected
+chronological schema, while A* prioritizes the key biological fact—microplastic presence in shrimp—and reaches
+the correct conclusion with fewer, more relevant steps.
+Each step contributes a base cost of 1, and lower-171
+confidence steps incur an additional penalty. This172
+makes shorter, higher-confidence traces cheaper173
+than longer or more uncertain ones.174
+2.4 Heuristic Design and Scope of the175
+Guarantee176
+The heuristic estimates the remaining cost from a177
+partial trace to a valid goal. We combine a depth-178
+based term with a coverage term:179
+h(n) =h depth(n) +h coverage(n),(6)180
+where181
+hdepth(n) =ω d ·max(0, H min −d n),(7)182
+and183
+hcoverage(n) =ω c ·(1−E(n)).(8)184
+Here Hmin is a task-level lower bound on the185
+number of reasoning hops required from the root,186
+E(n)∈[0,1] is the fraction of target entities al-187
+ready covered by the trace at node n, and ωd, ωc >188
+0are heuristic weights. Let189
+cmin = 1 + (1−c max_conf )(9)190
+denote the minimum possible cost of a single tran-191
+sition under Eq. (5).192
+The point of this design is not to claim that the193
+deployed algorithm is globally optimal end-to-end.194
+Our actual inference procedure is budgeted and 195
+uses multi-goal voting, so it is a practical approx- 196
+imation. The admissibility result below applies 197
+to theunderlying path-cost objective and node or- 198
+dering, not to the full budgeted voting procedure. 199
+The confidence and coverage terms should be in- 200
+terpreted as practical heuristics for search control 201
+rather than calibrated uncertainty estimates or exact 202
+measures of evidential completeness.203
+Assumption 1(Minimum-hop lower bound).Any 204
+valid goal trace requires at least Hmin reasoning 205
+steps from the root. Equivalently, for any non-goal 206
+node with depth dn < H min, at least Hmin −d n 207
+further transitions are required before reaching a 208
+goal.209
+Assumption 2(Non-goal continuation).Any non- 210
+goal node with depth dn ≥H min still requires at 211
+least one additional transition before reaching a 212
+goal.213
+Theorem 1(Conservative admissibility).Under 214
+Assumptions 1 and 2, if ωd +ω c ≤c min, then the 215
+heuristic in Eq. (6) is admissible for all non-goal 216
+nodes; that is, h(n)≤h ∗(n), where h∗(n) is the 217
+true minimum remaining path cost.218
+Proof.We consider three cases.219
+Case 1: root node ( dn = 0 ).By Assumption 1, 220
+any valid goal trace requires at least Hmin future 221
+transitions. Since each future transition costs at 222
+3
+
+leastc min, we have223
+h∗(n)≥H mincmin.224
+At the root,E(n)∈[0,1], so225
+h(n) =ω dHmin +ω c(1−E(n))≤ω dHmin +ω c.226
+Usingω d +ω c ≤c min andω d ≤c min, we obtain227
+ωdHmin +ω c = (H min −1)ω d + (ωd +ω c)
+≤(H min −1)c min +c min =H mincmin ≤h ∗(n).
+(10)228
+Case 2: intermediate node ( 0< d n < H min).229
+Let m=H min −d n ≥1 . By Assumption 1,230
+at least m further transitions are still required, so231
+h∗(n)≥mc min. Also,232
+h(n) =ω dm+ω c(1−E(n))≤ω dm+ω c
+= (m−1)ω d + (ωd +ω c)≤(m−1)c min +c min
+=mc min ≤h ∗(n).
+(11)233
+Case 3: deep non-goal node ( dn ≥H min).By234
+Assumption 2, at least one further transition is re-235
+quired, so h∗(n)≥c min. Since hdepth(n) = 0 in236
+this case,237
+h(n) =ω c(1−E(n))≤ω c ≤ω d +ω c ≤c min
+≤h ∗(n).
+(12)238
+Thus h(n)≤h ∗(n) in all cases, proving admis-239
+sibility.240
+For the main experiments, we keep the search241
+hyperparameters fixed across datasets to avoid over-242
+tuning the search procedure itself. In particular, the243
+reported results should be interpreted as evaluat-244
+ing a single budgeted A*-style configuration rather245
+than an extensively tuned search system. A broader246
+sensitivity analysis over branching factor, depth247
+limit, node budget, and heuristic weights remains248
+important future work.249
+Algorithm 1 summarizes the overall inference250
+procedure.251
+2.5 Routing Strategies252
+Given the observed complementarity between CoT253
+and A*, we define routing functions R:Q →254
+{CoT, A∗} that select the strategy on a per-instance255
+basis.256
+Semantic entropy.We compute the entropy257
+of the answer distribution obtained from self-258
+consistency sampling under CoT. High-entropy in-259
+stances are routed to A*, while low-entropy in-260
+stances keep the CoT answer.261
+Feature-based random forest.We extract hand- 262
+crafted features from the problem text, includ- 263
+ing question length, logical connectives, negation 264
+markers, and question-type indicators, and train a 265
+random forest classifier to predict which reasoning 266
+strategy will succeed.267
+LLM-as-critic.When CoT and A* disagree, we 268
+invoke a stronger critic model Mcritic (DeepSeek- 269
+R1-Distill-Qwen-14B). The critic receives both 270
+traces and returns a verdict over which trace better 271
+supports its answer:272
+verdict=M critic(TraceCoT,Trace A∗, q, C,O)
+(13)273
+When the two methods already agree, we use the 274
+shared answer directly and do not call the critic.275
+3 Results276
+We evaluate on three benchmarks using LLaMA- 277
+3.1-8B as the main reasoner and DeepSeek-R1- 278
+Distill-Qwen-14B as the critic. StrategyQA (Geva 279
+et al., 2021) tests multi-step commonsense reason- 280
+ing with boolean answers. LogicQA (Liu et al., 281
+2020) tests formal logical reasoning with four-way 282
+multiple choice. HotpotQA (Yang et al., 2018) 283
+tests multi-hop question answering with free-form 284
+answers. We report the exact accuracies from the 285
+current experimental pipeline, and the oracle cor- 286
+responds to instance-wise selection of the correct 287
+answer between CoT and A*.288
+3.1 Quantitative Analysis289
+Main quantitative takeaway.Table 1 shows that 290
+no single reasoning strategy dominates across all 291
+settings. A* is substantially stronger than CoT on 292
+StrategyQA and HotpotQA, while CoT has a slight 293
+edge on LogicQA. Yet on every dataset the oracle 294
+sits far above either individual strategy, which con- 295
+firms strong complementarity rather than simple 296
+superiority of one method over the other.297
+Oracle gaps.Relative to the stronger single 298
+method, the oracle improves by +9.79 points on 299
+StrategyQA, +13.51 on LogicQA, and +14.10 on 300
+HotpotQA. These are large margins. They indicate 301
+that even when one strategy wins on average, the 302
+losing strategy still solves many instances that the 303
+winner misses.304
+Router performance.Routing closes only part 305
+of this gap. On StrategyQA, the feature-based ran- 306
+dom forest reaches 76.25%, improving by +1.45 307
+4
+
+Method StrategyQA LogicQA HotpotQA
+CoT (LLaMA-3.1-8B) 64.52% 45.78% 76.80%
+A* (LLaMA-3.1-8B) 74.80% 44.85% 80.10%
+Self-Consistency (LLaMA-3.1-8B) 71.22% 46.10% 78.21%
+Tree-of-Thought (LLaMA-3.1-8B) 72.24% 46.21% 78.45%
+CoT (Qwen-0.5B) 53.60% 24.00% 8.40%
+A* (Qwen-0.5B) 53.40% 20.20% 30.00%
+Self-Consistency (Qwen-0.5B) 54.21% 22.10% 12.21%
+Tree-of-Thought (Qwen-0.5B) 52.24% 21.19% 22.17%
+Semantic Entropy Router 74.37% 47.47% 81.30%
+LLM-as-Critic Router 74.19% 47.16% 80.21%
+LLM-as-Judge Router 73.28% 47.21% 80.87%
+Rule-based Random Forest76.25% 48.20% 81.25%
+Oracle (upper bound) 84.59% 59.29% 94.20%
+Table 1: Key results across the three benchmarks. Bold marks the best non-oracle score on each dataset. The
+routers are tested on LLaMA-3.1-8B model. All routers performance are statistically significant compared to CoT
+as measured by McNemar’s test (p <0.005 ). Difference between LLM-as-Judge and LLM-as-Critic routers are
+differentiated by their prompt structure, shown in Appendix Section 2.
+over the stronger single method (A*). On LogicQA,308
+the same router reaches 48.20%, a +2.42 gain over309
+CoT. On HotpotQA, semantic entropy performs310
+best at 81.30%, a +1.20 gain over A*. These gains311
+are real but much smaller than the oracle margin,312
+which means the central difficulty is identifying313
+whena given strategy should be used.314
+Scalable versus feature-engineered routing.315
+The strongest absolute router on StrategyQA and316
+LogicQA is the feature-based random forest, but317
+it relies on hand-crafted, dataset-sensitive features.318
+The more portable strategies are semantic entropy319
+and LLM-as-critic. Among those, semantic entropy320
+is the strongest overall on HotpotQA and competi-321
+tive on LogicQA, while the critic is close but not322
+consistently best.323
+What the critic helps with.The LLM-as-critic324
+router only runs on disputed cases. On StrategyQA,325
+the disagreement set has size 576 out of 2,290 ex-326
+amples, which is about 25% of the evaluation set.327
+This makes the critic computationally attractive.328
+However, its aggregate gains are modest: it im-329
+proves over CoT on LogicQA and slightly over A*330
+on HotpotQA, but on StrategyQA it remains below331
+A*. This suggests that adjudicating between traces332
+is itself difficult, especially when A* traces are less333
+fluent than CoT traces even when they are logically334
+better.335
+Instance-level decomposition.Table 2 makes336
+the complementarity concrete. HotpotQA is espe-337
+cially striking: only 5.8% of instances are missed338
+by both strategies, while 34.6% lie in a regime339
+Dataset Both correct CoT only A* only Both wrong
+StrategyQA (n=2290) 1361 (59.4%) 328 (14.3%) 248 (10.8%) 353 (15.4%)LogicQA (n=651) 180 (27.6%) 118 (18.1%) 88 (13.5%) 265 (40.7%)HotpotQA (n=500) 298 (59.6%) 86 (17.2%) 87 (17.4%) 29 (5.8%)
+Table 2: Instance-level complementarity decomposition.
+“CoT only” means CoT is correct and A* is wrong; “A*
+only” means the reverse.
+where exactly one strategy is correct. StrategyQA 340
+also exhibits sizable disagreement. LogicQA is 341
+harder overall, as shown by the 40.7% “both wrong” 342
+mass, but even there each strategy recovers failures 343
+of the other.344
+3.2 Qualitative Analysis345
+To understandwhyCoT and A* differ, we manually 346
+inspected representative disagreement cases across 347
+StrategyQA, LogicQA, and HotpotQA. Rather than 348
+treating qualitative analysis as a collection of iso- 349
+lated examples, we organize these cases into recur- 350
+ringreasoning regimes. The resulting picture is 351
+consistent with the quantitative results: A* is not 352
+uniformly better than CoT, but helps in problem 353
+settings where reasoning requires exploration over 354
+multiple plausible partial trajectories, while CoT re- 355
+mains competitive or preferable when the solution 356
+path is naturally linear and can be executed reliably 357
+in a single forward pass. Detailed examples for 358
+each category are provided in Appendix A.359
+When A* helps.Across all three datasets, A* 360
+is most useful when the reasoning problem has 361
+abranching structure: multiple partial hypothe- 362
+ses must be considered, compared, or eliminated 363
+before the correct conclusion becomes clear. We 364
+5
+
+observe three especially common patterns.365
+First, A* helps innon-linear evidence aggre-366
+gation, where the decisive evidence is distributed367
+across several facts that do not naturally compose368
+into a single fluent chain. In such cases, CoT often369
+commits early to one locally plausible narrative and370
+then continues refining that narrative even when it371
+is globally suboptimal. Search mitigates this by372
+allowing alternative branches to remain alive long373
+enough for the more informative path to surface.374
+Second, A* is advantageous inhypothesis elimi-375
+nationproblems, especially in multiple-choice log-376
+ical reasoning. Here the difficulty is often not de-377
+riving one direct proof, but ruling out superficially378
+plausible options that match the wording while fail-379
+ing structurally. A* can allocate reasoning budget380
+across alternatives and compare them more explic-381
+itly, whereas CoT may lock onto the first option382
+whose surface form appears compatible with the383
+prompt.384
+Third, A* is helpful inmulti-hop composition,385
+particularly on HotpotQA-style questions where386
+the answer depends on traversing intermediate en-387
+tities or relations. In these examples, search acts388
+less like a source of extra knowledge and more like389
+a mechanism for preserving multiple partial chains390
+until the relevant bridge entity is found.391
+Why these gains arise.The common thread in392
+the above cases is that A* provides a way to defer393
+commitment. CoT generates a single left-to-right394
+trajectory, which is efficient when that trajectory is395
+correct, but brittle when early steps are only par-396
+tially informative or mildly misleading. In contrast,397
+A* imposes structure over the reasoning process: it398
+treats intermediate thoughts as expandable states,399
+and this makes it possible to revisit the search space400
+when the first promising line of reasoning turns out401
+not to be the best one. Qualitatively, the advantage402
+is therefore not just “more steps,” butbetter allo-403
+cation of reasoning effort across competing partial404
+solutions.405
+When CoT remains preferable.The same anal-406
+ysis also makes clear that search is not always ben-407
+eficial. CoT often performs better when the task408
+is effectivelysingle-path reasoning: the answer409
+follows from direct factual recall, a short deter-410
+ministic comparison, or a coherent argumentative411
+trajectory that does not benefit from branching. In412
+these cases, A* can degrade performance by intro-413
+ducing unnecessary exploration. We observe two414
+frequent regimes where this happens.415
+The first isdirect factual reasoning, where the 416
+problem reduces to retrieving a few stable facts 417
+and combining them straightforwardly. CoT often 418
+succeeds because a single fluent chain is enough, 419
+whereas A* may overcomplicate the problem by 420
+searching over semantically adjacent but irrelevant 421
+distinctions.422
+The second isglobally coherent argumentation, 423
+especially in some LogicQA instances. These prob- 424
+lems reward maintaining a stable abstract frame 425
+over the entire reasoning process. CoT can pre- 426
+serve such a frame naturally through a single expla- 427
+nation, while A* may fragment the reasoning into 428
+locally plausible steps that do not combine into the 429
+strongest global argument.430
+Characteristic failure modes of A*.Our man- 431
+ual inspection also reveals that A* has systematic 432
+failure modes rather than random errors. The most 433
+prominent one isoverthinking simple problems: 434
+when the answer is accessible via direct recall or 435
+a short inference, search may create unnecessary 436
+distinctions and drift away from the obvious solu- 437
+tion. A second failure mode isspurious associative 438
+expansion, where one branch of the search picks 439
+up a weak semantic connection and the search pro- 440
+cess continues elaborating that connection despite 441
+its limited causal relevance to the final answer. A 442
+third isbudget waste through repetition or near- 443
+duplicate expansions, where search spends steps 444
+rephrasing or revisiting the same intermediate fact 445
+instead of exploring genuinely new possibilities.446
+These failure modes are important because they 447
+show that the cost of search is not merely computa- 448
+tional. Search changes theshapeof reasoning, and 449
+this can hurt when the original problem does not 450
+require exploration in the first place.451
+Dataset-level interpretation.The qualitative 452
+patterns also help explain the dataset-level behav- 453
+ior in Table 1. StrategyQA and HotpotQA con- 454
+tain many examples where evidence must be com- 455
+bined across partially independent clues or hops, 456
+and these are precisely the settings where A* more 457
+often improves over CoT. By contrast, LogicQA 458
+contains many items where success depends on pre- 459
+serving the right logical frame or evaluating com- 460
+pact argument structures. In such settings, branch- 461
+ing can help on some elimination-style questions 462
+but can also interfere with the kind of disciplined 463
+global coherence that CoT sometimes maintains 464
+better. This matches the empirical observation that 465
+6
+
+Dataset # disagreement cases Annotation sample
+StrategyQA 587 100
+LogicQA 332 100
+Table 3: Size of the disagreement pool used for human-
+style analysis. We consider only instances where CoT
+and A* produce different final predictions. In single-
+label QA, theboth-rightbucket is therefore expected to
+be empty, which is confirmed in both datasets.
+A* yields larger gains on StrategyQA and Hot-466
+potQA than on LogicQA.467
+Takeaway.The CoT–A* tradeoff is best under-468
+stood in terms ofreasoning topology: A* helps469
+when the solution requires exploring multiple plau-470
+sible paths, while CoT remains stronger when the471
+reasoning is naturally linear and coherent. Thus,472
+A* is most valuable not as a universal replacement473
+for CoT, but as a better inductive bias for inherently474
+search-like questions.475
+3.3 Human evaluation476
+We conduct a human evaluation of reasoning-477
+trace quality using the criteria in §3.3. Two post-478
+graduate annotators with experience in LLM rea-479
+soning research each labeled 100 instances from480
+StrategyQA and LogicQA. Across datasets and481
+metrics, Cohen’sκ ranges from 0.59 to 0.68, indi-482
+cating fair agreement.483
+Interpretation.Across both datasets, the method484
+that is correct on a disagreement case consistently485
+receives a much highercoveragescore than the486
+method that is wrong. On StrategyQA, when CoT487
+is correct and A* is wrong, CoT achieves average488
+coverage 3.00 versus 1.20 for A*; when A* is cor-489
+rect and CoT is wrong, A* scores 2.71 versus 1.63490
+for CoT. The same pattern holds on LogicQA (3.00491
+vs. 1.86 for CoT-correct cases, and 2.77 vs. 1.88492
+for A*-correct cases). This suggests that disagree-493
+ment cases are driven mainly bycoverage of the494
+required reasoning path, not by superficial stylistic495
+differences.496
+Annotation criteria.Coveragemeasures whether497
+a trace reaches the required inferential path and498
+supports the final conclusion. We use a 3-point499
+scale: 1 if the reasoning is mostly incorrect and500
+does not reach the conclusion, 2 if it is mostly501
+correct but still fails to reach the conclusion, and 3502
+if both the reasoning and conclusion are correct.503
+Relevancemeasures how focused the trace is on504
+concepts actually needed to answer the question.505
+We score it coarsely on a 3-point scale based on the 506
+proportion of relevant steps, where relevant steps 507
+remain on-topic and avoid introducing unnecessary 508
+concepts.509
+Relevance is less diagnostic. In StrategyQA, CoT 510
+remains more relevant than A* when both are 511
+wrong (2.82 vs. 1.55), while in LogicQA both meth- 512
+ods stay moderately relevant even when incorrect 513
+(2.76 for CoT, 2.53 for A*). Thus, staying on-topic 514
+is not enough: a trace may remain relevant yet still 515
+miss the decisive inferential steps. Overall, the 516
+annotations indicate that the main difference be- 517
+tween CoT and A* on disagreement cases lies in 518
+which method better covers the decisive reasoning 519
+steps, while relevance is only weakly associated 520
+with correctness.521
+4 Discussion522
+The real challenge is routing, not raw comple- 523
+mentarity.The oracle gaps remain much larger 524
+than the realized router gains. Even the best router 525
+is 8.34 points below the oracle on StrategyQA and 526
+12.90 points below it on HotpotQA. The main bot- 527
+tleneck is therefore strategy selection, not simply 528
+adding search as an alternative decoder.529
+Why routing remains hard.The critic router 530
+is especially informative. Although it can inspect 531
+both candidate traces and should therefore have an 532
+advantage over entropy-based routing, its gains are 533
+only modest. A likely reason is that CoT traces are 534
+often more fluent, while A* traces are more frag- 535
+mented or branch-local. As a result, the critic may 536
+favor the trace that appears better written rather 537
+than the one with stronger reasoning. This points 538
+to trace normalization or compression as a natural 539
+next step.540
+When search is worth paying for.Our qual- 541
+itative analysis suggests a fairly clear boundary. 542
+Search helps when reasoning requires non-linear 543
+evidence aggregation, hypothesis branching, or 544
+multi-hop chaining. CoT is often better when the 545
+answer follows from direct factual recall or a sin- 546
+gle coherent argumentative path. Routing can thus 547
+be viewed as predicting the reasoning structure a 548
+question requires.549
+What the theorem contributes.The theorem 550
+provides formal support for the search objective 551
+by showing that, under the stated assumptions, the 552
+heuristic is a conservative lower bound on path cost. 553
+In this way, it justifies the A*-style prioritization 554
+7
+
+Dataset Correctness groupnCoT Cov. CoT Rel. A* Cov. A* Rel.
+StrategyQA
+both wrong 11 1.00 2.82 1.09 1.55
+CoT right, A* wrong 51 3.00 2.57 1.20 2.16
+CoT wrong, A* right 38 1.63 2.47 2.71 2.00
+LogicQA
+both wrong 38 1.79 2.76 1.89 2.53
+CoT right, A* wrong 36 3.00 2.81 1.86 2.47
+CoT wrong, A* right 26 1.88 2.81 2.77 2.42
+Table 4: Human-style annotation on 100 sampled disagreement cases per dataset. “Cov.” denotes reasoning coverage
+(1–3), and “Rel.” denotes relevance (1–3). Coverage measures whether the reasoning substantially reaches a correct
+conclusion; relevance measures the proportion of steps that stay on-topic and avoid unnecessary concepts.
+used in our method, while the practical system555
+builds on this objective with budgeted search and556
+voting.557
+5 Related Work558
+Chain-of-thought and structured reasoning.559
+CoT prompting (Wei et al., 2022) and self-560
+consistency (Wang et al., 2023) established the use-561
+fulness of explicit intermediate reasoning. Tree-562
+of-Thoughts (Yao et al., 2024) and Graph-of-563
+Thoughts (Besta et al., 2024) extended this line564
+by exploring richer reasoning structures. Our work565
+is closest in spirit to Tree-of-Thoughts, but differs566
+in using an A*-style priority rule and in explicitly567
+analyzing complementarity with standard CoT.568
+Search-augmented LLM reasoning.Reasoning569
+via planning or search has been explored with570
+Monte Carlo Tree Search (Hao et al., 2023), beam571
+search (Xie et al., 2024), and other search variants.572
+Our contribution in this space is narrower but more573
+specific: we define a cost function over natural-574
+language reasoning traces, pair it with a conserva-575
+tive admissibility result for the heuristic, and study576
+the resulting search procedure as a complementary577
+strategy rather than as a universal replacement for578
+CoT.579
+LLM-based evaluation and verification.LLM-580
+as-a-judge methods (Zheng et al., 2023) and step-581
+level verification approaches such as process super-582
+vision (Lightman et al., 2023) motivate our LLM-583
+as-critic router. We use a stronger model to ad-584
+judicate between traces only when CoT and A*585
+disagree, which turns verification into a targeted586
+routing problem rather than a full re-reasoning pass587
+on every example.588
+Reasoning failures and compositionality gaps.589
+Prior work has documented systematic reasoning590
+failures even in strong language models. Press et591
+al. (Press et al., 2023) showed that models often592
+fail when individually solvable subproblems must 593
+be composed. Huang et al. (Huang et al., 2023) 594
+argued that models do not reliably self-correct with- 595
+out external feedback. These findings motivate our 596
+treatment of CoT and A* as complementary exter- 597
+nal strategies rather than expecting a single trace 598
+generator to repair itself.599
+Routing and adaptive computation.Routing 600
+has also been studied at the architectural level, espe- 601
+cially in mixture-of-experts systems (Shazeer et al., 602
+2017). Our setting is different: we route between 603
+reasoning algorithmsat inference time rather than 604
+between model components during a forward pass. 605
+6 Conclusion606
+We benchmarked standard chain-of-thought (CoT) 607
+reasoning against a budgeted A*-style search pro- 608
+cedure over reasoning traces on StrategyQA, Log- 609
+icQA, and HotpotQA, evaluating both standalone 610
+performance and their complementarity through or- 611
+acle and routing analyses. The main finding is that 612
+CoT and A* are strongly complementary: across 613
+benchmarks, each method often succeeds where the 614
+other fails, yielding large oracle gains and show- 615
+ing that non-linear search can add value beyond 616
+linear reasoning. At the same time, current routers 617
+recover only a limited fraction of this potential, 618
+and the strongest practical router remains partly 619
+feature-engineered, suggesting that the main chal- 620
+lenge is not whether search can help, but when it 621
+should be invoked. Overall, our results position 622
+A* not as a replacement for CoT, but as a com- 623
+plementary reasoning topology that is most useful 624
+when linear traces become brittle or prematurely 625
+committed. A natural direction for future work 626
+is therefore adaptive inference-time strategy selec- 627
+tion: designing stronger and more portable routers, 628
+integrating CoT and search more tightly within a 629
+single reasoning process, and extending the com- 630
+parison to larger models, broader benchmarks, and 631
+8
+
+more compute-aware search procedures.632
+Limitations633
+While our study provides a useful first comparison634
+of CoT and budgeted A*-style reasoning, there are635
+several natural boundaries to its current scope. Our636
+experiments focus on three representative bench-637
+marks and one main model family, which already638
+support the central complementarity claim, though639
+broader evaluation across additional tasks and mod-640
+els would further clarify how widely the observed641
+patterns extend. In addition, the strongest router642
+on two benchmarks uses feature-engineered sig-643
+nals, which is informative for analysis but may644
+be less portable than lighter-weight entropy-based645
+or critic-based alternatives. The search procedure646
+itself is budgeted and uses multi-goal voting, so647
+the deployed system is best viewed as an A*-style648
+approximation rather than exact classical A*. Fi-649
+nally, the heuristic relies on self-reported confi-650
+dence and entity-coverage signals, which serve as651
+practical proxies for prioritizing the search frontier652
+but could likely be improved with stronger calibra-653
+tion or more faithful relevance estimates.654
+References655
+Maciej Besta, Nils Blach, Ales Kubicek, Robert Ger-656
+stenberger, Michal Podstawski, Lukas Gianinazzi,657
+Joanna Gajda, Tomasz Lehmann, Hubert Niewiadom-658
+ski, Piotr Nyczyk, and 1 others. 2024. Graph of659
+thoughts: Solving elaborate problems with large lan-660
+guage models. InProceedings of the AAAI Confer-661
+ence on Artificial Intelligence.662
+Mor Geva, Daniel Khashabi, Elad Segal, Tushar Khot,663
+Dan Roth, and Jonathan Berant. 2021. Did aristotle664
+use a laptop? a question answering benchmark with665
+implicit reasoning strategies. InTransactions of the666
+Association for Computational Linguistics, volume 9,667
+pages 346–361.668
+Shibo Hao, Yi Gu, Haodi Ma, Joshua Hong, Zhen Wang,669
+Daisy Wang, and Zhiting Hu. 2023. Reasoning with670
+language model is planning with world model. In671
+Proceedings of the 2023 Conference on Empirical672
+Methods in Natural Language Processing.673
+Jie Huang, Xinyun Chen, Swaroop Mishra,674
+Huaixiu Steven Zheng, Adams Wei Yu, Xiny-675
+ing Song, and Denny Zhou. 2023. Large language676
+models cannot self-correct reasoning yet.arXiv677
+preprint arXiv:2310.01798.678
+Hunter Lightman, Vineet Kosaraju, Yura Burda, Harri679
+Edwards, Bowen Baker, Teddy Lee, Jan Leike,680
+John Schulman, Ilya Sutskever, and Karl Cobbe.681
+2023. Let’s verify step by step.arXiv preprint 682
+arXiv:2305.20050.683
+Jian Liu, Leyang Cui, Hanmeng Liu, Dandan Huang, 684
+Yile Wang, and Yue Zhang. 2020. LogiQA: A chal- 685
+lenge dataset for machine reading comprehension 686
+with logical reasoning. InProceedings of the Twenty- 687
+Ninth International Joint Conference on Artificial 688
+Intelligence.689
+Ofir Press, Muru Zhang, Sewon Min, Ludwig Schmidt, 690
+Noah A Smith, and Mike Lewis. 2023. Measuring 691
+and narrowing the compositionality gap in language 692
+models.Findings of the Association for Computa- 693
+tional Linguistics: EMNLP 2023, pages 5687–5711.694
+Noam Shazeer, Azalia Mirhoseini, Krzysztof Maziarz, 695
+Andy Davis, Quoc Le, Geoffrey Hinton, and 696
+Jeff Dean. 2017. Outrageously large neural net- 697
+works: The sparsely-gated mixture-of-experts layer. 698
+Preprint, arXiv:1701.06538.699
+Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc V Le, 700
+Ed H Chi, Sharan Narang, Aakanksha Chowdhery, 701
+and Denny Zhou. 2023. Self-consistency improves 702
+chain of thought reasoning in language models. In 703
+International Conference on Learning Representa- 704
+tions.705
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten 706
+Bosma, Fei Xia, Ed Chi, Quoc V Le, Denny Zhou, 707
+and 1 others. 2022. Chain-of-thought prompting elic- 708
+its reasoning in large language models. InAdvances 709
+in Neural Information Processing Systems.710
+Yuxi Xie, Kenji Kawaguchi, Yiran Zhao, James Xu, 711
+Min-Yen Kan, Junxian He, and Michael Xie. 2024. 712
+Self-evaluation guided beam search for reasoning. In 713
+Advances in Neural Information Processing Systems. 714
+Zhiping Yang, Peng Qi, Saizheng Zhang, Yoshua Ben- 715
+gio, William Cohen, Ruslan Salakhutdinov, and 716
+Christopher D Manning. 2018. HotpotQA: A dataset 717
+for diverse, explainable multi-hop question answer- 718
+ing. InProceedings of the 2018 Conference on Em- 719
+pirical Methods in Natural Language Processing.720
+Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, 721
+Tom Griffiths, Yuan Cao, and Karthik Narasimhan. 722
+2024. Tree of thoughts: Deliberate problem solving 723
+with large language models. InAdvances in Neural 724
+Information Processing Systems.725
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan 726
+Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, 727
+Zhuohan Li, Dacheng Li, Eric Xing, and 1 others. 728
+2023. Judging LLM-as-a-judge with MT-bench and 729
+chatbot arena. InAdvances in Neural Information 730
+Processing Systems.731
+A Qualitative Examples732
+This appendix provides the detailed examples cor- 733
+responding to the qualitative conclusions summa- 734
+rized in Section 3.2.735
+9
+
+A.1 Patterns of A* Success and CoT Failure736
+We identify three recurring settings where A* suc-737
+ceeds while CoT fails.738
+Group 1: Non-linear evidence aggregation.739
+These are questions where the answer requires com-740
+bining several facts that do not naturally form a741
+single left-to-right narrative.742
+StrategyQA — Non-linear Evidence Ag-
+gregation
+Q:Is shrimp scampi definitely free of plas-
+tic?(Gold: NO)
+CoT( × predicts YES): Proceeds through
+five sequential steps analyzing harvesting,
+processing, cooking, ingredients, and regu-
+lations. Each step independently concludes
+no significant plastic risk. The linear struc-
+ture prevents cross-referencing marine bi-
+ology evidence with the food preparation
+chain.
+A*( ✓ predicts NO): Step 1 directly identi-
+fies microplastic bioaccumulation in shrimp
+tissue. Step 2 notes that cooking does not
+remove microplastics. The heuristic guides
+the search toward the most relevant evi-
+dence node, avoiding the exhaustive but mis-
+leading step-by-step analysis.
+743
+LogicQA — Non-linear Evidence Aggre-
+gation
+Q:Based on the above statement [spatial
+arrangement of communities around Civic
+Park], which of the following can be de-
+rived?(Gold: A)
+CoT( × predicts D): Analyzes spatial rela-
+tionships sequentially, accumulating errors
+in relative positioning. By the fourth step,
+the accumulated imprecision leads to select-
+ing an incorrect spatial relationship.
+A*( ✓ predicts A): Explores multiple spa-
+tial constraint combinations in parallel. The
+search finds a consistent assignment by si-
+multaneously satisfying the “southwest of”
+and “southeast of” constraints, correctly de-
+riving that Civic Park is north of the admin-
+istrative service area.
+744
+Group 2: Hypothesis elimination.A* is also 745
+effective when the problem naturally decomposes 746
+into evaluating or eliminating alternatives.747
+LogicQA — Hypothesis Elimination
+Q:Which of the following is most similar
+to the argument: “All landscape rooms can
+see the landscape, but Li Wenbing’s fam-
+ily can’t see the landscape. Therefore, Li
+Wenbing’s family is not a landscape room. ”
+(Gold: D)
+CoT( × predicts C): Identifies the logical
+structure (modus tollens) but then incor-
+rectly maps it to option C (a modus ponens
+structure) due to surface similarity.
+A*( ✓ predicts D): Separately evaluates
+options through different branches. One
+branch identifies the negative inference pat-
+tern in the premise and correctly maps it to
+option D (“Anyone who meets conditions
+can apply; Sun Wen did not apply; therefore
+Sun Wen did not meet conditions”), which
+preserves the modus tollens structure.
+748
+Group 3: Multi-hop question answering.Hot- 749
+potQA highlights the value of search when the an- 750
+swer depends on chaining facts across sources.751
+HotpotQA — Multi-hop Chaining
+Q:What government position was held by
+the woman who portrayed Corliss Archer
+in the film Kiss and Tell?(Gold: Chief of
+Protocol)
+CoT( × predicts “Ambassador”): Correctly
+identifies Shirley Temple as the actress but
+then retrieves an incorrect government po-
+sition from parametric memory, confusing
+ambassadorial roles with her protocol role.
+A*: Explores multiple evidence paths for
+Shirley Temple’s government career. While
+the trace is imperfect, the tree search struc-
+ture allows it to consider multiple candidate
+positions before committing.
+752
+A.2 Patterns of CoT Success and A* Failure753
+We identify two common settings where CoT re- 754
+mains better than search.755
+10
+
+Group 1: Direct factual reasoning.When the756
+answer follows directly from familiar facts, search757
+can introduce unnecessary branching and semantic758
+drift.759
+StrategyQA — Direct Factual Reasoning
+Q:Is a Boeing 737 cost covered by Won-
+der Woman (2017 film) box office receipts?
+(Gold: YES)
+CoT( ✓ predicts YES): Directly retrieves
+the production budget ( ∼$150M), box
+office ( ∼$822M), and Boeing 737 cost
+(∼$100M), concluding that the receipts ex-
+ceed the aircraft cost.
+A*( × predicts NO): The first search step
+focuses on whether box office receipts are
+“associated with” aircraft purchases, mis-
+reading the question as one about financial
+transactions rather than magnitude compari-
+son.
+760
+StrategyQA — Direct Factual Reasoning
+Q:Is average number of peas in a pod
+enough commas for a billion?(Gold:
+YES)
+CoT( ✓ predicts YES): Correctly identifies
+that a billion (1,000,000,000) requires three
+commas and that a pea pod usually contains
+7–9 peas, so the answer is yes.
+A*( × predicts NO): Incorrectly states that
+a billion has 12 zeros and becomes confused
+by the scale comparison.
+761
+Group 2: Fluent world knowledge and argu-762
+mentation.When the problem is best solved by763
+a smooth, coherent narrative, CoT often remains764
+more reliable than fragmented search steps.765
+LogicQA — Fluent Argumentation
+Q:Which of the following is the best argu-
+ment against the claim that rich Chinese are
+transferring property abroad?(Gold: B)
+CoT( ✓ predicts B): Systematically com-
+pares the answer options and identifies the
+strongest counterargument.
+766
+A*( × predicts A): The first search step
+identifies option A as relevant, and the
+heuristic keeps the search near that branch
+without sufficiently comparing the full op-
+tion set.
+767
+A.3 A* Failure Modes on Simple Cases768
+We observe three recurrent failure modes for A* on 769
+examples that CoT solves easily.770
+Failure mode 1: Overthinking simple questions. 771
+StrategyQA — Overthinking
+Q:Does Disney have an ice princess?
+(Gold: YES)
+A*( × predicts NO): Step 1 correctly iden-
+tifies Elsa fromFrozenas having ice pow-
+ers. Step 2 notes that she is called “The Ice
+Queen” in promotional material. The search
+then turns the easy recall problem into an
+unnecessary semantic distinction between
+“queen” and “princess,” yielding the wrong
+answer.
+772
+Failure mode 2: Spurious correlations in search. 773
+StrategyQA — Spurious Correlation
+Q:Is Menthol associated with Thanksgiv-
+ing?(Gold: NO)
+A*( × predicts YES): Step 1 associates
+menthol with cough drops used in cold
+weather. Step 2 associates Thanksgiving
+with cold weather in North America. Step
+3 turns these weak associations into a spuri-
+ous chain, effectively reasoning menthol →
+cold weather→Thanksgiving.
+774
+Failure mode 3: Step repetition.775
+StrategyQA — Step Repetition
+Q:Will the Albany in Georgia reach a hun-
+dred thousand occupants before the one in
+New York?(Gold: NO)
+A*( × predicts YES): Step 2 states the pop-
+ulation of Albany, New York ( ∼98,000).
+Step 3 largely repeats the same fact. The
+repetition wastes node budget that should
+have been used to compare growth trajecto-
+ries.
+776
+11
+
+Algorithm 1Budgeted A* Search over Reasoning
+Traces
+Require: Problem Q= (q, C,O) , model Mθ,
+depth limit Dmax, node budget B, candidates
+Nc
+1: Initialize root n0 ←(∅,0) , g(n0)←0 ,
+h(n0)←h(n 0)from Eq. (6)
+2:OPEN← {n 0} (priority queue on f(n) =
+g(n) +h(n))
+3:VISITED← ∅, GOALS← ∅, explored←0
+4:whileOPEN̸=∅and explored< Bdo
+5:n←OPEN.pop_min()
+6:ifsig(n)∈VISITEDthen
+7:continue
+8:end if
+9:VISITED←VISITED∪ {sig(n)}
+10:explored←explored+1
+11:ifISGOAL(n)then
+12:GOALS←GOALS∪ {n}
+13:continue
+14:end if
+15:ifd n ≥D max then
+16:continue
+17:end if
+18:{(s (j), c(j))}Nc
+j=1 ←
+GENERATESTEPS(M θ, q, C,O, τ n, Nc)
+19:foreach(s (j), c(j))do
+20:n ′ ←(τ n ⊕s (j), dn + 1)
+21:g(n ′)←g(n) + 1 + (1−c (j))
+22:OPEN.push(n ′, g(n′) +h(n ′))
+23:end for
+24:end while
+25:returnweighted vote over GOALS
+B Frequently Asked Questions777
+Q1: Why does A* help on StrategyQA and Hot-778
+potQA but not consistently on LogicQA?The779
+tasks reward different reasoning topologies. Strate-780
+gyQA and HotpotQA benefit more from branching781
+and evidence chaining, where A* leads (74.80% vs.782
+64.52%, and 80.10% vs. 76.80% on LLaMA-3.1-783
+8B). LogicQA often favors compact, stable argu-784
+ment tracking, where CoT is slightly better (45.78%785
+vs. 44.85%).786
+Q2: If A* does not dominate every benchmark,787
+why include all three datasets?Because the pa-788
+per argues complementarity, not universal domi-789
+nance. Reporting both gains and non-gains makes790
+the claim credible and shows strategy choice is791
+instance-dependent.792
+Q3: What is the strongest quantitative evidence 793
+of complementarity?The oracle margins: +9.79 794
+(StrategyQA), +13.51 (LogicQA), and +14.10 (Hot- 795
+potQA) over the stronger single method. These are 796
+large, indicating substantial routing headroom.797
+Q4: Is A* taking more time and tokens than 798
+CoT? If yes, why can A* still be considered bet- 799
+ter?Yes. A* usually uses more compute because 800
+it expands multiple nodes, while CoT is often one 801
+pass. It is justified when the accuracy gain is mean- 802
+ingful: A* raises LLaMA-3.1-8B from 64.52% to 803
+74.80% on StrategyQA and 76.80% to 80.10% on 804
+HotpotQA; in Qwen-0.5B it raises HotpotQA from 805
+8.40% to 30.00%. So A* should be viewed as a 806
+higher-cost, higher-recall mode for suitable tasks, 807
+not a cheaper replacement.808
+Q5: Why is this a fair comparison if 809
+CoT can also use self-consistency?We re- 810
+port self-consistency directly: 71.22% (Strate- 811
+gyQA), 46.10% (LogicQA), 78.21% (HotpotQA) 812
+on LLaMA-3.1-8B. It still does not dominate A* 813
+across datasets. The real comparison is how to 814
+spend extra inference budget: unguided multi- 815
+sample CoT vs. guided search.816
+Q6: Do large oracle gaps indicate weak heuris- 817
+tics or model limits?Both. Better heuristics and 818
+routers can recover part of the gap, but many errors 819
+are shared, so base-model reasoning limits remain 820
+a major bottleneck.821
+Q7: Why are routing gains smaller than oracle 822
+gains?Because selecting the right strategy per 823
+instance is hard. Best observed routers (76.25%, 824
+48.20%, 81.30%) remain far below oracle levels 825
+(84.59%, 59.29%, 94.20%).826
+Q8: Why mention that the random-forest router 827
+is strongest on two datasets if it is feature- 828
+engineered?It is included as the strongest prac- 829
+tical baseline in the current setup. We also state its 830
+portability limits and discuss semantic-entropy and 831
+critic-style routing as more transferable options.832
+Q9: Does LLM-as-critic routing reduce com- 833
+pute relative to running strong routing every- 834
+where?Partly. The critic runs only on disagree- 835
+ments; for StrategyQA this is 576/2290 (about 836
+25%), so calls are targeted. But selective invo- 837
+cation does not guarantee best accuracy because 838
+adjudication quality is still limiting.839
+12
+
+LLM-as-Judge
+Purpose.Compare two candidate reasoning trajectories
+and decide which one solves the query morefaithfully
+andcorrectly.
+Inputs.
+• Context
+• Query
+• Path A reasoning trace
+• Path B reasoning trace
+Evaluation criteria.
+• Faithfulness:uses only the provided context and
+avoids invented constraints
+• Logical validity:each step follows causally and
+coherently from prior steps
+• Grounded conclusion:the final answer directly
+resolves the query from the established reasoning
+Required output.The model first reasons internally
+about both traces, then returns only the winning path in
+constrained XML:
+<winner>A</winner> or <winner>B</winner>
+LLM-as-Critic
+Purpose.Diagnose the weaknesses of two reasoning
+traces and determine which trace is better overall.
+Inputs.
+• Question
+• Answer options
+• Trace A with predicted answer
+• Trace B with predicted answer
+Evaluation criteria.
+• whether the reasoning actually entails the predicted
+answer
+• whether there are logical fallacies or unsupported
+jumps
+• whether any claims are hallucinated or ungrounded
+Required output.The model returns a structured JSON
+critique with flaws for both traces and the preferred trace:
+{"trace_A_flaws": "...",
+"trace_B_flaws": "...",
+"better_trace": "A/B"}
+Figure 2: LLM-based routing prompts. Thejudgeprompt is verdict-oriented: it compares two reasoning paths under
+faithfulness and logical soundness criteria and outputs only the winner. Thecriticprompt is diagnosis-oriented: it
+identifies flaws in each trace before selecting the better one in structured JSON form.
+Q10: How should readers interpret the admissi-840
+bility theorem?As a scoped guarantee on heuris-841
+tic ordering under stated assumptions, not an end-842
+to-end optimality claim. The deployed system is843
+still budgeted and voting-based, so classical global844
+optimality does not directly apply.845
+Q11: Are confidence values calibrated probabil-846
+ities?No. They are practical ranking signals in847
+path cost, not calibrated uncertainty estimates, so848
+claims are kept empirical and conservative.849
+Q12: Is the qualitative analysis just anecdotal?850
+The examples are diagnostic, not standalone proof.851
+They are aligned with quantitative trends and sup-852
+ported by disagreement decomposition and human853
+annotation.854
+Q13: What does the human evaluation add be-855
+yond accuracy tables?It explains disagreement856
+mechanics. Coverage tracks correctness strongly,857
+while relevance is weaker, indicating that success858
+depends more on reaching decisive inferential steps859
+than on fluency.860
+Q14: Could simple ensembling replace A*?861
+Ensembling helps and is included via self-862
+consistency, but it does not fully replicate guided863
+exploration. They are complementary budget- 864
+allocation strategies, and we still observe task- 865
+dependent gains from A*.866
+Q15: What is the practical deployment take- 867
+away from all results?Use CoT as the default 868
+low-cost path, and trigger search selectively for 869
+multi-hop, branch-heavy, or elimination-style ques- 870
+tions. The biggest future gains come from stronger 871
+routing, not forcing one strategy everywhere.872
+13

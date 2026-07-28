@@ -1,0 +1,187 @@
+{
+  "leave_one_out": {
+    "strategyqa": {
+      "test_acc": 0.5478260869565217,
+      "router_overall": 74.2,
+      "gap": 3.7037037037037077,
+      "n_train": 638,
+      "n_test": 115
+    },
+    "hotpotqa": {
+      "test_acc": 0.29914529914529914,
+      "router_overall": 46.400000000000006,
+      "gap": -924.9999999999991,
+      "n_train": 519,
+      "n_test": 234
+    },
+    "logicqa": {
+      "test_acc": 0.4621212121212121,
+      "router_overall": 43.8,
+      "gap": -10.937500000000014,
+      "n_train": 621,
+      "n_test": 132
+    },
+    "humaneval": {
+      "test_acc": 0.4838709677419355,
+      "router_overall": 65.83850931677019,
+      "gap": -14.28571428571432,
+      "n_train": 722,
+      "n_test": 31
+    },
+    "mbpp": {
+      "test_acc": 0.7096774193548387,
+      "router_overall": 60.199999999999996,
+      "gap": 0.0,
+      "n_train": 660,
+      "n_test": 93
+    },
+    "codecontests": {
+      "test_acc": 0.7972972972972973,
+      "router_overall": 93.9879759519038,
+      "gap": 0,
+      "n_train": 605,
+      "n_test": 148
+    }
+  },
+  "feature_ablation": {
+    "All 14 features": {
+      "cv_score": 0.7184812362030905,
+      "cv_std": 0.01923657547996181,
+      "router_acc": 69.39911168650102,
+      "gap": 41.922293386555346,
+      "n_disagree": 753,
+      "n_total": 2660
+    },
+    "Reasoning only (9)": {
+      "cv_score": 0.750401766004415,
+      "cv_std": 0.023255763766596896,
+      "router_acc": 70.30272668426032,
+      "gap": 48.507542411321786,
+      "n_disagree": 753,
+      "n_total": 2660
+    },
+    "Format only (5)": {
+      "cv_score": 0.7130596026490066,
+      "cv_std": 0.032912637241328466,
+      "router_acc": 69.24563461634217,
+      "gap": 40.80380295745259,
+      "n_disagree": 753,
+      "n_total": 2660
+    },
+    "No length (12)": {
+      "cv_score": 0.7171479028697572,
+      "cv_std": 0.03079024519325026,
+      "router_acc": 69.36136732559876,
+      "gap": 41.64722489340471,
+      "n_disagree": 753,
+      "n_total": 2660
+    },
+    "BC only (1)": {
+      "cv_score": 0.7092185430463577,
+      "cv_std": 0.028916999784395946,
+      "router_acc": 69.13690086142509,
+      "gap": 40.01138709970065,
+      "n_disagree": 753,
+      "n_total": 2660
+    },
+    "Top-5 (hop,conn,depth,BC,branch)": {
+      "cv_score": 0.7450419426048566,
+      "cv_std": 0.014476427349938035,
+      "router_acc": 70.15099935268636,
+      "gap": 47.4018035017691,
+      "n_disagree": 753,
+      "n_total": 2660
+    }
+  },
+  "cost_table": {
+    "CoT": {
+      "tokens": 512,
+      "relative": "1.0x",
+      "calls": 1
+    },
+    "Self-Consistency (k=5)": {
+      "tokens": 2560,
+      "relative": "5.0x",
+      "calls": 5
+    },
+    "A* (K=1, B=30)": {
+      "tokens": 3372,
+      "relative": "6.6x",
+      "calls": 30
+    },
+    "A* (K=3, B=15)": {
+      "tokens": 12452,
+      "relative": "24.3x",
+      "calls": 45
+    },
+    "Tree-of-Thought (k=3)": {
+      "tokens": 4000,
+      "relative": "7.8x",
+      "calls": 8
+    }
+  },
+  "heuristic_ablation": {
+    "Full A* (depth+coverage)": {
+      "accuracy": 72.39999999999999,
+      "n": 500
+    },
+    "Depth-only heuristic": {
+      "accuracy": 70.0,
+      "n": 500
+    },
+    "Coverage-only heuristic": {
+      "accuracy": 71.0,
+      "n": 500
+    },
+    "BFS (h=0, no heuristic)": {
+      "accuracy": 69.19999999999999,
+      "n": 500
+    },
+    "CoT baseline": {
+      "accuracy": 75.2,
+      "n": 500
+    },
+    "A* (full, 2290q)": {
+      "accuracy": 73.8,
+      "n": 500
+    }
+  },
+  "full_table": {
+    "strategyqa": {
+      "CoT": 72.39999999999999,
+      "A*": 73.8,
+      "SC": null,
+      "ToT": null
+    },
+    "hotpotqa": {
+      "CoT": 35.6,
+      "A*": 76.0,
+      "SC": null,
+      "ToT": null
+    },
+    "logicqa": {
+      "CoT": 44.4,
+      "A*": 45.2,
+      "SC": null,
+      "ToT": null
+    },
+    "humaneval": {
+      "CoT": 67.08074534161491,
+      "A*": 65.21739130434783,
+      "SC": 65.03067484662577,
+      "ToT": 71.77914110429448
+    },
+    "mbpp": {
+      "CoT": 60.199999999999996,
+      "A*": 52.400000000000006,
+      "SC": 38.0,
+      "ToT": 40.400000000000006
+    },
+    "codecontests": {
+      "CoT": 100.0,
+      "A*": 70.34068136272545,
+      "SC": 99.0,
+      "ToT": 91.2
+    }
+  }
+}

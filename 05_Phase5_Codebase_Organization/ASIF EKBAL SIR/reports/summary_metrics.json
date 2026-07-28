@@ -1,0 +1,29 @@
+[
+  {
+    "dataset": "logicqa",
+    "astar_acc": 33.0,
+    "cot_acc": 39.0,
+    "prev_acc": 42.0,
+    "new_acc": 42.0,
+    "new_vs_astar": 9.0,
+    "new_vs_prev": 0.0
+  },
+  {
+    "dataset": "hotpotqa",
+    "astar_acc": 78.0,
+    "cot_acc": 53.0,
+    "prev_acc": 39.0,
+    "new_acc": 26.0,
+    "new_vs_astar": -52.0,
+    "new_vs_prev": -13.0
+  },
+  {
+    "dataset": "strategyqa",
+    "astar_acc": 79.0,
+    "cot_acc": 73.0,
+    "prev_acc": 48.0,
+    "new_acc": 43.0,
+    "new_vs_astar": -36.0,
+    "new_vs_prev": -5.0
+  }
+]

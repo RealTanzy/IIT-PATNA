@@ -1,0 +1,8129 @@
+[
+  {
+    "task_id": "MBPP/11",
+    "method": "cot",
+    "code": "def remove_Occ(s, char):\n    s = list(s)\n    if s and s[0] == char:\n        s.pop(0)\n    if s and s[-1] == char:\n        s.pop()\n    return ''.join(s)",
+    "correct": false,
+    "time": 0.6535854339599609,
+    "raw_response": "```python\ndef remove_Occ(s, char):\n    s = list(s)\n    if s and s[0] == char:\n        s.pop(0)\n    if s and s[-1] == char:\n        s.pop()\n    return ''.join(s)\n```"
+  },
+  {
+    "task_id": "MBPP/11",
+    "method": "astar",
+    "code": "def remove_Occ(s, c):\n    first_occ = s.find(c)\n    last_occ = s.rfind(c)\n    \n    if first_occ != -1 and last_occ != -1:\n        return s[:first_occ] + s[first_occ+1:last_occ] + s[last_occ+1:]\n    elif first_occ != -1:\n        return s[:first_occ] + s[first_occ+1:]\n    elif last_occ != -1:\n        return s[:last_occ] + s[last_occ+1:]\n    else:\n        return s",
+    "correct": true,
+    "time": 3.0507190227508545,
+    "nodes_explored": 4,
+    "goals_found": 1,
+    "reasoning_trace": [
+      "Step 1: Define the function remove_Occ with two parameters: the input string 's' and the character to be removed 'c'. The function should return the modified string after removing the first and last o",
+      "Step 2: Find the indices of the first and last occurrences of the character 'c' in the string 's'. This can be done using the find() and rfind() methods in Python, which return the index of the first "
+    ],
+    "all_goals": [
+      {
+        "plan": [
+          "Step 1: Define the function remove_Occ with two parameters: the input string 's' and the character to be removed 'c'. The function should return the modified string after removing the first and last o",
+          "Step 2: Find the indices of the first and last occurrences of the character 'c' in the string 's'. This can be done using the find() and rfind() methods in Python, which return the index of the first "
+        ],
+        "code": "def remove_Occ(s, c):\n    first_occ = s.find(c)\n    last_occ = s.rfind(c)\n    \n    if first_occ != -1 and last_occ != -1:\n        return s[:first_occ] + s[first_occ+1:last_occ] + s[last_occ+1:]\n    elif first_occ != -1:\n        return s[:first_occ] + s[first_occ+1:]\n    elif last_occ != -1:\n        return s[:last_occ] + s[last_occ+1:]\n    else:\n        return s",
+        "f_score": 3.0999999999999996
+      }
+    ]
+  },
+  {
+    "task_id": "MBPP/12",
+    "method": "cot",
+    "code": "def sort_matrix(matrix):\n    return sorted(matrix, key=sum)",
+    "correct": true,
+    "time": 0.22057199478149414,
+    "raw_response": "```python\ndef sort_matrix(matrix):\n    return sorted(matrix, key=sum)\n```"
+  },
+  {
+    "task_id": "MBPP/12",
+    "method": "astar",
+    "code": "def sort_matrix(matrix):\n    # Step 2: Calculate the sum of each row in the matrix and store it in a list along with the corresponding row index\n    row_sums = [(sum(row), i) for i, row in enumerate(matrix)]\n    \n    # Step 3: Sort the rows based on their sums\n    sorted_row_sums = sorted(row_sums, key=lambda x: x[0])\n    \n    # Step 4: Reconstruct the sorted matrix\n    sorted_matrix = [row for _, row in sorted_row_sums]\n    \n    return sorted_matrix",
+    "correct": false,
+    "time": 2.906294345855713,
+    "nodes_explored": 4,
+    "goals_found": 1,
+    "reasoning_trace": [
+      "Step 1: Define the function `sort_matrix` that takes a 2D list (matrix) as input and returns the sorted matrix. ",
+      "Step 2: Calculate the sum of each row in the matrix and store it in a list along with the corresponding row index, so that we can sort the rows based on their sums later."
+    ],
+    "all_goals": [
+      {
+        "plan": [
+          "Step 1: Define the function `sort_matrix` that takes a 2D list (matrix) as input and returns the sorted matrix. ",
+          "Step 2: Calculate the sum of each row in the matrix and store it in a list along with the corresponding row index, so that we can sort the rows based on their sums later."
+        ],
+        "code": "def sort_matrix(matrix):\n    # Step 2: Calculate the sum of each row in the matrix and store it in a list along with the corresponding row index\n    row_sums = [(sum(row), i) for i, row in enumerate(matrix)]\n    \n    # Step 3: Sort the rows based on their sums\n    sorted_row_sums = sorted(row_sums, key=lambda x: x[0])\n    \n    # Step 4: Reconstruct the sorted matrix\n    sorted_matrix = [row for _, row in sorted_row_sums]\n    \n    return sorted_matrix",
+        "f_score": 3.0999999999999996
+      }
+    ]
+  },
+  {
+    "task_id": "MBPP/13",
+    "method": "cot",
+    "code": "from collections import Counter\nimport re\n\ndef count_common(dictionary, n=1):\n    words = re.findall(r'\\b\\w+\\b', ' '.join(dictionary))\n    return Counter(words).most_common(n)",
+    "correct": false,
+    "time": 0.5685055255889893,
+    "raw_response": "```python\nfrom collections import Counter\nimport re\n\ndef count_common(dictionary, n=1):\n    words = re.findall(r'\\b\\w+\\b', ' '.join(dictionary))\n    return Counter(words).most_common(n)\n```"
+  },
+  {
+    "task_id": "MBPP/13",
+    "method": "astar",
+    "code": "from collections import Counter\n\ndef count_common(dictionary):\n    \"\"\"\n    Count the most common words in a dictionary.\n\n    Args:\n        dictionary (str): The input dictionary.\n\n    Returns:\n        dict: A dictionary where the keys are the words and the values are their respective frequencies.\n    \"\"\"\n    words = dictionary.lower().split()\n    word_freq = Counter(words)\n    return dict(word_freq)",
+    "correct": false,
+    "time": 2.3596129417419434,
+    "nodes_explored": 4,
+    "goals_found": 1,
+    "reasoning_trace": [
+      "Step 1:  Split the dictionary into individual words and convert them to lowercase to ensure accurate counting, regardless of case. This can be achieved by using the `split()` function to split the str",
+      "Step 2: Convert the list of words into a dictionary where the keys are the words and the values are their respective frequencies, using a dictionary comprehension or the `Counter` class from the `coll"
+    ],
+    "all_goals": [
+      {
+        "plan": [
+          "Step 1:  Split the dictionary into individual words and convert them to lowercase to ensure accurate counting, regardless of case. This can be achieved by using the `split()` function to split the str",
+          "Step 2: Convert the list of words into a dictionary where the keys are the words and the values are their respective frequencies, using a dictionary comprehension or the `Counter` class from the `coll"
+        ],
+        "code": "from collections import Counter\n\ndef count_common(dictionary):\n    \"\"\"\n    Count the most common words in a dictionary.\n\n    Args:\n        dictionary (str): The input dictionary.\n\n    Returns:\n        dict: A dictionary where the keys are the words and the values are their respective frequencies.\n    \"\"\"\n    words = dictionary.lower().split()\n    word_freq = Counter(words)\n    return dict(word_freq)",
+        "f_score": 3.0999999999999996
+      }
+    ]
+  },
+  {
+    "task_id": "MBPP/14",
+    "method": "cot",
+    "code": "def find_Volume(base, height, length):\n    \"\"\"\n    Calculate the volume of a triangular prism.\n\n    Args:\n        base (float): The base area of the triangular prism.\n        height (float): The height of the triangular prism.\n        length (float): The length of the triangular prism.\n\n    Returns:\n        float: The volume of the triangular prism.\n    \"\"\"\n    return 0.5 * base * height * length",
+    "correct": true,
+    "time": 1.071446180343628,
+    "raw_response": "```python\ndef find_Volume(base, height, length):\n    \"\"\"\n    Calculate the volume of a triangular prism.\n\n    Args:\n        base (float): The base area of the triangular prism.\n        height (float): The height of the triangular prism.\n        length (float): The length of the triangular prism.\n\n    Returns:\n        float: The volume of the triangular prism.\n    \"\"\"\n    return 0.5 * base * height * length\n```"
+  },
+  {
+    "task_id": "MBPP/14",
+    "method": "astar",
+    "code": "def find_Volume(base_area, height):\n    \"\"\"\n    Calculate the volume of a triangular prism.\n\n    Parameters:\n    base_area (float): The base area of the triangle.\n    height (float): The height of the prism.\n\n    Returns:\n    float: The volume of the triangular prism.\n    \"\"\"\n    volume = base_area * height\n    return volume",
+    "correct": false,
+    "time": 2.3394663333892822,
+    "nodes_explored": 4,
+    "goals_found": 1,
+    "reasoning_trace": [
+      "Step 1: Define the function `find_Volume` with parameters for the base area of the triangle and the height of the prism. ",
+      "Step 2: Define the formula for the volume of a triangular prism, which is the product of the base area and the height of the prism. This can be implemented as a simple multiplication operation within "
+    ],
+    "all_goals": [
+      {
+        "plan": [
+          "Step 1: Define the function `find_Volume` with parameters for the base area of the triangle and the height of the prism. ",
+          "Step 2: Define the formula for the volume of a triangular prism, which is the product of the base area and the height of the prism. This can be implemented as a simple multiplication operation within "
+        ],
+        "code": "def find_Volume(base_area, height):\n    \"\"\"\n    Calculate the volume of a triangular prism.\n\n    Parameters:\n    base_area (float): The base area of the triangle.\n    height (float): The height of the prism.\n\n    Returns:\n    float: The volume of the triangular prism.\n    \"\"\"\n    volume = base_area * height\n    return volume",
+        "f_score": 3.0999999999999996
+      }
+    ]
+  },
+  {
+    "task_id": "MBPP/15",
+    "method": "cot",
+    "code": "def split_lowerstring(s):\n    result = []\n    current = ''\n    for char in s:\n        if char.islower():\n            if current:\n                result.append(current)\n                current = ''\n        else:\n            current += char\n    if current:\n        result.append(current)\n    return result",
+    "correct": false,
+    "time": 0.743523120880127,
+    "raw_response": "```python\ndef split_lowerstring(s):\n    result = []\n    current = ''\n    for char in s:\n        if char.islower():\n            if current:\n                result.append(current)\n                current = ''\n        else:\n            current += char\n    if current:\n        result.append(current)\n    return result\n```"
+  },
+  {
+    "task_id": "MBPP/15",
+    "method": "astar",
+    "code": "import re\n\ndef split_lowerstring(s):\n    \"\"\"\n    Splits a string at lowercase letters.\n\n    Args:\n        s (str): The input string.\n\n    Returns:\n        list: A list of substrings separated by lowercase letters.\n    \"\"\"\n    return re.split(r'([a-z])', s)",
+    "correct": false,
+    "time": 1.856738567352295,
+    "nodes_explored": 4,
+    "goals_found": 1,
+    "reasoning_trace": [
+      "Step 1: Determine the approach to split the string at lowercase letters. ",
+      "Step 2: Identify the pattern in the string where lowercase letters are present and use a regular expression to match these patterns. This will allow us to split the string into substrings separated by"
+    ],
+    "all_goals": [
+      {
+        "plan": [
+          "Step 1: Determine the approach to split the string at lowercase letters. ",
+          "Step 2: Identify the pattern in the string where lowercase letters are present and use a regular expression to match these patterns. This will allow us to split the string into substrings separated by"
+        ],
+        "code": "import re\n\ndef split_lowerstring(s):\n    \"\"\"\n    Splits a string at lowercase letters.\n\n    Args:\n        s (str): The input string.\n\n    Returns:\n        list: A list of substrings separated by lowercase letters.\n    \"\"\"\n    return re.split(r'([a-z])', s)",
+        "f_score": 3.0999999999999996
+      }
+    ]
+  },
+  {
+    "task_id": "MBPP/16",
+    "method": "cot",
+    "code": "import re\n\ndef text_lowercase_underscore(text):\n    return re.findall(r'[a-z]+_[a-z]+', text)",
+    "correct": false,
+    "time": 0.3633384704589844,
+    "raw_response": "```python\nimport re\n\ndef text_lowercase_underscore(text):\n    return re.findall(r'[a-z]+_[a-z]+', text)\n```"
+  },
+  {
+    "task_id": "MBPP/16",
+    "method": "astar",
+    "code": "import re\n\ndef text_lowercase_underscore(text):\n    pattern = r'\\w+'\n    return re.findall(pattern, text)",
+    "correct": false,
+    "time": 1.5972785949707031,
+    "nodes_explored": 4,
+    "goals_found": 1,
+    "reasoning_trace": [
+      "Step 1: Define the function text_lowercase_underscore and import the necessary module (in this case, the re module for regular expressions). ",
+      "Step 2: Define the regular expression pattern to match sequences of lowercase letters joined with an underscore. This pattern can be created using the re module's escape and join functions to ensure t"
+    ],
+    "all_goals": [
+      {
+        "plan": [
+          "Step 1: Define the function text_lowercase_underscore and import the necessary module (in this case, the re module for regular expressions). ",
+          "Step 2: Define the regular expression pattern to match sequences of lowercase letters joined with an underscore. This pattern can be created using the re module's escape and join functions to ensure t"
+        ],
+        "code": "import re\n\ndef text_lowercase_underscore(text):\n    pattern = r'\\w+'\n    return re.findall(pattern, text)",
+        "f_score": 3.0999999999999996
+      }
+    ]
+  },
+  {
+    "task_id": "MBPP/17",
+    "method": "cot",
+    "code": "def square_perimeter(side_length):\n    return 4 * side_length",
+    "correct": true,
+    "time": 0.18219494819641113,
+    "raw_response": "def square_perimeter(side_length):\n    return 4 * side_length"
+  },
+  {
+    "task_id": "MBPP/17",
+    "method": "astar",
+    "code": "def square_perimeter(side_length):\n    \"\"\"\n    Calculate the perimeter of a square.\n\n    Args:\n        side_length (float): The length of a side of the square.\n\n    Returns:\n        float: The perimeter of the square.\n    \"\"\"\n    return side_length * 4",
+    "correct": true,
+    "time": 1.9933605194091797,
+    "nodes_explored": 4,
+    "goals_found": 1,
+    "reasoning_trace": [
+      "Step 1: Define the function signature and parameters. The function will take one parameter, which is the length of a side of the square. ",
+      "Step 2: Calculate the perimeter of the square by multiplying the side length by 4, since all sides of a square are equal. This calculation will be the return value of the function."
+    ],
+    "all_goals": [
+      {
+        "plan": [
+          "Step 1: Define the function signature and parameters. The function will take one parameter, which is the length of a side of the square. ",
+          "Step 2: Calculate the perimeter of the square by multiplying the side length by 4, since all sides of a square are equal. This calculation will be the return value of the function."
+        ],
+        "code": "def square_perimeter(side_length):\n    \"\"\"\n    Calculate the perimeter of a square.\n\n    Args:\n        side_length (float): The length of a side of the square.\n\n    Returns:\n        float: The perimeter of the square.\n    \"\"\"\n    return side_length * 4",
+        "f_score": 3.0999999999999996
+      }
+    ]
+  },
+  {
+    "task_id": "MBPP/18",
+    "method": "cot",
+    "code": "def remove_dirty_chars(s1: str, s2: str) -> str:\n    return ''.join([c for c in s1 if c not in s2])",
+    "correct": true,
+    "time": 0.4687807559967041,
+    "raw_response": "```python\ndef remove_dirty_chars(s1: str, s2: str) -> str:\n    return ''.join([c for c in s1 if c not in s2])\n```"
+  },
+  {
+    "task_id": "MBPP/18",
+    "method": "astar",
+    "code": "def remove_dirty_chars(str1, str2):\n    \"\"\"\n    Removes characters from str1 that are present in str2.\n\n    Args:\n        str1 (str): The original string.\n        str2 (str): The string containing characters to be removed.\n\n    Returns:\n        str: A new string with characters removed from str1 that are present in str2.\n    \"\"\"\n    str2_set = set(str2)  # Convert str2 to a set for efficient lookups\n    return ''.join([char for char in str1 if char not in str2_set])  # Use a list comprehension to filter out characters in str2",
+    "correct": true,
+    "time": 3.263150453567505,
+    "nodes_explored": 4,
+    "goals_found": 1,
+    "reasoning_trace": [
+      "Step 1: Define the parameters and return type of the function. The function will take two string parameters, `str1` and `str2`, and return a new string with characters removed from `str1` that are pre",
+      "Step 2: Use Python's built-in set data type to convert `str2` into a set for efficient lookups, as checking membership in a set is faster than in a string. This will allow us to quickly identify chara"
+    ],
+    "all_goals": [
+      {
+        "plan": [
+          "Step 1: Define the parameters and return type of the function. The function will take two string parameters, `str1` and `str2`, and return a new string with characters removed from `str1` that are pre",
+          "Step 2: Use Python's built-in set data type to convert `str2` into a set for efficient lookups, as checking membership in a set is faster than in a string. This will allow us to quickly identify chara"
+        ],
+        "code": "def remove_dirty_chars(str1, str2):\n    \"\"\"\n    Removes characters from str1 that are present in str2.\n\n    Args:\n        str1 (str): The original string.\n        str2 (str): The string containing characters to be removed.\n\n    Returns:\n        str: A new string with characters removed from str1 that are present in str2.\n    \"\"\"\n    str2_set = set(str2)  # Convert str2 to a set for efficient lookups\n    return ''.join([char for char in str1 if char not in str2_set])  # Use a list comprehension to filter out characters in str2",
+        "f_score": 3.0999999999999996
+      }
+    ]
+  },
+  {
+    "task_id": "MBPP/19",
+    "method": "cot",
+    "code": "def test_duplicate(arr):\n    return len(arr) != len(set(arr))",
+    "correct": true,
+    "time": 0.24407696723937988,
+    "raw_response": "```python\ndef test_duplicate(arr):\n    return len(arr) != len(set(arr))\n```"
+  },
+  {
+    "task_id": "MBPP/19",
+    "method": "astar",
+    "code": "def test_duplicate(arr):\n    seen = set()\n    for num in arr:\n        if num in seen:\n            return True\n        seen.add(num)\n    return False",
+    "correct": true,
+    "time": 1.733116865158081,
+    "nodes_explored": 4,
+    "goals_found": 1,
+    "reasoning_trace": [
+      "Step 1: ",
+      "Step 2: Create an empty set to store unique elements encountered so far. This will allow us to check for duplicates in constant time by checking if an element is already in the set."
+    ],
+    "all_goals": [
+      {
+        "plan": [
+          "Step 1: ",
+          "Step 2: Create an empty set to store unique elements encountered so far. This will allow us to check for duplicates in constant time by checking if an element is already in the set."
+        ],
+        "code": "def test_duplicate(arr):\n    seen = set()\n    for num in arr:\n        if num in seen:\n            return True\n        seen.add(num)\n    return False",
+        "f_score": 3.0999999999999996
+      }
+    ]
+  },
+  {
+    "task_id": "MBPP/20",
+    "method": "cot",
+    "code": "def is_woodall(n):\n    if n < 1:\n        return False\n    woodall = 1\n    while woodall < n:\n        woodall = woodall * 2 + 1\n    return woodall == n",
+    "correct": false,
+    "time": 0.6020841598510742,
+    "raw_response": "def is_woodall(n):\n    if n < 1:\n        return False\n    woodall = 1\n    while woodall < n:\n        woodall = woodall * 2 + 1\n    return woodall == n"
+  },
+  {
+    "task_id": "MBPP/21",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013074874877929688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/21",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008118152618408203,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/22",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011293888092041016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/22",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011043548583984375,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/23",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007388591766357422,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/23",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007312297821044922,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/24",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007643699645996094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/24",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009286403656005859,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/25",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007107257843017578,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/25",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007407665252685547,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/26",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007305145263671875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/26",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007543563842773438,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/27",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012736320495605469,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/27",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007722377777099609,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/28",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007660388946533203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/28",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007534027099609375,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/29",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007474422454833984,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/29",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011639595031738281,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/30",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007927417755126953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/30",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.000720977783203125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/31",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007312297821044922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/31",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007441043853759766,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/32",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007348060607910156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/32",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012644290924072266,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/33",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001013040542602539,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/33",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008423328399658203,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/34",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013091564178466797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/34",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007083415985107422,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/35",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.02419137954711914,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/35",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012240409851074219,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/36",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011074542999267578,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/36",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015420913696289062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/37",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010254383087158203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/37",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014960765838623047,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/38",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001148223876953125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/38",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010712146759033203,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/39",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011029243469238281,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/39",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012730121612548828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/40",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013899803161621094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/40",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00116729736328125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/41",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.012868165969848633,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/41",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013759136199951172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/42",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011246204376220703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/42",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010879039764404297,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/43",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010418891906738281,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/43",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015516281127929688,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/44",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013203620910644531,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/44",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010733604431152344,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/45",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014820098876953125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/45",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015006065368652344,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/46",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010764598846435547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/46",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012175559997558594,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/47",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012359619140625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/47",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010962486267089844,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/48",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001024484634399414,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/48",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009591579437255859,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/49",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001422882080078125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/49",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010466575622558594,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/50",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013413429260253906,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/50",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010478496551513672,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/51",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010180473327636719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/51",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014116764068603516,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/52",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010943412780761719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/52",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010793209075927734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/53",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010161399841308594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/53",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010104179382324219,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/54",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014832019805908203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/54",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013957023620605469,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/55",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009791851043701172,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/55",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009310245513916016,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/56",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013377666473388672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/56",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001180887222290039,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/57",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012202262878417969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/57",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014557838439941406,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/58",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011374950408935547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/58",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010340213775634766,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/59",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013511180877685547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/59",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012714862823486328,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/60",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010211467742919922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/60",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010390281677246094,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/61",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.012560129165649414,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/61",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012211799621582031,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/62",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010406970977783203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/62",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014607906341552734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/63",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010693073272705078,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/63",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013604164123535156,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/64",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001041412353515625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/64",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014064311981201172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/65",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010390281677246094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/65",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011107921600341797,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/66",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013816356658935547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/66",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010411739349365234,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/67",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009815692901611328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/67",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009663105010986328,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/68",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014989376068115234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/68",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010859966278076172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/69",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012671947479248047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/69",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001070261001586914,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/70",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011012554168701172,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/70",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013256072998046875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/71",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011758804321289062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/71",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012383699417114258,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/72",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001165628433227539,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/72",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010402202606201172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/73",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010309219360351562,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/73",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.013812541961669922,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/74",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011293888092041016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/74",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011565685272216797,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/75",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.014983654022216797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/75",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0048923492431640625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/76",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011620521545410156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/76",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009982585906982422,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/77",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009446144104003906,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/77",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013179779052734375,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/78",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012426376342773438,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/78",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010683536529541016,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/79",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.012457847595214844,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/79",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011911392211914062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/80",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013756752014160156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/80",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001058816909790039,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/81",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010771751403808594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/81",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001430511474609375,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/82",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010874271392822266,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/82",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012439489364624023,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/83",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010614395141601562,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/83",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010328292846679688,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/84",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009753704071044922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/84",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013740062713623047,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/85",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010256767272949219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/85",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009531974792480469,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/86",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012927055358886719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/86",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011372566223144531,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/87",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001417398452758789,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/87",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011928081512451172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/88",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011208057403564453,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/88",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012102365493774414,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/89",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.005305290222167969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/89",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010607242584228516,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/90",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009865760803222656,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/90",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001275777816772461,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/91",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012149810791015625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/91",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010726451873779297,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/92",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.011430501937866211,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/92",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011539459228515625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/93",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010373592376708984,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/93",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013430118560791016,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/94",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011324882507324219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/94",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011048316955566406,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/95",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.015436410903930664,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/95",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011644363403320312,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/96",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010671615600585938,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/96",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010457038879394531,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/97",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012965202331542969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/97",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010128021240234375,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/98",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009758472442626953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/98",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.014974355697631836,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/99",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010557174682617188,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/99",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010159015655517578,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/100",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001003265380859375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/100",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013730525970458984,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/101",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001138448715209961,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/101",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001359701156616211,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/102",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001298666000366211,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/102",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011553764343261719,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/103",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010585784912109375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/103",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013680458068847656,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/104",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014030933380126953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/104",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001077413558959961,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/105",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013551712036132812,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/105",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0019447803497314453,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/106",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001399993896484375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/106",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011441707611083984,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/107",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.012738466262817383,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/107",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0076749324798583984,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/108",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015482902526855469,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/108",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011258125305175781,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/109",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010309219360351562,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/109",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001329660415649414,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/110",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001110076904296875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/110",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.01178431510925293,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/111",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010728836059570312,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/111",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010650157928466797,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/112",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.005615234375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/112",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012078285217285156,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/113",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011446475982666016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/113",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013401508331298828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/114",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012362003326416016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/114",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012879610061645508,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/115",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012052059173583984,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/115",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001047372817993164,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/116",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001361846923828125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/116",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011682510375976562,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/117",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011222362518310547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/117",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.015411853790283203,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/118",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001172780990600586,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/118",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00131988525390625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/119",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011348724365234375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/119",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012654542922973633,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/120",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012929439544677734,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/120",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012154579162597656,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/121",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014345645904541016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/121",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011167526245117188,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/122",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013704299926757812,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/122",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001039743423461914,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/123",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011072158813476562,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/123",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014297962188720703,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/124",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010890960693359375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/124",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010440349578857422,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/125",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014443397521972656,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/125",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011439323425292969,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/126",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013735294342041016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/126",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011267662048339844,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/127",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013432502746582031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/127",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011601448059082031,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/128",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.012224674224853516,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/128",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013628005981445312,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/129",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011899471282958984,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/129",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013833045959472656,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/130",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012691020965576172,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/130",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014674663543701172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/131",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012233257293701172,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/131",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012731790542602539,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/132",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0017879009246826172,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/132",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015132427215576172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/133",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013859272003173828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/133",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012950897216796875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/134",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012505054473876953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/134",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011675357818603516,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/135",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.015411376953125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/135",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013713836669921875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/136",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.00140380859375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/136",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012423992156982422,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/137",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012180805206298828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/137",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013456344604492188,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/138",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012385845184326172,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/138",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013575553894042969,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/139",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013556480407714844,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/139",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014336109161376953,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/140",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001260519027709961,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/140",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.015927553176879883,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/141",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001348257064819336,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/141",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012662410736083984,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/142",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013742446899414062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/142",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00911092758178711,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/143",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012443065643310547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/143",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001569986343383789,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/144",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010752677917480469,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/144",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010101795196533203,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/145",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.00095367431640625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/145",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012156963348388672,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/146",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001295328140258789,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/146",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012078285217285156,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/147",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010907649993896484,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/147",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011012554168701172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/148",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009319782257080078,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/148",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008630752563476562,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/149",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.011963367462158203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/149",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010581016540527344,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/150",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011608600616455078,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/150",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010302066802978516,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/151",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009083747863769531,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/151",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.005078554153442383,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/152",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012624263763427734,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/152",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009455680847167969,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/153",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.014177083969116211,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/153",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.004743814468383789,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/154",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010557174682617188,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/154",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011470317840576172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/155",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009133815765380859,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/155",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009810924530029297,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/156",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010960102081298828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/156",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009031295776367188,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/157",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011360645294189453,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/157",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009655952453613281,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/158",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010478496551513672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/158",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011301040649414062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/159",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008788108825683594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/159",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010368824005126953,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/160",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008935928344726562,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/160",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009894371032714844,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/161",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.004242897033691406,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/161",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001195669174194336,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/162",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008339881896972656,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/162",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008211135864257812,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/163",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009682178497314453,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/163",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009353160858154297,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/164",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013511180877685547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/164",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014603137969970703,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/165",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.00154876708984375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/165",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.009515523910522461,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/166",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012936592102050781,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/166",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.004027366638183594,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/167",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011258125305175781,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/167",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001039743423461914,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/168",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010578632354736328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/168",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011072158813476562,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/169",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001123666763305664,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/169",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013279914855957031,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/170",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012166500091552734,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/170",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001142740249633789,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/171",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011749267578125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/171",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012199878692626953,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/172",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010058879852294922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/172",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015385150909423828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/173",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013172626495361328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/173",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010089874267578125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/174",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008678436279296875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/174",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008594989776611328,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/175",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010373592376708984,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/175",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008366107940673828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/176",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009853839874267578,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/176",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011539459228515625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/177",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.003573894500732422,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/177",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00228118896484375,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/178",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008196830749511719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/178",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008962154388427734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/179",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008037090301513672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/179",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009391307830810547,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/180",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007672309875488281,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/180",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008852481842041016,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/181",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015425682067871094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/181",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012030601501464844,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/182",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001220703125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/182",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013132095336914062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/183",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.010085105895996094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/183",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010385513305664062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/184",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010938644409179688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/184",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012824535369873047,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/185",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009918212890625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/185",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009405612945556641,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/186",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011832714080810547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/186",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011200904846191406,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/187",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011043548583984375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/187",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001341104507446289,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/188",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012409687042236328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/188",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012369155883789062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/189",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010001659393310547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/189",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.013757705688476562,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/190",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010652542114257812,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/190",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013146400451660156,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/191",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010411739349365234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/191",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.000978708267211914,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/192",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011870861053466797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/192",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011086463928222656,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/193",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.013497352600097656,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/193",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012662410736083984,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/194",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009672641754150391,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/194",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012018680572509766,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/195",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011408329010009766,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/195",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001058340072631836,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/196",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008251667022705078,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/196",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012471675872802734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/197",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011374950408935547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/197",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008983612060546875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/198",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011036396026611328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/198",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010135173797607422,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/199",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011723041534423828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/199",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011026859283447266,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/200",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001590728759765625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/200",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010709762573242188,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/201",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.000988006591796875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/201",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011365413665771484,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/202",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009219646453857422,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/202",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.013988494873046875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/203",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010409355163574219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/203",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009133815765380859,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/204",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011267662048339844,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/204",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001295328140258789,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/205",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014603137969970703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/205",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00110626220703125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/206",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011239051818847656,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/206",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001102447509765625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/207",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010802745819091797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/207",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009322166442871094,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/208",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015630722045898438,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/208",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009613037109375,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/209",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011723041534423828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/209",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001085519790649414,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/210",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.014789819717407227,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/210",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014030933380126953,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/211",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011794567108154297,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/211",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010335445404052734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/212",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009164810180664062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/212",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011785030364990234,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/213",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001238107681274414,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/213",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009868144989013672,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/214",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011789798736572266,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/214",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001344442367553711,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/215",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011146068572998047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/215",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015270709991455078,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/216",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012760162353515625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/216",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001386880874633789,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/217",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013873577117919922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/217",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010366439819335938,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/218",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009756088256835938,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/218",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013289451599121094,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/219",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013432502746582031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/219",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011065006256103516,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/220",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012845993041992188,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/220",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012052059173583984,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/221",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013082027435302734,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/221",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.000982522964477539,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/222",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012984275817871094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/222",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014405250549316406,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/223",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011203289031982422,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/223",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012292861938476562,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/224",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011165142059326172,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/224",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009114742279052734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/225",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009922981262207031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/225",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009424686431884766,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/226",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012049674987792969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/226",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010650157928466797,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/227",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013604164123535156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/227",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00116729736328125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/228",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013585090637207031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/228",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010364055633544922,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/229",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008573532104492188,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/229",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001519918441772461,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/230",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012767314910888672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/230",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012333393096923828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/231",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011036396026611328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/231",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001249074935913086,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/232",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011913776397705078,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/232",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001374959945678711,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/233",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014679431915283203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/233",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010023117065429688,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/234",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001313924789428711,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/234",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001087188720703125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/235",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014328956604003906,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/235",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010347366333007812,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/236",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013973712921142578,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/236",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010304450988769531,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/237",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011603832244873047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/237",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010466575622558594,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/238",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.013345956802368164,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/238",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010654926300048828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/239",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012285709381103516,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/239",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012993812561035156,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/240",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012331008911132812,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/240",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010502338409423828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/241",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010561943054199219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/241",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013530254364013672,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/242",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010714530944824219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/242",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015010833740234375,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/243",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010821819305419922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/243",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008828639984130859,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/244",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009963512420654297,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/244",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008146762847900391,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/245",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009884834289550781,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/245",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008149147033691406,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/246",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009176731109619141,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/246",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008866786956787109,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/247",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009312629699707031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/247",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010097026824951172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/248",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008292198181152344,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/248",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009171962738037109,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/249",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008475780487060547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/249",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007886886596679688,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/250",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010399818420410156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/250",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008454322814941406,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/251",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009429454803466797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/251",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008344650268554688,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/252",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012216567993164062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/252",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010607242584228516,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/253",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011227130889892578,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/253",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012149810791015625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/254",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.000980377197265625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/254",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011143684387207031,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/255",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011892318725585938,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/255",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009944438934326172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/256",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013077259063720703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/256",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001302957534790039,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/257",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015118122100830078,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/257",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.014385700225830078,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/258",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011303424835205078,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/258",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012302398681640625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/259",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009326934814453125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/259",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011587142944335938,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/260",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010898113250732422,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/260",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001386880874633789,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/261",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009567737579345703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/261",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012597322463989258,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/262",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009906291961669922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/262",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009336471557617188,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/263",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012059211730957031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/263",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012385845184326172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/264",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001180410385131836,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/264",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001107931137084961,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/265",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009417533874511719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/265",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008728504180908203,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/266",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009469985961914062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/266",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008654594421386719,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/267",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011796951293945312,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/267",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00086212158203125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/268",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001077890396118164,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/268",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00115966796875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/269",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010275840759277344,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/269",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009791851043701172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/270",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010223388671875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/270",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009791851043701172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/271",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.010260581970214844,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/271",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010924339294433594,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/272",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010223388671875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/272",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001522064208984375,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/273",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013263225555419922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/273",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014104843139648438,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/274",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010521411895751953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/274",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014641284942626953,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/275",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001392364501953125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/275",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014064311981201172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/276",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0016078948974609375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/276",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.014678001403808594,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/277",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014297962188720703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/277",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015299320220947266,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/278",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014796257019042969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/278",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.020859956741333008,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/279",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015118122100830078,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/279",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014765262603759766,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/280",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014638900756835938,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/280",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012930154800415039,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/281",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014188289642333984,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/281",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015194416046142578,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/282",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014815330505371094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/282",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014328956604003906,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/283",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015611648559570312,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/283",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015184879302978516,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/284",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015063285827636719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/284",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014722347259521484,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/285",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.013239145278930664,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/285",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001474618911743164,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/286",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001554250717163086,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/286",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014986991882324219,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/287",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015368461608886719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/287",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0056841373443603516,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/288",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014791488647460938,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/288",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0016057491302490234,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/289",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001493692398071289,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/289",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012242794036865234,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/290",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.00128936767578125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/290",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012934207916259766,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/291",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001371145248413086,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/291",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014200210571289062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/292",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014345645904541016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/292",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013952255249023438,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/293",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013344287872314453,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/293",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013229846954345703,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/294",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013461112976074219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/294",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013399124145507812,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/295",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013861656188964844,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/295",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012898445129394531,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/296",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001329660415649414,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/296",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013613700866699219,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/297",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013437271118164062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/297",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013539791107177734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/298",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013332366943359375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/298",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014605522155761719,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/299",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013642311096191406,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/299",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014162063598632812,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/300",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012860298156738281,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/300",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014119148254394531,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/301",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013344287872314453,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/301",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013358592987060547,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/302",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001438140869140625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/302",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012769699096679688,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/303",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012543201446533203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/303",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014064311981201172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/304",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001375436782836914,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/304",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013575553894042969,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/305",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013818740844726562,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/305",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00148773193359375,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/306",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013585090637207031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/306",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014619827270507812,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/307",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014183521270751953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/307",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012879371643066406,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/308",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012786388397216797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/308",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.005246400833129883,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/309",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010366439819335938,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/309",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014460086822509766,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/310",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014884471893310547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/310",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0017600059509277344,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/311",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014450550079345703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/311",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001474142074584961,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/312",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001142263412475586,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/312",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.031305551528930664,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/313",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012214183807373047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/313",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010867118835449219,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/314",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013585090637207031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/314",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010640621185302734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/315",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001092672348022461,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/315",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011136531829833984,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/316",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008594989776611328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/316",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013303756713867188,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/317",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013093948364257812,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/317",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011606216430664062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/318",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011265277862548828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/318",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012664794921875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/319",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010752677917480469,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/319",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001177072525024414,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/320",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010426044464111328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/320",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013041496276855469,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/321",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011322498321533203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/321",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009129047393798828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/322",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014433860778808594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/322",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014667510986328125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/323",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001373291015625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/323",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.013598442077636719,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/324",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014605522155761719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/324",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001148223876953125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/325",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012843608856201172,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/325",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010960102081298828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/326",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011372566223144531,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/326",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011305809020996094,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/327",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001337289810180664,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/327",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009546279907226562,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/328",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013184547424316406,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/328",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013279914855957031,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/329",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010135173797607422,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/329",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011861324310302734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/330",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008838176727294922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/330",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011026859283447266,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/331",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.011635303497314453,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/331",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009372234344482422,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/332",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012679100036621094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/332",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008835792541503906,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/333",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010738372802734375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/333",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010886192321777344,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/334",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010228157043457031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/334",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014526844024658203,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/335",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011897087097167969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/335",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001476287841796875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/336",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014529228210449219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/336",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009086132049560547,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/337",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011801719665527344,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/337",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008444786071777344,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/338",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012598037719726562,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/338",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.000997781753540039,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/339",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001112222671508789,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/339",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009329319000244141,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/340",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012462139129638672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/340",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008835792541503906,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/341",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010182857513427734,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/341",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013432502746582031,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/342",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.013071060180664062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/342",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015728473663330078,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/343",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011632442474365234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/343",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.013618230819702148,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/344",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001112222671508789,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/344",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012884140014648438,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/345",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011584758758544922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/345",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009887218475341797,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/346",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010764598846435547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/346",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.000946044921875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/347",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012679100036621094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/347",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.015765666961669922,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/348",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010018348693847656,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/348",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.013473033905029297,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/349",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011227130889892578,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/349",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012662410736083984,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/350",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.010776996612548828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/350",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012619495391845703,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/351",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013175010681152344,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/351",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.011350393295288086,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/352",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001129150390625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/352",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012216567993164062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/353",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001432657241821289,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/353",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001112222671508789,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/354",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011992454528808594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/354",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011684894561767578,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/355",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013086795806884766,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/355",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010905265808105469,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/356",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014870166778564453,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/356",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011570453643798828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/357",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012514591217041016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/357",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011188983917236328,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/358",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013649463653564453,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/358",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012192726135253906,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/359",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0041539669036865234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/359",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00133514404296875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/360",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011789798736572266,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/360",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012469291687011719,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/361",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011334419250488281,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/361",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011668205261230469,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/362",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012438297271728516,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/362",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001163482666015625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/363",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011625289916992188,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/363",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012118816375732422,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/364",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015439987182617188,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/364",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011477470397949219,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/365",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012998580932617188,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/365",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012068748474121094,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/366",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.005073070526123047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/366",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011539459228515625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/367",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011103153228759766,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/367",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010559558868408203,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/368",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014448165893554688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/368",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.005440473556518555,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/369",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011098384857177734,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/369",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.005835294723510742,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/370",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011019706726074219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/370",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011944770812988281,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/371",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011096000671386719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/371",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011553764343261719,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/372",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011174678802490234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/372",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010781288146972656,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/373",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012395381927490234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/373",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011386871337890625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/374",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001222372055053711,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/374",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011017322540283203,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/375",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001071929931640625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/375",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012159347534179688,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/376",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012755393981933594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/376",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013759136199951172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/377",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011644363403320312,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/377",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013189315795898438,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/378",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011932849884033203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/378",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011973381042480469,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/379",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012247562408447266,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/379",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012462139129638672,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/380",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001538991928100586,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/380",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015065670013427734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/381",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014786720275878906,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/381",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015060901641845703,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/382",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014424324035644531,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/382",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015506744384765625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/383",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015223026275634766,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/383",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015816688537597656,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/384",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014772415161132812,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/384",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014789104461669922,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/385",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014586448669433594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/385",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001497507095336914,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/386",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001371622085571289,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/386",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001466989517211914,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/387",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014383792877197266,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/387",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.011381387710571289,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/388",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014765262603759766,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/388",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012921810150146484,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/389",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013270378112792969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/389",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015070438385009766,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/390",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014150142669677734,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/390",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001371622085571289,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/391",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012006759643554688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/391",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014514923095703125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/392",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001466512680053711,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/392",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.01538538932800293,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/393",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015099048614501953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/393",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.013013362884521484,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/394",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014481544494628906,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/394",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014758110046386719,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/395",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014328956604003906,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/395",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013184547424316406,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/396",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001383066177368164,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/396",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013580322265625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/397",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013909339904785156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/397",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012080669403076172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/398",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.01421499252319336,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/398",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012891292572021484,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/399",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001367330551147461,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/399",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015265941619873047,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/400",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013127326965332031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/400",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012998580932617188,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/401",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010480880737304688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/401",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010974407196044922,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/402",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008409023284912109,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/402",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009579658508300781,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/403",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010058879852294922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/403",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009529590606689453,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/404",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011854171752929688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/404",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.015062093734741211,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/405",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010335445404052734,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/405",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.015374422073364258,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/406",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010821819305419922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/406",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001590728759765625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/407",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010154247283935547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/407",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011479854583740234,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/408",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.014991283416748047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/408",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011434555053710938,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/409",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011484622955322266,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/409",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00098419189453125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/410",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011429786682128906,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/410",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009095668792724609,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/411",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012619495391845703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/411",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011546611785888672,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/412",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011780261993408203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/412",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011889934539794922,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/413",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001379251480102539,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/413",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001233816146850586,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/414",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.010987043380737305,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/414",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00135040283203125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/415",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013811588287353516,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/415",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012936592102050781,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/416",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001163482666015625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/416",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.010487556457519531,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/417",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013227462768554688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/417",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013089179992675781,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/418",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014793872833251953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/418",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0016777515411376953,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/419",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015404224395751953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/419",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001672506332397461,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/420",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014774799346923828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/420",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001398324966430664,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/421",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014500617980957031,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/421",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014369487762451172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/422",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014753341674804688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/422",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014214515686035156,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/423",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014040470123291016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/423",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014278888702392578,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/424",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013549327850341797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/424",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013971328735351562,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/425",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014612674713134766,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/425",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015499591827392578,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/426",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0016140937805175781,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/426",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001489400863647461,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/427",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014362335205078125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/427",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014650821685791016,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/428",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014057159423828125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/428",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015444755554199219,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/429",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015282630920410156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/429",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015993118286132812,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/430",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014755725860595703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/430",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015332698822021484,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/431",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.01166224479675293,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/431",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014505386352539062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/432",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.007570028305053711,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/432",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001981973648071289,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/433",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014379024505615234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/433",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015544891357421875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/434",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.014868736267089844,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/434",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.015396595001220703,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/435",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.011677026748657227,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/435",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015132427215576172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/436",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014922618865966797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/436",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014700889587402344,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/437",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.012176036834716797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/437",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001783609390258789,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/438",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014209747314453125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/438",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011048316955566406,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/439",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008988380432128906,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/439",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.008318424224853516,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/440",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.009488105773925781,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/440",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010700225830078125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/441",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014634132385253906,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/441",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014955997467041016,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/442",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014491081237792969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/442",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001409292221069336,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/443",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011701583862304688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/443",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.005548715591430664,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/444",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012195110321044922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/444",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013141632080078125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/445",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014061927795410156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/445",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010654926300048828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/446",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.005738019943237305,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/446",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.008371114730834961,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/447",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0115203857421875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/447",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013833045959472656,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/448",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010743141174316406,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/448",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013751983642578125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/449",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001519918441772461,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/449",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015702247619628906,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/450",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.009352922439575195,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/450",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012671947479248047,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/451",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013918876647949219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/451",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.012975931167602539,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/452",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011963844299316406,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/452",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012204647064208984,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/453",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014450550079345703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/453",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013647079467773438,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/454",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014543533325195312,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/454",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014116764068603516,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/455",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0016219615936279297,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/455",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001377105712890625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/456",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001390695571899414,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/456",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001474618911743164,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/457",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014464855194091797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/457",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.013873815536499023,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/458",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011441707611083984,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/458",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.011220932006835938,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/459",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.00110626220703125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/459",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012316703796386719,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/460",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012240409851074219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/460",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011868476867675781,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/461",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015079975128173828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/461",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001069784164428711,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/462",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010523796081542969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/462",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010561943054199219,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/463",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012416839599609375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/463",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010790824890136719,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/464",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012900829315185547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/464",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011510848999023438,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/465",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011219978332519531,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/465",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011305809020996094,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/466",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012173652648925781,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/466",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011031627655029297,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/467",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001184225082397461,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/467",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012750625610351562,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/468",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012292861938476562,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/468",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001199960708618164,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/469",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001209259033203125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/469",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011665821075439453,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/470",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010936260223388672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/470",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013604164123535156,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/471",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001146078109741211,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/471",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011861324310302734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/472",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011391639709472656,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/472",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001093149185180664,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/473",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010716915130615234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/473",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012249946594238281,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/474",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011174678802490234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/474",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010914802551269531,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/475",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001055002212524414,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/475",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00102996826171875,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/476",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012569427490234375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/476",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012598037719726562,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/477",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011234283447265625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/477",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001130819320678711,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/478",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001050710678100586,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/478",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011518001556396484,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/479",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013835430145263672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/479",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012316703796386719,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/480",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013089179992675781,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/480",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013234615325927734,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/481",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010695457458496094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/481",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013515949249267578,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/482",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.00115966796875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/482",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001163482666015625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/483",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012521743774414062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/483",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010609626770019531,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/484",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001108407974243164,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/484",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014142990112304688,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/485",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013952255249023438,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/485",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013132095336914062,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/486",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011594295501708984,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/486",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001102447509765625,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/487",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012617111206054688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/487",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001195669174194336,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/488",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011453628540039062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/488",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011851787567138672,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/489",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011043548583984375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/489",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011801719665527344,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/490",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011258125305175781,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/490",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012083053588867188,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/491",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011091232299804688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/491",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012094974517822266,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/492",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013632774353027344,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/492",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011317729949951172,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/493",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001130819320678711,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/493",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011105537414550781,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/494",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001102447509765625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/494",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013277530670166016,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/495",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011518001556396484,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/495",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011398792266845703,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/496",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001056671142578125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/496",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012195110321044922,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/497",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012507438659667969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/497",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012578964233398438,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/498",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010907649993896484,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/498",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012750625610351562,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/499",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011758804321289062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/499",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010612010955810547,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/500",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013370513916015625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/500",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012159347534179688,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/501",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011279582977294922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/501",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011906623840332031,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/502",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011982917785644531,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/502",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001092672348022461,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/503",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013091564178466797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/503",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013930797576904297,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/504",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013477802276611328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/504",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011298656463623047,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/505",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012009143829345703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/505",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011112689971923828,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/506",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013878345489501953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/506",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011157989501953125,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/507",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011615753173828125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/507",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012247562408447266,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/508",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011858940124511719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/508",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013151168823242188,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/509",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011949539184570312,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/509",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001096963882446289,
+    "nodes": 2
+  },
+  {
+    "task_id": "MBPP/510",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014584064483642578,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "MBPP/510",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014395713806152344,
+    "nodes": 2
+  }
+]

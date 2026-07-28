@@ -1,0 +1,2523 @@
+[
+  {
+    "task_id": "CC/0",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013918876647949219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/0",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.018491506576538086,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/1",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011935234069824219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/1",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011479854583740234,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/2",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001245737075805664,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/2",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009393692016601562,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/3",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008754730224609375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/3",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008325576782226562,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/4",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013515949249267578,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/4",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014171600341796875,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/5",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0035414695739746094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/5",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010273456573486328,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/6",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009200572967529297,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/6",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009682178497314453,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/7",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012905597686767578,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/7",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009255409240722656,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/8",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008797645568847656,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/8",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.006932973861694336,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/9",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001016855239868164,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/9",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001256704330444336,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/10",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009057521820068359,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/10",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008819103240966797,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/11",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008132457733154297,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/11",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00081634521484375,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/12",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013489723205566406,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/12",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00625300407409668,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/13",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.003519296646118164,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/13",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0016825199127197266,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/14",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013401508331298828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/14",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009605884552001953,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/15",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009410381317138672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/15",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012156963348388672,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/16",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009403228759765625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/16",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.006734371185302734,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/17",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009284019470214844,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/17",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008413791656494141,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/18",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008177757263183594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/18",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008339881896972656,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/19",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010766983032226562,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/19",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008263587951660156,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/20",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012826919555664062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/20",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001028299331665039,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/21",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009474754333496094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/21",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0052144527435302734,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/22",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009093284606933594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/22",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010788440704345703,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/23",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009071826934814453,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/23",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.005789041519165039,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/24",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.004815340042114258,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/24",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001026153564453125,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/25",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009551048278808594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/25",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009064674377441406,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/26",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014691352844238281,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/26",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009160041809082031,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/27",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008661746978759766,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/27",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011522769927978516,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/28",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010020732879638672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/28",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008599758148193359,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/29",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009183883666992188,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/29",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008213520050048828,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/30",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007951259613037109,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/30",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014576911926269531,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/31",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009357929229736328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/31",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008697509765625,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/32",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008900165557861328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/32",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012845993041992188,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/33",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0015265941619873047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/33",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.000919342041015625,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/34",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.00118255615234375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/34",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010535717010498047,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/35",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013766288757324219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/35",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010209083557128906,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/36",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.005393028259277344,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/36",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.005148649215698242,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/37",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008211135864257812,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/37",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010259151458740234,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/38",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007708072662353516,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/38",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007565021514892578,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/39",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007357597351074219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/39",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008590221405029297,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/40",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.014945268630981445,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/40",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.005301475524902344,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/41",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010116100311279297,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/41",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009315013885498047,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/42",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011184215545654297,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/42",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008649826049804688,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/43",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008704662322998047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/43",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001268148422241211,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/44",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001461029052734375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/44",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010118484497070312,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/45",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011265277862548828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/45",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009095668792724609,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/46",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007801055908203125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/46",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010852813720703125,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/47",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008952617645263672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/47",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009849071502685547,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/48",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009202957153320312,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/48",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0015494823455810547,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/49",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008392333984375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/49",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.007533550262451172,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/50",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009629726409912109,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/50",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008454322814941406,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/51",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008189678192138672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/51",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008099079132080078,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/52",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011646747589111328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/52",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.000957489013671875,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/53",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012025833129882812,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/53",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009026527404785156,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/54",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012362003326416016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/54",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009012222290039062,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/55",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008456707000732422,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/55",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009641647338867188,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/56",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008578300476074219,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/56",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010046958923339844,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/57",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008990764617919922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/57",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010364055633544922,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/58",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008714199066162109,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/58",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008265972137451172,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/59",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007500648498535156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/59",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011284351348876953,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/60",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008478164672851562,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/60",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.008361577987670898,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/61",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008971691131591797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/61",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007624626159667969,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/62",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007803440093994141,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/62",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.005631685256958008,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/63",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009877681732177734,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/63",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0031430721282958984,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/64",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.000995635986328125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/64",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007960796356201172,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/65",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.008179664611816406,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/65",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008802413940429688,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/66",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008254051208496094,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/66",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007929801940917969,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/67",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.01161956787109375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/67",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009007453918457031,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/68",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.005083799362182617,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/68",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009267330169677734,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/69",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008649826049804688,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/69",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008432865142822266,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/70",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0007958412170410156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/70",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.01437830924987793,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/71",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009884834289550781,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/71",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012476444244384766,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/72",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009768009185791016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/72",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010609626770019531,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/73",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0013370513916015625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/73",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001271963119506836,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/74",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001291513442993164,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/74",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009202957153320312,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/75",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009648799896240234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/75",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010459423065185547,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/76",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.005222320556640625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/76",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011022090911865234,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/77",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009648799896240234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/77",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008780956268310547,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/78",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008831024169921875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/78",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013549327850341797,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/79",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009009838104248047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/79",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00118255615234375,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/80",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009129047393798828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/80",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010051727294921875,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/81",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001102447509765625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/81",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.008219242095947266,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/82",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010807514190673828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/82",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009300708770751953,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/83",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010144710540771484,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/83",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009348392486572266,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/84",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011720657348632812,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/84",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011823177337646484,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/85",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009822845458984375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/85",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008568763732910156,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/86",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008690357208251953,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/86",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012211799621582031,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/87",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009887218475341797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/87",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001313924789428711,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/88",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.000919342041015625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/88",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010938644409179688,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/89",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011496543884277344,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/89",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008721351623535156,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/90",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.011303424835205078,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/90",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012781620025634766,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/91",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009069442749023438,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/91",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011148452758789062,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/92",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010657310485839844,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/92",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00146484375,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/93",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010478496551513672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/93",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012311935424804688,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/94",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001079559326171875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/94",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012438297271728516,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/95",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009174346923828125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/95",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010564327239990234,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/96",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011892318725585938,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/96",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009722709655761719,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/97",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.008587360382080078,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/97",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013294219970703125,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/98",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0014302730560302734,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/98",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011661052703857422,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/99",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.005949974060058594,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/99",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011398792266845703,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/100",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011904239654541016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/100",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012392997741699219,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/101",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009171962738037109,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/101",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009205341339111328,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/102",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.00124359130859375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/102",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010287761688232422,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/103",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010712146759033203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/103",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.014719724655151367,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/104",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.005181789398193359,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/104",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010411739349365234,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/105",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010688304901123047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/105",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011515617370605469,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/106",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009768009185791016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/106",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.008175849914550781,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/107",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009663105010986328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/107",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009527206420898438,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/108",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.011101484298706055,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/108",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010156631469726562,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/109",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.008274555206298828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/109",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001107931137084961,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/110",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009925365447998047,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/110",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.01135110855102539,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/111",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012328624725341797,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/111",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010614395141601562,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/112",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009484291076660156,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/112",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008203983306884766,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/113",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001079559326171875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/113",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009047985076904297,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/114",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0028803348541259766,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/114",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011687278747558594,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/115",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009722709655761719,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/115",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.000926971435546875,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/116",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.008976459503173828,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/116",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008747577667236328,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/117",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011093616485595703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/117",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010478496551513672,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/118",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008456707000732422,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/118",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0014004707336425781,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/119",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001068115234375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/119",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009126663208007812,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/120",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008759498596191406,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/120",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008854866027832031,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/121",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0051136016845703125,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/121",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011725425720214844,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/122",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.010917901992797852,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/122",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008916854858398438,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/123",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008456707000732422,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/123",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008533000946044922,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/124",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010516643524169922,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/124",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008327960968017578,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/125",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.007089853286743164,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/125",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008008480072021484,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/126",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008692741394042969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/126",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0007805824279785156,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/127",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010981559753417969,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/127",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008256435394287109,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/128",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009715557098388672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/128",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.007808685302734375,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/129",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008852481842041016,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/129",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008268356323242188,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/130",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010712146759033203,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/130",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009059906005859375,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/131",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.008192300796508789,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/131",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008907318115234375,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/132",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009057521820068359,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/132",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009694099426269531,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/133",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009407997131347656,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/133",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010418891906738281,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/134",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0010325908660888672,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/134",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009446144104003906,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/135",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008907318115234375,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/135",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008809566497802734,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/136",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011479854583740234,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/136",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.007957935333251953,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/137",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009000301361083984,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/137",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0009641647338867188,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/138",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001049041748046875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/138",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.00775909423828125,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/139",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009839534759521484,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/139",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001134634017944336,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/140",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009415149688720703,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/140",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008471012115478516,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/141",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011301040649414062,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/141",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010037422180175781,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/142",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001032114028930664,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/142",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008835792541503906,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/143",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012884140014648438,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/143",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008654594421386719,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/144",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.004397153854370117,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/144",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0013666152954101562,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/145",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.00103759765625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/145",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008804798126220703,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/146",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0012340545654296875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/146",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0010879039764404297,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/147",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008487701416015625,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/147",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.010913372039794922,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/148",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0009815692901611328,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/148",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012679100036621094,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/149",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001107931137084961,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/149",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012862682342529297,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/150",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008413791656494141,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/150",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.004028797149658203,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/151",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.005026340484619141,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/151",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0012004375457763672,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/152",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008475780487060547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/152",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.001125335693359375,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/153",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011444091796875,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/153",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008580684661865234,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/154",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.007620811462402344,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/154",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0008919239044189453,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/155",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0008475780487060547,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/155",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.013616085052490234,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/156",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.0011219978332519531,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": "CC/156",
+    "method": "astar",
+    "code": "",
+    "correct": false,
+    "time": 0.0011112689971923828,
+    "nodes": 2
+  },
+  {
+    "task_id": "CC/157",
+    "method": "cot",
+    "code": "",
+    "correct": false,
+    "time": 0.001043081283569336,
+    "response": "ERROR: ConnectionError"
+  },
+  {
+    "task_id": 

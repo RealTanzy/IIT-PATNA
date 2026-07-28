@@ -1,0 +1,6512 @@
+[
+  {
+    "question": "Based on the above statement, which of the following can be derived?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "So what are the three young people on business?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "According to the above statement, which of the following can be drawn about this Chinese medicine preparation?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can best strengthen the above argument.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "According to the above statement, it can be concluded that who is not in the fourth?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "According to the above statement, you can get which of the following?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is true will most weaken the above argument.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "The result of the match showed that only one argument was correct, so who won the championship?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is the conclusion must be assumed.",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is assumed by the above argument.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is true is the best argument against the above argument.",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can best question the above view?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which one, if true, most doubts the views of the above media.",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If it is true, can it most support the opinions of the above experts?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, most doubts the opinions of the above experts?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Based on the above statement, which of the following can be derived?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Based on the above information, regarding the order of the five stations from west to east, which of the following is possible?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If Jiushang Station is adjacent to Haoyun Station and east of Haoyun Station, it can be concluded that?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If Hao Yun stands to the east of Jiushang Station, you can get?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If Haoyun Station is adjacent to Yinling Station, you can get?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, can best refute the above argument?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, will best support the above argument?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, best supports the above researchers \u2019views?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Regarding the overall average price of residential housing in the above three cities, which of the following judgments is wrong?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most appropriate as a corollary of the above discussion?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, would best support the above argument?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following must be selected?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If Guo Yanran is selected, which of the following must also be selected?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If He Zhilian is not selected, which of the following is not selected?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If Tang Xiaohua is selected, which two of the following must be selected?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following, if true, best supports the above-mentioned scientists \u2019speculation?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, would best refute the views of ordinary people?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is true to best refute the above speculation?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following, if true, can best refute the views of the above scientists?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, can best refute the views of the above scientists?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "In order from bottom to top, which of the following matches the distribution of the above floors?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the Human Resources Department is not at the upper level of the Administration Department, which of the following may be correct?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the human resources department is not on the top floor, the floors that the R & D department may be on are?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the Finance Department is on the third level, which of the following may be correct?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following may be the two departments where the first and second tiers are located?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most similar to the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, would best refute the above experimental conclusion?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, can best refute the above argument?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following, if true, would best support the above research findings?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Regarding the newly recruited researchers of the unit in 2013, which of the following judgments is correct?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, best supports the idea of \u200b\u200bgradually extending the retirement age?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, would weaken the above argument most?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most suitable as a corollary of the above discussion.",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following, if true, would best refute the arguments of the above supporters?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most important for evaluating the above conclusion?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following conclusions can be drawn from the above conclusions?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most helpful in eliminating this inconsistency?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The comments of Ukrainian observers are best used to refute which of the following?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can most question the above view?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can guarantee the correctness of the above statement?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If you want to get the conclusion that the plane was hijacked by a terrorist organization, which of the following should be added?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can best question the above research conclusions?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most similar to the above reasoning?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is most likely the hypothesis of the above argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can best question the decision of the city government?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following means exactly the same as the above assertion?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can weaken Lao Zhang \u2019s suggestion the most?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following best refutes the above argument?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following raises the most serious question to the above conclusion?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following may be correct?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following must be correct?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is correct, you can determine the employer of each graduate?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If Liu was hired by Tianxuan, which of the following must be wrong?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "According to this statistic, which of the following must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The decision of the academic conference organizing committee is most likely based on which of the following assumptions?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can best question the blogger \u2019s conclusion?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can most strongly support the views of the above jurists?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following best supports the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If only one sentence of the analyst \u2019s prediction is correct, who is the first?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most similar to the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following cannot be true?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following conclusions can be made based on the above discussion?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can guarantee the correctness of the above statement?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most similar to the question-making argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, would most weaken the above arguments and suggestions?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following most appropriately summarizes the loopholes in the above argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Based on the above conclusions, which of the following conclusions is most likely to be drawn?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following most accurately summarizes the controversial focus of Ms. Zheng and Mr. Hu?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, would most weaken the above argument?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following most appropriately summarizes the loopholes in the conclusions of the Peace Foundation?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following items are true, they can weaken the above argument, except.",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the following item is true, can the argument be strengthened most?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, would most weaken the above conclusions of the government of Country H?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most likely assumed by the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following most accurately summarizes the method Xiao Wang used to refute Xiao Chen's views?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "How many guests did Mr. Chen come forward to invite?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The logic loophole in the above argument is most similar to the following one?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "The following assumptions can make the above inference hold, except.",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Based on the above experiment, which of the following must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following most appropriately points out the loophole of the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "An analogy with which of the following inferences shows that the above inferences are not true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above determination is true, which of the following must be true?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, would most weaken the above argument?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Kobayashi is most likely to understand the rules of swimming as?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, would most weaken the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above determination is true, which of the following must be true?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If F and M are not in charge of the same department, which of the following must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options is the closest to the meaning of this maxim?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following supplements will most strongly support the reasoning in the question stem?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following conclusions can be deduced from the above discussion?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following reasoning clearly shows that the above argument is not valid?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following, if true, best supports the doctor \u2019s conclusion?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Now we need to open the No.1 valve, which two valves are to be opened at the same time?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following questions is most relevant for refuting the above reasoning?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options is not the implied meaning or conclusion that can be derived?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "It turned out that only one of the three instructors was right. Which one of the following must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following best explains the contradictory statement above?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options is a correct evaluation of the company and its contract?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above proposition is true, then which of the following must be true?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "These people's suspicions are based on which of the following unstated premises?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Who can meet all the requirements of Li Na?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following cannot be a logical inference from the above conclusion?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, is the most doubtful of the above conclusion?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, best supports the scientist \u2019s conclusion?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Since the conclusion of \"friends like dung\" is not true, it can be logically derived?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "The following are all questions about the above views, except?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "According to the above situation, we know that the winner is.",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which sentence is most appropriate for the following?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options is not a logical inference from the above sentence?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The above conclusion is based on which of the following assumptions?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is most important for evaluating the decision of the supermarket management?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above theory about the origin of the moon is correct, which one of the following conclusions can best be supported?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following supplements can explain the inconsistency between the total number of people mentioned in the question stem and the number of people with different identities?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the No.6 player plays in the final, which of the following must be true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most helpful in explaining the Osprey \u2019s predatory habits mentioned above?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, cannot weaken the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Based on your understanding, which of the following options is most appropriate as the definition of \"bottom line ethics\"?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if correct, is most helpful in explaining the contradictions in the above statement?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is different from the expression in the stem?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "To verify this conclusion, which of the following experimental methods is the most reliable?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if proven, can reasonably lead to the salesperson \u2019s conclusion?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options is the same as the argument in the question stem?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is a correct description of the four assertions in the stem?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "In order to make the last sentence in the subject a logical inference from the previous sentences, which of the following premises needs to be added?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the scientist \u2019s proposal to control the European fern is adopted, which of the following is necessary for its success?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options most clearly shows the absurdity of the above reasoning?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following provides the strongest support for the argument in the question stem?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If S and Z are now connected at the same time, which of the following must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Based on the above conditions, which of the following must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Each of the following patients can be treated by Dr. Li, except which one?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If E is treated by Dr. Wang, which of the following must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If Dr. Li is responsible for the treatment of G, which of the following may be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "According to the question, which of the following must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If Jesse goes to Dalian, which of the following must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the conclusion of the question is true, which two people cannot go to Hangzhou at the same time?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Based on the question, can you determine which of the following options is true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options can be derived from the above questions?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is true will raise the most doubts about the opinions of the above experts?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the essayist's statement is true, which of the following options cannot be true?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options does not apply to Bush \u2019s logic?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above items are true, which of the following must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The above argument is based on which of the following unstated premises?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options uses the same reasoning method as in the question stem?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The fact that Liu Xiang won the championship and his words do not constitute a rebuttal to which of the following assertions?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following conclusions can be drawn from the above statement?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the statement in the stem is true, which of the following must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If only one of the above three sentences is true, which of the following must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is true will most strongly indicate that the above explanation is incorrect?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Based on the above, which of the following must be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following arguments contains defects most similar to those in the above argument?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most helpful in explaining the phenomenon mentioned in the title, that is, the result of the throw is determined by certain factors, but it is difficult to predict?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements must be assumed in the above reasoning?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options is closest to what Premier Wen Jiabao said above?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, best supports the scientist \u2019s conclusion?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Based on the above questions, which of the following options for night duty is true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is based on the assumptions that the above argument relies on?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following best confirms the expert's warning?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Assuming that the death penalty cannot prevent crime, then in which of the following ways will Zhang Shan and Li Si \u2019s views be affected?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Students are most likely to understand the professor \u2019s statement as?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following must be assumed in the above conclusion?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is the speaker who is most willing to answer the question?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is true, which weakens the argument most strongly?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if correct, will best reconcile the inconsistencies between the information in the question?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "The above argument cannot be derived?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following sentences is different from the above sentence?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following is true, it is most helpful to explain why sucrose kills bacteria deep in the wound?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which one of the following correctly describes David's choice?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Regarding the meaning of the relevant words in this cryptographic language, which of the following statements may be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is true can raise greater doubts about the above conclusion?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The above example best illustrates which of the following scientific statements?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following results can be derived from the above conditions?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is the assumption on which the above argument is based?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following options will it most strongly support?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The above argument must assume which of the following?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If J is the first speaker, who must be the second speaker?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If J is the fourth speaker, who must be the third speaker?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If L speaks before lunch and M is not the sixth speaker, the speaker immediately after M must be?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the speeches of M and N are separated by lunch, which of the following lists all speakers that can be arranged between M and N?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If J speaks before F, how many N can be ranked?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following four players can participate in the game together?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following players will definitely participate in the game?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following listed players cannot participate in the game together?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If H does not participate in the game, which of the following two players must be included in the game?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which two of the following players will be selected by the coach to make the four-person team the only choice?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "In order to deduce the above conclusions logically, it is necessary to assume which of the following is the premise?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements can best complete the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following, if true, is the most doubtful of an assertion?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following conclusions can best be supported?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following cannot be derived from the above sentence?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above items are true, which of the following items must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is closest to the meaning of the above paragraph?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is the hypothetical hypothesis of this scientist?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following does not constitute doubt or rebuttal to the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following questions is most important for commenting on the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options can logically complete the above argument?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following does not constitute a rebuttal to the above argument?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following questions does not constitute a doubt about the reliability of the above research conclusion?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following methods is most helpful to prove the reliability of the above research conclusion?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above is true, which statement is most strongly supported?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If all of the above are true, which of them strongly supports the following statement?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements cannot be false?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which statement cannot be true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, in addition to which one can provide a reasonable explanation for the above exception?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The following hypothesis can give the strongest support for the above reasoning?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, can best explain the flow of most of the 100 billion yuan savings funds?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which statement is best supported?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is the hypothesis that the above argument relies on?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements about the situation over the past five years is the assumption upon which the above discussion relies?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can most strongly support the above argument?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is the obvious meaning of the above sentence?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following conclusions is most strongly supported?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements gives the most reasonable explanation for the change in the above problem?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following most accurately describes the shortcomings of the above argument?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the hypothesis upon which the superior argument depends?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following cannot be derived from the meaning of the title?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one will weaken the above conclusion most seriously?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is true and can raise the most doubts about this official \u2019s argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the following statements are true, except for which one can weaken the above argument?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following lists are acceptable member choices for these two groups?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the members of the printing group are composed of F, H, L, and M, and the members of the binding group are composed of G, H, and J, then K can replace which member of the two groups without violating any of the given conditions?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the printing group has only three members, G, H, and L, and under sufficient conditions, the two groups have as many common members as possible, then which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If both K and L are members of both groups, and the printing group has exactly three members, which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "How many employees can be a member of printing group and binding group at most?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following lists are acceptable arrangements for the second team's performance?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If H is in Team 2, which of the listed arrangements is acceptable for Team 1?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is an acceptable arrangement for the first team's performance?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If G is in team 1, which pair of magicians can be in team 1?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If G is in team 1 and K is in team 2, which of the following magicians must be behind team 2?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the following items are true, can the above opinions be questioned, except?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which conclusion is most appropriate to derive from the question stem?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements cannot be false?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following conclusions can be derived from the above statement?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following most accurately points out the fallacy of this statistical reasoning?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the most appropriate conclusion for the above argument?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can most logically complete the above discussion?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If this team does not go to I Peak due to climate reasons, which of the following must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options does not help explain the gap between the statistics in the question and the people \u2019s feelings?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the findings in the above survey are correct, which of the following conclusions can be drawn based on this?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following is true, can you raise the most doubts about this expert's point of view?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is true will prove that at least one of the premises of the above reasoning is false?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, can give the economist \u2019s assertion the greatest support?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The following options all support the point of view in the question, except?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The assumptions relied upon by the above comments are?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, best supports Li Ming \u2019s point of view?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following options is a proper evaluation of the \"me\" reasoning?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is true and seriously weakens the views in the above discussion?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options poses the weakest question to the point of view in the question?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Please determine which of the following options is true?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements, if true, weakens the above argument the most?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, can weaken the above argument to the greatest extent?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following does not question the reliability of statistical inference?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options most strongly supports the argument in the question?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, can explain this seemingly contradictory attitude of Beijing taxi drivers?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following questions is most relevant for evaluating the above argument?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The reasoning in which of the following is most similar to the one above?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can most logically complete the above discussion?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Please logically predict the result of the match based on the question?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The order of the five islands from north to south can be?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If G is adjacent to I and to the north of I, which of the following statements must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If I is at a position north of G, which of the following states that positioning is true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If it is found that G is the northernmost island, how many possible arrangements are there for this group of islands?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If G and E are adjacent, which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the information in the stem is true, which of the following conclusions will be confirmed?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, can explain the above contradiction?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following does not weaken, but supports the argument in the question stem?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is the hypothesis discussed by the economist?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options does not support the argument in the question stem?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following items are true, you can question the above points, except?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the premises in the question stem are true, you can infer?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above statement is true, which of the following must be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Logically, which of the following is an appropriate evaluation of the argument in the question?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is most consistent with the principles discussed above?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following may list the final distribution of these 7 employees?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following lists is a complete and accurate list that cannot be assigned to the production department?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, can the distribution of 7 employees be completely determined?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following pairs of employees is unlikely to be assigned to the sales department?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If X and F are assigned to the same department, which of the following statements cannot be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If we add\" life does not mean emptiness \"to the above argument, what other conclusion can this philosopher draw?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "In answering the reporter's question, the professor used the strategy expressed in which of the following statements?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the hypothesis on which this parent \u2019s inference relies?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements, if true, can reasonably explain the seemingly contradictory phenomenon?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements, if true, can best explain the seemingly contradictory phenomenon?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the hypothesis on which this critic \u2019s conclusion relies?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following demonstration techniques is used in the above argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statements are true, they can weaken Rachel. Carson's conclusion, except.",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements, if true, can weaken the conclusion of the above argument most effectively? \u2019.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is the same as the method of argument of the Japanese Supreme Court?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following conclusions can be derived from the above statement?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements is most suitable as a conclusion derived from the above discussion?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "The reasoning in the above argument is flawed because the argument.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following options are true, they can support the expert's point of view, except-.",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following will be the strongest support for the above conclusion if it is true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best describes the flaws of the above argument?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements, if true, can weaken the above argument most effectively?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following conclusions can be derived from the above statement?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following expressions does not agree with the expression above?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following items are true, all inconsistencies in the above may be reasonably explained, except.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the following items are true, they will enhance the confidence of this reporter, except.",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, can weaken the above argument most effectively?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements, if true, can weaken the argument most strongly?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following conclusions can be derived from the above discussion?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "This shows which of the following can most logically complete the above discussion?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If Xiao Wang told Xiao Zhao all the truth, which of the following must be true?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, then the following must be true, except.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements is an implicit assumption in police remarks?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements, if true, can weaken the above conclusion most effectively?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best describes the flaws of the above argument?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements, if correct, can weaken the above conclusion most effectively?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following, if true, can best strengthen Zhang Tao \u2019s objections?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements, if true, paid the strongest criticism of the company \u2019s general manager on the human resources department \u2019s proposal?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The following items can be derived from Loren Barra \u2019s exposition, except?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements, if true, can weaken the above argument most effectively?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The above argument is wrong because it?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following may list eligible cultivation arrangements?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If s is planted in an even-numbered vegetable pool, which of the following statements must be true?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If S and Q are planted in odd-numbered vegetable ponds, which of the following statements may be true?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements cannot be true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the H species is in No.2 Caichizi, which of the following statements must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements may be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If there is an I in the subcommittee where M serves, which of the following statements may be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If F and M are not members of the same subcommittee, which of the following statements must be true?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be false?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "In order for the above conclusion to be true, which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, can the above argument be weakened most effectively?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If this saying is true, which of the following statements must be false?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, can the above argument be weakened most effectively?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "A lot of meaningless words can cause people to respond positively or negatively. \" Which of the following roles does this assertion play in the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The following statements, except which one, can explain this American approach?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements is true, can the biggest question be raised?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which argument is most similar to the reasoning above?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the most accurate summary of the features of form and potential mentioned above?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, can the Czech official's assertion be questioned the most?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements has the most serious inconsistency with Chen Guangfang \u2019s assertion?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements is true, is it most advantageous to strengthen the above argument?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If any of the following statements, can the above conclusion be reached logically?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, in addition to which statement, can you question the conclusion of the above argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements does not support the above argument?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, can the above argument be strengthened most effectively?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best matches the economist \u2019s description of the difference between normal and low-grade products?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements is the logical conclusion of the economist \u2019s argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If which of the following statements is true, which strongly supports the expert's point of view?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Adding the following statement, this official can come to the conclusion that \"China has not plundered African resources\"?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements contains the reasoning errors most similar to the ones above?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption that led to the above conclusion?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Based on the above statement, please determine which of the following statements is false?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements most accurately indicates the error in the above reasoning?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be false?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements is true, can the above argument be weakened most effectively?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The answer to which of the following questions would hardly question the conclusion of this study?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Coupled with which of the following statements, it can be logically introduced that \"some track and field athletes participating in the 200-meter competition did not participate in the 4 \u00d7 100-meter competition\"?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is assumed by this sociologist \u2019s assertion?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The answer to which of the following questions is most helpful in evaluating the appeal argument?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The following statements, except which one, can support the scientist's point of view?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements is most suitable as the conclusion of the above discussion?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The differences between Zhang Qiang and Li Ming are?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be false?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following inferences is most similar to the one used above?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following ways did Zhu Hong's argument take place?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, the most serious shaken Lin Na's rebuttal to Zhu Hong?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following items (from left to right) may be the athlete's ranking from the first to the seventh to the finish line?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following athletes listed in the list of clothing can not be red?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If X reaches the finish point third, the following athlete's costume must be green?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the clothing of three athletes happens to be green, which of the following athletes must be green?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "It is impossible for the athletes listed in which of the following to reach the finish line one after another?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following may list the complete and accurate arms allocation plan for recruits?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following lists is a list of all recruits who are unlikely to be engineering soldiers?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, can you fully determine the arms of the seven recruits?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following recruits cannot be assigned as transport soldiers together?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If X is not assigned as an engineer, which of the following statements may be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "This commenter \u2019s reasoning is flawed because he.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best describes the flaws in the above argument?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, can the strongest support for the above argument?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption that holds the above conclusion?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, is it most helpful to explain the above behavior of the vervet monkey?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, which strongly supports the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following inferences is most similar to the above inferences?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, will the above conclusion be weakened most?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "In all of the following statements, except for which one, refute the assumptions demonstrated above?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is the hypothesis required by this ethicist \u2019s argument?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements most accurately expresses the meaning of Perrin \u2019s creed?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements is true, can the above medical scientist's conclusion be given the strongest support?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, is it most helpful to eliminate the obvious inconsistencies in the above description?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption upon which the above argument relies?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, in addition to which one can weaken the above argument?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is used as a hypothesis, the conclusion of the above reasoning can be logically derived?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, can we best explain the seemingly contradictory phenomenon?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, the above argument is weakened most effectively?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following ways of reasoning is most similar to the above argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following assertions can support the opinions of these experts?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best describes the flaws in Zhang Hua \u2019s inference?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, it weakens the speculation above?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements accurately summarizes the most serious flaw of the above argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the hypothesis on which student representative L\u2019 s complaint relies?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best fits the principles expressed above?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements is true, will it weaken the author's interpretation of \"unmarried with the same surname\"?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the following statement is true, which one best explains the above anomalies?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption required for the above conclusion?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following arguments is most similar to the above argument?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, provides the best explanation for the abnormal behavior of male brown bears?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, can the conclusion of the above argument be drawn logically?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best illustrates the shortcomings of the above reasoning?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If any of the following statements is true, can the above argument be weakened most effectively?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, will it be most helpful to resolve the doubts above?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following reasoning has the same form as the above reasoning?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements most accurately expresses the underlying principles underlying the above argument?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, gives the best explanation for the inconsistency above?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following lists the possible exhibition order?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the age of Y is the second earliest, which of the following statements might be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following cannot be the earliest porcelain?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the age of X is earlier than S, which of the following statements might be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the age of M is earlier than Q but later than K, which of the following statements might be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following lists the possible combinations of accompaniment and singer?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If X is an accompaniment to L and H, which of the following statements must be true?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If W is the accompaniment of F and M, which pair of singers can X accompany?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "W cannot accompany any of the following singers?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "It is impossible for Y to accompany the following pair of singers?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following questions is most important to assess the rationality of the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements cannot be supported?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is not a hypothesis for the \"flying rhino\" action?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one gives the best explanation for the scientist's confusion?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements is true and provides the best explanation for scientists \u2019beliefs?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one is the strongest proof of the justification of the above principle?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following points out the logical question in the lawyer \u2019s answer?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements most accurately points out the flaws in the above defense.",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements about the students in the class must be true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one is most appropriate to challenge the above conclusion?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, all but one of them question the netizen's judgment?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the sand monk's words are true, which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The reasoning in the above reasoning is flawed because of the argument?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, all but one of the items can weaken the conclusion discussed above.",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following ways of reasoning is most similar to the reasoning of the above-mentioned sophisters.",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following must be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the following statement is true, which one would most strongly weaken the above argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is true, which most seriously shakes the traditional view of the origin of the Gua name?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The defect of which of the following arguments is most similar to the above argument.",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements is true, will it most support the hypothesis of the above scientists?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the hypothesis that the above argument relies on?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements most preparedly points out the shortcomings of the above argument?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following best describes the techniques used in Paine \u2019s argument.",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements can provide the best support for the above conclusion?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The answer to which of the following questions is least relevant to assess the authenticity of the above report?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is consistent with the above two documents?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, can we best explain the seemingly contradictory phenomenon?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements accurately points out the shortcomings of the above reasoning?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements is true, can it best explain why the German government risked adopting this policy?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statements are true, all but one can weaken Aristotle \u2019s interpretation.",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one most powerfully weakened the expert's judgment?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, in addition to which one can weaken the above argument?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is necessary to evaluate the dumping behavior mentioned above?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following principles is most helpful to show the rationality of the above reasoning?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which hypothesis is best supported?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the hypothesis on which Lu Bian \u2019s argument relies?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "How many chefs can meet the above conditions?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements most pointed out the shortcomings of the above argument?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements is not necessarily true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can be a complete and accurate arrangement of the duty dates of these people?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If P is on duty in the second day, which of the following can be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If H is on duty the same day before S, which of the following must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "The following lists the order of serving from the first to the seventh, which one meets the conditions?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the fourth goes to X, which of the following statements must be true?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the fourth is K, which of the following statements may be true?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following may be true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the third is M, which of the following statements may be true?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements constitutes a refutation of the above view?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements is the above conclusion needs to be assumed?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "The following statements can be logically derived from the above, except.",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The following items are all implicit in the local official \u2019s words, except.",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above statement is true, the following statements must be true, except.",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "From the painter's words, which of the following statements can only be logically derived?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one most strongly weakens the conclusion above?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one best explains the above phenomenon?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one can best explain the seemingly contradictory phenomenon?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "According to the above statement, how many people are the least likely to attend the seminar? How many people are the most likely?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "In response to Wang Gang's discussion, which of the following demonstration techniques did Li Yan use?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The following statements all weaken the conclusions above, except.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements best supports the above statement?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following is the logical corollary of the statement above?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements most appropriately points out the problem with the advertisement?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements can be appropriately derived from the above statement?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the hypothesis required for this argument?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "The following statements conflict with the ideas expressed above, except.",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one is most helpful to eliminate the obvious inconsistencies in the above description?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one most strongly supports the above expert's conclusion?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one most strongly challenges the above conclusion?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the following statement is true, which item best explains the seemingly inconsistent phenomenon?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following reasoning has the same logical error as the above reasoning?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "The following statements all have similar \"survivor bias\" except.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "From the above, it is possible to draw a conclusion more reasonable than the conclusion drawn by \"I\", except.",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best evaluates the critics' rebuttal?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following most appropriately points out a flaw in the critic's argument?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption that the above discussion relies on?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the logical inference above?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best points out the problems in the above argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is most appropriate to continue the above as its conclusion?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The phenomena listed below are all explained by the scene construction theory but not by the traditional memory theory, except.",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one most strongly questioned the above experts' suggestions?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one can pose the strongest challenge to the above conclusion?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one cannot weaken the conclusion of the above argument?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the following statement is true, which one can best weaken Li Ming's rebuttal to Zhang Qiang?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one provides the strongest support for the above statement?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one can weaken the above argument most powerfully?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can accurately mark the goods stored in warehouses 1 to 3?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following goods cannot be stored in warehouse No.4?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If there is exactly one warehouse between the warehouse where M is stored and the warehouse where G is stored, how many kinds of goods are stored in the warehouse?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following warehouses may store goods L?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following must be false?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which two of the following cannot be ranked together?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following must be ranked the next day?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following people can't be on duty for two days?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If L is a two-day shift, which of the following must be on the same day as L?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following people can be ranked on any day?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one strongly supports the above argument?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the investigation result is true, which of the following statements must be true?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following best illustrates the logical loophole of this argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The above argument by politicians is most vulnerable to criticism because.",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one strongly refutes the above conclusion?-.",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following conclusions cannot be reasonably drawn from the above statement?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the following statement is true, which one provides the strongest support for economists' above argument?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one best explains this counterintuitive practice in Japan?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following most accurately points to the logical loophole of the argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, it can weaken the above conclusions, except.",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the following statement is true, which one best explains the above anomalies?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be false?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one most severely weakened the argument above?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The conclusion of the student office of the school is based on which of the following assumptions?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the judgment of the Russian Ministry of Economic Development is correct, which of the following statements must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following is a reasonable inference from the above statement?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The manager \u2019s argument is flawed because.",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The answers to the following questions are relevant to the evaluation of the above argument, except.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is the assumption that the above argument relies on?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "In order for the above reasoning to be true, which of the following must be added as a premise?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one best explains the strange phenomenon of insurance companies competing for strong insurance business?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following conclusions strongly supports the above statement?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one strongly questioned the expert's interpretation?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one will give the strongest support to Chinese officials' assertions?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following is the most suitable conclusion for the above experiment?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, it will help explain the obvious inconsistency above, except.",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above statement is true, which of the following must be true?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one best explains the two seemingly contradictory predictions?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be false?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements points out the problems in the above discussion?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "The answer to which of the following questions is most relevant to the assessment of the above judgment?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one strongly supports the above statement 2.",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The following statements can support the above explanation, except.",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one weakens the above argument the strongest?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one weakens the manager's assertion the most?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If you accept the nutritionist's opinion, you must accept which of the following statements?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the following statement is true, which one best supports the above conclusion?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following can be the order of recording these 7 records from 1 to 7?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If M is somewhere before J and somewhere before K, which of the following must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following lists a complete and accurate list of records that can be recorded first?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "The earliest position for recording M is.",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If G is immediately in front of H but all other conditions are still valid, any of the following options can be true except.",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following can be used as a complete and accurate list of students going to the UK?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which two of the following cannot go to the US together?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "How many students can go to the UK together?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If both M and W go to the UK, which of the following can be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If G goes to the United States, which of the following must be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The following items constitute a question of the above views, except.",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If Einstein is true, which of the following statements must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "In order to evaluate the above argument, the answer to which of the following questions is most important?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is closest to the meaning expressed by the netizen?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "Knowing that country A is a member of the Agreement on Trade-Related Aspects of Intellectual Property Rights, which of the following statements is inconsistent with the above provisions?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "In the course of the above discussion, the author presupposed which of the following statements?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following inferences contains the same logical error as that of the industry insider?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The answers to the following questions may question the above argument, except.",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements can be logically derived from the economist \u2019s argument?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "Which of the following statements can be logically derived from the words of the vice president of the condiment association?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements most appropriately points out a flaw in John \u2019s reasoning?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, can we best explain the above-mentioned violation of common sense?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The following items can be derived from Nozick \u2019s statement, except.",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "According to the netizen, it is not logical to determine which of the following statements is true or false?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, will the expert's view be most strongly supported?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the assumption that the above explanation must rely on?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, will the above argument be most strongly supported?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best pointed out the deficiencies in the first instance of the case?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options is a method or principle not used by John Snow \u2019s reasoning?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statements are true, which of the following statements must be true?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If which of the following statements is true, will the above statement be weakened most effectively?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be false?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "a",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements is the most vulnerable to the above argument?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "The following statements are helpful in explaining the above phenomenon, except.",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "The following statements support the above views and arguments, except.",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements can be logically derived from the above?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "From the data given above, which of the following hypothetical conclusions can be most reasonably drawn?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements is true, is it most appropriate to refute these countries' accusations against China?",
+    "gold": "D",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "This politician's argument is most vulnerable to which of the following criticisms?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If any of the following statements is true, can the best explain the above anomalies?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following options is missing from the above reasoning?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If the above statement is true, which of the following statements must be true?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best evaluates the above argument?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If any of the following statements are true, can this best explain the expert \u2019s seemingly contradictory attitude?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following methods or techniques of argument does the philosopher use in his argument?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statements best points out the shortcomings of the above argument?",
+    "gold": "C",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following statement premises must be added to launch the above statement logically?",
+    "gold": "A",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If F is scheduled for the fifth week, which of the following correctly lists all the plays that can be scheduled for the seventh week?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "For any acceptable arrangement, which of the following must be true?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If R is arranged in the fifth week and O is arranged in the second week, the alternative arrangements are?",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": true,
+    "in_disagree": true
+  },
+  {
+    "question": "If S is scheduled for the sixth week, then which week must R be scheduled?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "If O happens to be the week before J, which of the following must be true?",
+    "gold": "B",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following lists a list of members who can become members of the committee in the first year?",
+    "gold": "B",
+    "router_choice": "CoT",
+    "selected_pred": "b",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If V is the chairman of the committee in the first year, which of the following options lists the two people who must be members of the committee in the second year?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": true,
+    "cot_correct": true,
+    "astar_correct": true,
+    "in_disagree": false
+  },
+  {
+    "question": "If H is chairman in the first year, which of the following can be chairman in the second year?",
+    "gold": "A",
+    "router_choice": "A*",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": true,
+    "astar_correct": false,
+    "in_disagree": true
+  },
+  {
+    "question": "If F is a member of the committee in a certain year, any of the following can be a member of the committee that year, except.",
+    "gold": "C",
+    "router_choice": "CoT",
+    "selected_pred": "d",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  },
+  {
+    "question": "Which of the following must be true?",
+    "gold": "D",
+    "router_choice": "A*",
+    "selected_pred": "c",
+    "correct": false,
+    "cot_correct": false,
+    "astar_correct": false,
+    "in_disagree": false
+  }
+]

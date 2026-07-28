@@ -1,0 +1,2018 @@
+nohup: ignoring input
+[Sun Mar  8 21:10:45 IST 2026] Waiting for LogicQA (PID 49577) and HotpotQA (PID 52105) to finish...
+[Sun Mar  8 21:10:45 IST 2026] Still running: LogicQA HotpotQA 
+[Sun Mar  8 21:15:45 IST 2026] Still running: LogicQA HotpotQA 
+[Sun Mar  8 21:20:45 IST 2026] Still running: LogicQA HotpotQA 
+[Sun Mar  8 21:25:45 IST 2026] Still running: LogicQA HotpotQA 
+[Sun Mar  8 21:30:45 IST 2026] Still running: LogicQA HotpotQA 
+[Sun Mar  8 21:35:45 IST 2026] Still running: LogicQA HotpotQA 
+[Sun Mar  8 21:40:45 IST 2026] Both done! Starting StrategyQA CoT...
+Running CoT on StrategyQA with model: qwen2.5:0.5b
+Loading StrategyQA from HuggingFace (wics/strategy-qa)...
+Loaded 2290 examples from HuggingFace
+  0%|          | 0/500 [00:00<?, ?it/s]  0%|          | 1/500 [00:01<09:32,  1.15s/it]  0%|          | 2/500 [00:01<07:14,  1.15it/s]  1%|          | 3/500 [00:02<08:11,  1.01it/s]  1%|          | 4/500 [00:03<07:03,  1.17it/s]  1%|          | 5/500 [00:04<07:36,  1.08it/s]  1%|          | 6/500 [00:05<07:53,  1.04it/s]  1%|▏         | 7/500 [00:06<06:35,  1.25it/s]  2%|▏         | 8/500 [00:07<07:53,  1.04it/s]  2%|▏         | 9/500 [00:08<07:48,  1.05it/s]  2%|▏         | 10/500 [00:08<06:51,  1.19it/s]  2%|▏         | 11/500 [00:09<06:25,  1.27it/s]  2%|▏         | 12/500 [00:10<05:59,  1.36it/s]  3%|▎         | 13/500 [00:11<06:00,  1.35it/s]  3%|▎         | 14/500 [00:11<06:00,  1.35it/s]  3%|▎         | 15/500 [00:12<05:59,  1.35it/s]  3%|▎         | 16/500 [00:13<05:26,  1.48it/s]  3%|▎         | 17/500 [00:13<05:02,  1.60it/s]  4%|▎         | 18/500 [00:14<04:52,  1.65it/s]  4%|▍         | 19/500 [00:15<05:50,  1.37it/s]  4%|▍         | 20/500 [00:16<06:43,  1.19it/s]  4%|▍         | 21/500 [00:17<07:12,  1.11it/s]  4%|▍         | 22/500 [00:18<07:34,  1.05it/s]  5%|▍         | 23/500 [00:19<07:01,  1.13it/s]  5%|▍         | 24/500 [00:19<06:25,  1.24it/s]  5%|▌         | 25/500 [00:20<07:08,  1.11it/s]  5%|▌         | 26/500 [00:21<05:40,  1.39it/s]  5%|▌         | 27/500 [00:21<05:10,  1.52it/s]  6%|▌         | 28/500 [00:22<05:27,  1.44it/s]  6%|▌         | 29/500 [00:23<05:41,  1.38it/s]  6%|▌         | 30/500 [00:23<05:11,  1.51it/s]  6%|▌         | 31/500 [00:24<06:03,  1.29it/s]  6%|▋         | 32/500 [00:24<04:45,  1.64it/s]  7%|▋         | 33/500 [00:25<04:38,  1.68it/s]  7%|▋         | 34/500 [00:26<04:31,  1.71it/s]  7%|▋         | 35/500 [00:26<04:32,  1.71it/s]  7%|▋         | 36/500 [00:27<05:45,  1.34it/s]  7%|▋         | 37/500 [00:28<06:17,  1.23it/s]  8%|▊         | 38/500 [00:29<05:49,  1.32it/s]  8%|▊         | 39/500 [00:29<04:45,  1.62it/s]  8%|▊         | 40/500 [00:30<04:39,  1.65it/s]  8%|▊         | 41/500 [00:30<04:28,  1.71it/s]  8%|▊         | 42/500 [00:31<04:35,  1.66it/s]  9%|▊         | 43/500 [00:32<04:53,  1.56it/s]  9%|▉         | 44/500 [00:32<04:42,  1.61it/s]  9%|▉         | 45/500 [00:33<05:14,  1.45it/s]  9%|▉         | 46/500 [00:34<06:45,  1.12it/s]  9%|▉         | 47/500 [00:35<06:23,  1.18it/s] 10%|▉         | 48/500 [00:36<05:36,  1.34it/s] 10%|▉         | 49/500 [00:36<05:04,  1.48it/s] 10%|█         | 50/500 [00:37<05:08,  1.46it/s] 10%|█         | 51/500 [00:38<05:36,  1.33it/s] 10%|█         | 52/500 [00:38<05:02,  1.48it/s] 11%|█         | 53/500 [00:39<05:38,  1.32it/s] 11%|█         | 54/500 [00:40<06:20,  1.17it/s] 11%|█         | 55/500 [00:41<06:45,  1.10it/s] 11%|█         | 56/500 [00:42<05:57,  1.24it/s] 11%|█▏        | 57/500 [00:43<05:55,  1.25it/s] 12%|█▏        | 58/500 [00:44<06:04,  1.21it/s] 12%|█▏        | 59/500 [00:45<06:27,  1.14it/s] 12%|█▏        | 60/500 [00:45<05:54,  1.24it/s] 12%|█▏        | 61/500 [00:46<05:26,  1.34it/s] 12%|█▏        | 62/500 [00:46<05:05,  1.43it/s] 13%|█▎        | 63/500 [00:47<04:51,  1.50it/s] 13%|█▎        | 64/500 [00:48<05:35,  1.30it/s] 13%|█▎        | 65/500 [00:49<05:27,  1.33it/s] 13%|█▎        | 66/500 [00:49<04:50,  1.49it/s] 13%|█▎        | 67/500 [02:55<4:35:33, 38.18s/it] 14%|█▎        | 68/500 [02:55<3:13:22, 26.86s/it] 14%|█▍        | 69/500 [02:56<2:16:54, 19.06s/it] 14%|█▍        | 70/500 [02:57<1:36:26, 13.46s/it] 14%|█▍        | 71/500 [02:57<1:09:10,  9.68s/it] 14%|█▍        | 72/500 [02:58<50:04,  7.02s/it]   15%|█▍        | 73/500 [02:59<37:08,  5.22s/it] 15%|█▍        | 74/500 [03:00<27:14,  3.84s/it] 15%|█▌        | 75/500 [03:01<20:47,  2.94s/it]
+Problem 1:
+  Q: Are more people today related to Genghis Khan than Julius Caesar?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 2:
+  Q: Could the members of The Police perform lawful arrests?...
+  Pred: no | Gold: no | ✅
+
+Problem 3:
+  Q: Would a Monoamine Oxidase candy bar cheer up a depressed friend?...
+  Pred: yes | Gold: no | ❌
+
+Problem 4:
+  Q: Would a dog respond to bell before Grey seal?...
+  Pred: no | Gold: yes | ❌
+
+Problem 5:
+  Q: Is a pound sterling valuable?...
+  Pred: yes | Gold: no | ❌
+
+Problem 6:
+  Q: Is shrimp scampi definitely free of plastic?...
+  Pred: yes | Gold: no | ❌
+
+Problem 7:
+  Q: Do the anchors on Rede Globo speak Chinese?...
+  Pred: no | Gold: no | ✅
+
+Problem 8:
+  Q: Will the Albany in Georgia reach a hundred thousand occupants before the one in ...
+  Pred: no | Gold: no | ✅
+
+Problem 9:
+  Q: Is a Boeing 737 cost covered by Wonder Woman (2017 film) box office receipts?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 10:
+  Q: Is the language used in Saint Vincent and the Grenadines rooted in English?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 11:
+  Q: Can you buy Casio products at Petco?...
+  Pred: yes | Gold: no | ❌
+
+Problem 12:
+  Q: Did the Space Race use relay batons?...
+  Pred: None | Gold: no | ❌
+
+Problem 13:
+  Q: Are Christmas trees dissimilar to deciduous trees?...
+  Pred: no | Gold: yes | ❌
+
+Problem 14:
+  Q: Does Biochemistry study gluons?...
+  Pred: no | Gold: no | ✅
+
+Problem 15:
+  Q: Did land owners elect their rulers in the Kingdom of Hungary?...
+  Pred: no | Gold: no | ✅
+
+Problem 16:
+  Q: Would Nancy Pelosi publicly denounce abortion?...
+  Pred: no | Gold: no | ✅
+
+Problem 17:
+  Q: Does Dragon Ball shows and movies fall short of Friday 13th number of projects?...
+  Pred: no | Gold: yes | ❌
+
+Problem 18:
+  Q: Would a student of the class of 2017 have amnesia about 9/11?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 19:
+  Q: Is greed the most prevalent of the Seven Deadly Sins?...
+  Pred: yes | Gold: no | ❌
+
+Problem 20:
+  Q: Would a psychic who admits to hot reading be trustworthy?...
+  Pred: no | Gold: no | ✅
+
+Problem 21:
+  Q: Is average number of peas in a pod enough commas for a billion?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 22:
+  Q: Does actress Leila George lack the height to be a model?...
+  Pred: yes | Gold: no | ❌
+
+Problem 23:
+  Q: Is Dustin Hoffman one of the B'nei Yisrael?...
+  Pred: no | Gold: yes | ❌
+
+Problem 24:
+  Q: If you were on a diet, would you have to skip lunch at McDonald's?...
+  Pred: yes | Gold: no | ❌
+
+Problem 25:
+  Q: Could the Powerpuff Girls hypothetically attend the Camden Military Academy?...
+  Pred: yes | Gold: no | ❌
+
+Problem 26:
+  Q: Would the top of Mount Fuji stick out of the Sea of Japan? ...
+  Pred: yes | Gold: yes | ✅
+
+Problem 27:
+  Q: Would an uninsured person be more likely than an insured person to decline a CT ...
+  Pred: yes | Gold: yes | ✅
+
+Problem 28:
+  Q: Was the Donatello crucifix identified in 2020 life size?...
+  Pred: no | Gold: no | ✅
+
+Problem 29:
+  Q: Is Disneyland Paris the largest Disney resort?...
+  Pred: None | Gold: no | ❌
+
+Problem 30:
+  Q: Could someone with fine motor control issues benefit from an altered keyboard la...
+  Pred: yes | Gold: yes | ✅
+
+Problem 31:
+  Q: Would Adam Sandler get a reference to Cole Spouse and a scuba man doll?...
+  Pred: no | Gold: yes | ❌
+
+Problem 32:
+  Q: Is there a warthog on Broadway?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 33:
+  Q: Does Disney have an ice princess?...
+  Pred: None | Gold: yes | ❌
+
+Problem 34:
+  Q: Would a geographer use biochemistry in their work?...
+  Pred: None | Gold: no | ❌
+
+Problem 35:
+  Q: Could George Washington's own speeches have been recorded live to a compact disc...
+  Pred: None | Gold: no | ❌
+
+Problem 36:
+  Q: Was Lil Jon's top ranked Billboard song a collaboration with a member of The Lox...
+  Pred: no | Gold: no | ✅
+
+Problem 37:
+  Q: Would food made with black salt smell of sulfur?...
+  Pred: no | Gold: yes | ❌
+
+Problem 38:
+  Q: Would a broadcast from Spirit make the news in 2020?...
+  Pred: no | Gold: yes | ❌
+
+Problem 39:
+  Q: Is Miami a city on the American West Coast?...
+  Pred: no | Gold: no | ✅
+
+Problem 40:
+  Q: Could Robert Wadlow hypothetically see Frankenstein's monster's bald spot from a...
+  Pred: no | Gold: yes | ❌
+
+Problem 41:
+  Q: Is the tibia necessary to win the Stanley Cup?...
+  Pred: no | Gold: yes | ❌
+
+Problem 42:
+  Q: Would an ethics professor teach a class on Cezanne?...
+  Pred: yes | Gold: no | ❌
+
+Problem 43:
+  Q: If you add water to rice pudding is it horchata?...
+  Pred: no | Gold: no | ✅
+
+Problem 44:
+  Q: Can the Swiss Guard fill the Virginia General Assembly chairs?...
+  Pred: yes | Gold: no | ❌
+
+Problem 45:
+  Q: If your skin was turning the color of a zombie, could it be because of nickel?...
+  Pred: no | Gold: yes | ❌
+
+Problem 46:
+  Q: Would a Dolce & Gabbana suit wearer be shunned by their Amish cousins?...
+  Pred: no | Gold: yes | ❌
+
+Problem 47:
+  Q: Is the Illuminati card game still popular?...
+  Pred: yes | Gold: no | ❌
+
+Problem 48:
+  Q: Can a strawberry get worms similar to dogs?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 49:
+  Q: Is Menthol associated with Thanksgiving?...
+  Pred: no | Gold: no | ✅
+
+Problem 50:
+  Q: Would someone in Mumbai refer to Solanum melongena as an eggplant?...
+  Pred: yes | Gold: no | ❌
+
+Problem 51:
+  Q: Is it okay to lie after taking an oath in a court of law?...
+  Pred: yes | Gold: no | ❌
+
+Problem 52:
+  Q: Is art prioritized in the US education system?...
+  Pred: yes | Gold: no | ❌
+
+Problem 53:
+  Q: While on a liquid diet, are there some types of soup you cannot eat?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 54:
+  Q: Would it be impossible to use an Iwato scale for a twelve-tone technique composi...
+  Pred: yes | Gold: yes | ✅
+
+Problem 55:
+  Q: Would the Titanic be well preserved at the bottom of the Gulf of Finland?...
+  Pred: no | Gold: yes | ❌
+
+Problem 56:
+  Q: Could a dandelion suffer from hepatitis?...
+  Pred: yes | Gold: no | ❌
+
+Problem 57:
+  Q: Did any country in Portuguese Colonial War share Switzerlands role in WWII?...
+  Pred: no | Gold: yes | ❌
+
+Problem 58:
+  Q: Would a week be enough time to watch every episode of Ugly Betty?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 59:
+  Q: Would a Pict be confused by Old English?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 60:
+  Q: Was the Louisiana Purchase made with bitcoin?...
+  Pred: no | Gold: no | ✅
+
+Problem 61:
+  Q: Did Japanese serfdom have higher status than English counterpart?...
+  Pred: no | Gold: yes | ❌
+
+Problem 62:
+  Q: Is the best tasting part of the papaya in the center?...
+  Pred: yes | Gold: no | ❌
+
+Problem 63:
+  Q: Could Lil Wayne's children ride in a Chevrolet Corvette ZR1 together?...
+  Pred: no | Gold: no | ✅
+
+Problem 64:
+  Q: Is double duty an incorrect phrase for host of Dancing With The Stars?...
+  Pred: no | Gold: no | ✅
+
+Problem 65:
+  Q: Could Lil Wayne legally operate a vehicle on his own at the beginning of his car...
+  Pred: no | Gold: no | ✅
+
+Problem 66:
+  Q: Could an ocelot subsist on a single bee hummingbird per day?...
+  Pred: yes | Gold: no | ❌
+
+Problem 67:
+  Q: Does Ukrainian Greek Catholic Church recognize Alexander Nevsky as a saint?...
+  Pred: None | Gold: no | ❌
+
+Problem 68:
+  Q: Was the original James Bond actor born near the Washington Monument?...
+  Pred: no | Gold: no | ✅
+
+Problem 69:
+  Q: Did J. P. Morgan have healthy lungs?...
+  Pred: no | Gold: no | ✅
+
+Problem 70:
+  Q: Would Firefighters be included in a September 11th memorial?...
+  Pred: no | Gold: yes | ❌
+
+Problem 71:
+  Q: Does Andrew Johnson's presidential number exceed Elagabalus's Emperor number?...
+  Pred: yes | Gold: no | ❌
+
+Problem 72:
+  Q: Are any animals in Chinese calendar Chordata?...
+  Pred: no | Gold: yes | ❌
+
+Problem 73:
+  Q: Would a hypothetical Yeti be towered over by Andre the Giant?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 74:
+  Q: Are you likely to find a crucifix in Karachi?...
+  Pred: no | Gold: no | ✅
+
+Problem 75:
+  Q: Was The Little Prince's titular character allergic to flowers?...
+  Pred: no | Gold: no | ✅
+
+Problem 76:
+ 15%|█▌        | 76/500 [03:01<15:43,  2.23s/it] 15%|█▌        | 77/500 [03:02<12:19,  1.75s/it] 16%|█▌        | 78/500 [03:03<10:04,  1.43s/it] 16%|█▌        | 79/500 [03:03<08:26,  1.20s/it] 16%|█▌        | 80/500 [03:04<07:39,  1.09s/it] 16%|█▌        | 81/500 [03:05<07:27,  1.07s/it] 16%|█▋        | 82/500 [03:06<06:21,  1.09it/s] 17%|█▋        | 83/500 [03:07<06:18,  1.10it/s] 17%|█▋        | 84/500 [03:07<05:42,  1.21it/s] 17%|█▋        | 85/500 [03:08<06:01,  1.15it/s] 17%|█▋        | 86/500 [03:09<05:45,  1.20it/s] 17%|█▋        | 87/500 [03:10<06:00,  1.15it/s] 18%|█▊        | 88/500 [03:11<05:46,  1.19it/s] 18%|█▊        | 89/500 [03:11<05:32,  1.24it/s] 18%|█▊        | 90/500 [03:13<06:08,  1.11it/s] 18%|█▊        | 91/500 [03:13<05:36,  1.21it/s] 18%|█▊        | 92/500 [03:14<05:58,  1.14it/s] 19%|█▊        | 93/500 [03:15<05:58,  1.13it/s] 19%|█▉        | 94/500 [03:16<06:09,  1.10it/s] 19%|█▉        | 95/500 [03:17<05:36,  1.20it/s] 19%|█▉        | 96/500 [03:17<05:11,  1.30it/s] 19%|█▉        | 97/500 [03:18<05:08,  1.31it/s] 20%|█▉        | 98/500 [03:19<05:11,  1.29it/s] 20%|█▉        | 99/500 [03:19<04:24,  1.52it/s] 20%|██        | 100/500 [03:20<05:14,  1.27it/s] 20%|██        | 101/500 [03:21<05:39,  1.18it/s] 20%|██        | 102/500 [03:22<05:03,  1.31it/s] 21%|██        | 103/500 [03:23<05:44,  1.15it/s] 21%|██        | 104/500 [03:24<06:24,  1.03it/s] 21%|██        | 105/500 [03:25<05:53,  1.12it/s] 21%|██        | 106/500 [03:26<05:21,  1.23it/s] 21%|██▏       | 107/500 [03:26<05:12,  1.26it/s] 22%|██▏       | 108/500 [03:27<04:56,  1.32it/s] 22%|██▏       | 109/500 [03:28<05:15,  1.24it/s] 22%|██▏       | 110/500 [03:29<04:53,  1.33it/s] 22%|██▏       | 111/500 [03:29<04:59,  1.30it/s] 22%|██▏       | 112/500 [03:30<05:06,  1.27it/s] 23%|██▎       | 113/500 [03:31<04:54,  1.31it/s] 23%|██▎       | 114/500 [03:31<04:21,  1.48it/s] 23%|██▎       | 115/500 [03:33<05:10,  1.24it/s] 23%|██▎       | 116/500 [03:33<04:36,  1.39it/s] 23%|██▎       | 117/500 [03:34<04:58,  1.28it/s] 24%|██▎       | 118/500 [03:35<05:01,  1.27it/s] 24%|██▍       | 119/500 [03:35<04:23,  1.45it/s] 24%|██▍       | 120/500 [03:36<04:47,  1.32it/s] 24%|██▍       | 121/500 [03:37<04:30,  1.40it/s] 24%|██▍       | 122/500 [03:37<04:05,  1.54it/s] 25%|██▍       | 123/500 [03:38<04:07,  1.53it/s] 25%|██▍       | 124/500 [03:39<04:03,  1.54it/s] 25%|██▌       | 125/500 [03:39<04:23,  1.42it/s] 25%|██▌       | 126/500 [03:40<04:54,  1.27it/s] 25%|██▌       | 127/500 [03:41<05:16,  1.18it/s] 26%|██▌       | 128/500 [03:42<05:22,  1.15it/s] 26%|██▌       | 129/500 [03:43<05:24,  1.14it/s] 26%|██▌       | 130/500 [03:44<05:36,  1.10it/s] 26%|██▌       | 131/500 [03:45<04:59,  1.23it/s] 26%|██▋       | 132/500 [03:46<05:11,  1.18it/s] 27%|██▋       | 133/500 [03:47<05:12,  1.18it/s] 27%|██▋       | 134/500 [03:48<05:39,  1.08it/s] 27%|██▋       | 135/500 [03:49<05:45,  1.06it/s] 27%|██▋       | 136/500 [03:50<06:22,  1.05s/it] 27%|██▋       | 137/500 [03:51<06:12,  1.03s/it] 28%|██▊       | 138/500 [03:52<05:34,  1.08it/s] 28%|██▊       | 139/500 [03:52<04:58,  1.21it/s] 28%|██▊       | 140/500 [03:53<04:27,  1.35it/s] 28%|██▊       | 141/500 [03:55<07:01,  1.17s/it] 28%|██▊       | 142/500 [03:56<07:16,  1.22s/it] 29%|██▊       | 143/500 [03:57<06:43,  1.13s/it] 29%|██▉       | 144/500 [03:58<05:41,  1.04it/s] 29%|██▉       | 145/500 [03:58<04:38,  1.27it/s] 29%|██▉       | 146/500 [03:59<04:09,  1.42it/s] 29%|██▉       | 147/500 [03:59<04:17,  1.37it/s] 30%|██▉       | 148/500 [04:00<04:16,  1.37it/s]  Q: Was a person sold a Creative Commons License for Boticelli's The Birth of Venus ...
+  Pred: no | Gold: yes | ❌
+
+Problem 77:
+  Q: Did Millard Fillmore help to establish the University of Pittsburgh?...
+  Pred: yes | Gold: no | ❌
+
+Problem 78:
+  Q: Does Northern fur seal make good pet for six year old?...
+  Pred: yes | Gold: no | ❌
+
+Problem 79:
+  Q: Would a pear sink in water?...
+  Pred: yes | Gold: no | ❌
+
+Problem 80:
+  Q: WIll Noah's Ark hypothetically sail through flooded Lincoln Tunnel?...
+  Pred: no | Gold: no | ✅
+
+Problem 81:
+  Q: Can you write a whole Haiku in a single tweet?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 82:
+  Q: Would you take a photo of a Saltwater crocodile in Memphis?...
+  Pred: no | Gold: no | ✅
+
+Problem 83:
+  Q: Could Scooby Doo fit in a kangaroo pouch?...
+  Pred: no | Gold: no | ✅
+
+Problem 84:
+  Q: Do manta rays live in water above the safe temperature for cold food storage?...
+  Pred: no | Gold: yes | ❌
+
+Problem 85:
+  Q: Is the kayak a traditional boat in New Zealand?...
+  Pred: yes | Gold: no | ❌
+
+Problem 86:
+  Q: Has the Subway restaurant franchise had any connections with child abusers?...
+  Pred: no | Gold: yes | ❌
+
+Problem 87:
+  Q: Would the high school class of 2010 have lived through the Presidency of Richard...
+  Pred: no | Gold: no | ✅
+
+Problem 88:
+  Q: Could ten gallons of seawater crush a six year old?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 89:
+  Q: Would a Deacon be likely to be a fan of the podcast 'God Awful Movies'?...
+  Pred: no | Gold: no | ✅
+
+Problem 90:
+  Q: Could a giant squid fit aboard the deck of the titanic?...
+  Pred: no | Gold: yes | ❌
+
+Problem 91:
+  Q: Do more anchovy live in colder temperature waters than warmer?...
+  Pred: no | Gold: no | ✅
+
+Problem 92:
+  Q: Is Antarctica a good location for Groundhog Day?...
+  Pred: yes | Gold: no | ❌
+
+Problem 93:
+  Q: Can the Powerpuff Girls form a complete tag team wrestling match?...
+  Pred: yes | Gold: no | ❌
+
+Problem 94:
+  Q: Will someone die without white blood cells?...
+  Pred: no | Gold: yes | ❌
+
+Problem 95:
+  Q: Does rock star Keith Richards play a captain of a boat in a movie?...
+  Pred: no | Gold: yes | ❌
+
+Problem 96:
+  Q: Is 3D printing able to make adenovirus?...
+  Pred: no | Gold: no | ✅
+
+Problem 97:
+  Q: Would an eleventh-grader be eligible for Medicare?...
+  Pred: yes | Gold: no | ❌
+
+Problem 98:
+  Q: Is there a full Neptunian orbit between the first two burials of women in the Pa...
+  Pred: no | Gold: no | ✅
+
+Problem 99:
+  Q: Will Oasis cruise boat traverse the Lincoln Tunnel?...
+  Pred: yes | Gold: no | ❌
+
+Problem 100:
+  Q: Could Oscar Wilde have operated a motor vehicle?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 101:
+  Q: Would George Fox support stoning?...
+  Pred: no | Gold: no | ✅
+
+Problem 102:
+  Q: Will Tokyo Tower be repainted only once during President Trump's first term?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 103:
+  Q: Has a neanderthal ever served on the Supreme Court of the United States?...
+  Pred: no | Gold: no | ✅
+
+Problem 104:
+  Q: Can Clouded leopards chase down many Pronghorn antelopes?...
+  Pred: yes | Gold: no | ❌
+
+Problem 105:
+  Q: Does the anatomy of a camel lend itself to jokes on Wednesdays?...
+  Pred: no | Gold: yes | ❌
+
+Problem 106:
+  Q: Can voice actors for Goofy and Bugs Bunny each get one stripe from American flag...
+  Pred: yes | Gold: yes | ✅
+
+Problem 107:
+  Q: Did Clark Gable appear in any movies scored by John Williams?...
+  Pred: no | Gold: no | ✅
+
+Problem 108:
+  Q: Is Linus Torvalds' wife unable to physically defend herself?...
+  Pred: yes | Gold: no | ❌
+
+Problem 109:
+  Q: Did Eric Clapton have similar taste in women to one of the Beatles?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 110:
+  Q: Is watching  Star Wars necessary to know who Darth Vader is?...
+  Pred: yes | Gold: no | ❌
+
+Problem 111:
+  Q: Did Eddie Murphy's father see his first stand up show?...
+  Pred: yes | Gold: no | ❌
+
+Problem 112:
+  Q: Could a silverfish reach the top of the Empire State Building?...
+  Pred: no | Gold: no | ✅
+
+Problem 113:
+  Q: Are there winged statuettes in the home of the creator of Law & Order?...
+  Pred: no | Gold: yes | ❌
+
+Problem 114:
+  Q: Was Donald Trump the target of Islamophobia?...
+  Pred: yes | Gold: no | ❌
+
+Problem 115:
+  Q: Would baker's dozen of side by side Mac Trucks jam up Golden Gate Bridge?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 116:
+  Q: Could someone mistake the smell of your brussels sprouts for a fart?...
+  Pred: no | Gold: yes | ❌
+
+Problem 117:
+  Q: Do guitarist's have fingers that can handle pain better than average?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 118:
+  Q: Were there under 150,000 American troops in Vietnam in 1965?...
+  Pred: no | Gold: yes | ❌
+
+Problem 119:
+  Q: Did Native American tribes teach Spaniards how to cultivate maize?...
+  Pred: no | Gold: yes | ❌
+
+Problem 120:
+  Q: Has Oscar Wilde's most famous character ever been in an Eva Green project?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 121:
+  Q: Do frogs feel disgust?...
+  Pred: no | Gold: yes | ❌
+
+Problem 122:
+  Q: Did either Kublai Khan or his grandfather practice monogamy?...
+  Pred: no | Gold: no | ✅
+
+Problem 123:
+  Q: Does a person need to be a parent to become a grandparent?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 124:
+  Q: Did Van Gogh suffer from a mental disorder?...
+  Pred: no | Gold: yes | ❌
+
+Problem 125:
+  Q: Is the span in C-SPAN named after Alan Greenspan?...
+  Pred: yes | Gold: no | ❌
+
+Problem 126:
+  Q: Would Eminem perform well at the International Mathematical Olympiad?...
+  Pred: yes | Gold: no | ❌
+
+Problem 127:
+  Q: Can a computer be programmed entirely in Boolean algebra?...
+  Pred: no | Gold: yes | ❌
+
+Problem 128:
+  Q: Is Guitar Hero Beatles inappropriate for a US third grader?...
+  Pred: yes | Gold: no | ❌
+
+Problem 129:
+  Q: In American society, will a bachelor's degree often include a leap year?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 130:
+  Q: At a presentation about post traumatic stress disorder, would Ariana Grande be a...
+  Pred: yes | Gold: yes | ✅
+
+Problem 131:
+  Q: Were plants crucial for The King of Rock'n Roll's snack with bananas?...
+  Pred: no | Gold: yes | ❌
+
+Problem 132:
+  Q: Could you read The Atlantic magazine during the Games of the XXII Olympiad?...
+  Pred: no | Gold: yes | ❌
+
+Problem 133:
+  Q: Can you find Bob Marley's face in most smoke shops?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 134:
+  Q: Could Elizabeth I of England have seen the play Dido, Queen of Carthage ?...
+  Pred: no | Gold: yes | ❌
+
+Problem 135:
+  Q: Is Britney Spears' breakdown attributed to bipolar disorder?...
+  Pred: no | Gold: yes | ❌
+
+Problem 136:
+  Q: Is week old chlorine water safe to drink?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 137:
+  Q: Is the foot part of the metric system?...
+  Pred: yes | Gold: no | ❌
+
+Problem 138:
+  Q: Would it be typical for a Rede Globo anchor to say Konnichiwa to the viewers?...
+  Pred: no | Gold: no | ✅
+
+Problem 139:
+  Q: Does Hades appear in a Disney Channel musical movie?...
+  Pred: no | Gold: yes | ❌
+
+Problem 140:
+  Q: Were weather phenomena avoided when naming minor league baseball teams?...
+  Pred: no | Gold: no | ✅
+
+Problem 141:
+  Q: Could a Hwasong-15 missile hypothetically reach Voyager 2?...
+  Pred: yes | Gold: no | ❌
+
+Problem 142:
+  Q: Could someone theoretically use an armadillo as a shield?...
+  Pred: no | Gold: yes | ❌
+
+Problem 143:
+  Q: Does Linus Torvalds make money off of DirectX?...
+  Pred: yes | Gold: no | ❌
+
+Problem 144:
+  Q: Did a Mediterranean Sea creature kill Steve Irwin?...
+  Pred: no | Gold: yes | ❌
+
+Problem 145:
+  Q: Do you need to worry about Zika virus in Antarctica? ...
+  Pred: None | Gold: no | ❌
+
+Problem 146:
+  Q: Did the writer of Christmas carol fast during Ramadan? ...
+  Pred: no | Gold: no | ✅
+
+Problem 147:
+  Q: Are most books written as a Haiku?...
+  Pred: yes | Gold: no | ❌
+
+Problem 148:
+  Q: Does the country that received the most gold medals during the 1976 Olympics sti...
+  Pred: no | Gold: no | ✅
+
+Problem 149:
+  Q: Will Chuck Norris be a nonagenarian by time next leap year after 2020 happens?...
+ 30%|██▉       | 149/500 [04:01<04:27,  1.31it/s] 30%|███       | 150/500 [04:02<05:08,  1.14it/s] 30%|███       | 151/500 [04:03<05:19,  1.09it/s] 30%|███       | 152/500 [04:04<04:25,  1.31it/s] 31%|███       | 153/500 [04:04<04:18,  1.34it/s] 31%|███       | 154/500 [04:05<04:25,  1.30it/s] 31%|███       | 155/500 [04:06<04:03,  1.42it/s] 31%|███       | 156/500 [04:07<04:27,  1.28it/s] 31%|███▏      | 157/500 [04:07<04:25,  1.29it/s] 32%|███▏      | 158/500 [04:08<04:01,  1.41it/s] 32%|███▏      | 159/500 [04:09<04:38,  1.22it/s] 32%|███▏      | 160/500 [04:10<04:48,  1.18it/s] 32%|███▏      | 161/500 [04:11<04:52,  1.16it/s] 32%|███▏      | 162/500 [04:12<05:13,  1.08it/s] 33%|███▎      | 163/500 [04:13<04:48,  1.17it/s] 33%|███▎      | 164/500 [04:13<04:27,  1.25it/s] 33%|███▎      | 165/500 [04:14<04:22,  1.28it/s] 33%|███▎      | 166/500 [04:15<04:23,  1.27it/s] 33%|███▎      | 167/500 [04:15<04:18,  1.29it/s] 34%|███▎      | 168/500 [04:16<03:51,  1.43it/s] 34%|███▍      | 169/500 [04:17<04:10,  1.32it/s] 34%|███▍      | 170/500 [04:17<03:25,  1.61it/s] 34%|███▍      | 171/500 [04:18<03:20,  1.64it/s] 34%|███▍      | 172/500 [04:19<03:37,  1.51it/s] 35%|███▍      | 173/500 [04:19<03:55,  1.39it/s] 35%|███▍      | 174/500 [04:20<03:37,  1.50it/s] 35%|███▌      | 175/500 [04:21<03:42,  1.46it/s] 35%|███▌      | 176/500 [04:21<03:21,  1.61it/s] 35%|███▌      | 177/500 [04:22<03:11,  1.69it/s] 36%|███▌      | 178/500 [04:22<03:00,  1.79it/s] 36%|███▌      | 179/500 [04:23<03:17,  1.62it/s] 36%|███▌      | 180/500 [04:24<04:01,  1.33it/s] 36%|███▌      | 181/500 [04:25<03:50,  1.39it/s] 36%|███▋      | 182/500 [04:26<04:36,  1.15it/s] 37%|███▋      | 183/500 [04:27<04:54,  1.08it/s] 37%|███▋      | 184/500 [04:28<05:05,  1.04it/s] 37%|███▋      | 185/500 [04:30<06:27,  1.23s/it] 37%|███▋      | 186/500 [04:30<05:24,  1.03s/it] 37%|███▋      | 187/500 [04:31<05:01,  1.04it/s] 38%|███▊      | 188/500 [04:32<04:26,  1.17it/s] 38%|███▊      | 189/500 [04:33<04:42,  1.10it/s] 38%|███▊      | 190/500 [04:34<04:56,  1.05it/s] 38%|███▊      | 191/500 [04:35<04:46,  1.08it/s] 38%|███▊      | 192/500 [04:36<04:43,  1.09it/s] 39%|███▊      | 193/500 [04:36<04:14,  1.21it/s] 39%|███▉      | 194/500 [04:38<04:52,  1.05it/s] 39%|███▉      | 195/500 [04:39<04:58,  1.02it/s] 39%|███▉      | 196/500 [04:39<04:34,  1.11it/s] 39%|███▉      | 197/500 [04:40<04:26,  1.14it/s] 40%|███▉      | 198/500 [04:41<04:28,  1.13it/s] 40%|███▉      | 199/500 [04:41<03:47,  1.32it/s] 40%|████      | 200/500 [04:42<04:01,  1.24it/s] 40%|████      | 201/500 [04:43<03:58,  1.25it/s] 40%|████      | 202/500 [04:44<03:59,  1.24it/s] 41%|████      | 203/500 [04:45<03:34,  1.38it/s] 41%|████      | 204/500 [04:45<03:45,  1.31it/s] 41%|████      | 205/500 [04:46<04:11,  1.17it/s] 41%|████      | 206/500 [04:47<03:43,  1.32it/s] 41%|████▏     | 207/500 [04:48<03:25,  1.43it/s] 42%|████▏     | 208/500 [04:48<03:12,  1.51it/s] 42%|████▏     | 209/500 [04:49<03:23,  1.43it/s] 42%|████▏     | 210/500 [04:50<03:48,  1.27it/s] 42%|████▏     | 211/500 [04:51<04:09,  1.16it/s] 42%|████▏     | 212/500 [04:52<04:36,  1.04it/s] 43%|████▎     | 213/500 [04:53<04:20,  1.10it/s] 43%|████▎     | 214/500 [04:53<03:51,  1.24it/s] 43%|████▎     | 215/500 [04:54<03:43,  1.28it/s] 43%|████▎     | 216/500 [04:55<03:26,  1.38it/s] 43%|████▎     | 217/500 [04:56<04:31,  1.04it/s] 44%|████▎     | 218/500 [04:57<04:21,  1.08it/s] 44%|████▍     | 219/500 [04:58<03:53,  1.20it/s] 44%|████▍     | 220/500 [04:59<03:51,  1.21it/s] 44%|████▍     | 221/500 [05:00<04:19,  1.08it/s] 44%|████▍     | 222/500 [05:01<04:29,  1.03it/s] 45%|████▍     | 223/500 [05:01<04:00,  1.15it/s] 45%|████▍     | 224/500 [05:02<03:41,  1.25it/s] 45%|████▌     | 225/500 [05:03<03:25,  1.34it/s] 45%|████▌     | 226/500 [05:04<03:46,  1.21it/s]  Pred: no | Gold: no | ✅
+
+Problem 150:
+  Q: Does Bombyx mori have a monopoly over silk production?...
+  Pred: no | Gold: no | ✅
+
+Problem 151:
+  Q: Has cannabis been a big influence in rap music genre?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 152:
+  Q: Do Jews believe in any New Testament angels?...
+  Pred: no | Gold: yes | ❌
+
+Problem 153:
+  Q: Did Christina Aguilera turn her chair around for Kelly Clarkson on The Voice?...
+  Pred: no | Gold: no | ✅
+
+Problem 154:
+  Q: Do Christians anticipate an existence in Sheol after death?...
+  Pred: yes | Gold: no | ❌
+
+Problem 155:
+  Q: Would an anxious person benefit from receiving courage from the Wizard of Oz?...
+  Pred: yes | Gold: no | ❌
+
+Problem 156:
+  Q: Is polyamory allowed in the Catholic Church?...
+  Pred: no | Gold: no | ✅
+
+Problem 157:
+  Q: Does a Generation Y member satisfy NYPD police officer age requirement?...
+  Pred: no | Gold: yes | ❌
+
+Problem 158:
+  Q: Could the main character of "Alice's Adventures in Wonderland" join a Masonic Lo...
+  Pred: no | Gold: no | ✅
+
+Problem 159:
+  Q: Did King James I despise fairy beings?...
+  Pred: no | Gold: yes | ❌
+
+Problem 160:
+  Q: Did Evander Holyfield compete in an Olympics hosted in the western hemisphere?...
+  Pred: None | Gold: yes | ❌
+
+Problem 161:
+  Q: Did Harry Houdini's wife make psychics look foolish?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 162:
+  Q: Does handedness determine how you use American Sign Language?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 163:
+  Q: Do onions have a form that resembles the inside of a tree?...
+  Pred: no | Gold: yes | ❌
+
+Problem 164:
+  Q: Are moose used for work near the kingdom of Arendelle?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 165:
+  Q: Is eleventh grade required to get a driver's licence?...
+  Pred: yes | Gold: no | ❌
+
+Problem 166:
+  Q: Do some home remedies result in your skin color turning blue?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 167:
+  Q: Was ethanol beneficial to Jack Kerouac's health?...
+  Pred: yes | Gold: no | ❌
+
+Problem 168:
+  Q: Did Doctor Strange creators also make Batman?...
+  Pred: no | Gold: no | ✅
+
+Problem 169:
+  Q: Was Charlemagne's father instrumental in outcome of the Battle of Tours?...
+  Pred: no | Gold: no | ✅
+
+Problem 170:
+  Q: Would Janet Jackson avoid a dish with ham?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 171:
+  Q: Can giant pandas sell out a Metallica show?...
+  Pred: no | Gold: no | ✅
+
+Problem 172:
+  Q: Would multiple average rulers be necessary to measure the length of a giant arma...
+  Pred: yes | Gold: yes | ✅
+
+Problem 173:
+  Q: Can you only see hippopotamus in Africa?...
+  Pred: no | Gold: no | ✅
+
+Problem 174:
+  Q: Was Kane (wrestler) banned from WCW  headquarters city?...
+  Pred: yes | Gold: no | ❌
+
+Problem 175:
+  Q: Was Rumi's work serialized in a magazine?...
+  Pred: no | Gold: no | ✅
+
+Problem 176:
+  Q: Is Olympia, Washington part of "Ish river country"?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 177:
+  Q: Would someone with back pain enjoy picking strawberries?...
+  Pred: yes | Gold: no | ❌
+
+Problem 178:
+  Q: Was the Euro used in Prussia?...
+  Pred: no | Gold: no | ✅
+
+Problem 179:
+  Q: Did Eiffel Tower contribute to a war victory?...
+  Pred: no | Gold: yes | ❌
+
+Problem 180:
+  Q: Has the Indian Ocean garbage patch not completed two full rotations of debris si...
+  Pred: yes | Gold: yes | ✅
+
+Problem 181:
+  Q: Do some religions look forward to armageddon?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 182:
+  Q: Could a llama birth twice during War in Vietnam (1945-46)?...
+  Pred: yes | Gold: no | ❌
+
+Problem 183:
+  Q: Is Rick and Morty considered an anime?...
+  Pred: yes | Gold: no | ❌
+
+Problem 184:
+  Q: Does The Hague border multiple bodies of water?...
+  Pred: yes | Gold: no | ❌
+
+Problem 185:
+  Q: Could a chipmunk fit 100 chocolate chips in his mouth?...
+  Pred: no | Gold: no | ✅
+
+Problem 186:
+  Q: Would a pescatarian be unable to eat anchovy pizza?...
+  Pred: no | Gold: no | ✅
+
+Problem 187:
+  Q: Would Sophist's have hypothetically made good lawyers?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 188:
+  Q: Can fish get Tonsillitis?...
+  Pred: no | Gold: no | ✅
+
+Problem 189:
+  Q: Will Queen Elizabeth be buried in the Pantheon?...
+  Pred: yes | Gold: no | ❌
+
+Problem 190:
+  Q: Does coding rely on Boolean algebra characters?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 191:
+  Q: Was Gandalf present at the death of Eomer?...
+  Pred: no | Gold: no | ✅
+
+Problem 192:
+  Q: Would Amy Winehouse's death have been prevented with Narcan?...
+  Pred: no | Gold: no | ✅
+
+Problem 193:
+  Q: Are those incapable of reproduction incapable of parenthood?...
+  Pred: yes | Gold: no | ❌
+
+Problem 194:
+  Q: Is Mixed martial arts totally original from Roman Colosseum games?...
+  Pred: no | Gold: no | ✅
+
+Problem 195:
+  Q: Can Herpes simplex virus spread on Venus?...
+  Pred: no | Gold: no | ✅
+
+Problem 196:
+  Q: Is Bern located east of Paris?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 197:
+  Q: Would keelhauling be a fair punishment under the Eighth Amendment?...
+  Pred: yes | Gold: no | ❌
+
+Problem 198:
+  Q: Would Franz Ferdinand have survived with armadillo armor?...
+  Pred: no | Gold: no | ✅
+
+Problem 199:
+  Q: Can you find a railroad engineer on TNT?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 200:
+  Q: Could Amazon afford The Mona Lisa?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 201:
+  Q: Was Martin Luther same sect as Martin Luther King Jr.?...
+  Pred: no | Gold: no | ✅
+
+Problem 202:
+  Q: Did Sartre write a play about Hell?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 203:
+  Q: Can rowing competitions take place indoors?...
+  Pred: no | Gold: no | ✅
+
+Problem 204:
+  Q: Were there fifty English kings throughout the Middle Ages?...
+  Pred: yes | Gold: no | ❌
+
+Problem 205:
+  Q: Is Thanksgiving sometimes considered a day of mourning?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 206:
+  Q: Does Jack Sparrow know any sea shantys?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 207:
+  Q: If someone is a vegan, would they eat honey?...
+  Pred: no | Gold: no | ✅
+
+Problem 208:
+  Q: Does a mongoose have natural camouflage for desert?...
+  Pred: None | Gold: yes | ❌
+
+Problem 209:
+  Q: Can Lamborghini's fastest model win a race against a Porsche 911?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 210:
+  Q: Was the Second Amendment to the United States Constitution written without consi...
+  Pred: no | Gold: yes | ❌
+
+Problem 211:
+  Q: Could a Gladiator's weapon crush a diamond?...
+  Pred: no | Gold: no | ✅
+
+Problem 212:
+  Q: Would Republic of Korea Navy dominate Eritrea navy?...
+  Pred: no | Gold: yes | ❌
+
+Problem 213:
+  Q: Could someone have arrived at Wrestlemania X in a Toyota Prius?...
+  Pred: no | Gold: no | ✅
+
+Problem 214:
+  Q: Could the first European visitor to Guam been friends with Queen Victoria?...
+  Pred: no | Gold: no | ✅
+
+Problem 215:
+  Q: Would the average American family find Adam Sandler's home to be too small?...
+  Pred: no | Gold: no | ✅
+
+Problem 216:
+  Q: Does Santa Claus work during summer?...
+  Pred: no | Gold: no | ✅
+
+Problem 217:
+  Q: Is the Hobbit more profitable for proofreader than Constitution of the United St...
+  Pred: yes | Gold: yes | ✅
+
+Problem 218:
+  Q: Is Krishna similar to Holy Spirit?...
+  Pred: no | Gold: yes | ❌
+
+Problem 219:
+  Q: Do human sacrums have more fused vertebrae than an Alaskan Malamute?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 220:
+  Q: Was Snoop Dogg's debut studio album released on the weekend?...
+  Pred: yes | Gold: no | ❌
+
+Problem 221:
+  Q: Are Sable's a good choice of Mustelidae to weigh down a scale?...
+  Pred: yes | Gold: no | ❌
+
+Problem 222:
+  Q: Was Richard III ruler of Adelaide?...
+  Pred: yes | Gold: no | ❌
+
+Problem 223:
+  Q: Do Sweet Potatoes prevent other plants from growing in their place?...
+  Pred: no | Gold: yes | ❌
+
+Problem 224:
+  Q: Should spaghetti be slick when cooked?...
+  Pred: no | Gold: no | ✅
+
+Problem 225:
+  Q: While viewing "Scary Movie" is the viewer likely to experience an increase in ad...
+  Pred: yes | Gold: no | ❌
+
+Problem 226:
+  Q: Is All Purpose Flour safe for someone who has celiac disease?...
+  Pred: no | Gold: no | ✅
+ 45%|████▌     | 227/500 [05:05<04:07,  1.10it/s] 46%|████▌     | 228/500 [05:06<03:54,  1.16it/s] 46%|████▌     | 229/500 [05:06<03:58,  1.14it/s] 46%|████▌     | 230/500 [05:07<04:04,  1.11it/s] 46%|████▌     | 231/500 [05:08<03:28,  1.29it/s] 46%|████▋     | 232/500 [05:09<03:19,  1.34it/s] 47%|████▋     | 233/500 [05:09<02:52,  1.55it/s] 47%|████▋     | 234/500 [05:10<03:22,  1.32it/s] 47%|████▋     | 235/500 [05:11<03:29,  1.26it/s] 47%|████▋     | 236/500 [05:12<03:43,  1.18it/s] 47%|████▋     | 237/500 [05:13<03:42,  1.18it/s] 48%|████▊     | 238/500 [05:14<03:42,  1.18it/s] 48%|████▊     | 239/500 [05:14<03:32,  1.23it/s] 48%|████▊     | 240/500 [05:15<03:22,  1.29it/s] 48%|████▊     | 241/500 [05:16<03:24,  1.27it/s] 48%|████▊     | 242/500 [05:16<03:06,  1.39it/s] 49%|████▊     | 243/500 [05:17<03:26,  1.24it/s] 49%|████▉     | 244/500 [05:18<03:26,  1.24it/s] 49%|████▉     | 245/500 [05:19<03:33,  1.19it/s] 49%|████▉     | 246/500 [05:20<03:46,  1.12it/s] 49%|████▉     | 247/500 [05:21<03:39,  1.15it/s] 50%|████▉     | 248/500 [05:22<04:03,  1.03it/s] 50%|████▉     | 249/500 [05:23<03:32,  1.18it/s] 50%|█████     | 250/500 [05:24<03:45,  1.11it/s] 50%|█████     | 251/500 [05:24<03:21,  1.24it/s] 50%|█████     | 252/500 [05:25<03:31,  1.17it/s] 51%|█████     | 253/500 [05:26<03:09,  1.30it/s] 51%|█████     | 254/500 [05:26<02:46,  1.48it/s] 51%|█████     | 255/500 [05:27<02:29,  1.64it/s] 51%|█████     | 256/500 [05:28<02:57,  1.37it/s] 51%|█████▏    | 257/500 [05:28<02:55,  1.38it/s] 52%|█████▏    | 258/500 [05:30<03:19,  1.21it/s] 52%|█████▏    | 259/500 [05:30<03:26,  1.17it/s] 52%|█████▏    | 260/500 [05:31<03:14,  1.23it/s] 52%|█████▏    | 261/500 [05:32<02:54,  1.37it/s] 52%|█████▏    | 262/500 [05:33<03:09,  1.26it/s] 53%|█████▎    | 263/500 [05:33<03:02,  1.30it/s] 53%|█████▎    | 264/500 [05:34<02:41,  1.46it/s] 53%|█████▎    | 265/500 [05:35<02:40,  1.47it/s] 53%|█████▎    | 266/500 [05:35<02:55,  1.33it/s] 53%|█████▎    | 267/500 [05:36<02:36,  1.49it/s] 54%|█████▎    | 268/500 [05:36<02:25,  1.60it/s] 54%|█████▍    | 269/500 [05:37<02:39,  1.45it/s] 54%|█████▍    | 270/500 [05:38<02:49,  1.35it/s] 54%|█████▍    | 271/500 [05:39<03:01,  1.26it/s] 54%|█████▍    | 272/500 [05:40<03:22,  1.13it/s] 55%|█████▍    | 273/500 [05:41<03:41,  1.03it/s] 55%|█████▍    | 274/500 [05:42<03:14,  1.16it/s] 55%|█████▌    | 275/500 [05:43<03:33,  1.05it/s] 55%|█████▌    | 276/500 [05:44<03:19,  1.12it/s] 55%|█████▌    | 277/500 [05:44<02:54,  1.28it/s] 56%|█████▌    | 278/500 [05:45<02:54,  1.27it/s] 56%|█████▌    | 279/500 [05:46<02:57,  1.24it/s] 56%|█████▌    | 280/500 [05:46<02:34,  1.42it/s] 56%|█████▌    | 281/500 [05:47<02:22,  1.54it/s] 56%|█████▋    | 282/500 [05:47<02:04,  1.75it/s] 57%|█████▋    | 283/500 [05:48<02:28,  1.47it/s] 57%|█████▋    | 284/500 [05:49<02:29,  1.44it/s] 57%|█████▋    | 285/500 [05:50<02:32,  1.41it/s] 57%|█████▋    | 286/500 [05:50<02:19,  1.54it/s] 57%|█████▋    | 287/500 [05:51<02:38,  1.35it/s] 58%|█████▊    | 288/500 [05:53<03:10,  1.11it/s] 58%|█████▊    | 289/500 [05:53<02:45,  1.28it/s] 58%|█████▊    | 290/500 [05:54<02:35,  1.35it/s] 58%|█████▊    | 291/500 [05:55<02:59,  1.17it/s] 58%|█████▊    | 292/500 [05:56<02:52,  1.21it/s] 59%|█████▊    | 293/500 [05:56<02:44,  1.26it/s] 59%|█████▉    | 294/500 [05:57<02:33,  1.35it/s] 59%|█████▉    | 295/500 [05:57<02:18,  1.48it/s] 59%|█████▉    | 296/500 [05:58<02:11,  1.55it/s] 59%|█████▉    | 297/500 [05:58<01:56,  1.74it/s] 60%|█████▉    | 298/500 [05:59<02:05,  1.61it/s] 60%|█████▉    | 299/500 [06:00<02:22,  1.41it/s] 60%|██████    | 300/500 [06:01<02:38,  1.26it/s] 60%|██████    | 301/500 [06:02<02:22,  1.40it/s] 60%|██████    | 302/500 [06:02<02:17,  1.44it/s]
+Problem 227:
+  Q: Is the Very Large Telescope the most productive telescope in the world?...
+  Pred: yes | Gold: no | ❌
+
+Problem 228:
+  Q: Is it safe to wear sandals in snow?...
+  Pred: no | Gold: no | ✅
+
+Problem 229:
+  Q: Is the cuisine of Hawaii suitable for a vegan?...
+  Pred: yes | Gold: no | ❌
+
+Problem 230:
+  Q: Would a customer be happy if their grocery store meat tasted like game?...
+  Pred: no | Gold: no | ✅
+
+Problem 231:
+  Q: Is the Royal Air Force ensign on the moon?...
+  Pred: no | Gold: no | ✅
+
+Problem 232:
+  Q: Are tampons a good 24 hour solution for mentruation?...
+  Pred: yes | Gold: no | ❌
+
+Problem 233:
+  Q: If someone loves buffalo wings do they enjoy capsaicin?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 234:
+  Q: Can you cure hepatitis with a tonsillectomy?...
+  Pred: no | Gold: no | ✅
+
+Problem 235:
+  Q: Can cancer cause excess adrenaline production?...
+  Pred: no | Gold: yes | ❌
+
+Problem 236:
+  Q: Would a Frigatebird in Ontario be a strange sight?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 237:
+  Q: Would a silicon shortage be bad for Intel's sales?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 238:
+  Q: Has Ivan the Terrible flown to Europe?...
+  Pred: yes | Gold: no | ❌
+
+Problem 239:
+  Q: Could Oprah Winfrey buy dozens of her staff Bugatti luxury cars?...
+  Pred: no | Gold: yes | ❌
+
+Problem 240:
+  Q: Did the Wehrmacht affect the outcome of the War to End All Wars?...
+  Pred: yes | Gold: no | ❌
+
+Problem 241:
+  Q: Are Leopard cats in less dire straits than Bornean Orangutan?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 242:
+  Q: Did Snoop Dogg refuse to make music with rival gang members?...
+  Pred: no | Gold: no | ✅
+
+Problem 243:
+  Q: Does the density of helium cause voices to sound deeper?...
+  Pred: no | Gold: no | ✅
+
+Problem 244:
+  Q: Is Romeo and Juliet an unusual title to teach high schoolers?...
+  Pred: yes | Gold: no | ❌
+
+Problem 245:
+  Q: Are there multiple American government holidays during winter?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 246:
+  Q: Is Islamophobia against Cyprus majority religion misdirected?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 247:
+  Q: Have jokes killed more people than rats in history?...
+  Pred: yes | Gold: no | ❌
+
+Problem 248:
+  Q: Will parma ham be ready for New Year's if the pig is slaughtered in December?...
+  Pred: yes | Gold: no | ❌
+
+Problem 249:
+  Q: Does Amtrak operate four wheel vehicles?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 250:
+  Q: Does chlorine inhibit photosynthesis?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 251:
+  Q: Was Bruce Lee absent from the 1964 University of Washington graduation ceremony?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 252:
+  Q: Do people who smoke Djarum's like cloves?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 253:
+  Q: Is an astronomer interested in drosophila?...
+  Pred: yes | Gold: no | ❌
+
+Problem 254:
+  Q: Is Atlantic cod found in a vegemite sandwich?...
+  Pred: yes | Gold: no | ❌
+
+Problem 255:
+  Q: Did Bruiser Brody wrestle on WWE Raw?...
+  Pred: no | Gold: no | ✅
+
+Problem 256:
+  Q: Can the largest crustacean stretch out completely on a king-sized mattress?...
+  Pred: no | Gold: no | ✅
+
+Problem 257:
+  Q: Do Windows or Android smartphones run newer versions of Linux?...
+  Pred: no | Gold: no | ✅
+
+Problem 258:
+  Q: Does Neville Longbottom have more courage as a child than as an adult?...
+  Pred: yes | Gold: no | ❌
+
+Problem 259:
+  Q: Could Brooke Shields succeed at University of Pennsylvania?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 260:
+  Q: Would Atlantic Salmon be within David Duchovny's dietary guidelines?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 261:
+  Q: Do people remember Lucille Ball's winemaking as successful?...
+  Pred: no | Gold: no | ✅
+
+Problem 262:
+  Q: Can a Sphynx cat be used for wool?...
+  Pred: yes | Gold: no | ❌
+
+Problem 263:
+  Q: Are classic nintendo games for emulator legal?...
+  Pred: yes | Gold: no | ❌
+
+Problem 264:
+  Q: Can you use the T-Mobile tuesdays app if you aren't a T-Mobile customer?...
+  Pred: no | Gold: no | ✅
+
+Problem 265:
+  Q: Could Aretha Franklin vote for a president when her second child was born?...
+  Pred: no | Gold: no | ✅
+
+Problem 266:
+  Q: Is Eighth Amendment to the United States Constitution popular in court?...
+  Pred: no | Gold: no | ✅
+
+Problem 267:
+  Q: Did the Social Democratic Party of Germany help Frederick II become King of Prus...
+  Pred: no | Gold: no | ✅
+
+Problem 268:
+  Q: Would a Catholic priest commend someone's pride?...
+  Pred: no | Gold: no | ✅
+
+Problem 269:
+  Q: Did Bill Gates help to develop the PlayStation 4?...
+  Pred: no | Gold: no | ✅
+
+Problem 270:
+  Q: Would a teacher still have their job if they called a black student an ape?...
+  Pred: yes | Gold: no | ❌
+
+Problem 271:
+  Q: Did compact discs make computer gaming more popular?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 272:
+  Q: Do storks need golden toads to survive?...
+  Pred: yes | Gold: no | ❌
+
+Problem 273:
+  Q: Are any letters directly before and after H missing from Roman numerals?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 274:
+  Q: Did the Nazis use the Hammer and sickle flag?...
+  Pred: yes | Gold: no | ❌
+
+Problem 275:
+  Q: Are there enough Jonny Cash records in the world to give one to each French citi...
+  Pred: yes | Gold: yes | ✅
+
+Problem 276:
+  Q: Can monkeys use QWERTY keyboards?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 277:
+  Q: Should children be kept from "special brownies"?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 278:
+  Q: Would Taylor Swift refer to Snoopy as oppa?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 279:
+  Q: Can horseradish be eaten in a religious context?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 280:
+  Q: Do hamsters provide food for any animals?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 281:
+  Q: Will Chick-fil-A hypothetically refuse to sponsor a Pride parade?...
+  Pred: no | Gold: yes | ❌
+
+Problem 282:
+  Q: Are the headquarters of All Nippon Airways near a beach?...
+  Pred: yes | Gold: no | ❌
+
+Problem 283:
+  Q: Does Evander Holyfield eat pork products?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 284:
+  Q: Could John Key issue an executive order in the USA?...
+  Pred: yes | Gold: no | ❌
+
+Problem 285:
+  Q: Can a Goblin shark hypothetically ride a bike if it had limbs?...
+  Pred: yes | Gold: no | ❌
+
+Problem 286:
+  Q: Does a Trek 9000 require an anchor in order to park?...
+  Pred: no | Gold: no | ✅
+
+Problem 287:
+  Q: Does Steven Spielberg's 1998 film take place in a period after War Horse setting...
+  Pred: yes | Gold: yes | ✅
+
+Problem 288:
+  Q: Is November a bad time for a photographer to take pictures of a plum tree in blo...
+  Pred: yes | Gold: yes | ✅
+
+Problem 289:
+  Q: Do more Cauliflower grow in Arizona than California?...
+  Pred: yes | Gold: no | ❌
+
+Problem 290:
+  Q: Would Jason Voorhees hypothetically fail at being a martyr?...
+  Pred: no | Gold: yes | ❌
+
+Problem 291:
+  Q: Could Palm Beach be held in the palm of your hand?...
+  Pred: yes | Gold: no | ❌
+
+Problem 292:
+  Q: Did Alfred Nobel write a banned book?...
+  Pred: no | Gold: yes | ❌
+
+Problem 293:
+  Q: Can a quarter fit inside of a human kidney?...
+  Pred: no | Gold: yes | ❌
+
+Problem 294:
+  Q: Did Boris Yeltsin watch the 2008 Summer Olympics?...
+  Pred: no | Gold: no | ✅
+
+Problem 295:
+  Q: Does frost mean that it will be a snowy day?...
+  Pred: no | Gold: no | ✅
+
+Problem 296:
+  Q: Would students at Marist have to petition to get a rowing team?...
+  Pred: no | Gold: no | ✅
+
+Problem 297:
+  Q: Are there multiple Disney Zorro?...
+  Pred: no | Gold: yes | ❌
+
+Problem 298:
+  Q: Could a hundred thousand lolcats fit on a first generation iPhone?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 299:
+  Q: Does selling a 2020 Chevrolet Corvette almost pay for a year at Columbia Univers...
+  Pred: yes | Gold: yes | ✅
+
+Problem 300:
+  Q: Does the book Revolutionary Road give a glimpse at life in a suburb?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 301:
+  Q: Is the Liberty Bell still in its original location?...
+  Pred: no | Gold: no | ✅
+
+Problem 302:
+  Q: Does Buddy The Elf know anyone who works in publishing?...
+  Pred: None | Gold: yes | ❌
+
+Problem 303:
+ 61%|██████    | 303/500 [06:03<02:34,  1.27it/s] 61%|██████    | 304/500 [06:04<02:12,  1.48it/s] 61%|██████    | 305/500 [06:04<01:57,  1.66it/s] 61%|██████    | 306/500 [06:05<02:17,  1.41it/s] 61%|██████▏   | 307/500 [06:06<02:41,  1.20it/s] 62%|██████▏   | 308/500 [06:07<02:32,  1.26it/s] 62%|██████▏   | 309/500 [06:08<02:31,  1.26it/s] 62%|██████▏   | 310/500 [06:09<02:45,  1.15it/s] 62%|██████▏   | 311/500 [06:09<02:28,  1.27it/s] 62%|██████▏   | 312/500 [06:10<02:21,  1.33it/s] 63%|██████▎   | 313/500 [06:10<01:48,  1.73it/s] 63%|██████▎   | 314/500 [06:11<02:03,  1.50it/s] 63%|██████▎   | 315/500 [06:12<02:15,  1.37it/s] 63%|██████▎   | 316/500 [06:12<02:01,  1.52it/s] 63%|██████▎   | 317/500 [06:14<02:27,  1.24it/s] 64%|██████▎   | 318/500 [06:14<02:20,  1.29it/s] 64%|██████▍   | 319/500 [06:15<02:40,  1.13it/s] 64%|██████▍   | 320/500 [06:16<02:44,  1.10it/s] 64%|██████▍   | 321/500 [06:17<02:24,  1.24it/s] 64%|██████▍   | 322/500 [06:17<02:08,  1.39it/s] 65%|██████▍   | 323/500 [06:18<02:14,  1.32it/s] 65%|██████▍   | 324/500 [06:19<01:56,  1.51it/s] 65%|██████▌   | 325/500 [06:20<02:11,  1.33it/s] 65%|██████▌   | 326/500 [06:21<02:22,  1.22it/s] 65%|██████▌   | 327/500 [06:21<02:12,  1.30it/s] 66%|██████▌   | 328/500 [06:22<02:18,  1.24it/s] 66%|██████▌   | 329/500 [06:23<02:07,  1.34it/s] 66%|██████▌   | 330/500 [06:24<02:16,  1.25it/s] 66%|██████▌   | 331/500 [06:25<02:14,  1.26it/s] 66%|██████▋   | 332/500 [06:25<02:20,  1.19it/s] 67%|██████▋   | 333/500 [06:26<02:08,  1.29it/s] 67%|██████▋   | 334/500 [06:27<02:13,  1.25it/s] 67%|██████▋   | 335/500 [06:28<02:21,  1.16it/s] 67%|██████▋   | 336/500 [06:29<02:06,  1.30it/s] 67%|██████▋   | 337/500 [06:29<01:57,  1.38it/s] 68%|██████▊   | 338/500 [06:30<02:07,  1.27it/s] 68%|██████▊   | 339/500 [06:31<02:07,  1.26it/s] 68%|██████▊   | 340/500 [06:32<02:11,  1.22it/s] 68%|██████▊   | 341/500 [06:32<02:01,  1.31it/s] 68%|██████▊   | 342/500 [06:33<01:48,  1.45it/s] 69%|██████▊   | 343/500 [06:34<02:11,  1.19it/s] 69%|██████▉   | 344/500 [06:35<01:54,  1.36it/s] 69%|██████▉   | 345/500 [06:36<02:12,  1.17it/s] 69%|██████▉   | 346/500 [06:36<01:57,  1.31it/s] 69%|██████▉   | 347/500 [06:37<01:59,  1.28it/s] 70%|██████▉   | 348/500 [06:37<01:40,  1.52it/s] 70%|██████▉   | 349/500 [06:38<01:37,  1.55it/s] 70%|███████   | 350/500 [06:39<01:44,  1.44it/s] 70%|███████   | 351/500 [06:40<01:45,  1.41it/s] 70%|███████   | 352/500 [06:40<01:47,  1.37it/s] 71%|███████   | 353/500 [06:41<01:47,  1.36it/s] 71%|███████   | 354/500 [06:42<01:47,  1.35it/s] 71%|███████   | 355/500 [06:43<01:56,  1.24it/s] 71%|███████   | 356/500 [06:43<01:47,  1.34it/s] 71%|███████▏  | 357/500 [06:44<01:56,  1.23it/s] 72%|███████▏  | 358/500 [06:46<02:07,  1.12it/s] 72%|███████▏  | 359/500 [06:46<01:50,  1.28it/s] 72%|███████▏  | 360/500 [06:46<01:34,  1.48it/s] 72%|███████▏  | 361/500 [06:48<01:49,  1.27it/s] 72%|███████▏  | 362/500 [06:48<01:44,  1.32it/s] 73%|███████▎  | 363/500 [06:49<01:32,  1.48it/s] 73%|███████▎  | 364/500 [06:50<01:43,  1.31it/s] 73%|███████▎  | 365/500 [06:50<01:40,  1.34it/s] 73%|███████▎  | 366/500 [06:51<01:27,  1.52it/s] 73%|███████▎  | 367/500 [06:52<01:34,  1.41it/s] 74%|███████▎  | 368/500 [06:52<01:31,  1.45it/s] 74%|███████▍  | 369/500 [06:53<01:25,  1.54it/s] 74%|███████▍  | 370/500 [06:54<01:32,  1.41it/s] 74%|███████▍  | 371/500 [06:55<01:39,  1.30it/s] 74%|███████▍  | 372/500 [06:56<01:56,  1.10it/s] 75%|███████▍  | 373/500 [06:56<01:41,  1.25it/s] 75%|███████▍  | 374/500 [06:57<01:26,  1.45it/s] 75%|███████▌  | 375/500 [06:58<01:29,  1.40it/s] 75%|███████▌  | 376/500 [06:59<01:45,  1.18it/s] 75%|███████▌  | 377/500 [07:00<01:45,  1.16it/s] 76%|███████▌  | 378/500 [07:01<01:46,  1.15it/s] 76%|███████▌  | 379/500 [07:02<01:50,  1.09it/s] 76%|███████▌  | 380/500 [07:03<02:01,  1.01s/it]  Q: Does Rusev have to worry about human overpopulation in his homeland?...
+  Pred: yes | Gold: no | ❌
+
+Problem 304:
+  Q: Is unanimously elected president's birthday a break for mail carriers?...
+  Pred: no | Gold: yes | ❌
+
+Problem 305:
+  Q: Does a sea otter eat spiders?...
+  Pred: yes | Gold: no | ❌
+
+Problem 306:
+  Q: Could a Bengal cat hypothetically best Javier Sotomayor's record?...
+  Pred: no | Gold: yes | ❌
+
+Problem 307:
+  Q: Are Chipotle Cinnamon Pork Chops appropriate for a Seder?...
+  Pred: yes | Gold: no | ❌
+
+Problem 308:
+  Q: Would the chef at Carmine's restaurant panic if there was no basil?...
+  Pred: no | Gold: yes | ❌
+
+Problem 309:
+  Q: Is most store bought rice pudding made with brown rice?...
+  Pred: yes | Gold: no | ❌
+
+Problem 310:
+  Q: Did Easy Rider make a profit at the theater when it was released?...
+  Pred: no | Gold: yes | ❌
+
+Problem 311:
+  Q: Do mail carriers need multiple uniforms?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 312:
+  Q: Is Steve Martin someone who would refuse a dish of shrimp pasta?...
+  Pred: no | Gold: yes | ❌
+
+Problem 313:
+  Q: Does Princess Peach's dress resemble a peach fruit?...
+  Pred: yes | Gold: no | ❌
+
+Problem 314:
+  Q: As of 2020 have more women succeeded John Key than preceded him?...
+  Pred: yes | Gold: no | ❌
+
+Problem 315:
+  Q: Would Methuselah hypothetically hold a record in the Common Era?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 316:
+  Q: Would you be likely to see storks at a baby shower?...
+  Pred: no | Gold: yes | ❌
+
+Problem 317:
+  Q: Can Viper Room concert hypothetically be held at National Diet building?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 318:
+  Q: Can you get a fever from consuming meat?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 319:
+  Q: Did Ivan the Terrible use the Byzantine calendar?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 320:
+  Q: Are psychiatric patients welcome to join the United States Air Force?...
+  Pred: yes | Gold: no | ❌
+
+Problem 321:
+  Q: Would a Rabbi celebrate Christmas?...
+  Pred: yes | Gold: no | ❌
+
+Problem 322:
+  Q: Is clementine pith highly sought after?...
+  Pred: yes | Gold: no | ❌
+
+Problem 323:
+  Q: Did the Nepalese Civil War take place near India?...
+  Pred: no | Gold: yes | ❌
+
+Problem 324:
+  Q: Can I hold Bing in a basket?...
+  Pred: no | Gold: no | ✅
+
+Problem 325:
+  Q: Can paratroopers be used in a vacuum?...
+  Pred: no | Gold: no | ✅
+
+Problem 326:
+  Q: Could the moon fit inside the Black Sea?...
+  Pred: yes | Gold: no | ❌
+
+Problem 327:
+  Q: Could R. Kelly write a college thesis?...
+  Pred: yes | Gold: no | ❌
+
+Problem 328:
+  Q: Can a chess board be converted to a Shogi board?...
+  Pred: no | Gold: no | ✅
+
+Problem 329:
+  Q: Has Cesar Millan ever tamed a short-eared dog?...
+  Pred: no | Gold: no | ✅
+
+Problem 330:
+  Q: Did the Eastern Orthodox Church and the Byzantine Empire ever use the same calen...
+  Pred: no | Gold: yes | ❌
+
+Problem 331:
+  Q: Were number of states in Ancient Greece underwhelming compared to US states in 1...
+  Pred: yes | Gold: no | ❌
+
+Problem 332:
+  Q: Is the rise of agriculture attributed to rivers?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 333:
+  Q: Are goldfish more difficult to care for than isopods?...
+  Pred: no | Gold: yes | ❌
+
+Problem 334:
+  Q: Does Mario use mushrooms to run faster?...
+  Pred: no | Gold: no | ✅
+
+Problem 335:
+  Q: Can eating your weight in celery prevent diabetes?...
+  Pred: no | Gold: no | ✅
+
+Problem 336:
+  Q: Do restaurants associate meatballs with the wrong country of origin?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 337:
+  Q: Would it be wise to bring a robusto into Central Park Zoo?...
+  Pred: no | Gold: no | ✅
+
+Problem 338:
+  Q: Were the Great Pyramids built by a theocratic government?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 339:
+  Q: Are sesame seeds glued onto hamburger buns?...
+  Pred: yes | Gold: no | ❌
+
+Problem 340:
+  Q: Was Snoop Dogg an adult when Tickle Me Elmo was popular?...
+  Pred: no | Gold: yes | ❌
+
+Problem 341:
+  Q: Does the central processing unit usually have a dedicated fan?...
+  Pred: no | Gold: yes | ❌
+
+Problem 342:
+  Q: Did James Watson's partner in studying the double helix outlive him? ...
+  Pred: yes | Gold: no | ❌
+
+Problem 343:
+  Q: Can atheism surpass Christianity in American black communities by 2021?...
+  Pred: no | Gold: no | ✅
+
+Problem 344:
+  Q: Did the band Led Zeppelin own a prime number of gilded gramophones?...
+  Pred: no | Gold: yes | ❌
+
+Problem 345:
+  Q: Are Doctors of Homeopathy more likely than Doctors of Internal Medicine to recom...
+  Pred: no | Gold: yes | ❌
+
+Problem 346:
+  Q: Would it be difficult to host Stanley Cup Finals at Rock in Rio?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 347:
+  Q: Would the trees in Auburn, New York be changing colors in September?...
+  Pred: no | Gold: yes | ❌
+
+Problem 348:
+  Q: Could an elephant easily defeat a male macaque?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 349:
+  Q: Can Cyril Ramaphosa become Secretary General of NATO?...
+  Pred: no | Gold: no | ✅
+
+Problem 350:
+  Q: Did Pedubastis I know Japanese people?...
+  Pred: no | Gold: no | ✅
+
+Problem 351:
+  Q: Would a cattle farmer be useful to a drum maker?...
+  Pred: no | Gold: yes | ❌
+
+Problem 352:
+  Q: Can children be hurt by jalapeno peppers?...
+  Pred: no | Gold: yes | ❌
+
+Problem 353:
+  Q: Is Brooklyn known for its bread products?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 354:
+  Q: Can Vice President of the United States kill with impunity?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 355:
+  Q: Can Amtrak's Acela Express break the sound barrier?...
+  Pred: yes | Gold: no | ❌
+
+Problem 356:
+  Q: Are all characters in Legend of Robin Hood fictional?...
+  Pred: no | Gold: no | ✅
+
+Problem 357:
+  Q: Are raw carrots better for maximizing vitamin A intake?...
+  Pred: no | Gold: no | ✅
+
+Problem 358:
+  Q: Is radioactive waste a plot device for many shows?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 359:
+  Q: Could a firewall be destroyed by a hammer?...
+  Pred: no | Gold: no | ✅
+
+Problem 360:
+  Q: Can the President of Mexico vote in New Mexico primaries?...
+  Pred: yes | Gold: no | ❌
+
+Problem 361:
+  Q: Would the operating system of a Samsung Galaxy 1 sound edible?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 362:
+  Q: Does Metallica use Soulseek?...
+  Pred: no | Gold: no | ✅
+
+Problem 363:
+  Q: Are monks forbidden from engaging in warfare?...
+  Pred: yes | Gold: no | ❌
+
+Problem 364:
+  Q: Did the Royal Air Force fight in the Boxer Rebellion?...
+  Pred: no | Gold: no | ✅
+
+Problem 365:
+  Q: Can a minotaur hypothetically injure a tibia playing football?...
+  Pred: no | Gold: yes | ❌
+
+Problem 366:
+  Q: Did Columbus obtain his funding from the rulers of the Portugese Empire?...
+  Pred: no | Gold: no | ✅
+
+Problem 367:
+  Q: Do shrimp taste best when cooked for a long time?...
+  Pred: no | Gold: no | ✅
+
+Problem 368:
+  Q: Would a birdwatcher pursue their hobby at a Philadelphia Eagles game?...
+  Pred: yes | Gold: no | ❌
+
+Problem 369:
+  Q: Is Cantonese spoken in Japan?...
+  Pred: no | Gold: no | ✅
+
+Problem 370:
+  Q: Do ants outperform apes on language ability?...
+  Pred: no | Gold: no | ✅
+
+Problem 371:
+  Q: Did François Mitterrand serve under Napoleon Bonapart in the French army?...
+  Pred: no | Gold: no | ✅
+
+Problem 372:
+  Q: Would Christopher Hitchens be very unlikely to engage in tonsure?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 373:
+  Q: Is menthol associated with Christmas?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 374:
+  Q: Does Snoop Dogg advocate a straight edge lifestyle?...
+  Pred: yes | Gold: no | ❌
+
+Problem 375:
+  Q: Can amoebas get cancer?...
+  Pred: no | Gold: no | ✅
+
+Problem 376:
+  Q: Is it expected that Charla Nash would be anxious near a gorilla?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 377:
+  Q: Should oysters be avoided by people with ADHD?...
+  Pred: yes | Gold: no | ❌
+
+Problem 378:
+  Q: Does Magnus Carlsen enjoy KFC?...
+  Pred: yes | Gold: no | ❌
+
+Problem 379:
+  Q: Is Cholera alive?...
+  Pred: no | Gold: yes | ❌
+
+Problem 380:
+  Q: Would a packed Wembley stadium be likely to have a descendant of the Mongols ins...
+  Pred: yes | Gold: yes | ✅
+ 76%|███████▌  | 381/500 [07:04<02:04,  1.05s/it] 76%|███████▋  | 382/500 [07:05<01:50,  1.07it/s] 77%|███████▋  | 383/500 [07:05<01:34,  1.23it/s] 77%|███████▋  | 384/500 [07:06<01:29,  1.30it/s] 77%|███████▋  | 385/500 [07:07<01:31,  1.25it/s] 77%|███████▋  | 386/500 [07:08<01:37,  1.17it/s] 77%|███████▋  | 387/500 [07:08<01:28,  1.27it/s] 78%|███████▊  | 388/500 [07:09<01:32,  1.21it/s] 78%|███████▊  | 389/500 [07:10<01:32,  1.20it/s] 78%|███████▊  | 390/500 [07:11<01:25,  1.28it/s] 78%|███████▊  | 391/500 [07:12<01:31,  1.19it/s] 78%|███████▊  | 392/500 [07:12<01:28,  1.22it/s] 79%|███████▊  | 393/500 [07:13<01:24,  1.26it/s] 79%|███████▉  | 394/500 [07:14<01:28,  1.19it/s] 79%|███████▉  | 395/500 [07:15<01:30,  1.16it/s] 79%|███████▉  | 396/500 [07:15<01:16,  1.36it/s] 79%|███████▉  | 397/500 [07:17<01:31,  1.13it/s] 80%|███████▉  | 398/500 [07:17<01:23,  1.22it/s] 80%|███████▉  | 399/500 [07:18<01:19,  1.26it/s] 80%|████████  | 400/500 [07:19<01:28,  1.12it/s] 80%|████████  | 401/500 [07:20<01:22,  1.20it/s] 80%|████████  | 402/500 [07:20<01:13,  1.34it/s] 81%|████████  | 403/500 [07:21<01:06,  1.45it/s] 81%|████████  | 404/500 [07:22<01:06,  1.45it/s] 81%|████████  | 405/500 [07:22<01:06,  1.43it/s] 81%|████████  | 406/500 [07:23<01:10,  1.33it/s] 81%|████████▏ | 407/500 [07:24<01:06,  1.40it/s] 82%|████████▏ | 408/500 [07:25<01:09,  1.32it/s] 82%|████████▏ | 409/500 [07:26<01:17,  1.17it/s] 82%|████████▏ | 410/500 [07:26<01:09,  1.30it/s] 82%|████████▏ | 411/500 [07:28<01:25,  1.04it/s] 82%|████████▏ | 412/500 [07:29<01:17,  1.13it/s] 83%|████████▎ | 413/500 [07:29<01:11,  1.21it/s] 83%|████████▎ | 414/500 [07:30<01:07,  1.27it/s] 83%|████████▎ | 415/500 [07:30<00:58,  1.45it/s] 83%|████████▎ | 416/500 [07:31<00:53,  1.58it/s] 83%|████████▎ | 417/500 [07:32<01:00,  1.38it/s] 84%|████████▎ | 418/500 [07:32<00:55,  1.47it/s] 84%|████████▍ | 419/500 [07:33<00:51,  1.58it/s] 84%|████████▍ | 420/500 [07:34<01:03,  1.26it/s] 84%|████████▍ | 421/500 [07:35<00:58,  1.35it/s] 84%|████████▍ | 422/500 [07:36<01:02,  1.26it/s] 85%|████████▍ | 423/500 [07:36<00:55,  1.38it/s] 85%|████████▍ | 424/500 [07:37<00:53,  1.42it/s] 85%|████████▌ | 425/500 [07:38<00:51,  1.46it/s] 85%|████████▌ | 426/500 [07:38<00:48,  1.54it/s] 85%|████████▌ | 427/500 [07:39<00:43,  1.68it/s] 86%|████████▌ | 428/500 [07:40<00:51,  1.39it/s] 86%|████████▌ | 429/500 [07:41<01:09,  1.03it/s] 86%|████████▌ | 430/500 [07:42<01:04,  1.08it/s] 86%|████████▌ | 431/500 [07:43<01:09,  1.01s/it] 86%|████████▋ | 432/500 [07:44<01:08,  1.01s/it] 87%|████████▋ | 433/500 [07:44<00:52,  1.28it/s] 87%|████████▋ | 434/500 [07:45<00:51,  1.28it/s] 87%|████████▋ | 435/500 [07:46<00:47,  1.36it/s] 87%|████████▋ | 436/500 [07:47<00:49,  1.30it/s] 87%|████████▋ | 437/500 [07:47<00:47,  1.33it/s] 88%|████████▊ | 438/500 [07:48<00:43,  1.43it/s] 88%|████████▊ | 439/500 [07:48<00:39,  1.56it/s] 88%|████████▊ | 440/500 [07:49<00:39,  1.54it/s] 88%|████████▊ | 441/500 [07:50<00:44,  1.34it/s] 88%|████████▊ | 442/500 [07:51<00:41,  1.39it/s] 89%|████████▊ | 443/500 [07:51<00:38,  1.50it/s] 89%|████████▉ | 444/500 [07:52<00:38,  1.45it/s] 89%|████████▉ | 445/500 [07:53<00:38,  1.41it/s] 89%|████████▉ | 446/500 [07:53<00:36,  1.49it/s] 89%|████████▉ | 447/500 [07:54<00:32,  1.64it/s] 90%|████████▉ | 448/500 [07:55<00:33,  1.55it/s] 90%|████████▉ | 449/500 [07:55<00:35,  1.43it/s] 90%|█████████ | 450/500 [07:56<00:32,  1.54it/s] 90%|█████████ | 451/500 [07:57<00:30,  1.59it/s] 90%|█████████ | 452/500 [07:58<00:37,  1.28it/s] 91%|█████████ | 453/500 [07:59<00:40,  1.15it/s] 91%|█████████ | 454/500 [08:00<00:44,  1.03it/s] 91%|█████████ | 455/500 [08:00<00:37,  1.21it/s] 91%|█████████ | 456/500 [08:01<00:36,  1.21it/s] 91%|█████████▏| 457/500 [08:02<00:34,  1.24it/s]
+Problem 381:
+  Q: Is Oculudentavis more dangerous than Allosaurus?...
+  Pred: no | Gold: no | ✅
+
+Problem 382:
+  Q: Would James Cotton's instrument be too strident for a smooth jazz band?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 383:
+  Q: Are there tearjerkers about United Airlines flights?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 384:
+  Q: Would a rabbi worship martyrs Ranavalona I killed?...
+  Pred: yes | Gold: no | ❌
+
+Problem 385:
+  Q: Would someone typically confuse a sweet potato with a pineapple?...
+  Pred: yes | Gold: no | ❌
+
+Problem 386:
+  Q: Does Mercury help detect coronavirus?...
+  Pred: no | Gold: yes | ❌
+
+Problem 387:
+  Q: Was The Jackson 5 bigger family band than The Isley Brothers?...
+  Pred: no | Gold: yes | ❌
+
+Problem 388:
+  Q: Does a Starbucks passion tea have ginger in it?...
+  Pred: no | Gold: no | ✅
+
+Problem 389:
+  Q: Do Shivambu practitioners believe ammonia is unhealthy?...
+  Pred: no | Gold: no | ✅
+
+Problem 390:
+  Q: Can eating grapefruit kill besides allergies or choking?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 391:
+  Q: Should someone prone to jealousy be in a polyamorous relationship?...
+  Pred: no | Gold: no | ✅
+
+Problem 392:
+  Q: Would early Eastern Canadian Natives language have use of the letter B?...
+  Pred: yes | Gold: no | ❌
+
+Problem 393:
+  Q: During the pandemic, is door to door advertising considered inconsiderate?...
+  Pred: no | Gold: yes | ❌
+
+Problem 394:
+  Q: Is Mickey Mouse hypothetically unlikely to make a purchase at Zazzle?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 395:
+  Q: Is Maruti Suzuki Baleno an efficient car for Linus Torvald's family?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 396:
+  Q: Would it be common to find a penguin in Miami?...
+  Pred: no | Gold: no | ✅
+
+Problem 397:
+  Q: Is Benjamin Franklin a prime candidate to have his statues removed by Black Live...
+  Pred: yes | Gold: yes | ✅
+
+Problem 398:
+  Q: Is ID required to get all medications from all pharmacies?...
+  Pred: no | Gold: no | ✅
+
+Problem 399:
+  Q: Is Fiat Chrysler gaining a new overall corporate identity?...
+  Pred: no | Gold: yes | ❌
+
+Problem 400:
+  Q: Did Disney get most of Rudyard Kipling's The Jungle Book profits?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 401:
+  Q: Does an organ donor need to be dead to donate a kidney?...
+  Pred: yes | Gold: no | ❌
+
+Problem 402:
+  Q: Would Kelly Clarkson's voice shake glass?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 403:
+  Q: Is a railroad engineer needed during NASCAR events?...
+  Pred: no | Gold: no | ✅
+
+Problem 404:
+  Q: Can crane slamdunk?...
+  Pred: yes | Gold: no | ❌
+
+Problem 405:
+  Q: Did the Qwerty keyboard layout predate computers?...
+  Pred: no | Gold: yes | ❌
+
+Problem 406:
+  Q: Are tumors in the lymph nodes ignorable?...
+  Pred: yes | Gold: no | ❌
+
+Problem 407:
+  Q: Would Alexander Hamilton have known about koalas?...
+  Pred: None | Gold: no | ❌
+
+Problem 408:
+  Q: Did Spiderman fight against Falcon in the MCU?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 409:
+  Q: Will the torso be safe from blows to the largest and smallest bones in body?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 410:
+  Q: Does the Dalai Lama believe in the divine barzakh?...
+  Pred: no | Gold: no | ✅
+
+Problem 411:
+  Q: Is Pig Latin related to real Latin?...
+  Pred: yes | Gold: no | ❌
+
+Problem 412:
+  Q: Is Shiva's divine dance an ancient physical fitness pose?...
+  Pred: no | Gold: no | ✅
+
+Problem 413:
+  Q: Would Woodrow Wilson support Plessy v. Ferguson decision?...
+  Pred: no | Gold: yes | ❌
+
+Problem 414:
+  Q: Would a Bulgarian priest eat a four-course meal on Christmas Eve?...
+  Pred: yes | Gold: no | ❌
+
+Problem 415:
+  Q: Is Route 66 generally unknown to Americans?...
+  Pred: yes | Gold: no | ❌
+
+Problem 416:
+  Q: Did the Berlin Wall prevent any athletes from competing in the 1936 Summer Olymp...
+  Pred: yes | Gold: no | ❌
+
+Problem 417:
+  Q: Are the Vietnamese people a great untapped resource for NBA players?...
+  Pred: yes | Gold: no | ❌
+
+Problem 418:
+  Q: Will every resident of Los Angeles County, California go to Jehovah Witnesses's ...
+  Pred: no | Gold: no | ✅
+
+Problem 419:
+  Q: Do Australians ride Kangaroos to work?...
+  Pred: yes | Gold: no | ❌
+
+Problem 420:
+  Q: Did origin dynasty of Go precede Jia Sidao?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 421:
+  Q: Are there multiple Star Wars TV shows produced by Disney?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 422:
+  Q: Would Emma Roberts's Nancy Drew be considered a private investigator?...
+  Pred: no | Gold: no | ✅
+
+Problem 423:
+  Q: Was the AK-47 used in the Seven Years' War?...
+  Pred: no | Gold: no | ✅
+
+Problem 424:
+  Q: Did Helen Keller ever read a novel by J. K. Rowling?...
+  Pred: no | Gold: no | ✅
+
+Problem 425:
+  Q: Would Garfield like canid food?...
+  Pred: yes | Gold: no | ❌
+
+Problem 426:
+  Q: Did Hamlet's author use email?...
+  Pred: no | Gold: no | ✅
+
+Problem 427:
+  Q: Can Larry King's ex-wives form a water polo team?...
+  Pred: no | Gold: yes | ❌
+
+Problem 428:
+  Q: Are a dozen pickles good for easing hypertension?...
+  Pred: no | Gold: no | ✅
+
+Problem 429:
+  Q: Was Florence Nightingale's death more painful than Saint Peter's?...
+  Pred: yes | Gold: no | ❌
+
+Problem 430:
+  Q: Would Iceland lose to Amazon in a bidding war?...
+  Pred: no | Gold: yes | ❌
+
+Problem 431:
+  Q: Could boolean algebra be described as binary?...
+  Pred: no | Gold: yes | ❌
+
+Problem 432:
+  Q: Could a Jujutsu expert hypothetically defeat a Janissary?...
+  Pred: no | Gold: no | ✅
+
+Problem 433:
+  Q: Does the JPEG acronym stand for a joint committee?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 434:
+  Q: Did Mike Tyson train to use the gogoplata?...
+  Pred: no | Gold: no | ✅
+
+Problem 435:
+  Q: Was the Mentalist filmed in black and white?...
+  Pred: no | Gold: no | ✅
+
+Problem 436:
+  Q: Would the Ku Klux Klan welcome Opal Tometi into their group?...
+  Pred: no | Gold: no | ✅
+
+Problem 437:
+  Q: Can an emu chase a bogan?...
+  Pred: no | Gold: yes | ❌
+
+Problem 438:
+  Q: Is calling ABBA the Swedish Beatles a preposterous claim?...
+  Pred: no | Gold: yes | ❌
+
+Problem 439:
+  Q: Do hyenas appear in a Broadway musical?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 440:
+  Q: Did Jane Austen suffer from middle child syndrome?...
+  Pred: yes | Gold: no | ❌
+
+Problem 441:
+  Q: Would a pacifist be opposed to hunting?...
+  Pred: yes | Gold: no | ❌
+
+Problem 442:
+  Q: Is a person with St. Vitus's Dance likely to win a ballet competition?...
+  Pred: yes | Gold: no | ❌
+
+Problem 443:
+  Q: Would a retail associate envy the retailer's CEO's pay?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 444:
+  Q: Are there people who are men who experience menstruation?...
+  Pred: no | Gold: yes | ❌
+
+Problem 445:
+  Q: Was disc jockey Jay Thomas enemies with Clayton Moore?...
+  Pred: no | Gold: no | ✅
+
+Problem 446:
+  Q: Should cactus soil always be damp?...
+  Pred: yes | Gold: no | ❌
+
+Problem 447:
+  Q: Does the United States Department of Education oversee services benefiting undoc...
+  Pred: yes | Gold: yes | ✅
+
+Problem 448:
+  Q: Does Soylent use Pea for their source of protein? ...
+  Pred: yes | Gold: no | ❌
+
+Problem 449:
+  Q: Are Brian Cranston and Saoirse Ronan's combined Emmy Awards a prime number?...
+  Pred: no | Gold: no | ✅
+
+Problem 450:
+  Q: Do beeswax alternatives to cling wrap use plsatic?...
+  Pred: yes | Gold: no | ❌
+
+Problem 451:
+  Q: Would an owl monkey enjoy a strawberry?...
+  Pred: None | Gold: yes | ❌
+
+Problem 452:
+  Q: Should you be skeptical of a 21 year old claiming to have a doctorate?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 453:
+  Q: Would Richard Dawkins hypothetically refuse an offering of the Last rites?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 454:
+  Q: Did Christopher Columbus condone multiple deadly sins?...
+  Pred: no | Gold: yes | ❌
+
+Problem 455:
+  Q: Would an American feel lost due to language barriers at Disneyland Paris?...
+  Pred: yes | Gold: no | ❌
+
+Problem 456:
+  Q: Can a snake swallow an M60 Patton?...
+  Pred: no | Gold: no | ✅
+
+Problem 457:
+  Q: Could you make the kitchen 'holy trinity' without celery?...
+  Pred: yes | Gold: no | ❌
+
+Problem 458:
+ 92%|█████████▏| 458/500 [08:03<00:32,  1.30it/s] 92%|█████████▏| 459/500 [08:03<00:28,  1.46it/s] 92%|█████████▏| 460/500 [08:04<00:31,  1.26it/s] 92%|█████████▏| 461/500 [08:05<00:30,  1.29it/s] 92%|█████████▏| 462/500 [08:06<00:34,  1.11it/s] 93%|█████████▎| 463/500 [08:07<00:36,  1.03it/s] 93%|█████████▎| 464/500 [08:08<00:34,  1.05it/s] 93%|█████████▎| 465/500 [08:09<00:28,  1.24it/s] 93%|█████████▎| 466/500 [08:09<00:25,  1.34it/s] 93%|█████████▎| 467/500 [08:10<00:24,  1.37it/s] 94%|█████████▎| 468/500 [08:11<00:23,  1.36it/s] 94%|█████████▍| 469/500 [08:11<00:22,  1.36it/s] 94%|█████████▍| 470/500 [08:12<00:21,  1.38it/s] 94%|█████████▍| 471/500 [08:13<00:22,  1.31it/s] 94%|█████████▍| 472/500 [08:14<00:23,  1.19it/s] 95%|█████████▍| 473/500 [08:15<00:24,  1.09it/s] 95%|█████████▍| 474/500 [08:16<00:22,  1.16it/s] 95%|█████████▌| 475/500 [08:17<00:19,  1.26it/s] 95%|█████████▌| 476/500 [08:18<00:21,  1.11it/s] 95%|█████████▌| 477/500 [08:18<00:18,  1.25it/s] 96%|█████████▌| 478/500 [08:19<00:16,  1.36it/s] 96%|█████████▌| 479/500 [08:20<00:16,  1.29it/s] 96%|█████████▌| 480/500 [08:20<00:14,  1.39it/s] 96%|█████████▌| 481/500 [08:21<00:14,  1.29it/s] 96%|█████████▋| 482/500 [08:22<00:11,  1.52it/s] 97%|█████████▋| 483/500 [08:22<00:10,  1.56it/s] 97%|█████████▋| 484/500 [08:23<00:10,  1.53it/s] 97%|█████████▋| 485/500 [08:24<00:10,  1.38it/s] 97%|█████████▋| 486/500 [08:25<00:12,  1.13it/s] 97%|█████████▋| 487/500 [08:26<00:11,  1.10it/s] 98%|█████████▊| 488/500 [08:27<00:09,  1.20it/s] 98%|█████████▊| 489/500 [08:27<00:08,  1.36it/s] 98%|█████████▊| 490/500 [08:28<00:08,  1.20it/s] 98%|█████████▊| 491/500 [08:29<00:06,  1.42it/s] 98%|█████████▊| 492/500 [08:30<00:06,  1.22it/s] 99%|█████████▊| 493/500 [08:30<00:05,  1.26it/s] 99%|█████████▉| 494/500 [08:31<00:05,  1.19it/s] 99%|█████████▉| 495/500 [08:32<00:03,  1.28it/s] 99%|█████████▉| 496/500 [08:33<00:03,  1.23it/s] 99%|█████████▉| 497/500 [08:34<00:02,  1.03it/s]100%|█████████▉| 498/500 [08:35<00:01,  1.11it/s]100%|█████████▉| 499/500 [08:36<00:00,  1.20it/s]100%|██████████| 500/500 [08:36<00:00,  1.35it/s]100%|██████████| 500/500 [08:36<00:00,  1.03s/it]
+  Q: Is Rurouni Kenshin from same country as lead character in Nobunaga's Ambition?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 459:
+  Q: Should you bring your own bags to Aldi?...
+  Pred: None | Gold: yes | ❌
+
+Problem 460:
+  Q: Would most children be up past their bedtime if they were watching Conan O'Brien...
+  Pred: yes | Gold: yes | ✅
+
+Problem 461:
+  Q: Did Dale Jr.'s father crash his car due to a stroke?...
+  Pred: no | Gold: no | ✅
+
+Problem 462:
+  Q: Was latest Republican governor of New Jersey as of 2020 heftiest politician ever...
+  Pred: no | Gold: no | ✅
+
+Problem 463:
+  Q: Will a person survive a fever of NY's highest recorded temperature?...
+  Pred: yes | Gold: no | ❌
+
+Problem 464:
+  Q: 4 Krispy Kreme glazed doughnuts exceed AHA  daily sugar allowance?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 465:
+  Q: Did Immanuel Kant ever meet the 14th president of the United States?...
+  Pred: no | Gold: no | ✅
+
+Problem 466:
+  Q: Could a camel fit in a dog house?...
+  Pred: None | Gold: no | ❌
+
+Problem 467:
+  Q: Would Columbus have discovered Durian trees during his 1492 expedition?...
+  Pred: yes | Gold: no | ❌
+
+Problem 468:
+  Q: Is the current Chief Justice of the United States forbidden from buying alcohol?...
+  Pred: yes | Gold: no | ❌
+
+Problem 469:
+  Q: Could Barron Trump have lived through the Mexican Revolution?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 470:
+  Q: Did Martin Luther believe in Satan?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 471:
+  Q: Does Snoopy look like Chance from Homeward Bound?...
+  Pred: yes | Gold: no | ❌
+
+Problem 472:
+  Q: Were any members of Canidae in Aesop's Fables?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 473:
+  Q: Would United States Air Force consider Return of the Jedi's Han Solo bad hypothe...
+  Pred: yes | Gold: yes | ✅
+
+Problem 474:
+  Q: Would Avengers Comics be out of place in a DC Comics store?...
+  Pred: no | Gold: yes | ❌
+
+Problem 475:
+  Q: Would Jesus understand the Easter Bunny?...
+  Pred: yes | Gold: no | ❌
+
+Problem 476:
+  Q: Is the Greek alphabet as common as Sumerian cuneiform?...
+  Pred: yes | Gold: no | ❌
+
+Problem 477:
+  Q: Could Sainsbury's buy Tesco?...
+  Pred: None | Gold: no | ❌
+
+Problem 478:
+  Q: Are all twins the same gender?...
+  Pred: no | Gold: no | ✅
+
+Problem 479:
+  Q: Are looks the easiest way to tell rosemary from lavender? ...
+  Pred: None | Gold: no | ❌
+
+Problem 480:
+  Q: Does Nicole Kidman despise Roman Josi?...
+  Pred: yes | Gold: no | ❌
+
+Problem 481:
+  Q: Is a fairy more prevalent in world myths than a valkyrie?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 482:
+  Q: Can you get Raclette in YMCA headquarters city?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 483:
+  Q: Can I build a house on an asteroid?...
+  Pred: yes | Gold: no | ❌
+
+Problem 484:
+  Q: Would someone in CHE101 require a Maya Angelou book?...
+  Pred: yes | Gold: no | ❌
+
+Problem 485:
+  Q: Can too many oranges cause diarrhea?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 486:
+  Q: Could the surface of Europa fry an egg?...
+  Pred: no | Gold: no | ✅
+
+Problem 487:
+  Q: Can I ski in Steamboat Springs, Colorado in August?...
+  Pred: no | Gold: no | ✅
+
+Problem 488:
+  Q: Is dopamine snorted nasally by drug users?...
+  Pred: no | Gold: no | ✅
+
+Problem 489:
+  Q: Is it common for women to have moustaches?...
+  Pred: no | Gold: no | ✅
+
+Problem 490:
+  Q: Is Michael an unpopular name in the United States?...
+  Pred: yes | Gold: no | ❌
+
+Problem 491:
+  Q: Is Central Park Zoo located on an island?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 492:
+  Q: Can food be cooked in the cosmic microwave background?...
+  Pred: no | Gold: no | ✅
+
+Problem 493:
+  Q: Is coal needed to practice parachuting?...
+  Pred: no | Gold: yes | ❌
+
+Problem 494:
+  Q: Would an oil painter avoid reds from scale insects that live on a cactus?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 495:
+  Q: Could you go to New York Public Library and the Six Flags Great Escape in the sa...
+  Pred: yes | Gold: yes | ✅
+
+Problem 496:
+  Q: Did any of religions in which Himalayas are sacred originate in 19th century?...
+  Pred: no | Gold: no | ✅
+
+Problem 497:
+  Q: Did brother of Goofy creator's employer commit an excommunicable offense?...
+  Pred: yes | Gold: yes | ✅
+
+Problem 498:
+  Q: Can a Toyota Supra make a vlog?...
+  Pred: yes | Gold: no | ❌
+
+Problem 499:
+  Q: Was Daniel thrown into the lion's den in the New Testament?...
+  Pred: no | Gold: no | ✅
+
+Problem 500:
+  Q: Would someone on antidepressants need to be cautious of some citrus fruits?...
+  Pred: yes | Gold: yes | ✅
+
+Final Accuracy: 268/500 (53.60%)
+Time elapsed: 516.66s
+Saved to /home/dibyanayan/tanzeel/COT Reasoning qwen/qwen_results/qwen0.5b_strategyqa_cot_results.json
+[Sun Mar  8 21:49:26 IST 2026] StrategyQA CoT done!

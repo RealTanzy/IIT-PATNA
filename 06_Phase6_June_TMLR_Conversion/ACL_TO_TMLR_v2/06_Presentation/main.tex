@@ -1,0 +1,325 @@
+\documentclass[t]{beamer}
+
+\usetheme{Madrid}
+\definecolor{MyBlue}{RGB}{20, 60, 120}
+\usecolortheme[named=MyBlue]{structure}
+\setbeamercolor{palette primary}{bg=blue!90!black,fg=white}
+\setbeamercolor{palette secondary}{bg=blue!70!black,fg=white}
+\setbeamercolor{palette tertiary}{bg=blue!70!black,fg=white}
+\setbeamerfont{caption}{size=\footnotesize}
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{graphicx}
+
+% Logo inside title bar
+\addtobeamertemplate{frametitle}{}{%
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=north east, xshift=-0.1cm, yshift=0.05cm, inner sep=0pt] at (current page.north east) {
+            \includegraphics[height=0.9cm, keepaspectratio]{logo1.png}
+        };
+    \end{tikzpicture}%
+}
+
+\newcommand{\FirstLastPageLayout}{
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=north east, xshift=-0.3cm, yshift=-0.1cm, inner sep=0pt] at (current page.north east) {
+            \includegraphics[height=0.9cm, keepaspectratio]{logo1.png}
+        };
+        \node[anchor=south west, xshift=0.5cm, yshift=0.5cm] at (current page.south west) {
+            \textcolor{MyBlue}{\footnotesize Indian Institute of Technology Patna}
+        };
+    \end{tikzpicture}
+}
+
+\title[Topology-Aware Routing]{When Should Language Models Search?\\[0.2em]{\small A Topology-Aware Analysis of Reasoning Strategies}}
+\subtitle{M.Tech Thesis Defense}
+\author[Md Tanzeel Adam Khan]{Md Tanzeel Adam Khan (2411AI67)}
+\institute[IIT Patna]{Department of Computer Science and Engineering\\Supervisor: Dr. Asif Ekbal}
+\date{June 2026}
+
+\begin{document}
+
+% ═══════════════════════════════════════════
+% SLIDE 1: TITLE
+% ═══════════════════════════════════════════
+\begin{frame}[plain]
+    \FirstLastPageLayout
+    \titlepage
+\end{frame}
+
+% ═══════════════════════════════════════════
+% SLIDE 2: PROBLEM & APPROACH (merged)
+% ═══════════════════════════════════════════
+\begin{frame}{Problem \& Approach}
+
+\scriptsize
+\textbf{Example:} \textit{``Is shrimp scampi free of plastic?''} — CoT $\times$: 5 steps, misses microplastics (wrong). \textbf{A*} $\checkmark$: finds key fact in step 1 (correct). \textbf{When is search worth the cost?}
+
+\vspace{0.3em}
+\begin{columns}[T]
+\begin{column}{0.53\textwidth}
+\includegraphics[width=\textwidth]{slide_2_cot_vs_search.png}
+\end{column}
+
+\begin{column}{0.45\textwidth}
+\includegraphics[width=\textwidth]{slide_3_pipeline.png}
+\vspace{0.2em}
+\scriptsize
+\begin{itemize}\setlength{\itemsep}{0pt}
+    \item \textbf{Our A* implementation}
+    \item 13 topology features (input only)
+    \item XGBoost routes \textit{before} generation
+    \item Zero LLM cost for routing
+\end{itemize}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+% ═══════════════════════════════════════════
+% SLIDE 3: A* SEARCH — WHY & HOW (NEW)
+% ═══════════════════════════════════════════
+\begin{frame}{A* Search: Why \& How}
+
+\begin{columns}[T]
+\begin{column}{0.50\textwidth}
+\includegraphics[width=\textwidth]{slide_3_astar_admissibility.png}
+\end{column}
+
+\begin{column}{0.48\textwidth}
+\scriptsize
+\textbf{Why A* (not ToT, not MCTS)?}
+\begin{itemize}\setlength{\itemsep}{0pt}\tiny
+    \item Isolates \textbf{branching} from evaluator design
+    \item Clean separation: frontier + cost + heuristic
+    \item ToT entangles evaluator; MCTS adds rollout noise
+\end{itemize}
+
+\vspace{0.3em}
+\textbf{Formulation:}\\[0.2em]
+\tiny
+$f(n) = g(n) + h(n)$\\
+$g(n) = d_n + \sum(1-c_t)$ \quad {\color{gray}(length + uncertainty)}\\
+$h(n) = \omega_d(H_{\min}-d_n) + \omega_c(1-E(n))$\\[0.3em]
+
+\scriptsize
+\textbf{Admissibility (proven):}
+\begin{itemize}\setlength{\itemsep}{0pt}\tiny
+    \item $h(n) \leq h^*(n)$ for all non-goal nodes
+    \item Condition: $\omega_d + \omega_c \leq c_{\min}$
+    \item Our values: $0.3 + 0.3 = 0.6 < 1.01$ \textcolor{green!60!black}{$\checkmark$}
+    \item \textbf{Guarantees optimal path under budget}
+\end{itemize}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+% ═══════════════════════════════════════════
+% SLIDE 4: TOPOLOGY FEATURES
+% ═══════════════════════════════════════════
+\begin{frame}{Topology Features}
+
+\begin{center}
+\scriptsize
+\begin{tabular}{c|c}
+\textcolor{red!70!black}{\textbf{Route to A* (search)}} & \textcolor{blue!70!black}{\textbf{Route to CoT (linear)}} \\
+\hline
+High branching coefficient & Low branching coefficient \\
+Multiple hops / entities & Short, single-step question \\
+Many connectives (if, because) & Direct factual recall \\
+Low linearity score & High linearity score \\
+\end{tabular}
+\end{center}
+
+\vspace{0.2em}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\scriptsize
+\begin{enumerate}\setlength{\itemsep}{0pt}
+    \item Question length
+    \item Context length
+    \item \colorbox{yellow!30}{Logical connectives} $\star$
+    \item Negation markers
+    \item \colorbox{yellow!30}{Multi-hop indicators} $\star$
+    \item Comparison words
+    \item Sub-question marks
+\end{enumerate}
+\end{column}
+\begin{column}{0.48\textwidth}
+\scriptsize
+\begin{enumerate}\setlength{\itemsep}{0pt}\setcounter{enumi}{7}
+    \item \colorbox{yellow!30}{Context sentences} $\star$
+    \item Named entities
+    \item Linearity score
+    \item Answer options
+    \item Depth estimate
+    \item \colorbox{yellow!30}{Branching complexity} $\star$
+\end{enumerate}
+
+\vspace{0.2em}
+\small
+\colorbox{green!20}{$\text{BC} = \frac{\text{ctx\_sents} \times \text{hop}}{\text{q\_len}}$} \quad {\tiny($R^2 = 0.94$)}
+\end{column}
+\end{columns}
+{\tiny $\star$ = top XGBoost importance. All features from input text only — zero LLM inference.}
+
+\end{frame}
+
+% ═══════════════════════════════════════════
+% SLIDE 5: COMPLEMENTARITY & ROUTING (NEW)
+% ═══════════════════════════════════════════
+\begin{frame}{Complementarity \& Routing}
+
+\begin{columns}[T]
+\begin{column}{0.45\textwidth}
+\centering
+\includegraphics[width=0.95\textwidth]{slide_5_complementarity.png}
+
+\vspace{0.2em}
+\scriptsize
+\textbf{Instance-level (8B):}\\[0.2em]
+\tiny
+\begin{tabular}{lcc}
+\toprule
+Dataset & CoT-only & A*-only \\
+\midrule
+StrategyQA & 14.3\% & 10.8\% \\
+HotpotQA & 17.2\% & 17.4\% \\
+CodeContests & 9.2\% & 18.8\% \\
+\bottomrule
+\end{tabular}\\[0.2em]
+\scriptsize Oracle gap: up to \textbf{14pp}
+\end{column}
+
+\begin{column}{0.52\textwidth}
+\scriptsize
+\textbf{How the router leverages this:}
+\begin{itemize}\setlength{\itemsep}{1pt}\tiny
+    \item Each instance: features predict $\rightarrow$ CoT or A*
+    \item ``Branching'' problems $\rightarrow$ A* (multi-hop, algorithmic)
+    \item ``Linear'' problems $\rightarrow$ CoT (factual, single-step)
+    \item Router recovers \textbf{40\%} of the oracle gap
+\end{itemize}
+
+\vspace{0.3em}
+\scriptsize
+\textbf{Practical benefit:}
+\begin{itemize}\setlength{\itemsep}{1pt}\tiny
+    \item A* costs 24$\times$ CoT
+    \item Router applies A* only when needed ($\sim$30\% of instances)
+    \item Effective cost: $\sim$8$\times$ CoT (not 24$\times$)
+    \item \textbf{Best of both worlds}: high accuracy, manageable cost
+\end{itemize}
+
+\vspace{0.2em}
+\centering
+\fbox{\tiny Neither method alone is optimal $\rightarrow$ topology routing fills the gap}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+% ═══════════════════════════════════════════
+% SLIDE 6: RESULTS TABLE
+% ═══════════════════════════════════════════
+\begin{frame}{Results}
+
+\begin{table}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{l|cc|cc|cc}
+\toprule
+& \multicolumn{2}{c|}{\textbf{LLaMA-8B}} & \multicolumn{2}{c|}{\textbf{Qwen-0.5B}} & \multicolumn{2}{c}{\textbf{Qwen-14B}} \\
+\textbf{Dataset} & CoT & A* & CoT & A* & CoT & A* \\
+\midrule
+StrategyQA & 64.5 & \cellcolor{red!12}\textbf{74.8} & 53.6 & 53.4 & 76.0 & 75.6 \\
+LogicQA & \cellcolor{blue!10}\textbf{45.8} & 44.9 & \cellcolor{blue!10}\textbf{24.0} & 20.2 & 57.9 & \cellcolor{red!12}\textbf{58.1} \\
+HotpotQA & 76.8 & \cellcolor{red!12}\textbf{80.1} & 8.4 & \cellcolor{red!12}\textbf{30.0} & 60.2 & \cellcolor{red!12}\textbf{83.3} \\
+\midrule
+GSM8K & 85.0 & \cellcolor{red!12}\textbf{86.1} & \cellcolor{blue!10}\textbf{26.8} & 14.5 & 61.6 & \cellcolor{red!12}\textbf{80.6} \\
+MATH & 78.0 & \cellcolor{red!12}\textbf{79.1} & \cellcolor{blue!10}\textbf{32.8} & 16.2 & 44.0 & \cellcolor{red!12}\textbf{47.2} \\
+\midrule
+HumanEval & \cellcolor{blue!10}\textbf{67.5} & 64.4 & \cellcolor{blue!10}\textbf{33.7} & 20.2 & 77.9 & 76.1 \\
+MBPP & \cellcolor{blue!10}\textbf{39.8} & 36.8 & \cellcolor{blue!10}\textbf{24.0} & 20.8 & 46.6 & 45.0 \\
+CodeContests & 77.4 & \cellcolor{red!12}\textbf{87.0} & 49.8 & \cellcolor{red!12}\textbf{68.2} & \cellcolor{blue!10}\textbf{99.6} & 94.4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{itemize}\small
+    \item \textbf{Neither dominates.} \textcolor{red!70!black}{Red} = A* wins; \textcolor{blue!70!black}{Blue} = CoT wins
+    \item A* \textbf{+19pp} GSM8K (14B); \textbf{+18.4pp} CodeContests (0.5B)
+    \item 8 benchmarks $\times$ 3 scales $\times$ 4 methods (CoT, A*, SC, ToT)
+\end{itemize}
+
+\end{frame}
+
+% ═══════════════════════════════════════════
+% SLIDE 7: ROUTER COMPARISON
+% ═══════════════════════════════════════════
+\begin{frame}{Router Comparison}
+
+\begin{columns}[T]
+\begin{column}{0.60\textwidth}
+\includegraphics[width=\textwidth]{slide_6_gap_bar_chart.png}
+\end{column}
+
+\begin{column}{0.38\textwidth}
+\scriptsize
+\textbf{Why it works:}
+\begin{itemize}\setlength{\itemsep}{0pt}\tiny
+    \item 38\% fluent traces = \textit{wrong}
+    \item Judges fooled by readability
+    \item Our router: \textbf{structure only}
+\end{itemize}
+
+\vspace{0.2em}
+\textbf{Key numbers:}
+\begin{itemize}\setlength{\itemsep}{0pt}\tiny
+    \item \textbf{+40\%} gap recovery overall
+    \item \textbf{95\%} on CodeContests
+    \item 3 domains: QA + Math + Code
+    \item Zero routing cost
+\end{itemize}
+
+\vspace{0.3em}
+\centering
+\fbox{\tiny\textbf{Route by structure, not trace quality}}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+% ═══════════════════════════════════════════
+% SLIDE 8: REFERENCES + THANK YOU
+% ═══════════════════════════════════════════
+\begin{frame}{References}
+\tiny
+\begin{thebibliography}{10}
+\bibitem{wei2022} Wei, J. et al. (2022). Chain-of-thought prompting elicits reasoning in LLMs. \textit{NeurIPS}.
+\bibitem{yao2024} Yao, S. et al. (2024). Tree of thoughts: Deliberate problem solving with LLMs. \textit{NeurIPS}.
+\bibitem{hao2023} Hao, S. et al. (2023). Reasoning with language model is planning with world model. \textit{EMNLP}.
+\bibitem{wang2022} Wang, X. et al. (2023). Self-consistency improves chain of thought reasoning. \textit{ICLR}.
+\bibitem{snell2024} Snell, C. et al. (2024). Scaling LLM test-time compute optimally. \textit{arXiv:2408.03314}.
+\bibitem{hart1968} Hart, P. et al. (1968). A formal basis for heuristic determination of minimum cost paths. \textit{IEEE Trans.}
+\bibitem{chen2021} Chen, M. et al. (2021). Evaluating large language models trained on code. \textit{arXiv:2107.03374}.
+\bibitem{kossen2024} Kossen, J. et al. (2024). Semantic entropy probes. \textit{arXiv:2406.15927}.
+\bibitem{zheng2023} Zheng, L. et al. (2023). Judging LLM-as-a-Judge with MT-Bench. \textit{NeurIPS}.
+\bibitem{madaan2023} Madaan, A. et al. (2023). Self-Refine: Iterative refinement with self-feedback. \textit{NeurIPS}.
+\end{thebibliography}
+
+\vspace{0.3em}
+\centering
+{\scriptsize\textit{Paper submitted to ACL Rolling Review (ARR)}}\\[0.5em]
+{\Large\bfseries Thank You}
+\end{frame}
+
+\end{document}

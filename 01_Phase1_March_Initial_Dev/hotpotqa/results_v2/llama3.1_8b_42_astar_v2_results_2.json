@@ -1,0 +1,47 @@
+[
+  {
+    "question": "What was Iqbal F. Qadir on when he participated in an attack on a radar station located on western shore of the Okhamandal Peninsula?",
+    "gold": "flotilla",
+    "pred": "Dwarka",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 3,
+    "q_type": "bridge"
+  },
+  {
+    "question": "When did the park at which Tivolis Koncertsal is located open?",
+    "gold": "15 August 1843",
+    "pred": "1956",
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 4,
+    "q_type": "bridge"
+  },
+  {
+    "question": "What is the shared country of ancestry between Art Laboe and Scout Tufankjian?",
+    "gold": "Armenian",
+    "pred": null,
+    "correct": false,
+    "f1": 0.0,
+    "nodes": 3,
+    "q_type": "comparison"
+  },
+  {
+    "question": "The school in which the Wilmslow Show is held is designated as what?",
+    "gold": "Centre of Excellence",
+    "pred": "a designated Centre of Excellence",
+    "correct": true,
+    "f1": 0.8571428571428571,
+    "nodes": 3,
+    "q_type": "bridge"
+  },
+  {
+    "question": "Who will Billy Howle be seen opposite in the upcoming British drama film directed by Dominic Cooke?",
+    "gold": "Saoirse Ronan",
+    "pred": "Saoirse Ronan",
+    "correct": true,
+    "f1": 1.0,
+    "nodes": 3,
+    "q_type": "bridge"
+  }
+]

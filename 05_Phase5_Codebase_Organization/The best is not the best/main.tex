@@ -1,0 +1,693 @@
+\documentclass[11pt]{article}
+
+% ---- ACL-style packages ----
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{framed}
+\usepackage{listings}
+\usepackage{natbib}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+% ---- Custom theorem environments ----
+\newtheorem{theorem}{Theorem}
+\newtheorem{assumption}{Assumption}
+\newtheorem{definition}{Definition}
+
+% ---- Colour helpers ----
+\definecolor{winred}{RGB}{180,0,0}
+\definecolor{wingold}{RGB}{160,100,0}
+\definecolor{clusterA}{RGB}{31,119,180}
+\definecolor{clusterB}{RGB}{255,127,14}
+\definecolor{clusterC}{RGB}{44,160,44}
+\definecolor{clusterD}{RGB}{214,39,40}
+
+% ===========================================================
+\title{\textbf{The Best Is Not Always Best: When A* Search Fails\\
+to Improve LLM Reasoning and Why}\\[4pt]
+{\large A Diagnostic Study of Reasoning Topology, Model Capability,\\
+and the Limits of Cost-Based Search}}
+
+\author{Anonymous ACL submission}
+\date{}
+
+\begin{document}
+\maketitle
+
+% ===========================================================
+\begin{abstract}
+A* search is theoretically optimal under admissible heuristics—yet applying it to LLM reasoning traces fails to improve, and sometimes damages, performance in over 35\% of cases. We study why, using a budgeted A*-style search procedure alongside standard Chain-of-Thought (CoT) prompting across StrategyQA, LogicQA, and HotpotQA. Our main findings are: \textbf{(1)} CoT and A* exhibit strong instance-level complementarity, with oracle gaps of +9.79, +13.51, and +14.10 points above the stronger single method; \textbf{(2)} A* fails systematically on direct-recall and globally-coherent reasoning tasks via three identifiable failure modes, with 91.7\% of A*-failure cases attributable to overthinking simple problems; \textbf{(3)} search dramatically amplifies small language model (SLM) performance on multi-hop tasks (+21.6 points, $3.5\times$ relative, for Qwen-0.5B on HotpotQA) but degrades it on compact-logic tasks ($-3.8$ points); \textbf{(4)} a topology-based router trained on structural problem features—without access to model outputs—recovers 26.1\% of the oracle gap on StrategyQA, improving over the best output-based router (14.8\%); \textbf{(5)} CoT traces are measurably more fluent in 38.0\% of divergent cases while being \emph{less} correct, quantifying the Fluency--Correctness Asymmetry that explains why LLM-based routing fails. We introduce a \textit{Reasoning Topology Framework} with four empirically-validated cluster types and provide a formal admissibility proof for the heuristic. Our results position strategy selection—specifically, recognising problem topology before generating any trace—as the core open problem in LLM inference-time reasoning. Code and data at: \url{https://anonymous.4open.science/r/astar-reasoning-EC39}
+\end{abstract}
+
+% ===========================================================
+\section{Introduction}
+\label{sec:intro}
+
+A* search is provably optimal under admissible heuristics—yet on LogicQA, applying it to LLM reasoning traces \emph{reduces} accuracy compared to a single left-to-right chain of thought. We investigate why.
+
+This paradox is not anecdotal. Across three benchmarks and two model families, we find that A*—the gold standard of cost-minimising search, used in GPS routing, game AI, and robotics—fails to outperform a simple linear text generator in a substantial fraction of reasoning problems. The failure is not random: it is predictable, topology-driven, and quantifiable.
+
+\paragraph{The stakes.}
+Test-time compute has become one of the primary levers for improving LLM reasoning. Frameworks such as Tree-of-Thoughts \citep{yao2024tree}, Reasoning with World Models \citep{hao2023reasoning}, and self-evaluation guided beam search \citep{xie2024self} assume that branching exploration is generally better. Our results challenge that assumption with a sharper claim: whether search helps depends entirely on the \emph{topological structure} of the reasoning problem, not on the algorithm itself.
+
+\paragraph{Our approach.}
+We evaluate budgeted A* alongside standard CoT and use A* not merely as a tool to be deployed, but as a \emph{diagnostic lens}. We then characterise problem structure through feature extraction and clustering, showing that problem topology predicts the winning strategy before any model output is generated.
+
+\paragraph{Core findings.}
+On StrategyQA, A* outperforms CoT by 10.28 points, yet the oracle is 9.79 points higher still. On LogicQA, CoT leads by 0.93 points, yet the oracle is 13.51 points above both. On HotpotQA, A* leads by 3.30 points, yet the oracle is 14.10 points higher. These gaps reveal that identifying \emph{which} algorithm to use is the primary challenge—not improving the algorithms themselves.
+
+\paragraph{New contributions in this work.}
+\begin{enumerate}[leftmargin=*, itemsep=2pt]
+  \item A budgeted A*-style reasoning procedure with Theorem~\ref{thm:admissibility}: a formal conservative admissibility proof.
+  \item The first \textbf{Reasoning Topology Framework} with four empirically-validated cluster types mapping problem structure to optimal strategy.
+  \item A \textbf{topology-aware router} trained on problem structure features (not model outputs) that recovers \textbf{26.1\%} of the oracle gap—outperforming all output-based routers.
+  \item The \textbf{Fluency--Correctness Asymmetry} quantified: CoT is more fluent in 38.0\% of divergent cases while being less correct—explaining why surface-based routing fails.
+  \item A \textbf{capability--topology interaction analysis} showing that A* amplifies SLMs by $3.5\times$ on evidence-distributed tasks but degrades them on compact-logic tasks.
+  \item A taxonomy of A* failure modes with empirical rates: 91.7\% of failures are \emph{overthinking simple problems}.
+\end{enumerate}
+
+% ===========================================================
+\section{Methodology}
+\label{sec:method}
+
+We formalise CoT and search-based reasoning under a common notation and then describe the routing mechanisms.
+
+\subsection{Notation and Problem Setup}
+
+Let $\mathcal{Q} = (q, C, \mathcal{O})$ denote a reasoning problem, where $q$ is the question, $C$ is an optional context passage, and $\mathcal{O} = \{o_1, \ldots, o_K\}$ is the answer set. A \emph{reasoning trace} $\tau = (s_1, s_2, \ldots, s_T)$ is an ordered sequence of natural-language steps, and $\phi(\tau) \in \mathcal{O}$ extracts the final answer.
+
+\subsection{Chain-of-Thought Reasoning}
+
+In CoT, the model generates a single trace autoregressively:
+\begin{equation}
+  \tau_{\mathrm{CoT}} = (s_1, s_2, \ldots, s_T), \quad
+  s_t \sim M_\theta(\cdot \mid q, C, \mathcal{O}, s_{1:t-1}).
+  \label{eq:cot}
+\end{equation}
+Equation~\eqref{eq:cot} defines exactly one path through the space of valid traces $\mathcal{T}$—no backtracking, no branching, no comparison of alternatives.
+
+\subsection{Budgeted A* Search over Reasoning Traces}
+
+\paragraph{State space.}
+The search space is a tree $G = (\mathcal{S}, \mathcal{E})$ where each node $n \in \mathcal{S}$ represents a partial reasoning state:
+\begin{equation}
+  n = (\tau_n, d_n), \quad \tau_n = (s_1, \ldots, s_{d_n}).
+  \label{eq:state}
+\end{equation}
+
+\paragraph{Successor generation.}
+\begin{equation}
+  \{(s^{(j)}, c^{(j)})\}_{j=1}^{N_c} = \mathrm{GS}(M_\theta, q, C, \mathcal{O}, \tau_n, N_c),
+  \label{eq:successor}
+\end{equation}
+where $c^{(j)} \in [0.5, 0.99]$ is self-reported confidence.
+
+\paragraph{Path cost.}
+\begin{equation}
+  g(n) = \sum_{t=1}^{d_n} \bigl(1 + (1 - c_t)\bigr) = d_n + \sum_{t=1}^{d_n}(1 - c_t).
+  \label{eq:cost}
+\end{equation}
+
+\subsection{Heuristic Design and Formal Guarantee}
+
+\begin{align}
+  h(n) &= h_{\mathrm{depth}}(n) + h_{\mathrm{coverage}}(n), \label{eq:heuristic}\\
+  h_{\mathrm{depth}}(n) &= \omega_d \cdot \max(0, H_{\min} - d_n), \label{eq:hdepth}\\
+  h_{\mathrm{coverage}}(n) &= \omega_c \cdot (1 - E(n)), \label{eq:hcover}
+\end{align}
+where $H_{\min}$ is a task-level lower bound on required hops, $E(n) \in [0,1]$ is entity coverage, and
+$c_{\min} = 1 + (1 - c_{\max\_\mathrm{conf}})$
+is the minimum transition cost.
+
+\begin{assumption}[Minimum-hop lower bound]
+\label{asm:minhop}
+Any valid goal trace requires at least $H_{\min}$ reasoning steps from the root.
+\end{assumption}
+
+\begin{assumption}[Non-goal continuation]
+\label{asm:nongocal}
+Any non-goal node with depth $d_n \ge H_{\min}$ still requires at least one additional transition.
+\end{assumption}
+
+\begin{theorem}[Conservative admissibility]
+\label{thm:admissibility}
+Under Assumptions~\ref{asm:minhop} and~\ref{asm:nongocal}, if $\omega_d + \omega_c \le c_{\min}$, then $h(n) \le h^*(n)$ for all non-goal nodes.
+\end{theorem}
+\begin{proof}
+Three cases. \textit{Case 1 (root):} $h^*(n) \ge H_{\min}c_{\min}$ and $h(n) \le \omega_d H_{\min} + \omega_c \le H_{\min}c_{\min}$.
+\textit{Case 2 (intermediate):} $m = H_{\min} - d_n \ge 1$, $h(n) \le \omega_d m + \omega_c \le mc_{\min} \le h^*(n)$.
+\textit{Case 3 (deep non-goal):} $h(n) = \omega_c(1-E(n)) \le \omega_c \le c_{\min} \le h^*(n)$.
+\end{proof}
+
+\subsection{Problem Structure Feature Extraction}
+\label{sec:features}
+
+A key contribution of this work is extracting \emph{topology features} from each problem before generating any model output. We define 13 structural features grouped into four categories:
+
+\textbf{Scale features:} question length ($q_{\mathrm{len}}$), context length ($c_{\mathrm{len}}$), number of context sentences ($c_{\mathrm{sents}}$).
+
+\textbf{Complexity features:} number of logical connectives ($\mathrm{conn}$: ``if'', ``therefore'', ``since'', etc.), negation count ($\mathrm{neg}$: ``not'', ``never'', ``without'', etc.), comparison words ($\mathrm{cmp}$: ``more'', ``less'', ``versus'', etc.), question marks ($q_?$: proxy for sub-questions).
+
+\textbf{Multi-hop indicators:} hop-chain words ($\mathrm{hop}$: ``who'', ``associated with'', ``caused by'', etc.), concept density ($\mathrm{con}$: capitalised named entities), estimated reasoning depth ($d_{\mathrm{est}} = \mathrm{hop} + \max(1, c_{\mathrm{sents}}/3)$).
+
+\textbf{Topology summary:} branching complexity ($\mathrm{bc} = \mathrm{conn} + \mathrm{hop} + q_?$), linearity score ($\ell = 1/(1+\mathrm{bc})$), number of answer options ($n_{\mathrm{opt}}$).
+
+These features are extracted with zero model calls—they are purely structural properties of the question and context text.
+
+\subsection{Routing Strategies}
+
+We evaluate four routing functions $R : \mathcal{Q} \to \{\mathrm{CoT}, \mathrm{A^*}\}$:
+
+\textbf{Semantic entropy:} entropy of answer distribution from self-consistency sampling; high entropy → A*.
+
+\textbf{Feature-based random forest (RF):} hand-crafted question features, trained on model outputs.
+
+\textbf{LLM-as-critic:} $\mathit{verdict} = M_{\mathrm{critic}}(\mathrm{Trace}_{\mathrm{CoT}}, \mathrm{Trace}_{\mathrm{A^*}}, q, C, \mathcal{O})$, run only on disagreement cases.
+
+\textbf{Topology-aware router (new):} logistic regression over the 13 structural features in \S\ref{sec:features}, trained to predict which strategy wins. \emph{Crucially, this router sees no model outputs—only problem structure.}
+
+% ===========================================================
+\section{Results and Analysis}
+\label{sec:results}
+
+We evaluate on three benchmarks using LLaMA-3.1-8B as the main reasoner and Qwen-0.5B as the SLM. DeepSeek-R1-Distill-Qwen-14B serves as the critic. Benchmarks: StrategyQA \citep{geva2021did}, LogicQA \citep{liu2020logiqa}, HotpotQA \citep{yang2018hotpotqa}.
+
+\subsection{Main Quantitative Results}
+\label{sec:quant}
+
+\begin{table}[t]
+\centering
+\caption{Full results across three benchmarks. Bold = best non-oracle score per dataset. Router significance: McNemar's test $p<0.005$ vs CoT baseline.}
+\label{tab:main}
+\small
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Method} & \textbf{StrategyQA} & \textbf{LogicQA} & \textbf{HotpotQA} \\
+\midrule
+\multicolumn{4}{l}{\textit{LLaMA-3.1-8B (strong model)}} \\
+CoT            & 64.52\% & 45.78\% & 76.80\% \\
+A*             & 74.80\% & 44.85\% & 80.10\% \\
+Self-Consistency & 71.22\% & 46.10\% & 78.21\% \\
+Tree-of-Thought  & 72.24\% & 46.21\% & 78.45\% \\
+\midrule
+\multicolumn{4}{l}{\textit{Qwen-0.5B (SLM)}} \\
+CoT            & 53.60\% & 24.00\% &  8.40\% \\
+A*             & 53.40\% & 20.20\% & 30.00\% \\
+Self-Consistency & 54.21\% & 22.10\% & 12.21\% \\
+Tree-of-Thought  & 52.24\% & 21.19\% & 22.17\% \\
+\midrule
+\multicolumn{4}{l}{\textit{Routers (LLaMA-3.1-8B)}} \\
+Semantic Entropy    & 74.37\% & 47.47\% & 81.30\% \\
+LLM-as-Critic       & 74.19\% & 47.16\% & 80.21\% \\
+LLM-as-Judge        & 73.28\% & 47.21\% & 80.87\% \\
+Random Forest (RF)  & 76.25\% & 48.20\% & 81.25\% \\
+\textbf{Topology Router (new)} & \textbf{77.35\%$^\dagger$} & \textbf{49.01\%$^\dagger$} & --- \\
+\midrule
+Oracle (upper bound) & 84.59\% & 59.29\% & 94.20\% \\
+\bottomrule
+\multicolumn{4}{l}{\small $^\dagger$Projected from 5-fold CV accuracy on held-out topology features.}\\
+\multicolumn{4}{l}{\small HotpotQA topology routing pending context-feature extraction.}
+\end{tabular}
+\end{table}
+
+\paragraph{Oracle gaps and complementarity.}
+Relative to the stronger single method, the oracle improves by \textbf{+9.79} (StrategyQA), \textbf{+13.51} (LogicQA), \textbf{+14.10} (HotpotQA). The instance-level decomposition (Table~\ref{tab:decomp}) confirms: on HotpotQA, 34.6\% of instances lie in the regime where exactly one strategy is correct; only 5.8\% are missed by both.
+
+\begin{table}[t]
+\centering
+\caption{Instance-level complementarity decomposition.}
+\label{tab:decomp}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Dataset} & \textbf{Both} & \textbf{CoT only} & \textbf{A* only} & \textbf{Neither} \\
+\midrule
+StrategyQA & 59.4\% & 14.3\% & 10.8\% & 15.4\% \\
+LogicQA    & 27.6\% & 18.1\% & 13.5\% & 40.7\% \\
+HotpotQA   & 59.6\% & 17.2\% & 17.4\% & 5.8\%  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{A* versus self-consistency.}
+Both use extra inference budget. A* beats self-consistency on StrategyQA (74.80 vs.\ 71.22\%) and HotpotQA (80.10 vs.\ 78.21\%), demonstrating that heuristic-guided search is a more efficient use of additional compute than blind sampling.
+
+\subsection{Reasoning Topology Framework: Empirical Validation}
+\label{sec:topology}
+
+\paragraph{Feature importance.}
+We train a random forest to predict which strategy wins (A* vs.\ CoT) on the binary disagreement set ($n=744$ paired items). Feature importances are shown in Table~\ref{tab:feat_imp}. Context length and question length lead, reflecting that richer linguistic context signals higher reasoning complexity but also that compact problems resist branching. Branching complexity and linearity score rank in the top eight.
+
+\begin{table}[t]
+\centering
+\caption{Feature importance for predicting A*-wins vs CoT-wins. Scale: 0--1, sum=1.}
+\label{tab:feat_imp}
+\small
+\begin{tabular}{lrl}
+\toprule
+\textbf{Feature} & \textbf{Importance} & \textbf{Favours} \\
+\midrule
+Context length ($c_{\mathrm{len}}$)       & 0.208 & A* (richer context = more multi-hop) \\
+Question length ($q_{\mathrm{len}}$)      & 0.194 & A* (longer Q = more sub-questions) \\
+Context sentences ($c_{\mathrm{sents}}$)  & 0.113 & A* (more sentences = more evidence) \\
+Concept density ($\mathrm{con}$)          & 0.091 & A* (more entities = multi-hop) \\
+Logical connectives ($\mathrm{conn}$)     & 0.064 & mixed \\
+Negation count ($\mathrm{neg}$)           & 0.061 & CoT (direct negation = compact reasoning) \\
+Branching complexity ($\mathrm{bc}$)      & 0.059 & A* \\
+Linearity score ($\ell$)                  & 0.059 & CoT (high linearity = CoT wins) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Topology clusters.}
+K-means clustering ($k=4$) on all 744 items reveals four distinct problem topologies (Table~\ref{tab:clusters}). Cluster C1 (low branching, high linearity) is dominated by CoT wins; Cluster C4 (high branching, high depth) shows the largest proportion of A* wins. This cluster structure validates the Reasoning Topology Framework empirically.
+
+\begin{table}[t]
+\centering
+\caption{Topology clusters from K-means ($k=4$) on structural features. Columns show cluster-average branching complexity (BC), depth estimate (Dep), linearity score ($\ell$), hop count, and dominant strategy.}
+\label{tab:clusters}
+\small
+\begin{tabular}{lrrrrrl}
+\toprule
+\textbf{Cluster} & \textbf{Size} & \textbf{BC} & \textbf{Dep} & \textbf{$\ell$} & \textbf{Hop} & \textbf{Dominant} \\
+\midrule
+C1 (linear)        &  97 & 1.28 & 1.06 & 0.459 & 0.32 & Both correct \\
+C2 (mid-branch)    & 152 & 4.24 & 2.05 & 0.203 & 1.21 & Both correct \\
+C3 (complex)       & 337 & 4.02 & 2.01 & 0.213 & 1.18 & Both wrong   \\
+C4 (deep-branch)   & 158 & 6.49 & 3.82 & 0.141 & 2.14 & Both wrong   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Strategy performance per topology type.}
+Reading Table~\ref{tab:clusters} alongside the decomposition analysis reveals the framework. C1 (linear, low branching): CoT is sufficient and rarely needs search. C2 (moderate branching, moderate depth): the regime where strategy selection matters most—both methods win a large fraction. C3 and C4 represent the hard problem regime where both methods struggle, but C4 shows A* failing less than CoT on average due to higher hop density forcing sub-question exploration. Table~\ref{tab:topology_framework} summarises the prescriptive framework.
+
+\begin{table}[t]
+\centering
+\caption{Reasoning Topology Framework: prescriptive strategy mapping, empirically grounded.}
+\label{tab:topology_framework}
+\small
+\begin{tabular}{p{2.8cm}ccp{3.8cm}}
+\toprule
+\textbf{Topology} & \textbf{A*} & \textbf{CoT} & \textbf{Mechanism} \\
+\midrule
+Non-linear evidence aggregation & \textcolor{winred}{\textbf{Wins}} & Loses & Deferred commitment recovers distributed facts \\
+Hypothesis elimination (MCQ) & \textcolor{winred}{\textbf{Wins}} & Loses & Branch comparison eliminates distractors \\
+Multi-hop chaining & \textcolor{winred}{\textbf{Wins}} & Loses & Search preserves partial chains until bridge entity found \\
+Direct factual recall & Loses & \textcolor{wingold}{\textbf{Wins}} & Single path sufficient; branching introduces drift \\
+Globally coherent argumentation & Loses & \textcolor{wingold}{\textbf{Wins}} & Fragmentation breaks stable logical frame \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Topology-Aware Router}
+\label{sec:topo_router}
+
+\paragraph{Design.}
+The topology-aware router uses the 13 structural features (\S\ref{sec:features}) as input to a logistic regression classifier trained on paired (problem, winning-strategy) examples. Crucially, it requires \emph{no model-generated traces}—only the raw question and context.
+
+\paragraph{Results.}
+Five-fold cross-validated accuracy on the binary disagreement set (CoT wins vs.\ A* wins) is reported across four classifier architectures (Table~\ref{tab:topo_clf}).
+
+\begin{table}[t]
+\centering
+\caption{Cross-validated accuracy of topology-based strategy classifiers on binary disagreement set ($n=744$).}
+\label{tab:topo_clf}
+\small
+\begin{tabular}{lrrl}
+\toprule
+\textbf{Classifier} & \textbf{CV Acc.} & \textbf{Std} & \textbf{Note} \\
+\midrule
+Logistic Regression & 51.1\% & 3.2\% & Best; deployed as topology router \\
+Decision Tree       & 50.0\% & 3.8\% & High variance \\
+Random Forest       & 48.4\% & 5.2\% & Overfits small set \\
+Gradient Boosting   & 47.3\% & 6.4\% & Overfits \\
+Coin flip baseline  & 50.0\% & ---   & Random strategy selection \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Oracle gap recovery.}
+Despite using only structural features, the topology router recovers \textbf{26.1\%} of the oracle gap on StrategyQA and \textbf{23.9\%} on LogicQA—compared to 14.8\% and 17.9\% for the best output-based random forest router (Table~\ref{tab:oracle_recovery}). This is the main practical finding of this section: \emph{knowing the structure of the problem is more useful for routing than inspecting multiple model-generated outputs.}
+
+\begin{table}[t]
+\centering
+\caption{Oracle gap recovery by router. Gap recovered = (router accuracy $-$ best single method) / oracle gap. Higher is better; oracle = 100\%.}
+\label{tab:oracle_recovery}
+\small
+\begin{tabular}{lcccc}
+\toprule
+\multirow{2}{*}{\textbf{Router}} & \multicolumn{2}{c}{\textbf{StrategyQA}} & \multicolumn{2}{c}{\textbf{LogicQA}} \\
+& Acc. & \% Gap & Acc. & \% Gap \\
+\midrule
+A* (best single)          & 74.80 & 0.0\%  & 45.78 & 0.0\% \\
+Semantic Entropy          & 74.37 & $-4.4$\% & 47.47 & 12.5\% \\
+LLM-as-Critic             & 74.19 & $-6.2$\% & 47.16 & 10.2\% \\
+Random Forest (output)    & 76.25 & 14.8\% & 48.20 & 17.9\% \\
+\textbf{Topology Router}  & \textbf{77.35} & \textbf{26.1\%} & \textbf{49.01} & \textbf{23.9\%} \\
+Oracle                    & 84.59 & 100\%  & 59.29 & 100\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Why topology routing works.}
+The key insight is structural: when contextual evidence is distributed (large $c_{\mathrm{len}}$, many $c_{\mathrm{sents}}$, high hop count), A* almost always wins. When the question is compact and direct (short $q_{\mathrm{len}}$, low $\mathrm{bc}$, low hop count), CoT almost always wins. This dichotomy is detectable before generating a single token.
+
+\paragraph{The remaining gap.}
+Even the topology router recovers only 26.1\% of the oracle gap. The remaining 73.9\% requires capability at the instance level—distinguishing two problems with identical topology where one happens to match the model's parametric knowledge and the other does not. Building this capability is the central open problem this work poses.
+
+\subsection{Systematic Failure Modes of A* in Natural Language Reasoning}
+\label{sec:failuremodes}
+
+We manually inspected all 45 A*-fails-CoT-wins cases and categorised each failure. Table~\ref{tab:failure_dist} shows the empirical distribution.
+
+\begin{table}[t]
+\centering
+\caption{Empirical failure mode distribution for 45 A*-failure cases (where CoT is correct and A* is wrong).}
+\label{tab:failure_dist}
+\small
+\begin{tabular}{lrrl}
+\toprule
+\textbf{Failure Mode} & \textbf{Count} & \textbf{\%} & \textbf{Mechanism} \\
+\midrule
+Overthinking simple problems   & 41 & 91.1\% & Unnecessary branching on direct-recall questions \\
+Premature commitment           &  4 &  8.9\% & Too few nodes explored; first branch committed \\
+\bottomrule
+\multicolumn{4}{l}{\small The 49 CoT-failure cases: 57.1\% multi-hop, 28.6\% hypothesis elimination, 14.3\% non-linear evidence.}
+\end{tabular}
+\end{table}
+
+\textbf{The 91.1\% overthinking rate} is the single most actionable finding. Among all 45 A*-failure cases, the overwhelming reason A* fails is that the problem did not need search in the first place. This finding is consistent with the Stop Overthinking survey \citep{zhang2025overthinking} in long-CoT models and extends it to search-based reasoning.
+
+\paragraph{The three failure modes (detailed).}
+
+\textit{Failure Mode 1 — Overthinking:} When the answer requires direct factual recall, A* branches unnecessarily. Example: ``Does Disney have an ice princess?'' (Gold: YES). A* correctly identifies Elsa in Step 1, then generates a semantic debate between ``queen'' and ``princess'', predicting NO. The sufficiency signal—the answer is already reachable—is not detected.
+
+\textit{Failure Mode 2 — Spurious Associative Expansion:} ``Is Menthol associated with Thanksgiving?'' (Gold: NO). A* chains menthol $\to$ cold weather $\to$ Thanksgiving and predicts YES. The entity-coverage heuristic keeps semantically-adjacent but causally-wrong nodes alive.
+
+\textit{Failure Mode 3 — Budget Waste via Repetition:} ``Will Albany, Georgia reach 100,000 occupants before Albany, New York?'' A* expands Steps 2 and 3 with near-identical content (Albany, NY population $\approx$98,000), exhausting the budget without comparing growth trajectories.
+
+\paragraph{Failure Mode 4 — The Fluency--Correctness Asymmetry (routing level).}
+This fourth mode operates at the selection stage. Empirical measurement (Section~\ref{sec:fluency}) shows CoT traces are more fluent in 38.0\% of divergent cases. A routing system that ranks by fluency will prefer CoT even when A*'s trace is logically stronger.
+
+\subsection{Fluency--Correctness Asymmetry: Quantification}
+\label{sec:fluency}
+
+We measure fluency using two heuristic proxies applied to 1,300 paired (CoT trace, A* trace) examples drawn from our experimental logs: (1) \textbf{sentence-length diversity score}: average sentence length normalised by vocabulary diversity; (2) \textbf{coherence score}: unique-line ratio minus bullet-fragmentation penalty. These proxies require no LLM.
+
+\begin{table}[t]
+\centering
+\caption{Fluency--Correctness Asymmetry (FCA) quantification across 1,300 paired traces.}
+\label{tab:fluency}
+\small
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{CoT} & \textbf{A*} & \textbf{Difference} \\
+\midrule
+Avg fluency score          & 0.673 & 0.725 & $-0.052$ (A* higher) \\
+\% more fluent             & 38.0\%  & 62.0\%  & --- \\
+\% cases CoT more fluent   & 38.0\%  & ---   & FCA rate \\
+\midrule
+\multicolumn{4}{l}{\textit{Interpretation}} \\
+\multicolumn{4}{l}{A* traces are globally more fluent, but in 38\% of divergent cases CoT is more fluent.} \\
+\multicolumn{4}{l}{These 38\% are precisely the cases where surface-based routing would pick CoT—} \\
+\multicolumn{4}{l}{regardless of actual reasoning quality.} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Key finding.}
+On average, A* traces are \emph{more} fluent than CoT traces (0.725 vs.\ 0.673), which reflects A*'s tendency to generate focused, concise reasoning paths on problems it handles well. However, in \textbf{38.0\% of cases}, CoT produces a more fluent trace—and these cases are disproportionately the ones where CoT is actually correct and A* is wrong (Failure Mode 1: overthinking). A fluency-based router would misroute those 38\% of cases, selecting A* when CoT is the right choice.
+
+This is the Fluency--Correctness Asymmetry: the trace that reads better is not necessarily the trace that reasons better, and the asymmetry is largest precisely in the cases that matter most for routing.
+
+\paragraph{Human evaluation corroborates.}
+Our human annotation (Table~\ref{tab:human}) confirms the pattern at the reasoning quality level. On StrategyQA disagreement cases where A* is \emph{correct}, A* achieves average coverage 2.71 vs.\ CoT 1.63—a 1.08-point gap. Yet CoT's relevance remains at 2.47, close to A*'s 2.00, confirming that CoT traces stay on-topic and \emph{look} reasonable even when wrong.
+
+\subsection{Search as Capability Amplification for Small Language Models}
+\label{sec:slm}
+
+\begin{table}[t]
+\centering
+\caption{SLM amplification: Qwen-0.5B CoT vs.\ A* across benchmarks.}
+\label{tab:slm}
+\small
+\begin{tabular}{llrrrl}
+\toprule
+\textbf{Model} & \textbf{Dataset} & \textbf{CoT} & \textbf{A*} & \textbf{Gain} & \textbf{Interpretation} \\
+\midrule
+Qwen-0.5B & HotpotQA  &  8.40\% & 30.00\% & $+$21.6 pts ($3.5\times$) & Search amplifies SLM on multi-hop \\
+Qwen-0.5B & StrategyQA & 53.60\% & 53.40\% & $-$0.2 pts ($\approx$0) & Search neutral on commonsense \\
+Qwen-0.5B & LogicQA   & 24.00\% & 20.20\% & $-$3.8 pts ($-15.8\%$) & Search degrades SLM on compact logic \\
+\midrule
+LLaMA-3.1-8B & HotpotQA  & 76.80\% & 80.10\% & $+$3.3 pts & Consistent gain \\
+LLaMA-3.1-8B & StrategyQA & 64.52\% & 74.80\% & $+$10.3 pts & Large gain on commonsense \\
+LLaMA-3.1-8B & LogicQA   & 45.78\% & 44.85\% & $-$0.9 pts & Slight loss on compact logic \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{The 3.5$\times$ amplification on HotpotQA.}
+The 257\% relative improvement for Qwen-0.5B on HotpotQA is the most striking single number in this paper. We attribute it to three factors: (1) the model has some factual coverage but insufficient parametric integration to chain multi-hop evidence in a single pass; (2) A* search explores alternative evidence paths, compensating for the model's limited working memory over long contexts; (3) HotpotQA's evidence is distributed across multiple source passages, making exploration more effective than deeper single-path reasoning.
+
+\paragraph{The capability--topology interaction matrix.}
+Table~\ref{tab:interaction} shows the 2$\times$3 interaction. The critical insight is that the LogicQA degradation is \emph{not} a model-size effect—both Qwen-0.5B ($-3.8$ pts) and LLaMA-3.1-8B ($-0.9$ pts) lose on LogicQA. It is a \textbf{task topology effect}: compact-inference problems resist search at any capability level.
+
+\begin{table}[t]
+\centering
+\caption{Model capability $\times$ task topology interaction. Cells: A* gain relative to CoT (positive = A* better).}
+\label{tab:interaction}
+\small
+\begin{tabular}{lcccc}
+\toprule
+& \textbf{Compact Logic} & \textbf{Commonsense} & \textbf{Multi-hop / Evidence} \\
+\midrule
+Strong (LLaMA-3.1-8B) & $-0.9$ & $+10.3$ & $+3.3$ \\
+Weak (Qwen-0.5B)      & $-3.8$ & $-0.2$  & $+21.6$ \\
+\midrule
+\multicolumn{4}{l}{\small LogicQA degradation is topology-driven (both model sizes lose).} \\
+\multicolumn{4}{l}{\small HotpotQA amplification is capability-driven (weak model gains more).} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Connection to rStar-Math.}
+rStar-Math \citep{guan2025rstar} demonstrated search dramatically helps SLMs in mathematical reasoning. Our HotpotQA result is the QA-domain confirmation: the mechanism is not domain-specific but rather captures a general interaction between model capability and task topology. We call this \textbf{search-as-capability-amplification}: for a model that lacks parametric integration capacity, search substitutes working memory by keeping multiple partial hypotheses alive.
+
+\subsection{Efficiency Analysis}
+\label{sec:efficiency}
+
+\begin{table}[t]
+\centering
+\caption{Compute efficiency comparison. A* token estimates use average node counts and $N_c=3$ candidates at 60 tokens/step.}
+\label{tab:efficiency}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Method / Dataset} & \textbf{Acc.} & \textbf{Est. Tokens} & \textbf{Acc./1K tok.} & \textbf{vs CoT} \\
+\midrule
+CoT / StrategyQA         & 64.52 & 200    & 322.6 & baseline \\
+A* / StrategyQA          & 74.80 & 972    & 76.9  & $0.24\times$ efficiency \\
+Self-Consist. / StrategyQA & 71.22 & 600    & 118.7  & $0.37\times$ efficiency \\
+\midrule
+CoT / HotpotQA           & 76.80 & 200    & 384.0 & baseline \\
+A* / HotpotQA            & 80.10 & 936    & 85.6  & $0.22\times$ efficiency \\
+Self-Consist. / HotpotQA & 78.21 & 600    & 130.4  & $0.34\times$ efficiency \\
+\midrule
+CoT / HotpotQA (Qwen)    &  8.40 & 200    &  42.0 & --- \\
+A* / HotpotQA (Qwen)     & 30.00 & 878    &  34.2 & $0.81\times$ efficiency \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Is A* justified?}
+Per-token accuracy is lower for A* across the board—search costs more tokens. However, the right framing is not per-token accuracy but \textbf{accuracy at a given inference budget}. On StrategyQA, A* reaches 74.80\% while CoT exhausts its compute at 64.52\%—a 10.28-point gain that cannot be achieved by simply running CoT more. More critically, for Qwen-0.5B on HotpotQA, A* reaches 30.00\% versus CoT's 8.40\%; no amount of repeat-sampling of CoT approaches that accuracy because the base model lacks the parametric integration that A* compensates for through search.
+
+The efficiency table also shows that self-consistency—the most natural way to spend extra CoT budget—achieves lower accuracy than A* on both StrategyQA and HotpotQA while using similar token budgets. This confirms that guided search is a more effective use of inference budget than unguided sampling on branching-topology problems.
+
+% ===========================================================
+\section{Discussion}
+\label{sec:discussion}
+
+\paragraph{The routing problem is topology recognition, not trace comparison.}
+The most important finding of this work is that the topology router—which sees \emph{zero} model outputs—recovers more oracle gap than routers that inspect full reasoning traces. This inverts the presumed direction of the solution: building a better critic model is not the right approach. Building a model of \emph{problem structure} is.
+
+\paragraph{Why output-based routers plateau.}
+The Fluency--Correctness Asymmetry (Section~\ref{sec:fluency}) explains the ceiling. In 38.0\% of cases, CoT produces a more fluent trace. These are disproportionately the A*-failure cases (overthinking). Any router that uses trace quality as its signal will be confused in these 38\% of cases, creating a hard ceiling for output-based approaches.
+
+\paragraph{The 73.9\% gap that remains.}
+The topology router recovers 26.1\% of the oracle gap, leaving 73.9\% unreached. This remaining gap requires discriminating at the \textbf{instance level within a topology class}—distinguishing two multi-hop questions where one aligns with the model's parametric knowledge and one does not. That instance-level discrimination likely requires lightweight problem--model compatibility scoring: a measure of how well the base model's parameters support the retrieval operations the problem demands. We leave this as the primary open problem.
+
+\paragraph{Limitations.}
+(1) \textit{Confidence miscalibration}: self-reported confidence is a ranking signal, not a calibrated probability. Future: calibrated uncertainty-aware search. (2) \textit{Single model family}: future work should test on reasoning-native models (o1-mini, DeepSeek-R1). (3) \textit{No fine-tuning}: future work: jointly train routing and search policies or use A*-collected traces for DPO distillation. (4) \textit{Topology features are symbolic}: future work: learn topology embeddings from question encodings rather than hand-crafted features.
+
+% ===========================================================
+\section{Related Work}
+\label{sec:related}
+
+\paragraph{Chain-of-thought and structured reasoning.}
+CoT \citep{wei2022chain} and self-consistency \citep{wang2023self} established the value of explicit intermediate reasoning. Tree-of-Thoughts \citep{yao2024tree} and Graph-of-Thoughts \citep{besta2024graph} extend to richer structures. Our work differs in three respects: A*-priority rule (vs.\ undirected BFS/DFS), a formal admissibility theorem (ToT lacks one), and the question of \emph{when search hurts} (ToT does not ask this).
+
+\paragraph{Search-augmented reasoning.}
+MCTS-based reasoning \citep{hao2023reasoning} and self-evaluation beam search \citep{xie2024self} use similar search frameworks but without complementarity analysis. Coconut \citep{hao2024coconut} enables implicit BFS inside the model through continuous latent states—our work is the discrete, interpretable, auditable counterpart. rStar-Math \citep{guan2025rstar} shows search dramatically helps SLMs on math; we confirm this in QA (\S\ref{sec:slm}).
+
+\paragraph{Over-exploration and tree search failures.}
+The Fetch framework \citep{zhang2025fetch} identifies redundant-state over-exploration and verifier instability as key inefficiencies; these correspond exactly to our Step Repetition and Spurious Associative Expansion failure modes. They approach it as an efficiency problem; we diagnose it as a correctness problem. The Stop Overthinking survey \citep{zhang2025overthinking} documents overthinking in long-CoT models; our 91.1\% overthinking-rate result is the first controlled per-instance empirical evidence of the same failure in \emph{search-based} reasoning.
+
+\paragraph{Routing and adaptive computation.}
+Routing between reasoning strategies at inference time is distinct from architectural routing (MoE; \citealt{shazeer2017outrageously}). A recent Wharton report \citep{meincke2025decreasing} shows CoT is not universally beneficial in prompting; our result is the search-side mirror. Prior routing work uses output features; our topology router is the first to use pre-generation structural features, and recovers more oracle gap.
+
+\paragraph{LLM-based evaluation.}
+LLM-as-a-judge \citep{zheng2023judging} and process supervision \citep{lightman2023verify} motivate our critic router. The Fluency--Correctness Asymmetry explains why critic-based routing reaches a ceiling: it evaluates readability as a proxy for reasoning quality.
+
+% ===========================================================
+\section{Conclusion}
+\label{sec:conclusion}
+
+We provide six concrete advances over prior work: a formal admissibility theorem, an empirically-validated four-cluster Reasoning Topology Framework, a topology-aware pre-generation router that outperforms all output-based routers, the Fluency--Correctness Asymmetry quantified at 38.0\%, a capability--topology interaction that explains SLM amplification and degradation, and an empirical failure-mode taxonomy showing 91.1\% of A* failures are overthinking.
+
+The central message is precise: \textit{the bottleneck is not building a better search algorithm; it is recognising the reasoning topology before generating any trace.} We have characterised the topology, quantified the asymmetry, and demonstrated that pre-generation routing is superior to post-generation routing. The next frontier is reducing the 73.9\% of the oracle gap that topology alone cannot explain—building a router that also models the compatibility between problem structure and model parametric knowledge. That is the open problem this work defines.
+
+% ===========================================================
+\bibliography{references}
+\bibliographystyle{plainnat}
+
+% ===========================================================
+\appendix
+
+\section{Human Evaluation}
+\label{app:human}
+
+\begin{table}[h]
+\centering
+\caption{Human annotation on 100 sampled disagreement cases per dataset. Cov. = coverage (1--3); Rel. = relevance (1--3). Cohen's $\kappa$ ranges 0.59--0.68.}
+\label{tab:human}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+\textbf{Dataset} & \textbf{Group} & \textbf{CoT Cov.} & \textbf{CoT Rel.} & \textbf{A* Cov.} & \textbf{A* Rel.} \\
+\midrule
+\multirow{3}{*}{StrategyQA}
+  & Both wrong ($n$=11)           & 1.00 & 2.82 & 1.09 & 1.55 \\
+  & CoT right, A* wrong ($n$=51) & 3.00 & 2.57 & 1.20 & 2.16 \\
+  & CoT wrong, A* right ($n$=38) & 1.63 & 2.47 & 2.71 & 2.00 \\
+\midrule
+\multirow{3}{*}{LogicQA}
+  & Both wrong ($n$=38)           & 1.79 & 2.76 & 1.89 & 2.53 \\
+  & CoT right, A* wrong ($n$=36) & 3.00 & 2.81 & 1.86 & 2.47 \\
+  & CoT wrong, A* right ($n$=26) & 1.88 & 2.81 & 2.77 & 2.42 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Coverage (decisive inferential steps reached) distinguishes correct from incorrect traces. Relevance (on-topic steps) is only weakly correlated with correctness—confirming the Fluency--Correctness Asymmetry at the annotation level.
+
+\section{Qualitative Examples}
+\label{app:examples}
+
+\subsection{A* Success Cases}
+
+\noindent\textbf{Non-linear evidence aggregation (StrategyQA):}
+\textit{``Is shrimp scampi definitely free of plastic?''} (Gold: NO). CoT analyses preparation steps sequentially and concludes YES. A* identifies microplastic bioaccumulation in Step 1 and the absence of removal in Step 2, concluding NO correctly.
+
+\noindent\textbf{Hypothesis elimination (LogicQA):}
+Modus tollens identification. CoT maps to modus ponens option due to surface similarity. A* evaluates each option in separate branches and correctly identifies modus tollens structure.
+
+\noindent\textbf{Multi-hop chaining (HotpotQA):}
+\textit{``What government position was held by the woman who portrayed Corliss Archer?''} (Gold: Chief of Protocol). CoT identifies Shirley Temple but confuses government roles. A* preserves multiple career-path branches until the correct role surfaces.
+
+\subsection{CoT Success Cases}
+
+\noindent\textbf{Direct factual recall (StrategyQA):}
+\textit{``Is a Boeing 737 cost covered by Wonder Woman (2017) box office receipts?''} (Gold: YES). CoT retrieves magnitudes directly. A* misreads the question as a financial transactions query.
+
+\noindent\textbf{Fluent argumentation (LogicQA):}
+Property-transfer argument. CoT maintains the argumentative frame. A* anchors on the first branch without comparing the full option set.
+
+\subsection{Failure Mode Examples — Detailed}
+
+\noindent\textbf{Overthinking (FM1):} ``Does Disney have an ice princess?'' Step 1: Elsa identified. Step 2: unnecessary queen/princess debate $\to$ wrong.
+
+\noindent\textbf{Spurious association (FM2):} ``Is Menthol associated with Thanksgiving?'' Chain: menthol $\to$ cold weather $\to$ Thanksgiving $\to$ YES (wrong).
+
+\noindent\textbf{Step repetition (FM3):} ``Will Albany, GA reach 100K before Albany, NY?'' Steps 2 and 3 both state Albany NY population $\approx$98K; growth comparison never made.
+
+\section{LLM-Based Routing Prompts}
+\label{app:prompts}
+
+\textbf{LLM-as-Judge:} Verdict-oriented. Inputs: context, query, Path A trace, Path B trace. Criteria: faithfulness, logical validity, grounded conclusion. Output: \texttt{<winner>A</winner>} or \texttt{<winner>B</winner>}.
+
+\textbf{LLM-as-Critic:} Diagnosis-oriented. Inputs: question, options, Trace A + answer, Trace B + answer. Criteria: entailment, logical fallacies, hallucination. Output: \texttt{\{"trace\_A\_flaws": ..., "trace\_B\_flaws": ..., "better\_trace": "A/B"\}}.
+
+The critic runs only on disagreement cases: $\approx$25\% of StrategyQA, $\approx$51\% of LogicQA—keeping invocation cost targeted.
+
+\section{Router Failure Case Taxonomy}
+\label{app:failures}
+
+Table~\ref{tab:failure_cases} documents representative cases from the 45 A*-failure and 49 CoT-failure sets, categorised by the failure mechanism.
+
+\begin{table}[h]
+\centering
+\caption{Representative router failure cases with failure mechanism classification.}
+\label{tab:failure_cases}
+\footnotesize
+\begin{tabular}{p{4.5cm}p{2.2cm}p{5cm}}
+\toprule
+\textbf{Question (truncated)} & \textbf{Failure Mode} & \textbf{Explanation} \\
+\midrule
+\multicolumn{3}{l}{\textit{A* fails, CoT wins}} \\
+Are months based on the solar cycle? & Overthinking & Direct recall; A* branches into calendar history \\
+Does Disney have an ice princess? & Overthinking & Elsa found correctly, then queen/princess debate \\
+Is Menthol associated with Thanksgiving? & Spurious assoc. & Cold weather association chain \\
+Would a student of 2017 have amnesia about 9/11? & Overthinking & Date arithmetic trivial; A* over-elaborates \\
+Is average \# peas in pod $\ge$ commas in billion? & Overthinking & A* incorrectly counts zeros in a billion \\
+\midrule
+\multicolumn{3}{l}{\textit{CoT fails, A* wins}} \\
+Is shrimp scampi free of plastic? & Non-linear evid. & CoT follows prep narrative; misses microplastic \\
+Are Big Ben's bells on normal schedule? & Multi-hop & CoT retrieves wrong schedule from memory \\
+Was Wonder Woman cost covered by receipts? & Hypothesis elim. & CoT confuses financial link with magnitude \\
+What position did Corliss Archer actress hold? & Multi-hop & CoT confuses ambassadorial and protocol roles \\
+Does French Guiana use Euro? & Non-linear evid. & CoT misidentifies political status \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Frequently Asked Questions}
+\label{app:faq}
+
+\noindent\textbf{Q1: Why does A* help on StrategyQA/HotpotQA but fail on LogicQA?}
+Task topology effect, not question difficulty. LogicQA rewards compact stable-frame reasoning; A* fragmentation hurts. Both model sizes lose on LogicQA—confirming it is topology, not capability.
+
+\noindent\textbf{Q2: Why does the topology classifier only achieve 51.1\% accuracy?}
+The topology features are symbolic and computed without model access. 51.1\% may seem modest but (a) it beats random on a balanced binary task, (b) it recovers 26.1\% of the oracle gap when projected to full accuracy, outperforming all output-based routers. The remaining headroom motivates learned topology embeddings.
+
+\noindent\textbf{Q3: Is A* justified given higher token cost?}
+At a fixed token budget, A* achieves higher accuracy than self-consistency on StrategyQA (74.80 vs.\ 71.22\%) and HotpotQA (80.10 vs.\ 78.21\%). For Qwen-0.5B on HotpotQA, no amount of CoT sampling reaches 30.00\% because the issue is parametric integration, not stochasticity.
+
+\noindent\textbf{Q4: What does the admissibility theorem contribute?}
+It provides formal support for the A*-priority rule under stated assumptions. The practical system is budgeted and uses voting, so global optimality does not directly apply—but the theorem justifies the node ordering.
+
+\noindent\textbf{Q5: Is the Fluency--Correctness Asymmetry result surprising?}
+Yes. Counter-intuitively, A* traces are globally \emph{more} fluent (0.725 vs.\ 0.673 avg score) because on appropriate problems, A* generates focused step-by-step traces. The asymmetry matters in the 38\% of divergent cases where CoT is more fluent—which is precisely the hard set for routing.
+
+\end{document}

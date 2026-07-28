@@ -1,0 +1,8 @@
+{
+  "input": 13,
+  "kept": 13,
+  "rejected": 0,
+  "kept_rate": 100.0,
+  "output_jsonl": "/home/dibyanayan/tanzeel/THE FINAL CALL/rescue_lora_pilot_logicqa/data/rescue_pairs/rewritten_rescues.filtered.jsonl",
+  "reject_jsonl": "/home/dibyanayan/tanzeel/THE FINAL CALL/rescue_lora_pilot_logicqa/data/rescue_pairs/rewritten_rescues.rejected.jsonl"
+}

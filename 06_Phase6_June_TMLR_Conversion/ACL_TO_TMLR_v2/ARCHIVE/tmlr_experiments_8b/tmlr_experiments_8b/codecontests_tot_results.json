@@ -1,0 +1,467 @@
+[
+  {
+    "task_id": "CC/0",
+    "method": "tot",
+    "code": "def length_of_lis(nums):\n    if not nums:\n        return 0\n\n    dp = [1] * len(nums)\n    for i in range(1, len(nums)):\n        for j in range(i):\n            if nums[i] > nums[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n        dp[i] = max(dp[i], 1)\n\n    return max(dp)",
+    "correct": true,
+    "time": 14.301891803741455,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "**Approach:**\nWe will use dynamic programming to solve this problem. The algorithm will iterate through the input array, maintaining a table of the length of the longest increasing subsequence ending at each position, and update this table based on the maximum length found so far. \n\n**Key Edge Cases:**\n- Handle empty input arrays.\n- Handle arrays with a single element.\n- Handle arrays with duplicate elements.\n\n**Implementation Strategy:**\nWe will initialize a table of the same length as the input array, fill it iteratively, and return the maximum value in the table as the length of the longest increasing subsequence.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/1",
+    "method": "tot",
+    "code": "def find_median(nums1, nums2):\n    merged = []\n    i, j = 0, 0\n\n    # Merge the two arrays\n    while i < len(nums1) and j < len(nums2):\n        if nums1[i] < nums2[j]:\n            merged.append(nums1[i])\n            i += 1\n        else:\n            merged.append(nums2[j])\n            j += 1\n\n    # Append any remaining elements\n    while i < len(nums1):\n        merged.append(nums1[i])\n        i += 1\n    while j < len(nums2):\n        merged.append(nums2[j])\n        j += 1\n\n    # Find the median\n    n = len(merged)\n    if n % 2 == 0:\n        # Even number of elements\n        return (merged[n // 2 - 1] + merged[n // 2]) / 2\n    else:\n        # Odd number of elements\n        return merged[n // 2]",
+    "correct": true,
+    "time": 20.54439091682434,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "**Approach:**\nWe will use a modified merge algorithm to merge the two sorted arrays into a single sorted array, then find the median. This approach has a time complexity of O(m + n), where m and n are the sizes of the input arrays.\n\n**Key edge cases:**\n- Empty arrays: return None or handle accordingly\n- Single-element arrays: return the single element\n- Two-element arrays: return the average of the two elements\n\n**Implementation strategy:**\nWe will use a two-pointer technique to merge the two arrays, then find the median based on the total size of the merged array.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "CC/2",
+    "method": "tot",
+    "code": "def longest_palindrome(s: str) -> str:\n    def expand_around_center(s: str, left: int, right: int) -> str:\n        while left >= 0 and right < len(s) and s[left] == s[right]:\n            left -= 1\n            right += 1\n        return s[left + 1:right]\n\n    if not s:\n        return \"\"\n\n    longest = s[0]\n    for i in range(len(s)):\n        # Odd-length palindrome\n        odd_palindrome = expand_around_center(s, i, i)\n        if len(odd_palindrome) > len(longest):\n            longest = odd_palindrome\n\n        # Even-length palindrome\n        even_palindrome = expand_around_center(s, i, i + 1)\n        if len(even_palindrome) > len(longest):\n            longest = even_palindrome\n\n    return longest",
+    "correct": true,
+    "time": 14.716498136520386,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To find the longest palindromic substring, I will use the \"expand around the center\" approach, utilizing a two-pointer technique to expand from the center of potential palindromes. This will involve checking for palindrome properties in both even-length and odd-length substrings. The algorithm will also handle edge cases such as empty strings and single-character substrings.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/3",
+    "method": "tot",
+    "code": "class Node:\n    def __init__(self, value, left=None, right=None):\n        self.value = value\n        self.left = left\n        self.right = right\n\ndef traverse_tree(root, traversal_type):\n    \"\"\"\n    Traverse a binary tree using DFS algorithm.\n\n    Args:\n    root (Node): The root node of the binary tree.\n    traversal_type (str): The type of traversal (pre-order, in-order, post-order).\n\n    Returns:\n    list: A list of node values in the order they were visited.\n    \"\"\"\n    result = []\n\n    def dfs(node):\n        if node is None:\n            return\n        if traversal_type == \"pre-order\":\n            result.append(node.value)\n            dfs(node.left)\n            dfs(node.right)\n        elif traversal_type == \"in-order\":\n            dfs(node.left)\n            result.append(node.value)\n            dfs(node.right)\n        elif traversal_type == \"post-order\":\n            dfs(node.left)\n            dfs(node.right)\n            result.append(node.value)\n        else:\n            raise ValueError(\"Invalid traversal type\")\n\n    dfs(root)\n    return result",
+    "correct": true,
+    "time": 19.882142782211304,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, I will use a recursive approach with a binary tree node class and a separate function for traversal, utilizing a depth-first search (DFS) algorithm to visit nodes in pre-order, in-order, or post-order. Key edge cases include handling empty trees, leaf nodes, and nodes with no children, while implementation will involve defining a Node class and the traverse_tree function.\n\nHere is a more detailed plan:\n\n1. **Node Class**: Create a Node class to represent each tree node, with attributes for value, left child, and right child.\n\n2. **traverse_tree Function**: Implement the traverse_tree function, which will take the root node and traversal type (pre-order, in-order, post-order) as arguments.\n\n3. **Edge Cases**: Handle the following edge cases:\n   - Empty tree: return an empty list.\n   - Leaf node: return the node's value.\n   - Node with no children: return the node's value.\n\n4. **Implementation**:",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/4",
+    "method": "tot",
+    "code": "def solve_nqueens(n):\n    def is_valid(board, row, col):\n        for i in range(row):\n            if board[i] == col or \\\n                board[i] - i == col - row or \\\n                board[i] + i == col + row:\n                return False\n        return True\n\n    def backtrack(board, row):\n        if row == len(board):\n            nonlocal count\n            count += 1\n            return\n        for col in range(len(board)):\n            if is_valid(board, row, col):\n                board[row] = col\n                backtrack(board, row + 1)\n\n    count = 0\n    if n == 0:\n        return 0\n    board = [-1] * n\n    backtrack(board, 0)\n    return count",
+    "correct": true,
+    "time": 21.33654475212097,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the N-Queens problem, we can use a backtracking algorithm with a chessboard represented as a 2D array. The algorithm will attempt to place queens in each row, ensuring no queen attacks any previously placed queens, and increment a counter for each valid configuration found. We will also need to handle edge cases such as an empty board or a board with no solutions.\n\nImplementation strategy:\n1. Initialize a counter for solutions\n2. Define a helper function to check if a queen can be placed at a given position\n3. Use backtracking to place queens in each row and update the solution counter\n4. Handle edge cases and return the solution count",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/5",
+    "method": "tot",
+    "code": "def length_of_longest_substring(s: str) -> int:\n    char_set = set()\n    left = 0\n    max_length = 0\n\n    for right in range(len(s)):\n        while s[right] in char_set:\n            char_set.remove(s[left])\n            left += 1\n        char_set.add(s[right])\n        max_length = max(max_length, right - left + 1)\n\n    return max_length",
+    "correct": true,
+    "time": 11.013387680053711,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the \"length of longest substring without repeating characters\" problem, we can use a sliding window approach with a set data structure to keep track of unique characters within the current substring. This approach will involve expanding the window to the right and shrinking it from the left when a repeating character is encountered. Key edge cases to handle include empty strings and substrings with all unique characters.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/6",
+    "method": "tot",
+    "code": "def trap(height):\n    if not height:\n        return 0\n\n    left, right = 0, len(height) - 1\n    max_left, max_right = height[left], height[right]\n    trapped_water = 0\n\n    while left <= right:\n        if max_left < max_right:\n            left += 1\n            if height[left] > max_left:\n                max_left = height[left]\n            else:\n                trapped_water += max_left - height[left]\n        else:\n            right -= 1\n            if height[right] > max_right:\n                max_right = height[right]\n            else:\n                trapped_water += max_right - height[right]\n\n    return trapped_water",
+    "correct": false,
+    "time": 17.281413555145264,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the trapping rain water problem, I will use a two-pointer technique with dynamic programming. The algorithm will iterate from both ends of the array, keeping track of the maximum height on the left and right sides, and accumulating the trapped water at each position. \n\nKey edge cases to handle include arrays with one or zero elements, and arrays with all elements being the same height. \n\nImplementation strategy will involve initializing the left and right pointers, the maximum left and right heights, and the trapped water accumulation.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/7",
+    "method": "tot",
+    "code": "def combination_sum(candidates, target):\n    def backtrack(remain, comb, start):\n        if remain == 0:\n            result.append(list(comb))\n            return\n        elif remain < 0:\n            return\n        for i in range(start, len(candidates)):\n            if i > start and candidates[i] == candidates[i-1]:\n                continue\n            comb.append(candidates[i])\n            backtrack(remain - candidates[i], comb, i + 1)\n            comb.pop()\n\n    candidates.sort()\n    result = []\n    backtrack(target, [], 0)\n    return result",
+    "correct": true,
+    "time": 15.626548290252686,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the combination sum problem, we will use a backtracking approach with recursion, utilizing a set to keep track of visited numbers to avoid duplicates. We will handle edge cases such as an empty array, target sum of 0, and negative target sum to ensure correct results. This approach will allow us to efficiently explore all possible combinations of numbers that sum to the target value.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/8",
+    "method": "tot",
+    "code": "class TreeNode:\n    def __init__(self, x):\n        self.val = x\n        self.left = None\n        self.right = None\n\nclass Codec:\n\n    def serialize(self, root):\n        \"\"\"Encodes a tree to a single string.\n        \n        :type root: TreeNode\n        :rtype: str\n        \"\"\"\n        def dfs(node):\n            if not node:\n                vals.append('#')\n                return\n            vals.append(str(node.val))\n            dfs(node.left)\n            dfs(node.right)\n\n        vals = []\n        dfs(root)\n        return ' '.join(vals)\n\n    def deserialize(self, data):\n        \"\"\"Decodes your encoded data to tree.\n        \n        :type data: str\n        :rtype: TreeNode\n        \"\"\"\n        def dfs():\n            val = next(vals)\n            if val == '#':\n                return None\n            node = TreeNode(int(val))\n            node.left = dfs()\n            node.right = dfs()\n            return node\n\n        vals = iter(data.split())\n        return dfs()",
+    "correct": true,
+    "time": 16.271442890167236,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the binary tree serialization and deserialization problem, we can use a pre-order traversal algorithm and a string-based data structure to store the node values. This approach will allow us to serialize the binary tree into a string and deserialize the string back into the original binary tree. \n\nKey edge cases to handle include null nodes, empty trees, and trees with large node values to ensure correct serialization and deserialization.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/9",
+    "method": "tot",
+    "code": "def two_sum(nums, target):\n    \"\"\"\n    Returns the indices of two numbers in the list that sum to the target value.\n    \n    Args:\n        nums (list): A list of numbers.\n        target (int): The target sum.\n    \n    Returns:\n        list: A list containing the indices of two numbers that sum to the target value.\n    \"\"\"\n    num_dict = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_dict:\n            return [num_dict[complement], i]\n        num_dict[num] = i\n    return []",
+    "correct": true,
+    "time": 17.152920961380005,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the two_sum problem, I will use a hash table (dictionary in Python) to store numbers as keys and their indices as values. This allows for efficient lookups and solving the problem in O(n) time complexity. \n\nKey edge cases to handle include: empty list, list with one element, list with duplicate elements, and list with negative numbers. \n\nImplementation will involve iterating through the list, storing numbers in the hash table, and checking if the difference between the target and each number exists in the hash table.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/10",
+    "method": "tot",
+    "code": "def length_of_lis(nums):\n    if not nums:\n        return 0\n\n    dp = [1] * len(nums)\n    for i in range(1, len(nums)):\n        for j in range(i):\n            if nums[i] > nums[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n\n    return max(dp)",
+    "correct": true,
+    "time": 15.194401264190674,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, we will use dynamic programming and a bottom-up approach, where we build up a table of longest increasing subsequences ending at each position in the input array. We will also handle edge cases such as an empty array and an array with a single element.\n\nWe will start by initializing a table of size equal to the input array, where each element is initially set to 1, representing the length of the longest increasing subsequence ending at that position (which is the element itself). Then, we will iterate through the array, updating each table element to be the maximum of its current value and the value of the previous element in the table if it is smaller than the current element, plus one.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/11",
+    "method": "tot",
+    "code": "def find_median(nums1, nums2):\n    merged = []\n    i, j = 0, 0\n\n    # Merge smaller elements first\n    while i < len(nums1) and j < len(nums2):\n        if nums1[i] < nums2[j]:\n            merged.append(nums1[i])\n            i += 1\n        else:\n            merged.append(nums2[j])\n            j += 1\n\n    # Append the remaining elements, if any\n    while i < len(nums1):\n        merged.append(nums1[i])\n        i += 1\n    while j < len(nums2):\n        merged.append(nums2[j])\n        j += 1\n\n    n = len(merged)\n    if n % 2 == 1:\n        return merged[n // 2]\n    else:\n        return (merged[n // 2 - 1] + merged[n // 2]) / 2",
+    "correct": true,
+    "time": 20.70306158065796,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "**Approach:** \nTo find the median of two sorted arrays, we can use a modified version of the merge algorithm from merge sort. This involves merging the two sorted arrays into a single sorted array and then finding the middle element(s). To handle edge cases, we'll need to consider arrays of odd and even lengths, as well as the case where one or both arrays are empty.\n\n**Key Edge Cases:**\n\n- Empty array: Return a specific value (e.g., None) as the median.\n- Single-element array: Return the single element as the median.\n- Two-element array: Return the average of the two elements as the median.\n- Large array: Optimize the merge algorithm to handle large inputs efficiently.",
+    "eval_scores": [
+      7,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/12",
+    "method": "tot",
+    "code": "def longest_palindrome(s: str) -> str:\n    def is_palindrome(s: str) -> bool:\n        return s == s[::-1]\n\n    def expand_around_center(s: str, left: int, right: int) -> str:\n        while left >= 0 and right < len(s) and s[left] == s[right]:\n            left -= 1\n            right += 1\n        return s[left + 1:right]\n\n    longest = \"\"\n    for i in range(len(s)):\n        # Odd length palindrome\n        palindrome = expand_around_center(s, i, i)\n        if len(palindrome) > len(longest):\n            longest = palindrome\n\n        # Even length palindrome\n        palindrome = expand_around_center(s, i, i + 1)\n        if len(palindrome) > len(longest):\n            longest = palindrome\n\n    return longest",
+    "correct": true,
+    "time": 20.612689971923828,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To find the longest palindromic substring, I'll use the \"expand around the center\" approach, utilizing a helper function to check for palindromes. This algorithm will handle edge cases such as single-character substrings, handle even-length palindromes, and consider each character as a potential center of expansion. The implementation will iterate through the string, calling the helper function to expand around each character.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/13",
+    "method": "tot",
+    "code": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.left = None\n        self.right = None\n\ndef traverse_tree(root, traversal_type):\n    if root is None:\n        return []\n\n    result = []\n    if traversal_type == \"in-order\":\n        result = in_order_traversal(root, result)\n    elif traversal_type == \"pre-order\":\n        result = pre_order_traversal(root, result)\n    elif traversal_type == \"post-order\":\n        result = post_order_traversal(root, result)\n    else:\n        raise ValueError(\"Invalid traversal type\")\n\n    return result\n\ndef in_order_traversal(root, result):\n    if root:\n        in_order_traversal(root.left, result)\n        result.append(root.value)\n        in_order_traversal(root.right, result)\n    return result\n\ndef pre_order_traversal(root, result):\n    if root:\n        result.append(root.value)\n        pre_order_traversal(root.left, result)\n        pre_order_traversal(root.right, result)\n    return result\n\ndef post_order_traversal(root, result):\n    if root:\n        post_order_traversal(root.left, result)\n        post_order_traversal(root.right, result)\n        result.append(root.value)\n    return result",
+    "correct": true,
+    "time": 21.10290265083313,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, I will use a recursive approach with a Depth-First Search (DFS) algorithm, traversing the binary tree using in-order, pre-order, and post-order traversal techniques. I will handle edge cases such as an empty tree and nodes with no children. The implementation strategy will involve defining a Node class for the binary tree and a recursive traverse_tree function to perform the traversal.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/14",
+    "method": "tot",
+    "code": "def solve_nqueens(n):\n    def is_safe(board, row, col):\n        for i in range(row):\n            if board[i] == col or \\\n                board[i] - i == col - row or \\\n                board[i] + i == col + row:\n                return False\n        return True\n\n    def solve_nqueens_helper(board, row):\n        if row == n:\n            return 1\n        count = 0\n        for col in range(n):\n            if is_safe(board, row, col):\n                board[row] = col\n                count += solve_nqueens_helper(board, row + 1)\n        return count\n\n    board = [-1] * n\n    return solve_nqueens_helper(board, 0)",
+    "correct": true,
+    "time": 18.678951025009155,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the N-Queens problem, we can use a backtracking algorithm with a recursive approach. The algorithm will iterate over each column and place a queen, checking for conflicts with previously placed queens. We will use a 2D board representation to track the queens' positions and handle edge cases such as out-of-bounds columns or rows.\n\nImplementation Strategy:\n\n1. Initialize an empty board with `n` rows and `n` columns.\n2. Define a helper function to check if a queen can be placed at a given position.\n3. Use recursion to place queens in each column, backtracking when a conflict is found.\n4. Count the number of successful placements as the solution.\n\nNote: The solution will return the total count of valid configurations, not the actual configurations themselves.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/15",
+    "method": "tot",
+    "code": "def length_of_longest_substring(s: str) -> int:\n    char_set = set()\n    left = 0\n    max_length = 0\n\n    for right in range(len(s)):\n        while s[right] in char_set:\n            char_set.remove(s[left])\n            left += 1\n        char_set.add(s[right])\n        max_length = max(max_length, right - left + 1)\n\n    return max_length",
+    "correct": true,
+    "time": 15.352442502975464,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, I will use a sliding window approach with a HashSet to keep track of unique characters within the current substring. The algorithm will expand the window to the right, adding characters to the set, and shrink it from the left when a repeating character is detected.\n\nKey edge cases to handle include empty strings, strings with all unique characters, and strings with repeating characters near the start or end.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/16",
+    "method": "tot",
+    "code": "def trap(height):\n    if not height:\n        return 0\n\n    n = len(height)\n    prefix_max = [0] * n\n    suffix_max = [0] * n\n\n    prefix_max[0] = height[0]\n    suffix_max[n - 1] = height[n - 1]\n\n    for i in range(1, n):\n        prefix_max[i] = max(prefix_max[i - 1], height[i])\n\n    for i in range(n - 2, -1, -1):\n        suffix_max[i] = max(suffix_max[i + 1], height[i])\n\n    trapped_water = 0\n    for i in range(n):\n        trapped_water += max(0, min(prefix_max[i], suffix_max[i]) - height[i])\n\n    return trapped_water",
+    "correct": true,
+    "time": 17.88858127593994,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To implement the trapping rain water algorithm, I will use a two-pointer approach with a prefix and suffix maximum array to efficiently track maximum heights on both sides of each cell. The key edge case to handle is the scenario where the input array is empty or contains a single element. The implementation will iterate through the array from both ends, updating the maximum heights and calculating the trapped water at each cell.\n\nHere's the function signature:\n```python\ndef trap(height):\n```\nThis function will take an array of integers representing the heights of bars as input and return the total amount of trapped water.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/17",
+    "method": "tot",
+    "code": "def combination_sum(candidates, target):\n    def backtrack(remain, comb, start):\n        if remain == 0:\n            result.append(list(comb))\n            return\n        elif remain < 0:\n            return\n        for i in range(start, len(candidates)):\n            comb.append(candidates[i])\n            backtrack(remain - candidates[i], comb, i)\n            comb.pop()\n\n    candidates.sort()\n    result = []\n    backtrack(target, [], 0)\n    return result",
+    "correct": true,
+    "time": 14.308625936508179,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "**Approach:**\nTo solve the combination sum problem, we will use a recursive approach with backtracking, utilizing a technique called depth-first search (DFS) with a set to keep track of used elements. This algorithm will handle edge cases such as an empty input array and a target sum of 0.\n\n**Key Edge Cases:**\n\n- An empty input array\n- A target sum of 0\n- A target sum that is less than the smallest element in the array\n- Duplicate combinations (to be ignored in the solution)\n\n**Implementation Strategy:**\nWe will start by sorting the input array, then recursively explore all possible combinations, pruning the search space when the current combination exceeds the target sum.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/18",
+    "method": "tot",
+    "code": "class TreeNode:\n    def __init__(self, x):\n        self.val = x\n        self.left = None\n        self.right = None\n\nclass Codec:\n\n    def serialize(self, root):\n        \"\"\"Encodes a tree to a single string.\n        \n        :type root: TreeNode\n        :rtype: str\n        \"\"\"\n        def dfs(node):\n            if node:\n                vals.append(str(node.val))\n                dfs(node.left)\n                dfs(node.right)\n            else:\n                vals.append('#')\n        vals = []\n        dfs(root)\n        return ','.join(vals)\n\n    def deserialize(self, data):\n        \"\"\"Decodes your encoded data to tree.\n        \n        :type data: str\n        :rtype: TreeNode\n        \"\"\"\n        def dfs():\n            val = next(vals)\n            if val == '#':\n                return None\n            node = TreeNode(int(val))\n            node.left = dfs()\n            node.right = dfs()\n            return node\n        vals = iter(data.split(','))\n        return dfs()",
+    "correct": true,
+    "time": 22.98452353477478,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To serialize a binary tree, we can use a Depth-First Search (DFS) traversal algorithm and store the node values in a string. We'll use a pre-order traversal (root, left, right) to ensure the serialization is unique and can be easily deserialized. This approach will handle edge cases such as an empty tree and a tree with a single node.\n\nHere's a step-by-step approach:\n\n1. Perform a pre-order DFS traversal of the binary tree, storing each node's value in a string.\n2. Use a delimiter (e.g., ',') to separate the node values in the string.\n3. To deserialize, split the serialized string into an array of node values and construct the binary tree recursively.\n\nThis approach will result in a concise and efficient solution for binary tree serialization and deserialization.",
+    "eval_scores": [
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "CC/19",
+    "method": "tot",
+    "code": "def two_sum(nums, target):\n    \"\"\"\n    Returns the indices of two numbers in the input list that sum to the target value.\n    \n    Args:\n        nums (list): A list of numbers.\n        target (int): The target sum.\n    \n    Returns:\n        list: A list containing the indices of two numbers that sum to the target value.\n    \"\"\"\n    num_dict = {}\n    for i, num in enumerate(nums):\n        complement = target - num\n        if complement in num_dict:\n            return [num_dict[complement], i]\n        num_dict[num] = i\n    return []",
+    "correct": true,
+    "time": 12.075531959533691,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the two_sum problem, we will use a **hash table** (dictionary in Python) to store the numbers we've seen so far and their indices. We will iterate through the input list, and for each number, we will check if its complement (target - number) exists in the hash table. This approach allows us to achieve an efficient time complexity of O(n).\n\nKey edge cases to handle include: empty input list, single-element list, and duplicate numbers in the list.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/20",
+    "method": "tot",
+    "code": "def length_of_lis(nums):\n    if not nums:\n        return 0\n\n    n = len(nums)\n    dp = [1] * n\n\n    for i in range(1, n):\n        for j in range(i):\n            if nums[i] > nums[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n\n    return max(dp)",
+    "correct": true,
+    "time": 14.583811283111572,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the problem, we can use dynamic programming and a bottom-up approach with a table to store the lengths of the longest increasing subsequences ending at each position. This involves initializing a table, iterating through the input array, and updating the table values based on the maximum length found so far. We also need to handle edge cases such as empty input arrays and single-element arrays.\n\nImplementation Strategy:\n\n1. Initialize a table of the same length as the input array with default values (e.g., 1 for single-element arrays and 0 for empty arrays).\n2. Iterate through the input array, and for each element, find the maximum length of the subsequence ending at the previous elements (i.e., elements with smaller values) and update the table value accordingly.\n3. Return the maximum value in the table, which represents the length of the longest increasing subsequence.\n\nHere's a simple example:\n```python\ndef length_of_lis(nums):\n    if not nums:\n        return 0",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/21",
+    "method": "tot",
+    "code": "def find_median(nums1, nums2):\n    \"\"\"\n    Find the median of two sorted arrays.\n\n    Args:\n        nums1 (list): The first sorted array.\n        nums2 (list): The second sorted array.\n\n    Returns:\n        float: The median of the merged array.\n    \"\"\"\n    # Merge the two arrays into one sorted array\n    merged = []\n    i, j = 0, 0\n    while i < len(nums1) and j < len(nums2):\n        if nums1[i] < nums2[j]:\n            merged.append(nums1[i])\n            i += 1\n        else:\n            merged.append(nums2[j])\n            j += 1\n    # Append any remaining elements\n    merged += nums1[i:]\n    merged += nums2[j:]\n\n    # Find the median of the merged array\n    n = len(merged)\n    if n % 2 == 1:\n        # If the total number of elements is odd, the median is the middle element\n        return float(merged[n // 2])\n    else:\n        # If the total number of elements is even, the median is the average of the two middle elements\n        return (merged[n // 2 - 1] + merged[n // 2]) / 2",
+    "correct": true,
+    "time": 19.891778707504272,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "**Approach:**\n\nTo find the median of two sorted arrays, we will use a merge-and-sort approach with a modified merge step to handle edge cases. We will merge the two arrays into one sorted array and then find the median of the merged array, which will be the final result. To optimize this approach, we can use a two-pointer technique to merge the arrays in linear time.\n\n**Key Edge Cases:**\n\n*   Empty arrays\n*   Arrays with one element\n*   Arrays with an odd number of elements\n*   Arrays with an even number of elements\n\n**Implementation Strategy:**\n\nWe will implement the `find_median` function using a two-pointer technique to merge the two arrays into one sorted array. We will then find the median of the merged array based on whether the total number of elements is odd or even.",
+    "eval_scores": [
+      7,
+      8,
+      7
+    ]
+  },
+  {
+    "task_id": "CC/22",
+    "method": "tot",
+    "code": "def longest_palindrome(s: str) -> str:\n    if not s:\n        return \"\"\n\n    n = len(s)\n    dp = [[False] * n for _ in range(n)]\n    max_length = 1\n    start = 0\n\n    for i in range(n):\n        dp[i][i] = True\n\n    for i in range(n - 1):\n        if s[i] == s[i + 1]:\n            dp[i][i + 1] = True\n            start = i\n            max_length = 2\n\n    for length in range(3, n + 1):\n        for i in range(n - length + 1):\n            j = i + length - 1\n            if s[i] == s[j] and dp[i + 1][j - 1]:\n                dp[i][j] = True\n                if length > max_length:\n                    start = i\n                    max_length = length\n\n    return s[start:start + max_length]",
+    "correct": true,
+    "time": 18.720417976379395,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To find the longest palindromic substring, we can use a dynamic programming approach with a 2D table to store the palindromic properties of substrings. We will iterate through the string and fill the table accordingly, considering that a palindrome can be odd-length (centered at a single character) or even-length (centered at a pair of characters). The implementation will handle edge cases such as single-character substrings and null or empty input strings.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/23",
+    "method": "tot",
+    "code": "class TreeNode:\n    def __init__(self, value=0, left=None, right=None):\n        self.value = value\n        self.left = left\n        self.right = right\n\ndef traverse_tree(root):\n    \"\"\"\n    Traverse a binary tree using Depth-First Search (DFS) and analyze its properties.\n\n    Args:\n    root (TreeNode): The root node of the binary tree.\n\n    Returns:\n    A dictionary containing the tree's properties:\n        - 'height': The height of the tree.\n        - 'max_depth': The maximum depth of the tree.\n        - 'min_value': The minimum value in the tree.\n        - 'max_value': The maximum value in the tree.\n        - 'leaf_nodes': A list of leaf node values.\n        - 'non_leaf_nodes': A list of non-leaf node values.\n    \"\"\"\n\n    def dfs(node, depth):\n        if node is None:\n            return None, None, None, None, None, None\n\n        left_result = dfs(node.left, depth + 1)\n        right_result = dfs(node.right, depth + 1)\n\n        height = max(left_result[0], right_result[0], depth) if left_result[0] is not None else depth\n        max_depth = max(left_result[1], right_result[1], depth) if left_result[1] is not None else depth\n        min_value = min(node.value, left_result[2], right_result[2]) if left_result[2] is not None else node.value\n        max_value = max(node.value, left_result[3], right_result[3]) if left_result[3] is not None else node.value\n        leaf_nodes = left_result[4] + right_result[4] + [node.value] if left_result[4] is not None else [node.value]\n        non_leaf_nodes = left_result[5] + right_result[5] + [node.value] if left_result[5] is not None else [node.value]\n\n        return height, max_depth, min_value, max_value, leaf_nodes, non_leaf_nodes\n\n    return dfs(root, 0)",
+    "correct": true,
+    "time": 25.628435850143433,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the problem, we'll use a recursive approach with a binary tree node class to traverse the tree and analyze its properties. The algorithm will utilize a Depth-First Search (DFS) strategy, visiting the root node first, then traversing down the left and right subtrees. \n\nKey edge cases to handle include a null tree, a tree with a single node, and a tree with multiple nodes of varying depths.",
+    "eval_scores": [
+      8,
+      7,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/24",
+    "method": "tot",
+    "code": "def solve_nqueens(n):\n    def is_valid(board, row, col):\n        for i in range(row):\n            if board[i] == col or \\\n                board[i] - i == col - row or \\\n                board[i] + i == col + row:\n                return False\n        return True\n\n    def backtrack(board, row):\n        if row == n:\n            result.append(board[:])\n            return\n        for col in range(n):\n            if is_valid(board, row, col):\n                board[row] = col\n                backtrack(board, row + 1)\n\n    result = []\n    if n < 1:\n        return 0\n    backtrack([-1]*n, 0)\n    return len(result)\n\ndef solve_nqueens_count(n):\n    return solve_nqueens(n)",
+    "correct": true,
+    "time": 18.73931050300598,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the N-Queens problem, we'll use a backtracking algorithm with a recursive approach. The algorithm will iterate through each row, attempting to place queens in valid positions, and use a set to keep track of occupied columns, diagonals, and anti-diagonals to ensure no conflicts. \n\nWe'll handle edge cases such as checking if the input is a positive integer (N >= 1) and handling the base case when the board is full (all queens placed successfully).",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/25",
+    "method": "tot",
+    "code": "def length_of_longest_substring(s: str) -> int:\n    \"\"\"\n    Returns the length of the longest substring without repeating characters.\n\n    Args:\n    s (str): The input string.\n\n    Returns:\n    int: The length of the longest substring without repeating characters.\n    \"\"\"\n    if not s:  # edge case: empty string\n        return 0\n\n    left = 0  # left pointer of the sliding window\n    max_length = 0  # maximum length of substring without repeating characters\n    char_set = set()  # set to store unique characters in the current substring\n\n    for right in range(len(s)):  # right pointer of the sliding window\n        while s[right] in char_set:  # if a repeating character is found\n            char_set.remove(s[left])  # remove the leftmost character from the set\n            left += 1  # shrink the window from the left\n        char_set.add(s[right])  # add the current character to the set\n        max_length = max(max_length, right - left + 1)  # update the maximum length\n\n    return max_length",
+    "correct": true,
+    "time": 14.259032726287842,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the \"length_of_longest_substring\" problem, we'll use a sliding window approach with a set data structure to efficiently track unique characters in the current substring. We'll handle edge cases such as an empty string or a string with all unique characters. The implementation will involve expanding the window to the right when a new character is added to the set and shrinking the window from the left when a repeating character is found.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/26",
+    "method": "tot",
+    "code": "def trap(height):\n    if not height:\n        return 0\n\n    left, right = 0, len(height) - 1\n    max_left, max_right = height[left], height[right]\n    total_water = 0\n\n    while left <= right:\n        if max_left < max_right:\n            left += 1\n            if height[left] < max_left:\n                total_water += max_left - height[left]\n            else:\n                max_left = height[left]\n        else:\n            right -= 1\n            if height[right] < max_right:\n                total_water += max_right - height[right]\n            else:\n                max_right = height[right]\n\n    return total_water",
+    "correct": false,
+    "time": 20.150018215179443,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "**Approach/Strategy:**\nTo implement the trapping rain water algorithm, I will use a two-pointer approach, where one pointer moves from left to right and the other from right to left. This allows us to keep track of the maximum height of the bars on both sides and calculate the trapped water efficiently. \n\n**Key Edge Cases:**\n- Handle arrays with only one or two elements.\n- Handle arrays with all elements at the same height.\n- Handle arrays with elements that are at the same height as the maximum height on both sides.\n\n**Implementation Strategy:**\nThe function will iterate over the array from both ends, keeping track of the maximum height of the bars on the left and right sides. It will then calculate the trapped water by subtracting the current bar height from the minimum of the left and right maximum heights, and add it to the total trapped water.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/27",
+    "method": "tot",
+    "code": "def combination_sum(candidates, target, result=None):\n    if result is None:\n        result = []\n    if not candidates:\n        return\n    if target == 0:\n        result.append([])\n        return\n    for i, num in enumerate(candidates):\n        if num > target:\n            break\n        combination_sum(candidates[i+1:], target - num, result)\n        if target - num == 0:\n            result.append([num])\n        else:\n            for j in range(len(result)):\n                result[j].append(num)\n    return result",
+    "correct": true,
+    "time": 12.402674436569214,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the combination sum problem, we can use a backtracking algorithm with recursion to explore all possible combinations. We'll use a two-pointer technique to efficiently generate combinations and a data structure like a list or array to store the results. Key edge cases to handle include the case where the target sum is 0, the case where the input array is empty, and the case where there are duplicate numbers in the input array.\n\nThis approach can be implemented in a function named combination_sum that takes three parameters: an array of integers, a target sum, and an optional parameter to store the result combinations.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/28",
+    "method": "tot",
+    "code": "class TreeNode:\n    def __init__(self, x):\n        self.val = x\n        self.left = None\n        self.right = None\n\ndef serialize(root):\n    def dfs(node):\n        if not node:\n            return '#'\n        return str(node.val) + ',' + dfs(node.left) + ',' + dfs(node.right)\n\n    return dfs(root) if root else ''",
+    "correct": true,
+    "time": 16.849468231201172,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "**Approach:**\nTo serialize and deserialize a binary tree, I'll use a Depth-First Search (DFS) approach with a recursive traversal to store node values in a string, utilizing a pre-order traversal (root, left, right) to ensure correct reconstruction. This will involve using a queue to keep track of nodes to visit, and a string builder to store the serialized data.\n\n**Key Edge Cases:**\n- Handle empty trees by returning an empty string.\n- Handle trees with single nodes by returning a string with the node's value.\n- Handle trees with duplicate values by reconstructing the tree correctly.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/29",
+    "method": "tot",
+    "code": "def two_sum(nums, target):\n    \"\"\"\n    Returns two numbers in the list that sum to the target value.\n\n    Args:\n        nums (list): A list of numbers.\n        target (int): The target sum.\n\n    Returns:\n        tuple: Two numbers that sum to the target value, or None if no such pair exists.\n    \"\"\"\n    if len(nums) < 2:\n        return None\n\n    num_dict = {}\n    for num in nums:\n        complement = target - num\n        if complement in num_dict:\n            return (complement, num)\n        num_dict[num] = True\n\n    return None",
+    "correct": false,
+    "time": 14.243021726608276,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve the two_sum problem, we can use a hash table (dictionary in Python) to store the numbers we've seen so far and their complements. This approach allows for a time complexity of O(n) with a single pass through the input list. We'll handle edge cases such as an empty list, a list with less than two elements, and duplicate target values.\n\nImplementation strategy:\n1. Create an empty hash table to store the numbers and their complements.\n2. Iterate through the input list, for each number, calculate its complement (target - current number) and check if it exists in the hash table.\n3. If the complement is found, return the current number and its complement. If not, add the current number to the hash table and continue iterating.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  },
+  {
+    "task_id": "CC/30",
+    "method": "tot",
+    "code": "def length_of_lis(nums):\n    if not nums:\n        return 0\n    if len(nums) == 1:\n        return 1\n\n    dp = [1] * len(nums)\n    for i in range(1, len(nums)):\n        for j in range(i):\n            if nums[i] > nums[j]:\n                dp[i] = max(dp[i], dp[j] + 1)\n\n    return max(dp)",
+    "correct": true,
+    "time": 11.962623357772827,
+    "branches": 3,
+    "depth": 3,
+    "best_thought": "To solve this problem, we can use dynamic programming with a bottom-up approach and a list to store the lengths of the longest increasing subsequences ending at each position. We will also handle edge cases such as an empty list and a list with a single element.\n\nImplementation strategy: \nWe will iterate over the list and for each element, we will find the longest increasing subsequence ending at the previous elements, and append the current element to it if it's greater than the last element in the subsequence.",
+    "eval_scores": [
+      8,
+      8,
+      8
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "paired_jsonl": "Strategyqa RAg/data/cot_astar_runs/strategyqa_paired_all.jsonl",
+  "split": "all",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "faiss_metric": "inner_product_on_l2_normalized_vectors",
+  "dimension": 384,
+  "kb_size": 127,
+  "cot_size": 62,
+  "astar_size": 65,
+  "filtered_rows": 110,
+  "all_rows": 110,
+  "kb_jsonl": "Strategyqa RAg/artifacts/strategyqa_reasoning_kb.jsonl",
+  "kb_cot_jsonl": "Strategyqa RAg/artifacts/strategyqa_reasoning_kb_cot.jsonl",
+  "kb_astar_jsonl": "Strategyqa RAg/artifacts/strategyqa_reasoning_kb_astar.jsonl",
+  "faiss_index": "Strategyqa RAg/artifacts/strategyqa_questions.faiss"
+}

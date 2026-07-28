@@ -1,0 +1,40 @@
+{
+  "humaneval": [
+    {
+      "task_id": "HumanEval/0",
+      "method": "cot",
+      "code": "def has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\"\n    for i in range(len(numbers)):\n        for j in range(i + 1, len(numbers)):\n            if abs(numbers[i] - numbers[j]) < threshold:\n                return True\n    return False",
+      "correct": false,
+      "time": 2.072434902191162,
+      "raw_response": "```python\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\"\n    for i in range(len(numbers)):\n        for j in range(i + 1, len(numbers)):\n            if abs(numbers[i] - numbers[j]) < threshold:\n                return True\n    "
+    },
+    {
+      "task_id": "HumanEval/0",
+      "method": "astar",
+      "code": "def has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\"\n    sorted_numbers = sorted(numbers)\n    for i in range(len(sorted_numbers) - 1):\n        if sorted_numbers[i + 1] - sorted_numbers[i] < threshold:\n            return True\n    return False",
+      "correct": false,
+      "time": 60.83260440826416,
+      "nodes_explored": 13,
+      "goals_found": 3
+    },
+    {
+      "task_id": "HumanEval/1",
+      "method": "cot",
+      "code": "from typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    separate those group into separate strings and return the list of those.\n    Separate groups are balanced (each open brace is properly closed) and not nested within each other\n    Ignore any spaces in the input string.\n    >>> separate_paren_groups('( ) (( )) (( )( ))')\n    ['()', '(())', '(()())']\n    \"\"\"\n    # Remove spaces from the input string\n    paren_string = paren_string.replace(' ', '')\n    \n    result = []\n    current_group = ''\n    depth = 0\n    \n    for char in paren_string:\n        if char == '(':\n            current_group += char\n            depth += 1\n        elif char == ')':\n            current_group += char\n            depth -= 1\n            # When depth reaches 0, we've completed a group\n            if depth == 0:\n                result.append(current_group)\n                current_group = ''\n    \n    return result",
+      "correct": true,
+      "time": 2.33121395111084,
+      "raw_response": "```python\nfrom typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    separate those group into separate strings and return the list of those.\n    Separate groups are balanced (each open brace is properly closed) and not nested within each other\n    Ignore any spaces in the input string.\n    >>> separate_paren_groups('( ) (( )) (( )( ))')\n    ['()', '(())', '("
+    },
+    {
+      "task_id": "HumanEval/1",
+      "method": "astar",
+      "code": "def separate_paren_groups(paren_string: str) -> List[str]:\n    \"\"\" Input to this function is a string containing multiple groups of nested parentheses. Your goal is to\n    separate those group into separate strings and return the list of those.\n    Separate groups are balanced (each open brace is properly closed) and not nested within each other\n    Ignore any spaces in the input string.\n    >>> separate_paren_groups('( ) (( )) (( )( ))')\n    ['()', '(())', '(()())']\n    \"\"\"\n    result = []\n    balance = 0\n    current_group = \"\"\n    \n    for char in paren_string:\n        if char == ' ':\n            continue\n        \n        current_group += char\n        \n        if char == '(':\n            balance += 1\n        elif char == ')':\n            balance -= 1\n        \n        if balance == 0 and current_group:\n            result.append(current_group)\n            current_group = \"\"\n    \n    return result",
+      "correct": false,
+      "time": 70.6207582950592,
+      "nodes_explored": 14,
+      "goals_found": 3
+    }
+  ],
+  "mbpp": [],
+  "codecontests": []
+}
